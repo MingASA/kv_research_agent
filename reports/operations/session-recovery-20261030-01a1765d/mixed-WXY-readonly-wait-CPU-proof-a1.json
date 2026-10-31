@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-30T22:06:47.967663+00:00",
+  "tests": 9,
+  "passed": true,
+  "INNER_OUTER_ast_compile": true,
+  "source_sha256": "ae326e21390a999b49573fe0774d4d36d1bb0cc408ad8f7bb724d0fc15e5462d",
+  "only_WXY_wait_before_sampling_seconds": 2100,
+  "reason": "Existing operator900+startup900 plus120sidle/known/warmup; actualsampling900s48MiB unchanged",
+  "existing_S_and_old_profile_bounds_unchanged": true,
+  "GPU_or_remote_used": false
+}

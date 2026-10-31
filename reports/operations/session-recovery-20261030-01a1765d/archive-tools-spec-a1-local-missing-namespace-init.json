@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-30T20:41:20.385011+00:00",
+  "error": "Specification referenced nonexistent scripts/__init__.py; scripts is a namespace package",
+  "dependent_archive_action_skipped_by_exit_code_guard": true,
+  "archive_directory_created": false,
+  "GPU_or_remote_actions": false,
+  "repair": "Remove nonexistent optional package marker; enumerate existing controller source files."
+}

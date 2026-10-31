@@ -1,0 +1,22 @@
+............................................................................. [ 23%]
+.................................................................................................................... [ 60%]
+................................................. [ 75%]
+........................ [ 82%]
+.......................................................                                                            [100%]
+=================================== FAILURES ===================================
+_ TransportRecoveryTests.test_changed_model_input_operator_or_prior_root_blocks_new_attempt (name='dataset_sha256') _
+
+self = <test_nextgen_transport_recovery.TransportRecoveryTests testMethod=test_changed_model_input_operator_or_prior_root_blocks_new_attempt>
+
+    def test_changed_model_input_operator_or_prior_root_blocks_new_attempt(self):
+        for name,value in [('binary_sha256','f'*64),('operators',{'fp8_e4m3':{'planner':'fa2','decode':'other'}}),
+                           ('dataset_sha256','e'*64),('replicate',2)]:
+            original=self.request[name];self.request[name]=value
+>           with self.subTest(name=name),self.assertRaises(ApprovalError):self.verify()
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           AssertionError: ApprovalError not raised
+
+tests/test_nextgen_transport_recovery.py:65: AssertionError
+=========================== short test summary info ============================
+SUBFAILED(name='dataset_sha256') tests/test_nextgen_transport_recovery.py::TransportRecoveryTests::test_changed_model_input_operator_or_prior_root_blocks_new_attempt
+1 failed, 321 passed, 339 subtests passed in 12.79s

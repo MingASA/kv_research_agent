@@ -1,0 +1,794 @@
+{
+  "ok": true,
+  "utc": "2026-10-26T19:23:40.100252+00:00",
+  "files": [
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/docker_command.json",
+      "size": 2564
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/container.log",
+      "size": 0
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/container_identity.json",
+      "size": 1504
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/lease.json",
+      "size": 138
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/runtime_environment.json",
+      "size": 758
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/scorer_cpu_preflight.log",
+      "size": 364
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality_command.json",
+      "size": 1921
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality.log",
+      "size": 1957
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/gpu_telemetry.csv",
+      "size": 18921
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/measurement.json",
+      "size": 6388
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/.runner.lock",
+      "size": 0
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/experiment_manifest.json",
+      "size": 46978
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/summary.json",
+      "size": 1633
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/summary.csv",
+      "size": 392
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/complete.json",
+      "size": 198
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/arms/auto/integrity.json",
+      "size": 2320
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/arms/auto/attempt-0001/launch.json",
+      "size": 1107
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/arms/auto/attempt-0001/server.log",
+      "size": 69266
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/arms/auto/attempt-0001/bootstrap.json",
+      "size": 364
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/arms/auto/attempt-0001/allocation.json",
+      "size": 26626
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/arms/auto/attempt-0001/native_evidence.json",
+      "size": 1755
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/arms/auto/attempt-0001/server_manifest.json",
+      "size": 2135
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/arms/auto/attempt-0001/eval-gsm8k.log",
+      "size": 810
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/arms/auto/attempt-0001/eval-narrativeqa.log",
+      "size": 641
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/arms/auto/attempt-0001/eval-qasper.log",
+      "size": 631
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/arms/auto/attempt-0001/eval-multifieldqa_en.log",
+      "size": 649
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/arms/auto/attempt-0001/eval-2wikimqa.log",
+      "size": 635
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/arms/auto/attempt-0001/eval-hotpotqa.log",
+      "size": 635
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/arms/auto/attempt-0001/eval-musique.log",
+      "size": 633
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/arms/auto/attempt-0001/eval-lcc.log",
+      "size": 625
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/arms/auto/attempt-0001/eval-repobench-p.log",
+      "size": 641
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/runs/gsm8k/auto.config.json",
+      "size": 3798
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/runs/gsm8k/auto.jsonl",
+      "size": 176296
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/runs/narrativeqa/auto.config.json",
+      "size": 3602
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/runs/narrativeqa/auto.jsonl",
+      "size": 152408
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/runs/qasper/auto.config.json",
+      "size": 3592
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/runs/qasper/auto.jsonl",
+      "size": 97191
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/runs/multifieldqa_en/auto.config.json",
+      "size": 3608
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/runs/multifieldqa_en/auto.jsonl",
+      "size": 65543
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/runs/2wikimqa/auto.config.json",
+      "size": 3594
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/runs/2wikimqa/auto.jsonl",
+      "size": 79521
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/runs/hotpotqa/auto.config.json",
+      "size": 3594
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/runs/hotpotqa/auto.jsonl",
+      "size": 82222
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/runs/musique/auto.config.json",
+      "size": 3592
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/runs/musique/auto.jsonl",
+      "size": 105693
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/runs/lcc/auto.config.json",
+      "size": 3579
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/runs/lcc/auto.jsonl",
+      "size": 48662
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/runs/repobench-p/auto.config.json",
+      "size": 3595
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/runs/repobench-p/auto.jsonl",
+      "size": 167521
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/scores/gsm8k/auto.json",
+      "size": 13876
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/scores/narrativeqa/auto.json",
+      "size": 583
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/scores/qasper/auto.json",
+      "size": 565
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/scores/multifieldqa_en/auto.json",
+      "size": 587
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/scores/2wikimqa/auto.json",
+      "size": 547
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/scores/hotpotqa/auto.json",
+      "size": 554
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/scores/musique/auto.json",
+      "size": 546
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/scores/lcc/auto.json",
+      "size": 549
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/bf16/quality/scores/repobench-p/auto.json",
+      "size": 557
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/docker_command.json",
+      "size": 2584
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/container.log",
+      "size": 0
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/container_identity.json",
+      "size": 1509
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/lease.json",
+      "size": 138
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/runtime_environment.json",
+      "size": 851
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/scorer_cpu_preflight.log",
+      "size": 364
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality_command.json",
+      "size": 1925
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality.log",
+      "size": 2001
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/gpu_telemetry.csv",
+      "size": 19971
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/measurement.json",
+      "size": 6564
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/.runner.lock",
+      "size": 0
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/experiment_manifest.json",
+      "size": 47281
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/summary.json",
+      "size": 1737
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/summary.csv",
+      "size": 500
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/complete.json",
+      "size": 198
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/integrity.json",
+      "size": 2320
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/launch.json",
+      "size": 1302
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/server.log",
+      "size": 78002
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/bootstrap.json",
+      "size": 364
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/allocation.json",
+      "size": 44194
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/native_evidence.json",
+      "size": 2117
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/server_manifest.json",
+      "size": 2332
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/eval-gsm8k.log",
+      "size": 842
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/eval-narrativeqa.log",
+      "size": 649
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/eval-qasper.log",
+      "size": 639
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/eval-multifieldqa_en.log",
+      "size": 660
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/eval-2wikimqa.log",
+      "size": 646
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/eval-hotpotqa.log",
+      "size": 646
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/eval-musique.log",
+      "size": 644
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/eval-lcc.log",
+      "size": 636
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/eval-repobench-p.log",
+      "size": 652
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/runs/gsm8k/fp8-e4m3.config.json",
+      "size": 4011
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/runs/gsm8k/fp8-e4m3.jsonl",
+      "size": 176309
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/runs/narrativeqa/fp8-e4m3.config.json",
+      "size": 3815
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/runs/narrativeqa/fp8-e4m3.jsonl",
+      "size": 152402
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/runs/qasper/fp8-e4m3.config.json",
+      "size": 3805
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/runs/qasper/fp8-e4m3.jsonl",
+      "size": 97188
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/runs/multifieldqa_en/fp8-e4m3.config.json",
+      "size": 3821
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/runs/multifieldqa_en/fp8-e4m3.jsonl",
+      "size": 65543
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/runs/2wikimqa/fp8-e4m3.config.json",
+      "size": 3807
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/runs/2wikimqa/fp8-e4m3.jsonl",
+      "size": 79521
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/runs/hotpotqa/fp8-e4m3.config.json",
+      "size": 3807
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/runs/hotpotqa/fp8-e4m3.jsonl",
+      "size": 82189
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/runs/musique/fp8-e4m3.config.json",
+      "size": 3805
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/runs/musique/fp8-e4m3.jsonl",
+      "size": 105692
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/runs/lcc/fp8-e4m3.config.json",
+      "size": 3792
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/runs/lcc/fp8-e4m3.jsonl",
+      "size": 48698
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/runs/repobench-p/fp8-e4m3.config.json",
+      "size": 3808
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/runs/repobench-p/fp8-e4m3.jsonl",
+      "size": 167774
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/scores/gsm8k/fp8_e4m3.json",
+      "size": 14399
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/scores/narrativeqa/fp8_e4m3.json",
+      "size": 600
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/scores/qasper/fp8_e4m3.json",
+      "size": 596
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/scores/multifieldqa_en/fp8_e4m3.json",
+      "size": 603
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/scores/2wikimqa/fp8_e4m3.json",
+      "size": 563
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/scores/hotpotqa/fp8_e4m3.json",
+      "size": 596
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/scores/musique/fp8_e4m3.json",
+      "size": 562
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/scores/lcc/fp8_e4m3.json",
+      "size": 566
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/output/fp8_e4m3/quality/scores/repobench-p/fp8_e4m3.json",
+      "size": 573
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/input/approved_data_manifest.json",
+      "size": 3374
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/input/five_train_examples.json",
+      "size": 2002
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/input/source.bundle",
+      "size": 18021
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/input/pilot/2wikimqa.jsonl",
+      "size": 77256
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/input/pilot/gsm8k.jsonl",
+      "size": 39892
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/input/pilot/hotpotqa.jsonl",
+      "size": 79849
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/input/pilot/lcc.jsonl",
+      "size": 45862
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/input/pilot/multifieldqa_en.jsonl",
+      "size": 63172
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/input/pilot/musique.jsonl",
+      "size": 103402
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/input/pilot/narrativeqa.jsonl",
+      "size": 149900
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/input/pilot/pilot_manifest.json",
+      "size": 2935
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/input/pilot/qasper.jsonl",
+      "size": 94571
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/input/pilot/repobench-p.jsonl",
+      "size": 164591
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/input/scorer/LongBench/metrics.py",
+      "size": 5190
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/input/scorer/LongBench/config/dataset2maxlen.json",
+      "size": 459
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/input/scorer/LongBench/config/dataset2prompt.json",
+      "size": 5437
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/runtime/kv_controller/__init__.py",
+      "size": 70
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/runtime/kv_controller/approval.py",
+      "size": 9391
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/runtime/kv_controller/durable.py",
+      "size": 2198
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/runtime/kv_controller/evidence.py",
+      "size": 26375
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/runtime/kv_controller/policy.py",
+      "size": 13434
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/runtime/kv_controller/processes.py",
+      "size": 1907
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/runtime/kv_controller/production.py",
+      "size": 21279
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/runtime/kv_controller/supervisor.py",
+      "size": 30326
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/runtime/kv_controller/watchdog.py",
+      "size": 3713
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/runtime/kv_controller/worker.py",
+      "size": 16519
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/ticket.json",
+      "size": 10241
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/result.json",
+      "size": 790
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/COMPLETE",
+      "size": 85
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/events.jsonl",
+      "size": 2998
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/state.json",
+      "size": 790
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/owned_containers.json",
+      "size": 3103
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/WATCHDOG_FINISHED.json",
+      "size": 197
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/watchdog_result.json",
+      "size": 128
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/SUPERVISOR_STARTED.json",
+      "size": 568
+    }
+  ],
+  "summary": {
+    "bf16": {
+      "scope": "protocol_pilot_no_full_quality_claim",
+      "tasks": [
+        {
+          "task": "gsm8k",
+          "arm": "auto",
+          "n": 64,
+          "scores": {
+            "auto_strict_em": 0.640625,
+            "auto_flexible_em": 0.890625
+          },
+          "length_exhaustion": 0
+        },
+        {
+          "task": "narrativeqa",
+          "arm": "auto",
+          "n": 2,
+          "scores": {
+            "auto": 0.23076923076923075
+          },
+          "length_exhaustion": 0
+        },
+        {
+          "task": "qasper",
+          "arm": "auto",
+          "n": 2,
+          "scores": {
+            "auto": 0.7
+          },
+          "length_exhaustion": 0
+        },
+        {
+          "task": "multifieldqa_en",
+          "arm": "auto",
+          "n": 2,
+          "scores": {
+            "auto": 0.868421052631579
+          },
+          "length_exhaustion": 0
+        },
+        {
+          "task": "2wikimqa",
+          "arm": "auto",
+          "n": 2,
+          "scores": {
+            "auto": 0.0
+          },
+          "length_exhaustion": 0
+        },
+        {
+          "task": "hotpotqa",
+          "arm": "auto",
+          "n": 2,
+          "scores": {
+            "auto": 0.625
+          },
+          "length_exhaustion": 0
+        },
+        {
+          "task": "musique",
+          "arm": "auto",
+          "n": 2,
+          "scores": {
+            "auto": 0.0
+          },
+          "length_exhaustion": 0
+        },
+        {
+          "task": "lcc",
+          "arm": "auto",
+          "n": 2,
+          "scores": {
+            "auto": 0.565
+          },
+          "length_exhaustion": 2
+        },
+        {
+          "task": "repobench-p",
+          "arm": "auto",
+          "n": 2,
+          "scores": {
+            "auto": 0.485
+          },
+          "length_exhaustion": 2
+        }
+      ],
+      "longbench_8_task_macro": {
+        "auto": 0.4342737854251012
+      },
+      "paired": "paired/<task>/<arm>/paired_scores.json"
+    },
+    "fp8_e4m3": {
+      "scope": "protocol_pilot_no_full_quality_claim",
+      "tasks": [
+        {
+          "task": "gsm8k",
+          "arm": "fp8_e4m3",
+          "n": 64,
+          "scores": {
+            "fp8-e4m3_strict_em": 0.65625,
+            "fp8-e4m3_flexible_em": 0.890625
+          },
+          "length_exhaustion": 0
+        },
+        {
+          "task": "narrativeqa",
+          "arm": "fp8_e4m3",
+          "n": 2,
+          "scores": {
+            "fp8-e4m3": 0.13333333333333333
+          },
+          "length_exhaustion": 0
+        },
+        {
+          "task": "qasper",
+          "arm": "fp8_e4m3",
+          "n": 2,
+          "scores": {
+            "fp8-e4m3": 0.7093023255813953
+          },
+          "length_exhaustion": 0
+        },
+        {
+          "task": "multifieldqa_en",
+          "arm": "fp8_e4m3",
+          "n": 2,
+          "scores": {
+            "fp8-e4m3": 0.868421052631579
+          },
+          "length_exhaustion": 0
+        },
+        {
+          "task": "2wikimqa",
+          "arm": "fp8_e4m3",
+          "n": 2,
+          "scores": {
+            "fp8-e4m3": 0.0
+          },
+          "length_exhaustion": 0
+        },
+        {
+          "task": "hotpotqa",
+          "arm": "fp8_e4m3",
+          "n": 2,
+          "scores": {
+            "fp8-e4m3": 0.28571428571428575
+          },
+          "length_exhaustion": 0
+        },
+        {
+          "task": "musique",
+          "arm": "fp8_e4m3",
+          "n": 2,
+          "scores": {
+            "fp8-e4m3": 0.0
+          },
+          "length_exhaustion": 0
+        },
+        {
+          "task": "lcc",
+          "arm": "fp8_e4m3",
+          "n": 2,
+          "scores": {
+            "fp8-e4m3": 0.585
+          },
+          "length_exhaustion": 2
+        },
+        {
+          "task": "repobench-p",
+          "arm": "fp8_e4m3",
+          "n": 2,
+          "scores": {
+            "fp8-e4m3": 0.225
+          },
+          "length_exhaustion": 2
+        }
+      ],
+      "longbench_8_task_macro": {
+        "fp8_e4m3": 0.3508463746575742
+      },
+      "paired": "unavailable: baseline not selected"
+    }
+  }
+}

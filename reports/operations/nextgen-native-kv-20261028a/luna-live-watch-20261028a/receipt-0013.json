@@ -1,0 +1,47 @@
+{
+  "observed_utc": "2026-10-28T15:34:36.247041+00:00",
+  "purpose": "post-deadline readonly watchdog confirmation",
+  "remote": {
+    "live_owned_containers": [],
+    "remote_status": "UNKNOWN",
+    "result_status": "UNKNOWN",
+    "state_status": "UNKNOWN",
+    "supervisor_alive": false,
+    "watchdog": {
+      "WATCHDOG_FINISHED.json": {
+        "exists": false
+      },
+      "WATCHDOG_READY.json": {
+        "exists": true,
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "pid": 1143680,
+          "start_ticks": 379854386,
+          "uid": 1005
+        },
+        "identity_alive": false,
+        "sha256": "aac1f5465201bf342ea1b6c9f9473b84f68e0e1529bdea129fc55822ea8066c5"
+      },
+      "watchdog_result.json": {
+        "exists": true,
+        "keys": [
+          "actions",
+          "request_sha256",
+          "status"
+        ],
+        "sha256": "b718f54f57caa93d688d751931b0177bc4143a77b7e6a3449a5b516d6057bf66",
+        "status": "DEADLINE_ENFORCED"
+      }
+    },
+    "watchdog_result_keys": [
+      "actions",
+      "request_sha256",
+      "status"
+    ],
+    "watchdog_result_status": "DEADLINE_ENFORCED"
+  },
+  "schema": "luna-live-watch-receipt-v1",
+  "sequence": 13,
+  "ticket_run_id": "nextgen-fp8-qwen38-quality-core1720-r2-20261028o",
+  "ticket_validation": "remote operation=status check_ticket(False)+existing, mutation=False"
+}

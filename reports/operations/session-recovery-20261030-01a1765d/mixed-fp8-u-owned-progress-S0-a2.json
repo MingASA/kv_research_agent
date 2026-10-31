@@ -1,0 +1,17 @@
+{
+  "classification": "reported_by_bounded_readonly_monitor",
+  "utc": "2026-10-30T21:43:25.005219Z",
+  "response_sha256": "0817c5215afa30bc2c89595d074083be35e0d3eb9de50fb81906008611ada35e",
+  "run_id": "nextgen-fp8fa2-qwen38-mixed8192-quality1720-r0-20261030u",
+  "status": "RUNNING",
+  "same_owned_CID_as_a1": true,
+  "same_xllm_CUDA_PID": 19269,
+  "GPU7_MiB": 75459,
+  "GPU7_util_percent": 100,
+  "other_GPUs_idle_snapshot": true,
+  "quality_complete_LF_rows": 1358,
+  "quality_bytes": 11229544,
+  "partial_line": false,
+  "last_row_metadata_not_read_reason": "exceeds original64KiB bounded parse cap",
+  "quality_scored_or_accepted": false
+}

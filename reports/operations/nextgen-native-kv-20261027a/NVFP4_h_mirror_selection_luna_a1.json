@@ -1,0 +1,273 @@
+{
+  "core_policy": "No core-named or >16MiB file found in selected inventory; no core body was transferred.",
+  "excluded_scopes": [
+    "source_repo (including .git and checkout contents)",
+    "cache",
+    "other non-output working directories",
+    "model weights"
+  ],
+  "expected_remote_identity": {
+    "gid": 1005,
+    "hostname": "A03-R40-I18-195-B000010.JD.LOCAL",
+    "uid": 1005
+  },
+  "files": [
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/input/source.bundle",
+      "size": 70909
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/input/validation.json",
+      "size": 146
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/runtime/kv_controller/__init__.py",
+      "size": 70
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/runtime/kv_controller/aiperf_cli_admission.py",
+      "size": 2629
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/runtime/kv_controller/approval.py",
+      "size": 9391
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/runtime/kv_controller/bf16q_operator.py",
+      "size": 4563
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/runtime/kv_controller/cli.py",
+      "size": 12735
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/runtime/kv_controller/component_profile.py",
+      "size": 8059
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/runtime/kv_controller/discovery.py",
+      "size": 3415
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/runtime/kv_controller/dispatch.py",
+      "size": 5674
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/runtime/kv_controller/durable.py",
+      "size": 2198
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/runtime/kv_controller/evidence.py",
+      "size": 260
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/runtime/kv_controller/native_tools.py",
+      "size": 14521
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/runtime/kv_controller/nextgen.py",
+      "size": 30931
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/runtime/kv_controller/policy.py",
+      "size": 30427
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/runtime/kv_controller/prefill_operator.py",
+      "size": 3709
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/runtime/kv_controller/processes.py",
+      "size": 2472
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/runtime/kv_controller/production.py",
+      "size": 39677
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/runtime/kv_controller/protocols.py",
+      "size": 8186
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/runtime/kv_controller/quota.py",
+      "size": 15684
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/runtime/kv_controller/range_probe.py",
+      "size": 10143
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/runtime/kv_controller/remote_rpc.py",
+      "size": 23430
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/runtime/kv_controller/scale_coverage.py",
+      "size": 7085
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/runtime/kv_controller/service_metrics.py",
+      "size": 6699
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/runtime/kv_controller/supervisor.py",
+      "size": 39177
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/runtime/kv_controller/trace_serving.py",
+      "size": 11331
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/runtime/kv_controller/transport.py",
+      "size": 6238
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/runtime/kv_controller/watchdog.py",
+      "size": 3713
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/runtime/kv_controller/worker.py",
+      "size": 17361
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/output/nvfp4/container.log",
+      "size": 0
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/output/nvfp4/container_identity.json",
+      "size": 1508
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/output/nvfp4/docker_command.json",
+      "size": 2553
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/output/nvfp4/lease.json",
+      "size": 138
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/output/nvfp4/measurement.json",
+      "size": 11267
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/output/nvfp4/native_pages/acceptance.json",
+      "size": 404
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/output/nvfp4/native_pages/nvfp4-chunked_prefill.json",
+      "size": 5110
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/output/nvfp4/native_pages/nvfp4-decode.json",
+      "size": 5100
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/output/nvfp4/native_pages/nvfp4-prefill.json",
+      "size": 5102
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/output/nvfp4/operator.log",
+      "size": 3981
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/output/nvfp4/operator_command.json",
+      "size": 146
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/output/nvfp4/operator_result.json",
+      "size": 10012
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/output/nvfp4/runtime_environment.json",
+      "size": 758
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/COMPLETE",
+      "size": 85
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/PREPARED.json",
+      "size": 98
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/START_INTENT.json",
+      "size": 86
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/SUPERVISOR_PROCESS.json",
+      "size": 488
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/SUPERVISOR_STARTED.json",
+      "size": 571
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/WATCHDOG_FINISHED.json",
+      "size": 197
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/WATCHDOG_READY.json",
+      "size": 572
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/dispatch.lock",
+      "size": 0
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/events.jsonl",
+      "size": 1497
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/owned_containers.json",
+      "size": 1630
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/result.json",
+      "size": 617
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/state.json",
+      "size": 617
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/supervisor.lock",
+      "size": 0
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/supervisor.log",
+      "size": 0
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/ticket.json",
+      "size": 10417
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/watchdog.log",
+      "size": 0
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/watchdog_config.json",
+      "size": 178
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h/watchdog_result.json",
+      "size": 128
+    }
+  ],
+  "inventory_file_count": 60,
+  "remote_base": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800",
+  "remote_run_root": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/runs/nextgen-nvfp4-pages-sm90-r0-20261027h",
+  "run_id": "nextgen-nvfp4-pages-sm90-r0-20261027h",
+  "schema": "kv-complete-run-mirror-selection-v1",
+  "scope": [
+    "entire input/",
+    "entire runtime/",
+    "entire runtime_support/ if present",
+    "entire output/ including native_pages/ and operator logs",
+    "all regular root-level terminal/watchdog/events/ticket/state files"
+  ],
+  "selected_total_bytes": 454093,
+  "terminal_result_sha256": "028c0cfc348f8f417180b485e6259d6d1d4d83ed87b587f04b1a541d423b197a",
+  "terminal_status": "COMPLETE",
+  "whole_run_bytes_note": "result.json new_output_bytes accounts for the whole new run; it does not describe this selected mirror scope.",
+  "whole_run_new_output_bytes": 158901254
+}

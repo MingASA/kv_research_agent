@@ -1,0 +1,82 @@
+{
+  "observed_utc": "2026-10-26T04:29:35.229819+00:00",
+  "checks": [
+    {
+      "cmd": [
+        "id"
+      ],
+      "rc": 0,
+      "stdout": "uid=1005(yinjinrun) gid=1005(yinjinrun) groups=1005(yinjinrun),982(docker)\n",
+      "stderr": ""
+    },
+    {
+      "cmd": [
+        "hostname"
+      ],
+      "rc": 0,
+      "stdout": "A03-R40-I18-195-B000010.JD.LOCAL\n",
+      "stderr": ""
+    },
+    {
+      "cmd": [
+        "nvidia-smi",
+        "--query-gpu=index,uuid,memory.used,utilization.gpu",
+        "--format=csv,noheader,nounits"
+      ],
+      "rc": 0,
+      "stdout": "0, GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 0, 0\n1, GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 0, 0\n2, GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 0, 0\n3, GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 0, 0\n4, GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 0, 0\n5, GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 0, 0\n6, GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 0, 0\n7, GPU-47211491-ba0d-78bf-5c84-f968c0648213, 0, 0\n",
+      "stderr": ""
+    },
+    {
+      "cmd": [
+        "nvidia-smi",
+        "--query-compute-apps=gpu_uuid,pid,used_gpu_memory",
+        "--format=csv,noheader,nounits"
+      ],
+      "rc": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "cmd": [
+        "docker",
+        "ps",
+        "--filter",
+        "label=cjyu.aiperf.run",
+        "--format",
+        "{{.ID}} {{.Names}} {{.Status}}"
+      ],
+      "rc": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "cmd": [
+        "tmux",
+        "list-sessions",
+        "-F",
+        "#{session_name} #{session_id}"
+      ],
+      "rc": 1,
+      "stdout": "",
+      "stderr": "no server running on /tmp/tmux-1005/default\n"
+    }
+  ],
+  "processes_with_project_cwd": [],
+  "historical_quality_hashes": {
+    "shard_manifest_sha256": "ea19f47ebae67e583ca6cfc8bb80c1f55382763e970210784146ef1f98183343",
+    "expected_shard_manifest_sha256": "ea19f47ebae67e583ca6cfc8bb80c1f55382763e970210784146ef1f98183343",
+    "summary_sha256": "b7dd8c9d8b787c06a8a2ffc54a093d9f8b0ebad92f3c3814f33301649adb2cc6",
+    "expected_summary_sha256": "b7dd8c9d8b787c06a8a2ffc54a093d9f8b0ebad92f3c3814f33301649adb2cc6",
+    "csv_sha256": "9bfc4c76b85e3f591e61d98019d1ba39e9013f31247525b46a384649b364f6a3",
+    "expected_csv_sha256": "9bfc4c76b85e3f591e61d98019d1ba39e9013f31247525b46a384649b364f6a3"
+  },
+  "aiperf_inputs_loaders": [
+    {
+      "path": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/.venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/inputs_json.py",
+      "sha256": "9d22b2f2f71fcb8cf20916809348976bbbc066d2007a05d790464a4fd27bcdc1",
+      "text": "# SPDX-FileCopyrightText: Copyright (c) 2025-2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.\n# SPDX-License-Identifier: Apache-2.0\n\"\"\"Inputs JSON payload loader for verbatim API replay.\n\nLoads AIPerf InputsFile format (``{\"data\": [{\"session_id\": \"...\", \"payloads\": [...]}]}``)\nas raw payloads. Preserves multi-turn session structure. Each payload is sent\ndirectly to the transport with zero endpoint formatting.\n\"\"\"\n\nfrom __future__ import annotations\n\nfrom pathlib import Path\n\nimport orjson\n\nfrom aiperf.common.enums import ConversationContextMode\nfrom aiperf.common.models import Conversation, Turn\nfrom aiperf.dataset.loader.base_loader import BaseRawPayloadLoader, LoaderProbeData\nfrom aiperf.dataset.loader.models import InputsJsonSession\n\n\nclass InputsJsonPayloadLoader(BaseRawPayloadLoader):\n    \"\"\"Dataset loader for AIPerf inputs.json files with raw payloads.\n\n    Reads a JSON file with structure::\n\n        {\"data\": [{\"session_id\": \"abc\", \"payloads\": [{...}, {...}]}]}\n\n    Each session maps to a multi-turn Conversation. Each payload in the\n    ``payloads`` list becomes a Turn with ``raw_payload`` set, so the\n    transport sends it verbatim without endpoint formatting.\n    \"\"\"\n\n    @classmethod\n    def can_load(\n        cls, data: LoaderProbeData | None = None, filename: str | Path | None = None\n    ) -> bool:\n        \"\"\"Return True for InputsFile format: top-level ``data`` list with ``payloads`` items.\"\"\"\n        if isinstance(data, dict):\n            data_list = data.get(\"data\")\n            if isinstance(data_list, list) and len(data_list) > 0:\n                first = data_list[0]\n                if isinstance(first, dict) and isinstance(first.get(\"payloads\"), list):\n                    return True\n\n        if filename is not None:\n            path = Path(filename)\n            if path.is_file() and path.suffix == \".json\":\n                try:\n                    content = orjson.loads(path.read_bytes())\n                    return cls.can_load(data=content)\n                except (orjson.JSONDecodeError, OSError):\n                    return False\n\n        return False\n\n    def load_dataset(self) -> dict[str, list[InputsJsonSession]]:\n        \"\"\"Load the JSON file and parse each entry into InputsJsonSession.\n\n        Rejects duplicate ``session_id`` entries in ``data[]`` with an\n        index-rich error — otherwise the second entry would silently\n        overwrite the first and the user would lose authored turns with\n        no warning. Mirrors ``DagJsonlLoader``'s line-numbered duplicate\n        check.\n\n        Returns:\n            Dictionary of session_id -> [InputsJsonSession].\n        \"\"\"\n        path = Path(self.filename)\n        content = orjson.loads(path.read_bytes())\n        data_list = content[\"data\"]\n\n        result: dict[str, list[InputsJsonSession]] = {}\n        for idx, entry in enumerate(data_list):\n            if not isinstance(entry, dict):\n                raise ValueError(\n                    f\"{path}: data[{idx}] must be an object, got {type(entry).__name__}\"\n                )\n            if \"session_id\" not in entry:\n                raise ValueError(\n                    f\"{path}: data[{idx}] missing required key 'session_id'\"\n                )\n            if \"payloads\" not in entry:\n                raise ValueError(f\"{path}: data[{idx}] missing required key 'payloads'\")\n            session = InputsJsonSession(\n                session_id=entry[\"session_id\"],\n                payloads=entry[\"payloads\"],\n            )\n            if session.session_id in result:\n                raise ValueError(\n                    f\"{path}: data[{idx}] duplicate session_id \"\n                    f\"'{session.session_id}' (already declared earlier in \"\n                    f\"the file); each session_id must be unique\"\n                )\n            result[session.session_id] = [session]\n\n        self.info(\n            f\"Loaded {len(result)} sessions \"\n            f\"({sum(len(s[0].payloads) for s in result.values())} total turns)\"\n        )\n        return result\n\n    def convert_to_conversations(\n        self, data: dict[str, list[InputsJsonSession]]\n    ) -> list[Conversation]:\n        \"\"\"Convert InputsJsonSession entries to Conversations with raw_payload turns.\n\n        Args:\n            data: Dictionary of session_id -> [InputsJsonSession].\n\n        Returns:\n            List of Conversations with multi-turn raw payloads.\n        \"\"\"\n        conversations: list[Conversation] = []\n        for session_id, sessions in data.items():\n            for session in sessions:\n                turns = [Turn(role=\"user\", raw_payload=p) for p in session.payloads]\n                conversations.append(\n                    Conversation(\n                        session_id=session_id,\n                        turns=turns,\n                        context_mode=ConversationContextMode.MESSAGE_ARRAY_WITH_RESPONSES,\n                    )\n                )\n        return conversations\n"
+    }
+  ],
+  "remote_mutations": 0
+}

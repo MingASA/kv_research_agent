@@ -1,0 +1,320 @@
+{
+  "files": [
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/docker_command.json",
+      "size": 2552
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/container.log",
+      "size": 0
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/container_identity.json",
+      "size": 1507
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/lease.json",
+      "size": 138
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/runtime_environment.json",
+      "size": 754
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/production_environment.json",
+      "size": 808
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/operator_acceptance.log",
+      "size": 548
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/operator_acceptance.json",
+      "size": 867
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/server_command.json",
+      "size": 737
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/server.log",
+      "size": 254992
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/native_backend.json",
+      "size": 474
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/allocation.json",
+      "size": 12546
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/aiperf_command.json",
+      "size": 687
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/aiperf.log",
+      "size": 81579
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/gpu_telemetry.csv",
+      "size": 10286
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/request_audit.json",
+      "size": 1130
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/measurement.json",
+      "size": 4345
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/artifacts/profile_export.jsonl",
+      "size": 4862750
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/artifacts/profile_export_raw.jsonl",
+      "size": 86512253
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/artifacts/profile_export_aiperf.csv",
+      "size": 7210
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/artifacts/profile_export_aiperf.json",
+      "size": 45870
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/artifacts/phase_manifest.json",
+      "size": 1041
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/artifacts/profile_export_console.txt",
+      "size": 16829
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/artifacts/.aiperf_results_ready.json",
+      "size": 52
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/artifacts/logs/aiperf.log",
+      "size": 77350
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/artifacts/phases/warmup/profile_export_aiperf.json",
+      "size": 23106
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/artifacts/phases/warmup/profile_export_aiperf.csv",
+      "size": 6981
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/artifacts/phases/profiling/profile_export_aiperf.json",
+      "size": 23293
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/artifacts/phases/profiling/profile_export_aiperf.csv",
+      "size": 7098
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/docker_command.json",
+      "size": 2572
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/container.log",
+      "size": 0
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/container_identity.json",
+      "size": 1510
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/lease.json",
+      "size": 138
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/runtime_environment.json",
+      "size": 847
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/production_environment.json",
+      "size": 969
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/operator_acceptance.log",
+      "size": 712
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/operator_acceptance.json",
+      "size": 1052
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/server_command.json",
+      "size": 741
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/server.log",
+      "size": 263136
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/native_backend.json",
+      "size": 631
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/allocation.json",
+      "size": 20034
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/aiperf_command.json",
+      "size": 687
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/aiperf.log",
+      "size": 81503
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/gpu_telemetry.csv",
+      "size": 8744
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/request_audit.json",
+      "size": 1124
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/measurement.json",
+      "size": 4343
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/artifacts/profile_export.jsonl",
+      "size": 5162879
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/artifacts/profile_export_raw.jsonl",
+      "size": 86210253
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/artifacts/profile_export_aiperf.csv",
+      "size": 7191
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/artifacts/profile_export_aiperf.json",
+      "size": 45725
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/artifacts/phase_manifest.json",
+      "size": 1041
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/artifacts/profile_export_console.txt",
+      "size": 16743
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/artifacts/.aiperf_results_ready.json",
+      "size": 52
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/artifacts/logs/aiperf.log",
+      "size": 77360
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/artifacts/phases/warmup/profile_export_aiperf.json",
+      "size": 23047
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/artifacts/phases/warmup/profile_export_aiperf.csv",
+      "size": 6992
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/artifacts/phases/profiling/profile_export_aiperf.json",
+      "size": 23207
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/artifacts/phases/profiling/profile_export_aiperf.csv",
+      "size": 7079
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/input/canonical_inputs.json",
+      "size": 5268923
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/input/production_manifest.json",
+      "size": 424589
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/input/source.bundle",
+      "size": 15892
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/runtime/kv_controller/__init__.py",
+      "size": 70
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/runtime/kv_controller/approval.py",
+      "size": 9391
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/runtime/kv_controller/durable.py",
+      "size": 2198
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/runtime/kv_controller/evidence.py",
+      "size": 26375
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/runtime/kv_controller/policy.py",
+      "size": 12149
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/runtime/kv_controller/processes.py",
+      "size": 1907
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/runtime/kv_controller/production.py",
+      "size": 15956
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/runtime/kv_controller/supervisor.py",
+      "size": 28283
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/runtime/kv_controller/watchdog.py",
+      "size": 3713
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/runtime/kv_controller/worker.py",
+      "size": 16357
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/ticket.json",
+      "size": 8171
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/result.json",
+      "size": 749
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/state.json",
+      "size": 749
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/events.jsonl",
+      "size": 3008
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/owned_containers.json",
+      "size": 3107
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/watchdog_result.json",
+      "size": 128
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/SUPERVISOR_STARTED.json",
+      "size": 571
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/WATCHDOG_FINISHED.json",
+      "size": 197
+    }
+  ]
+}

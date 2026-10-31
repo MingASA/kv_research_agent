@@ -1,0 +1,79 @@
+{
+  "classification": "confirmed_quality_reference_comparison_across_runs",
+  "reference_run": "prod-quality-bf16xqa-full1719-r0-20261027a",
+  "full_original_records_per_arm": 1719,
+  "reference_raw_files": 108,
+  "reference_raw_bytes": 43709322,
+  "reference_audit": "reports/operations/20261026T075846Z/BF16_XQA_full_quality_independent_audit_a1.json",
+  "reference_audit_sha256": "5a40a904937d538b10bcba74e48f3ac8512818f1fbcbf833886696e3b3928898",
+  "comparison_audit": "reports/operations/20261026T075846Z/BF16_XQA_full_quality_existing_FP8_comparison_a1.json",
+  "comparison_audit_sha256": "29e0d1efccd2c7ce5e94cf380457d4a4e2a60ac76a90f8e9778c51dc452e7114",
+  "task_scores": {
+    "gsm8k": {
+      "bf16_strict_em": 0.6974981046247157,
+      "bf16_flexible_em": 0.8923426838514026,
+      "fp8_e4m3_strict_em": 0.6997725549658832,
+      "fp8_e4m3_flexible_em": 0.8968915845337376
+    },
+    "narrativeqa": {
+      "bf16": 0.32469513570720465,
+      "fp8_e4m3": 0.3232341824841825
+    },
+    "qasper": {
+      "bf16": 0.4267397057449097,
+      "fp8_e4m3": 0.40802570517932035
+    },
+    "multifieldqa_en": {
+      "bf16": 0.4834765419936041,
+      "fp8_e4m3": 0.46524528250399527
+    },
+    "2wikimqa": {
+      "bf16": 0.5871148459383754,
+      "fp8_e4m3": 0.5864285714285714
+    },
+    "hotpotqa": {
+      "bf16": 0.6462380952380953,
+      "fp8_e4m3": 0.6339885057471265
+    },
+    "musique": {
+      "bf16": 0.3761548081548082,
+      "fp8_e4m3": 0.3510894174052068
+    },
+    "lcc": {
+      "bf16": 0.6742,
+      "fp8_e4m3": 0.6204
+    },
+    "repobench-p": {
+      "bf16": 0.4914,
+      "fp8_e4m3": 0.5118
+    }
+  },
+  "longbench_8_task_macro": {
+    "bf16": 0.5012523915971246,
+    "fp8_e4m3": 0.48752645809355033
+  },
+  "paired_bootstrap_95ci": {
+    "gsm8k_flexible_delta": [
+      -0.008339651250947688,
+      0.017437452615617893
+    ],
+    "longbench_macro_delta": [
+      -0.031019549121510497,
+      0.0026862889843743566
+    ]
+  },
+  "new_FP8_predictions": 0,
+  "same_paired_GPU_run": false,
+  "quality_accepted": false,
+  "source_commits": {
+    "new_BF16": "11e7cddbfe33eb21d209c7f48f5e461ac56545eb",
+    "retained_FP8": "ede2b9e7c61573825645a6b710a7534d0091bac2"
+  },
+  "limitations": [
+    "New BF16 deployment reference and retained FP8 predictions are different real runs",
+    "Original FP8 used80+1639 fragments; new BF16 uses full1719 in source order, with different cache/batch history",
+    "Greedy decoding does not guarantee identical outcomes across scheduling/numerical paths",
+    "Per-record bootstrap describes task sampling, not independent GPU-run repeatability",
+    "C8 benchmark proxies do not certify all production batches or user quality tolerance"
+  ]
+}

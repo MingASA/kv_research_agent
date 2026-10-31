@@ -1,0 +1,30 @@
+[
+  {
+    "sha_manifest": "results/mirrors/nextgen-bf16-qwen38-chat128-c16-r2-20261030e-complete-a1/SHA_MANIFEST.json",
+    "performance_audit": "reports/operations/session-recovery-20261030-01a1765d/BF16-E-independent-AIPerf-audit-a1.json"
+  },
+  {
+    "sha_manifest": "results/mirrors/nextgen-fp8fa2-qwen38-chat128-c16-r0-20261030c-complete-a1/SHA_MANIFEST.json",
+    "performance_audit": "reports/operations/session-recovery-20261030-01a1765d/FP8-C-independent-AIPerf-audit-a1.json"
+  },
+  {
+    "sha_manifest": "results/mirrors/nextgen-nvfp4-qwen38-chat128-c16-r0-20261030b-complete-a1/SHA_MANIFEST.json",
+    "performance_audit": "reports/operations/session-recovery-20261030-01a1765d/NVFP4-B-independent-AIPerf-audit-a1.json"
+  },
+  {
+    "sha_manifest": "results/mirrors/nextgen-bf16-qwen38-long16-c8-r0-20261030f-complete-a1/SHA_MANIFEST.json",
+    "performance_audit": "reports/operations/session-recovery-20261030-01a1765d/long-BF16-F-independent-AIPerf-audit-a1.json"
+  },
+  {
+    "sha_manifest": "results/mirrors/nextgen-fp8fa2-qwen38-long16-c8-r0-20261030h-complete-a1/SHA_MANIFEST.json",
+    "performance_audit": "reports/operations/session-recovery-20261030-01a1765d/long-FP8-H-independent-AIPerf-audit-a1.json"
+  },
+  {
+    "sha_manifest": "results/mirrors/nextgen-nvfp4-qwen38-long16-c8-r0-20261030g-complete-a1/SHA_MANIFEST.json",
+    "performance_audit": "reports/operations/session-recovery-20261030-01a1765d/long-NVFP4-G-independent-AIPerf-audit-a1.json"
+  },
+  {
+    "sha_manifest": "results/mirrors/nextgen-bf16-qwen38-prefix32-c16-r0-20261030o-complete-a1/SHA_MANIFEST.json",
+    "performance_audit": "reports/operations/session-recovery-20261030-01a1765d/prefix-BF16-O-independent-AIPerf-audit-a1.json"
+  }
+]

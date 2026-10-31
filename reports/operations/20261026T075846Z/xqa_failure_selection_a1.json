@@ -1,0 +1,206 @@
+{
+  "ok": true,
+  "files": [
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/output/fp8_e4m3/container.log",
+      "size": 1232
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/output/fp8_e4m3/container_identity.json",
+      "size": 1510
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/output/fp8_e4m3/docker_command.json",
+      "size": 2584
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/output/fp8_e4m3/lease.json",
+      "size": 138
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/output/fp8_e4m3/operator_acceptance.log",
+      "size": 1914
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/output/fp8_e4m3/runtime_environment.json",
+      "size": 851
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/output/fp8_e4m3/scorer_cpu_preflight.log",
+      "size": 364
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/input/approved_data_manifest.json",
+      "size": 3374
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/input/five_train_examples.json",
+      "size": 2002
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/input/pilot/2wikimqa.jsonl",
+      "size": 77256
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/input/pilot/gsm8k.jsonl",
+      "size": 39892
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/input/pilot/hotpotqa.jsonl",
+      "size": 79849
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/input/pilot/lcc.jsonl",
+      "size": 45862
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/input/pilot/multifieldqa_en.jsonl",
+      "size": 63172
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/input/pilot/musique.jsonl",
+      "size": 103402
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/input/pilot/narrativeqa.jsonl",
+      "size": 149900
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/input/pilot/pilot_manifest.json",
+      "size": 2935
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/input/pilot/qasper.jsonl",
+      "size": 94571
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/input/pilot/repobench-p.jsonl",
+      "size": 164591
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/input/scorer/LongBench/config/dataset2maxlen.json",
+      "size": 459
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/input/scorer/LongBench/config/dataset2prompt.json",
+      "size": 5437
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/input/scorer/LongBench/metrics.py",
+      "size": 5190
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/input/source.bundle",
+      "size": 26156
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/runtime/kv_controller/__init__.py",
+      "size": 70
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/runtime/kv_controller/approval.py",
+      "size": 9391
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/runtime/kv_controller/durable.py",
+      "size": 2198
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/runtime/kv_controller/evidence.py",
+      "size": 26375
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/runtime/kv_controller/policy.py",
+      "size": 14748
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/runtime/kv_controller/processes.py",
+      "size": 1907
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/runtime/kv_controller/production.py",
+      "size": 22922
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/runtime/kv_controller/supervisor.py",
+      "size": 32691
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/runtime/kv_controller/watchdog.py",
+      "size": 3713
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/runtime/kv_controller/worker.py",
+      "size": 16543
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/PREPARED.json",
+      "size": 98
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/START_INTENT.json",
+      "size": 86
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/SUPERVISOR_PROCESS.json",
+      "size": 487
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/SUPERVISOR_STARTED.json",
+      "size": 570
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/WATCHDOG_FINISHED.json",
+      "size": 197
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/WATCHDOG_READY.json",
+      "size": 571
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/dispatch.lock",
+      "size": 0
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/events.jsonl",
+      "size": 1514
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/owned_containers.json",
+      "size": 1629
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/result.json",
+      "size": 586
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/state.json",
+      "size": 586
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/supervisor.lock",
+      "size": 0
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/supervisor.log",
+      "size": 0
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/ticket.json",
+      "size": 10625
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/watchdog.log",
+      "size": 0
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/watchdog_config.json",
+      "size": 178
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-xqa-pilot80-r0-20261026a/watchdog_result.json",
+      "size": 128
+    }
+  ],
+  "total_bytes": 1020454
+}

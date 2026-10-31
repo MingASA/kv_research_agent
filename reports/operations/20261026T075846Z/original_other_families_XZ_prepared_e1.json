@@ -1,0 +1,33 @@
+{
+  "CPU_only": true,
+  "GPU_launched": false,
+  "proposals": [
+    {
+      "run_id": "prod-trace-xqa-burstgpt-s1-r0-20261027e",
+      "family": "burstgpt",
+      "requests": 6385,
+      "archive_bytes": 1352688,
+      "dataset_sha256": "e11eead9d36be1b4eef0b16a5819d71b3be290313fc13f0c7158e52eb568d6f9",
+      "gpu_uuid": "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a",
+      "classification": "CPU_frozen_proposal_not_dispatched"
+    },
+    {
+      "run_id": "prod-trace-xqa-conversation-s1-r0-20261027e",
+      "family": "conversation",
+      "requests": 1025,
+      "archive_bytes": 2973236,
+      "dataset_sha256": "0d06c694a17804ce99b99b0b28b5d99e47cf904ed99de226c7e9624bbca93afd",
+      "gpu_uuid": "GPU-a6169058-34c8-6edc-e4f5-779bf9a10421",
+      "classification": "CPU_frozen_proposal_not_dispatched"
+    },
+    {
+      "run_id": "prod-trace-xqa-synthetic-s1-r0-20261027e",
+      "family": "synthetic",
+      "requests": 995,
+      "archive_bytes": 2888248,
+      "dataset_sha256": "41b15b1dc80e3b909fc565b5ae231005c7c85268b28bcaed3fd86e599eea776f",
+      "gpu_uuid": "GPU-0cb28538-7e9f-1b66-750f-1b53ff309195",
+      "classification": "CPU_frozen_proposal_not_dispatched"
+    }
+  ]
+}

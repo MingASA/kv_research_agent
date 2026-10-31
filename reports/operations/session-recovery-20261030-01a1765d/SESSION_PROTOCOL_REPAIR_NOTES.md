@@ -1,0 +1,13 @@
+# W失败与会话停止协议修复
+
+原W的真实终态为FAILED，GPU已释放、账本SETTLED，实际490355487GPUus。完整109文件/13645634字节镜像保留。32条真实HTTP成功请求只覆盖27个唯一(session,turn)，重复了5个NarrativeQA首轮、缺失了5个GovReport后轮。原生产审计拒绝该记录；不得过滤重复项或将其当作冻结32请求性能。
+
+根因由CPU负对照实际复现：sequential dataset配合request-count上限会在快会话完成后再次取用该会话，慢会话还未全部结束。修复使用实际SDK已有num-sessions机制，令每phase显式绑定冻结session数量，并保留原request-count安全上限。真实CLI通过5个未改cohort共194条负载，C16/快慢响应混合；独立审计原始HTTP负载、实际元数据session-turn唯一性/全集/轮间顺序、SSE完成和使用量。CPU响应为一token fixture，不是模型预测或性能证据。1005个实际AIPerf Python源码SHA与远端一致。
+
+新WC以replicate1和typed session_protocol_recovery绑定原W ticket/request/result/failure-audit/原raw/source及新CPU proof。仅允许更换run路径、replicate、CLI proof及说明/experiment key；模型、质量、设备、配置、输入和压力case相同。远端重新核旧FAILED/释放/无live容器/无arm结果、20known/A-B-A/Graph与原错误及重复缺失清单。旧W不再次启动，旧X/Y未派发即INVALID保留，XC/YC新冻结。全部GPU新派发仍经launch_guarded_once。
+
+完整控制测试442项通过，源码SHA在测试前后相同。Luna限定本地只读审计报告未发现阻断问题，并建议补齐parser请求数/并发直接核对及实际session-turn身份检查，两项已实现并复核。该审计是reported静态审计，不代替实际GPU验收。
+
+排查中的CPU/控制失败同样保留：默认Python3.10缺numpy的首轮全suite失败，改用既有Python3.12环境后通过；本地parser首次使用不存在的/run/input.json被拒绝，换为现有冻结输入通过；WC首次CPU准备未提供恢复原因而被既有replicate策略拒绝，在创建run目录前退出，无ticket/intent/GPU；随后加上述明确契约，以全新exclusive b1回执准备。一次本地只读状态命令误用不存在的CLI status子命令（CLI exit2，未触及远端）；已改为现有remote_rpc的只读status接口，未重试任何GPU动作。
+
+WC票据controller_git_commit保留为发票时HEAD fd2238d；当时的未提交运行代码随后提交261ceea。冻结的每个controller模块逐SHA核对与261ceea一致，映射见session-protocol-code-provenance-a1.json。原票据没有修改；Python模型源031和C++源862/binary SHA均原样。原始失败、修复CPU证明和实际GPU重测是三个分别报告的证据层级。

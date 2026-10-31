@@ -1,0 +1,14 @@
+Running main() from /workspace/deps/vcpkg/buildtrees/gtest/src/v1.14.0-bcf93537a8.clean/googletest/src/gtest_main.cc
+Note: Google Test filter = KVCacheTest.Nvfp4AllocationAndPageCopiesIncludeLinearBlockScales:KVCacheTest.QuantizedAllocationMatchesBudgetAndCopiesScales
+[==========] Running 2 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 2 tests from KVCacheTest
+[ RUN      ] KVCacheTest.Nvfp4AllocationAndPageCopiesIncludeLinearBlockScales
+[       OK ] KVCacheTest.Nvfp4AllocationAndPageCopiesIncludeLinearBlockScales (39 ms)
+[ RUN      ] KVCacheTest.QuantizedAllocationMatchesBudgetAndCopiesScales
+[       OK ] KVCacheTest.QuantizedAllocationMatchesBudgetAndCopiesScales (0 ms)
+[----------] 2 tests from KVCacheTest (40 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test suite ran. (40 ms total)
+[  PASSED  ] 2 tests.

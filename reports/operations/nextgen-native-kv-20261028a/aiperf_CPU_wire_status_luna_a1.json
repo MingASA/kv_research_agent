@@ -1,0 +1,83 @@
+{
+  "endpoint": {
+    "fingerprint": "SHA256:QZwhu4BzgiOmHYABTUK1kXdAYHPun3iNioo69CKCgEI",
+    "host": "h800-41594a.fkpku.cn",
+    "port": 45291,
+    "user": "yinjinrun"
+  },
+  "error": null,
+  "expected_container_id": "8e942a3a5ec583975362bce68695bfde936b885f8f52b8beb31e897d344a4ec3",
+  "mutation": false,
+  "observed_at_utc": "2026-10-28T08:49:24.842675+00:00",
+  "operation": "status",
+  "payload_manifest_sha256": "f07d0f8f63de4b155a62e4f37271dce4d5ffb4f25775c8f40d35c007f6bfd783",
+  "remote_script_sha256": "8a3162f506da4ecf09f2d6d37d5cfcf4733b3403eed18432240f31fe025adc9d",
+  "remote_writes": false,
+  "response": {
+    "container": {
+      "ExitCode": 1,
+      "OOMKilled": false,
+      "Pid": 0,
+      "Running": false,
+      "Status": "exited"
+    },
+    "files": {
+      "CPU_ADMISSION.json": {
+        "sha256": "af7f5c77f653866fbe702c59d2de4389196bb382c16b52b56cea971e376bb6a2",
+        "value": {
+          "GPU_device_nodes": [],
+          "model_inference": false,
+          "network": "none_loopback_only",
+          "uid": 1005
+        }
+      },
+      "CPU_ERROR.json": {
+        "sha256": "4db51b47182f88d38b552dc8fbc4ecd5d65448353056535e7e7b8cbfde44cf35",
+        "value": {
+          "GPU_used": false,
+          "error": "RuntimeError: Actual AIPerf CPU wire returned1"
+        }
+      },
+      "PREPARED.json": {
+        "sha256": "c944a820dff3509b1793f052ff510dfad01c5baa5abe40320118aa0ef6ef1ceb",
+        "value": {
+          "GPU_requested": false,
+          "container_id": "8e942a3a5ec583975362bce68695bfde936b885f8f52b8beb31e897d344a4ec3"
+        }
+      },
+      "START_INTENT.json": {
+        "sha256": "6d6bf2496d2cad378e8b6637ac1980e7b36a198522585968e4d4311a29a2c2b5",
+        "value": {
+          "GPU_requested": false,
+          "operation": "start_exact_CPU_wire_once"
+        }
+      },
+      "manifest.json": {
+        "sha256": "a16d37892400a86589309b377e984b93ae4c8054b331811e45501c88c233d6c6",
+        "value": {
+          "CPU": 2,
+          "GPU_requested": false,
+          "asset_sha256": {
+            "chat128.json": "3645dbff184540f746c57b984feb47adda95e6902744d10899c894da807175df",
+            "driver.py": "d3cef5359207f54884604bd22b2c52b3106cda65077ac814a9d9e74af615ac27",
+            "long_prefix16x2.json": "18ef0e035bff1e8055fa989a7a07b467a697ef71ec26149c96a21e5db1b84035",
+            "long_unique16.json": "e38b0afedddec6be0248bb9b2faf60728c5d1f3433d440b1e1e51983ce93d984",
+            "warmup_chat16.json": "9214eed030ef60799a50508b51e8d3034189e0852189e57356ef2fd7e87c2381",
+            "warmup_long2.json": "f9e60c6a6e7d1b0220c6ca22160c33b781aae385b2e91f53534dbee8d9d3eaa3",
+            "wire.py": "ccc3e3bcdb4afb87e018e7896af3d4333b47979d1d18eb2a068db57f457f5c4e"
+          },
+          "id": "nextgen-aiperf-wire-20261028a",
+          "memory_GiB": 8,
+          "purpose": "Reuse actual existing AIPerf0.13 loader/transport, natural new-model chat/16longdocument payloads and prefix turns to local loopback fake server; no inference or global installs",
+          "state": "CPU_ONLY_PROTOCOL_VALIDATION_NOT_MODEL_BENCHMARK",
+          "wall_seconds": 600
+        }
+      }
+    },
+    "logs": "Traceback (most recent call last):\n  File \"/workspace/agent_work/scratch/nextgen-aiperf-wire-20261028a/driver.py\", line 12, in <module>\n    if r.returncode:raise RuntimeError('Actual AIPerf CPU wire returned'+str(r.returncode))\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Actual AIPerf CPU wire returned1\n",
+    "ok": true,
+    "remote_writes": false,
+    "root": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/scratch/nextgen-aiperf-wire-20261028a"
+  },
+  "schema": "nextgen-aiperf-wire-readonly-reconciliation-luna-v1"
+}

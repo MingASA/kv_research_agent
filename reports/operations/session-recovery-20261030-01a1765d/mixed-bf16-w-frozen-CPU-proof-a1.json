@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-30T21:35:03.006827+00:00",
+  "run_id": "nextgen-bf16-qwen38-mixed8192-prefix32-r0-20261030w",
+  "assets": 52,
+  "all_frozen_SHA_verified": true,
+  "actual_frozen_policy_passed": true,
+  "package_sha256": "d3f2def34edc1f1a6c83e04bacb24b1704d3221a18bfe0faa952849b12e305c3",
+  "new_profile_fresh1720_score_sha256": "bd7f1ef18e6ef7152df8e29875138ab829ddb69a248d2c795bd69f5a94f84314",
+  "remote_asset_reuse": 45,
+  "GPU_launched": false
+}

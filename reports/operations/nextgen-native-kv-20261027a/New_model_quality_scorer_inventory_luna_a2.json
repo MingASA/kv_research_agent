@@ -1,0 +1,76 @@
+{
+  "schema": "kv-nextgen-quality-scorer-inventory-addendum-v1",
+  "classification": "confirmed_read_only_cpu_import_and_source_inspection",
+  "supplements": "New_model_quality_scorer_inventory_luna_a1.json",
+  "no_model_outputs_scored": true,
+  "environment": {
+    "python": "/home/mingasa/venvs/vllm/bin/python",
+    "version": "3.12",
+    "CUDA_VISIBLE_DEVICES": "empty",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONPATH_additions": "not used; proposed .deps/protocol-validation-20261026 and .deps/aiperf-runtime-20261026 both absent",
+    "cwd": "/home/mingasa/kv-research-agent"
+  },
+  "scorer_source": {
+    "path": "/home/mingasa/projects/xllm_quant_kvcache-agent-nextgen-native-kv-20261027/tools/eval_kv_cache_quality.py",
+    "git_HEAD": "849bcbf93aa3e80e3538f469e2dae48c40b0cc79",
+    "sha256": "a42e92303a8e836389ae9f3599a0afad8914a737caf9dcc3e5fb4e1b88a9495d",
+    "_gsm_score_line": 319,
+    "_score_pair_line": 334,
+    "module_import": "passed using importlib.util.spec_from_file_location; no model-loading call/path invoked",
+    "functions_present": [
+      "GSM_STRICT",
+      "GSM_FLEXIBLE",
+      "GSM_IGNORE",
+      "_gsm_score",
+      "_score_pair",
+      "_longbench_assets"
+    ]
+  },
+  "gsm8k": {
+    "strict_pattern": "#### (\\-?[0-9\\.\\,]+)",
+    "flexible_pattern": "(-?[$0-9.,]{2,})|(-?[0-9]+)",
+    "ignore_patterns": [
+      ",",
+      "\\$",
+      "(?s).*#### ",
+      "\\.$"
+    ],
+    "cleanup": "reference target = answer.split(\"#### \")[-1].rstrip(); both prediction values and target have ignore regex replacements then lowercase; strict takes first strict match; flexible takes last flexible match, preferring first capture group",
+    "probe": "synthetic function smoke check returned (1.0, 1.0); this was not a dataset/model quality score",
+    "model_loading": "functions use regex/re only; source module imports no model package and import succeeded without weights/model initialization"
+  },
+  "longbench_metrics": {
+    "metrics_py_path": "results/mirrors/quality-protocols-20261026T075846Z/files/support/inputs/longbench-scorer/LongBench/metrics.py",
+    "sha256": "e22e2a2662e0f7e683137fa3541f64edb6a801e9138d16d2f3459a6ab9941323",
+    "import_probe": "passed with vllm venv; metrics module loaded; no model loading",
+    "dependencies_versions": {
+      "jieba": "0.42.1",
+      "rouge": "1.0.1",
+      "fuzzywuzzy": "0.18.0",
+      "numpy": "2.3.5",
+      "nltk": "not installed/package metadata unavailable"
+    },
+    "dependency_imports": [
+      "jieba",
+      "fuzzywuzzy",
+      "rouge"
+    ],
+    "score_pair_observed_mapping": {
+      "narrativeqa": "qa_f1_score (source behavior: only gov_report selects rouge_score)",
+      "qasper": "qa_f1_score",
+      "multifieldqa_en": "qa_f1_score",
+      "2wikimqa": "qa_f1_score",
+      "hotpotqa": "qa_f1_score",
+      "musique": "qa_f1_score",
+      "lcc": "code_sim_score",
+      "repobench-p": "code_sim_score"
+    },
+    "cleaning_and_aggregation": "for non-GSM tasks, scalar reference is wrapped as a list when needed, then max(metric(prediction, answer) for answer in answers); metrics.py performs task metric normalization/tokenization internally. _score_pair itself does not strip or clean prediction text. _longbench_assets loads dataset2prompt/maxlen config plus metrics.py; no model is loaded."
+  },
+  "interpretation": {
+    "a1_probe_scope": "a1 used system python3 and failed because system interpreter lacked jieba; that did not establish dependencies were absent from all local environments",
+    "reuse": "_gsm_score is locally reusable as pure function from source HEAD849. _score_pair can be reused after supplying records, model predictions, and the exact metrics module, but do not apply the legacy merge_quality_cohort schema directly to 1720 items.",
+    "caveat": "The current _score_pair source maps narrativeqa to qa_f1_score; this differs from the common LongBench eval.py dataset-to-metric mapping (narrativeqa to rouge_score). eval.py remains absent from supplied mirror, so do not silently call this behavior identical to upstream official evaluation. Confirm intended frozen protocol with main scorer implementation."
+  }
+}

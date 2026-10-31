@@ -1,0 +1,15 @@
+# 当前候选的实现机制：只读源码证据
+
+分类confirmed（源码），source ede2b9e7；没有新增GPU计时或瓶颈归因。
+
+BF16的flashinfer.py在execute中对K/V调用_pack_head_axes，其实现也是tensor.contiguous；FP8的flashinfer_fp8.py.write_cache同样对K/V/slots调用contiguous。quantized_triton.py的量化scatter按密集token/head布局寻址，当前不能直接删掉其连续化。因而不能把K/V materialization全部说成FP8独有开销。它仍与BF16 reshape_paged_cache不同，额外缩放/裁剪/FP8转换及scale写入明确存在；其占比未测，不从源码反推延迟。
+
+固定scale在Triton中是constexpr分支，源码先写amax再覆盖并不证明最终kernel执行了这些冗余reduction；编译器可能消除，需真实生成IR或profile才能归因。resident scale数组参与存储/复制契约，但FlashInfer读路径仅消费固定scalar；存储字节不能直接替代HBM读量。
+
+XQA paging转换使用已存在CPU元数据校验，并将页表/uint32长度写入稳定GPU缓冲；每层直接消费resident FP8 pages，无完整BF16 shadow。Q contiguous与内部FP8转换是部署成本。已有算子/Graph验证不等于已证明服务加速。之后只有生产计时/排队观测显示相关瓶颈才开展有针对性的非计时分解，不因这些代码行额外铺GPU微基准矩阵。
+
+KVScaleCalibration只记录每层第一次prefill与decode。因此它不是全workload校准器；当前固定scalar风险继续保留。独立校准提案见plans/experiments/production-calibration-v1.md，现只完成128条未用于服务样本的真实输入冻结，无激活/scale结果。
+
+LongBench官方code_sim_score取首个不含反引号、#或//的行，计算fuzzy字符串相似度。LCC/RepoBench分数仍按冻结协议完整保留，但不能标成代码执行或agent工具任务成功率；后续生产代码质量需要相应任务检查，不能用调整评分器消除已测退化。
+
+2026-10-27 CPU表示分析补充：全部正有限BF16位模式的四个E4M3 QDQ对照中，在两个scale共同的normal/未饱和区间，各1761个取值的反量化结果完全相同。K=.125覆盖到56、最小非零2^-12；V=.0625覆盖到28、最小非零2^-13。这说明2次幂scalar变化不会改善所有normal值的相对精度；应先测真实clipping/underflow覆盖，再决定是否值得校准，不能假定换global scale能修复当前质量损失。此为CPU表示数学fixture，不是模型激活频率、Triton/GPU计时或质量归因。可复算脚本scripts/analyze_fp8_power2_scales.py；含脚本SHA/Torch版本的证据fp8_power2_scale_CPU_algebra_v2.json。原v1保留，两版数值一致。

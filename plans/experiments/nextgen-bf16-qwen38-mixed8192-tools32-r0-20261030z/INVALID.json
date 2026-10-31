@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-30T21:36:50.343926+00:00",
+  "classification": "local_CPU_packaging_failure_zero_GPU",
+  "run_id": "nextgen-bf16-qwen38-mixed8192-tools32-r0-20261030z",
+  "error": "tools-source points to copied manifest without files subtree; FileNotFoundError eval_checker/multi_turn_eval/__init__.py",
+  "original_log": "reports/operations/session-recovery-20261030-01a1765d/mixed-bf16-z-prepare-a1.stderr.log",
+  "no_ticket_no_once_no_ledger_or_history": true,
+  "no_remote_or_GPU_dispatch": true,
+  "partial_local_directory_preserved": true,
+  "new_proposal_run_id": "nextgen-bf16-qwen38-mixed8192-tools32-r0-20261030zc",
+  "correct_actual_tool_source": "/home/mingasa/kv-research-agent/results/prepared/bfcl-multiturn-native-source-20261028a",
+  "all_original_tool_source_files_SHA_verified": 30
+}

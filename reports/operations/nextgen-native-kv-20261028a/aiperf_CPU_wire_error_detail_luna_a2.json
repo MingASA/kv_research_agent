@@ -1,0 +1,118 @@
+{
+  "endpoint": {
+    "fingerprint": "SHA256:QZwhu4BzgiOmHYABTUK1kXdAYHPun3iNioo69CKCgEI",
+    "host": "h800-41594a.fkpku.cn",
+    "port": 45291,
+    "user": "yinjinrun"
+  },
+  "expected_container_id": "8e942a3a5ec583975362bce68695bfde936b885f8f52b8beb31e897d344a4ec3",
+  "manifest_sha256": "d22bdc4f599aeb96f2f70c9a58781d3b1a58d82de2b0b6cf69e9d790cd24a8ba",
+  "max_log_tail_bytes": 8192,
+  "observed_at_utc": "2026-10-28T08:54:18.753319+00:00",
+  "operation": "bounded_depth2_owned_file_listing_and_wire_log_tail",
+  "remote_script_sha256": "1c028fa5819514b497370ab4b65992b49930f1fa7697c7d365af757ffcdbd616",
+  "remote_writes": false,
+  "response": {
+    "CPU_ERROR": {
+      "GPU_used": false,
+      "error": "RuntimeError: Actual AIPerf CPU wire returned1"
+    },
+    "container": {
+      "OOMKilled": false,
+      "exit_code": 1,
+      "id": "8e942a3a5ec583975362bce68695bfde936b885f8f52b8beb31e897d344a4ec3",
+      "label": "nextgen-aiperf-wire-20261028a",
+      "running": false,
+      "status": "exited"
+    },
+    "excluded": [
+      {
+        "path": "chat128.json",
+        "reason": "asset_or_cache"
+      },
+      {
+        "path": "driver.py",
+        "reason": "asset_or_cache"
+      },
+      {
+        "path": "long_prefix16x2.json",
+        "reason": "asset_or_cache"
+      },
+      {
+        "path": "long_unique16.json",
+        "reason": "asset_or_cache"
+      },
+      {
+        "path": "warmup_chat16.json",
+        "reason": "asset_or_cache"
+      },
+      {
+        "path": "warmup_long2.json",
+        "reason": "asset_or_cache"
+      },
+      {
+        "path": "wire.py",
+        "reason": "asset_or_cache"
+      }
+    ],
+    "files": [
+      {
+        "bytes": 96,
+        "path": "CPU_ADMISSION.json",
+        "sha256": "af7f5c77f653866fbe702c59d2de4389196bb382c16b52b56cea971e376bb6a2",
+        "small_file": true
+      },
+      {
+        "bytes": 78,
+        "path": "CPU_ERROR.json",
+        "sha256": "4db51b47182f88d38b552dc8fbc4ecd5d65448353056535e7e7b8cbfde44cf35",
+        "small_file": true
+      },
+      {
+        "bytes": 115,
+        "path": "PREPARED.json",
+        "sha256": "c944a820dff3509b1793f052ff510dfad01c5baa5abe40320118aa0ef6ef1ceb",
+        "small_file": true
+      },
+      {
+        "bytes": 73,
+        "path": "START_INTENT.json",
+        "sha256": "6d6bf2496d2cad378e8b6637ac1980e7b36a198522585968e4d4311a29a2c2b5",
+        "small_file": true
+      },
+      {
+        "bytes": 1702,
+        "path": "docker_command.json",
+        "sha256": "0a976df18cb686d8d3b71d2d18c5f46d681f48b272e90d6040c4989b03f20123",
+        "small_file": true
+      },
+      {
+        "bytes": 1038,
+        "path": "manifest.json",
+        "sha256": "a16d37892400a86589309b377e984b93ae4c8054b331811e45501c88c233d6c6",
+        "small_file": true
+      },
+      {
+        "bytes": 1208,
+        "path": "wire.log",
+        "sha256": "9a1b2dff6e1c5fe8a4121a14e0264f38ecdf9b795da35796f5f26e8da4861a51",
+        "small_file": true
+      }
+    ],
+    "foreign_owned_entries_skipped": 0,
+    "ok": true,
+    "root": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/scratch/nextgen-aiperf-wire-20261028a",
+    "run_id": "nextgen-aiperf-wire-20261028a",
+    "uid": 1005,
+    "wire_acceptance": null,
+    "wire_log_tail": {
+      "path": "wire.log",
+      "size_bytes": 1208,
+      "tail_bytes": 1208,
+      "tail_sha256": "9a1b2dff6e1c5fe8a4121a14e0264f38ecdf9b795da35796f5f26e8da4861a51",
+      "text": "Traceback (most recent call last):\n  File \"/workspace/agent_work/scratch/nextgen-aiperf-wire-20261028a/wire.py\", line 89, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/workspace/agent_work/scratch/nextgen-aiperf-wire-20261028a/wire.py\", line 85, in main\n    args=parser.parse_args();result=asyncio.run(validate(args.input))\n                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/runners.py\", line 194, in run\n    return runner.run(main)\n           ^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/base_events.py\", line 687, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/workspace/agent_work/scratch/nextgen-aiperf-wire-20261028a/wire.py\", line 66, in validate\n    if json.loads(wire)!=payload or wire!=info.payload_bytes:raise ValueError('Actual HTTP body changed')\n                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Actual HTTP body changed\n"
+    }
+  },
+  "root": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/scratch/nextgen-aiperf-wire-20261028a",
+  "schema": "nextgen-aiperf-wire-error-detail-readonly-luna-v1"
+}

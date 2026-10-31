@@ -1,0 +1,12 @@
+{
+  "classification": "confirmed_CPU_package_only",
+  "run_id": "prod-quality-bf16xqa-full1719-c128-r0-20261027b",
+  "asset_SHA_verified": true,
+  "actual_frozen_policy_verified": true,
+  "assets": 30,
+  "client_concurrency": 128,
+  "records_per_arm": 1719,
+  "source_commit": "11e7cddbfe33eb21d209c7f48f5e461ac56545eb",
+  "inference_engine_identical_to_performance1c2": true,
+  "GPU_started": false
+}

@@ -1,0 +1,399 @@
+{
+  "files": {
+    "START_INTENT.json": {
+      "sha256": "ccd81b2261a9dc7f74f9d1b116c45a41159fc5894de44cb716e5002d6a612316",
+      "value": {
+        "request_sha256": "cb2a69600517a85f31e84dfea0edec95c0e5f0226d2e89da787f0b516ade1b1a"
+      }
+    },
+    "SUPERVISOR_PROCESS.json": {
+      "sha256": "aaa72e120ea5115a38a878223d9e1ceb23f198b329e20887ced89a3a2aa09a5a",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-521851.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-521851.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-521851.scope\n",
+          "pid": 1386970,
+          "start_ticks": 369357544,
+          "uid": 1005
+        }
+      }
+    },
+    "SUPERVISOR_STARTED.json": {
+      "sha256": "cda17a81e8c33634bf7765242f30c2e080b5ef66334b24f9be5aa5c5fdae4d39",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-521851.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-521851.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-521851.scope\n",
+          "pid": 1386970,
+          "start_ticks": 369357544,
+          "uid": 1005
+        },
+        "ticket_sha256": "5aaa93f71dc3123c2c2be4737e927108e39077083a7a67456c641b4aadd94322"
+      }
+    },
+    "owned_containers.json": {
+      "sha256": "ff3e6d77abf47bf12a13c431c741cafd3b94916a52894dfc7bf2122f523de4b6",
+      "value": {
+        "containers": [
+          {
+            "container_id": "2ef818baeef97194be33818fe9dfb3ed71e64eb348a7a4ae967623274d96b434",
+            "pid_identity": {
+              "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+              "cgroup": "12:rdma:/system.slice/docker-2ef818baeef97194be33818fe9dfb3ed71e64eb348a7a4ae967623274d96b434.scope\n11:blkio:/system.slice/docker-2ef818baeef97194be33818fe9dfb3ed71e64eb348a7a4ae967623274d96b434.scope\n10:net_cls,net_prio:/system.slice/docker-2ef818baeef97194be33818fe9dfb3ed71e64eb348a7a4ae967623274d96b434.scope\n9:freezer:/system.slice/docker-2ef818baeef97194be33818fe9dfb3ed71e64eb348a7a4ae967623274d96b434.scope\n8:memory:/system.slice/docker-2ef818baeef97194be33818fe9dfb3ed71e64eb348a7a4ae967623274d96b434.scope\n7:hugetlb:/system.slice/docker-2ef818baeef97194be33818fe9dfb3ed71e64eb348a7a4ae967623274d96b434.scope\n6:perf_event:/system.slice/docker-2ef818baeef97194be33818fe9dfb3ed71e64eb348a7a4ae967623274d96b434.scope\n5:pids:/system.slice/docker-2ef818baeef97194be33818fe9dfb3ed71e64eb348a7a4ae967623274d96b434.scope\n4:devices:/system.slice/docker-2ef818baeef97194be33818fe9dfb3ed71e64eb348a7a4ae967623274d96b434.scope\n3:cpu,cpuacct:/system.slice/docker-2ef818baeef97194be33818fe9dfb3ed71e64eb348a7a4ae967623274d96b434.scope\n2:cpuset:/system.slice/docker-2ef818baeef97194be33818fe9dfb3ed71e64eb348a7a4ae967623274d96b434.scope\n1:name=systemd:/system.slice/docker-2ef818baeef97194be33818fe9dfb3ed71e64eb348a7a4ae967623274d96b434.scope\n",
+              "pid": 1399608,
+              "start_ticks": 369369846,
+              "uid": 1005
+            },
+            "released": true
+          }
+        ],
+        "request_sha256": "cb2a69600517a85f31e84dfea0edec95c0e5f0226d2e89da787f0b516ade1b1a",
+        "reservation_id": "bd5ec6f993c7449cb97912729e4bfecd"
+      }
+    },
+    "result.json": {
+      "sha256": "c50fe763932fb29235c3d5cacc469118f16d44e4ed93b1373689b6dc0d486932",
+      "value": {
+        "allocation_ended_monotonic_ns": 3694046298789672,
+        "allocation_intervals_ns": [
+          {
+            "arm": "bf16",
+            "end_ns": 3694046298789672,
+            "start_ns": 3693698333576655
+          }
+        ],
+        "allocation_started_monotonic_ns": 3693698333576655,
+        "arm_results": [],
+        "error": "RuntimeError: Worker failed; inspect preserved per-arm container.log",
+        "gpu_release_verified": true,
+        "live_owned_containers": [],
+        "new_output_bytes": 136958003,
+        "request_sha256": "cb2a69600517a85f31e84dfea0edec95c0e5f0226d2e89da787f0b516ade1b1a",
+        "reservation_id": "bd5ec6f993c7449cb97912729e4bfecd",
+        "run_id": "prod-tools-bf16xqa-bfcl258-c128-r0-20261027a",
+        "status": "FAILED"
+      }
+    },
+    "state.json": {
+      "sha256": "c50fe763932fb29235c3d5cacc469118f16d44e4ed93b1373689b6dc0d486932",
+      "value": {
+        "allocation_ended_monotonic_ns": 3694046298789672,
+        "allocation_intervals_ns": [
+          {
+            "arm": "bf16",
+            "end_ns": 3694046298789672,
+            "start_ns": 3693698333576655
+          }
+        ],
+        "allocation_started_monotonic_ns": 3693698333576655,
+        "arm_results": [],
+        "error": "RuntimeError: Worker failed; inspect preserved per-arm container.log",
+        "gpu_release_verified": true,
+        "live_owned_containers": [],
+        "new_output_bytes": 136958003,
+        "request_sha256": "cb2a69600517a85f31e84dfea0edec95c0e5f0226d2e89da787f0b516ade1b1a",
+        "reservation_id": "bd5ec6f993c7449cb97912729e4bfecd",
+        "run_id": "prod-tools-bf16xqa-bfcl258-c128-r0-20261027a",
+        "status": "FAILED"
+      }
+    },
+    "watchdog_result.json": {
+      "sha256": "687f33e3bdbe6526ffdbdac68d3504df0dbe631c1b98b92f1422a1d961fe964c",
+      "value": {
+        "actions": [],
+        "request_sha256": "cb2a69600517a85f31e84dfea0edec95c0e5f0226d2e89da787f0b516ade1b1a",
+        "status": "RELEASE_CONFIRMED"
+      }
+    }
+  },
+  "gpu_snapshot": "0, GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 0, 0\n1, GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 0, 0\n2, GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 0, 0\n3, GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 0, 0\n4, GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 0, 0\n5, GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 0, 0\n6, GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 0, 0\n7, GPU-47211491-ba0d-78bf-5c84-f968c0648213, 0, 0",
+  "live_owned_containers": [],
+  "log_tail": {
+    "events.jsonl": "{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3693575954778910,\"utc\":\"2026-10-27T08:25:34.215628+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3693575954778910,\"utc\":\"2026-10-27T08:26:04.540608+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3693575954778910,\"utc\":\"2026-10-27T08:26:34.959038+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3693575954778910,\"utc\":\"2026-10-27T08:27:05.290733+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3693575954778910,\"utc\":\"2026-10-27T08:27:35.619649+00:00\"}\n{\"action\":\"OWNED_CONTAINER_CREATED\",\"arm\":\"bf16\",\"id\":\"2ef818baeef97194be33818fe9dfb3ed71e64eb348a7a4ae967623274d96b434\",\"utc\":\"2026-10-27T08:27:36.594402+00:00\"}\n{\"action\":\"STOP_OR_FAILURE\",\"error\":\"RuntimeError: Worker failed; inspect preserved per-arm container.log\",\"status\":\"FAILED\",\"utc\":\"2026-10-27T08:33:24.248590+00:00\"}\n",
+    "output/bf16/container.log": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/workspace/agent_work/runs/prod-tools-bf16xqa-bfcl258-c128-r0-20261027a/runtime/kv_controller/worker.py\", line 288, in <module>\n    main()\n  File \"/workspace/agent_work/runs/prod-tools-bf16xqa-bfcl258-c128-r0-20261027a/runtime/kv_controller/worker.py\", line 274, in main\n    if request[\"workload\"][\"kind\"] in (\"native_quality_fa3\", \"native_quality_xqa\", \"native_quality_xqa_bf16_reference\", \"native_quality_xqa_production_batch\") else run_service(ticket, root, output, args.arm, env))\n                                                                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/agent_work/runs/prod-tools-bf16xqa-bfcl258-c128-r0-20261027a/runtime/kv_controller/production.py\", line 361, in run_service\n    parsed = parse_sse_packets(packets)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/agent_work/runs/prod-tools-bf16xqa-bfcl258-c128-r0-20261027a/runtime/kv_controller/native_tools.py\", line 115, in parse_sse_packets\n    parse_native_tool_calls(ordered)\n  File \"/workspace/agent_work/runs/prod-tools-bf16xqa-bfcl258-c128-r0-20261027a/runtime/kv_controller/native_tools.py\", line 56, in parse_native_tool_calls\n    value = json.loads(arguments, object_pairs_hook=_unique_object, parse_constant=_reject_constant)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/json/__init__.py\", line 359, in loads\n    return cls(**kw).decode(s)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/json/decoder.py\", line 337, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/json/decoder.py\", line 353, in raw_decode\n    obj, end = self.scan_once(s, idx)\n               ^^^^^^^^^^^^^^^^^^^^^^\njson.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 232 (char 231)\n",
+    "output/bf16/operator_acceptance.log": "I20261027 16:27:41.562892 9 flashinfer.py:168] KV_ALLOCATION {\"layers\": [{\"tensors\": {\"key\": {\"dtype\": \"torch.bfloat16\", \"shape\": [7, 128, 8, 128], \"bytes\": 1835008}, \"value\": {\"dtype\": \"torch.bfloat16\", \"shape\": [7, 128, 8, 128], \"bytes\": 1835008}}, \"key_format\": \"bf16\", \"value_format\": \"bf16\", \"resident_bytes\": 3670016, \"bytes_per_token\": 4096}], \"resident_bytes\": 3670016, \"token_capacity\": 896}\nI20261027 16:30:30.210043 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE prefill {'relative_l2': 0.0022824311163276434, 'max_abs': 0.0005266666412353516}\nI20261027 16:30:39.944837 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE capture_replay {'relative_l2': 0.003906028810888529, 'max_abs': 0.0008789524435997009}\nI20261027 16:30:39.946882 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE changed_context {'relative_l2': 0.0028711154591292143, 'max_abs': 0.0009812712669372559}\nI20261027 16:30:39.951324 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE padded_graph {'relative_l2': 0.0028711154591292143, 'max_abs': 0.0009812712669372559}\nI20261027 16:30:39.952803 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE restored_finite_padding {'relative_l2': 0.0028711154591292143, 'max_abs': 0.0009812712669372559}\nI20261027 16:30:39.953640 9 check_native_fa3_operator.py:219] Native production operator/Graph acceptance passed for bf16; no model/service/quality claim\n",
+    "output/bf16/server.log": "8], \"bytes\": 387186688}}, \"key_format\": \"bf16\", \"value_format\": \"bf16\", \"resident_bytes\": 774373376, \"bytes_per_token\": 4096}, {\"tensors\": {\"key\": {\"dtype\": \"torch.bfloat16\", \"shape\": [1477, 128, 8, 128], \"bytes\": 387186688}, \"value\": {\"dtype\": \"torch.bfloat16\", \"shape\": [1477, 128, 8, 128], \"bytes\": 387186688}}, \"key_format\": \"bf16\", \"value_format\": \"bf16\", \"resident_bytes\": 774373376, \"bytes_per_token\": 4096}, {\"tensors\": {\"key\": {\"dtype\": \"torch.bfloat16\", \"shape\": [1477, 128, 8, 128], \"bytes\": 387186688}, \"value\": {\"dtype\": \"torch.bfloat16\", \"shape\": [1477, 128, 8, 128], \"bytes\": 387186688}}, \"key_format\": \"bf16\", \"value_format\": \"bf16\", \"resident_bytes\": 774373376, \"bytes_per_token\": 4096}, {\"tensors\": {\"key\": {\"dtype\": \"torch.bfloat16\", \"shape\": [1477, 128, 8, 128], \"bytes\": 387186688}, \"value\": {\"dtype\": \"torch.bfloat16\", \"shape\": [1477, 128, 8, 128], \"bytes\": 387186688}}, \"key_format\": \"bf16\", \"value_format\": \"bf16\", \"resident_bytes\": 774373376, \"bytes_per_token\": 4096}], \"resident_bytes\": 37169922048, \"token_capacity\": 189056}\nI20261027 16:33:14.933489 407 executor.py:441] NATIVE_KV_BACKEND {\"class\": \"FlashInferBackend\", \"kv_cache_dtype\": \"auto\", \"attention_impl\": \"flashinfer\", \"planner_backend\": \"fa3\", \"decode_impl\": \"xqa\", \"xqa_max_context\": 32768, \"xqa_enable_pdl\": true, \"xqa_unused_kv_policy\": \"finite_full_initialization\", \"xqa_graph_padding\": \"reserved_page0_one_token_discard\", \"decode_internal_q_data_type\": \"torch.bfloat16\", \"paged_prefill\": true, \"decode_tensor_cores\": true, \"flashinfer_version\": \"0.6.18.post1\", \"q_data_type\": \"torch.bfloat16\", \"profile_scope\": \"production_xqa\", \"q_scale\": null, \"kv_data_type\": \"torch.bfloat16\", \"scale_strategy\": \"none\", \"quality_transform\": false, \"graph_enabled\": true, \"graph_captured_batches\": [1, 2, 4, 8, 16, 32, 48, 64, 80, 96, 112, 128], \"graph_runner\": \"DecodeCudaGraphRunner\"}\nI20261027 16:33:15.479964   407 profile_manager.cpp:1267] Prefill warmup completed: tokens=10240, latency=132057 ms\nI20261027 16:33:15.481628   407 profile_manager.cpp:1311] Graph warmup started: bucket_count=12, configured_max_batch_size=128, allocatable_sequences=128, decode_seq_len=16\nI20261027 16:33:15.484887 407 decode_cuda_graph.py:226] NATIVE_KV_GRAPH_REPLAY {\"class\": \"FlashInferBackend\", \"batch_size\": 128, \"captured_batch_size\": 128}\nI20261027 16:33:15.500061   407 profile_manager.cpp:1331] Graph warmup progress: [##------------------] 1/12 8.3%, token_bucket=128, latency=17.44 ms, sequence_batch=128\nI20261027 16:33:15.517508   407 profile_manager.cpp:1331] Graph warmup progress: [###-----------------] 2/12 16.7%, token_bucket=112, latency=16.58 ms, sequence_batch=112\nI20261027 16:33:15.534015   407 profile_manager.cpp:1331] Graph warmup progress: [#####---------------] 3/12 25.0%, token_bucket=96, latency=15.80 ms, sequence_batch=96\nI20261027 16:33:15.549790   407 profile_manager.cpp:1331] Graph warmup progress: [#######-------------] 4/12 33.3%, token_bucket=80, latency=15.19 ms, sequence_batch=80\nI20261027 16:33:15.564492   407 profile_manager.cpp:1331] Graph warmup progress: [########------------] 5/12 41.7%, token_bucket=64, latency=14.26 ms, sequence_batch=64\nI20261027 16:33:15.578766   407 profile_manager.cpp:1331] Graph warmup progress: [##########----------] 6/12 50.0%, token_bucket=48, latency=13.94 ms, sequence_batch=48\nI20261027 16:33:15.592597   407 profile_manager.cpp:1331] Graph warmup progress: [############--------] 7/12 58.3%, token_bucket=32, latency=13.60 ms, sequence_batch=32\nI20261027 16:33:15.605654   407 profile_manager.cpp:1331] Graph warmup progress: [#############-------] 8/12 66.7%, token_bucket=16, latency=12.94 ms, sequence_batch=16\nI20261027 16:33:15.618716   407 profile_manager.cpp:1331] Graph warmup progress: [###############-----] 9/12 75.0%, token_bucket=8, latency=12.99 ms, sequence_batch=8\nI20261027 16:33:15.631690   407 profile_manager.cpp:1331] Graph warmup progress: [#################---] 10/12 83.3%, token_bucket=4, latency=12.93 ms, sequence_batch=4\nI20261027 16:33:15.644605   407 profile_manager.cpp:1331] Graph warmup progress: [##################--] 11/12 91.7%, token_bucket=2, latency=12.89 ms, sequence_batch=2\nI20261027 16:33:15.657501   407 profile_manager.cpp:1331] Graph warmup progress: [####################] 12/12 100.0%, token_bucket=1, latency=12.88 ms, sequence_batch=1\nI20261027 16:33:15.657514   407 profile_manager.cpp:1347] Decode warmup completed: bucket_count=12, decode_max_token_bucket=128, decode_max_sequence_batch=128, decode_seq_len=16, decode_total_latency=171.435 ms\nI20261027 16:33:15.657536   407 threadpool.cpp:32] ThreadPool created, thread count 4, pool name AsyncResponseProcessor.response, cpu_binding false.\nI20261027 16:33:15.658322   407 threadpool.cpp:32] ThreadPool created, thread count 1, pool name AsyncResponseProcessor.rpc, cpu_binding false.\nI20261027 16:33:15.658550   407 threadpool.cpp:32] ThreadPool created, thread count 16, pool name AsyncResponseProcessor.generate_output, cpu_binding false.\nI20261027 16:33:16.077092   407 chat_template.cpp:44] Using Jinja chat template for model_type: qwen2\nI20261027 16:33:16.102412   407 jinja_chat_template.cpp:132] Jinja chat template init succeed.\nI20261027 16:33:16.510679   407 threadpool.cpp:32] ThreadPool created, thread count 4, pool name LLMMaster.request, cpu_binding false.\nI20261027 16:33:16.511734   407 xllm_server_registry.cpp:22] Register server HttpServer.\nI20261027 16:33:16.511770   407 xllm_server.cpp:87] Use API route mode: master_node\nW20261027 16:33:16.513242   407 bthread.cpp:471] Fail to set concurrency by tag: 0, tag concurrency should be larger than old oncurrency. old concurrency: 9, new concurrency: 8\nI20261027 16:33:16.513453   407 server.cpp:1200] Server[xllm::APIService] is serving on port=19001.\nI20261027 16:33:16.513468   407 server.cpp:1203] Check out http://2ef818baeef9:19001 in web browser.\nI20261027 16:33:16.513474   407 xllm_server.cpp:168] Brpc Server started on port 19001, idle_timeout_s: -1, num_threads: 8\nI20261027 16:33:16.513486   407 xllm_server.cpp:181]      Started server process [407]\nI20261027 16:33:16.513491   407 xllm_server.cpp:182]      Waiting for application startup.\nI20261027 16:33:16.513497   407 xllm_server.cpp:183]      Application startup complete.\nI20261027 16:33:17.619724   640 request.cpp:134] x-request-id: req-15933769124469343823-at9YNzT7QmR5qfQEoeVUXo, x-request-time: , request_id: chatcmpl-15933769124469343823-kJCUkRWo5jyZkCcgcE8C9R, sequence 0, max_tokens: 16, temperature: 0, finish_reason: length, prompt_tokens: 38, num_prefix_cache_tokens: 0, generated_tokens: 16, ttft: 34.0ms, total_latency: 448.8ms, avg tpot: 27.7ms, generation speed: 38.6 tokens/s\nW20261027 16:33:17.619913   425 input_messenger.cpp:387] Fail to read from Socket{id=8589934872 fd=72 addr=127.0.0.1:53614:19001} (0x7fb45c020a20): Connection reset by peer [104]\nI20261027 16:33:19.123082   641 request.cpp:134] x-request-id: req-15933769124469343823-e4g5uVeTBxUkxgpRcy6zHY, x-request-time: , request_id: chatcmpl-15933769124469343823-Fakjsf2CQ9KnYtW7jqN4wa, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 892, num_prefix_cache_tokens: 0, generated_tokens: 84, ttft: 49.0ms, total_latency: 1086.1ms, avg tpot: 12.5ms, generation speed: 81.0 tokens/s\nI20261027 16:33:19.124300   407 xllm_server.cpp:188]      Shutting down\nI20261027 16:33:19.124341   407 xllm_server.cpp:189]      Waiting for application shutdown.\nI20261027 16:33:19.124349   407 server.cpp:1260] Server[xllm::APIService] is going to quit\nI20261027 16:33:19.124529   407 xllm_server.cpp:193]      Application shutdown complete.\nI20261027 16:33:19.124538   407 xllm_server.cpp:194]      Finished server process [407]\nI20261027 16:33:19.124554   407 llm_master.cpp:141] LLMMaster stopping...\nI20261027 16:33:21.218498   407 server.cpp:1260] Server[xllm::CollectiveService] is going to quit\nI20261027 16:33:21.218688   407 xllm_server_registry.cpp:38] Unregister server CollectiveServer0.\nI20261027 16:33:21.219077   407 server.cpp:1260] Server[xllm::WorkerService] is going to quit\nI20261027 16:33:21.219301   407 xllm_server_registry.cpp:38] Unregister server DistributeWorkerServer0.\n",
+    "supervisor.log": "",
+    "watchdog.log": ""
+  },
+  "native_tool_progress": {
+    "bf16": {
+      "admission_probe.json": {
+        "sha256": "07f1af61bbb5deebb4dd06fefcd24591a6a2e8b825989be6dcd5356c828d3bd4",
+        "value": {
+          "cache_effect": "First source prompt prefix remains cached before the continuous warm-cache stream",
+          "included_in_measurement": false,
+          "payload": {
+            "ignore_eos": false,
+            "max_tokens": 1024,
+            "messages": [
+              {
+                "content": "I'd like to have a digital painting created. The image should be a detailed portrait of a masked woman, including bright peacock feathers, with an elegant and highly detailed style. It should have a fluid illustration quality, with green highlighted lines and complex patterns, reminiscent of cyberpunk and Alphonse Mucha's art.",
+                "role": "user"
+              }
+            ],
+            "model": "Qwen2.5-14B-Instruct",
+            "stream": true,
+            "stream_options": {
+              "include_usage": true
+            },
+            "temperature": 0,
+            "tool_choice": "auto",
+            "tools": [
+              {
+                "function": {
+                  "description": "Conducts a search based on the provided prompt and returns relevant real-time information, specific details, or general facts from various sources, including internet browsing and data from Google.",
+                  "name": "search_engine_query",
+                  "parameters": {
+                    "properties": {
+                      "include_facts": {
+                        "default": true,
+                        "description": "Indicates whether to include factual information in the search results. Default is true.",
+                        "type": "boolean"
+                      },
+                      "prompt": {
+                        "description": "The search query to be executed by the search engine. Example: 'latest scientific discoveries'.",
+                        "type": "string"
+                      },
+                      "since_year": {
+                        "default": 2023,
+                        "description": "Filter results to include only information published after the specified year. Default to the current year if not provided.",
+                        "type": "integer"
+                      },
+                      "source": {
+                        "default": "all",
+                        "description": "Preferred source for the search results, such as 'all', 'internet', or 'google'.",
+                        "enum": [
+                          "all",
+                          "internet",
+                          "google"
+                        ],
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "prompt"
+                    ],
+                    "type": "object"
+                  }
+                },
+                "type": "function"
+              },
+              {
+                "function": {
+                  "description": "Generate an image based on a given text prompt. The function is versatile and can be used for various general purposes without specializing in any specific category.",
+                  "name": "generate_image",
+                  "parameters": {
+                    "properties": {
+                      "color_mode": {
+                        "default": "RGB",
+                        "description": "The color mode of the image.",
+                        "enum": [
+                          "RGB",
+                          "Grayscale"
+                        ],
+                        "type": "string"
+                      },
+                      "height": {
+                        "default": 768,
+                        "description": "The height of the generated image in pixels.",
+                        "type": "integer"
+                      },
+                      "image_format": {
+                        "default": "PNG",
+                        "description": "The file format for the output image.",
+                        "enum": [
+                          "JPEG",
+                          "PNG",
+                          "BMP"
+                        ],
+                        "type": "string"
+                      },
+                      "prompt": {
+                        "description": "The text prompt that describes the desired content of the image.",
+                        "type": "string"
+                      },
+                      "width": {
+                        "default": 1024,
+                        "description": "The width of the generated image in pixels.",
+                        "type": "integer"
+                      }
+                    },
+                    "required": [
+                      "prompt"
+                    ],
+                    "type": "object"
+                  }
+                },
+                "type": "function"
+              },
+              {
+                "function": {
+                  "description": "Generates a realistic image of a human based on the provided prompt, with options for creating images representing different age groups and genders.",
+                  "name": "generate_human_image",
+                  "parameters": {
+                    "properties": {
+                      "image_quality": {
+                        "description": "The desired quality of the generated image, affecting the level of detail and realism. Options include 'low', 'medium', and 'high'.",
+                        "enum": [
+                          "low",
+                          "medium",
+                          "high"
+                        ],
+                        "type": "string"
+                      },
+                      "include_background": {
+                        "default": false,
+                        "description": "Determines whether a background should be included in the generated image.",
+                        "type": "boolean"
+                      },
+                      "output_format": {
+                        "default": "JPEG",
+                        "description": "Specifies the file format for the output image.",
+                        "enum": [
+                          "JPEG",
+                          "PNG",
+                          "BMP"
+                        ],
+                        "type": "string"
+                      },
+                      "prompt": {
+                        "description": "A descriptive text guiding the generation of the human image, such as 'a smiling girl with blue eyes' or 'an elderly man playing chess'.",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "prompt",
+                      "image_quality"
+                    ],
+                    "type": "object"
+                  }
+                },
+                "type": "function"
+              }
+            ],
+            "top_p": 1
+          }
+        }
+      },
+      "bootstrap.json": {
+        "sha256": "36f4ee6f915afb290193d912bc757eeb9b341839e44c2927cc0ae1c5b0e6bf7f",
+        "value": {
+          "done": true,
+          "finish": "length",
+          "payload": {
+            "ignore_eos": true,
+            "max_tokens": 16,
+            "messages": [
+              {
+                "content": "Explain a CUDA warp in one sentence.",
+                "role": "user"
+              }
+            ],
+            "model": "Qwen2.5-14B-Instruct",
+            "stream": true,
+            "stream_options": {
+              "include_usage": true
+            },
+            "temperature": 0
+          },
+          "tokens": 16
+        }
+      }
+    },
+    "fp8_e4m3": {}
+  },
+  "ok": true,
+  "operator_acceptance": {
+    "bf16": {
+      "sha256": "4d3c8ea48951d8c1457559c0e57d1bd2f48584ec85c1606f1896a48c49a39d8e",
+      "value": {
+        "arm": "bf16",
+        "backend": {
+          "attention_impl": "flashinfer",
+          "class": "FlashInferBackend",
+          "decode_impl": "xqa",
+          "decode_internal_q_data_type": "torch.bfloat16",
+          "decode_tensor_cores": true,
+          "flashinfer_version": "0.6.18.post1",
+          "kv_cache_dtype": "auto",
+          "kv_data_type": "torch.bfloat16",
+          "paged_prefill": true,
+          "planner_backend": "fa3",
+          "profile_scope": "production_xqa",
+          "q_data_type": "torch.bfloat16",
+          "q_scale": null,
+          "quality_transform": false,
+          "scale_strategy": "none",
+          "xqa_enable_pdl": true,
+          "xqa_graph_padding": "reserved_page0_one_token_discard",
+          "xqa_max_context": 32768,
+          "xqa_unused_kv_policy": "finite_full_initialization"
+        },
+        "classification": "operator_correctness_only",
+        "decode_impl": "xqa",
+        "device": "NVIDIA H800",
+        "fresh_dirty_cache_initialized_to_zero": true,
+        "invalid_nan_padding_diagnostics": {
+          "key": {
+            "finite_outputs": 10240,
+            "total_outputs": 10240
+          },
+          "value": {
+            "finite_outputs": 10240,
+            "total_outputs": 10240
+          }
+        },
+        "model_loaded": false,
+        "model_quality_validated": false,
+        "noncontiguous_q_checked": true,
+        "padded_graph_bucket_checked": true,
+        "partial_page_and_replan": true,
+        "prefill_planner": "fa3",
+        "real_capture_and_replay": true,
+        "reference": "FP32 dense causal attention on the same representable Q/K/V; relative L2 <=.05 plus rtol .08, atol .015",
+        "reference_comparisons": {
+          "capture_replay": {
+            "max_abs": 0.0008789524435997009,
+            "relative_l2": 0.003906028810888529
+          },
+          "changed_context": {
+            "max_abs": 0.0009812712669372559,
+            "relative_l2": 0.0028711154591292143
+          },
+          "padded_graph": {
+            "max_abs": 0.0009812712669372559,
+            "relative_l2": 0.0028711154591292143
+          },
+          "prefill": {
+            "max_abs": 0.0005266666412353516,
+            "relative_l2": 0.0022824311163276434
+          },
+          "restored_finite_padding": {
+            "max_abs": 0.0009812712669372559,
+            "relative_l2": 0.0028711154591292143
+          }
+        },
+        "reserved_page0_not_used_for_live_sequences": true,
+        "schema": "kv-native-fa3-operator-acceptance-v1",
+        "service_performance_measured": false,
+        "unused_padding_reference": "maximum_finite_FP8_or_large_finite_BF16"
+      }
+    }
+  },
+  "owned_containers": [
+    {
+      "created": "2026-10-27T08:27:36.550572248Z",
+      "id": "2ef818baeef97194be33818fe9dfb3ed71e64eb348a7a4ae967623274d96b434",
+      "running": false
+    }
+  ],
+  "quality_progress": {
+    "bf16": {},
+    "fp8_e4m3": {}
+  },
+  "relaunch_allowed": false,
+  "run_id": "prod-tools-bf16xqa-bfcl258-c128-r0-20261027a",
+  "status": "FAILED",
+  "supervisor_alive": false
+}

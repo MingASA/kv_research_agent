@@ -1,0 +1,15 @@
+{
+  "classification": "confirmed original auxiliary read-only RPC reply lost",
+  "run_id": "nextgen-nvfp4-qwen38-mixed8192-prefix32-r0-20261030yc",
+  "local_exec_session": 53259,
+  "exit_code": 1,
+  "SSH_exit_code": 255,
+  "error": "Connection to h800-41594a.fkpku.cn closed by remote host; Mutation reply uncertain transport marking forbids automatic re-exec",
+  "actual_remote_operation": "Read-only stdlib vars reader, no GPU/model/startstop/remote file write",
+  "ORIGINAL_RESPONSE_or_raw_application_jsonl_received": false,
+  "sample_count_and_capacity_peaks_unknown": true,
+  "observer_restarted": false,
+  "GPU_experiment_repeated": false,
+  "fresh_original_status_after_reconnect": "reports/operations/session-recovery-20261030-01a1765d/mixed-YC-original-after-observer-SSH-loss-readonly-a1.json",
+  "causal_relationship_to_GPU_request_timeout": "unverified"
+}

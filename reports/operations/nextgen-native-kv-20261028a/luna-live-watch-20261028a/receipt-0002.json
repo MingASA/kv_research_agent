@@ -1,0 +1,263 @@
+{
+  "observed_utc": "2026-10-28T14:43:53.956903+00:00",
+  "purpose": "root-requested additional readonly diagnostics",
+  "queue": {
+    "current_run_id": "nextgen-fp8-qwen38-quality-core1720-r2-20261028o",
+    "not_after_utc": "2026-10-29T08:57:14.407599+00:00",
+    "runner_alive_identity_match": false,
+    "runner_expected": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-u",
+        "-m",
+        "scripts.guarded_native_queue",
+        "--queue",
+        "/home/mingasa/kv-research-agent/plans/queues/nextgen-core-sequential-20261028b/manifest.json",
+        "--directory",
+        "/home/mingasa/kv-research-agent/state/queues/nextgen-core-sequential-20261028b"
+      ],
+      "boot_id": "2afb7771-92c9-41af-a06d-1632040687f5",
+      "pid": 236082,
+      "process_state": "R",
+      "start_ticks": 53016705,
+      "uid": 1000
+    },
+    "runner_observed": null,
+    "status": "HALTED_EXPERIMENT_FAILURE_OR_UNKNOWN",
+    "updated_utc": "2026-10-28T14:22:34.920193+00:00"
+  },
+  "remote": {
+    "diagnostic": {
+      "container": {
+        "ExitCode": 1,
+        "FinishedAt": "2026-10-28T14:17:44.309814221Z",
+        "OOMKilled": false,
+        "Pid": 0,
+        "Status": "exited",
+        "id_matches": true,
+        "identity_labels_valid": true
+      },
+      "gpu_compute_apps": [
+        {
+          "comm": "VLLM::Worker_DP",
+          "gpu_uuid": "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a",
+          "pid": 1624678,
+          "process_name": "VLLM::Worker_DP0_EP0",
+          "uid": 0,
+          "used_memory": "71326"
+        },
+        {
+          "comm": "VLLM::Worker_DP",
+          "gpu_uuid": "GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7",
+          "pid": 1624729,
+          "process_name": "VLLM::Worker_DP1_EP1",
+          "uid": 0,
+          "used_memory": "71480"
+        },
+        {
+          "comm": "VLLM::Worker_DP",
+          "gpu_uuid": "GPU-a6169058-34c8-6edc-e4f5-779bf9a10421",
+          "pid": 1624710,
+          "process_name": "VLLM::Worker_DP2_EP2",
+          "uid": 0,
+          "used_memory": "71510"
+        },
+        {
+          "comm": "VLLM::Worker_DP",
+          "gpu_uuid": "GPU-0cb28538-7e9f-1b66-750f-1b53ff309195",
+          "pid": 1624694,
+          "process_name": "VLLM::Worker_DP3_EP3",
+          "uid": 0,
+          "used_memory": "71518"
+        },
+        {
+          "comm": "VLLM::Worker_DP",
+          "gpu_uuid": "GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1",
+          "pid": 1624711,
+          "process_name": "VLLM::Worker_DP4_EP4",
+          "uid": 0,
+          "used_memory": "71494"
+        },
+        {
+          "comm": "VLLM::Worker_DP",
+          "gpu_uuid": "GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348",
+          "pid": 1624716,
+          "process_name": "VLLM::Worker_DP5_EP5",
+          "uid": 0,
+          "used_memory": "71494"
+        },
+        {
+          "comm": "VLLM::Worker_DP",
+          "gpu_uuid": "GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7",
+          "pid": 1624712,
+          "process_name": "VLLM::Worker_DP6_EP6",
+          "uid": 0,
+          "used_memory": "71528"
+        }
+      ],
+      "output_files": [
+        {
+          "path": "output/fp8_e4m3/docker_command.json",
+          "size_bytes": 2634
+        },
+        {
+          "path": "output/fp8_e4m3/container.log",
+          "size_bytes": 1123
+        },
+        {
+          "path": "output/fp8_e4m3/container_identity.json",
+          "size_bytes": 1511
+        },
+        {
+          "path": "output/fp8_e4m3/lease.json",
+          "size_bytes": 138
+        },
+        {
+          "path": "output/fp8_e4m3/runtime_environment.json",
+          "size_bytes": 873
+        },
+        {
+          "path": "output/fp8_e4m3/nextgen_environment.json",
+          "size_bytes": 974
+        },
+        {
+          "path": "output/fp8_e4m3/native_operator.log",
+          "size_bytes": 3981
+        },
+        {
+          "path": "output/fp8_e4m3/native_operator_command.json",
+          "size_bytes": 203
+        },
+        {
+          "path": "output/fp8_e4m3/native_operator_environment.json",
+          "size_bytes": 974
+        },
+        {
+          "path": "output/fp8_e4m3/server_command.json",
+          "size_bytes": 933
+        },
+        {
+          "path": "output/fp8_e4m3/server.log",
+          "size_bytes": 16000
+        },
+        {
+          "path": "output/fp8_e4m3/native_pages/fp8_e4m3-prefill.json",
+          "size_bytes": 5738
+        },
+        {
+          "path": "output/fp8_e4m3/native_pages/fp8_e4m3-chunked_prefill.json",
+          "size_bytes": 5746
+        },
+        {
+          "path": "output/fp8_e4m3/native_pages/fp8_e4m3-decode-replay0-reference.npz",
+          "size_bytes": 2254542
+        },
+        {
+          "path": "output/fp8_e4m3/native_pages/fp8_e4m3-decode-replay1-reference.npz",
+          "size_bytes": 2271911
+        },
+        {
+          "path": "output/fp8_e4m3/native_pages/fp8_e4m3-decode.json",
+          "size_bytes": 6088
+        },
+        {
+          "path": "output/fp8_e4m3/native_pages/acceptance.json",
+          "size_bytes": 401
+        }
+      ],
+      "output_inventory_truncated": false,
+      "requested_container_listed_as_owned": true,
+      "root_metadata": {
+        "WATCHDOG_FINISHED.json": {
+          "exists": false
+        },
+        "WATCHDOG_READY.json": {
+          "exists": true,
+          "identity": {
+            "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+            "pid": 1143680,
+            "start_ticks": 379854386,
+            "uid": 1005
+          },
+          "identity_alive": true,
+          "sha256": "aac1f5465201bf342ea1b6c9f9473b84f68e0e1529bdea129fc55822ea8066c5",
+          "size_bytes": 572
+        },
+        "events.jsonl": {
+          "exists": true,
+          "last5": [
+            {
+              "utc": "2026-10-28T13:58:51.769001+00:00"
+            },
+            {
+              "utc": "2026-10-28T13:58:53.323447+00:00"
+            },
+            {
+              "utc": "2026-10-28T14:02:42.052288+00:00"
+            },
+            {
+              "utc": "2026-10-28T14:17:44.171014+00:00"
+            },
+            {
+              "status": "CONFLICT",
+              "utc": "2026-10-28T14:17:44.171572+00:00"
+            }
+          ],
+          "size_bytes": 18746
+        },
+        "owned_containers.json": {
+          "container_ids": [
+            null
+          ],
+          "exists": true,
+          "sha256": "f0601b8d7a2d6e5d191a10e07a11d6d9c87ee93f888256ca8da13bfbf38b2bb7",
+          "size_bytes": 1631
+        },
+        "watchdog_result.json": {
+          "exists": false
+        }
+      },
+      "small_log_tails": {
+        "output/fp8_e4m3/container.log": {
+          "marker_hits": [],
+          "size_bytes": 1123
+        },
+        "output/fp8_e4m3/native_operator.log": {
+          "marker_hits": [],
+          "size_bytes": 3981
+        },
+        "output/fp8_e4m3/server.log": {
+          "marker_hits": [
+            "loading model"
+          ],
+          "size_bytes": 16000
+        }
+      }
+    },
+    "file_sha_status": {
+      "result.json": {
+        "sha256": "179817b6147be0280a9cff032b4e6ac15f248065e868cae4362fc9c1d32a7977",
+        "status": "UNKNOWN"
+      },
+      "state.json": {
+        "sha256": "179817b6147be0280a9cff032b4e6ac15f248065e868cae4362fc9c1d32a7977",
+        "status": "UNKNOWN"
+      }
+    },
+    "gpu_snapshot": "0, GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 71333, 61\n1, GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 71489, 59\n2, GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 71519, 74\n3, GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 71527, 62\n4, GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 71501, 68\n5, GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 71503, 72\n6, GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 71537, 61\n7, GPU-47211491-ba0d-78bf-5c84-f968c0648213, 3, 0",
+    "live_owned_containers": [],
+    "remote_log_markers": {
+      "events.jsonl": [
+        "CONFLICT"
+      ]
+    },
+    "remote_status": "UNKNOWN",
+    "supervisor_alive": false
+  },
+  "remote_ticket_validation": "operation=status performed remote check_ticket(ticket,False) then existing(root,ticket)",
+  "schema": "luna-live-watch-receipt-v1",
+  "sequence": 2,
+  "ticket_path": "/home/mingasa/kv-research-agent/state/controller/tickets/nextgen-fp8-qwen38-quality-core1720-r2-20261028o.json",
+  "ticket_run_id": "nextgen-fp8-qwen38-quality-core1720-r2-20261028o"
+}

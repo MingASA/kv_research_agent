@@ -1,0 +1,172 @@
+{
+  "files": {
+    "START_INTENT.json": {
+      "sha256": "5e230972b03c940f94d0e390b84302329b89af7fa56f177b7f75ed7ce8a496db",
+      "value": {
+        "request_sha256": "00161b71e946d53b4858d63ece3a68e7d729ba69f8864c84012bb0d57f005c10"
+      }
+    },
+    "SUPERVISOR_PROCESS.json": {
+      "sha256": "8123637645c60c22d901d4d6624de185c9fc294a559002d0eb38b3cedb8a2215",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-527285.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-527285.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-527285.scope\n",
+          "pid": 111772,
+          "start_ticks": 372030188,
+          "uid": 1005
+        }
+      }
+    },
+    "SUPERVISOR_STARTED.json": {
+      "sha256": "b4a03f2251589d900428e3742a36909002f1364f55753598ef92ca67fea4f7b5",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-527285.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-527285.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-527285.scope\n",
+          "pid": 111772,
+          "start_ticks": 372030188,
+          "uid": 1005
+        },
+        "ticket_sha256": "29ad50ff3b25b87e001b1d9cf57e7586ace6a75a952fd91163f9b045da8e427c"
+      }
+    },
+    "owned_containers.json": {
+      "sha256": "0abb7fae36a6b356d76ecf49ff5fa77bdff31051ec080155da1cc0f57948f98c",
+      "value": {
+        "containers": [
+          {
+            "container_id": "96b1a98be3bc6af9408a8cc74f2e18dfb482ee456443379cd5b1ba2e11a84961",
+            "pid_identity": {
+              "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+              "cgroup": "12:rdma:/system.slice/docker-96b1a98be3bc6af9408a8cc74f2e18dfb482ee456443379cd5b1ba2e11a84961.scope\n11:blkio:/system.slice/docker-96b1a98be3bc6af9408a8cc74f2e18dfb482ee456443379cd5b1ba2e11a84961.scope\n10:net_cls,net_prio:/system.slice/docker-96b1a98be3bc6af9408a8cc74f2e18dfb482ee456443379cd5b1ba2e11a84961.scope\n9:freezer:/system.slice/docker-96b1a98be3bc6af9408a8cc74f2e18dfb482ee456443379cd5b1ba2e11a84961.scope\n8:memory:/system.slice/docker-96b1a98be3bc6af9408a8cc74f2e18dfb482ee456443379cd5b1ba2e11a84961.scope\n7:hugetlb:/system.slice/docker-96b1a98be3bc6af9408a8cc74f2e18dfb482ee456443379cd5b1ba2e11a84961.scope\n6:perf_event:/system.slice/docker-96b1a98be3bc6af9408a8cc74f2e18dfb482ee456443379cd5b1ba2e11a84961.scope\n5:pids:/system.slice/docker-96b1a98be3bc6af9408a8cc74f2e18dfb482ee456443379cd5b1ba2e11a84961.scope\n4:devices:/system.slice/docker-96b1a98be3bc6af9408a8cc74f2e18dfb482ee456443379cd5b1ba2e11a84961.scope\n3:cpu,cpuacct:/system.slice/docker-96b1a98be3bc6af9408a8cc74f2e18dfb482ee456443379cd5b1ba2e11a84961.scope\n2:cpuset:/system.slice/docker-96b1a98be3bc6af9408a8cc74f2e18dfb482ee456443379cd5b1ba2e11a84961.scope\n1:name=systemd:/system.slice/docker-96b1a98be3bc6af9408a8cc74f2e18dfb482ee456443379cd5b1ba2e11a84961.scope\n",
+              "pid": 126197,
+              "start_ticks": 372042518,
+              "uid": 1005
+            },
+            "released": false
+          }
+        ],
+        "request_sha256": "00161b71e946d53b4858d63ece3a68e7d729ba69f8864c84012bb0d57f005c10",
+        "reservation_id": "2c3032482d774828834276d3c732a798"
+      }
+    },
+    "state.json": {
+      "sha256": "380519f9b6a5199420761155f8d2d311595c2ae8e655146a2b81823f7e5323fb",
+      "value": {
+        "arm": "bf16",
+        "containers": [
+          "96b1a98be3bc6af9408a8cc74f2e18dfb482ee456443379cd5b1ba2e11a84961"
+        ],
+        "request_sha256": "00161b71e946d53b4858d63ece3a68e7d729ba69f8864c84012bb0d57f005c10",
+        "status": "RUNNING"
+      }
+    }
+  },
+  "gpu_snapshot": "0, GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 0, 0\n1, GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 66731, 98\n2, GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 0, 0\n3, GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 0, 0\n4, GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 0, 0\n5, GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 0, 0\n6, GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 0, 0\n7, GPU-47211491-ba0d-78bf-5c84-f968c0648213, 0, 0",
+  "live_owned_containers": [
+    "96b1a98be3bc6af9408a8cc74f2e18dfb482ee456443379cd5b1ba2e11a84961"
+  ],
+  "log_tail": {
+    "events.jsonl": "{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7\":{\"index\":1,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3720302291827319,\"utc\":\"2026-10-27T15:51:00.552795+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7\":{\"index\":1,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3720302291827319,\"utc\":\"2026-10-27T15:51:31.041410+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7\":{\"index\":1,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3720302291827319,\"utc\":\"2026-10-27T15:52:01.367686+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7\":{\"index\":1,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3720302291827319,\"utc\":\"2026-10-27T15:52:31.774332+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7\":{\"index\":1,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3720302291827319,\"utc\":\"2026-10-27T15:53:02.229496+00:00\"}\n{\"action\":\"OWNED_CONTAINER_CREATED\",\"arm\":\"bf16\",\"id\":\"96b1a98be3bc6af9408a8cc74f2e18dfb482ee456443379cd5b1ba2e11a84961\",\"utc\":\"2026-10-27T15:53:03.328495+00:00\"}\n",
+    "output/bf16/aiperf.log": "point supports usage reporting (stream_options are automatically configured for OpenAI-compatible endpoints). (inference_result_parser.py:572)\n00:03:43.192 WARNING  Server did not provide token usage information. Token count metrics will be unavailable. Verify that your API endpoint supports usage reporting (stream_options are automatically configured for OpenAI-compatible endpoints). (inference_result_parser.py:572)\n00:03:43.193 WARNING  Server did not provide token usage information. Token count metrics will be unavailable. Verify that your API endpoint supports usage reporting (stream_options are automatically configured for OpenAI-compatible endpoints). (inference_result_parser.py:572)\n00:03:46.189 WARNING  Server did not provide token usage information. Token count metrics will be unavailable. Verify that your API endpoint supports usage reporting (stream_options are automatically configured for OpenAI-compatible endpoints). (inference_result_parser.py:572)\n00:03:46.189 WARNING  Server did not provide token usage information. Token count metrics will be unavailable. Verify that your API endpoint supports usage reporting (stream_options are automatically configured for OpenAI-compatible endpoints). (inference_result_parser.py:572)\n00:03:46.190 WARNING  Server did not provide token usage information. Token count metrics will be unavailable. Verify that your API endpoint supports usage reporting (stream_options are automatically configured for OpenAI-compatible endpoints). (inference_result_parser.py:572)\n00:03:49.189 WARNING  Server did not provide token usage information. Token count metrics will be unavailable. Verify that your API endpoint supports usage reporting (stream_options are automatically configured for OpenAI-compatible endpoints). (inference_result_parser.py:572)\n00:03:49.190 WARNING  Server did not provide token usage information. Token count metrics will be unavailable. Verify that your API endpoint supports usage reporting (stream_options are automatically configured for OpenAI-compatible endpoints). (inference_result_parser.py:572)\n00:03:49.190 WARNING  Server did not provide token usage information. Token count metrics will be unavailable. Verify that your API endpoint supports usage reporting (stream_options are automatically configured for OpenAI-compatible endpoints). (inference_result_parser.py:572)\n00:03:49.191 WARNING  Server did not provide token usage information. Token count metrics will be unavailable. Verify that your API endpoint supports usage reporting (stream_options are automatically configured for OpenAI-compatible endpoints). (inference_result_parser.py:572)\n00:03:49.191 WARNING  Server did not provide token usage information. Token count metrics will be unavailable. Verify that your API endpoint supports usage reporting (stream_options are automatically configured for OpenAI-compatible endpoints). (inference_result_parser.py:572)\n00:03:49.191 WARNING  Server did not provide token usage information. Token count metrics will be unavailable. Verify that your API endpoint supports usage reporting (stream_options are automatically configured for OpenAI-compatible endpoints). (inference_result_parser.py:572)\n00:03:49.192 WARNING  Server did not provide token usage information. Token count metrics will be unavailable. Verify that your API endpoint supports usage reporting (stream_options are automatically configured for OpenAI-compatible endpoints). (inference_result_parser.py:572)\n00:03:49.192 WARNING  Server did not provide token usage information. Token count metrics will be unavailable. Verify that your API endpoint supports usage reporting (stream_options are automatically configured for OpenAI-compatible endpoints). (inference_result_parser.py:572)\n00:03:52.190 WARNING  Server did not provide token usage information. Token count metrics will be unavailable. Verify that your API endpoint supports usage reporting (stream_options are automatically configured for OpenAI-compatible endpoints). (inference_result_parser.py:572)\n00:03:52.190 WARNING  Server did not provide token usage information. Token count metrics will be unavailable. Verify that your API endpoint supports usage reporting (stream_options are automatically configured for OpenAI-compatible endpoints). (inference_result_parser.py:572)\n00:03:52.191 WARNING  Server did not provide token usage information. Token count metrics will be unavailable. Verify that your API endpoint supports usage reporting (stream_options are automatically configured for OpenAI-compatible endpoints). (inference_result_parser.py:572)\n00:03:52.191 WARNING  Server did not provide token usage information. Token count metrics will be unavailable. Verify that your API endpoint supports usage reporting (stream_options are automatically configured for OpenAI-compatible endpoints). (inference_result_parser.py:572)\n00:03:52.191 WARNING  Server did not provide token usage information. Token count metrics will be unavailable. Verify that your API endpoint supports usage reporting (stream_options are automatically configured for OpenAI-compatible endpoints). (inference_result_parser.py:572)\n00:03:52.191 WARNING  Server did not provide token usage information. Token count metrics will be unavailable. Verify that your API endpoint supports usage reporting (stream_options are automatically configured for OpenAI-compatible endpoints). (inference_result_parser.py:572)\n00:03:52.191 WARNING  Server did not provide token usage information. Token count metrics will be unavailable. Verify that your API endpoint supports usage reporting (stream_options are automatically configured for OpenAI-compatible endpoints). (inference_result_parser.py:572)\n00:03:55.183 NOTICE   Phase profiling (profiling) sending complete | sent=1,025, completed=817, in_flight=208 | sessions: sent=1,025, completed=817 (runner.py:1103)\n00:03:55.184 INFO     Sent 1,025 requests. Waiting for all to complete... (records_manager.py:1422)\n00:03:55.190 WARNING  Server did not provide token usage information. Token count metrics will be unavailable. Verify that your API endpoint supports usage reporting (stream_options are automatically configured for OpenAI-compatible endpoints). (inference_result_parser.py:572)\n00:03:55.190 WARNING  Server did not provide token usage information. Token count metrics will be unavailable. Verify that your API endpoint supports usage reporting (stream_options are automatically configured for OpenAI-compatible endpoints). (inference_result_parser.py:572)\n00:03:55.191 WARNING  Server did not provide token usage information. Token count metrics will be unavailable. Verify that your API endpoint supports usage reporting (stream_options are automatically configured for OpenAI-compatible endpoints). (inference_result_parser.py:572)\n00:03:55.191 WARNING  Server did not provide token usage information. Token count metrics will be unavailable. Verify that your API endpoint supports usage reporting (stream_options are automatically configured for OpenAI-compatible endpoints). (inference_result_parser.py:572)\n00:03:55.191 WARNING  Server did not provide token usage information. Token count metrics will be unavailable. Verify that your API endpoint supports usage reporting (stream_options are automatically configured for OpenAI-compatible endpoints). (inference_result_parser.py:572)\n00:03:55.192 WARNING  Server did not provide token usage information. Token count metrics will be unavailable. Verify that your API endpoint supports usage reporting (stream_options are automatically configured for OpenAI-compatible endpoints). (inference_result_parser.py:572)\n00:03:55.192 WARNING  Server did not provide token usage information. Token count metrics will be unavailable. Verify that your API endpoint supports usage reporting (stream_options are automatically configured for OpenAI-compatible endpoints). (inference_result_parser.py:572)\n00:03:55.192 WARNING  Server did not provide token usage information. Token count metrics will be unavailable. Verify that your API endpoint supports usage reporting (stream_options are automatically configured for OpenAI-compatible endpoints). (inference_result_parser.py:572)\n",
+    "output/bf16/container.log": "",
+    "output/bf16/operator_acceptance.log": "I20261027 23:53:09.028293 9 flashinfer.py:168] KV_ALLOCATION {\"layers\": [{\"tensors\": {\"key\": {\"dtype\": \"torch.bfloat16\", \"shape\": [7, 128, 8, 128], \"bytes\": 1835008}, \"value\": {\"dtype\": \"torch.bfloat16\", \"shape\": [7, 128, 8, 128], \"bytes\": 1835008}}, \"key_format\": \"bf16\", \"value_format\": \"bf16\", \"resident_bytes\": 3670016, \"bytes_per_token\": 4096}], \"resident_bytes\": 3670016, \"token_capacity\": 896}\nI20261027 23:56:01.162577 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE prefill {'relative_l2': 0.0022824311163276434, 'max_abs': 0.0005266666412353516}\nI20261027 23:56:10.898501 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE capture_replay {'relative_l2': 0.003906028810888529, 'max_abs': 0.0008789524435997009}\nI20261027 23:56:10.901086 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE changed_context {'relative_l2': 0.0028711154591292143, 'max_abs': 0.0009812712669372559}\nI20261027 23:56:10.906182 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE padded_graph {'relative_l2': 0.0028711154591292143, 'max_abs': 0.0009812712669372559}\nI20261027 23:56:10.907743 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE restored_finite_padding {'relative_l2': 0.0028711154591292143, 'max_abs': 0.0009812712669372559}\nI20261027 23:56:10.908713 9 check_native_fa3_operator.py:219] Native production operator/Graph acceptance passed for bf16; no model/service/quality claim\n",
+    "output/bf16/server.log": "prompt_tokens: 1752, num_prefix_cache_tokens: 512, generated_tokens: 902, ttft: 155430.0ms, total_latency: 202717.9ms, avg tpot: 52.5ms, generation speed: 19.1 tokens/s\nI20261028 00:05:50.908448   642 request.cpp:134] x-request-id: 5240d861-ddb8-4119-9041-5e05f5b1a3ea, x-request-time: , request_id: chatcmpl-15933769124469343823-jAjcTD4mJ5PU5JjAUVCZfe, sequence 0, max_tokens: 521, temperature: 0, finish_reason: length, prompt_tokens: 1348, num_prefix_cache_tokens: 512, generated_tokens: 521, ttft: 156226.0ms, total_latency: 184718.3ms, avg tpot: 54.8ms, generation speed: 18.3 tokens/s\nI20261028 00:05:51.235070   642 request.cpp:134] x-request-id: 2ca7e7ca-ad04-433a-8eea-44c96edab92a, x-request-time: , request_id: chatcmpl-15933769124469343823-995DLycLe2ypyT2uzkVWRn, sequence 0, max_tokens: 492, temperature: 0, finish_reason: length, prompt_tokens: 12012, num_prefix_cache_tokens: 512, generated_tokens: 492, ttft: 154856.0ms, total_latency: 179021.7ms, avg tpot: 49.2ms, generation speed: 20.4 tokens/s\nI20261028 00:05:52.686316   643 request.cpp:134] x-request-id: cabb7249-047e-4aff-b78a-aa46593cfe40, x-request-time: , request_id: chatcmpl-15933769124469343823-rNk4JueTG9KADCRZXLTmPb, sequence 0, max_tokens: 565, temperature: 0, finish_reason: length, prompt_tokens: 6297, num_prefix_cache_tokens: 512, generated_tokens: 565, ttft: 156893.0ms, total_latency: 189485.9ms, avg tpot: 57.8ms, generation speed: 17.3 tokens/s\nI20261028 00:05:52.916186   641 request.cpp:134] x-request-id: 3f81b407-5157-4c2e-9b88-3004fe647a8b, x-request-time: , request_id: chatcmpl-15933769124469343823-983aahQpiPs2Y8LdVZBS3K, sequence 0, max_tokens: 525, temperature: 0, finish_reason: length, prompt_tokens: 1819, num_prefix_cache_tokens: 512, generated_tokens: 525, ttft: 153564.0ms, total_latency: 180725.2ms, avg tpot: 51.8ms, generation speed: 19.3 tokens/s\nI20261028 00:05:53.173874   640 request.cpp:134] x-request-id: 9bf5caaa-49a0-4e49-82fd-5ebcc3d245ad, x-request-time: , request_id: chatcmpl-15933769124469343823-BD7VcXTuQEqpGDuCVDBpdv, sequence 0, max_tokens: 18, temperature: 0, finish_reason: length, prompt_tokens: 1344, num_prefix_cache_tokens: 512, generated_tokens: 18, ttft: 162496.0ms, total_latency: 162984.1ms, avg tpot: 28.7ms, generation speed: 36.9 tokens/s\nI20261028 00:05:54.241567   642 request.cpp:134] x-request-id: b1b865e8-3f0d-4900-97c1-f6818fb14bd3, x-request-time: , request_id: chatcmpl-15933769124469343823-M5Bqv7cMXkrrHs5hjFXUie, sequence 0, max_tokens: 581, temperature: 0, finish_reason: length, prompt_tokens: 3200, num_prefix_cache_tokens: 512, generated_tokens: 581, ttft: 154358.0ms, total_latency: 185046.9ms, avg tpot: 52.9ms, generation speed: 18.9 tokens/s\nI20261028 00:05:57.524149   643 request.cpp:134] x-request-id: edf1e08f-9e19-480e-bca9-6b0924afdb7f, x-request-time: , request_id: chatcmpl-15933769124469343823-CMtXvsjpFxMyBHUT5JRpZ9, sequence 0, max_tokens: 514, temperature: 0, finish_reason: length, prompt_tokens: 2335, num_prefix_cache_tokens: 512, generated_tokens: 514, ttft: 156205.0ms, total_latency: 179320.5ms, avg tpot: 45.1ms, generation speed: 22.2 tokens/s\nI20261028 00:05:58.186867   641 request.cpp:134] x-request-id: 78eb003b-1202-4bf2-b8c8-3cc21561a042, x-request-time: , request_id: chatcmpl-15933769124469343823-CVYXrbW8JuoiRZSvnjnmNr, sequence 0, max_tokens: 210, temperature: 0, finish_reason: length, prompt_tokens: 12602, num_prefix_cache_tokens: 512, generated_tokens: 210, ttft: 163118.0ms, total_latency: 170971.0ms, avg tpot: 37.6ms, generation speed: 26.7 tokens/s\nI20261028 00:05:58.770503   642 request.cpp:134] x-request-id: ff4ef64b-9d04-446f-b591-1aa6b324b8df, x-request-time: , request_id: chatcmpl-15933769124469343823-dPfeBZzjs8dhfot62bapDp, sequence 0, max_tokens: 802, temperature: 0, finish_reason: length, prompt_tokens: 6181, num_prefix_cache_tokens: 512, generated_tokens: 802, ttft: 155495.0ms, total_latency: 195571.1ms, avg tpot: 50.0ms, generation speed: 20.0 tokens/s\nI20261028 00:06:00.464242   640 request.cpp:134] x-request-id: f67f644e-679b-4691-8f16-c0e3bf0dab5d, x-request-time: , request_id: chatcmpl-15933769124469343823-WQdK63DqoU37CKv7VNrpTj, sequence 0, max_tokens: 671, temperature: 0, finish_reason: length, prompt_tokens: 7141, num_prefix_cache_tokens: 512, generated_tokens: 671, ttft: 154700.0ms, total_latency: 185261.3ms, avg tpot: 45.6ms, generation speed: 22.0 tokens/s\nI20261028 00:06:00.722476   643 request.cpp:134] x-request-id: 1ed8d3fe-7e4f-430a-83b3-a06fdd41c245, x-request-time: , request_id: chatcmpl-15933769124469343823-DBa6GKsHUaZccUh4yRjna4, sequence 0, max_tokens: 747, temperature: 0, finish_reason: length, prompt_tokens: 25355, num_prefix_cache_tokens: 10624, generated_tokens: 747, ttft: 156166.0ms, total_latency: 191484.8ms, avg tpot: 47.3ms, generation speed: 21.2 tokens/s\nI20261028 00:06:02.744021   642 request.cpp:134] x-request-id: 6c5c174a-df9a-4ea5-b076-439fc0015d1a, x-request-time: , request_id: chatcmpl-15933769124469343823-xv2WqLQgULcGbjCFLxRCVA, sequence 0, max_tokens: 35, temperature: 0, finish_reason: length, prompt_tokens: 18768, num_prefix_cache_tokens: 512, generated_tokens: 35, ttft: 169761.0ms, total_latency: 172516.5ms, avg tpot: 81.0ms, generation speed: 12.7 tokens/s\nI20261028 00:06:04.143795   641 request.cpp:134] x-request-id: 076819a8-462d-4638-a6ab-d7cee87a3a56, x-request-time: , request_id: chatcmpl-15933769124469343823-iYcHj4Jrsant2gvDYsUhwY, sequence 0, max_tokens: 369, temperature: 0, finish_reason: length, prompt_tokens: 1397, num_prefix_cache_tokens: 512, generated_tokens: 369, ttft: 163571.0ms, total_latency: 182953.8ms, avg tpot: 52.7ms, generation speed: 19.0 tokens/s\nI20261028 00:06:04.920015   643 request.cpp:134] x-request-id: e5540c6f-7833-4b4c-83eb-3e7f9ff35106, x-request-time: , request_id: chatcmpl-15933769124469343823-eGGf6nCEv9v3qKuWptpnxW, sequence 0, max_tokens: 473, temperature: 0, finish_reason: length, prompt_tokens: 19879, num_prefix_cache_tokens: 512, generated_tokens: 473, ttft: 162804.0ms, total_latency: 186689.0ms, avg tpot: 50.6ms, generation speed: 19.8 tokens/s\nI20261028 00:06:05.865434   640 request.cpp:134] x-request-id: 8e6c4259-1b64-45cc-9f6f-ea469d611b91, x-request-time: , request_id: chatcmpl-15933769124469343823-EpLDBHhhFCoGvioCqNVdSx, sequence 0, max_tokens: 27, temperature: 0, finish_reason: length, prompt_tokens: 24453, num_prefix_cache_tokens: 10624, generated_tokens: 27, ttft: 169232.0ms, total_latency: 172628.1ms, avg tpot: 130.6ms, generation speed: 8.0 tokens/s\nI20261028 00:06:07.072474   640 request.cpp:134] x-request-id: b3d1eb6c-6272-47a6-835f-8d8530323cd0, x-request-time: , request_id: chatcmpl-15933769124469343823-p7HwSjTUT5JYwWUJDazKbx, sequence 0, max_tokens: 347, temperature: 0, finish_reason: length, prompt_tokens: 2274, num_prefix_cache_tokens: 512, generated_tokens: 347, ttft: 160883.0ms, total_latency: 179878.8ms, avg tpot: 54.9ms, generation speed: 18.3 tokens/s\nI20261028 00:06:07.438386   643 request.cpp:134] x-request-id: 9639807a-3046-4742-ae83-fbfaaf0fc86b, x-request-time: , request_id: chatcmpl-15933769124469343823-kk6ULEHLobavGGoPMuuRcL, sequence 0, max_tokens: 361, temperature: 0, finish_reason: length, prompt_tokens: 18828, num_prefix_cache_tokens: 512, generated_tokens: 361, ttft: 163705.0ms, total_latency: 183211.7ms, avg tpot: 54.2ms, generation speed: 18.5 tokens/s\nI20261028 00:06:09.558274   643 request.cpp:134] x-request-id: 7632c30b-b588-4406-be83-5c4f9267fb84, x-request-time: , request_id: chatcmpl-15933769124469343823-AAg5X97pDTsr2LjJY9EDmd, sequence 0, max_tokens: 276, temperature: 0, finish_reason: length, prompt_tokens: 968, num_prefix_cache_tokens: 512, generated_tokens: 276, ttft: 162496.0ms, total_latency: 179368.7ms, avg tpot: 61.4ms, generation speed: 16.4 tokens/s\nI20261028 00:06:10.204012   642 request.cpp:134] x-request-id: 2d2f082f-65af-447f-8121-ce0254d73575, x-request-time: , request_id: chatcmpl-15933769124469343823-RUwsaigGYeo9jDBuKLRQV3, sequence 0, max_tokens: 300, temperature: 0, finish_reason: length, prompt_tokens: 19984, num_prefix_cache_tokens: 512, generated_tokens: 300, ttft: 165329.0ms, total_latency: 182973.1ms, avg tpot: 59.0ms, generation speed: 17.0 tokens/s\n",
+    "supervisor.log": "",
+    "watchdog.log": ""
+  },
+  "ok": true,
+  "operator_acceptance": {
+    "bf16": {
+      "sha256": "4d3c8ea48951d8c1457559c0e57d1bd2f48584ec85c1606f1896a48c49a39d8e",
+      "value": {
+        "arm": "bf16",
+        "backend": {
+          "attention_impl": "flashinfer",
+          "class": "FlashInferBackend",
+          "decode_impl": "xqa",
+          "decode_internal_q_data_type": "torch.bfloat16",
+          "decode_tensor_cores": true,
+          "flashinfer_version": "0.6.18.post1",
+          "kv_cache_dtype": "auto",
+          "kv_data_type": "torch.bfloat16",
+          "paged_prefill": true,
+          "planner_backend": "fa3",
+          "profile_scope": "production_xqa",
+          "q_data_type": "torch.bfloat16",
+          "q_scale": null,
+          "quality_transform": false,
+          "scale_strategy": "none",
+          "xqa_enable_pdl": true,
+          "xqa_graph_padding": "reserved_page0_one_token_discard",
+          "xqa_max_context": 32768,
+          "xqa_unused_kv_policy": "finite_full_initialization"
+        },
+        "classification": "operator_correctness_only",
+        "decode_impl": "xqa",
+        "device": "NVIDIA H800",
+        "fresh_dirty_cache_initialized_to_zero": true,
+        "invalid_nan_padding_diagnostics": {
+          "key": {
+            "finite_outputs": 10240,
+            "total_outputs": 10240
+          },
+          "value": {
+            "finite_outputs": 10240,
+            "total_outputs": 10240
+          }
+        },
+        "model_loaded": false,
+        "model_quality_validated": false,
+        "noncontiguous_q_checked": true,
+        "padded_graph_bucket_checked": true,
+        "partial_page_and_replan": true,
+        "prefill_planner": "fa3",
+        "real_capture_and_replay": true,
+        "reference": "FP32 dense causal attention on the same representable Q/K/V; relative L2 <=.05 plus rtol .08, atol .015",
+        "reference_comparisons": {
+          "capture_replay": {
+            "max_abs": 0.0008789524435997009,
+            "relative_l2": 0.003906028810888529
+          },
+          "changed_context": {
+            "max_abs": 0.0009812712669372559,
+            "relative_l2": 0.0028711154591292143
+          },
+          "padded_graph": {
+            "max_abs": 0.0009812712669372559,
+            "relative_l2": 0.0028711154591292143
+          },
+          "prefill": {
+            "max_abs": 0.0005266666412353516,
+            "relative_l2": 0.0022824311163276434
+          },
+          "restored_finite_padding": {
+            "max_abs": 0.0009812712669372559,
+            "relative_l2": 0.0028711154591292143
+          }
+        },
+        "reserved_page0_not_used_for_live_sequences": true,
+        "schema": "kv-native-fa3-operator-acceptance-v1",
+        "service_performance_measured": false,
+        "unused_padding_reference": "maximum_finite_FP8_or_large_finite_BF16"
+      }
+    }
+  },
+  "owned_containers": [
+    {
+      "created": "2026-10-27T15:53:03.279530982Z",
+      "id": "96b1a98be3bc6af9408a8cc74f2e18dfb482ee456443379cd5b1ba2e11a84961",
+      "running": true
+    }
+  ],
+  "quality_progress": {
+    "bf16": {},
+    "fp8_e4m3": {}
+  },
+  "relaunch_allowed": false,
+  "run_id": "prod-trace-bf16xqa-conversation-s1-r1-20261027b",
+  "status": "RUNNING",
+  "supervisor_alive": true
+}

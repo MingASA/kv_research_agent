@@ -1,0 +1,124 @@
+{
+  "files": {
+    "START_INTENT.json": {
+      "sha256": "8dee8bf1d45faddbb2b52f661c011524e756ee91b887116864f6342dc73e5e9d",
+      "value": {
+        "request_sha256": "40cee39446a977671ec5dcdf7736b086a5fc917bb2fc0c83077a3221f16fac91"
+      }
+    },
+    "SUPERVISOR_PROCESS.json": {
+      "sha256": "a9f0fe8b1bc1cb6cf5c2946f7e5b3a11fbb88c57e51a40835ed175b93be3a783",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-513999.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-513999.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-513999.scope\n",
+          "pid": 239161,
+          "start_ticks": 364742076,
+          "uid": 1005
+        }
+      }
+    },
+    "SUPERVISOR_STARTED.json": {
+      "sha256": "0c72795998d012db5522160d1f455839891112037f474c8e7bd9a756e24cb242",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-513999.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-513999.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-513999.scope\n",
+          "pid": 239161,
+          "start_ticks": 364742076,
+          "uid": 1005
+        },
+        "ticket_sha256": "8d8a7aab824ad4717364d2bf6c393e684ee475c37161a14560a48d65b800b92a"
+      }
+    },
+    "owned_containers.json": {
+      "sha256": "233f580b07f6d7b1a77f5767f3d99554d3079eef9612f8df51bb94031a8240d9",
+      "value": {
+        "containers": [
+          {
+            "container_id": "080b2a226f7e9533dcda132128f9bce2c26efc7cbce1d82e074c61e7e74fe052",
+            "pid_identity": {
+              "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+              "cgroup": "12:rdma:/system.slice/docker-080b2a226f7e9533dcda132128f9bce2c26efc7cbce1d82e074c61e7e74fe052.scope\n11:blkio:/system.slice/docker-080b2a226f7e9533dcda132128f9bce2c26efc7cbce1d82e074c61e7e74fe052.scope\n10:net_cls,net_prio:/system.slice/docker-080b2a226f7e9533dcda132128f9bce2c26efc7cbce1d82e074c61e7e74fe052.scope\n9:freezer:/system.slice/docker-080b2a226f7e9533dcda132128f9bce2c26efc7cbce1d82e074c61e7e74fe052.scope\n8:memory:/system.slice/docker-080b2a226f7e9533dcda132128f9bce2c26efc7cbce1d82e074c61e7e74fe052.scope\n7:hugetlb:/system.slice/docker-080b2a226f7e9533dcda132128f9bce2c26efc7cbce1d82e074c61e7e74fe052.scope\n6:perf_event:/system.slice/docker-080b2a226f7e9533dcda132128f9bce2c26efc7cbce1d82e074c61e7e74fe052.scope\n5:pids:/system.slice/docker-080b2a226f7e9533dcda132128f9bce2c26efc7cbce1d82e074c61e7e74fe052.scope\n4:devices:/system.slice/docker-080b2a226f7e9533dcda132128f9bce2c26efc7cbce1d82e074c61e7e74fe052.scope\n3:cpu,cpuacct:/system.slice/docker-080b2a226f7e9533dcda132128f9bce2c26efc7cbce1d82e074c61e7e74fe052.scope\n2:cpuset:/system.slice/docker-080b2a226f7e9533dcda132128f9bce2c26efc7cbce1d82e074c61e7e74fe052.scope\n1:name=systemd:/system.slice/docker-080b2a226f7e9533dcda132128f9bce2c26efc7cbce1d82e074c61e7e74fe052.scope\n",
+              "pid": 253921,
+              "start_ticks": 364754490,
+              "uid": 1005
+            },
+            "released": true
+          },
+          {
+            "container_id": "a9c126cdcc27aa17fe99bceb227e278a9e3ff145d220176ab048d7e65ff551d9",
+            "pid_identity": {
+              "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+              "cgroup": "12:rdma:/system.slice/docker-a9c126cdcc27aa17fe99bceb227e278a9e3ff145d220176ab048d7e65ff551d9.scope\n11:blkio:/system.slice/docker-a9c126cdcc27aa17fe99bceb227e278a9e3ff145d220176ab048d7e65ff551d9.scope\n10:net_cls,net_prio:/system.slice/docker-a9c126cdcc27aa17fe99bceb227e278a9e3ff145d220176ab048d7e65ff551d9.scope\n9:freezer:/system.slice/docker-a9c126cdcc27aa17fe99bceb227e278a9e3ff145d220176ab048d7e65ff551d9.scope\n8:memory:/system.slice/docker-a9c126cdcc27aa17fe99bceb227e278a9e3ff145d220176ab048d7e65ff551d9.scope\n7:hugetlb:/system.slice/docker-a9c126cdcc27aa17fe99bceb227e278a9e3ff145d220176ab048d7e65ff551d9.scope\n6:perf_event:/system.slice/docker-a9c126cdcc27aa17fe99bceb227e278a9e3ff145d220176ab048d7e65ff551d9.scope\n5:pids:/system.slice/docker-a9c126cdcc27aa17fe99bceb227e278a9e3ff145d220176ab048d7e65ff551d9.scope\n4:devices:/system.slice/docker-a9c126cdcc27aa17fe99bceb227e278a9e3ff145d220176ab048d7e65ff551d9.scope\n3:cpu,cpuacct:/system.slice/docker-a9c126cdcc27aa17fe99bceb227e278a9e3ff145d220176ab048d7e65ff551d9.scope\n2:cpuset:/system.slice/docker-a9c126cdcc27aa17fe99bceb227e278a9e3ff145d220176ab048d7e65ff551d9.scope\n1:name=systemd:/system.slice/docker-a9c126cdcc27aa17fe99bceb227e278a9e3ff145d220176ab048d7e65ff551d9.scope\n",
+              "pid": 401122,
+              "start_ticks": 364872416,
+              "uid": 1005
+            },
+            "released": false
+          }
+        ],
+        "request_sha256": "40cee39446a977671ec5dcdf7736b086a5fc917bb2fc0c83077a3221f16fac91",
+        "reservation_id": "986b318628de44439fb3082fedc59265"
+      }
+    },
+    "state.json": {
+      "sha256": "8bbf4c538af21058daac0f76b2f7917f1e99e5cf8d13382316e9d03b36eeabc5",
+      "value": {
+        "arm": "fp8_e4m3",
+        "containers": [
+          "080b2a226f7e9533dcda132128f9bce2c26efc7cbce1d82e074c61e7e74fe052",
+          "a9c126cdcc27aa17fe99bceb227e278a9e3ff145d220176ab048d7e65ff551d9"
+        ],
+        "request_sha256": "40cee39446a977671ec5dcdf7736b086a5fc917bb2fc0c83077a3221f16fac91",
+        "status": "RUNNING"
+      }
+    }
+  },
+  "gpu_snapshot": "0, GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 65075, 0\n1, GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 0, 0\n2, GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 0, 0\n3, GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 0, 0\n4, GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 0, 0\n5, GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 0, 0\n6, GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 0, 0\n7, GPU-47211491-ba0d-78bf-5c84-f968c0648213, 0, 0",
+  "live_owned_containers": [
+    "a9c126cdcc27aa17fe99bceb227e278a9e3ff145d220176ab048d7e65ff551d9"
+  ],
+  "log_tail": {
+    "events.jsonl": "{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3647421171562746,\"utc\":\"2026-10-26T19:36:19.432409+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3647421171562746,\"utc\":\"2026-10-26T19:36:49.829461+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3647421171562746,\"utc\":\"2026-10-26T19:37:20.239586+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3647421171562746,\"utc\":\"2026-10-26T19:37:50.972565+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3647421171562746,\"utc\":\"2026-10-26T19:38:21.297342+00:00\"}\n{\"action\":\"OWNED_CONTAINER_CREATED\",\"arm\":\"bf16\",\"id\":\"080b2a226f7e9533dcda132128f9bce2c26efc7cbce1d82e074c61e7e74fe052\",\"utc\":\"2026-10-26T19:38:23.042947+00:00\"}\n{\"action\":\"ARM_VERIFIED\",\"arm\":\"bf16\",\"id\":\"080b2a226f7e9533dcda132128f9bce2c26efc7cbce1d82e074c61e7e74fe052\",\"utc\":\"2026-10-26T19:55:59.158325+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3648601221039957,\"utc\":\"2026-10-26T19:55:59.481849+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3648601221039957,\"utc\":\"2026-10-26T19:56:29.937030+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3648601221039957,\"utc\":\"2026-10-26T19:57:00.324555+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3648601221039957,\"utc\":\"2026-10-26T19:57:30.653659+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3648601221039957,\"utc\":\"2026-10-26T19:58:01.169210+00:00\"}\n{\"action\":\"OWNED_CONTAINER_CREATED\",\"arm\":\"fp8_e4m3\",\"id\":\"a9c126cdcc27aa17fe99bceb227e278a9e3ff145d220176ab048d7e65ff551d9\",\"utc\":\"2026-10-26T19:58:02.301335+00:00\"}\n",
+    "output/bf16/container.log": "",
+    "output/bf16/quality.log": "I20261027 03:38:25.049879 11 run_qwen25_joint_kv_quality.py:859] Hashing local checkpoint shards and validating model/configuration: /models/Qwen2.5-14B-Instruct\n/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/experiments/joint-kv-14b/longbench-deps-py312/fuzzywuzzy/fuzz.py:11: UserWarning: Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning\n  warnings.warn('Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning')\nI20261027 03:39:09.013129 11 run_qwen25_joint_kv_quality.py:614] Starting auto: 9 pending tasks; evidence in /results/quality/arms/auto/attempt-0001\nI20261027 03:44:33.218600 11 run_qwen25_joint_kv_quality.py:680] Evaluating auto/gsm8k; detailed progress is in eval-gsm8k.log\nI20261027 03:50:40.925998 11 run_qwen25_joint_kv_quality.py:680] Evaluating auto/narrativeqa; detailed progress is in eval-narrativeqa.log\nI20261027 03:51:59.971895 11 run_qwen25_joint_kv_quality.py:680] Evaluating auto/qasper; detailed progress is in eval-qasper.log\nI20261027 03:52:17.909745 11 run_qwen25_joint_kv_quality.py:680] Evaluating auto/multifieldqa_en; detailed progress is in eval-multifieldqa_en.log\nI20261027 03:52:43.044928 11 run_qwen25_joint_kv_quality.py:680] Evaluating auto/2wikimqa; detailed progress is in eval-2wikimqa.log\nI20261027 03:53:09.511846 11 run_qwen25_joint_kv_quality.py:680] Evaluating auto/hotpotqa; detailed progress is in eval-hotpotqa.log\nI20261027 03:53:53.977361 11 run_qwen25_joint_kv_quality.py:680] Evaluating auto/musique; detailed progress is in eval-musique.log\nI20261027 03:54:48.499457 11 run_qwen25_joint_kv_quality.py:680] Evaluating auto/lcc; detailed progress is in eval-lcc.log\nI20261027 03:55:06.864363 11 run_qwen25_joint_kv_quality.py:680] Evaluating auto/repobench-p; detailed progress is in eval-repobench-p.log\nI20261027 03:55:56.055971 11 run_qwen25_joint_kv_quality.py:944] Joint-KV quality run complete: /results/quality\n",
+    "output/bf16/scorer_cpu_preflight.log": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/experiments/joint-kv-14b/longbench-deps-py312/fuzzywuzzy/fuzz.py:11: UserWarning: Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning\n  warnings.warn('Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning')\n{\"qa_f1\": 1.0, \"code_sim\": 1.0}\n",
+    "output/fp8_e4m3/container.log": "",
+    "output/fp8_e4m3/quality.log": "I20261027 03:58:04.220313 10 run_qwen25_joint_kv_quality.py:859] Hashing local checkpoint shards and validating model/configuration: /models/Qwen2.5-14B-Instruct\n/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/experiments/joint-kv-14b/longbench-deps-py312/fuzzywuzzy/fuzz.py:11: UserWarning: Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning\n  warnings.warn('Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning')\nI20261027 03:58:47.113682 10 run_qwen25_joint_kv_quality.py:614] Starting fp8_e4m3: 9 pending tasks; evidence in /results/quality/arms/fp8_e4m3/attempt-0001\n",
+    "output/fp8_e4m3/scorer_cpu_preflight.log": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/experiments/joint-kv-14b/longbench-deps-py312/fuzzywuzzy/fuzz.py:11: UserWarning: Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning\n  warnings.warn('Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning')\n{\"qa_f1\": 1.0, \"code_sim\": 1.0}\n",
+    "supervisor.log": "",
+    "watchdog.log": ""
+  },
+  "ok": true,
+  "owned_containers": [
+    {
+      "created": "2026-10-26T19:58:02.260598629Z",
+      "id": "a9c126cdcc27aa17fe99bceb227e278a9e3ff145d220176ab048d7e65ff551d9",
+      "running": true
+    },
+    {
+      "created": "2026-10-26T19:38:23.002003676Z",
+      "id": "080b2a226f7e9533dcda132128f9bce2c26efc7cbce1d82e074c61e7e74fe052",
+      "running": false
+    }
+  ],
+  "quality_progress": {
+    "bf16": {
+      "2wikimqa": 48,
+      "gsm8k": 1255,
+      "hotpotqa": 48,
+      "lcc": 48,
+      "multifieldqa_en": 48,
+      "musique": 48,
+      "narrativeqa": 48,
+      "qasper": 48,
+      "repobench-p": 48
+    },
+    "fp8_e4m3": {}
+  },
+  "relaunch_allowed": false,
+  "run_id": "prod-quality-fa3-completion1639-r0-20261026b",
+  "status": "RUNNING",
+  "supervisor_alive": true
+}

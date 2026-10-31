@@ -1,0 +1,618 @@
+{
+  "classification": "confirmed_trace_measurement_integrity",
+  "run_id": "prod-trace-bf16xqa-toolagent-s025-r0-20261027b",
+  "canonical_audit": "reports/operations/20261026T075846Z/toolagent_s025_independent_audit_v1.json",
+  "canonical_audit_sha256": "4c42db71a841f362b1ea71df8a5b026990c3933de8c9603eab5e8376cf58d96d",
+  "root_complete": true,
+  "quality_accepted": false,
+  "source_parent_workload": {
+    "arrival_mode": "fixed_schedule_continuous_warm_cache",
+    "arrival_scaling": 0.25,
+    "content_scope": "anonymous_arrival_length_prefix_emulation",
+    "family": "toolagent",
+    "ignore_eos": true,
+    "kind": "anonymous_trace_xqa_bf16_reference",
+    "requests": 2088,
+    "source_content_sha256": "48a2db1a13d3bc05e6330140c64f604ba366df20d3c9e128b5c35a01c1fa5f71",
+    "trace_manifest": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/runs/prod-trace-bf16xqa-toolagent-s025-r0-20261027b/input/trace_manifest.json",
+    "warmup": 0
+  },
+  "measured": {
+    "bf16": {
+      "attempts": 1689,
+      "successes": 1689,
+      "errors": 0,
+      "offered_rps": 1.759375,
+      "completion_rps_including_drain": 1.7143489821622044,
+      "actual_output_tokens": 304758,
+      "elapsed_including_drain_seconds": 985.2136394480001,
+      "client_start_lag_ms": {
+        "count": 1689,
+        "mean": 4.853592057430432,
+        "min": -0.716516,
+        "max": 13.58659,
+        "p50": 4.724037,
+        "p95": 9.7592416,
+        "p99": 11.970234719999995
+      },
+      "credit_issue_lag_ms": {
+        "count": 1689,
+        "mean": 0.1191230153937241,
+        "min": -1.303607,
+        "max": 1.738675,
+        "p50": 0.08969,
+        "p95": 1.1728553999999998,
+        "p99": 1.3940030799999992
+      },
+      "credit_to_start_ms": {
+        "count": 1689,
+        "mean": 4.734469042036708,
+        "min": 0.527169,
+        "max": 12.716387,
+        "p50": 4.604825,
+        "p95": 9.185434399999995,
+        "p99": 11.523535399999995
+      },
+      "ttft_ms": {
+        "count": 1689,
+        "mean": 7919.845539004737,
+        "min": 33.515411,
+        "max": 39736.859334,
+        "p50": 3862.8883619999997,
+        "p95": 28794.615837399997,
+        "p99": 33313.57550175999
+      },
+      "offered_ttft_ms": {
+        "count": 1689,
+        "mean": 7924.699131062166,
+        "min": 34.396461,
+        "max": 39745.606563,
+        "p50": 3867.8116,
+        "p95": 28805.496459399998,
+        "p99": 33324.11999083999
+      },
+      "itl_ms": {
+        "count": 1686,
+        "mean": 127.73952447522191,
+        "min": 4.208277706214689,
+        "max": 774.7377345,
+        "p50": 52.41501808383234,
+        "p95": 573.34750975,
+        "p99": 688.4567331249999
+      },
+      "e2e_ms": {
+        "count": 1689,
+        "mean": 15536.086354192421,
+        "min": 165.15731499999998,
+        "max": 115743.187423,
+        "p50": 10258.332715999999,
+        "p95": 43123.9290822,
+        "p99": 59357.16371979997
+      },
+      "offered_e2e_ms": {
+        "count": 1689,
+        "mean": 16502.258463227354,
+        "min": 165.278889,
+        "max": 116749.250098,
+        "p50": 10997.176519,
+        "p95": 47125.853086399984,
+        "p99": 62240.0795124
+      },
+      "candidate_slo_not_user_accepted": {
+        "1": 0.1492062169199787,
+        "5": 0.5795697269476724,
+        "10": 0.7998265233533552
+      }
+    },
+    "fp8_e4m3": {
+      "attempts": 1689,
+      "successes": 1689,
+      "errors": 0,
+      "offered_rps": 1.759375,
+      "completion_rps_including_drain": 1.7278781304036823,
+      "actual_output_tokens": 304758,
+      "elapsed_including_drain_seconds": 977.499495063,
+      "client_start_lag_ms": {
+        "count": 1689,
+        "mean": 5.486307925399645,
+        "min": -0.116287,
+        "max": 15.675611,
+        "p50": 5.336281,
+        "p95": 10.205742799999998,
+        "p99": 12.41107611999999
+      },
+      "credit_issue_lag_ms": {
+        "count": 1689,
+        "mean": 1.0141888656009472,
+        "min": -0.780962,
+        "max": 2.923118,
+        "p50": 1.064345,
+        "p95": 2.2756931999999996,
+        "p99": 2.6351361599999987
+      },
+      "credit_to_start_ms": {
+        "count": 1689,
+        "mean": 4.472119059798698,
+        "min": 0.329264,
+        "max": 13.644944,
+        "p50": 4.302626,
+        "p95": 8.4262996,
+        "p99": 10.83713644
+      },
+      "ttft_ms": {
+        "count": 1689,
+        "mean": 3407.1449897844877,
+        "min": 28.333848,
+        "max": 21688.154424,
+        "p50": 2258.283905,
+        "p95": 10404.298996799998,
+        "p99": 15405.310194039967
+      },
+      "offered_ttft_ms": {
+        "count": 1689,
+        "mean": 3412.6312977098873,
+        "min": 30.010188,
+        "max": 21701.66103,
+        "p50": 2267.015441,
+        "p95": 10409.5352612,
+        "p99": 15413.517761359966
+      },
+      "itl_ms": {
+        "count": 1686,
+        "mean": 214.38413758657828,
+        "min": 6.96731178805395,
+        "max": 1014.9173539999999,
+        "p50": 83.14009976577532,
+        "p95": 735.3361297499999,
+        "p99": 905.9677121750004
+      },
+      "e2e_ms": {
+        "count": 1689,
+        "mean": 13538.722091687388,
+        "min": 990.876399,
+        "max": 143142.406849,
+        "p50": 8454.710353999999,
+        "p95": 41974.39261159999,
+        "p99": 61881.33524231972
+      },
+      "offered_e2e_ms": {
+        "count": 1689,
+        "mean": 14337.686691820603,
+        "min": 991.764915,
+        "max": 143147.901524,
+        "p50": 8661.60095,
+        "p95": 43698.68767099998,
+        "p99": 63796.48937279996
+      },
+      "candidate_slo_not_user_accepted": {
+        "1": 0.16675200429591486,
+        "5": 0.6240412430706017,
+        "10": 0.879795850886422
+      }
+    }
+  },
+  "application_observations": {
+    "bf16": {
+      "measurement_and_drain_samples": 985,
+      "total_samples": 1233,
+      "metric_error_counts": {},
+      "gauges": {
+        "num_pending_requests": {
+          "count": 985,
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0
+        },
+        "num_running_requests": {
+          "count": 985,
+          "mean": 15.677157360406092,
+          "min": 0.0,
+          "max": 30.0,
+          "p50": 16.0,
+          "p95": 25.0,
+          "p99": 28.159999999999968
+        },
+        "num_waiting_requests": {
+          "count": 985,
+          "mean": 12.319796954314722,
+          "min": 0.0,
+          "max": 84.0,
+          "p50": 6.0,
+          "p95": 45.0,
+          "p99": 72.0
+        },
+        "num_preempted_requests": {
+          "count": 985,
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0
+        },
+        "num_running_sequences": {
+          "count": 985,
+          "mean": 15.677157360406092,
+          "min": 0.0,
+          "max": 30.0,
+          "p50": 16.0,
+          "p95": 25.0,
+          "p99": 28.159999999999968
+        },
+        "num_free_blocks": {
+          "count": 985,
+          "mean": 0.515736040609137,
+          "min": 0.0,
+          "max": 10.0,
+          "p50": 0.0,
+          "p95": 3.0,
+          "p99": 7.0
+        },
+        "num_used_blocks": {
+          "count": 985,
+          "mean": 994.5076142131979,
+          "min": 0.0,
+          "max": 1359.0,
+          "p50": 1176.0,
+          "p95": 1340.0,
+          "p99": 1353.0
+        },
+        "num_blocks_in_prefix_cache": {
+          "count": 985,
+          "mean": 1430.2670050761421,
+          "min": 1353.0,
+          "max": 1475.0,
+          "p50": 1455.0,
+          "p95": 1471.0,
+          "p99": 1475.0
+        },
+        "kv_cache_utilization_perc": {
+          "count": 985,
+          "mean": 0.6737849734416245,
+          "min": 0.0,
+          "max": 0.920732,
+          "p50": 0.796748,
+          "p95": 0.907859,
+          "p99": 0.916667
+        },
+        "prefix_cache_token_hit_rate_perc": {
+          "count": 985,
+          "mean": 43.071002335025376,
+          "min": 41.1542,
+          "max": 45.5164,
+          "p50": 42.8053,
+          "p95": 45.1746,
+          "p99": 45.3702
+        }
+      },
+      "sample_bounded_counter_changes": {
+        "prefix_cache_prompt_tokens_total": {
+          "samples": 985,
+          "monotonic": true,
+          "delta": 11881600.0
+        },
+        "prefix_cache_hit_tokens_total": {
+          "samples": 985,
+          "monotonic": true,
+          "delta": 4994810.0
+        }
+      },
+      "sample_bounded_prefix_hit_token_fraction": 0.42038193509291677,
+      "physical_pages": 1477,
+      "usable_physical_pages_after_reserved0": 1476,
+      "used_blocks_include_reserved_page0": true,
+      "limitation": "Sequential1s application samples, not atomic snapshots/exact event counters; prefix pool can be reclaimable; no HBM counters"
+    },
+    "fp8_e4m3": {
+      "measurement_and_drain_samples": 977,
+      "total_samples": 1225,
+      "metric_error_counts": {},
+      "gauges": {
+        "num_pending_requests": {
+          "count": 977,
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0
+        },
+        "num_running_requests": {
+          "count": 977,
+          "mean": 20.308085977482087,
+          "min": 0.0,
+          "max": 57.0,
+          "p50": 20.0,
+          "p95": 38.19999999999993,
+          "p99": 42.0
+        },
+        "num_waiting_requests": {
+          "count": 977,
+          "mean": 4.1248720573183215,
+          "min": 0.0,
+          "max": 42.0,
+          "p50": 0.0,
+          "p95": 18.0,
+          "p99": 26.0
+        },
+        "num_preempted_requests": {
+          "count": 977,
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0
+        },
+        "num_running_sequences": {
+          "count": 977,
+          "mean": 20.310133060388946,
+          "min": 0.0,
+          "max": 57.0,
+          "p50": 20.0,
+          "p95": 38.19999999999993,
+          "p99": 42.0
+        },
+        "num_free_blocks": {
+          "count": 977,
+          "mean": 0.8638689866939611,
+          "min": 0.0,
+          "max": 12.0,
+          "p50": 0.0,
+          "p95": 5.0,
+          "p99": 9.0
+        },
+        "num_used_blocks": {
+          "count": 977,
+          "mean": 1246.2620266120778,
+          "min": 0.0,
+          "max": 2621.0,
+          "p50": 1140.0,
+          "p95": 2560.0,
+          "p99": 2600.7200000000003
+        },
+        "num_blocks_in_prefix_cache": {
+          "count": 977,
+          "mean": 2806.1821903787104,
+          "min": 2730.0,
+          "max": 2863.0,
+          "p50": 2825.0,
+          "p95": 2860.2,
+          "p99": 2863.0
+        },
+        "kv_cache_utilization_perc": {
+          "count": 977,
+          "mean": 0.43514590580348006,
+          "min": 0.0,
+          "max": 0.915154,
+          "p50": 0.398045,
+          "p95": 0.893855,
+          "p99": 0.90833776
+        },
+        "prefix_cache_token_hit_rate_perc": {
+          "count": 977,
+          "mean": 43.61844227226202,
+          "min": 41.7098,
+          "max": 45.8092,
+          "p50": 43.3925,
+          "p95": 45.47244,
+          "p99": 45.7275
+        }
+      },
+      "sample_bounded_counter_changes": {
+        "prefix_cache_prompt_tokens_total": {
+          "samples": 977,
+          "monotonic": true,
+          "delta": 11893510.0
+        },
+        "prefix_cache_hit_tokens_total": {
+          "samples": 977,
+          "monotonic": true,
+          "delta": 5092600.0
+        }
+      },
+      "sample_bounded_prefix_hit_token_fraction": 0.4281831015402518,
+      "physical_pages": 2865,
+      "usable_physical_pages_after_reserved0": 2864,
+      "used_blocks_include_reserved_page0": true,
+      "limitation": "Sequential1s application samples, not atomic snapshots/exact event counters; prefix pool can be reclaimable; no HBM counters"
+    }
+  },
+  "stream_completion_gap": {
+    "classification": "confirmed_raw_timing_and_installed_source_analysis",
+    "run_id": "prod-trace-bf16xqa-toolagent-s025-r0-20261027b",
+    "audit_sha256": "4c42db71a841f362b1ea71df8a5b026990c3933de8c9603eab5e8376cf58d96d",
+    "script_sha256": "eea8b0d59719477ad70d6b552b8d9b92240275aa0426b19587985b74d70e96ea",
+    "arms": {
+      "bf16": {
+        "raw_sha256": "a1aeed9f168f3398d2cf36f31acddcef375fc5abb794d8fcbff2eacbf487d69e",
+        "successful_measurement_records": 1689,
+        "terminal_minus_content_ms": {
+          "count": 1689,
+          "mean": 961.3185169775015,
+          "min": 0.0,
+          "max": 43671.751051,
+          "p50": 0.135885,
+          "p95": 7378.189426999992,
+          "p99": 18769.54854215995
+        },
+        "OSL_le4_terminal_minus_content_ms": {
+          "count": 405,
+          "mean": 0.24317089876543208,
+          "min": 0.0,
+          "max": 4.531152,
+          "p50": 0.096246,
+          "p95": 0.8429867999999995,
+          "p99": 1.7027541999999956
+        },
+        "OSL_gt4_terminal_minus_content_ms": {
+          "count": 1284,
+          "mean": 1264.4614415584113,
+          "min": 0.0,
+          "max": 43671.751051,
+          "p50": 0.142839,
+          "p95": 9983.365910499979,
+          "p99": 20970.487399530004
+        },
+        "final_SSE_inclusive_per_server_output_token_ms": {
+          "count": 1686,
+          "mean": 129.93140773798032,
+          "min": 14.776163088461537,
+          "max": 774.7377345,
+          "p50": 54.43948411545725,
+          "p95": 573.79990575,
+          "p99": 688.7506610750002
+        },
+        "illustrative_TTFT_and_final_SSE_inclusive_mean100ms_qualified_RPS": {
+          "1": 0.1492062169199787,
+          "5": 0.5795697269476724,
+          "10": 0.7998265233533552
+        },
+        "largest_terminal_tails": [
+          {
+            "session_id": "toolagent-source-14996",
+            "server_output_tokens": 984,
+            "terminal_minus_content_ms": 43671.751051,
+            "official_request_mean_ITL_ms": 6.601027185147508,
+            "final_SSE_inclusive_per_server_output_token_ms": 51.028037409969485
+          },
+          {
+            "session_id": "toolagent-source-14156",
+            "server_output_tokens": 842,
+            "terminal_minus_content_ms": 32433.596697,
+            "official_request_mean_ITL_ms": 5.285656712247324,
+            "final_SSE_inclusive_per_server_output_token_ms": 43.85117002615933
+          },
+          {
+            "session_id": "toolagent-source-14852",
+            "server_output_tokens": 658,
+            "terminal_minus_content_ms": 30519.891492,
+            "official_request_mean_ITL_ms": 10.991032764079147,
+            "final_SSE_inclusive_per_server_output_token_ms": 57.444444471841706
+          },
+          {
+            "session_id": "toolagent-source-15473",
+            "server_output_tokens": 581,
+            "terminal_minus_content_ms": 27335.100247,
+            "official_request_mean_ITL_ms": 10.840397172413791,
+            "final_SSE_inclusive_per_server_output_token_ms": 57.96988035689655
+          },
+          {
+            "session_id": "toolagent-source-14407",
+            "server_output_tokens": 614,
+            "terminal_minus_content_ms": 26624.879283,
+            "official_request_mean_ITL_ms": 9.16374685807504,
+            "final_SSE_inclusive_per_server_output_token_ms": 52.59748141435563
+          }
+        ]
+      },
+      "fp8_e4m3": {
+        "raw_sha256": "6b28b83ed6f52c4f4bc2f53b1f0c906ad0718ba137f9c439f266ce7f0284e163",
+        "successful_measurement_records": 1689,
+        "terminal_minus_content_ms": {
+          "count": 1689,
+          "mean": 793.4782922078153,
+          "min": 0.0,
+          "max": 38796.471716,
+          "p50": 0.141389,
+          "p95": 5272.8537537999855,
+          "p99": 20141.11854703996
+        },
+        "OSL_le4_terminal_minus_content_ms": {
+          "count": 405,
+          "mean": 0.2499487160493827,
+          "min": 0.0,
+          "max": 1.733248,
+          "p50": 0.147572,
+          "p95": 0.8799799999999998,
+          "p99": 1.4356391999999945
+        },
+        "OSL_gt4_terminal_minus_content_ms": {
+          "count": 1284,
+          "mean": 1043.6788211129283,
+          "min": 0.0,
+          "max": 38796.471716,
+          "p50": 0.1382985,
+          "p95": 7356.634470949997,
+          "p99": 21784.809579470006
+        },
+        "final_SSE_inclusive_per_server_output_token_ms": {
+          "count": 1686,
+          "mean": 216.3744830713285,
+          "min": 13.761960762550881,
+          "max": 1015.03718,
+          "p50": 85.9785980427987,
+          "p95": 735.3361297499998,
+          "p99": 906.1567798250005
+        },
+        "illustrative_TTFT_and_final_SSE_inclusive_mean100ms_qualified_RPS": {
+          "1": 0.16675200429591486,
+          "5": 0.6209721877768118,
+          "10": 0.8746807587301056
+        },
+        "largest_terminal_tails": [
+          {
+            "session_id": "toolagent-source-14785",
+            "server_output_tokens": 422,
+            "terminal_minus_content_ms": 38796.471716,
+            "official_request_mean_ITL_ms": 12.534433847980997,
+            "final_SSE_inclusive_per_server_output_token_ms": 104.68757331591449
+          },
+          {
+            "session_id": "toolagent-source-15261",
+            "server_output_tokens": 886,
+            "terminal_minus_content_ms": 36574.384347,
+            "official_request_mean_ITL_ms": 9.41749187118644,
+            "final_SSE_inclusive_per_server_output_token_ms": 50.7444798338983
+          },
+          {
+            "session_id": "toolagent-source-14783",
+            "server_output_tokens": 384,
+            "terminal_minus_content_ms": 32624.865262,
+            "official_request_mean_ITL_ms": 15.93463540992167,
+            "final_SSE_inclusive_per_server_output_token_ms": 101.11705123759792
+          },
+          {
+            "session_id": "toolagent-source-14765",
+            "server_output_tokens": 449,
+            "terminal_minus_content_ms": 30301.094477,
+            "official_request_mean_ITL_ms": 16.20184361607143,
+            "final_SSE_inclusive_per_server_output_token_ms": 83.83821521651785
+          },
+          {
+            "session_id": "toolagent-source-14106",
+            "server_output_tokens": 437,
+            "terminal_minus_content_ms": 28772.879353,
+            "official_request_mean_ITL_ms": 20.96967982798165,
+            "final_SSE_inclusive_per_server_output_token_ms": 86.96252238073394
+          }
+        ]
+      }
+    },
+    "source_sha256": {
+      "metrics/types/request_latency_metric.py": "c79db67c59e90650a31aaaa09cc2d65ccc8db07c085e9b200355bce7b06d610b",
+      "records/record_processor_service.py": "fbcf266650c0b3604d0f605f2f3c105f07bc59519943a882257a1b71a58c399d",
+      "common/models/record_models.py": "a33cff0072dd3e3d8af2419891c64a8cd440f0cbe5ba41429a8ec248a8fb14e1",
+      "endpoints/openai_chat.py": "61b913f6c7836169816998b89eb758f72710048b30a8993b33528cf4b9d9e147"
+    },
+    "definitions": {
+      "request_latency": "AIPerf start to last nonempty parsed content response",
+      "request_end_ns": "Epoch-mapped timestamp of the last raw SSE response, including content-free terminal packets",
+      "offered_e2e_ms": "Source offered timestamp to last raw SSE response; includes client start lag and content-free terminal tail",
+      "stream_tail_gap_ms": "Last raw SSE response minus last nonempty content response"
+    },
+    "new_GPU_work": false,
+    "original_metrics_changed": false,
+    "limitations": [
+      "Final SSE is an application observation, not TCP EOF or a hardware wire timestamp",
+      "These timestamps do not identify a GPU/kernel/queue cause for the terminal tail",
+      "Final-SSE-inclusive per-server-token mean is an added completion-time proxy, not hardware step timing or per-token tail latency",
+      "Anonymous ignore-EOS replay can include output tokens without visible content; their exact token IDs were not exported",
+      "Both latency definitions are retained; no metric or original record is rewritten"
+    ]
+  },
+  "completion_rps_delta_pct": 0.7891711887281216
+}

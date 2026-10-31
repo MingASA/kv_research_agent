@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-30T21:11:55.631707+00:00",
+  "purpose": "Real negative guard check before U has any original ACK",
+  "expected_refusal": true,
+  "created_collection_or_pin_directory": false,
+  "remote_or_GPU_call": false,
+  "original_ack_guard_preserved": true,
+  "help_imports_passed": true
+}

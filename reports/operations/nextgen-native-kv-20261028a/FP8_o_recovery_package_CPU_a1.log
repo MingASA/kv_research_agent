@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/mingasa/kv-research-agent/scripts/prepare_nextgen_service.py", line 149, in <module>
+    main()
+  File "/home/mingasa/kv-research-agent/scripts/prepare_nextgen_service.py", line 110, in main
+    validate_request(request, approval)
+  File "/home/mingasa/kv-research-agent/scripts/controller/policy.py", line 100, in validate_request
+    validate_nextgen_request(request, approval)
+  File "/home/mingasa/kv-research-agent/scripts/controller/nextgen.py", line 69, in validate_request
+    validate_service_request(request, approval)
+  File "/home/mingasa/kv-research-agent/scripts/controller/nextgen_service.py", line 56, in validate_service_request
+    _require(len(request.get('gpu_uuids', [])) == 1 and request.get('replicate') == 0,
+  File "/home/mingasa/kv-research-agent/scripts/controller/nextgen.py", line 60, in _require
+    raise ApprovalError(message)
+scripts.controller.approval.ApprovalError: Initial format service gate is one admitted GPU, no hidden retry

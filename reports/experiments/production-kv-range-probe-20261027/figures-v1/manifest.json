@@ -1,0 +1,14 @@
+{
+  "classification": "derived_real_observation_figure_no_new_GPU",
+  "run_id": "prod-calib-bf16xqa-heldout128-r2-20261027c",
+  "original_root_status": "FAILED",
+  "audit_sha256": "b24a66735b65b94688f1b1a6c414d5f128d2e29c988275ca5ad87297bf8acc85",
+  "generator_sha256": "90aebc7027b03bf7a805e641fcfb238f37e1ac64c6306f876bb4124c68207b44",
+  "matplotlib_version": "3.11.2",
+  "files": {
+    "group_data.csv": "308ed66b91fa226e4b7532443502795903895f314e9fd61c93e5d17a5ad736ee",
+    "kv_range.png": "78ce6fc387ca4f816ce5cf12d425be53293af5252ea251aa0b6bf6fa342e2d1e",
+    "kv_range.svg": "ea630215ddbe119cd963e6c4418d810507e3afad898434fa65b1d962f0fd088e",
+    "layer_data.csv": "53e9f1ab890d6f7a984a98629cf3b77a185a5482a2e04086a5a56e4a6039620f"
+  }
+}

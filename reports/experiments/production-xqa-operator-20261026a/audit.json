@@ -1,0 +1,15 @@
+{
+  "classification": "confirmed_operator_failure_before_model",
+  "run_id": "prod-quality-xqa-pilot80-r0-20261026a",
+  "source_commit": "d68f5500cd3c8c7318a620145b7f1ea767e2f648",
+  "files_hash_verified": 50,
+  "result_sha256": "0565e1841e1dbee4bbc3ca85a43f90af6279c7262bc2a37832e0566c82e2353e",
+  "gpu_release_verified": true,
+  "actual_gpu_hours": 0.04521887443111111,
+  "model_loaded": false,
+  "bf16_arm_started": false,
+  "quality_records": 0,
+  "operator_failure": "all10240 Graph output elementsNaN with NaN-poisoned unused KV tail",
+  "cause_status": "hypothesis: invalid unusedV lanes propagate despite zero masked probabilities; finite-padding/PDL controls pending",
+  "repair_status": "proposal: initialize all fresh payloads once; preserve live rebind; large finite tail reference and isolated NaN diagnostic"
+}

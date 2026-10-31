@@ -1,0 +1,195 @@
+{
+  "schema": "kv-nextgen-quality-scorer-inventory-v1",
+  "classification": "confirmed_local_read_only_inventory",
+  "model_outputs_scored": false,
+  "inputs": {
+    "directory": "results/prepared/nextgen-quality-real-text-20261027a",
+    "files": {
+      "manifest.json": {
+        "sha256": "7cbfbd1d1e9b70f2c30b67ed45d5a6dda305e492a713500f2bc51505028eb11f",
+        "bytes": 3795,
+        "schema": "kv-nextgen-real-quality-input-v1",
+        "classification": "CPU_frozen_input_not_model_results",
+        "model": "Qwen3.8-27B",
+        "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+        "context_limit_declared": 262144,
+        "input_token_budget": 131072,
+        "gpu_used": false,
+        "inference_performed": false,
+        "versions": {
+          "transformers": "5.17.0",
+          "tokenizers": "0.23.2"
+        },
+        "official_metrics_sha256": "e22e2a2662e0f7e683137fa3541f64edb6a801e9138d16d2f3459a6ab9941323"
+      },
+      "requests.jsonl": {
+        "sha256": "ebe5f42cd0e1b17495b8ca8d1515c8e56093ff5f3b7e240e8623d50e40f790fe",
+        "bytes": 23413839,
+        "rows": 1720,
+        "fields": [
+          "context_sha256",
+          "endpoint",
+          "group",
+          "id",
+          "prompt_tokens_cpu",
+          "request",
+          "source_index",
+          "source_record_sha256",
+          "task"
+        ]
+      },
+      "labels.jsonl": {
+        "sha256": "29aa3aa0697dc452219671c18430d6265c71ffd40cc58569bb9d3fcce750c50c",
+        "bytes": 20821062,
+        "rows": 1720,
+        "fields": [
+          "context_sha256",
+          "group",
+          "id",
+          "reference",
+          "source_index",
+          "task"
+        ],
+        "reference_keys": [
+          "answer",
+          "question",
+          "_source_index"
+        ]
+      }
+    },
+    "task_counts": {
+      "gsm8k": 1319,
+      "narrativeqa": 51,
+      "qasper": 50,
+      "multifieldqa_en": 50,
+      "2wikimqa": 50,
+      "hotpotqa": 50,
+      "musique": 50,
+      "lcc": 50,
+      "repobench-p": 50
+    },
+    "group_counts": {
+      "core": 1719,
+      "long_unique_document": 1
+    },
+    "context_sha256_unique_nonnull": 363,
+    "context_sha256_unique_by_task": {
+      "gsm8k": 0,
+      "narrativeqa": 20,
+      "qasper": 49,
+      "multifieldqa_en": 44,
+      "2wikimqa": 50,
+      "hotpotqa": 50,
+      "musique": 50,
+      "lcc": 50,
+      "repobench-p": 50
+    },
+    "context_sha256_unique_by_group": {
+      "core": 362,
+      "long_unique_document": 1
+    },
+    "source_indices": {
+      "core": "0..1318 GSM8K; 0..49 each LongBench task",
+      "long_unique_supplement": 62
+    },
+    "note": "No prediction/output field exists in labels; no score computed."
+  },
+  "scorers": {
+    "gsm8k": {
+      "strict_flexible_implementation": "not located in checked-in scripts or specified scorer mirror",
+      "reusable_entry": "scripts/merge_quality_cohort.py:merge calls tools.eval_kv_cache_quality._score_pair(task, records, predictions, scorer); required source_repo evaluator not present in local inventory",
+      "probe": "not run; evaluator module absent",
+      "sha256": null
+    },
+    "longbench": {
+      "metrics_path": "results/mirrors/quality-protocols-20261026T075846Z/files/support/inputs/longbench-scorer/LongBench/metrics.py",
+      "sha256": "e22e2a2662e0f7e683137fa3541f64edb6a801e9138d16d2f3459a6ab9941323",
+      "task_metric_functions_expected_by standard task mapping": {
+        "narrativeqa": "rouge_score",
+        "qasper": "qa_f1_score",
+        "multifieldqa_en": "qa_f1_score",
+        "2wikimqa": "qa_f1_score",
+        "hotpotqa": "qa_f1_score",
+        "musique": "qa_f1_score",
+        "lcc": "code_sim_score",
+        "repobench-p": "code_sim_score"
+      },
+      "function_names_in_metrics.py": [
+        "normalize_answer",
+        "normalize_zh_answer",
+        "count_score",
+        "retrieval_score",
+        "retrieval_zh_score",
+        "code_sim_score",
+        "classification_score",
+        "rouge_score",
+        "rouge_zh_score",
+        "f1_score",
+        "qa_f1_score",
+        "qa_f1_zh_score"
+      ],
+      "eval_dispatch_and_cleaning": "LongBench/eval.py missing from specified mirror; cleaning/dispatch function names and hash unverified",
+      "configs": {
+        "dataset2prompt.json": "56d22ad4f382169c2b8a11ff4c982a4a1bea096c8152b0f0b85b64686b157c30",
+        "dataset2maxlen.json": "72966b3c0933e214591637fb085798c5e687ebff4ddaab5d99bbc31120532022"
+      },
+      "dependencies": {
+        "jieba": "unavailable: ModuleNotFoundError",
+        "fuzzywuzzy": "unavailable: PackageNotFoundError",
+        "rouge": "unavailable: PackageNotFoundError",
+        "nltk": "unavailable: PackageNotFoundError"
+      },
+      "cpu_import_probe": {
+        "status": "failed",
+        "command_constraints": "CUDA_VISIBLE_DEVICES empty; PYTHONDONTWRITEBYTECODE=1",
+        "cause": "No module named jieba",
+        "no_dependencies_installed": true
+      }
+    }
+  },
+  "reuse_cautions": [
+    {
+      "path": "scripts/controller/protocols.py",
+      "sha256": "3980b604ffbe5bf7f48d79df5f6ebc8f4596fdee9c7c9096e0b45dbdb2096c37",
+      "finding": "line 39 enforces payload model Qwen2.5-14B-Instruct; not reusable for Qwen3.8-27B without adapting the model gate."
+    },
+    {
+      "path": "scripts/analyze_quality_batch.py",
+      "sha256": "e04b3c1a7f2447d466e00620cffc732e7cef04cbb33474ced35edc5bbfb0fe3e",
+      "finding": "requires exact old 1719-row paired C128 result schema and old FP8/BF16 arms; per-item bootstrap (1319 GSM; within each 50-item LB task), not context-cluster resampling."
+    },
+    {
+      "path": "scripts/merge_quality_cohort.py",
+      "sha256": "ec7ea81f9ab5f1efe2f8a0a48b37d752552ecd1c54058f6ac10f04ad257f117a",
+      "finding": "strictly reassembles legacy 80+1639 fragments by task _eval_index 0..1318/0..49; old count assumptions exclude the extra 1720th supplement; row-index/item bootstrap, no context-cluster bootstrap; prompt length strata hard stop at 32769 (~32K)."
+    },
+    {
+      "path": "scripts/compare_quality_reference.py",
+      "sha256": "b75d3dc98157e4289258c8c4909081ff988a28d71a7363982c8c8bd17774ba4e272",
+      "finding": "requires legacy 1719 records and original per-task order/IDs, old model/run provenance schema; bootstrap resamples rows within tasks, not shared-context clusters."
+    },
+    {
+      "path": "scripts/audit_quality_run.py",
+      "sha256": "556d04c93d80921c85f489e746eb7b7be1888cb7e3c2ae4780b01794de1f0126",
+      "finding": "legacy audit enforces 1319+8x50/index-contiguous quality schema and prior model/run profiles; unsuitable unchanged for 1720 package."
+    },
+    {
+      "path": "scripts/prepare_quality_cpu.py",
+      "sha256": "2abccb74980e6ce477948cfc985f36bd00d88a303a06a14f06a5f0b62340e73c",
+      "finding": "can guide future CPU scorer/tokenizer preflight but imports absent tools.eval_kv_cache_quality and requires legacy cohort/tokenizer/scorer inputs; not itself a scorer."
+    }
+  ],
+  "minimal_safe_scoring_entry": {
+    "candidate": "tools.eval_kv_cache_quality._score_pair",
+    "status": "conditional/unavailable in this checkout inventory",
+    "reason": "Only safely reusable as the frozen evaluator function after confirming exact source and its scorer assets/dependencies; current checkout lacks evaluator and LongBench eval.py, and metrics import probe failed due to absent jieba. Existing merge_quality_cohort.merge is not safe to apply directly because of legacy cohort/order/schema assumptions."
+  },
+  "source_hashes": {
+    "scripts/prepare_nextgen_quality_inputs.py": "5c5835d90b7b4706b9593e34da7c9693ca276db861ccb9ba604c5b264d162979",
+    "scripts/prepare_quality_cpu.py": "2abccb74980e6ce477948cfc985f36bd00d88a303a06a14f06a5f0b62340e73c",
+    "scripts/analyze_quality_batch.py": "e04b3c1a7f2447d466e00620cffc732e7cef04cbb33474ced35edc5bbfb0fe3e",
+    "scripts/compare_quality_reference.py": "b75d3dc98157e4289258c8c4909081ff988a28d71a7363982c8c8bd17774ba4e272",
+    "scripts/merge_quality_cohort.py": "ec7ea81f9ab5f1efe2f8a0a48b37d752552ecd1c54058f6ac10f04ad257f117a",
+    "scripts/audit_quality_run.py": "556d04c93d80921c85f489e746eb7b7be1888cb7e3c2ae4780b01794de1f0126"
+  }
+}

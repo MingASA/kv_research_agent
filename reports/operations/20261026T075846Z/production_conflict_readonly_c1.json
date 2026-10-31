@@ -1,0 +1,693 @@
+{
+  "ok": true,
+  "utc": "2026-10-26T18:54:35.188465+00:00",
+  "files": [
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/docker_command.json",
+      "size": 2552
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/container.log",
+      "size": 0
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/container_identity.json",
+      "size": 1507
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/lease.json",
+      "size": 138
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/runtime_environment.json",
+      "size": 754
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/production_environment.json",
+      "size": 808
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/operator_acceptance.log",
+      "size": 548
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/operator_acceptance.json",
+      "size": 867
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/server_command.json",
+      "size": 737
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/server.log",
+      "size": 254992
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/native_backend.json",
+      "size": 474
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/allocation.json",
+      "size": 12546
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/aiperf_command.json",
+      "size": 687
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/aiperf.log",
+      "size": 81579
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/gpu_telemetry.csv",
+      "size": 10286
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/request_audit.json",
+      "size": 1130
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/measurement.json",
+      "size": 4345
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/artifacts/profile_export.jsonl",
+      "size": 4862750
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/artifacts/profile_export_raw.jsonl",
+      "size": 86512253
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/artifacts/profile_export_aiperf.csv",
+      "size": 7210
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/artifacts/profile_export_aiperf.json",
+      "size": 45870
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/artifacts/phase_manifest.json",
+      "size": 1041
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/artifacts/profile_export_console.txt",
+      "size": 16829
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/artifacts/.aiperf_results_ready.json",
+      "size": 52
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/artifacts/logs/aiperf.log",
+      "size": 77350
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/artifacts/phases/warmup/profile_export_aiperf.json",
+      "size": 23106
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/artifacts/phases/warmup/profile_export_aiperf.csv",
+      "size": 6981
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/artifacts/phases/profiling/profile_export_aiperf.json",
+      "size": 23293
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/bf16/artifacts/phases/profiling/profile_export_aiperf.csv",
+      "size": 7098
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/docker_command.json",
+      "size": 2572
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/container.log",
+      "size": 0
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/container_identity.json",
+      "size": 1510
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/lease.json",
+      "size": 138
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/runtime_environment.json",
+      "size": 847
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/production_environment.json",
+      "size": 969
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/operator_acceptance.log",
+      "size": 712
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/operator_acceptance.json",
+      "size": 1052
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/server_command.json",
+      "size": 741
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/server.log",
+      "size": 263136
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/native_backend.json",
+      "size": 631
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/allocation.json",
+      "size": 20034
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/aiperf_command.json",
+      "size": 687
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/aiperf.log",
+      "size": 81503
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/gpu_telemetry.csv",
+      "size": 8744
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/request_audit.json",
+      "size": 1124
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/measurement.json",
+      "size": 4343
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/artifacts/profile_export.jsonl",
+      "size": 5162879
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/artifacts/profile_export_raw.jsonl",
+      "size": 86210253
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/artifacts/profile_export_aiperf.csv",
+      "size": 7191
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/artifacts/profile_export_aiperf.json",
+      "size": 45725
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/artifacts/phase_manifest.json",
+      "size": 1041
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/artifacts/profile_export_console.txt",
+      "size": 16743
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/artifacts/.aiperf_results_ready.json",
+      "size": 52
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/artifacts/logs/aiperf.log",
+      "size": 77360
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/artifacts/phases/warmup/profile_export_aiperf.json",
+      "size": 23047
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/artifacts/phases/warmup/profile_export_aiperf.csv",
+      "size": 6992
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/artifacts/phases/profiling/profile_export_aiperf.json",
+      "size": 23207
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/output/fp8_e4m3/artifacts/phases/profiling/profile_export_aiperf.csv",
+      "size": 7079
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/input/canonical_inputs.json",
+      "size": 5268923
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/input/production_manifest.json",
+      "size": 424589
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/input/source.bundle",
+      "size": 15892
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/runtime/kv_controller/__init__.py",
+      "size": 70
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/runtime/kv_controller/approval.py",
+      "size": 9391
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/runtime/kv_controller/durable.py",
+      "size": 2198
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/runtime/kv_controller/evidence.py",
+      "size": 26375
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/runtime/kv_controller/policy.py",
+      "size": 12149
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/runtime/kv_controller/processes.py",
+      "size": 1907
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/runtime/kv_controller/production.py",
+      "size": 15956
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/runtime/kv_controller/supervisor.py",
+      "size": 28283
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/runtime/kv_controller/watchdog.py",
+      "size": 3713
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/runtime/kv_controller/worker.py",
+      "size": 16357
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/ticket.json",
+      "size": 8171
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/result.json",
+      "size": 749
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/state.json",
+      "size": 749
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/events.jsonl",
+      "size": 3008
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/owned_containers.json",
+      "size": 3107
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/watchdog_result.json",
+      "size": 128
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/SUPERVISOR_STARTED.json",
+      "size": 571
+    },
+    {
+      "base_rel": "agent_work/runs/prod-sharegpt-fa3-c128-r0-20261026b/WATCHDOG_FINISHED.json",
+      "size": 197
+    }
+  ],
+  "measurements": {
+    "bf16": {
+      "measurement.json": {
+        "actual_fa3_graph_and_resident_kv_verified": true,
+        "allocation": {
+          "bytes_per_token_per_layer": 4096,
+          "pages_per_layer": 1477,
+          "resident_bytes": 37169922048,
+          "token_capacity": 189056
+        },
+        "arm": "bf16",
+        "evidence_sha256": {
+          "aiperf.log": "eecd9b70c668f8c4cedfd71169d321856b12dbf06c50399cda51bbd1c3d6ebb9",
+          "aiperf_command.json": "e55d831d193278753d5d246537a8fa75a2b12e7ba7b81952e48bb0014a276628",
+          "allocation.json": "03f38c1c85b1a07bbb3001b0926815aa2ad5f19c3ac7242c67293fcce84a1226",
+          "artifacts/.aiperf_results_ready.json": "5f316f75c5c0e5022c2e63b118b85856efbcd8d8887ee55fc98db893b6a5351e",
+          "artifacts/logs/aiperf.log": "d4a7cb32d83dceea1498865de672fdf022f832f13ff58f7ebfd72c8b42d10d30",
+          "artifacts/phase_manifest.json": "766909091e4b527c64a05a4e9a88f1251fce36b4c20848207befd380e986e1d8",
+          "artifacts/phases/profiling/profile_export_aiperf.csv": "66b182567b63c4c6dfb8276f02fe2bd22652cf472668a48b2f6e4b1a70466545",
+          "artifacts/phases/profiling/profile_export_aiperf.json": "868d1a144747180ae067624f9f91e4d2fdd460b028da68c3eb7c68a002719650",
+          "artifacts/phases/warmup/profile_export_aiperf.csv": "a6a6b76d03707c75785b844779eb0df3877b6cb83234f0399d5da306761bcbf8",
+          "artifacts/phases/warmup/profile_export_aiperf.json": "67ed598e5debd8f7790304ab5d1eb24b6db64640237b1d92b99aaab66f5a1a35",
+          "artifacts/profile_export.jsonl": "2c3bc2d94d954e16dd26eaedc7d69a107e3b6d36ae5a34d3c8628387b7f57ee3",
+          "artifacts/profile_export_aiperf.csv": "993de50c99a8fb6f6cfdca38fa596557306fe5550d5037f8b93ae819467fc01c",
+          "artifacts/profile_export_aiperf.json": "e5f41245856d2da253a90ee8b0bcdd31abfb3b6572f6b202ca66ce30ec951559",
+          "artifacts/profile_export_console.txt": "da2ca63dcca837029b20764218eb63b56598ca224a7e2126f3dec0d41feb932b",
+          "artifacts/profile_export_raw.jsonl": "3c8235b6e02d8037efc4beaca6e0ecb6946ce16a7c3b51b72a40a65d58133f59",
+          "container.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "container_identity.json": "56b1f00bff79b32d1e7bc1e6c2ef7d018c7b1f66091940b69e01369be27d74e3",
+          "docker_command.json": "d66f612dce0f52f6ef01322f0e732ade1350c32ac43cd759c56be314865acb19",
+          "gpu_telemetry.csv": "12780fe59cfcae428e25cac39e941f1c1d5b92c7ac7aecb758ee1ff521efac63",
+          "lease.json": "2d1084541b826258068ce745005c45d440862de9bf3789bea9d615d27d2a70d6",
+          "native_backend.json": "8d07fd623b127e30077afd5e49fd04a516200390a03a8f95edf9dcea0dcfbef0",
+          "operator_acceptance.json": "6c8bc2e55fc8eff20b4c6944f50914729a863e7d760574b70a91b7d46a451fce",
+          "operator_acceptance.log": "c28d9d023ccd0d05d0bccb277858d1024503d16a0be22c3bf8bd8ff19b5e9d68",
+          "production_environment.json": "5ff8e5331f181dcd608913565eccb7cff8bb0623bb6c022c7a3e36b2aa319532",
+          "request_audit.json": "034881c79709b18411a327872873c43dc3f6c2e9d94a6444581e9d1b9b25e5d3",
+          "runtime_environment.json": "b18f96efe3ec5e2dd87178db7d9f2250e6317060d7ee5c5f9546a3bde1563759",
+          "server.log": "8da669bf153774f94194786b64fd44e6f03c3a76bff4df6cdb1edd594449f878",
+          "server_command.json": "95e9778920b8ff4debe450c7d6d44918ff777f1c35ca3616769f70df9e5a767d"
+        },
+        "measurement_success": true,
+        "metrics": {
+          "actual_output_tokens": 275358,
+          "e2e_p50_ms": 44539.9368785,
+          "e2e_p95_ms": 80735.5068821,
+          "e2e_p99_ms": 87536.6147788,
+          "finish_reason_counts": {
+            "length": 57,
+            "stop": 455
+          },
+          "gpu_compute_util_pct_mean": 96.51020408163265,
+          "gpu_memory_controller_util_pct_mean": 91.36734693877551,
+          "gpu_memory_used_mib_max": 66825,
+          "gpu_memory_used_mib_min": 66821,
+          "gpu_memory_used_mib_p50": 66825.0,
+          "gpu_profile_samples": 196,
+          "gpu_telemetry_max_gap_s": 1.147416114807129,
+          "gpu_telemetry_span_fraction": 0.9931866479733055,
+          "http_payload_and_sse_verified": true,
+          "isl_mean": 1120.5859375,
+          "itl_p50_ms": 74.00218498777093,
+          "itl_p95_ms": 82.4771808375382,
+          "itl_p99_ms": 170.69573970413788,
+          "observation_seconds": 203.552297,
+          "one_token_answers": 0,
+          "osl_max": 1024.0,
+          "osl_mean": 537.80859375,
+          "osl_min": 2.0,
+          "output_tps": 1352.762921658408,
+          "profile_prompt_counts_sha256": "a8f66529289e079f8a7d901f297ee8d69dd3c32f9610e07ec6b5345651b1476d",
+          "profile_session_ids_sha256": "9e87c138824d75a1ef6d4b44a3873341e05af8747904323cf9f2e2de430ba327",
+          "profiling_records": 512,
+          "request_rps": 2.5153241085753995,
+          "ttft_p50_ms": 8564.2073675,
+          "ttft_p95_ms": 14514.74339855,
+          "ttft_p99_ms": 15858.9479798,
+          "warmup_records": 16
+        },
+        "model_quality_validated": false,
+        "official_aiperf_complete": true,
+        "protocol": "sharegpt_context_natural_production_v1",
+        "request_sha256": "1a250de50252e27b54d81990afc64bebfe8ac986deb9205e47910e5093193d99",
+        "scope": "production_serving_candidate_quality_pending"
+      },
+      "request_audit.json": {
+        "actual_output_tokens": 275358,
+        "e2e_p50_ms": 44539.9368785,
+        "e2e_p95_ms": 80735.5068821,
+        "e2e_p99_ms": 87536.6147788,
+        "finish_reason_counts": {
+          "length": 57,
+          "stop": 455
+        },
+        "gpu_compute_util_pct_mean": 96.51020408163265,
+        "gpu_memory_controller_util_pct_mean": 91.36734693877551,
+        "gpu_memory_used_mib_max": 66825,
+        "gpu_memory_used_mib_min": 66821,
+        "gpu_memory_used_mib_p50": 66825.0,
+        "gpu_profile_samples": 196,
+        "gpu_telemetry_max_gap_s": 1.147416114807129,
+        "gpu_telemetry_span_fraction": 0.9931866479733055,
+        "http_payload_and_sse_verified": true,
+        "isl_mean": 1120.5859375,
+        "itl_p50_ms": 74.00218498777093,
+        "itl_p95_ms": 82.4771808375382,
+        "itl_p99_ms": 170.69573970413788,
+        "observation_seconds": 203.552297,
+        "one_token_answers": 0,
+        "osl_max": 1024.0,
+        "osl_mean": 537.80859375,
+        "osl_min": 2.0,
+        "output_tps": 1352.762921658408,
+        "profile_prompt_counts_sha256": "a8f66529289e079f8a7d901f297ee8d69dd3c32f9610e07ec6b5345651b1476d",
+        "profile_session_ids_sha256": "9e87c138824d75a1ef6d4b44a3873341e05af8747904323cf9f2e2de430ba327",
+        "profiling_records": 512,
+        "request_rps": 2.5153241085753995,
+        "ttft_p50_ms": 8564.2073675,
+        "ttft_p95_ms": 14514.74339855,
+        "ttft_p99_ms": 15858.9479798,
+        "warmup_records": 16
+      },
+      "native_backend.json": {
+        "attention_impl": "flashinfer",
+        "class": "FlashInferBackend",
+        "decode_tensor_cores": true,
+        "flashinfer_version": "0.6.18.post1",
+        "graph_captured_batches": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          48,
+          64,
+          80,
+          96,
+          112,
+          128
+        ],
+        "graph_enabled": true,
+        "graph_runner": "DecodeCudaGraphRunner",
+        "kv_cache_dtype": "auto",
+        "kv_data_type": "torch.bfloat16",
+        "paged_prefill": true,
+        "planner_backend": "fa3",
+        "profile_scope": "production_fa3",
+        "q_data_type": "torch.bfloat16",
+        "q_scale": null,
+        "quality_transform": false,
+        "scale_strategy": "none"
+      },
+      "operator_acceptance.json": {
+        "arm": "bf16",
+        "backend": {
+          "attention_impl": "flashinfer",
+          "class": "FlashInferBackend",
+          "decode_tensor_cores": true,
+          "flashinfer_version": "0.6.18.post1",
+          "kv_cache_dtype": "auto",
+          "kv_data_type": "torch.bfloat16",
+          "paged_prefill": true,
+          "planner_backend": "fa3",
+          "profile_scope": "production_fa3",
+          "q_data_type": "torch.bfloat16",
+          "q_scale": null,
+          "quality_transform": false,
+          "scale_strategy": "none"
+        },
+        "classification": "operator_correctness_only",
+        "device": "NVIDIA H800",
+        "model_loaded": false,
+        "model_quality_validated": false,
+        "partial_page_and_replan": true,
+        "real_capture_and_replay": true,
+        "reference": "FP32 dense causal attention on the same representable Q/K/V; rtol .08, atol .015",
+        "schema": "kv-native-fa3-operator-acceptance-v1",
+        "service_performance_measured": false
+      }
+    },
+    "fp8_e4m3": {
+      "measurement.json": {
+        "actual_fa3_graph_and_resident_kv_verified": true,
+        "allocation": {
+          "bytes_per_token_per_layer": 2112,
+          "pages_per_layer": 2865,
+          "resident_bytes": 37176606720,
+          "token_capacity": 366720
+        },
+        "arm": "fp8_e4m3",
+        "evidence_sha256": {
+          "aiperf.log": "a6a6d2f78568feab73170fdade4020e7b6b986165861aeafd670fdc3d01fc969",
+          "aiperf_command.json": "e55d831d193278753d5d246537a8fa75a2b12e7ba7b81952e48bb0014a276628",
+          "allocation.json": "5117ff78c572fda5ccf1edcbdc2b543229452273c007fa8b9a3bec91230aca3d",
+          "artifacts/.aiperf_results_ready.json": "5f316f75c5c0e5022c2e63b118b85856efbcd8d8887ee55fc98db893b6a5351e",
+          "artifacts/logs/aiperf.log": "84ac04f975f159ac8fa93f0ef96975106ab9982b283084297ed9d55712ae8e5d",
+          "artifacts/phase_manifest.json": "a6491945cb5e143cc8de59e66e2b54a3a19c2ac77fdb5d2174e93292a1203d0e",
+          "artifacts/phases/profiling/profile_export_aiperf.csv": "a9db258bc2d342df304b77a6ee34a177823253bd886b850f3ac10bea02c23b39",
+          "artifacts/phases/profiling/profile_export_aiperf.json": "3a2f54d3fbbd296e20f198479f58fa39d83768de7ac5d4818eed929f3772d7ac",
+          "artifacts/phases/warmup/profile_export_aiperf.csv": "7027b1edebc1b371012265376f20923b23d8ee3af5bef4308a2652778895d42c",
+          "artifacts/phases/warmup/profile_export_aiperf.json": "76d8806deff7c1286220e2fb8b329bcf5202541759c5d437ba2e264039309676",
+          "artifacts/profile_export.jsonl": "a4264c1288eb3aebecfd209e10644f87c9a28aba58be91fc2305f25072655224",
+          "artifacts/profile_export_aiperf.csv": "404d2f6b20ffb45eca6f91df6f353a76e4d8b1d631e19bb2a0be0c29a87e9c8d",
+          "artifacts/profile_export_aiperf.json": "526aff255b99906bcc135f7cf60e8339d2491862d82a7702ba6b5ed42c11281a",
+          "artifacts/profile_export_console.txt": "e95b551b1584aa63db9d3dd389848659070d53936fe0d14e14338b1032ae9ab4",
+          "artifacts/profile_export_raw.jsonl": "3ec29743df3de3b34ebfaeecac4a198e7638f9ad7bac889830c413a85a17a81c",
+          "container.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "container_identity.json": "d9121b18faffdafd0b5240e3367a138526366f9c54167de21a8ea05a4dedf380",
+          "docker_command.json": "20348670866daddd827793e26544b5cd5dc6ca0e38955d4eeed2379f25e80c8c",
+          "gpu_telemetry.csv": "8302d9c6ad3c47f3b1dd6d83f8d1c0784ac75f85651bce6269ed2e66814f5c2b",
+          "lease.json": "2d1084541b826258068ce745005c45d440862de9bf3789bea9d615d27d2a70d6",
+          "native_backend.json": "ad17cb7aeafb12329b077ae3666dfc1b02c11574c8fa3803f69e5ca90be2731f",
+          "operator_acceptance.json": "903c62b16f32ecf6341872eb3aeaed881a63d256a046d592c20715a373fbc878",
+          "operator_acceptance.log": "887eb5373c587088c629dd4a4fa56a78724824f3ab712260cecfc27c0a0d7d71",
+          "production_environment.json": "cc529645b89981d65fccfe66b01ffd67612228bb515f508d6de9d6bfde0013c2",
+          "request_audit.json": "5971707a6eadb1b76039f5e12a1d253d5fb26f1d8f62d29df5bdc2cb13abef51",
+          "runtime_environment.json": "c17c5908006369266e2321a339959415ba73147ddeac95521aaf36da99415e81",
+          "server.log": "0c9216981faa24780d17cb69cefe73f1db5f39ecf2d73ed54d02646566eda231",
+          "server_command.json": "e0edd48f5c0aac3410efea7e0017f97d879311a08e1fd61e0af5172fb7d46c02"
+        },
+        "measurement_success": true,
+        "metrics": {
+          "actual_output_tokens": 275024,
+          "e2e_p50_ms": 37225.787067,
+          "e2e_p95_ms": 77885.80004875,
+          "e2e_p99_ms": 79891.32056199,
+          "finish_reason_counts": {
+            "length": 52,
+            "stop": 460
+          },
+          "gpu_compute_util_pct_mean": 88.05389221556887,
+          "gpu_memory_controller_util_pct_mean": 54.59880239520958,
+          "gpu_memory_used_mib_max": 67063,
+          "gpu_memory_used_mib_min": 67059,
+          "gpu_memory_used_mib_p50": 67063,
+          "gpu_profile_samples": 167,
+          "gpu_telemetry_max_gap_s": 1.107908010482788,
+          "gpu_telemetry_span_fraction": 0.9972761388966709,
+          "http_payload_and_sse_verified": true,
+          "isl_mean": 1120.5859375,
+          "itl_p50_ms": 73.8803328439731,
+          "itl_p95_ms": 81.97541369437218,
+          "itl_p99_ms": 157.5615249551472,
+          "observation_seconds": 171.470352,
+          "one_token_answers": 0,
+          "osl_max": 1024.0,
+          "osl_mean": 537.15625,
+          "osl_min": 2.0,
+          "output_tps": 1603.9157603175622,
+          "profile_prompt_counts_sha256": "a8f66529289e079f8a7d901f297ee8d69dd3c32f9610e07ec6b5345651b1476d",
+          "profile_session_ids_sha256": "9e87c138824d75a1ef6d4b44a3873341e05af8747904323cf9f2e2de430ba327",
+          "profiling_records": 512,
+          "request_rps": 2.9859389336297624,
+          "ttft_p50_ms": 237.2542115,
+          "ttft_p95_ms": 5167.68144185,
+          "ttft_p99_ms": 6128.87146217,
+          "warmup_records": 16
+        },
+        "model_quality_validated": false,
+        "official_aiperf_complete": true,
+        "protocol": "sharegpt_context_natural_production_v1",
+        "request_sha256": "1a250de50252e27b54d81990afc64bebfe8ac986deb9205e47910e5093193d99",
+        "scope": "production_serving_candidate_quality_pending"
+      },
+      "request_audit.json": {
+        "actual_output_tokens": 275024,
+        "e2e_p50_ms": 37225.787067,
+        "e2e_p95_ms": 77885.80004875,
+        "e2e_p99_ms": 79891.32056199,
+        "finish_reason_counts": {
+          "length": 52,
+          "stop": 460
+        },
+        "gpu_compute_util_pct_mean": 88.05389221556887,
+        "gpu_memory_controller_util_pct_mean": 54.59880239520958,
+        "gpu_memory_used_mib_max": 67063,
+        "gpu_memory_used_mib_min": 67059,
+        "gpu_memory_used_mib_p50": 67063,
+        "gpu_profile_samples": 167,
+        "gpu_telemetry_max_gap_s": 1.107908010482788,
+        "gpu_telemetry_span_fraction": 0.9972761388966709,
+        "http_payload_and_sse_verified": true,
+        "isl_mean": 1120.5859375,
+        "itl_p50_ms": 73.8803328439731,
+        "itl_p95_ms": 81.97541369437218,
+        "itl_p99_ms": 157.5615249551472,
+        "observation_seconds": 171.470352,
+        "one_token_answers": 0,
+        "osl_max": 1024.0,
+        "osl_mean": 537.15625,
+        "osl_min": 2.0,
+        "output_tps": 1603.9157603175622,
+        "profile_prompt_counts_sha256": "a8f66529289e079f8a7d901f297ee8d69dd3c32f9610e07ec6b5345651b1476d",
+        "profile_session_ids_sha256": "9e87c138824d75a1ef6d4b44a3873341e05af8747904323cf9f2e2de430ba327",
+        "profiling_records": 512,
+        "request_rps": 2.9859389336297624,
+        "ttft_p50_ms": 237.2542115,
+        "ttft_p95_ms": 5167.68144185,
+        "ttft_p99_ms": 6128.87146217,
+        "warmup_records": 16
+      },
+      "native_backend.json": {
+        "attention_impl": "flashinfer",
+        "class": "FlashInferFP8Backend",
+        "decode_tensor_cores": true,
+        "flashinfer_version": "0.6.18.post1",
+        "fp8_views_alias_resident_pages": true,
+        "graph_captured_batches": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          48,
+          64,
+          80,
+          96,
+          112,
+          128
+        ],
+        "graph_enabled": true,
+        "graph_runner": "DecodeCudaGraphRunner",
+        "k_scale": 0.125,
+        "kv_cache_dtype": "fp8_e4m3",
+        "kv_data_type": "torch.float8_e4m3fn",
+        "paged_prefill": true,
+        "planner_backend": "fa3",
+        "profile_scope": "production_fa3",
+        "q_data_type": "torch.float8_e4m3fn",
+        "q_scale": 1.0,
+        "quality_transform": false,
+        "scale_strategy": "immutable_global_scalar_per_K_or_V",
+        "v_scale": 0.0625,
+        "writer": "triton_quantize_scatter_only"
+      },
+      "operator_acceptance.json": {
+        "arm": "fp8_e4m3",
+        "backend": {
+          "attention_impl": "flashinfer",
+          "class": "FlashInferFP8Backend",
+          "decode_tensor_cores": true,
+          "flashinfer_version": "0.6.18.post1",
+          "fp8_views_alias_resident_pages": true,
+          "k_scale": 0.125,
+          "kv_cache_dtype": "fp8_e4m3",
+          "kv_data_type": "torch.float8_e4m3fn",
+          "paged_prefill": true,
+          "planner_backend": "fa3",
+          "profile_scope": "production_fa3",
+          "q_data_type": "torch.float8_e4m3fn",
+          "q_scale": 1.0,
+          "quality_transform": false,
+          "scale_strategy": "immutable_global_scalar_per_K_or_V",
+          "v_scale": 0.0625,
+          "writer": "triton_quantize_scatter_only"
+        },
+        "classification": "operator_correctness_only",
+        "device": "NVIDIA H800",
+        "model_loaded": false,
+        "model_quality_validated": false,
+        "partial_page_and_replan": true,
+        "real_capture_and_replay": true,
+        "reference": "FP32 dense causal attention on the same representable Q/K/V; rtol .08, atol .015",
+        "schema": "kv-native-fa3-operator-acceptance-v1",
+        "service_performance_measured": false
+      }
+    }
+  },
+  "compute_apps": "GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 3091258, 72810\nGPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 3091259, 72810\nGPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 3095497, 72776\nGPU-47211491-ba0d-78bf-5c84-f968c0648213, 3095498, 72760\n"
+}

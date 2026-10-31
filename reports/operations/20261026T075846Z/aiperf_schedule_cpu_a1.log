@@ -1,0 +1,1 @@
+{"evidence": "results/prepared/aiperf-schedule-cpu-20261026-a1/acceptance.json", "cpu_only": true, "cases": ["mooncake_trace", "burst_gpt_trace"]}

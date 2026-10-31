@@ -1,0 +1,54 @@
+{
+  "classification": "CPU_frozen_trace_package_acceptance_only",
+  "gpu_used": false,
+  "cases": {
+    "toolagent": {
+      "run_id": "prod-trace-xqa-toolagent-s1-r0-20261026c",
+      "requests": 2088,
+      "source_commit": "ede2b9e7c61573825645a6b710a7534d0091bac2",
+      "transfer_bytes": 23997286,
+      "expanded_bytes": 64869176,
+      "dataset_sha256": "a2014450f2f92c5d14bbdca94fbbb0fc73a886f8996378536e9f1f4f72fbd88c",
+      "runtime_snapshot_immutable": true,
+      "payloads_and_clock_valid": true,
+      "exact_remote_bounded_decoder_roundtrip": true,
+      "gpu_launched": false
+    },
+    "burstgpt": {
+      "run_id": "prod-trace-xqa-burstgpt-s1-r0-20261026c",
+      "requests": 6385,
+      "source_commit": "ede2b9e7c61573825645a6b710a7534d0091bac2",
+      "transfer_bytes": 7525064,
+      "expanded_bytes": 9602700,
+      "dataset_sha256": "e11eead9d36be1b4eef0b16a5819d71b3be290313fc13f0c7158e52eb568d6f9",
+      "runtime_snapshot_immutable": true,
+      "payloads_and_clock_valid": true,
+      "exact_remote_bounded_decoder_roundtrip": true,
+      "gpu_launched": false
+    },
+    "conversation": {
+      "run_id": "prod-trace-xqa-conversation-s1-r0-20261026c",
+      "requests": 1025,
+      "source_commit": "ede2b9e7c61573825645a6b710a7534d0091bac2",
+      "transfer_bytes": 14939869,
+      "expanded_bytes": 36349043,
+      "dataset_sha256": "0d06c694a17804ce99b99b0b28b5d99e47cf904ed99de226c7e9624bbca93afd",
+      "runtime_snapshot_immutable": true,
+      "payloads_and_clock_valid": true,
+      "exact_remote_bounded_decoder_roundtrip": true,
+      "gpu_launched": false
+    },
+    "synthetic": {
+      "run_id": "prod-trace-xqa-synthetic-s1-r0-20261026c",
+      "requests": 995,
+      "source_commit": "ede2b9e7c61573825645a6b710a7534d0091bac2",
+      "transfer_bytes": 14843829,
+      "expanded_bytes": 34863551,
+      "dataset_sha256": "41b15b1dc80e3b909fc565b5ae231005c7c85268b28bcaed3fd86e599eea776f",
+      "runtime_snapshot_immutable": true,
+      "payloads_and_clock_valid": true,
+      "exact_remote_bounded_decoder_roundtrip": true,
+      "gpu_launched": false
+    }
+  }
+}

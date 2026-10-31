@@ -1,0 +1,7 @@
+{
+  "state": "INVALID_CPU_ONLY_UNLAUNCHED_FROZEN_PACKAGE_PRESERVED",
+  "reason": "W actual GPU demonstrated request-count-only session recycling; require v2 heterogeneous-latency proof and exact session limit in fresh XC/YC packages",
+  "GPU_started": false,
+  "once_intent_exists": false,
+  "ledger_row_exists": false
+}

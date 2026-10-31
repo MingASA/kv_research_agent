@@ -1,0 +1,17 @@
+{
+  "schema": "native-tools-cpu-b-first-toolchild-log-v1",
+  "run_id": "nextgen-native-tools-cpu-20261028b",
+  "remote_writes": false,
+  "summary_sha256": "e9b88e6a481b3a8c6bc7222f38c84af798c596bdf337d881bc5d204499069380",
+  "found_failure": true,
+  "task_id": "multi_turn_base_0",
+  "failure_stage": "tool_environment_initialization",
+  "error": "ValueError: Bounded CPU tool child did not attest its declared source/task/limits",
+  "log_exists": true,
+  "log_path": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/scratch/nextgen-native-tools-cpu-20261028b/loop/multi_turn_base_0/tool_child.stderr.log",
+  "log_size_bytes": 0,
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "log_tail_bytes": 0,
+  "log_tail_text": "",
+  "reason": null
+}

@@ -1,0 +1,18 @@
+{
+  "classification": "reported_by_bounded_readonly_monitor",
+  "utc": "2026-10-30T21:37:42.912224Z",
+  "response_sha256": "54655e2200515081a3277cb315033fdbbbb40b17ce21d57645e8528466fa8aa6",
+  "run_id": "nextgen-fp8fa2-qwen38-mixed8192-quality1720-r0-20261030u",
+  "status": "RUNNING",
+  "own_CID": "71076acfba39d8f05f7485f512c1fa9cf18ff796f0daf39fc170200dcc07f97b",
+  "own_xllm_CUDA_PID": 19269,
+  "GPU7_MiB": 75265,
+  "GPU7_util_percent": 88,
+  "other_GPUs_idle_snapshot": true,
+  "quality_complete_LF_rows": 794,
+  "quality_bytes": 4047226,
+  "partial_line": false,
+  "last_id": "core-gsm8k-777",
+  "last_error": null,
+  "quality_scored_or_accepted": false
+}

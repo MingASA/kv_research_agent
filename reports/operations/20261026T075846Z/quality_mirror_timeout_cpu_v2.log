@@ -1,0 +1,12 @@
+test_accepts_hash_verified_regular_files (tests.test_mirror_readonly.MirrorArchiveTests) ... ok
+test_large_real_raw_exports_require_an_explicit_bounded_opt_in (tests.test_mirror_readonly.MirrorArchiveTests) ... ok
+test_rejects_hash_mismatch_before_creating_destination (tests.test_mirror_readonly.MirrorArchiveTests) ... ok
+test_rejects_symlink_members (tests.test_mirror_readonly.MirrorArchiveTests) ... ok
+test_rejects_traversal_before_creating_destination (tests.test_mirror_readonly.MirrorArchiveTests) ... ok
+test_remote_collector_streams_without_filesystem_output (tests.test_mirror_readonly.MirrorArchiveTests) ... ok
+test_timeout_retains_partial_and_writes_failure_journal_without_extracting (tests.test_mirror_readonly.MirrorArchiveTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.564s
+
+OK

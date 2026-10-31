@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-30T20:47:13.739479+00:00",
+  "original_stderr": "reports/operations/session-recovery-20261030-01a1765d/mixed-runtime-options-and-tools-pairs-full-CPU-a1.stderr.log",
+  "tests_run": 434,
+  "errors": 1,
+  "error_test": "test_cpu_build_contract.CpuBuildContractTests.test_inspection_is_readonly_and_requires_shared_resource_headroom",
+  "reason": "fixture read real local PSI instead of deterministic mocked proc resources",
+  "change": "Test fixture only: mock CPU samples, pressure, cores and sleep; production admission unchanged.",
+  "GPU_or_remote_effect": false
+}

@@ -1,0 +1,29 @@
+{
+  "classification": "confirmed_actual_H800_streaming256_readonly_and_rawaudit",
+  "run_id": "prod-trace-bf16xqa-toolagent-s025-r0-20261027b",
+  "files_verified": 89,
+  "source_bytes": 395316425,
+  "large_sealed_raw_files": [
+    {
+      "relative_path": "support/agent_work/runs/prod-trace-bf16xqa-toolagent-s025-r0-20261027b/output/bf16/artifacts/profile_export_raw.jsonl",
+      "size": 149827437,
+      "sealed_raw_SHA": "a1aeed9f168f3398d2cf36f31acddcef375fc5abb794d8fcbff2eacbf487d69e"
+    },
+    {
+      "relative_path": "support/agent_work/runs/prod-trace-bf16xqa-toolagent-s025-r0-20261027b/output/fp8_e4m3/artifacts/profile_export_raw.jsonl",
+      "size": 148143910,
+      "sealed_raw_SHA": "6b28b83ed6f52c4f4bc2f53b1f0c906ad0718ba137f9c439f266ce7f0284e163"
+    }
+  ],
+  "remote_collector_SHA": "5184d64fa8ab04bdb71f0c23c434f23134706745413f8b467f465b843397d5f5",
+  "collector_script_SHA": "285f0ab91686a201e1f6955eff66436e5416e01d474e012b0f23fecd953818be",
+  "explicit_perfile_MiB": 256,
+  "unchanged_total_MiB": 512,
+  "unchanged_XZ_decoder_memory_MiB": 128,
+  "read_chunk_MiB": 1,
+  "remote_writes": 0,
+  "GPU_reruns": 0,
+  "full_CPU_suite_before_actual_transfer": 169,
+  "current_CPU_suite": 171,
+  "independent_audit": "reports/operations/20261026T075846Z/toolagent_s025_independent_audit_v1.json"
+}

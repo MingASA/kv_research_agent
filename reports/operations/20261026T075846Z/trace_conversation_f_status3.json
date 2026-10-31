@@ -1,0 +1,254 @@
+{
+  "files": {
+    "START_INTENT.json": {
+      "sha256": "c46845cec090d896adc8acaf5bebc3246c58c04a17e7791fcac1317b2b4d58e9",
+      "value": {
+        "request_sha256": "80cf4fc281efb1d725a6c515f35d240a160f6faa37eee4a7a67d0285263dc38c"
+      }
+    },
+    "SUPERVISOR_PROCESS.json": {
+      "sha256": "8066265f57d5bbeee2ab8310b96bc3b2ccc6ec73f31d60fb61d52f1813f3b0ee",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-517439.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-517439.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-517439.scope\n",
+          "pid": 2526492,
+          "start_ticks": 366837289,
+          "uid": 1005
+        }
+      }
+    },
+    "SUPERVISOR_STARTED.json": {
+      "sha256": "c772b579720aba181ca30dc981433594573103b37f25bb32986bc0a283b4289e",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-517439.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-517439.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-517439.scope\n",
+          "pid": 2526492,
+          "start_ticks": 366837289,
+          "uid": 1005
+        },
+        "ticket_sha256": "9e7db0e93c585bb9fd23f9d6dd28d23eabb8b803dca97c068ef14a7d0de539d7"
+      }
+    },
+    "owned_containers.json": {
+      "sha256": "89d3db10850f06b9b11de69841a8566334dd1c0dd009ecf8755af72935ed130f",
+      "value": {
+        "containers": [
+          {
+            "container_id": "6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771",
+            "pid_identity": {
+              "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+              "cgroup": "12:rdma:/system.slice/docker-6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771.scope\n11:blkio:/system.slice/docker-6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771.scope\n10:net_cls,net_prio:/system.slice/docker-6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771.scope\n9:freezer:/system.slice/docker-6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771.scope\n8:memory:/system.slice/docker-6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771.scope\n7:hugetlb:/system.slice/docker-6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771.scope\n6:perf_event:/system.slice/docker-6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771.scope\n5:pids:/system.slice/docker-6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771.scope\n4:devices:/system.slice/docker-6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771.scope\n3:cpu,cpuacct:/system.slice/docker-6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771.scope\n2:cpuset:/system.slice/docker-6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771.scope\n1:name=systemd:/system.slice/docker-6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771.scope\n",
+              "pid": 2542989,
+              "start_ticks": 366849647,
+              "uid": 1005
+            },
+            "released": true
+          },
+          {
+            "container_id": "893feb0c3022d77c6e99fd165b3d9a9bc3ac9bf25154383c15c1f05e2ae0747e",
+            "pid_identity": {
+              "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+              "cgroup": "12:rdma:/system.slice/docker-893feb0c3022d77c6e99fd165b3d9a9bc3ac9bf25154383c15c1f05e2ae0747e.scope\n11:blkio:/system.slice/docker-893feb0c3022d77c6e99fd165b3d9a9bc3ac9bf25154383c15c1f05e2ae0747e.scope\n10:net_cls,net_prio:/system.slice/docker-893feb0c3022d77c6e99fd165b3d9a9bc3ac9bf25154383c15c1f05e2ae0747e.scope\n9:freezer:/system.slice/docker-893feb0c3022d77c6e99fd165b3d9a9bc3ac9bf25154383c15c1f05e2ae0747e.scope\n8:memory:/system.slice/docker-893feb0c3022d77c6e99fd165b3d9a9bc3ac9bf25154383c15c1f05e2ae0747e.scope\n7:hugetlb:/system.slice/docker-893feb0c3022d77c6e99fd165b3d9a9bc3ac9bf25154383c15c1f05e2ae0747e.scope\n6:perf_event:/system.slice/docker-893feb0c3022d77c6e99fd165b3d9a9bc3ac9bf25154383c15c1f05e2ae0747e.scope\n5:pids:/system.slice/docker-893feb0c3022d77c6e99fd165b3d9a9bc3ac9bf25154383c15c1f05e2ae0747e.scope\n4:devices:/system.slice/docker-893feb0c3022d77c6e99fd165b3d9a9bc3ac9bf25154383c15c1f05e2ae0747e.scope\n3:cpu,cpuacct:/system.slice/docker-893feb0c3022d77c6e99fd165b3d9a9bc3ac9bf25154383c15c1f05e2ae0747e.scope\n2:cpuset:/system.slice/docker-893feb0c3022d77c6e99fd165b3d9a9bc3ac9bf25154383c15c1f05e2ae0747e.scope\n1:name=systemd:/system.slice/docker-893feb0c3022d77c6e99fd165b3d9a9bc3ac9bf25154383c15c1f05e2ae0747e.scope\n",
+              "pid": 2703117,
+              "start_ticks": 366958878,
+              "uid": 1005
+            },
+            "released": false
+          }
+        ],
+        "request_sha256": "80cf4fc281efb1d725a6c515f35d240a160f6faa37eee4a7a67d0285263dc38c",
+        "reservation_id": "aa69059868ce47eda68b67b09f525659"
+      }
+    },
+    "state.json": {
+      "sha256": "1994b4f860bfe3de38518b1b4b1903e1f5e5714a26d36618b9aa66657d13193f",
+      "value": {
+        "arm": "fp8_e4m3",
+        "containers": [
+          "6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771",
+          "893feb0c3022d77c6e99fd165b3d9a9bc3ac9bf25154383c15c1f05e2ae0747e"
+        ],
+        "request_sha256": "80cf4fc281efb1d725a6c515f35d240a160f6faa37eee4a7a67d0285263dc38c",
+        "status": "RUNNING"
+      }
+    }
+  },
+  "gpu_snapshot": "0, GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 66907, 14\n1, GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 0, 0\n2, GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 65173, 0\n3, GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 65173, 0\n4, GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 0, 0\n5, GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 0, 0\n6, GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 0, 0\n7, GPU-47211491-ba0d-78bf-5c84-f968c0648213, 0, 0",
+  "live_owned_containers": [
+    "893feb0c3022d77c6e99fd165b3d9a9bc3ac9bf25154383c15c1f05e2ae0747e"
+  ],
+  "log_tail": {
+    "events.jsonl": "{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-a6169058-34c8-6edc-e4f5-779bf9a10421\":{\"index\":2,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3668373325244023,\"utc\":\"2026-10-27T01:25:31.586085+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-a6169058-34c8-6edc-e4f5-779bf9a10421\":{\"index\":2,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3668373325244023,\"utc\":\"2026-10-27T01:26:02.048504+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-a6169058-34c8-6edc-e4f5-779bf9a10421\":{\"index\":2,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3668373325244023,\"utc\":\"2026-10-27T01:26:32.512314+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-a6169058-34c8-6edc-e4f5-779bf9a10421\":{\"index\":2,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3668373325244023,\"utc\":\"2026-10-27T01:27:03.005127+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-a6169058-34c8-6edc-e4f5-779bf9a10421\":{\"index\":2,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3668373325244023,\"utc\":\"2026-10-27T01:27:33.482106+00:00\"}\n{\"action\":\"OWNED_CONTAINER_CREATED\",\"arm\":\"bf16\",\"id\":\"6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771\",\"utc\":\"2026-10-27T01:27:34.606515+00:00\"}\n{\"action\":\"ARM_VERIFIED\",\"arm\":\"bf16\",\"id\":\"6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771\",\"utc\":\"2026-10-27T01:43:43.828404+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-a6169058-34c8-6edc-e4f5-779bf9a10421\":{\"index\":2,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3669465992309685,\"utc\":\"2026-10-27T01:43:44.253165+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-a6169058-34c8-6edc-e4f5-779bf9a10421\":{\"index\":2,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3669465992309685,\"utc\":\"2026-10-27T01:44:14.571623+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-a6169058-34c8-6edc-e4f5-779bf9a10421\":{\"index\":2,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3669465992309685,\"utc\":\"2026-10-27T01:44:45.023370+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-a6169058-34c8-6edc-e4f5-779bf9a10421\":{\"index\":2,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3669465992309685,\"utc\":\"2026-10-27T01:45:15.360825+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-a6169058-34c8-6edc-e4f5-779bf9a10421\":{\"index\":2,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3669465992309685,\"utc\":\"2026-10-27T01:45:45.861593+00:00\"}\n{\"action\":\"OWNED_CONTAINER_CREATED\",\"arm\":\"fp8_e4m3\",\"id\":\"893feb0c3022d77c6e99fd165b3d9a9bc3ac9bf25154383c15c1f05e2ae0747e\",\"utc\":\"2026-10-27T01:45:46.922329+00:00\"}\n",
+    "output/bf16/aiperf.log": "e Prompt Cache Read % │        16.15 │    N/A │       N/A │       N/A │       N/A │      N/A │      N/A │\n│                                     (%) │              │        │           │           │           │          │          │\n│         Total Usage Prompt Audio Tokens │         0.00 │    N/A │       N/A │       N/A │       N/A │      N/A │      N/A │\n│                                (tokens) │              │        │           │           │           │          │          │\n│  Total Usage Completion Tokens (tokens) │   135,673.00 │    N/A │       N/A │       N/A │       N/A │      N/A │      N/A │\n│   Total Usage Reasoning Tokens (tokens) │         0.00 │    N/A │       N/A │       N/A │       N/A │      N/A │      N/A │\n│     Total Usage Completion Audio Tokens │         0.00 │    N/A │       N/A │       N/A │       N/A │      N/A │      N/A │\n│                                (tokens) │              │        │           │           │           │          │          │\n│       Total Usage Total Tokens (tokens) │ 3,437,251.00 │    N/A │       N/A │       N/A │       N/A │      N/A │      N/A │\n└─────────────────────────────────────────┴──────────────┴────────┴───────────┴───────────┴───────────┴──────────┴──────────┘\n                                                       NVIDIA AIPerf | LLM Metrics                                                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┓\n┃                                        Metric ┃        avg ┃      min ┃        max ┃        p99 ┃        p90 ┃        p50 ┃       std ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━┩\n│                      Time to First Token (ms) │ 172,620.12 │   525.37 │ 271,436.73 │ 266,504.23 │ 254,502.90 │ 202,678.23 │ 83,015.77 │\n│                     Time to Second Token (ms) │     228.51 │     0.00 │     718.10 │     670.12 │     580.01 │      76.96 │    214.65 │\n│               Time to First Output Token (ms) │ 172,620.12 │   525.37 │ 271,436.73 │ 266,504.23 │ 254,502.90 │ 202,678.23 │ 83,015.77 │\n│                          Request Latency (ms) │ 197,270.80 │ 8,340.37 │ 363,919.68 │ 313,162.16 │ 287,403.38 │ 227,344.56 │ 83,778.71 │\n│                          Decode Duration (ms) │  24,650.68 │     0.00 │ 130,336.59 │  66,795.84 │  45,988.57 │  25,080.81 │ 17,681.29 │\n│                      Inter Token Latency (ms) │      84.14 │    12.51 │     573.59 │     226.47 │     102.50 │      86.89 │     42.77 │\n│              Output Token Throughput Per User │      14.78 │     1.74 │      79.93 │      52.31 │      23.54 │      11.51 │      9.55 │\n│                             (tokens/sec/user) │            │          │            │            │            │            │           │\n│ E2E Output Token Throughput (tokens/sec/user) │       2.62 │     0.00 │      37.21 │      16.90 │       5.74 │       1.59 │      3.68 │\n│               Output Sequence Length (tokens) │     328.51 │     1.00 │   1,554.00 │     920.36 │     559.80 │     345.00 │    217.87 │\n│                Input Sequence Length (tokens) │   7,994.14 │   921.00 │  30,509.00 │  29,441.72 │  18,759.00 │   5,570.00 │  7,180.55 │\n│          Output Token Throughput (tokens/sec) │     218.66 │      N/A │        N/A │        N/A │        N/A │        N/A │       N/A │\n│           Input Token Throughput (tokens/sec) │   5,321.17 │      N/A │        N/A │        N/A │        N/A │        N/A │       N/A │\n│             Request Throughput (requests/sec) │       0.67 │      N/A │        N/A │        N/A │        N/A │        N/A │       N/A │\n│          Completed Requests (Success + Error) │   1,025.00 │      N/A │        N/A │        N/A │        N/A │        N/A │       N/A │\n│                                    (requests) │            │          │            │            │            │            │           │\n│                        Request Error Rate (%) │      59.71 │      N/A │        N/A │        N/A │        N/A │        N/A │       N/A │\n│                      Request Count (requests) │     413.00 │      N/A │        N/A │        N/A │        N/A │        N/A │       N/A │\n│              Request Latency (error-adjusted) │        N/A │ 8,340.37 │        N/A │        N/A │        N/A │        N/A │       N/A │\n│                                          (ms) │            │          │            │            │            │            │           │\n│          Time to First Token (error-adjusted) │        N/A │   525.37 │        N/A │        N/A │        N/A │        N/A │       N/A │\n│                                          (ms) │            │          │            │            │            │            │           │\n│          Inter Token Latency (error-adjusted) │        N/A │    12.51 │        N/A │        N/A │        N/A │        N/A │       N/A │\n│                                          (ms) │            │          │            │            │            │            │           │\n│              Decode Duration (error-adjusted) │        N/A │     0.00 │        N/A │        N/A │        N/A │        N/A │       N/A │\n│                                          (ms) │            │          │            │            │            │            │           │\n└───────────────────────────────────────────────┴────────────┴──────────┴────────────┴────────────┴────────────┴────────────┴───────────┘\n\nCLI Command: aiperf profile --model 'Qwen2.5-14B-Instruct' --tokenizer \n'/models/Qwen2.5-14B-Instruct' --url 'http://127.0.0.1:19001' --endpoint-type 'chat' --streaming \n--use-legacy-max-tokens --use-server-token-count --random-seed 20261026 --export-level 'raw' \n--output-artifact-dir '/results/artifacts' --request-count 1025 --concurrency 1024 \n--dataset-sampling-strategy 'sequential' --request-timeout-seconds 1200 --input-file \n'/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/runs/prod-trace-xqa-conversation-s1-r\n0-20261027f/input/payload_trace.jsonl' --custom-dataset-type 'mooncake_trace' --fixed-schedule \n--fixed-schedule-auto-offset --workers-max 1 --no-gpu-telemetry --ui None\nBenchmark Duration: 620.45 sec\nCSV Export: /results/artifacts/profile_export_aiperf.csv\nJSON Export: /results/artifacts/profile_export_aiperf.json\nRaw Records: /results/artifacts/profile_export_raw.jsonl\nLog File: /results/artifacts/logs/aiperf.log\n\n",
+    "output/bf16/container.log": "",
+    "output/bf16/operator_acceptance.log": "I20261027 09:27:40.623512 9 flashinfer.py:168] KV_ALLOCATION {\"layers\": [{\"tensors\": {\"key\": {\"dtype\": \"torch.bfloat16\", \"shape\": [7, 128, 8, 128], \"bytes\": 1835008}, \"value\": {\"dtype\": \"torch.bfloat16\", \"shape\": [7, 128, 8, 128], \"bytes\": 1835008}}, \"key_format\": \"bf16\", \"value_format\": \"bf16\", \"resident_bytes\": 3670016, \"bytes_per_token\": 4096}], \"resident_bytes\": 3670016, \"token_capacity\": 896}\nI20261027 09:30:28.404076 9 check_native_fa3_operator.py:108] OPERATOR_REFERENCE prefill {'relative_l2': 0.0022824311163276434, 'max_abs': 0.0005266666412353516}\nI20261027 09:30:28.551712 9 check_native_fa3_operator.py:108] OPERATOR_REFERENCE capture_replay {'relative_l2': 0.0022833915427327156, 'max_abs': 0.0004392862319946289}\nI20261027 09:30:28.553688 9 check_native_fa3_operator.py:108] OPERATOR_REFERENCE changed_context {'relative_l2': 0.002186181955039501, 'max_abs': 0.0006560683250427246}\nI20261027 09:30:28.554579 9 check_native_fa3_operator.py:209] Native production operator/Graph acceptance passed for bf16; no model/service/quality claim\n",
+    "output/bf16/server.log": "s: 393, ttft: 257628.0ms, total_latency: 293636.2ms, avg tpot: 91.9ms, generation speed: 10.9 tokens/s\nI20261027 09:42:51.910876   469 request.cpp:134] x-request-id: ab365860-beec-47e4-9bb5-a42cffec0cae, x-request-time: , request_id: chatcmpl-15933769124469343823-frh7ug2eT2uQErjY9rzZg6, sequence 0, max_tokens: 415, temperature: 0, finish_reason: length, prompt_tokens: 2269, num_prefix_cache_tokens: 512, generated_tokens: 415, ttft: 257624.0ms, total_latency: 295064.8ms, avg tpot: 90.4ms, generation speed: 11.1 tokens/s\nI20261027 09:42:53.038695   470 request.cpp:134] x-request-id: 5bde20d3-f868-4c87-9b61-84356667b976, x-request-time: , request_id: chatcmpl-15933769124469343823-aoGNmvasurkoDA2QgPib7R, sequence 0, max_tokens: 433, temperature: 0, finish_reason: length, prompt_tokens: 3538, num_prefix_cache_tokens: 512, generated_tokens: 433, ttft: 260622.0ms, total_latency: 299190.5ms, avg tpot: 89.3ms, generation speed: 11.2 tokens/s\nI20261027 09:42:55.707267   470 request.cpp:134] x-request-id: 3ff7f216-b82d-44c1-b7d6-b1ce2bdadb1c, x-request-time: , request_id: chatcmpl-15933769124469343823-a9itAXuzS8qqJAJwjHGXYt, sequence 0, max_tokens: 280, temperature: 0, finish_reason: length, prompt_tokens: 15260, num_prefix_cache_tokens: 512, generated_tokens: 280, ttft: 268312.0ms, total_latency: 292833.3ms, avg tpot: 87.9ms, generation speed: 11.4 tokens/s\nI20261027 09:42:56.094138   470 request.cpp:134] x-request-id: aaa51c58-7a95-4ca4-a18e-127da1185bc8, x-request-time: , request_id: chatcmpl-15933769124469343823-NT7qhGGnNykB7YVyewSw88, sequence 0, max_tokens: 400, temperature: 0, finish_reason: length, prompt_tokens: 1878, num_prefix_cache_tokens: 512, generated_tokens: 400, ttft: 261708.0ms, total_latency: 296251.0ms, avg tpot: 86.6ms, generation speed: 11.6 tokens/s\nI20261027 09:42:56.802125   470 request.cpp:134] x-request-id: 9879ad0b-a7ae-4fca-82e8-7a4aac8444e7, x-request-time: , request_id: chatcmpl-15933769124469343823-JUE7AFQjLLersfV5JexXuB, sequence 0, max_tokens: 476, temperature: 0, finish_reason: length, prompt_tokens: 6886, num_prefix_cache_tokens: 512, generated_tokens: 476, ttft: 259344.0ms, total_latency: 299946.0ms, avg tpot: 85.5ms, generation speed: 11.7 tokens/s\nI20261027 09:42:58.322958   468 request.cpp:134] x-request-id: 4bfdf1e7-94b1-4825-98de-c2971d34507a, x-request-time: , request_id: chatcmpl-15933769124469343823-HSvnsyexKYuFC76XZga2gH, sequence 0, max_tokens: 304, temperature: 0, finish_reason: length, prompt_tokens: 4601, num_prefix_cache_tokens: 512, generated_tokens: 304, ttft: 262506.0ms, total_latency: 286469.8ms, avg tpot: 79.1ms, generation speed: 12.7 tokens/s\nI20261027 09:42:58.922936   467 request.cpp:134] x-request-id: 35b3fe0e-f518-4257-8e9b-12f3fdfc62db, x-request-time: , request_id: chatcmpl-15933769124469343823-rN7tPFvZRaNTveMhjeB2XY, sequence 0, max_tokens: 538, temperature: 0, finish_reason: length, prompt_tokens: 3609, num_prefix_cache_tokens: 512, generated_tokens: 538, ttft: 260622.0ms, total_latency: 305074.8ms, avg tpot: 82.8ms, generation speed: 12.1 tokens/s\nI20261027 09:43:00.555703   469 request.cpp:134] x-request-id: 3a7cc1d7-4c32-44fb-84f4-be66632df37a, x-request-time: , request_id: chatcmpl-15933769124469343823-SHKAZqhGioBncwkC428kph, sequence 0, max_tokens: 453, temperature: 0, finish_reason: length, prompt_tokens: 11637, num_prefix_cache_tokens: 512, generated_tokens: 453, ttft: 262202.0ms, total_latency: 297689.3ms, avg tpot: 78.5ms, generation speed: 12.8 tokens/s\nI20261027 09:43:02.012610   468 request.cpp:134] x-request-id: 37f9ff67-6b2d-4842-946a-12bb1a8279b6, x-request-time: , request_id: chatcmpl-15933769124469343823-K3gxXe8gkAXkLZPFUgMD9C, sequence 0, max_tokens: 520, temperature: 0, finish_reason: length, prompt_tokens: 1147, num_prefix_cache_tokens: 512, generated_tokens: 520, ttft: 261711.0ms, total_latency: 302171.9ms, avg tpot: 78.0ms, generation speed: 12.9 tokens/s\nI20261027 09:43:02.773567   467 request.cpp:134] x-request-id: 8c4a3355-304b-4c5b-8156-c1a2b144d770, x-request-time: , request_id: chatcmpl-15933769124469343823-rJrcCouZmCVWN8ccYQwDeB, sequence 0, max_tokens: 423, temperature: 0, finish_reason: length, prompt_tokens: 1142, num_prefix_cache_tokens: 512, generated_tokens: 423, ttft: 265437.0ms, total_latency: 296929.5ms, avg tpot: 74.6ms, generation speed: 13.4 tokens/s\nI20261027 09:43:03.041520   469 request.cpp:134] x-request-id: c0c73b60-1526-4679-8da9-078dc2b7c773, x-request-time: , request_id: chatcmpl-15933769124469343823-MxPK8Yhg8R4L6DQ2Vw8Ee9, sequence 0, max_tokens: 628, temperature: 0, finish_reason: length, prompt_tokens: 25438, num_prefix_cache_tokens: 10624, generated_tokens: 628, ttft: 263126.0ms, total_latency: 312151.6ms, avg tpot: 78.2ms, generation speed: 12.8 tokens/s\nI20261027 09:43:03.203897   469 request.cpp:134] x-request-id: de72a26f-efbb-4819-bddd-000da558688d, x-request-time: , request_id: chatcmpl-15933769124469343823-hHqXXdAhgvGnA7YtpwsfMH, sequence 0, max_tokens: 404, temperature: 0, finish_reason: length, prompt_tokens: 13648, num_prefix_cache_tokens: 512, generated_tokens: 404, ttft: 263545.0ms, total_latency: 291332.2ms, avg tpot: 69.0ms, generation speed: 14.5 tokens/s\nI20261027 09:43:03.671607   468 request.cpp:134] x-request-id: 2cd10763-6261-44cb-905b-7a1b2336ec91, x-request-time: , request_id: chatcmpl-15933769124469343823-twxZ2h4ynpyUzXKefa9jFk, sequence 0, max_tokens: 434, temperature: 0, finish_reason: length, prompt_tokens: 8237, num_prefix_cache_tokens: 512, generated_tokens: 434, ttft: 266620.0ms, total_latency: 297811.1ms, avg tpot: 72.0ms, generation speed: 13.9 tokens/s\nI20261027 09:43:05.618412   470 request.cpp:134] x-request-id: 5bb4b08e-9aba-427b-9122-fdfbc75e4668, x-request-time: , request_id: chatcmpl-15933769124469343823-pSmxP25ecqtRdg5RNToM7f, sequence 0, max_tokens: 493, temperature: 0, finish_reason: length, prompt_tokens: 2166, num_prefix_cache_tokens: 512, generated_tokens: 493, ttft: 264889.0ms, total_latency: 296772.5ms, avg tpot: 64.8ms, generation speed: 15.5 tokens/s\nI20261027 09:43:08.357050   467 request.cpp:134] x-request-id: 72110781-1b8d-43fe-9898-9a60876b6608, x-request-time: , request_id: chatcmpl-15933769124469343823-2S8TsgBqnQUayVN47gCGSf, sequence 0, max_tokens: 542, temperature: 0, finish_reason: length, prompt_tokens: 17574, num_prefix_cache_tokens: 512, generated_tokens: 542, ttft: 265461.0ms, total_latency: 293479.2ms, avg tpot: 51.8ms, generation speed: 19.3 tokens/s\nI20261027 09:43:10.472675   470 request.cpp:134] x-request-id: d9b116e5-2b78-467e-a080-9e0c5c5a94bb, x-request-time: , request_id: chatcmpl-15933769124469343823-8oZNMPJKMKVkrQTr4e7nbi, sequence 0, max_tokens: 621, temperature: 0, finish_reason: length, prompt_tokens: 25590, num_prefix_cache_tokens: 10624, generated_tokens: 621, ttft: 267186.0ms, total_latency: 298580.0ms, avg tpot: 50.6ms, generation speed: 19.8 tokens/s\nI20261027 09:43:35.292956   468 request.cpp:134] x-request-id: 0909a291-44ff-4417-ac49-c94501ee260f, x-request-time: , request_id: chatcmpl-15933769124469343823-vXatpZeCibZzxeD9o6Wsoh, sequence 0, max_tokens: 1442, temperature: 0, finish_reason: length, prompt_tokens: 24822, num_prefix_cache_tokens: 10624, generated_tokens: 1442, ttft: 271384.0ms, total_latency: 320402.2ms, avg tpot: 34.0ms, generation speed: 29.4 tokens/s\nI20261027 09:43:39.057885   239 xllm_server.cpp:188]      Shutting down\nI20261027 09:43:39.057951   239 xllm_server.cpp:189]      Waiting for application shutdown.\nI20261027 09:43:39.057965   239 server.cpp:1260] Server[xllm::APIService] is going to quit\nI20261027 09:43:39.058089   239 xllm_server.cpp:193]      Application shutdown complete.\nI20261027 09:43:39.058100   239 xllm_server.cpp:194]      Finished server process [239]\nI20261027 09:43:39.058120   239 llm_master.cpp:141] LLMMaster stopping...\nI20261027 09:43:40.139928   239 server.cpp:1260] Server[xllm::CollectiveService] is going to quit\nI20261027 09:43:40.140172   239 xllm_server_registry.cpp:38] Unregister server CollectiveServer0.\nI20261027 09:43:40.140532   239 server.cpp:1260] Server[xllm::WorkerService] is going to quit\nI20261027 09:43:40.140755   239 xllm_server_registry.cpp:38] Unregister server DistributeWorkerServer0.\n",
+    "output/fp8_e4m3/container.log": "",
+    "output/fp8_e4m3/operator_acceptance.log": "I20261027 09:45:52.571246 9 flashinfer.py:168] KV_ALLOCATION {\"layers\": [{\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [7, 128, 8, 128], \"bytes\": 917504}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [7, 128, 8, 128], \"bytes\": 917504}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [7, 128, 8], \"bytes\": 28672}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [7, 128, 8], \"bytes\": 28672}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 1892352, \"bytes_per_token\": 2112}], \"resident_bytes\": 1892352, \"token_capacity\": 896}\nI20261027 09:48:22.162775 9 check_native_fa3_operator.py:108] OPERATOR_REFERENCE prefill {'relative_l2': 0.0027969107031822205, 'max_abs': 0.0007567703723907471}\nI20261027 09:48:31.295212 9 check_native_fa3_operator.py:108] OPERATOR_REFERENCE capture_replay {'relative_l2': 0.02470334619283676, 'max_abs': 0.0036779604852199554}\nI20261027 09:48:31.297097 9 check_native_fa3_operator.py:108] OPERATOR_REFERENCE changed_context {'relative_l2': 0.023303190246224403, 'max_abs': 0.005400955677032471}\nI20261027 09:48:31.299848 9 check_native_fa3_operator.py:108] OPERATOR_REFERENCE padded_graph {'relative_l2': 0.023303190246224403, 'max_abs': 0.005400955677032471}\nI20261027 09:48:31.301392 9 check_native_fa3_operator.py:108] OPERATOR_REFERENCE restored_finite_padding {'relative_l2': 0.023303190246224403, 'max_abs': 0.005400955677032471}\nI20261027 09:48:31.302229 9 check_native_fa3_operator.py:209] Native production operator/Graph acceptance passed for fp8_e4m3; no model/service/quality claim\n",
+    "output/fp8_e4m3/server.log": "e\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}], \"resident_bytes\": 37176606720, \"token_capacity\": 366720}\n",
+    "supervisor.log": "",
+    "watchdog.log": ""
+  },
+  "ok": true,
+  "operator_acceptance": {
+    "bf16": {
+      "sha256": "477f03e653547a67dde49232599ce11cdcf64c449222789b0b5f3a90693d3656",
+      "value": {
+        "arm": "bf16",
+        "backend": {
+          "attention_impl": "flashinfer",
+          "class": "FlashInferBackend",
+          "decode_impl": "flashinfer",
+          "decode_internal_q_data_type": "torch.bfloat16",
+          "decode_tensor_cores": true,
+          "flashinfer_version": "0.6.18.post1",
+          "kv_cache_dtype": "auto",
+          "kv_data_type": "torch.bfloat16",
+          "paged_prefill": true,
+          "planner_backend": "fa3",
+          "profile_scope": "production_fa3",
+          "q_data_type": "torch.bfloat16",
+          "q_scale": null,
+          "quality_transform": false,
+          "scale_strategy": "none",
+          "xqa_enable_pdl": null,
+          "xqa_graph_padding": null,
+          "xqa_max_context": null,
+          "xqa_unused_kv_policy": null
+        },
+        "classification": "operator_correctness_only",
+        "decode_impl": "flashinfer",
+        "device": "NVIDIA H800",
+        "fresh_dirty_cache_initialized_to_zero": false,
+        "invalid_nan_padding_diagnostics": {},
+        "model_loaded": false,
+        "model_quality_validated": false,
+        "noncontiguous_q_checked": true,
+        "padded_graph_bucket_checked": false,
+        "partial_page_and_replan": true,
+        "prefill_planner": "fa3",
+        "real_capture_and_replay": true,
+        "reference": "FP32 dense causal attention on the same representable Q/K/V; relative L2 <=.05 plus rtol .08, atol .015",
+        "reference_comparisons": {
+          "capture_replay": {
+            "max_abs": 0.0004392862319946289,
+            "relative_l2": 0.0022833915427327156
+          },
+          "changed_context": {
+            "max_abs": 0.0006560683250427246,
+            "relative_l2": 0.002186181955039501
+          },
+          "prefill": {
+            "max_abs": 0.0005266666412353516,
+            "relative_l2": 0.0022824311163276434
+          }
+        },
+        "reserved_page0_not_used_for_live_sequences": true,
+        "schema": "kv-native-fa3-operator-acceptance-v1",
+        "service_performance_measured": false,
+        "unused_padding_reference": "NaN"
+      }
+    },
+    "fp8_e4m3": {
+      "sha256": "8ee7fc29c1c6a99e367e65488049b6046d328a74d915860eef1ca9397c16ea8f",
+      "value": {
+        "arm": "fp8_e4m3",
+        "backend": {
+          "attention_impl": "flashinfer",
+          "class": "FlashInferFP8Backend",
+          "decode_impl": "xqa",
+          "decode_internal_q_data_type": "torch.float8_e4m3fn",
+          "decode_tensor_cores": true,
+          "flashinfer_version": "0.6.18.post1",
+          "fp8_views_alias_resident_pages": true,
+          "k_scale": 0.125,
+          "kv_cache_dtype": "fp8_e4m3",
+          "kv_data_type": "torch.float8_e4m3fn",
+          "paged_prefill": true,
+          "planner_backend": "fa2",
+          "profile_scope": "production_xqa",
+          "q_data_type": "torch.bfloat16",
+          "q_scale": null,
+          "quality_transform": false,
+          "scale_strategy": "immutable_global_scalar_per_K_or_V",
+          "v_scale": 0.0625,
+          "writer": "triton_quantize_scatter_only",
+          "xqa_enable_pdl": true,
+          "xqa_graph_padding": "reserved_page0_one_token_discard",
+          "xqa_max_context": 32768,
+          "xqa_unused_kv_policy": "finite_full_initialization"
+        },
+        "classification": "operator_correctness_only",
+        "decode_impl": "xqa",
+        "device": "NVIDIA H800",
+        "fresh_dirty_cache_initialized_to_zero": true,
+        "invalid_nan_padding_diagnostics": {
+          "key": {
+            "finite_outputs": 10240,
+            "total_outputs": 10240
+          },
+          "value": {
+            "finite_outputs": 0,
+            "total_outputs": 10240
+          }
+        },
+        "model_loaded": false,
+        "model_quality_validated": false,
+        "noncontiguous_q_checked": true,
+        "padded_graph_bucket_checked": true,
+        "partial_page_and_replan": true,
+        "prefill_planner": "fa2",
+        "real_capture_and_replay": true,
+        "reference": "FP32 dense causal attention on the same representable Q/K/V; relative L2 <=.05 plus rtol .08, atol .015",
+        "reference_comparisons": {
+          "capture_replay": {
+            "max_abs": 0.0036779604852199554,
+            "relative_l2": 0.02470334619283676
+          },
+          "changed_context": {
+            "max_abs": 0.005400955677032471,
+            "relative_l2": 0.023303190246224403
+          },
+          "padded_graph": {
+            "max_abs": 0.005400955677032471,
+            "relative_l2": 0.023303190246224403
+          },
+          "prefill": {
+            "max_abs": 0.0007567703723907471,
+            "relative_l2": 0.0027969107031822205
+          },
+          "restored_finite_padding": {
+            "max_abs": 0.005400955677032471,
+            "relative_l2": 0.023303190246224403
+          }
+        },
+        "reserved_page0_not_used_for_live_sequences": true,
+        "schema": "kv-native-fa3-operator-acceptance-v1",
+        "service_performance_measured": false,
+        "unused_padding_reference": "maximum_finite_FP8_or_large_finite_BF16"
+      }
+    }
+  },
+  "owned_containers": [
+    {
+      "created": "2026-10-27T01:45:46.875014222Z",
+      "id": "893feb0c3022d77c6e99fd165b3d9a9bc3ac9bf25154383c15c1f05e2ae0747e",
+      "running": true
+    },
+    {
+      "created": "2026-10-27T01:27:34.478396611Z",
+      "id": "6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771",
+      "running": false
+    }
+  ],
+  "quality_progress": {
+    "bf16": {},
+    "fp8_e4m3": {}
+  },
+  "relaunch_allowed": false,
+  "run_id": "prod-trace-xqa-conversation-s1-r0-20261027f",
+  "status": "RUNNING",
+  "supervisor_alive": true
+}

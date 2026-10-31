@@ -1,0 +1,7 @@
+{
+  "scope": "CPU-only posthoc helper, no GPU run or original evidence changed",
+  "first_content_gap_attempt": "StopIteration before output creation: manifest base_rel was relative directly to mirror/files; slash-suffix assumption rejected it",
+  "repair": "Canonical base/base_rel resolved path equality now binds exact raw file and SHA/size. Original WC and old O raw diagnostics completed after this correction.",
+  "GPU_reruns": 0,
+  "experiment_results_relabelled": false
+}

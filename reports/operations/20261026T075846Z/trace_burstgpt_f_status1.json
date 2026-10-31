@@ -1,0 +1,154 @@
+{
+  "files": {
+    "START_INTENT.json": {
+      "sha256": "4b0c835fe95c0a32aa56b2094cbaac442d85dec2e3a398d1d61a8ef2c47d3e9a",
+      "value": {
+        "request_sha256": "8558d6e50d1e8f64a33ead9f830a9d89a68b5d7c4489c409dcff1ad7e4972ccf"
+      }
+    },
+    "SUPERVISOR_PROCESS.json": {
+      "sha256": "8a4ba5517ff9982e218d96c7b524563debcc4a6be8b25333fd73212d27e8292c",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-517416.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-517416.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-517416.scope\n",
+          "pid": 2512407,
+          "start_ticks": 366826556,
+          "uid": 1005
+        }
+      }
+    },
+    "SUPERVISOR_STARTED.json": {
+      "sha256": "278abfd8d711f877b63978dd6637bbf405e512cd9136e11a2b1675b706df8ad8",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-517416.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-517416.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-517416.scope\n",
+          "pid": 2512407,
+          "start_ticks": 366826556,
+          "uid": 1005
+        },
+        "ticket_sha256": "134654aa100c41c324341c90f40448dd45c54b019eed92057bc3749df7dcf669"
+      }
+    },
+    "owned_containers.json": {
+      "sha256": "f2ffb264a06d4c137a9fc447d35e7b3ebb5cd512976dc299c83d04f01056289b",
+      "value": {
+        "containers": [
+          {
+            "container_id": "3655813d4aebface7ddf316253ad04694dafa9619b49185275ba96a24027b33e",
+            "pid_identity": {
+              "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+              "cgroup": "12:rdma:/system.slice/docker-3655813d4aebface7ddf316253ad04694dafa9619b49185275ba96a24027b33e.scope\n11:blkio:/system.slice/docker-3655813d4aebface7ddf316253ad04694dafa9619b49185275ba96a24027b33e.scope\n10:net_cls,net_prio:/system.slice/docker-3655813d4aebface7ddf316253ad04694dafa9619b49185275ba96a24027b33e.scope\n9:freezer:/system.slice/docker-3655813d4aebface7ddf316253ad04694dafa9619b49185275ba96a24027b33e.scope\n8:memory:/system.slice/docker-3655813d4aebface7ddf316253ad04694dafa9619b49185275ba96a24027b33e.scope\n7:hugetlb:/system.slice/docker-3655813d4aebface7ddf316253ad04694dafa9619b49185275ba96a24027b33e.scope\n6:perf_event:/system.slice/docker-3655813d4aebface7ddf316253ad04694dafa9619b49185275ba96a24027b33e.scope\n5:pids:/system.slice/docker-3655813d4aebface7ddf316253ad04694dafa9619b49185275ba96a24027b33e.scope\n4:devices:/system.slice/docker-3655813d4aebface7ddf316253ad04694dafa9619b49185275ba96a24027b33e.scope\n3:cpu,cpuacct:/system.slice/docker-3655813d4aebface7ddf316253ad04694dafa9619b49185275ba96a24027b33e.scope\n2:cpuset:/system.slice/docker-3655813d4aebface7ddf316253ad04694dafa9619b49185275ba96a24027b33e.scope\n1:name=systemd:/system.slice/docker-3655813d4aebface7ddf316253ad04694dafa9619b49185275ba96a24027b33e.scope\n",
+              "pid": 2528330,
+              "start_ticks": 366838922,
+              "uid": 1005
+            },
+            "released": false
+          }
+        ],
+        "request_sha256": "8558d6e50d1e8f64a33ead9f830a9d89a68b5d7c4489c409dcff1ad7e4972ccf",
+        "reservation_id": "8bba182cacaf448fbddc5d7a1c8eae5f"
+      }
+    },
+    "state.json": {
+      "sha256": "8df257b362dceeaf024816e8b7340802c457a517d8ca5e19be6d3d89a8da1835",
+      "value": {
+        "arm": "bf16",
+        "containers": [
+          "3655813d4aebface7ddf316253ad04694dafa9619b49185275ba96a24027b33e"
+        ],
+        "request_sha256": "8558d6e50d1e8f64a33ead9f830a9d89a68b5d7c4489c409dcff1ad7e4972ccf",
+        "status": "RUNNING"
+      }
+    }
+  },
+  "gpu_snapshot": "0, GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 597, 0\n1, GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 66911, 95\n2, GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 1045, 0\n3, GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 0, 0\n4, GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 0, 0\n5, GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 0, 0\n6, GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 0, 0\n7, GPU-47211491-ba0d-78bf-5c84-f968c0648213, 0, 0",
+  "live_owned_containers": [
+    "3655813d4aebface7ddf316253ad04694dafa9619b49185275ba96a24027b33e"
+  ],
+  "log_tail": {
+    "events.jsonl": "{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3668266120240392,\"utc\":\"2026-10-27T01:23:44.381133+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3668266120240392,\"utc\":\"2026-10-27T01:24:14.923248+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3668266120240392,\"utc\":\"2026-10-27T01:24:45.315655+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3668266120240392,\"utc\":\"2026-10-27T01:25:15.641324+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3668266120240392,\"utc\":\"2026-10-27T01:25:46.337209+00:00\"}\n{\"action\":\"OWNED_CONTAINER_CREATED\",\"arm\":\"bf16\",\"id\":\"3655813d4aebface7ddf316253ad04694dafa9619b49185275ba96a24027b33e\",\"utc\":\"2026-10-27T01:25:47.357195+00:00\"}\n",
+    "output/bf16/container.log": "",
+    "output/bf16/operator_acceptance.log": "I20261027 09:25:52.510750 9 flashinfer.py:168] KV_ALLOCATION {\"layers\": [{\"tensors\": {\"key\": {\"dtype\": \"torch.bfloat16\", \"shape\": [7, 128, 8, 128], \"bytes\": 1835008}, \"value\": {\"dtype\": \"torch.bfloat16\", \"shape\": [7, 128, 8, 128], \"bytes\": 1835008}}, \"key_format\": \"bf16\", \"value_format\": \"bf16\", \"resident_bytes\": 3670016, \"bytes_per_token\": 4096}], \"resident_bytes\": 3670016, \"token_capacity\": 896}\nI20261027 09:28:42.609046 9 check_native_fa3_operator.py:108] OPERATOR_REFERENCE prefill {'relative_l2': 0.0022824311163276434, 'max_abs': 0.0005266666412353516}\nI20261027 09:28:42.763319 9 check_native_fa3_operator.py:108] OPERATOR_REFERENCE capture_replay {'relative_l2': 0.0022833915427327156, 'max_abs': 0.0004392862319946289}\nI20261027 09:28:42.765119 9 check_native_fa3_operator.py:108] OPERATOR_REFERENCE changed_context {'relative_l2': 0.002186181955039501, 'max_abs': 0.0006560683250427246}\nI20261027 09:28:42.765906 9 check_native_fa3_operator.py:209] Native production operator/Graph acceptance passed for bf16; no model/service/quality claim\n",
+    "output/bf16/server.log": "lly bound thread to NUMA node 0 with 96 CPUs\nI20261027 09:28:44.176469   242 threadpool.cpp:32] ThreadPool created, thread count 5, pool name WorkerService.copy, cpu_binding false.\nW20261027 09:28:44.180995   239 bthread.cpp:471] Fail to set concurrency by tag: 0, tag concurrency should be larger than old oncurrency. old concurrency: 9, new concurrency: 8\nI20261027 09:28:44.182729   239 server.cpp:1200] Server[xllm::CollectiveService] is serving on port=19888.\nI20261027 09:28:44.182757   239 server.cpp:1203] Check out http://3655813d4aeb:19888 in web browser.\nI20261027 09:28:44.182906   239 xllm_server.cpp:307] CollectiveServer0 server started on address 127.0.0.1:19888, idle_timeout_sec: -1, num_threads: 8\nI20261027 09:28:44.534358   242 threadpool.cpp:32] ThreadPool created, thread count 4, pool name WorkerService.request, cpu_binding false.\nI20261027 09:28:44.535288   242 xllm_server_registry.cpp:22] Register server DistributeWorkerServer0.\nW20261027 09:28:44.535938   242 bthread.cpp:471] Fail to set concurrency by tag: 0, tag concurrency should be larger than old oncurrency. old concurrency: 9, new concurrency: 8\nI20261027 09:28:44.536775   242 server.cpp:1200] Server[xllm::WorkerService] is serving on port=36459.\nI20261027 09:28:44.536793   242 server.cpp:1203] Check out http://3655813d4aeb:36459 in web browser.\nI20261027 09:28:44.536803   242 xllm_server.cpp:307] DistributeWorker server started on address 127.0.0.1:36459, idle_timeout_sec: -1, num_threads: 8\nI20261027 09:28:44.536811   242 worker_server.cpp:152] Worker 0: server address: 127.0.0.1:36459\nI20261027 09:28:44.538328   242 worker_server.cpp:516] Worker#0 connect to 127.0.0.1:19888 success.\nI20261027 09:28:44.540678   242 worker_server.cpp:197] Worker CP config: cp_size=1, cp_group_size=1, cp_sharding_stage=disabled, instance_role=DEFAULT\nI20261027 09:28:44.540702   242 threadpool.cpp:32] ThreadPool created, thread count 1, pool name Worker.async, cpu_binding false.\nI20261027 09:28:44.540921   242 threadpool.cpp:32] ThreadPool created, thread count 1, pool name WorkerImpl.schedule, cpu_binding false.\nE20261027 09:28:45.183332   239 net.cpp:68] getaddrinfo failed\nE20261027 09:28:45.183403   239 net.cpp:68] getaddrinfo failed\nI20261027 09:28:45.183434   239 threadpool.cpp:32] ThreadPool created, thread count 1, pool name RemoteWorker.request, cpu_binding false.\nI20261027 09:28:45.183646   239 threadpool.cpp:32] ThreadPool created, thread count 4, pool name RemoteWorker.copy, cpu_binding false.\nI20261027 09:28:45.184589   239 remote_worker.cpp:57] RemoteWorker Hello connected, server_address: 127.0.0.1:36459, global_rank_: 0\nI20261027 09:28:45.184767   239 dist_manager.cpp:331] Started cluster health check thread\nI20261027 09:28:45.184782   239 threadpool.cpp:32] ThreadPool created, thread count 1, pool name LLMEngine.link, cpu_binding false.\nI20261027 09:28:45.184999   239 threadpool.cpp:32] ThreadPool created, thread count 16, pool name LLMEngine.forward_input, cpu_binding false.\nI20261027 09:28:45.208966   239 threadpool.cpp:32] ThreadPool created, thread count 32, pool name HFModelLoader.load_weights, cpu_binding false.\nI20261027 09:28:45.214143   239 llm_engine.cpp:236] Initializing model from: /models/Qwen2.5-14B-Instruct\nI20261027 09:28:45.214184   239 tokenizer_factory.cpp:33] Create fast tokenizer.\nI20261027 09:28:45.651340   239 llm_engine.cpp:267] Block info, block_size: 128, n_local_kv_heads: 8, head_dim: 128, n_layers: 48, dtype: BFloat16, kv_cache_dtype: auto\nI20261027 09:28:46.190577   239 llm_engine.cpp:287] Tokenizer/model vocab differ: tokenizer=151665, model=152064\nI20261027 09:28:46.190665   239 llm_engine.cpp:293] Initializing model with ModelArgs: [model_type: qwen2, encoder_embedding_mode: 0, embedding_mode: 0, dtype: bfloat16, hidden_size: 5120, hidden_act: silu, intermediate_size: 13824, moe_intermediate_size: 0, n_routed_experts: 0, n_activated_experts: 0, num_experts_per_tok: 0, n_layers: 48, n_encoder_layers: 0, head_dim: 128, decoder_head_dim: 0, n_heads: 40, decoder_n_heads: 0, n_kv_heads: 8, decoder_n_kv_heads: -1, vocab_size: 152064, rms_norm_eps: 1e-06, layer_norm_eps: 0, rotary_dim: 0, rope_theta: 1e+06, rope_scaling_rope_type: , rope_scaling_factor: 0, rope_scaling_low_freq_factor: 0, rope_scaling_high_freq_factor: 0, rope_scaling_original_max_position_embeddings: 0, rope_scaling_mrope_section: [], max_position_embeddings: 32768, use_absolute_position_embedding: 0, bos_token_id: 0, eos_token_id: 151645, pad_token_id: 0, attn_scalar: 0, no_bias: 0, qkv_bias: 0, stop_token_ids: [151645, ], vision_start_token_id: 0, vision_end_token_id: 0, vision_token_id: 0, image_token_id: 0, video_token_id: 0, vision_custom_adapter: , vision_max_slice_nums: 0, mm_dropout: 0, mm_hidden_act: , mm_hidden_size: 0, mm_image_size: 0, mm_intermediate_size: 0, mm_num_channels: 0, mm_initializer_range: 0, mm_layer_norm_eps: 0, mm_num_attention_heads: 0, mm_num_beam_groups: 0, mm_num_beams: 0, mm_num_hidden_layers: 0, mm_num_return_sequences: 0, mm_output_attentions: 0, mm_output_hidden_states: 0, mm_output_scores: 0, mm_patch_size: 0, mm_projection_dim: 0, mm_spatial_merge_size: 0, mm_spatial_patch_size: 0, mm_remove_invalid_values: 0, mm_repetition_penalty: 0, mm_return_dict: 0, mm_return_dict_in_generate: 0, mm_temperature: 0, mm_tie_encoder_decoder: 0, mm_tie_word_embeddings: 0, mm_top_k: 0, mm_top_p: 0, mm_torchscript: 0, mm_use_bfloat16: 0, mm_head_dim: 0, mm_vocab_size: 0, mm_window_size: 0, mm_fullatt_block_indexes: [], mm_deepstack_visual_indexes: [], mm_tokens_per_second: 0, mm_temporal_patch_size: 0, mm_projector_type: , mm_projector_hidden_act: , mm_projector_n_layers: 0, mm_vision_feature_layer: 0, mm_vision_feature_select_strategy: , mm_image_do_center_crop: 0, mm_image_crop_height_size: 336, mm_image_crop_width_size: 336, mm_image_do_resize: 0, mm_image_resize_shortest_edge: 336, mm_image_resample: 0, mm_image_do_rescale: 0, mm_video_do_rescale: 0, mm_image_rescale_factor: 0, mm_image_do_normalize: 0, mm_image_normalize_mean: [], mm_image_normalize_std: [], mm_image_shortest_edge: 0, mm_image_longest_edge: 0, mm_image_min_pixels: 0, mm_image_max_pixels: 0, mm_image_patch_size: 0, mm_image_temporal_patch_size: 0, mm_image_merge_size: 0, mm_image_token_index: 0, mm_video_normalize_mean: [], mm_video_normalize_std: [], mm_video_shortest_edge: 0, mm_video_longest_edge: 0, mm_video_patch_size: 0, mm_video_temporal_patch_size: 0, mm_video_merge_size: 0, mm_pad_token_id: 0, tie_word_embeddings: 0, use_sliding_window: 0, sliding_window: 131072, max_window_layers: 70, query_num: 0, num_speculative_tokens: 0, in_channels: -1, out_channels: -1, down_block_types: [], up_block_types: [], block_out_channels: [], layers_per_block: 1, latent_channels: -1, norm_num_groups: -1, sample_size: -1, scale_factor: 0, shift_factor: 0, mid_block_add_attention: 1, force_upcast: 1, use_quant_conv: 0, use_post_quant_conv: 0, joint_attention_dim: 0, pooled_projection_dim: 0, guidance_embeds: 1, axes_dims_rope: [], num_single_layers: 0, d_model: 0, num_layers: 0, d_kv: 0, d_ff: 0, act_fn: , is_gated_act: 1, relative_attention_num_buckets: 0, relative_attention_max_distance: 0, num_train_timesteps: 0, shift: 0, use_dynamic_shifting: 0, base_shift: 0, max_shift: 0, base_image_seq_len: 0, max_image_seq_len: 0]\nI20261027 09:28:46.190728   239 llm_engine.cpp:294] Initializing model with quant args: QuantArgs: [quant_method: , quantize_type: , bits: 0, moe_weight_bits: 8, group_size: 0, desc_act: 0, is_sym: 0, activation_dynamic: 1, fmt: e4m3, ignored_modules: 0, quant_version: , quant_desc_count: 0]\nI20261027 09:28:46.190735   239 llm_engine.cpp:295] Initializing model with tokenizer args: TokenizerArgs: [tokenizer_type: fast, add_bos_token: 0, add_eos_token: 0, bos_token: , eos_token: <|im_end|>, pad_token: <|endoftext|>, tokenizer_class: Qwen2Tokenizer, pattern: ]\nI20261027 09:28:46.190759   239 llm_engine.cpp:296] Initializing model with random seed: 507615277\nI20261027 09:28:46.208426   271 threadpool.cpp:32] ThreadPool created, thread count 32, pool name HFModelLoader.load_weights, cpu_binding false.\nI20261027 09:28:46.214184   271 tokenizer_factory.cpp:33] Create fast tokenizer.\n",
+    "supervisor.log": "",
+    "watchdog.log": ""
+  },
+  "ok": true,
+  "operator_acceptance": {
+    "bf16": {
+      "sha256": "477f03e653547a67dde49232599ce11cdcf64c449222789b0b5f3a90693d3656",
+      "value": {
+        "arm": "bf16",
+        "backend": {
+          "attention_impl": "flashinfer",
+          "class": "FlashInferBackend",
+          "decode_impl": "flashinfer",
+          "decode_internal_q_data_type": "torch.bfloat16",
+          "decode_tensor_cores": true,
+          "flashinfer_version": "0.6.18.post1",
+          "kv_cache_dtype": "auto",
+          "kv_data_type": "torch.bfloat16",
+          "paged_prefill": true,
+          "planner_backend": "fa3",
+          "profile_scope": "production_fa3",
+          "q_data_type": "torch.bfloat16",
+          "q_scale": null,
+          "quality_transform": false,
+          "scale_strategy": "none",
+          "xqa_enable_pdl": null,
+          "xqa_graph_padding": null,
+          "xqa_max_context": null,
+          "xqa_unused_kv_policy": null
+        },
+        "classification": "operator_correctness_only",
+        "decode_impl": "flashinfer",
+        "device": "NVIDIA H800",
+        "fresh_dirty_cache_initialized_to_zero": false,
+        "invalid_nan_padding_diagnostics": {},
+        "model_loaded": false,
+        "model_quality_validated": false,
+        "noncontiguous_q_checked": true,
+        "padded_graph_bucket_checked": false,
+        "partial_page_and_replan": true,
+        "prefill_planner": "fa3",
+        "real_capture_and_replay": true,
+        "reference": "FP32 dense causal attention on the same representable Q/K/V; relative L2 <=.05 plus rtol .08, atol .015",
+        "reference_comparisons": {
+          "capture_replay": {
+            "max_abs": 0.0004392862319946289,
+            "relative_l2": 0.0022833915427327156
+          },
+          "changed_context": {
+            "max_abs": 0.0006560683250427246,
+            "relative_l2": 0.002186181955039501
+          },
+          "prefill": {
+            "max_abs": 0.0005266666412353516,
+            "relative_l2": 0.0022824311163276434
+          }
+        },
+        "reserved_page0_not_used_for_live_sequences": true,
+        "schema": "kv-native-fa3-operator-acceptance-v1",
+        "service_performance_measured": false,
+        "unused_padding_reference": "NaN"
+      }
+    }
+  },
+  "owned_containers": [
+    {
+      "created": "2026-10-27T01:25:47.308596597Z",
+      "id": "3655813d4aebface7ddf316253ad04694dafa9619b49185275ba96a24027b33e",
+      "running": true
+    }
+  ],
+  "quality_progress": {
+    "bf16": {},
+    "fp8_e4m3": {}
+  },
+  "relaunch_allowed": false,
+  "run_id": "prod-trace-xqa-burstgpt-s1-r0-20261027f",
+  "status": "RUNNING",
+  "supervisor_alive": true
+}

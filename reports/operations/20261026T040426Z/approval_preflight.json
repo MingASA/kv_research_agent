@@ -1,0 +1,10 @@
+{
+  "approval_path": "/home/mingasa/.config/kv-research/approval.json",
+  "can_launch": false,
+  "runtime_executor_implemented": false,
+  "os_resource_sandbox": false,
+  "approval_file_valid": false,
+  "reason": "[Errno 2] No such file or directory: '/home/mingasa/.config/kv-research'",
+  "exit_code": 2,
+  "observed_utc": "2026-10-26T04:30:47.022910+00:00"
+}

@@ -1,0 +1,53 @@
+{
+  "files": {
+    "START_INTENT.json": {
+      "sha256": "ccd81b2261a9dc7f74f9d1b116c45a41159fc5894de44cb716e5002d6a612316",
+      "value": {
+        "request_sha256": "cb2a69600517a85f31e84dfea0edec95c0e5f0226d2e89da787f0b516ade1b1a"
+      }
+    },
+    "SUPERVISOR_PROCESS.json": {
+      "sha256": "aaa72e120ea5115a38a878223d9e1ceb23f198b329e20887ced89a3a2aa09a5a",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-521851.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-521851.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-521851.scope\n",
+          "pid": 1386970,
+          "start_ticks": 369357544,
+          "uid": 1005
+        }
+      }
+    },
+    "SUPERVISOR_STARTED.json": {
+      "sha256": "cda17a81e8c33634bf7765242f30c2e080b5ef66334b24f9be5aa5c5fdae4d39",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-521851.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-521851.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-521851.scope\n",
+          "pid": 1386970,
+          "start_ticks": 369357544,
+          "uid": 1005
+        },
+        "ticket_sha256": "5aaa93f71dc3123c2c2be4737e927108e39077083a7a67456c641b4aadd94322"
+      }
+    }
+  },
+  "gpu_snapshot": "0, GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 0, 0\n1, GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 0, 0\n2, GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 0, 0\n3, GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 0, 0\n4, GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 0, 0\n5, GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 26949, 38\n6, GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 25957, 39\n7, GPU-47211491-ba0d-78bf-5c84-f968c0648213, 36665, 100",
+  "live_owned_containers": [],
+  "log_tail": {
+    "events.jsonl": "{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3693575954778910,\"utc\":\"2026-10-27T08:25:34.215628+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3693575954778910,\"utc\":\"2026-10-27T08:26:04.540608+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3693575954778910,\"utc\":\"2026-10-27T08:26:34.959038+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3693575954778910,\"utc\":\"2026-10-27T08:27:05.290733+00:00\"}\n",
+    "supervisor.log": "",
+    "watchdog.log": ""
+  },
+  "ok": true,
+  "operator_acceptance": {},
+  "owned_containers": [],
+  "quality_progress": {
+    "bf16": {},
+    "fp8_e4m3": {}
+  },
+  "relaunch_allowed": false,
+  "run_id": "prod-tools-bf16xqa-bfcl258-c128-r0-20261027a",
+  "status": "RUNNING",
+  "supervisor_alive": true
+}

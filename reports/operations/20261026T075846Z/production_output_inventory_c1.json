@@ -1,0 +1,225 @@
+{
+  "ok": true,
+  "files": [
+    {
+      "relative": "output/bf16/docker_command.json",
+      "size": 2552
+    },
+    {
+      "relative": "output/bf16/container.log",
+      "size": 0
+    },
+    {
+      "relative": "output/bf16/container_identity.json",
+      "size": 1507
+    },
+    {
+      "relative": "output/bf16/lease.json",
+      "size": 138
+    },
+    {
+      "relative": "output/bf16/runtime_environment.json",
+      "size": 754
+    },
+    {
+      "relative": "output/bf16/production_environment.json",
+      "size": 808
+    },
+    {
+      "relative": "output/bf16/operator_acceptance.log",
+      "size": 548
+    },
+    {
+      "relative": "output/bf16/operator_acceptance.json",
+      "size": 867
+    },
+    {
+      "relative": "output/bf16/server_command.json",
+      "size": 737
+    },
+    {
+      "relative": "output/bf16/server.log",
+      "size": 254992
+    },
+    {
+      "relative": "output/bf16/native_backend.json",
+      "size": 474
+    },
+    {
+      "relative": "output/bf16/allocation.json",
+      "size": 12546
+    },
+    {
+      "relative": "output/bf16/aiperf_command.json",
+      "size": 687
+    },
+    {
+      "relative": "output/bf16/aiperf.log",
+      "size": 81579
+    },
+    {
+      "relative": "output/bf16/gpu_telemetry.csv",
+      "size": 10286
+    },
+    {
+      "relative": "output/bf16/request_audit.json",
+      "size": 1130
+    },
+    {
+      "relative": "output/bf16/measurement.json",
+      "size": 4345
+    },
+    {
+      "relative": "output/bf16/artifacts/profile_export.jsonl",
+      "size": 4862750
+    },
+    {
+      "relative": "output/bf16/artifacts/profile_export_raw.jsonl",
+      "size": 86512253
+    },
+    {
+      "relative": "output/bf16/artifacts/profile_export_aiperf.csv",
+      "size": 7210
+    },
+    {
+      "relative": "output/bf16/artifacts/profile_export_aiperf.json",
+      "size": 45870
+    },
+    {
+      "relative": "output/bf16/artifacts/phase_manifest.json",
+      "size": 1041
+    },
+    {
+      "relative": "output/bf16/artifacts/profile_export_console.txt",
+      "size": 16829
+    },
+    {
+      "relative": "output/bf16/artifacts/.aiperf_results_ready.json",
+      "size": 52
+    },
+    {
+      "relative": "output/bf16/artifacts/logs/aiperf.log",
+      "size": 77350
+    },
+    {
+      "relative": "output/bf16/artifacts/phases/warmup/profile_export_aiperf.json",
+      "size": 23106
+    },
+    {
+      "relative": "output/bf16/artifacts/phases/warmup/profile_export_aiperf.csv",
+      "size": 6981
+    },
+    {
+      "relative": "output/bf16/artifacts/phases/profiling/profile_export_aiperf.json",
+      "size": 23293
+    },
+    {
+      "relative": "output/bf16/artifacts/phases/profiling/profile_export_aiperf.csv",
+      "size": 7098
+    },
+    {
+      "relative": "output/fp8_e4m3/docker_command.json",
+      "size": 2572
+    },
+    {
+      "relative": "output/fp8_e4m3/container.log",
+      "size": 0
+    },
+    {
+      "relative": "output/fp8_e4m3/container_identity.json",
+      "size": 1510
+    },
+    {
+      "relative": "output/fp8_e4m3/lease.json",
+      "size": 138
+    },
+    {
+      "relative": "output/fp8_e4m3/runtime_environment.json",
+      "size": 847
+    },
+    {
+      "relative": "output/fp8_e4m3/production_environment.json",
+      "size": 969
+    },
+    {
+      "relative": "output/fp8_e4m3/operator_acceptance.log",
+      "size": 712
+    },
+    {
+      "relative": "output/fp8_e4m3/operator_acceptance.json",
+      "size": 1052
+    },
+    {
+      "relative": "output/fp8_e4m3/server_command.json",
+      "size": 741
+    },
+    {
+      "relative": "output/fp8_e4m3/server.log",
+      "size": 155605
+    },
+    {
+      "relative": "output/fp8_e4m3/native_backend.json",
+      "size": 631
+    },
+    {
+      "relative": "output/fp8_e4m3/allocation.json",
+      "size": 20034
+    },
+    {
+      "relative": "output/fp8_e4m3/aiperf_command.json",
+      "size": 687
+    },
+    {
+      "relative": "output/fp8_e4m3/aiperf.log",
+      "size": 37460
+    },
+    {
+      "relative": "output/fp8_e4m3/gpu_telemetry.csv",
+      "size": 5296
+    },
+    {
+      "relative": "output/fp8_e4m3/artifacts/gpu_telemetry_export.jsonl",
+      "size": 0
+    },
+    {
+      "relative": "output/fp8_e4m3/artifacts/profile_export.jsonl",
+      "size": 2349732
+    },
+    {
+      "relative": "output/fp8_e4m3/artifacts/logs/aiperf.log",
+      "size": 44926
+    },
+    {
+      "relative": "output/fp8_e4m3/artifacts/raw_records/raw_records_record_processor_6cf3ef65.jsonl",
+      "size": 37765233
+    },
+    {
+      "relative": "input/canonical_inputs.json",
+      "size": 5268923
+    },
+    {
+      "relative": "input/production_manifest.json",
+      "size": 424589
+    },
+    {
+      "relative": "input/source.bundle",
+      "size": 15892
+    },
+    {
+      "relative": "ticket.json",
+      "size": 8171
+    },
+    {
+      "relative": "events.jsonl",
+      "size": 2842
+    },
+    {
+      "relative": "state.json",
+      "size": 271
+    },
+    {
+      "relative": "owned_containers.json",
+      "size": 3108
+    }
+  ]
+}

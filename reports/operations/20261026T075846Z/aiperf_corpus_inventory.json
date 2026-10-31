@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "exists": true,
+  "members": [
+    {
+      "name": "shakespeare.txt",
+      "uid": 1005,
+      "size": 5020475,
+      "canonical": true
+    },
+    {
+      "name": "source_images",
+      "uid": 1005,
+      "size": 236,
+      "canonical": true
+    }
+  ]
+}

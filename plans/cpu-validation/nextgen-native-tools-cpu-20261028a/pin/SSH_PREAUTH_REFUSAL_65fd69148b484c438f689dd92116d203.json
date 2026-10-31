@@ -1,0 +1,1 @@
+{"attempt":1,"classification":"verified_OpenSSH89p1_identification_before_userauth_session_exec","error":"SSH exit 255: kex_exchange_identification: Connection closed by remote host\r\nConnection closed by 47.94.207.53 port 45291","mutation_requested":true,"next":"bounded_reconnect","session_or_remote_exec_requested":false,"utc":"2026-10-28T21:52:49.586904+00:00"}

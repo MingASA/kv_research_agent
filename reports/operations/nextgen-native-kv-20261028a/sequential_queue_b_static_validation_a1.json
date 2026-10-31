@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/mingasa/kv-research-agent/scripts/guarded_native_queue.py", line 372, in <module>
+    if __name__=='__main__':main()
+  File "/home/mingasa/kv-research-agent/scripts/guarded_native_queue.py", line 364, in main
+    validate_queue_manifest(json.loads(args.queue.read_text()))
+  File "/usr/lib/python3.10/pathlib.py", line 1134, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "/usr/lib/python3.10/pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+FileNotFoundError: [Errno 2] No such file or directory: 'plans/queues/nextgen-core-sequential-20261028b/manifest.json'

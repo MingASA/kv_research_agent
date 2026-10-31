@@ -1,0 +1,11 @@
+{
+  "identity": {
+    "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+    "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-519105.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-519105.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-519105.scope\n",
+    "pid": 3786871,
+    "start_ticks": 367739897,
+    "uid": 1005
+  },
+  "ok": true,
+  "status": "DISPATCHED"
+}

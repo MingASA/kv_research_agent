@@ -1,0 +1,6 @@
+{
+  "GPU_job": false,
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/agent_work/builds/nextgen-native-kv-59fc32ac-20261027d/build/bin/xllm'",
+  "source_commit": "862c29cade05e47691147b8f50c979a812495470",
+  "success": false
+}

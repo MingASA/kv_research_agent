@@ -1,0 +1,193 @@
+{
+  "schema": "native-tools-cpu-c-status-watch-v1",
+  "poll": 1,
+  "run_id": "nextgen-native-tools-cpu-20261028c",
+  "observed_utc": "2026-10-28T23:04:44.213127+00:00",
+  "operation": "status",
+  "remote_writes": false,
+  "GPU_requested": false,
+  "root_exists": true,
+  "container_id": "d3a89e3180debfd85712c1d0c9f60a36ab2aeb9e7dff7e5e3fab935359d52adf",
+  "container": {
+    "Status": "exited",
+    "Pid": 0,
+    "Running": false,
+    "ExitCode": 1,
+    "OOMKilled": false
+  },
+  "host_config": {
+    "Runtime": "runc",
+    "NetworkMode": "none",
+    "IpcMode": "private",
+    "DeviceRequests": null,
+    "Devices": [],
+    "Privileged": false,
+    "ReadonlyRootfs": true,
+    "NanoCpus": 2000000000,
+    "Memory": 8589934592
+  },
+  "files": {
+    "manifest.json": {
+      "sha256": "a01300bb82bf8c2d6c159b2d6963dbef0af311bb2f7eff24fa89f3154fd2f052",
+      "keys": [
+        "CPU",
+        "GPU_requested",
+        "approval_sha256_at_preparation",
+        "asset_sha256",
+        "id",
+        "image_id",
+        "local_only_at_preparation",
+        "max_seconds",
+        "memory_GiB",
+        "model_files_sha256",
+        "schema",
+        "state"
+      ]
+    },
+    "PREPARED.json": {
+      "sha256": "0bb760aca4d396dcaaa748bef9cfeafed4dd5c7b81c8e35c4b8d14078a715b1e",
+      "keys": [
+        "GPU_requested",
+        "container_id"
+      ]
+    },
+    "START_INTENT.json": {
+      "sha256": "9d28c73ef920aea0a7b0da7836f9652b8834732ed2055e2702d484f8bc29a9f6",
+      "keys": [
+        "GPU_requested",
+        "operation"
+      ]
+    },
+    "CPU_ADMISSION.json": {
+      "sha256": "5838141b7b7285c195289f7e1a7359db26dd5bbee3e9f5de94db3ec166095c97",
+      "keys": [
+        "GPU_requested",
+        "UID",
+        "max_seconds",
+        "python",
+        "python_version",
+        "state",
+        "utc"
+      ]
+    },
+    "CPU_ERROR.json": {
+      "sha256": "75e7914a949ef05d064e1ac54b322b10317dba0a9430d56b499beee17e324262",
+      "keys": [
+        "GPU_requested",
+        "error",
+        "model_or_quality_success"
+      ]
+    }
+  },
+  "logs_tail_24": [
+    "Traceback (most recent call last):",
+    "  File \"/cpu_work/driver.py\", line 93, in <module>",
+    "    try:main(root)",
+    "        ^^^^^^^^^^",
+    "  File \"/cpu_work/driver.py\", line 59, in main",
+    "    if result.returncode:raise ValueError('Actual image tool/tokenizer loop failed; retain CPU log')",
+    "                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+    "ValueError: Actual image tool/tokenizer loop failed; retain CPU log"
+  ],
+  "transport_error": null,
+  "CPU_ERROR": {
+    "GPU_requested": false,
+    "error": "ValueError: Actual image tool/tokenizer loop failed; retain CPU log",
+    "model_or_quality_success": false
+  },
+  "host_config_violations": [],
+  "CPU_CHILD_INITIAL_OBSERVATION": {
+    "path": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/scratch/nextgen-native-tools-cpu-20261028c/CPU_CHILD_INITIAL_OBSERVATION.json",
+    "size_bytes": 432,
+    "sha256": "c9c3d8a63b39e12115871f13bb5cd63740ff8a65f70c8a537f376d69ef180ad2",
+    "fields": {
+      "keys": [
+        "classification",
+        "exit_code",
+        "stderr",
+        "stdout"
+      ],
+      "stdout_summary": {
+        "bytes": 286,
+        "sha256": "fbffec353e43908b2c36460ab61f38cc2e1191dab968a012996f4b60d0daade0"
+      }
+    }
+  },
+  "generation_summary": {
+    "path": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/scratch/nextgen-native-tools-cpu-20261028c/loop/generation_summary.json",
+    "size_bytes": 38456,
+    "sha256": "fd6325151298bb6918a3713f5e5270d67a893dd371e8ed471f80dc15878adbb9",
+    "summary": {
+      "keys": [
+        "AIPerf_or_service_performance_measured",
+        "all_actual_API_contracts_verified",
+        "all_failed_tasks_retained_in_scoring_denominator",
+        "conversations_completed",
+        "model_API_requests",
+        "model_quality_scored",
+        "reference_answers_loaded_on_serving_path",
+        "results",
+        "schema",
+        "source_tasks_sha256",
+        "tasks_attempted",
+        "tool_calls",
+        "user_turns_completed",
+        "user_turns_expected"
+      ],
+      "tasks_attempted": 32,
+      "conversations_completed": 0,
+      "user_turns_completed": 0,
+      "tool_calls": 0,
+      "model_API_requests": 0,
+      "result_rows": 32,
+      "aggregate_counts": {
+        "state": {
+          "INCOMPLETE": 32
+        },
+        "failure_stage": {
+          "tool_environment_initialization": 32
+        },
+        "error": {
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_0\", \"observed\": {\"CPU_call_monotonic_ns\": 311075, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_0\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_1\", \"observed\": {\"CPU_call_monotonic_ns\": 245979, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_1\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_2\", \"observed\": {\"CPU_call_monotonic_ns\": 314541, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_2\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_3\", \"observed\": {\"CPU_call_monotonic_ns\": 232770, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_3\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_4\", \"observed\": {\"CPU_call_monotonic_ns\": 295222, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_4\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_5\", \"observed\": {\"CPU_call_monotonic_ns\": 287495, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_5\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_6\", \"observed\": {\"CPU_call_monotonic_ns\": 220389, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_6\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_7\", \"observed\": {\"CPU_call_monotonic_ns\": 296431, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_7\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_50\", \"observed\": {\"CPU_call_monotonic_ns\": 238600, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_50\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_51\", \"observed\": {\"CPU_call_monotonic_ns\": 306989, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_51\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_52\", \"observed\": {\"CPU_call_monotonic_ns\": 309174, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_52\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_53\", \"observed\": {\"CPU_call_monotonic_ns\": 308059, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_53\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_54\", \"observed\": {\"CPU_call_monotonic_ns\": 330572, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_54\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_55\", \"observed\": {\"CPU_call_monotonic_ns\": 275847, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_55\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_56\", \"observed\": {\"CPU_call_monotonic_ns\": 232715, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_56\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_57\", \"observed\": {\"CPU_call_monotonic_ns\": 251857, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_57\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_100\", \"observed\": {\"CPU_call_monotonic_ns\": 340573, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_100\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_101\", \"observed\": {\"CPU_call_monotonic_ns\": 432388, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_101\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_102\", \"observed\": {\"CPU_call_monotonic_ns\": 367738, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_102\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_103\", \"observed\": {\"CPU_call_monotonic_ns\": 422235, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_103\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_104\", \"observed\": {\"CPU_call_monotonic_ns\": 346099, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_104\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_105\", \"observed\": {\"CPU_call_monotonic_ns\": 346811, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_105\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_106\", \"observed\": {\"CPU_call_monotonic_ns\": 365694, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_106\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_107\", \"observed\": {\"CPU_call_monotonic_ns\": 341939, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_107\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_150\", \"observed\": {\"CPU_call_monotonic_ns\": 213618, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_150\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_151\", \"observed\": {\"CPU_call_monotonic_ns\": 271606, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_151\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_152\", \"observed\": {\"CPU_call_monotonic_ns\": 236751, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_152\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_153\", \"observed\": {\"CPU_call_monotonic_ns\": 218209, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_153\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_154\", \"observed\": {\"CPU_call_monotonic_ns\": 296301, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_154\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_155\", \"observed\": {\"CPU_call_monotonic_ns\": 201963, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_155\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_156\", \"observed\": {\"CPU_call_monotonic_ns\": 237942, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_156\"}}": 1,
+          "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_157\", \"observed\": {\"CPU_call_monotonic_ns\": 228694, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"multi_turn_base_157\"}}": 1
+        }
+      },
+      "first_three_distinct_errors": [
+        "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_0\", \"observed\": {\"CPU_call_monotonic_ns\": 311075, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"mul",
+        "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_1\", \"observed\": {\"CPU_call_monotonic_ns\": 245979, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"mul",
+        "ValueError: Bounded CPU tool child did not attest its declared source/task/limits: {\"expected_source_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"expected_task_id\": \"multi_turn_base_2\", \"observed\": {\"CPU_call_monotonic_ns\": 314541, \"CPU_only_imports\": false, \"CPU_seconds_limit\": 30, \"address_space_limit_bytes\": 536870912, \"sequence\": 1, \"source_manifest_sha256\": \"d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200\", \"status\": \"READY\", \"task_id\": \"mul"
+      ]
+    }
+  },
+  "watch_status": "FAILED"
+}

@@ -1,0 +1,1 @@
+{"classification": "CPU_input_proposal_no_activations", "requests": 128, "prompt_tokens_cpu": {"min": 32, "max": 2980, "total": 143037}, "gpu_used": false}

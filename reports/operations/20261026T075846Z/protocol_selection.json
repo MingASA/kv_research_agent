@@ -1,0 +1,4044 @@
+{
+  "files": [
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/__init__.py",
+      "size": 606
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/__main__.py",
+      "size": 203
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli.py",
+      "size": 2851
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_utils.py",
+      "size": 6304
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/__init__.py",
+      "size": 190
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/accumulator.py",
+      "size": 5306
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/accuracy_console_exporter.py",
+      "size": 5366
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/accuracy_data_exporter.py",
+      "size": 4009
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/accuracy_record_processor.py",
+      "size": 9158
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/benchmark_loader.py",
+      "size": 1600
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/jsonl_writer.py",
+      "size": 2763
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/models.py",
+      "size": 11196
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/protocols.py",
+      "size": 1154
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/benchmarks/__init__.py",
+      "size": 184
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/benchmarks/_datasets_compat.py",
+      "size": 1636
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/benchmarks/aime.py",
+      "size": 9303
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/benchmarks/aime24.py",
+      "size": 4115
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/benchmarks/aime25.py",
+      "size": 3068
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/benchmarks/bigbench.py",
+      "size": 9421
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/benchmarks/gpqa_diamond.py",
+      "size": 7910
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/benchmarks/gsm8k.py",
+      "size": 4658
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/benchmarks/hellaswag.py",
+      "size": 13783
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/benchmarks/lcb_codegeneration.py",
+      "size": 11600
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/benchmarks/math_500.py",
+      "size": 4574
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/benchmarks/mmlu.py",
+      "size": 11843
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/benchmarks/mmlu_pro.py",
+      "size": 5867
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/graders/__init__.py",
+      "size": 181
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/graders/_choice_extract.py",
+      "size": 2173
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/graders/_codegen_worker.py",
+      "size": 13532
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/graders/_codegen_worker_client.py",
+      "size": 16045
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/graders/_math_strip.py",
+      "size": 10506
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/graders/base.py",
+      "size": 2854
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/graders/code_execution.py",
+      "size": 13494
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/graders/exact_match.py",
+      "size": 2888
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/graders/gsm8k_grader.py",
+      "size": 7075
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/graders/lighteval_grader.py",
+      "size": 11432
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/graders/math.py",
+      "size": 23032
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/graders/mmlu_pro.py",
+      "size": 2145
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/accuracy/graders/multiple_choice.py",
+      "size": 4424
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/analysis/__init__.py",
+      "size": 211
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/analysis/speed_bench_report.py",
+      "size": 14884
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/analysis/sweepline.py",
+      "size": 21171
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/analysis/sweepline_kv_cache.py",
+      "size": 13935
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/analysis/sweepline_stats.py",
+      "size": 7453
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/analysis/swim_lane.py",
+      "size": 45100
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/analysis/turn_messages.py",
+      "size": 15108
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/api/__init__.py",
+      "size": 405
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/api/api_service.py",
+      "size": 18064
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/api/depends.py",
+      "size": 787
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/api/pod_state_rpc.py",
+      "size": 2333
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/api/results_files.py",
+      "size": 3188
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/api/models/__init__.py",
+      "size": 142
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/api/models/responses.py",
+      "size": 3577
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/api/models/results.py",
+      "size": 2512
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/api/routers/__init__.py",
+      "size": 168
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/api/routers/base_router.py",
+      "size": 1960
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/api/routers/core.py",
+      "size": 3847
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/api/routers/dataset.py",
+      "size": 8594
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/api/routers/debug.py",
+      "size": 5747
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/api/routers/metrics.py",
+      "size": 5513
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/api/routers/progress.py",
+      "size": 39334
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/api/routers/results.py",
+      "size": 9566
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/api/routers/server_metrics.py",
+      "size": 2202
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/api/routers/static.py",
+      "size": 5173
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/api/routers/tokenizer.py",
+      "size": 11700
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/api/routers/websocket.py",
+      "size": 10347
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/api/routers/workers.py",
+      "size": 1198
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/__init__.py",
+      "size": 312
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/_chat_stats.py",
+      "size": 7362
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/analyze.py",
+      "size": 875
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/analyze_trace.py",
+      "size": 900
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/chat.py",
+      "size": 15788
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/config.py",
+      "size": 4996
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/plot.py",
+      "size": 3688
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/plugins.py",
+      "size": 1952
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/profile.py",
+      "size": 2872
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/proxy.py",
+      "size": 4550
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/service.py",
+      "size": 4951
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/speed_bench_report.py",
+      "size": 2224
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/swim_lane.py",
+      "size": 3364
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/synthesize.py",
+      "size": 1475
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/turn_messages.py",
+      "size": 3146
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/validate.py",
+      "size": 964
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/kube/__init__.py",
+      "size": 254
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/kube/_app.py",
+      "size": 2805
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/kube/_debug_extract.py",
+      "size": 6753
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/kube/_debug_report.py",
+      "size": 9495
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/kube/_kube_common.py",
+      "size": 9253
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/kube/_kube_delete.py",
+      "size": 5573
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/kube/_mapping_flags.py",
+      "size": 5310
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/kube/attach.py",
+      "size": 3920
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/kube/cancel.py",
+      "size": 5305
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/kube/cleanup.py",
+      "size": 6268
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/kube/dashboard.py",
+      "size": 7818
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/kube/debug.py",
+      "size": 18393
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/kube/delete.py",
+      "size": 4216
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/kube/generate.py",
+      "size": 12194
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/kube/init.py",
+      "size": 5650
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/kube/list_.py",
+      "size": 10109
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/kube/logs.py",
+      "size": 12468
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/kube/preflight.py",
+      "size": 5445
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/kube/profile.py",
+      "size": 16509
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/kube/profile_deploy.py",
+      "size": 12721
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/kube/profile_deploy_direct.py",
+      "size": 9057
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/kube/results.py",
+      "size": 25958
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/kube/show.py",
+      "size": 2937
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/kube/shutdown.py",
+      "size": 4217
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/kube/sweep.py",
+      "size": 23128
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_commands/kube/validate.py",
+      "size": 3258
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_runner/__init__.py",
+      "size": 3776
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_runner/_aggregate.py",
+      "size": 13081
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_runner/_aggregation_dispatch.py",
+      "size": 2095
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_runner/_banner.py",
+      "size": 2516
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_runner/_callbacks.py",
+      "size": 3202
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_runner/_multi_run.py",
+      "size": 12114
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_runner/_pareto.py",
+      "size": 5493
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_runner/_post_process.py",
+      "size": 4320
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_runner/_preflight.py",
+      "size": 8371
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_runner/_process_setup.py",
+      "size": 5209
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_runner/_single_run.py",
+      "size": 4981
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_runner/_strategy.py",
+      "size": 4796
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_runner/_sweep_aggregate.py",
+      "size": 26262
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/cli_runner/_sweep_table.py",
+      "size": 8880
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/__init__.py",
+      "size": 175
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/accumulator_protocols.py",
+      "size": 9234
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/aiperf_logger.py",
+      "size": 9777
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/base_comms.py",
+      "size": 7754
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/base_component_service.py",
+      "size": 24598
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/base_service.py",
+      "size": 11289
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/bootstrap.py",
+      "size": 21899
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/compression.py",
+      "size": 5048
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/constants.py",
+      "size": 1541
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/control_hooks.py",
+      "size": 9333
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/control_plane_http.py",
+      "size": 2977
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/control_structs.py",
+      "size": 9310
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/endpoint_auth.py",
+      "size": 1707
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/endpoint_credentials.py",
+      "size": 18824
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/environment.py",
+      "size": 111447
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/event_loop.py",
+      "size": 2331
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/event_loop_monitor.py",
+      "size": 4017
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/exceptions.py",
+      "size": 11748
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/finite.py",
+      "size": 7722
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/growable_array.py",
+      "size": 11976
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/hash_id_random_generator.py",
+      "size": 2881
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/health_server.py",
+      "size": 4005
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/hooks.py",
+      "size": 18712
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/logging.py",
+      "size": 14497
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/loop_scheduler.py",
+      "size": 13743
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/metric_utils.py",
+      "size": 1527
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/monotonic_clock.py",
+      "size": 2125
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/noisy_loggers.py",
+      "size": 720
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/optional_dependencies.py",
+      "size": 1201
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/path_safety.py",
+      "size": 2235
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/phase.py",
+      "size": 929
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/pod_lifecycle_structs.py",
+      "size": 11920
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/protocols.py",
+      "size": 16848
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/random_generator.py",
+      "size": 20255
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/readiness_probe.py",
+      "size": 15040
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/redact.py",
+      "size": 20101
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/resource_tracker.py",
+      "size": 1858
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/results_markers.py",
+      "size": 13802
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/service_registry.py",
+      "size": 30946
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/session_id_generator.py",
+      "size": 2945
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/singleton.py",
+      "size": 3526
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/tokenizer.py",
+      "size": 35956
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/tokenizer_display.py",
+      "size": 15154
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/tokenizer_fake_names.py",
+      "size": 2316
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/tokenizer_validator.py",
+      "size": 24206
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/types.py",
+      "size": 2978
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/utils.py",
+      "size": 8810
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/worker_status_rank.py",
+      "size": 1799
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/enums/__init__.py",
+      "size": 4420
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/enums/base_enums.py",
+      "size": 5889
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/enums/baseline_enums.py",
+      "size": 1357
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/enums/dataset_enums.py",
+      "size": 724
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/enums/enums.py",
+      "size": 31930
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/enums/lifecycle_enums.py",
+      "size": 819
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/enums/metric_enums.py",
+      "size": 30296
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/messages/__init__.py",
+      "size": 3579
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/messages/accuracy_messages.py",
+      "size": 774
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/messages/base_messages.py",
+      "size": 2793
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/messages/baseline_messages.py",
+      "size": 1448
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/messages/dataset_messages.py",
+      "size": 7607
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/messages/inference_messages.py",
+      "size": 5291
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/messages/network_latency_messages.py",
+      "size": 1513
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/messages/progress_messages.py",
+      "size": 6262
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/messages/server_metrics_messages.py",
+      "size": 2820
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/messages/service_messages.py",
+      "size": 3262
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/messages/telemetry_messages.py",
+      "size": 3567
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/messages/worker_messages.py",
+      "size": 9032
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/mixins/__init__.py",
+      "size": 2693
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/mixins/aiperf_lifecycle_mixin.py",
+      "size": 19580
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/mixins/aiperf_logger_mixin.py",
+      "size": 4805
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/mixins/base_metrics_collector_mixin.py",
+      "size": 29710
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/mixins/base_mixin.py",
+      "size": 712
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/mixins/baseline_collector_mixin.py",
+      "size": 1206
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/mixins/buffered_jsonl_writer_mixin.py",
+      "size": 21914
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/mixins/command_handler_mixin.py",
+      "size": 1143
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/mixins/communication_mixin.py",
+      "size": 1277
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/mixins/health_check_mixin.py",
+      "size": 2474
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/mixins/health_server_mixin.py",
+      "size": 7145
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/mixins/hooks_mixin.py",
+      "size": 10634
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/mixins/message_bus_mixin.py",
+      "size": 7838
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/mixins/pod_state_tracker_mixin.py",
+      "size": 4947
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/mixins/process_health_mixin.py",
+      "size": 1904
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/mixins/progress_tracker_mixin.py",
+      "size": 9100
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/mixins/pull_client_mixin.py",
+      "size": 2355
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/mixins/realtime_metrics_mixin.py",
+      "size": 1220
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/mixins/realtime_telemetry_metrics_mixin.py",
+      "size": 1497
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/mixins/reply_client_mixin.py",
+      "size": 2121
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/mixins/task_manager_mixin.py",
+      "size": 5244
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/mixins/worker_tracker_mixin.py",
+      "size": 8062
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/models/__init__.py",
+      "size": 7119
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/models/auto_routed_model.py",
+      "size": 5592
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/models/base_models.py",
+      "size": 2186
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/models/branch.py",
+      "size": 5874
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/models/branch_stats.py",
+      "size": 3848
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/models/credit_models.py",
+      "size": 12764
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/models/dataset_models.py",
+      "size": 33510
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/models/error_models.py",
+      "size": 4626
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/models/export_models.py",
+      "size": 14587
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/models/extracted_payload.py",
+      "size": 3083
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/models/health_models.py",
+      "size": 5435
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/models/model_endpoint_info.py",
+      "size": 9167
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/models/network_latency_models.py",
+      "size": 5551
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/models/prerequisites.py",
+      "size": 2193
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/models/progress_models.py",
+      "size": 4369
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/models/record_models.py",
+      "size": 73868
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/models/sequence_distribution.py",
+      "size": 43104
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/models/server_metrics_models.py",
+      "size": 32271
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/models/service_models.py",
+      "size": 1680
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/models/spec_decode_models.py",
+      "size": 8512
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/models/telemetry_models.py",
+      "size": 28259
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/models/trace_models.py",
+      "size": 27389
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/models/usage_models.py",
+      "size": 18593
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/models/worker_models.py",
+      "size": 1267
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/scenario/__init__.py",
+      "size": 965
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/scenario/base.py",
+      "size": 9801
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/scenario/context_overflow.py",
+      "size": 3406
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/scenario/inferencex_agentx_mvp.py",
+      "size": 1729
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/scenario/registry.py",
+      "size": 662
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/scenario/validator.py",
+      "size": 32941
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/validators/__init__.py",
+      "size": 269
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/common/validators/orchestrator_v1.py",
+      "size": 19350
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/__init__.py",
+      "size": 9318
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/_cli_runner_templates.py",
+      "size": 5715
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/accuracy.py",
+      "size": 7221
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/adaptive_scale_phase.py",
+      "size": 16068
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/artifacts.py",
+      "size": 14555
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/base.py",
+      "size": 784
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/cancellation.py",
+      "size": 1113
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/cli_parameter.py",
+      "size": 2710
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/cli_runner.py",
+      "size": 6923
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/config.py",
+      "size": 44654
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/control_hooks.py",
+      "size": 5187
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/deployment.py",
+      "size": 23356
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/distributions.py",
+      "size": 18601
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/endpoint.py",
+      "size": 27380
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/gpu_telemetry.py",
+      "size": 5073
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/kube.py",
+      "size": 23092
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/logging.py",
+      "size": 1553
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/metrics.py",
+      "size": 762
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/mlflow.py",
+      "size": 3114
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/models.py",
+      "size": 5273
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/network_latency.py",
+      "size": 2900
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/otel.py",
+      "size": 1806
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/phases.py",
+      "size": 26477
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/plot.py",
+      "size": 8468
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/ramp.py",
+      "size": 1711
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/rate_series.py",
+      "size": 4310
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/runtime.py",
+      "size": 8137
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/server_metrics.py",
+      "size": 6642
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/slos.py",
+      "size": 1059
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/tokenizer.py",
+      "size": 4365
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/types.py",
+      "size": 5078
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/user_files.py",
+      "size": 12339
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/wandb.py",
+      "size": 3175
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/comm/__init__.py",
+      "size": 1257
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/comm/base.py",
+      "size": 5663
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/comm/build.py",
+      "size": 4503
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/comm/dual_bind.py",
+      "size": 15277
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/comm/inputs.py",
+      "size": 7661
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/comm/ipc.py",
+      "size": 16437
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/comm/tcp.py",
+      "size": 7042
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/dataset/__init__.py",
+      "size": 1132
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/dataset/config.py",
+      "size": 41572
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/dataset/content.py",
+      "size": 26225
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/dataset/defaults.py",
+      "size": 2816
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/dataset/resolver.py",
+      "size": 22312
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/dataset/system_prompt.py",
+      "size": 4779
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/dataset/trace.py",
+      "size": 3042
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/dataset/video.py",
+      "size": 7618
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/flags/__init__.py",
+      "size": 1519
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/flags/_config_flag_routing.py",
+      "size": 19468
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/flags/_converter_dataset.py",
+      "size": 64050
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/flags/_converter_endpoint.py",
+      "size": 5817
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/flags/_converter_optionals.py",
+      "size": 22113
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/flags/_converter_profiling.py",
+      "size": 33949
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/flags/_converter_runtime.py",
+      "size": 7416
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/flags/_converter_telemetry.py",
+      "size": 20617
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/flags/_converter_warmup.py",
+      "size": 9661
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/flags/_resolver_gpu_telemetry.py",
+      "size": 1979
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/flags/_resolver_helpers.py",
+      "size": 1376
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/flags/_resolver_server_metrics.py",
+      "size": 3295
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/flags/_section_fields.py",
+      "size": 8340
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/flags/cli_config.py",
+      "size": 172773
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/flags/converter.py",
+      "size": 31807
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/flags/recipes.py",
+      "size": 11483
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/flags/resolver.py",
+      "size": 70450
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/flags/variant_parser.py",
+      "size": 5538
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/loader/__init__.py",
+      "size": 4927
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/loader/core.py",
+      "size": 30183
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/loader/dotted_path.py",
+      "size": 4649
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/loader/duration.py",
+      "size": 1990
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/loader/env_vars.py",
+      "size": 4551
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/loader/errors.py",
+      "size": 1648
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/loader/helpers.py",
+      "size": 7537
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/loader/jinja.py",
+      "size": 13285
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/loader/normalizers.py",
+      "size": 7546
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/loader/parsing.py",
+      "size": 17889
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/loader/plan.py",
+      "size": 6767
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/resolution/__init__.py",
+      "size": 2098
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/resolution/plan.py",
+      "size": 19819
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/resolution/predicates.py",
+      "size": 8538
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/resolution/resolvers.py",
+      "size": 14885
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/sweep/__init__.py",
+      "size": 1635
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/sweep/adaptive.py",
+      "size": 6465
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/sweep/config.py",
+      "size": 29398
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/sweep/expand.py",
+      "size": 28738
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/sweep/expand_qmc.py",
+      "size": 5398
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/sweep/multi_run.py",
+      "size": 5327
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/sweep/sampling.py",
+      "size": 8774
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/templates/__init__.py",
+      "size": 809
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/templates/discovery.py",
+      "size": 7538
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/controller/__init__.py",
+      "size": 179
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/controller/base_service_manager.py",
+      "size": 14952
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/controller/controller_utils.py",
+      "size": 5350
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/controller/multiprocess_service_manager.py",
+      "size": 13842
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/controller/protocols.py",
+      "size": 3420
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/controller/proxy_manager.py",
+      "size": 4200
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/controller/result_join_coordinator.py",
+      "size": 5110
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/controller/system_controller.py",
+      "size": 119978
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/controller/system_controller_commands.py",
+      "size": 9064
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/controller/system_controller_dispatch.py",
+      "size": 9401
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/controller/system_controller_models.py",
+      "size": 3815
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/controller/system_mixins.py",
+      "size": 4272
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/credit/__init__.py",
+      "size": 174
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/credit/callback_handler.py",
+      "size": 33689
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/credit/issuer.py",
+      "size": 30364
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/credit/messages.py",
+      "size": 9480
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/credit/sticky_router.py",
+      "size": 62803
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/credit/structs.py",
+      "size": 10847
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/__init__.py",
+      "size": 176
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/_mp_context.py",
+      "size": 6001
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/_tokenizer_preload.py",
+      "size": 4607
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/dataset_manager.py",
+      "size": 56584
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/dataset_samplers.py",
+      "size": 3149
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/memory_map_utils.py",
+      "size": 35603
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/mmap_cache.py",
+      "size": 42981
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/mmap_cache_lock.py",
+      "size": 9935
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/payload_formatting.py",
+      "size": 2653
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/protocols.py",
+      "size": 9866
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/provenance.py",
+      "size": 1544
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/utils.py",
+      "size": 5318
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/agentic_code_gen/__init__.py",
+      "size": 305
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/agentic_code_gen/cli.py",
+      "size": 5751
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/agentic_code_gen/config.py",
+      "size": 4910
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/agentic_code_gen/distributions.py",
+      "size": 3573
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/agentic_code_gen/models.py",
+      "size": 19872
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/agentic_code_gen/prefix_model.py",
+      "size": 7722
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/agentic_code_gen/session_synthesizer.py",
+      "size": 19448
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/agentic_code_gen/writer.py",
+      "size": 3974
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/agentic_code_gen/reporting/__init__.py",
+      "size": 216
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/agentic_code_gen/reporting/cache_explorer.py",
+      "size": 4730
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/agentic_code_gen/reporting/comparison.py",
+      "size": 4968
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/agentic_code_gen/reporting/metrics.py",
+      "size": 18337
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/agentic_code_gen/reporting/plot_report.py",
+      "size": 6192
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/agentic_code_gen/reporting/report.py",
+      "size": 8180
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/agentic_code_gen/reporting/simulation.py",
+      "size": 1557
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/agentic_code_gen/reporting/simulation_engine.py",
+      "size": 19743
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/agentic_code_gen/reporting/trace.py",
+      "size": 5366
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/agentic_code_gen/reporting/templates/__init__.py",
+      "size": 1050
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/composer/__init__.py",
+      "size": 614
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/composer/base.py",
+      "size": 30491
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/composer/custom.py",
+      "size": 15369
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/composer/public.py",
+      "size": 7454
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/composer/synthetic.py",
+      "size": 13170
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/composer/synthetic_rankings.py",
+      "size": 4684
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/generator/__init__.py",
+      "size": 602
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/generator/audio.py",
+      "size": 7685
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/generator/base.py",
+      "size": 1790
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/generator/coding_content.py",
+      "size": 167432
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/generator/corpus.py",
+      "size": 1967
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/generator/image.py",
+      "size": 8062
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/generator/parallel_decode.py",
+      "size": 5427
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/generator/prompt.py",
+      "size": 37242
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/generator/video.py",
+      "size": 20258
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/__init__.py",
+      "size": 1436
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/_baseten_replay_timemodel.py",
+      "size": 2499
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/_dag_jsonl_helpers.py",
+      "size": 14989
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/_delay_cap.py",
+      "size": 5478
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/_tracelab_convert.py",
+      "size": 27152
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/accuracy_dataset_loader.py",
+      "size": 6593
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/bailian_trace.py",
+      "size": 5752
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/base_hf_dataset.py",
+      "size": 8854
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/base_loader.py",
+      "size": 8141
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/base_public_dataset.py",
+      "size": 7727
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/base_trace_loader.py",
+      "size": 21985
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/baseten_trace.py",
+      "size": 36000
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/burst_gpt.py",
+      "size": 6521
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/dag_jsonl.py",
+      "size": 27348
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/dag_jsonl_models.py",
+      "size": 21152
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/exgentic.py",
+      "size": 18981
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/exgentic_filters.py",
+      "size": 4022
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/exgentic_v2.py",
+      "size": 568
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/hash_ids_synthesis.py",
+      "size": 4186
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/hf_asr.py",
+      "size": 5440
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/hf_conversation.py",
+      "size": 11203
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/hf_instruction_response.py",
+      "size": 4591
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/inputs_json.py",
+      "size": 4956
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/mixins.py",
+      "size": 8140
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/mmvu.py",
+      "size": 3276
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/models.py",
+      "size": 21716
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/mooncake_trace.py",
+      "size": 6384
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/mt_bench.py",
+      "size": 3261
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/multi_turn.py",
+      "size": 13480
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/parallel_convert.py",
+      "size": 16189
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/random_pool.py",
+      "size": 24538
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/raw_payload.py",
+      "size": 7552
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/sagemaker_data_capture.py",
+      "size": 12853
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/selection.py",
+      "size": 3896
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/semianalysis_cc_traces_weka.py",
+      "size": 9542
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/sharegpt.py",
+      "size": 9380
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/single_turn.py",
+      "size": 6366
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/spec_bench.py",
+      "size": 3470
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/speed_bench.py",
+      "size": 9084
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/tracelab_trace.py",
+      "size": 15775
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/weka_agent_chains.py",
+      "size": 28722
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/weka_metric_prepass.py",
+      "size": 1849
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/weka_parallel_convert.py",
+      "size": 31931
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/weka_prompt_compose.py",
+      "size": 2048
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/weka_synth_buf.py",
+      "size": 33855
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/weka_tool_shape.py",
+      "size": 3590
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/weka_trace.py",
+      "size": 130768
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/loader/weka_trace_models.py",
+      "size": 6648
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/synthesis/__init__.py",
+      "size": 941
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/synthesis/cli.py",
+      "size": 2663
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/synthesis/empirical_sampler.py",
+      "size": 2955
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/synthesis/graph_utils.py",
+      "size": 4861
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/synthesis/models.py",
+      "size": 5163
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/synthesis/prefix_analyzer.py",
+      "size": 9746
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/synthesis/radix_tree.py",
+      "size": 5045
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/synthesis/rolling_hasher.py",
+      "size": 8023
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/synthesis/synthesizer.py",
+      "size": 11827
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/endpoints/__init__.py",
+      "size": 178
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/endpoints/_openai_responses_replay.py",
+      "size": 4676
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/endpoints/anthropic_messages.py",
+      "size": 33756
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/endpoints/base_endpoint.py",
+      "size": 26290
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/endpoints/base_rankings_endpoint.py",
+      "size": 4188
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/endpoints/chat_embeddings.py",
+      "size": 1183
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/endpoints/cohere_rankings.py",
+      "size": 1025
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/endpoints/hf_tei_rankings.py",
+      "size": 898
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/endpoints/huggingface_generate.py",
+      "size": 3795
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/endpoints/nim_embeddings.py",
+      "size": 2010
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/endpoints/nim_image_retrieval.py",
+      "size": 3156
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/endpoints/nim_rankings.py",
+      "size": 998
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/endpoints/openai_audio_transcription.py",
+      "size": 4529
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/endpoints/openai_chat.py",
+      "size": 19892
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/endpoints/openai_completions.py",
+      "size": 5450
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/endpoints/openai_embeddings.py",
+      "size": 3983
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/endpoints/openai_image_edit.py",
+      "size": 7163
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/endpoints/openai_image_generation.py",
+      "size": 4481
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/endpoints/openai_responses.py",
+      "size": 29667
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/endpoints/openai_video_generation.py",
+      "size": 4525
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/endpoints/payload_extraction.py",
+      "size": 12462
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/endpoints/protocols.py",
+      "size": 1241
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/endpoints/raw_endpoint.py",
+      "size": 2292
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/endpoints/response_mixin.py",
+      "size": 4765
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/endpoints/solido_rag.py",
+      "size": 3548
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/endpoints/template_endpoint.py",
+      "size": 7370
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/__init__.py",
+      "size": 178
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/console_api_error_exporter.py",
+      "size": 4174
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/console_error_exporter.py",
+      "size": 1826
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/console_gpu_vendor_disclaimer_exporter.py",
+      "size": 2184
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/console_metrics_exporter.py",
+      "size": 10488
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/console_osl_mismatch_exporter.py",
+      "size": 4906
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/console_power_efficiency_exporter.py",
+      "size": 1761
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/console_spec_decode_exporter.py",
+      "size": 3409
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/console_usage_discrepancy_exporter.py",
+      "size": 3811
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/experimental_metrics_console_exporter.py",
+      "size": 1051
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/exporter_config.py",
+      "size": 988
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/exporter_manager.py",
+      "size": 26621
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/gpu_telemetry_console_exporter.py",
+      "size": 8762
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/http_trace_console_exporter.py",
+      "size": 1020
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/internal_metrics_console_exporter.py",
+      "size": 1037
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/metrics_base_exporter.py",
+      "size": 3943
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/metrics_csv_exporter.py",
+      "size": 11480
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/metrics_json_exporter.py",
+      "size": 10542
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/mlflow_data_exporter.py",
+      "size": 20677
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/mlflow_export_subprocess.py",
+      "size": 4679
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/mlflow_metadata.py",
+      "size": 2763
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/outputs_json_exporter.py",
+      "size": 5121
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/protocols.py",
+      "size": 1236
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/search_history.py",
+      "size": 19778
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/timeslice_metrics_csv_exporter.py",
+      "size": 4281
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/timeslice_metrics_json_exporter.py",
+      "size": 3431
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/utils.py",
+      "size": 679
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/wandb_data_exporter.py",
+      "size": 7658
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/wandb_export_subprocess.py",
+      "size": 4378
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/aggregate/__init__.py",
+      "size": 1128
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/aggregate/aggregate_base_exporter.py",
+      "size": 8463
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/aggregate/aggregate_confidence_csv_exporter.py",
+      "size": 4512
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/aggregate/aggregate_confidence_json_exporter.py",
+      "size": 6488
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/aggregate/aggregate_detailed_json_exporter.py",
+      "size": 1730
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/aggregate/aggregate_sweep_csv_exporter.py",
+      "size": 7648
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/aggregate/aggregate_sweep_json_exporter.py",
+      "size": 3569
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/sglang/__init__.py",
+      "size": 142
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/exporters/sglang/speculative_decoding_console_exporter.py",
+      "size": 10650
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/gpu_telemetry/__init__.py",
+      "size": 182
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/gpu_telemetry/accumulator.py",
+      "size": 25063
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/gpu_telemetry/amdsmi_collector.py",
+      "size": 21404
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/gpu_telemetry/constants.py",
+      "size": 6229
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/gpu_telemetry/dcgm_collector.py",
+      "size": 8840
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/gpu_telemetry/jsonl_writer.py",
+      "size": 3010
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/gpu_telemetry/manager.py",
+      "size": 25597
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/gpu_telemetry/metrics_config.py",
+      "size": 8817
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/gpu_telemetry/protocols.py",
+      "size": 2996
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/gpu_telemetry/pynvml_collector.py",
+      "size": 18714
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/__init__.py",
+      "size": 417
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/attach.py",
+      "size": 10509
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/benchmark_diagnosis.py",
+      "size": 11314
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/cli_helpers.py",
+      "size": 16416
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/client.py",
+      "size": 15529
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/client_jobs.py",
+      "size": 14032
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/client_jobsets.py",
+      "size": 8476
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/client_pods.py",
+      "size": 14895
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/client_selectors.py",
+      "size": 1252
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/completion_signal.py",
+      "size": 4888
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/console.py",
+      "size": 17289
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/constants.py",
+      "size": 8853
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/cr_refs.py",
+      "size": 1730
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/crd_models.py",
+      "size": 28851
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/credential_retry.py",
+      "size": 3747
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/enums.py",
+      "size": 3488
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/environment.py",
+      "size": 34138
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/init_template.py",
+      "size": 6805
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/jobset.py",
+      "size": 40915
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/jobset_helpers.py",
+      "size": 14838
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/jobset_specs.py",
+      "size": 10709
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/k8s_models.py",
+      "size": 1008
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/lease.py",
+      "size": 1646
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/logs.py",
+      "size": 4110
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/memory_estimator.py",
+      "size": 3689
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/models.py",
+      "size": 30950
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/phase.py",
+      "size": 2905
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/port_forward.py",
+      "size": 19015
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/preflight.py",
+      "size": 16663
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/preflight_capacity_checks.py",
+      "size": 24066
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/preflight_checks.py",
+      "size": 23460
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/preflight_utils.py",
+      "size": 3752
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/progress_stream.py",
+      "size": 6636
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/resource_quota.py",
+      "size": 3322
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/resources.py",
+      "size": 17505
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/results.py",
+      "size": 28055
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/results_artifacts.py",
+      "size": 13297
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/results_operator.py",
+      "size": 26167
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/results_sidecar.py",
+      "size": 4177
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/serialized_run.py",
+      "size": 1627
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/server_metrics_projection.py",
+      "size": 10766
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/spec_converter.py",
+      "size": 32872
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/subproc.py",
+      "size": 5481
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/sweep_routing.py",
+      "size": 1576
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/ui_dispatch.py",
+      "size": 5739
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/user_files.py",
+      "size": 3225
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/utils.py",
+      "size": 3869
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/validate.py",
+      "size": 25427
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/watch.py",
+      "size": 8337
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/watchdog.py",
+      "size": 20951
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/watchdog_events.py",
+      "size": 8154
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/watchdog_models.py",
+      "size": 11091
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/watchdog_pod_checks.py",
+      "size": 7058
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/watchdog_render.py",
+      "size": 6960
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/watchdog_source.py",
+      "size": 9465
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/_memory_estimator/__init__.py",
+      "size": 413
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/_memory_estimator/components.py",
+      "size": 18319
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/_memory_estimator/constants.py",
+      "size": 11040
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/_memory_estimator/estimates.py",
+      "size": 5310
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/_memory_estimator/estimator.py",
+      "size": 15273
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/_memory_estimator/formatting.py",
+      "size": 3045
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/_memory_estimator/params.py",
+      "size": 13694
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/_memory_estimator/utils.py",
+      "size": 526
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/controller/__init__.py",
+      "size": 137
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/controller/_pod_monitoring_mixin.py",
+      "size": 15042
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/controller/kubernetes_pod_helpers.py",
+      "size": 10896
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/kubernetes/controller/kubernetes_service_manager.py",
+      "size": 10213
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/__init__.py",
+      "size": 1094
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/_column_store_handlers.py",
+      "size": 2662
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/accumulator.py",
+      "size": 37023
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/accumulator_models.py",
+      "size": 3109
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/accumulator_sweeps.py",
+      "size": 9567
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/base_aggregate_counter_metric.py",
+      "size": 1206
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/base_aggregate_metric.py",
+      "size": 2585
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/base_derived_metric.py",
+      "size": 2451
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/base_metric.py",
+      "size": 8482
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/base_record_metric.py",
+      "size": 2331
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/base_usage_record_metric.py",
+      "size": 3070
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/cache_reporting_hint.py",
+      "size": 2881
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/column_store.py",
+      "size": 21182
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/derived_latency.py",
+      "size": 9694
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/derived_sum_metric.py",
+      "size": 2523
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/display_units.py",
+      "size": 3356
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/energy_efficiency_analyzer.py",
+      "size": 15887
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/list_metric_aggregation.py",
+      "size": 6587
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/metric_dicts.py",
+      "size": 9189
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/metric_registry.py",
+      "size": 13664
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/network_adjusted_analyzer.py",
+      "size": 5418
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/prometheus_formatter.py",
+      "size": 10001
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/ragged_series.py",
+      "size": 5286
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/replay_sched_lag_analyzer.py",
+      "size": 3962
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/theoretical_prefix_cache.py",
+      "size": 5840
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/__init__.py",
+      "size": 173
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/audio_duration_metric.py",
+      "size": 2502
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/benchmark_duration_metric.py",
+      "size": 1683
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/completed_request_count_metric.py",
+      "size": 1729
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/context_overflow_count_metric.py",
+      "size": 1910
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/credit_drop_latency_metric.py",
+      "size": 1871
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/decode_duration_metric.py",
+      "size": 1504
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/e2e_output_throughput_metric.py",
+      "size": 1970
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/error_request_count.py",
+      "size": 848
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/good_request_count_metric.py",
+      "size": 3615
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/good_request_fraction_metric.py",
+      "size": 2567
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/goodput_metric.py",
+      "size": 1470
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/http_trace_metrics.py",
+      "size": 22384
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/image_metrics.py",
+      "size": 3451
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/input_sequence_length_metric.py",
+      "size": 3233
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/input_token_throughput_metric.py",
+      "size": 2142
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/inter_chunk_latency_metric.py",
+      "size": 2974
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/inter_token_latency_metric.py",
+      "size": 4757
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/max_response_metric.py",
+      "size": 1863
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/min_request_metric.py",
+      "size": 1422
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/network_adjusted_metrics.py",
+      "size": 4439
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/osl_mismatch_metrics.py",
+      "size": 7534
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/output_sequence_length_metric.py",
+      "size": 2478
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/output_token_count.py",
+      "size": 2192
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/output_token_throughput_metrics.py",
+      "size": 2965
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/power_efficiency_metrics.py",
+      "size": 12929
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/prefill_throughput_per_user.py",
+      "size": 2075
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/reasoning_token_count.py",
+      "size": 2332
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/replay_sched_lag_metrics.py",
+      "size": 8060
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/request_count_metric.py",
+      "size": 853
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/request_error_rate_metric.py",
+      "size": 2195
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/request_latency_metric.py",
+      "size": 1818
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/request_throughput_metric.py",
+      "size": 1387
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/rtfx_metric.py",
+      "size": 2476
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/spec_decode_metrics.py",
+      "size": 12158
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/stream_latency_metrics.py",
+      "size": 3903
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/thinking_efficiency_metrics.py",
+      "size": 3894
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/time_to_first_output_token_metric.py",
+      "size": 3891
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/total_token_throughput.py",
+      "size": 1819
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/ttft_metric.py",
+      "size": 2045
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/ttst_metric.py",
+      "size": 1997
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/usage_cache_metrics.py",
+      "size": 5385
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/usage_diff_metrics.py",
+      "size": 11222
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/usage_extras_metrics.py",
+      "size": 3576
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/usage_metrics.py",
+      "size": 8931
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/usage_total_metrics.py",
+      "size": 11312
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/metrics/types/video_generation_metrics.py",
+      "size": 2605
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/network_latency/__init__.py",
+      "size": 396
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/network_latency/accumulator.py",
+      "size": 4779
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/network_latency/jsonl_writer.py",
+      "size": 2290
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/network_latency/manager.py",
+      "size": 11696
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/network_latency/probe.py",
+      "size": 7984
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/__init__.py",
+      "size": 817
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/artifact_names.py",
+      "size": 1518
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/client_cache.py",
+      "size": 29422
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/dashboard_mount.py",
+      "size": 5094
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/dashboard_server.py",
+      "size": 5234
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/environment.py",
+      "size": 26472
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/events.py",
+      "size": 8480
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/health.py",
+      "size": 3600
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/job_spec_file.py",
+      "size": 1480
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/job_union.py",
+      "size": 28000
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/k8s_helpers.py",
+      "size": 7932
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/main.py",
+      "size": 54233
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/metrics.py",
+      "size": 5072
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/namespace_claim.py",
+      "size": 19314
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/progress_client.py",
+      "size": 35922
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/progress_download.py",
+      "size": 4800
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/progress_models.py",
+      "size": 8837
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/results_db.py",
+      "size": 23562
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/results_layout.py",
+      "size": 34082
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/results_server.py",
+      "size": 13120
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/runs_index.py",
+      "size": 82877
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/runs_index_models.py",
+      "size": 1653
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/status.py",
+      "size": 15832
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/sweep_union.py",
+      "size": 15315
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/handlers/__init__.py",
+      "size": 142
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/handlers/_completion_fetch.py",
+      "size": 22114
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/handlers/_completion_retry.py",
+      "size": 5845
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/handlers/_job_identity.py",
+      "size": 10636
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/handlers/cleanup.py",
+      "size": 13905
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/handlers/completion.py",
+      "size": 78222
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/handlers/create.py",
+      "size": 21952
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/handlers/jobset_terminal.py",
+      "size": 15888
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/handlers/lifecycle.py",
+      "size": 15301
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/handlers/monitor.py",
+      "size": 116461
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/handlers/pod_restarts.py",
+      "size": 11161
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/handlers/sweep/__init__.py",
+      "size": 432
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/handlers/sweep/_aggregate_fetch.py",
+      "size": 7243
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/handlers/sweep/_child_phase_buckets.py",
+      "size": 8004
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/handlers/sweep/_child_runs.py",
+      "size": 17208
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/handlers/sweep/child_rollup.py",
+      "size": 25504
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/handlers/sweep/create.py",
+      "size": 36310
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/handlers/sweep/lifecycle.py",
+      "size": 12012
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/preflight/__init__.py",
+      "size": 1241
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/preflight/_checker.py",
+      "size": 8147
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/preflight/_common.py",
+      "size": 3333
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/preflight/_infra.py",
+      "size": 15903
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/preflight/_resources.py",
+      "size": 18635
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/preflight/_tier1.py",
+      "size": 5141
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/preflight/_workload.py",
+      "size": 10062
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/routers/__init__.py",
+      "size": 142
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/routers/_etag.py",
+      "size": 1233
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/routers/_path_params.py",
+      "size": 3378
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/routers/_sweeps_artifacts.py",
+      "size": 5579
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/routers/_sweeps_diagnostics.py",
+      "size": 9540
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/routers/_sweeps_spec.py",
+      "size": 12544
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/routers/admin.py",
+      "size": 8102
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/routers/config.py",
+      "size": 2663
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/routers/dashboard_proxy.py",
+      "size": 8309
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/routers/jobs.py",
+      "size": 41717
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/routers/jobs_logs.py",
+      "size": 7777
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/routers/jobs_models.py",
+      "size": 9070
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/routers/jobs_ws.py",
+      "size": 8798
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/routers/mutating_auth.py",
+      "size": 2377
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/routers/results_analytics.py",
+      "size": 18527
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/routers/results_files.py",
+      "size": 12375
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/routers/results_files_io.py",
+      "size": 27303
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/routers/results_schemas.py",
+      "size": 7977
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/routers/sweeps.py",
+      "size": 36721
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/routers/sweeps_models.py",
+      "size": 21737
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/operator/routers/validate.py",
+      "size": 2440
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/__init__.py",
+      "size": 1010
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/executor.py",
+      "size": 1757
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/export_helpers.py",
+      "size": 3650
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/jsonl_loader.py",
+      "size": 4872
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/local_executor.py",
+      "size": 10799
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/models.py",
+      "size": 4197
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/orchestrator.py",
+      "size": 30254
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/strategies.py",
+      "size": 14254
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/subprocess_runner.py",
+      "size": 7576
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/aggregation/__init__.py",
+      "size": 992
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/aggregation/base.py",
+      "size": 1758
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/aggregation/confidence.py",
+      "size": 13025
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/aggregation/detailed.py",
+      "size": 3715
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/aggregation/sweep.py",
+      "size": 17782
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/aggregation/sweep_sla_filter.py",
+      "size": 6074
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/convergence/__init__.py",
+      "size": 613
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/convergence/base.py",
+      "size": 2267
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/convergence/ci_width.py",
+      "size": 3637
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/convergence/cv.py",
+      "size": 3160
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/convergence/distribution.py",
+      "size": 3282
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/search_planner/__init__.py",
+      "size": 2394
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/search_planner/_botorch_kernel.py",
+      "size": 3081
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/search_planner/_cliff_detect.py",
+      "size": 2820
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/search_planner/_margin_normalize.py",
+      "size": 2731
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/search_planner/_monotonic_boundary.py",
+      "size": 3324
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/search_planner/_optuna_helpers.py",
+      "size": 21336
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/search_planner/_pooled_percentile.py",
+      "size": 4710
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/search_planner/_replicate_budget.py",
+      "size": 2934
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/search_planner/_shared_warmup.py",
+      "size": 3999
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/search_planner/_sla_helpers.py",
+      "size": 14180
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/search_planner/_smooth_isotonic_boundary.py",
+      "size": 3547
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/search_planner/_smooth_isotonic_fit.py",
+      "size": 4483
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/search_planner/_smooth_isotonic_phases.py",
+      "size": 13565
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/search_planner/base.py",
+      "size": 7622
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/search_planner/bayesian.py",
+      "size": 2762
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/search_planner/factory.py",
+      "size": 2025
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/search_planner/monotonic.py",
+      "size": 20328
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/search_planner/multi_tier_allocator.py",
+      "size": 1712
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/search_planner/multi_tier_grid.py",
+      "size": 6479
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/search_planner/multi_tier_models.py",
+      "size": 3994
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/search_planner/multi_tier_ordering.py",
+      "size": 7563
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/search_planner/multi_tier_planner.py",
+      "size": 28799
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/search_planner/multi_tier_store.py",
+      "size": 1059
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/search_planner/optuna_planner.py",
+      "size": 33927
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/search_planner/parsing.py",
+      "size": 8835
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/search_planner/recovery.py",
+      "size": 2764
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/orchestrator/search_planner/smooth_isotonic.py",
+      "size": 20119
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/__init__.py",
+      "size": 1172
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/auto_plot.py",
+      "size": 5164
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/cli_runner.py",
+      "size": 7327
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/config.py",
+      "size": 23406
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/constants.py",
+      "size": 6029
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/exceptions.py",
+      "size": 3273
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/logging.py",
+      "size": 3639
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/metric_names.py",
+      "size": 12477
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/plot_controller.py",
+      "size": 9041
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/utils.py",
+      "size": 17660
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/core/__init__.py",
+      "size": 987
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/core/data_loader.py",
+      "size": 74631
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/core/data_preparation.py",
+      "size": 14726
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/core/mode_detector.py",
+      "size": 13186
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/core/plot_generator.py",
+      "size": 87148
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/core/plot_specs.py",
+      "size": 7300
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/core/plot_type_handlers.py",
+      "size": 2109
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/core/swept_params.py",
+      "size": 4155
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/dashboard/__init__.py",
+      "size": 603
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/dashboard/builder.py",
+      "size": 121322
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/dashboard/cache.py",
+      "size": 6658
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/dashboard/callback_helpers.py",
+      "size": 12397
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/dashboard/callbacks.py",
+      "size": 211194
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/dashboard/components.py",
+      "size": 21226
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/dashboard/server.py",
+      "size": 5445
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/dashboard/styling.py",
+      "size": 25216
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/dashboard/utils.py",
+      "size": 19865
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/exporters/__init__.py",
+      "size": 404
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/exporters/base.py",
+      "size": 3089
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/exporters/matplotlib_export.py",
+      "size": 1682
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/exporters/png/__init__.py",
+      "size": 470
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/exporters/png/base.py",
+      "size": 2570
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/exporters/png/multi_run.py",
+      "size": 11370
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/exporters/png/single_run.py",
+      "size": 4949
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/geometry/__init__.py",
+      "size": 417
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/geometry/ellipse.py",
+      "size": 3177
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/handlers/__init__.py",
+      "size": 924
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/handlers/multi_run_handlers.py",
+      "size": 13628
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/handlers/single_run_handlers.py",
+      "size": 57866
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/models/__init__.py",
+      "size": 423
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/models/uncertainty.py",
+      "size": 4596
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/renderers/__init__.py",
+      "size": 323
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/renderers/matplotlib_uncertainty.py",
+      "size": 8150
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plugin/__init__.py",
+      "size": 175
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plugin/cli.py",
+      "size": 5134
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plugin/constants.py",
+      "size": 380
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plugin/enums.py",
+      "size": 13934
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plugin/extensible_enums.py",
+      "size": 10474
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plugin/plugins.py",
+      "size": 58475
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plugin/types.py",
+      "size": 10132
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plugin/schema/__init__.py",
+      "size": 600
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plugin/schema/_orchestrator_schemas.py",
+      "size": 3495
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plugin/schema/schemas.py",
+      "size": 25659
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/post_processors/__init__.py",
+      "size": 184
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/post_processors/base_metrics_processor.py",
+      "size": 5867
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/post_processors/metric_record_processor.py",
+      "size": 3776
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/post_processors/otel_metrics_results_processor.py",
+      "size": 23234
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/post_processors/otel_streaming_fanout.py",
+      "size": 21295
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/post_processors/outputs_json_record_processor.py",
+      "size": 5896
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/post_processors/protocols.py",
+      "size": 1211
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/post_processors/raw_record_writer_processor.py",
+      "size": 10678
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/post_processors/record_export_jsonl_writer.py",
+      "size": 4475
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/post_processors/record_observer_context.py",
+      "size": 2032
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/post_processors/strategies/__init__.py",
+      "size": 843
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/post_processors/strategies/core.py",
+      "size": 3888
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/post_processors/strategies/genai_semconv.py",
+      "size": 14062
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/post_processors/strategies/metric_results.py",
+      "size": 2624
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/post_processors/strategies/timing_results.py",
+      "size": 3797
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/records/__init__.py",
+      "size": 176
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/records/dataset_gate.py",
+      "size": 6218
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/records/error_tracker.py",
+      "size": 2960
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/records/inference_result_parser.py",
+      "size": 29397
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/records/payload_retention.py",
+      "size": 6348
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/records/record_processor_service.py",
+      "size": 34869
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/records/records_manager.py",
+      "size": 115261
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/records/records_manager_export.py",
+      "size": 3032
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/records/records_manager_processing.py",
+      "size": 13942
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/records/records_tracker.py",
+      "size": 20394
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/search_recipes/__init__.py",
+      "size": 1178
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/search_recipes/_base.py",
+      "size": 14251
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/search_recipes/_itl_surface_fit.py",
+      "size": 11633
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/search_recipes/_max_concurrency_under_sla.py",
+      "size": 13736
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/search_recipes/_max_goodput_under_slo.py",
+      "size": 7454
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/search_recipes/_pareto_axes.py",
+      "size": 1578
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/search_recipes/_pareto_dominance.py",
+      "size": 3115
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/search_recipes/_pareto_sweep.py",
+      "size": 5034
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/search_recipes/_pareto_sweep_export.py",
+      "size": 5162
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/search_recipes/_pareto_sweep_parser.py",
+      "size": 1874
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/search_recipes/_post_process.py",
+      "size": 4436
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/search_recipes/_post_process_shared.py",
+      "size": 1573
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/search_recipes/_sla_breach_knee.py",
+      "size": 10981
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/search_recipes/_sweep_extract.py",
+      "size": 3135
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/search_recipes/_ttft_curve_fit.py",
+      "size": 8026
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/search_recipes/builtins.py",
+      "size": 21573
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/search_recipes/post_process.py",
+      "size": 8702
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/server_metrics/__init__.py",
+      "size": 183
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/server_metrics/accumulator.py",
+      "size": 55638
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/server_metrics/csv_exporter.py",
+      "size": 19197
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/server_metrics/data_collector.py",
+      "size": 24086
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/server_metrics/export_stats.py",
+      "size": 32716
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/server_metrics/histogram_percentiles.py",
+      "size": 50011
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/server_metrics/json_exporter.py",
+      "size": 10852
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/server_metrics/jsonl_writer.py",
+      "size": 3656
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/server_metrics/manager.py",
+      "size": 46975
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/server_metrics/parquet_exporter.py",
+      "size": 30350
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/server_metrics/protocols.py",
+      "size": 1532
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/server_metrics/storage.py",
+      "size": 41913
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/server_metrics/units.py",
+      "size": 14716
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/server_metrics/discovery/__init__.py",
+      "size": 716
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/server_metrics/discovery/kubernetes.py",
+      "size": 8065
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/spec_decode/__init__.py",
+      "size": 348
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/spec_decode/protocols.py",
+      "size": 1946
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/spec_decode/vllm_adapter.py",
+      "size": 6612
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/sweep_controller/__init__.py",
+      "size": 441
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/sweep_controller/_naming.py",
+      "size": 5640
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/sweep_controller/aggregator.py",
+      "size": 4596
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/sweep_controller/k8s_executor.py",
+      "size": 67948
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/sweep_controller/main.py",
+      "size": 45000
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/sweep_controller/plan_builder.py",
+      "size": 2990
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/sweep_controller/status_writer.py",
+      "size": 16085
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/__init__.py",
+      "size": 175
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/adaptive_config.py",
+      "size": 4708
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/adaptive_types.py",
+      "size": 353
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/branch_orchestrator.py",
+      "size": 91014
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/concurrency.py",
+      "size": 23106
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/config.py",
+      "size": 31040
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/conversation_source.py",
+      "size": 16655
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/high_res_timer.py",
+      "size": 9161
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/intervals.py",
+      "size": 8528
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/manager.py",
+      "size": 21079
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/phase_orchestrator.py",
+      "size": 28392
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/ramping.py",
+      "size": 17724
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/rate_series.py",
+      "size": 3092
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/replay_dependencies.py",
+      "size": 16909
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/request_cancellation.py",
+      "size": 5509
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/session_tree.py",
+      "size": 12731
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/trajectory_source.py",
+      "size": 40759
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/url_samplers.py",
+      "size": 2442
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/phase/__init__.py",
+      "size": 181
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/phase/credit_counter.py",
+      "size": 19135
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/phase/lifecycle.py",
+      "size": 7488
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/phase/progress_tracker.py",
+      "size": 12146
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/phase/publisher.py",
+      "size": 5316
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/phase/runner.py",
+      "size": 60260
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/phase/stop_conditions.py",
+      "size": 13585
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/strategies/__init__.py",
+      "size": 186
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/strategies/adaptive_scale.py",
+      "size": 19526
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/strategies/adaptive_scale_artifacts.py",
+      "size": 14015
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/strategies/adaptive_scale_backends.py",
+      "size": 7981
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/strategies/adaptive_scale_controller.py",
+      "size": 13365
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/strategies/adaptive_scale_runtime.py",
+      "size": 7186
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/strategies/adaptive_scale_sla.py",
+      "size": 15993
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/strategies/adaptive_scale_types.py",
+      "size": 2710
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/strategies/agentic_replay.py",
+      "size": 83911
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/strategies/cache_bust.py",
+      "size": 6118
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/strategies/core.py",
+      "size": 5130
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/strategies/fixed_schedule.py",
+      "size": 7139
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/strategies/request_rate.py",
+      "size": 20857
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/timing/strategies/user_centric_rate.py",
+      "size": 18811
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/transports/__init__.py",
+      "size": 179
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/transports/aiohttp_client.py",
+      "size": 21170
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/transports/aiohttp_trace.py",
+      "size": 14596
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/transports/aiohttp_transport.py",
+      "size": 28993
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/transports/base_transports.py",
+      "size": 9022
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/transports/http_defaults.py",
+      "size": 7012
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/transports/sse_utils.py",
+      "size": 8655
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/ui/__init__.py",
+      "size": 171
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/ui/base_ui.py",
+      "size": 2191
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/ui/no_ui.py",
+      "size": 517
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/ui/protocols.py",
+      "size": 648
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/ui/tqdm_ui.py",
+      "size": 7743
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/ui/utils.py",
+      "size": 2598
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/ui/dashboard/__init__.py",
+      "size": 181
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/ui/dashboard/aiperf_dashboard_ui.py",
+      "size": 3212
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/ui/dashboard/aiperf_textual_app.py",
+      "size": 13987
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/ui/dashboard/aiperf_theme.py",
+      "size": 666
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/ui/dashboard/custom_widgets.py",
+      "size": 1100
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/ui/dashboard/progress_dashboard.py",
+      "size": 13776
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/ui/dashboard/progress_header.py",
+      "size": 3458
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/ui/dashboard/realtime_metrics_dashboard.py",
+      "size": 8775
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/ui/dashboard/realtime_telemetry_dashboard.py",
+      "size": 11001
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/ui/dashboard/rich_log_viewer.py",
+      "size": 9141
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/ui/dashboard/worker_dashboard.py",
+      "size": 3372
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/ui/dashboard/worker_status_table.py",
+      "size": 5417
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/workers/__init__.py",
+      "size": 176
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/workers/clock_offset_tracker.py",
+      "size": 24799
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/workers/inference_client.py",
+      "size": 13058
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/workers/return_channel_probe.py",
+      "size": 5574
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/workers/session_manager.py",
+      "size": 27030
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/workers/worker.py",
+      "size": 104734
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/workers/worker_group_manager.py",
+      "size": 740
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/workers/worker_group_state.py",
+      "size": 6583
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/workers/worker_group_stats_builder.py",
+      "size": 3322
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/workers/worker_manager.py",
+      "size": 5776
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/workers/worker_pod_dataset_download.py",
+      "size": 6994
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/workers/worker_pod_helpers.py",
+      "size": 18567
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/workers/worker_pod_manager.py",
+      "size": 31975
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/workers/worker_pod_tokenizer_download.py",
+      "size": 11212
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/workers/worker_pod_upload.py",
+      "size": 5474
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/zmq/__init__.py",
+      "size": 172
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/zmq/dealer_request_client.py",
+      "size": 7582
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/zmq/fd_reader.py",
+      "size": 9423
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/zmq/pub_client.py",
+      "size": 5084
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/zmq/pull_client.py",
+      "size": 9259
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/zmq/push_client.py",
+      "size": 5310
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/zmq/router_reply_client.py",
+      "size": 13635
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/zmq/streaming_dealer_client.py",
+      "size": 13483
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/zmq/streaming_pull_client.py",
+      "size": 5765
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/zmq/streaming_push_client.py",
+      "size": 8079
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/zmq/streaming_router_client.py",
+      "size": 19625
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/zmq/sub_client.py",
+      "size": 10054
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/zmq/zmq_base_client.py",
+      "size": 10904
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/zmq/zmq_comms.py",
+      "size": 8208
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/zmq/zmq_defaults.py",
+      "size": 2406
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/zmq/zmq_proxy_base.py",
+      "size": 13822
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/zmq/zmq_proxy_sockets.py",
+      "size": 10933
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf-0.13.0.dist-info/METADATA",
+      "size": 24800
+    },
+    {
+      "base_rel": "inputs/aiperf/v3_canonical_v32/isl16384_osl512_n136_seed20261020/canonical_inputs.json",
+      "size": 9757287
+    },
+    {
+      "base_rel": "inputs/aiperf/v3_canonical_v32/isl16384_osl512_n136_seed20261020/canonical_inputs.json.manifest.json",
+      "size": 646
+    },
+    {
+      "base_rel": "inputs/aiperf/v3_canonical_v32/isl24576_osl512_n136_seed20261020/canonical_inputs.json",
+      "size": 14601032
+    },
+    {
+      "base_rel": "inputs/aiperf/v3_canonical_v32/isl24576_osl512_n136_seed20261020/canonical_inputs.json.manifest.json",
+      "size": 646
+    }
+  ]
+}

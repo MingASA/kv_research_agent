@@ -1,0 +1,33 @@
+{
+  "schema": "native-tools-cpu-b-generation-failure-summary-v1",
+  "run_id": "nextgen-native-tools-cpu-20261028b",
+  "source_path": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/scratch/nextgen-native-tools-cpu-20261028b/loop/generation_summary.json",
+  "source_size_bytes": 23400,
+  "source_sha256": "e9b88e6a481b3a8c6bc7222f38c84af798c596bdf337d881bc5d204499069380",
+  "remote_writes": false,
+  "summary_counts": {
+    "tasks_attempted": 32,
+    "conversations_completed": 0,
+    "user_turns_completed": 0,
+    "tool_calls": 0,
+    "model_API_requests": 0
+  },
+  "row_count": 32,
+  "result_field_aggregate_counts": {
+    "state": {
+      "INCOMPLETE": 32
+    },
+    "failure_stage": {
+      "tool_environment_initialization": 32
+    },
+    "error": {
+      "ValueError: Bounded CPU tool child did not attest its declared source/task/limits": 32
+    }
+  },
+  "first_three_distinct_errors": [
+    "ValueError: Bounded CPU tool child did not attest its declared source/task/limits"
+  ],
+  "toolchild_launch_failure_detected": false,
+  "toolchild_task_id": null,
+  "toolchild_log": null
+}

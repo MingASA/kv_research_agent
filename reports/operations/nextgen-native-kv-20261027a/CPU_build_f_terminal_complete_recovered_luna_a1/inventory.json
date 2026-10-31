@@ -1,0 +1,83 @@
+{
+  "D_exact_paths": {
+    "bin/xllm": {
+      "exists": false
+    },
+    "xllm/xllm": {
+      "exists": true,
+      "gid": 1005,
+      "regular": true,
+      "sha256": "dbc1c53a6d711ad883d2227c55429c1977347acd9e1bfa50b1fb479a0cc25f09",
+      "size": 568639344,
+      "symlink": false,
+      "uid": 1005
+    }
+  },
+  "build_id": "nextgen-native-kv-862c29ca-20261027f",
+  "container": {
+    "exit_code": 1,
+    "id": "afcab6d6ac36dc6d0e7e27cf1a1ab3c51c6ad4fc7092f7e1021b8ab10c3cd2d9",
+    "oom": false,
+    "status": "exited"
+  },
+  "endpoint": {
+    "fingerprint": "SHA256:QZwhu4BzgiOmHYABTUK1kXdAYHPun3iNioo69CKCgEI",
+    "host": "h800-41594a.fkpku.cn",
+    "port": 45291,
+    "user": "yinjinrun"
+  },
+  "local_copies": {
+    "CPU_ONLY_ADMISSION.json": {
+      "bytes": 128,
+      "sha256": "5b7f357576f7207b7d4231e29de2302f931b090faa92c0eef35aec2548786bbd",
+      "source_sha256": "5b7f357576f7207b7d4231e29de2302f931b090faa92c0eef35aec2548786bbd"
+    },
+    "INCREMENTAL_ADMISSION.json": {
+      "bytes": 402,
+      "sha256": "23d577e2abb7b57a0cf021643d71b306f70e9e4720d6ab58039081ba1f606b98",
+      "source_sha256": "23d577e2abb7b57a0cf021643d71b306f70e9e4720d6ab58039081ba1f606b98"
+    },
+    "build_result.json": {
+      "bytes": 259,
+      "sha256": "0392e075e03b105bd52713f7c81ba6aced3659a190884d87c02f0cf3ac5f84f1",
+      "source_sha256": "0392e075e03b105bd52713f7c81ba6aced3659a190884d87c02f0cf3ac5f84f1"
+    },
+    "compile.log": {
+      "bytes": 14130,
+      "sha256": "ccb5a4bfdc1a29db6e37acf7e2e3f11bf43decfd1e1cce0a4311cc27cd6887c0",
+      "source_sha256": "ccb5a4bfdc1a29db6e37acf7e2e3f11bf43decfd1e1cce0a4311cc27cd6887c0"
+    },
+    "configure.log": {
+      "bytes": 33339,
+      "sha256": "68d902cde88f100bbd1f04e25daac71306ef5e27b24f4cb4bf99adf623b4c49c",
+      "source_sha256": "68d902cde88f100bbd1f04e25daac71306ef5e27b24f4cb4bf99adf623b4c49c"
+    },
+    "cuda_kv_cache_admission_test.log": {
+      "bytes": 1694,
+      "sha256": "866f0f0ed617f15a5834f787c5a39b14be0d6b7fed68ce4e9eb6b216182cc134",
+      "source_sha256": "866f0f0ed617f15a5834f787c5a39b14be0d6b7fed68ce4e9eb6b216182cc134"
+    },
+    "docker_command.json": {
+      "bytes": 2370,
+      "sha256": "b78d0fe68cb71e459ff9d553d9553d8043e69f428c4710e7f0e269de4e0b00bf",
+      "source_sha256": "b78d0fe68cb71e459ff9d553d9553d8043e69f428c4710e7f0e269de4e0b00bf"
+    },
+    "kv_cache_estimation_test.log": {
+      "bytes": 5819,
+      "sha256": "07cd23c9f5ac79c124f519696e1563be13da6ed357e1379688ddedf08ef02c48",
+      "source_sha256": "07cd23c9f5ac79c124f519696e1563be13da6ed357e1379688ddedf08ef02c48"
+    },
+    "kv_cache_test.log": {
+      "bytes": 897,
+      "sha256": "881136a59a0a51f6167617ea9b55b0bbbb1fa8348f44af56177a50954c72ff3d",
+      "source_sha256": "881136a59a0a51f6167617ea9b55b0bbbb1fa8348f44af56177a50954c72ff3d"
+    }
+  },
+  "mutations": false,
+  "observed_at_utc": "2026-10-27T21:11:35.991130+00:00",
+  "remote_script_sha256": "f9df12e7bd1d8e998c9f1bbc5be9980154747af84e743c2fb433dbd0f5c30377",
+  "remote_writes": false,
+  "schema": "cpu-build-f-terminal-complete-readonly-luna-v1",
+  "source_commit": "862c29cade05e47691147b8f50c979a812495470",
+  "total_bytes": 59038
+}

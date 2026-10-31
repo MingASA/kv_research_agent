@@ -1,0 +1,1 @@
+{"cpu_only": true, "http_statuses": {"200": 3, "429": 1, "None": 1}, "actual_requests": 5}

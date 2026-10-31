@@ -1,0 +1,128 @@
+{
+  "classification": "confirmed_local_CPU_offline_SM90_codegen_only",
+  "triton_version": "3.7.1",
+  "GPU_used": false,
+  "H800_runtime_compatibility_verified": false,
+  "source_sha256": "6b726edeecb5cdf83fdd028141b80860091305ec516b2fc383fd2b3e447f72b9",
+  "kernels": [
+    {
+      "function": "_collect_unique_pages",
+      "target": "sm90",
+      "ptx_sha256": "40361c721052bab72a79e8ab590f27a8a09dc47f0843cb7de23b4c4c2664339c",
+      "cubin_sha256": "2241505b482465b2e8c37ccfa7d36e4f5c74c2ac1295b5f664dad99344ef01b3",
+      "metadata": {
+        "allowed_dot_input_precisions": [
+          "tf32",
+          "tf32x3",
+          "ieee",
+          "bf16x3",
+          "bf16x6"
+        ],
+        "arch": "sm90",
+        "backend_name": "cuda",
+        "debug": false,
+        "default_dot_input_precision": "tf32",
+        "deprecated_fp8_dot_operand_dtypes": [
+          "fp8e4b15"
+        ],
+        "enable_fp_fusion": true,
+        "enable_reflect_ftz": true,
+        "extern_libs": [
+          [
+            "libdevice",
+            "/home/mingasa/venvs/vllm/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+          ]
+        ],
+        "global_scratch_align": 1,
+        "global_scratch_size": 0,
+        "hash": "603b78919aaa4b023c83d6779eed30ae0780f198110f444faad1e73ce15bc07a",
+        "instrumentation_mode": "",
+        "ir_override": null,
+        "launch_cooperative_grid": false,
+        "launch_pdl": false,
+        "max_num_imprecise_acc_default": 1073741824,
+        "maxnreg": null,
+        "name": "_collect_unique_pages",
+        "num_ctas": 1,
+        "num_stages": 3,
+        "num_warps": 4,
+        "profile_scratch_align": 1,
+        "profile_scratch_size": 0,
+        "ptx_options": null,
+        "ptx_version": null,
+        "sanitize_overflow": true,
+        "shared": 32,
+        "supported_fp8_dtypes": [
+          "fp8e4b15",
+          "fp8e4nv",
+          "fp8e5"
+        ],
+        "target": "GPUTarget(backend='cuda', arch=90, warp_size=32)",
+        "tensordesc_meta": [],
+        "tmem_size": 0,
+        "triton_version": "3.7.1",
+        "warp_size": 32
+      }
+    },
+    {
+      "function": "_dequantize_active_pages",
+      "target": "sm90",
+      "ptx_sha256": "acc249a1f7b2910eac68540d30c96552309e59ca777ba70471a774a4a1d8c289",
+      "cubin_sha256": "0b6e4df8925fefb78b2dcb46d4c1cd1f43c929afdef552da4f3338e36cd06a58",
+      "metadata": {
+        "allowed_dot_input_precisions": [
+          "tf32",
+          "tf32x3",
+          "ieee",
+          "bf16x3",
+          "bf16x6"
+        ],
+        "arch": "sm90",
+        "backend_name": "cuda",
+        "debug": false,
+        "default_dot_input_precision": "tf32",
+        "deprecated_fp8_dot_operand_dtypes": [
+          "fp8e4b15"
+        ],
+        "enable_fp_fusion": true,
+        "enable_reflect_ftz": true,
+        "extern_libs": [
+          [
+            "libdevice",
+            "/home/mingasa/venvs/vllm/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+          ]
+        ],
+        "global_scratch_align": 1,
+        "global_scratch_size": 0,
+        "hash": "7bd0f93ef92f8a27cb341e9f7161a4b3f721d3ff24fd385059d951462d4d1583",
+        "instrumentation_mode": "",
+        "ir_override": null,
+        "launch_cooperative_grid": false,
+        "launch_pdl": false,
+        "max_num_imprecise_acc_default": 1073741824,
+        "maxnreg": null,
+        "name": "_dequantize_active_pages",
+        "num_ctas": 1,
+        "num_stages": 3,
+        "num_warps": 4,
+        "profile_scratch_align": 1,
+        "profile_scratch_size": 0,
+        "ptx_options": null,
+        "ptx_version": null,
+        "sanitize_overflow": true,
+        "shared": 0,
+        "supported_fp8_dtypes": [
+          "fp8e4b15",
+          "fp8e4nv",
+          "fp8e5"
+        ],
+        "target": "GPUTarget(backend='cuda', arch=90, warp_size=32)",
+        "tensordesc_meta": [],
+        "tmem_size": 0,
+        "triton_version": "3.7.1",
+        "warp_size": 32
+      }
+    }
+  ],
+  "limitation": "Local Triton3.7.1 versus remote3.6; actual H800 numerical/Graph gates still required"
+}

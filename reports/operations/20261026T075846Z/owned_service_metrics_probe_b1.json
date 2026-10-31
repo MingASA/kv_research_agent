@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "utc": "2026-10-26T19:54:49.918742+00:00",
+  "container_id": "080b2a226f7e9533dcda132128f9bce2c26efc7cbce1d82e074c61e7e74fe052",
+  "read_only_app_probe": true,
+  "metrics": {
+    "/metrics": {
+      "status": 404
+    },
+    "/vars/num_free_blocks": {
+      "status": 200,
+      "bytes": 7959,
+      "truncated": false,
+      "matching_lines": [
+        "<p class=\"variable\">num_free_blocks : <span id=\"value-num_free_blocks\">6</span></p>",
+        "<div class=\"detail\"><div id=\"num_free_blocks\" class=\"flot-placeholder\"></div></div>"
+      ]
+    },
+    "/vars/num_running_requests": {
+      "status": 200,
+      "bytes": 7974,
+      "truncated": false,
+      "matching_lines": [
+        "<p class=\"variable\">num_running_requests : <span id=\"value-num_running_requests\">0</span></p>",
+        "<div class=\"detail\"><div id=\"num_running_requests\" class=\"flot-placeholder\"></div></div>"
+      ]
+    }
+  }
+}

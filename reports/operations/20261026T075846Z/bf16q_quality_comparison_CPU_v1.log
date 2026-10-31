@@ -1,0 +1,21 @@
+E
+======================================================================
+ERROR: test_bf16q_comparison (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_bf16q_comparison
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/home/mingasa/kv-research-agent/tests/test_bf16q_comparison.py", line 10, in <module>
+    from scripts.compare_bf16q_quality import compare
+  File "/home/mingasa/kv-research-agent/scripts/compare_bf16q_quality.py", line 15, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

@@ -1,0 +1,90 @@
+{
+  "build_id": "nextgen-native-kv-862c29ca-20261027g",
+  "container": {
+    "Config_User": "1005:1005",
+    "DeviceRequests": null,
+    "Devices": [],
+    "ExitCode": 0,
+    "Id": "fa0132404c6a3fe7850c16c2c0d34d91eb694da50dce84cf9dbacbba50b2cd5d",
+    "OOMKilled": false,
+    "Privileged": false,
+    "Running": false,
+    "SecurityOpt": [
+      "no-new-privileges",
+      "seccomp=unconfined"
+    ],
+    "Status": "exited",
+    "selected_env": [
+      "NVIDIA_VISIBLE_DEVICES=none",
+      "CUDA_VISIBLE_DEVICES=",
+      "MKL_NUM_THREADS=1",
+      "NUMEXPR_NUM_THREADS=1",
+      "OPENBLAS_NUM_THREADS=1",
+      "OMP_NUM_THREADS=1",
+      "NVIDIA_REQUIRE_CUDA=cuda>=13.0 brand=unknown,driver>=535,driver<536 brand=grid,driver>=535,driver<536 brand=tesla,driver>=535,driver<536 brand=nvidia,driver>=535,driver<536 brand=quadro,driver>=535,driver<536 brand=quadrortx,driver>=535,driver<536 brand=nvidiartx,driver>=535,driver<536 brand=vapps,driver>=535,driver<536 brand=vpc,driver>=535,driver<536 brand=vcs,driver>=535,driver<536 brand=vws,driver>=535,driver<536 brand=cloudgaming,driver>=535,driver<536 brand=unknown,driver>=550,driver<551 brand=grid,driver>=550,driver<551 brand=tesla,driver>=550,driver<551 brand=nvidia,driver>=550,driver<551 brand=quadro,driver>=550,driver<551 brand=quadrortx,driver>=550,driver<551 brand=nvidiartx,driver>=550,driver<551 brand=vapps,driver>=550,driver<551 brand=vpc,driver>=550,driver<551 brand=vcs,driver>=550,driver<551 brand=vws,driver>=550,driver<551 brand=cloudgaming,driver>=550,driver<551 brand=unknown,driver>=565,driver<566 brand=grid,driver>=565,driver<566 brand=tesla,driver>=565,driver<566 brand=nvidia,driver>=565,driver<566 brand=quadro,driver>=565,driver<566 brand=quadrortx,driver>=565,driver<566 brand=nvidiartx,driver>=565,driver<566 brand=vapps,driver>=565,driver<566 brand=vpc,driver>=565,driver<566 brand=vcs,driver>=565,driver<566 brand=vws,driver>=565,driver<566 brand=cloudgaming,driver>=565,driver<566 brand=unknown,driver>=570,driver<571 brand=grid,driver>=570,driver<571 brand=tesla,driver>=570,driver<571 brand=nvidia,driver>=570,driver<571 brand=quadro,driver>=570,driver<571 brand=quadrortx,driver>=570,driver<571 brand=nvidiartx,driver>=570,driver<571 brand=vapps,driver>=570,driver<571 brand=vpc,driver>=570,driver<571 brand=vcs,driver>=570,driver<571 brand=vws,driver>=570,driver<571 brand=cloudgaming,driver>=570,driver<571 brand=unknown,driver>=575,driver<576 brand=grid,driver>=575,driver<576 brand=tesla,driver>=575,driver<576 brand=nvidia,driver>=575,driver<576 brand=quadro,driver>=575,driver<576 brand=quadrortx,driver>=575,driver<576 brand=nvidiartx,driver>=575,driver<576 brand=vapps,driver>=575,driver<576 brand=vpc,driver>=575,driver<576 brand=vcs,driver>=575,driver<576 brand=vws,driver>=575,driver<576 brand=cloudgaming,driver>=575,driver<576",
+      "CUDA_VERSION=13.0.2",
+      "NVIDIA_DRIVER_CAPABILITIES=compute,utility",
+      "NVIDIA_PRODUCT_NAME=CUDA"
+    ]
+  },
+  "endpoint": {
+    "fingerprint": "SHA256:QZwhu4BzgiOmHYABTUK1kXdAYHPun3iNioo69CKCgEI",
+    "host": "h800-41594a.fkpku.cn",
+    "port": 45291,
+    "user": "yinjinrun"
+  },
+  "local_copies": {
+    "docker_command.json": {
+      "bytes": 1579,
+      "sha256": "8866d5461e3dc156ce33c180f3ff7c925977fc31955cea1877e8ff875aaccbf7",
+      "source_sha256": "8866d5461e3dc156ce33c180f3ff7c925977fc31955cea1877e8ff875aaccbf7"
+    },
+    "manifest.json": {
+      "bytes": 1368,
+      "sha256": "7bc0ed9394134b3ac583f960ca1bd176c0c12cdc131165f7190f532037af4115",
+      "source_sha256": "7bc0ed9394134b3ac583f960ca1bd176c0c12cdc131165f7190f532037af4115"
+    },
+    "release_result.json": {
+      "bytes": 1021,
+      "sha256": "02a9166dc6adc9d627f4944c5352a4c635b3576f521592d84b368940ad70ee7f",
+      "source_sha256": "02a9166dc6adc9d627f4944c5352a4c635b3576f521592d84b368940ad70ee7f"
+    },
+    "verification.json": {
+      "bytes": 4858,
+      "sha256": "6e9cfac227af48e3156ef0e5c2c9749afa97ab7a841e9772be250674a1ca6bf1",
+      "source_sha256": "6e9cfac227af48e3156ef0e5c2c9749afa97ab7a841e9772be250674a1ca6bf1"
+    },
+    "verify-v2/INTENT.json": {
+      "bytes": 335,
+      "sha256": "991ee6136f680a9fc68f376e0960ead0ef8e240ca7f65f49dcc30948a143d230",
+      "source_sha256": "991ee6136f680a9fc68f376e0960ead0ef8e240ca7f65f49dcc30948a143d230"
+    },
+    "verify-v2/PREPARED.json": {
+      "bytes": 115,
+      "sha256": "331c4bbe31670920295a11f4e0ded6a9bae3603a702bf5f6c3642e228a8b04c3",
+      "source_sha256": "331c4bbe31670920295a11f4e0ded6a9bae3603a702bf5f6c3642e228a8b04c3"
+    },
+    "verify-v2/container.log": {
+      "bytes": 28340,
+      "sha256": "e9d067f94b8f01720079d09a07c8d8cf2eb6c8fbaa05df579d5ad3c5fae41de9",
+      "source_sha256": "e9d067f94b8f01720079d09a07c8d8cf2eb6c8fbaa05df579d5ad3c5fae41de9"
+    },
+    "verify-v2/docker_command.json": {
+      "bytes": 1828,
+      "sha256": "6ed36fa5570151859aba17edc40bfa0533591a75d0fb3c455c2b6e795316ed4c",
+      "source_sha256": "6ed36fa5570151859aba17edc40bfa0533591a75d0fb3c455c2b6e795316ed4c"
+    },
+    "verify-v2/verification.json": {
+      "bytes": 28382,
+      "sha256": "e7695827747f91d9f820451bee69303207c29daa260648a411fc524827914d84",
+      "source_sha256": "e7695827747f91d9f820451bee69303207c29daa260648a411fc524827914d84"
+    }
+  },
+  "mutations": false,
+  "observed_at_utc": "2026-10-27T21:21:23.922515+00:00",
+  "remote_script_sha256": "8b12f2717f986c512c6ca47c28b63c02289940071ddd590443010728a1464207",
+  "remote_writes": false,
+  "schema": "cpu-binary-g-metadata-mirror-luna-v1",
+  "source_commit": "862c29cade05e47691147b8f50c979a812495470",
+  "total_bytes": 67826
+}

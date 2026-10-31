@@ -1,0 +1,1 @@
+{"GPU_started":false,"classification":"CPU_preparation_failed_no_SSH_no_GPU","next_candidate":"nextgen-bf16-qwen38-validation-r0-20261027b","reasons":["Bundle requires named HEAD rather than raw object ID as advertised ref","Frozen local policy requires actual runtime/kv_controller package copy, not live scripts/controller path"],"remote_run_created":false}

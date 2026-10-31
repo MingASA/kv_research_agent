@@ -1,0 +1,386 @@
+{
+  "utc": "2026-10-30T21:02:22.681668+00:00",
+  "scope": "read-only local index evidence locator; not final completion acceptance",
+  "row_count": 42,
+  "active_run_expected": "nextgen-bf16-qwen38-mixed8192-quality1720-r0-20261030t",
+  "entries": [
+    {
+      "run_id": "nextgen-native-kv-readonly-discovery-20261027a",
+      "status": "READONLY_DISCOVERY_CONFIRMED",
+      "validity": "confirmed_environment_and_metadata_only",
+      "metric_path": "reports/operations/nextgen-native-kv-20261027a/remote_environment_readonly_a2.json",
+      "local_metric_exists": true,
+      "metric_sha256": "28c18bfd83e2616151a30c2c69ca652e73f4ece0f0deaba4adcc637b90b3d4f8",
+      "manifest_is_remote_provenance_only": false
+    },
+    {
+      "run_id": "nextgen-bf16-qwen38-validation-r0-20261027b",
+      "status": "FAILED_VERIFIED_RELEASED",
+      "validity": "operator_Graph_passed_model_startup_timeout_no_service_measurement",
+      "metric_path": "reports/operations/nextgen-native-kv-20261027a/BF16_startup_failure_analysis_b1.json",
+      "local_metric_exists": true,
+      "metric_sha256": "abc9ff6a89a7deb6d6f92ee47ebeea62b5ed17529ff9c401a4ed3e81331ea151",
+      "manifest_is_remote_provenance_only": true
+    },
+    {
+      "run_id": "nextgen-native-kv-78f14606-20261027a",
+      "status": "CPU_BUILD_CONFIG_FAILED_RELEASED",
+      "validity": "CPU_only_no_GPU_or_model_result",
+      "metric_path": "reports/operations/nextgen-native-kv-20261027a/CPU_build_configuration_failure_a1.json",
+      "local_metric_exists": true,
+      "metric_sha256": "55e052f803737db6f5c55f1cf7ff434d741c8af253c8c4772b0f15fad45d10ff",
+      "manifest_is_remote_provenance_only": false
+    },
+    {
+      "run_id": "nextgen-model-assets-full-SHA-20261027a6",
+      "status": "READONLY_MODEL_INTEGRITY_VERIFIED",
+      "validity": "official_weight_body_and_tokenizer_integrity_only",
+      "metric_path": "reports/operations/nextgen-native-kv-20261027a/model_assets_full_SHA_a6.json",
+      "local_metric_exists": true,
+      "metric_sha256": "780530faf3460ed0c69fee943c8350be7b43e6a0c93577d64a2bbbb8e40ca163",
+      "manifest_is_remote_provenance_only": false
+    },
+    {
+      "run_id": "nextgen-native-kv-78f14606-20261027c",
+      "status": "CPU_BUILD_COMPILE_FAILED_RELEASED",
+      "validity": "CPU_only_no_GPU_no_binary_validation",
+      "metric_path": "reports/operations/nextgen-native-kv-20261027a/CPU_build_missing_torch_env_failure_c1.json",
+      "local_metric_exists": true,
+      "metric_sha256": "c3e61aba60dfa82ce62330c314be4438699ebe77d71229a1db439d081860d178",
+      "manifest_is_remote_provenance_only": false
+    },
+    {
+      "run_id": "nextgen-bf16-qwen38-validation-r1-20261027d",
+      "status": "FAILED_VERIFIED_RELEASED",
+      "validity": "operator_Graph_passed_weights_cache_loaded_GDN_dependency_failure_no_chat",
+      "metric_path": "reports/operations/nextgen-native-kv-20261027a/BF16_GDN_dependency_failure_d1.json",
+      "local_metric_exists": true,
+      "metric_sha256": "c4537259b701bc4b13a3a9732745a046e3d1457b0c27092dd14f46cd0c3adc7d",
+      "manifest_is_remote_provenance_only": false
+    },
+    {
+      "run_id": "nextgen-native-kv-59fc32ac-20261027d",
+      "status": "CPU_BUILD_FAILED_VERIFIED_EXITED",
+      "validity": "FAILED_COMPILE_NO_BINARY_NO_GPU",
+      "metric_path": "reports/operations/nextgen-native-kv-20261027a/CPU_build_d_failure_complete_luna_a1/inventory.json",
+      "local_metric_exists": true,
+      "metric_sha256": "188d1f2482a244b0193507164e0fc720f0c935807e672c41c4870b2b4d36a4c1",
+      "manifest_is_remote_provenance_only": false
+    },
+    {
+      "run_id": "nextgen-bf16-qwen38-validation-r2-20261027e",
+      "status": "COMPLETE_CORRECTNESS_VERIFIED_RELEASED",
+      "validity": "BF16_text_Graph_cache_lifecycle_verified_no_benchmark_quality_or_performance",
+      "metric_path": "reports/operations/nextgen-native-kv-20261027a/BF16_e_main_independent_service_audit_a1.json",
+      "local_metric_exists": true,
+      "metric_sha256": "e8afd31d3e63855c0e5110d3cccb215cb6fc453d620254d58b1330418542b92b",
+      "manifest_is_remote_provenance_only": false
+    },
+    {
+      "run_id": "nextgen-nvfp4-pages-sm90-r0-20261027g",
+      "status": "NOT_LAUNCHED_VERIFIED_OWNED_ABSENCE",
+      "validity": "0_own_GPU_no_remote_result_not_an_experiment",
+      "metric_path": "reports/operations/nextgen-native-kv-20261027a/NVFP4_g_two_absence_witnesses_a2.json",
+      "local_metric_exists": true,
+      "metric_sha256": "e2b20eaf7b4024c2f9af59c4fa981e5789e6477e1df09c560df77740088e15ea",
+      "manifest_is_remote_provenance_only": false
+    },
+    {
+      "run_id": "nextgen-nvfp4-pages-sm90-r0-20261027h",
+      "status": "COMPLETE_OPERATOR_VERIFIED_RELEASED",
+      "validity": "native_NVFP4_operator_only_no_CXX_model_quality_or_performance",
+      "metric_path": "reports/operations/nextgen-native-kv-20261027a/NVFP4_h_main_60SHA_operator_audit_a1.json",
+      "local_metric_exists": true,
+      "metric_sha256": "5853746ffcf1958423f7b5d0f193c74852f06492528e789e5817baec5459cc03",
+      "manifest_is_remote_provenance_only": false
+    },
+    {
+      "run_id": "nextgen-native-kv-862c29ca-20261027e",
+      "status": "CPU_BUILD_FAILED_CONFIGURE_VERIFIED_EXITED",
+      "validity": "FAILED_CONFIGURE_NO_BINARY_NO_GPU",
+      "metric_path": "reports/operations/nextgen-native-kv-20261027a/CPU_build_e_failure_complete_luna_a1/inventory.json",
+      "local_metric_exists": true,
+      "metric_sha256": "72cd6c471bb36070b5420ee6361c7c86bab207ac7b250d3b0be0bce7f9ab73eb",
+      "manifest_is_remote_provenance_only": false
+    },
+    {
+      "run_id": "nextgen-native-kv-862c29ca-20261027f",
+      "status": "COMPILE_TESTS_PASS_DRIVER_FINALIZATION_FAILED",
+      "validity": "36_CXX_CPU_tests_pass_no_GPU_original_result_FAILED",
+      "metric_path": "reports/operations/nextgen-native-kv-20261027a/CPU_build_f_terminal_complete_recovered_luna_a1/inventory.json",
+      "local_metric_exists": true,
+      "metric_sha256": "815469ea2bb107885cf9a17308ca39f8fe3a42de71c8b02d888857de92d05594",
+      "manifest_is_remote_provenance_only": false
+    },
+    {
+      "run_id": "nextgen-native-kv-862c29ca-20261027g",
+      "status": "BINARY_CPU_VERIFIED_NOT_MODEL_OR_GPU",
+      "validity": "36_CXX_CPU_tests_ldd_actual_registered_flags_noGPU",
+      "metric_path": "reports/operations/nextgen-native-kv-20261027a/CPU_binary_g_main_independent_metadata_a1.json",
+      "local_metric_exists": true,
+      "metric_sha256": "fab9515a61487d47f074b8e061e6ced87f6ca259db2499a2f1dad1da90a5cf94",
+      "manifest_is_remote_provenance_only": false
+    },
+    {
+      "run_id": "nextgen-bf16-qwen38-calibration-r0-20261027i",
+      "status": "COMPLETE_CALIBRATION_VERIFIED_RELEASED",
+      "validity": "79SHA_new_binary_real_Graph20known136cal_no_full_quality_or_AIPerf",
+      "metric_path": "reports/operations/nextgen-native-kv-20261027a/BF16_i_independent_calibration_a2.json",
+      "local_metric_exists": true,
+      "metric_sha256": "77788da79c76a2bc0ad6707b49031dc10ddbd8a50c2e995d550fd90effb110c4",
+      "manifest_is_remote_provenance_only": false
+    },
+    {
+      "run_id": "nextgen-bf16-qwen38-quality-core1720-r0-20261027j",
+      "status": "FAILED_RUNTIME_VALIDATOR_RAW1720_SCORES_RECOVERED_RELEASED",
+      "validity": "original_FAILED_71SHA_all1720_raw_verified12metadata_corrected6empty_zero_no_GPU_repeat",
+      "metric_path": "reports/experiments/nextgen-quality-20261028/bf16-j-v1/summary.json",
+      "local_metric_exists": true,
+      "metric_sha256": "ee4dcb4391cc4a745bcedb8572db51803c83566fb89b44dcc114420e92b883c4",
+      "manifest_is_remote_provenance_only": false
+    },
+    {
+      "run_id": "nextgen-fp8-qwen38-quality-core1720-r0-20261027k",
+      "status": "FAILED_OPERATOR_GATE_VERIFIED_RELEASED",
+      "validity": "prefill_chunked_pass_decode_0034526_vs_BF16Q_oracle_failed_no_model_quality",
+      "metric_path": "reports/operations/nextgen-native-kv-20261028a/FP8_k_main_SHA_manifest_a1.json",
+      "local_metric_exists": true,
+      "metric_sha256": "862670c288add34f5e5a21caff06b8e9286e89fde743fb5c87b18223c6d7c584",
+      "manifest_is_remote_provenance_only": false
+    },
+    {
+      "run_id": "nextgen-nvfp4-qwen38-quality-core1720-r0-20261027l",
+      "status": "NOT_LAUNCHED_VERIFIED0_OWN_GPU",
+      "validity": "0_own_GPU_no_remote_result_shared_GPU_busy_not_idle_admission",
+      "metric_path": "reports/operations/nextgen-native-kv-20261028a/NVFP4_l_two_absence_witnesses_a2.json",
+      "local_metric_exists": true,
+      "metric_sha256": "f2d04933bf78d62f063bdb5ecf0f49a7b1e454bcd891af976fa773d9a37cdc96",
+      "manifest_is_remote_provenance_only": false
+    },
+    {
+      "run_id": "nextgen-fp8-qwen38-quality-core1720-r1-20261028m",
+      "status": "CONFLICT_FOREIGN_UID0_PRE_MODEL_RELEASED_VERIFIED",
+      "validity": "confirmed_real_foreign_PID660951_no_model_no_quality55_675052s_GPU_released_settled",
+      "metric_path": "reports/operations/nextgen-native-kv-20261028a/FP8_m_independent_conflict_closeout_a1.json",
+      "local_metric_exists": true,
+      "metric_sha256": "8e87578411c3348063f13c14fd1e3a5d8ab6fed039151fc2bf2d2c15b7b24d56",
+      "manifest_is_remote_provenance_only": false
+    },
+    {
+      "run_id": "nextgen-fp8-qwen38-quality-core1720-r2-20261028o",
+      "status": "ORIGINAL_UNKNOWN_FAILED_RELEASE_RECOVERED",
+      "validity": "original_UNKNOWN_unchanged_two_driver_release_witnesses_failed_conservative_charge_not_quality_or_performance",
+      "metric_path": "reports/operations/nextgen-native-kv-20261028a/FP8_o_two_release_witnesses_a1.json",
+      "local_metric_exists": true,
+      "metric_sha256": "1945435a7aaf5d5491e3e42df313af0167cd9c1f7b58637fcf56686b4ea64e89",
+      "manifest_is_remote_provenance_only": false
+    },
+    {
+      "run_id": "nextgen-nvfp4-qwen38-quality-core1720-r0-20261028p",
+      "status": "COMPLETE_INDEPENDENTLY_SCORED_RELEASED",
+      "validity": "80SHA1720raw_scored_degradation_observed_no_auto_quality_acceptance_no_AIPerf",
+      "metric_path": "reports/experiments/nextgen-quality-20261028/nvfp4-p-v1/summary.json",
+      "local_metric_exists": true,
+      "metric_sha256": "b47de8dc4d1d4d8f809440cc7167528bfae8e137f045994830f400acae5bc3fa",
+      "manifest_is_remote_provenance_only": false
+    },
+    {
+      "run_id": "nextgen-fp8fa2-qwen38-quality-core1720-r0-20261028q",
+      "status": "NOT_LAUNCHED_VERIFIED0",
+      "validity": "not_launched0",
+      "metric_path": "reports/operations/nextgen-native-kv-20261028a/FP8_FA2_q_two_absence_witnesses_a1.json",
+      "local_metric_exists": true,
+      "metric_sha256": "59aa7432ae731aff6e4a76d157d82dd125347e927b848bb64fff702f3c351bc9",
+      "manifest_is_remote_provenance_only": false
+    },
+    {
+      "run_id": "nextgen-fp8fa2-qwen38-quality-core1720-r1-20261028t",
+      "status": "FAILED_ORCHESTRATOR_ATOMIC_PROGRESS_SCAN_RELEASED",
+      "validity": "originalFAILED_released_healthy_model20Graph918partial_not_full_quality_no_performance",
+      "metric_path": "reports/operations/nextgen-native-kv-20261028a/FP8_FA2_t_main_reconcile_failure_a1.json",
+      "local_metric_exists": true,
+      "metric_sha256": "487a921ac16a3c060ae74f1a05c0d241df7de880890febb4d5311a2db2409c67",
+      "manifest_is_remote_provenance_only": false
+    },
+    {
+      "run_id": "nextgen-fp8fa2-qwen38-quality-core1720-r2-20261028v",
+      "status": "CONFLICT_REAL_FOREIGN_UID0_PARTIAL_RELEASED",
+      "validity": "actual_UID0_PID2848677_other_container_entered_GPU6_634partial_not_full_quality_no_performance",
+      "metric_path": "reports/operations/nextgen-native-kv-20261028a/FP8_FA2_v_main_reconcile_conflict_a1.json",
+      "local_metric_exists": true,
+      "metric_sha256": "619d31c41446d0f2066ba201998e5639c53d248162a712e0c5faabd434a23ab6",
+      "manifest_is_remote_provenance_only": false
+    },
+    {
+      "run_id": "nextgen-fp8fa2-qwen38-quality-completion802-r0-20261028y",
+      "status": "NOT_LAUNCHED_ZERO_GPU_SETTLED",
+      "validity": "no_model_or_quality_or_performance_data",
+      "metric_path": "reports/operations/nextgen-native-kv-20261028a/FP8_completion_y_full_mirror_independent_closeout_a2.json",
+      "local_metric_exists": true,
+      "metric_sha256": "5c831ab3e4c6ed7913e2fe9a96583a4b4a3d4831e251d760c1782474284596e4",
+      "manifest_is_remote_provenance_only": true
+    },
+    {
+      "run_id": "nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab",
+      "status": "COMPLETE_RELEASED_FULL87SHA_AND_1720_DISJOINT_QUALITY_SCORED",
+      "validity": "actual_802_raw_and_modelGraph_verified_combined_with_retained_t918_no_automatic_acceptance_no_performance",
+      "metric_path": "reports/experiments/nextgen-quality-20261030/fp8-fa2-t-ab-v1/summary.json",
+      "local_metric_exists": true,
+      "metric_sha256": "f7e21614a04dd261aa3deb97e5e2503dad4af5c5ec9694fdb2587f95cbcfbb26",
+      "manifest_is_remote_provenance_only": true
+    },
+    {
+      "run_id": "nextgen-bf16-qwen38-chat128-c16-r0-20261028aa",
+      "status": "FAILED_RELEASED_FROZEN_AUDIT_IMPORT_BEFORE_AIPERF",
+      "validity": "20known_and_actual_model_Graph_passed_no_AIPerf_or_performance_data",
+      "metric_path": "reports/operations/session-recovery-20261030-01a1765d/aa-original-failure-and-isolated-CPU-repair-a1.json",
+      "local_metric_exists": true,
+      "metric_sha256": "4686f9e0b9cbf1028a1b4c096a481159d985e1644e1f5cba9197c87e758525d7",
+      "manifest_is_remote_provenance_only": true
+    },
+    {
+      "run_id": "nextgen-bf16-qwen38-chat128-c16-r1-20261030d",
+      "status": "NOT_LAUNCHED_TWO_S0_ABSENCE_SETTLED_ZERO_GPU",
+      "validity": "no_remote_run_or_model_or_AIPerf_data",
+      "metric_path": "reports/operations/session-recovery-20261030-01a1765d/bf16-d-two-absence-witnesses-a1.json",
+      "local_metric_exists": true,
+      "metric_sha256": "8badc2bea57f0ad48dece2487bc624e8d89ff2feef1dc042088a9c1a189fe3bb",
+      "manifest_is_remote_provenance_only": true
+    },
+    {
+      "run_id": "nextgen-bf16-qwen38-chat128-c16-r2-20261030e",
+      "status": "COMPLETE_INDEPENDENT115SHA_ACTUAL_AIPERF_VERIFIED_RELEASED",
+      "validity": "actual_model20_known_Graph_warm16_and_measured128_raw_independently_verified_not_SLOcertification",
+      "metric_path": "reports/operations/session-recovery-20261030-01a1765d/BF16-E-independent-AIPerf-audit-a1.json",
+      "local_metric_exists": true,
+      "metric_sha256": "00f61623e53222cf59ceb705228e42dcd17d2cd75ed88b74bbcfc36b01aafa8f",
+      "manifest_is_remote_provenance_only": true
+    },
+    {
+      "run_id": "nextgen-nvfp4-qwen38-chat128-c16-r0-20261030b",
+      "status": "COMPLETE_INDEPENDENT117SHA_ACTUAL_AIPERF_VERIFIED_RELEASED",
+      "validity": "actual_model20_known_Graph_warm16_and_measured128_raw_independently_verified_not_SLOcertification",
+      "metric_path": "reports/operations/session-recovery-20261030-01a1765d/NVFP4-B-independent-AIPerf-audit-a1.json",
+      "local_metric_exists": true,
+      "metric_sha256": "2db1f067e83799b6e9c6abefa204e825f0e59d5247645b8fbda8590cdbc3dceb",
+      "manifest_is_remote_provenance_only": true
+    },
+    {
+      "run_id": "nextgen-fp8fa2-qwen38-chat128-c16-r0-20261030c",
+      "status": "COMPLETE_INDEPENDENT117SHA_ACTUAL_AIPERF_VERIFIED_RELEASED",
+      "validity": "actual_model20_known_Graph_warm16_and_measured128_raw_independently_verified_not_SLOcertification",
+      "metric_path": "reports/operations/session-recovery-20261030-01a1765d/FP8-C-independent-AIPerf-audit-a1.json",
+      "local_metric_exists": true,
+      "metric_sha256": "f1a1b82d0ed34158ef3be1569e198931e554fca43f28bf1f14d9051f2860a837",
+      "manifest_is_remote_provenance_only": true
+    },
+    {
+      "run_id": "nextgen-bf16-qwen38-long16-c8-r0-20261030f",
+      "status": "COMPLETE_INDEPENDENT112SHA_ACTUAL_LONG_AIPERF16_VERIFIED_RELEASED",
+      "validity": "actual_long16_source_and_SSE_usage_Graph_verified_not_maxcapacity_or_SLO",
+      "metric_path": "reports/operations/session-recovery-20261030-01a1765d/long-BF16-F-independent-AIPerf-audit-a1.json",
+      "local_metric_exists": true,
+      "metric_sha256": "3c6e9f48971c02ca17da28550ac4d7b8305a561907bf613062e28c84af020fad",
+      "manifest_is_remote_provenance_only": true
+    },
+    {
+      "run_id": "nextgen-nvfp4-qwen38-long16-c8-r0-20261030g",
+      "status": "COMPLETE_INDEPENDENT117SHA_ACTUAL_LONG_AIPERF16_VERIFIED_RELEASED",
+      "validity": "actual_long16_complete_raw_Graph_SSE_usage_verified_not_SLO_or_quality_acceptance",
+      "metric_path": "reports/operations/session-recovery-20261030-01a1765d/long-NVFP4-G-independent-AIPerf-audit-a1.json",
+      "local_metric_exists": true,
+      "metric_sha256": "af80228e21909cbc8d6e9293654344d1c34326fb69833d85d3fd0f7ee897edb6",
+      "manifest_is_remote_provenance_only": true
+    },
+    {
+      "run_id": "nextgen-bf16-qwen38-native-tools32-r0-20261030l",
+      "status": "NOT_LAUNCHED_LOCAL_HISTORY_ONLY_NO_TICKET_ZERO_GPU",
+      "validity": "no_model_or_GPU_data_local_preflight_refusal",
+      "metric_path": "reports/operations/session-recovery-20261030-01a1765d/tools-L-local-index-history-refusal-closeout-a1.json",
+      "local_metric_exists": true,
+      "metric_sha256": "dfe8e8a24e0c212ea1951ef576fb4d428ca2eb3184e8e22e090f9d6225337381",
+      "manifest_is_remote_provenance_only": true
+    },
+    {
+      "run_id": "nextgen-bf16-qwen38-native-tools32-r0-20261030r",
+      "status": "COMPLETE_INDEPENDENT280SHA_ACTUAL_NATIVE_TOOL32_SCORED_RELEASED",
+      "validity": "actualmodel_nativeAPI_tool32_state_response_quality_verified_not_fullBFCL_or_generalacceptance",
+      "metric_path": "reports/experiments/nextgen-tools-20261030/bf16-r-v1/actual_model_audit.json",
+      "local_metric_exists": true,
+      "metric_sha256": "49b73007fec083bbc8a82931e6378a99cf4072161b716dc9cc5b8449645efcdd",
+      "manifest_is_remote_provenance_only": true
+    },
+    {
+      "run_id": "nextgen-fp8fa2-qwen38-long16-c8-r0-20261030h",
+      "status": "COMPLETE_INDEPENDENT117SHA_ACTUAL_LONG_AIPERF16_VERIFIED_RELEASED",
+      "validity": "actual_long16_complete_raw_Graph_SSE_usage_verified_not_SLO_or_quality_acceptance",
+      "metric_path": "reports/operations/session-recovery-20261030-01a1765d/long-FP8-H-independent-AIPerf-audit-a1.json",
+      "local_metric_exists": true,
+      "metric_sha256": "925051e6b24ce88c146d5a2cd81a4f2330de70dc1e6e75878ee6b0e63e243c3e",
+      "manifest_is_remote_provenance_only": true
+    },
+    {
+      "run_id": "nextgen-bf16-qwen38-prefix32-c16-r0-20261030o",
+      "status": "COMPLETE_INDEPENDENT_FULL_RAW_AIPERF32_VERIFIED_RELEASED",
+      "validity": "actualprefix32_model_Graph_AIPerf_verified_noSLOacceptance",
+      "metric_path": "reports/operations/session-recovery-20261030-01a1765d/prefix-BF16-O-independent-AIPerf-audit-a1.json",
+      "local_metric_exists": true,
+      "metric_sha256": "fe2ba704da53b0b5dfd6ae019174558be9125370e8d8defae6dbce4d3866c95c",
+      "manifest_is_remote_provenance_only": true
+    },
+    {
+      "run_id": "nextgen-nvfp4-qwen38-prefix32-c16-r0-20261030p",
+      "status": "COMPLETE_INDEPENDENT117SHA_MODEL_GRAPH_AIPERF32_VERIFIED_RELEASED",
+      "validity": "actualprefix32_raw_model_Graph_AIPerf_independentlyverified_noSLOacceptance",
+      "metric_path": "reports/operations/session-recovery-20261030-01a1765d/prefix-NVFP4-P-independent-AIPerf-audit-a1.json",
+      "local_metric_exists": true,
+      "metric_sha256": "fb1726a36a28a2aff5f0ca49fbe1d1fdb161105fbf7e820e96e8fd7b61ea29ab",
+      "manifest_is_remote_provenance_only": true
+    },
+    {
+      "run_id": "nextgen-fp8fa2-qwen38-prefix32-c16-r0-20261030q",
+      "status": "COMPLETE_INDEPENDENT117SHA_REAL_MODEL_GRAPH_AIPERF32_VERIFIED_RELEASED",
+      "validity": "actualprefix32_raw_model_Graph_AIPerf_verified_noSLOacceptance",
+      "metric_path": "reports/operations/session-recovery-20261030-01a1765d/prefix-FP8-Q-independent-AIPerf-audit-a1.json",
+      "local_metric_exists": true,
+      "metric_sha256": "36dab24b2ff454819fa9f702f80fcc8efe668268acf16bd8bc2021ce6550cd74",
+      "manifest_is_remote_provenance_only": true
+    },
+    {
+      "run_id": "nextgen-nvfp4-qwen38-native-tools32-r0-20261030m",
+      "status": "COMPLETE_INDEPENDENT285SHA_ACTUAL_NATIVE_TOOL32_SCORED_RELEASED",
+      "validity": "actualmodel_nativeAPI_tool32_state_response_quality_verified_not_fullBFCL_or_generalacceptance",
+      "metric_path": "reports/experiments/nextgen-tools-20261030/nvfp4-m-v1/actual_model_audit.json",
+      "local_metric_exists": true,
+      "metric_sha256": "8dca0ebe3e55136cdda0f224adc1b3dd34b2c5cbd2b38ce148dcc99647fcc095",
+      "manifest_is_remote_provenance_only": true
+    },
+    {
+      "run_id": "nextgen-fp8fa2-qwen38-native-tools32-r0-20261030n",
+      "status": "COMPLETE_INDEPENDENT285SHA_ACTUAL_NATIVE_TOOL32_SCORED_RELEASED",
+      "validity": "actualmodel_nativeAPI_tool32_state_response_quality_verified_onebudgetfailure_retained",
+      "metric_path": "reports/experiments/nextgen-tools-20261030/fp8-n-v1/actual_model_audit.json",
+      "local_metric_exists": true,
+      "metric_sha256": "54c0a2b61172c3352c7a26f7b00a78d7e18794a62fb91ee8e6972cc624f39839",
+      "manifest_is_remote_provenance_only": true
+    },
+    {
+      "run_id": "nextgen-bf16-qwen38-mixed8192-calibration-r0-20261030s",
+      "status": "COMPLETE_INDEPENDENT93SHA_REAL136_GRAPH_PARALLEL_LONG_RESIDENCY_VERIFIED_RELEASED",
+      "validity": "actual136_graph_runtimeoptions_parallel_longresidency_pilot_only",
+      "metric_path": "reports/operations/session-recovery-20261030-01a1765d/mixed-bf16-s-independent-residency-pilot-a1.json",
+      "local_metric_exists": true,
+      "metric_sha256": "71d8cb7b2f052e65c4a8fb7eda6c481a63d1ef8d461b5f664b2f9fc8acc91233",
+      "manifest_is_remote_provenance_only": true
+    },
+    {
+      "run_id": "nextgen-bf16-qwen38-mixed8192-quality1720-r0-20261030t",
+      "status": "ORIGINAL_DISPATCH_ACK_TICKET_LEDGER_RUNNING",
+      "validity": "originalACK_1720quality_notyet_generated_or_scored",
+      "metric_path": "reports/operations/session-recovery-20261030-01a1765d/mixed-bf16-t-original-launch-a1.stdout.json",
+      "local_metric_exists": true,
+      "metric_sha256": "f027150b4ab2c496edae0f530f0485e08d4abe87abe1bab969cd4a16823415c3",
+      "manifest_is_remote_provenance_only": true
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+test_missing_duplicate_nonfinite_or_wrong_count_cannot_become_valid_data (tests.test_service_metrics.ServiceMetricsTests) ... ok
+test_real_own_server_html_shape_and_ratio_units (tests.test_service_metrics.ServiceMetricsTests) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK

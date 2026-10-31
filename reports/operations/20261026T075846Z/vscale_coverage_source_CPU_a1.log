@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "<stdin>", line 4, in <module>
+  File "/home/mingasa/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/unittest/suite.py", line 24, in __init__
+    self.addTests(tests)
+  File "/home/mingasa/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/unittest/suite.py", line 57, in addTests
+    for test in tests:
+                ^^^^^
+  File "<stdin>", line 4, in <genexpr>
+  File "/home/mingasa/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/unittest/loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mingasa/projects/xllm_quant_kvcache-agent-vscale-coverage-20261027/tests/python/test_flashinfer_native_kv.py", line 23, in <module>
+    pytest.skip("FlashInfer tests require CUDA", allow_module_level=True)
+  File "/home/mingasa/venvs/vllm/lib/python3.12/site-packages/_pytest/outcomes.py", line 138, in __call__
+    raise Skipped(msg=reason, allow_module_level=allow_module_level)
+Skipped: FlashInfer tests require CUDA

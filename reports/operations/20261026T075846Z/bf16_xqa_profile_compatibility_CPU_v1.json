@@ -1,0 +1,11 @@
+{
+  "classification": "CPU_only_profile_contract",
+  "cases": {
+    "unchanged_FP8_cases": 640,
+    "new_BF16_FA3_XQA_cases": 2,
+    "unchanged_other_BF16_cases": 638
+  },
+  "GPU_verified": false,
+  "source_base": "ede2b9e7",
+  "new_profile_file_sha256": "8f631f433ed5793c579870f753117911bf28dba55779de477bbc4174a762b77f"
+}

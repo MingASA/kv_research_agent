@@ -1,0 +1,13 @@
+{
+  "schema": "native-tools-cpu-b-correct-loop-log-readonly-v1",
+  "run_id": "nextgen-native-tools-cpu-20261028b",
+  "remote_path": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/scratch/nextgen-native-tools-cpu-20261028b/CPU_loop.log",
+  "exists": true,
+  "size_bytes": 493,
+  "sha256": "c23f873738c9145ffaab4cc09166ccb03c6d43fdad7fd7d90026131eaa14c7fd",
+  "tail_bytes": 493,
+  "tail_text": "{\"classification\": \"CPU_CONVERSATION_PROTOCOL_FIXTURE_NOT_MODEL_GENERATIONS\", \"checks\": {\"all32_original_tasks_attempted\": true, \"all112_original_user_turns_completed\": false, \"all32_conversations_completed\": false, \"all173_real_in_memory_tool_calls\": false, \"all224_fixture_SSE_API_records_verified\": false, \"all_tool_replies_match_independent_reference\": false}, \"all_checks_pass\": false, \"actual_bounded_CPU_tool_children\": 32, \"real_tool_calls\": 173, \"fake_SSE_provider_invocations\": 224}\n",
+  "remote_writes": false,
+  "identity_source": "original y ticket approval only; no use of y request.remote_output",
+  "prior_receipt_correction": "receipt-002-loop-log.json queried wrong y agent_work/runs path; preserved unchanged"
+}

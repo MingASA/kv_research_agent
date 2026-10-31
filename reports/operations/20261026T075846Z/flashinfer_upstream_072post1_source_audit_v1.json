@@ -1,0 +1,69 @@
+{
+  "observed_utc": "2026-10-26T22:37:01.760485+00:00",
+  "classification": "confirmed_source_comparison_no_upgrade_no_GPU",
+  "installed_runtime_version": "0.6.18.post1",
+  "upstream_release": "v0.7.2.post1",
+  "upstream_release_date_utc": "2026-10-23",
+  "upstream_primary_release": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.2.post1",
+  "files_downloaded_provenance": [
+    {
+      "url": "https://raw.githubusercontent.com/flashinfer-ai/flashinfer/v0.7.2.post1/flashinfer/xqa.py",
+      "relative_path": "flashinfer/xqa.py",
+      "bytes": 24480,
+      "sha256": "6a3f7330980b976201cff0fcdf51e2958e454c4c5951ad2b30c1f2aa13722d33"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/flashinfer-ai/flashinfer/v0.7.2.post1/flashinfer/decode.py",
+      "relative_path": "flashinfer/decode.py",
+      "bytes": 215997,
+      "sha256": "e230c0d41ddf9383fadbeeecd4f5017064ae109f64338b6b2a849d8cdbc6fd14"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/flashinfer-ai/flashinfer/v0.7.2.post1/flashinfer/prefill.py",
+      "relative_path": "flashinfer/prefill.py",
+      "bytes": 379246,
+      "sha256": "b4a51047d4ddcc5fd9deda930fe165c622b00eb183a7a958a6f3f812b6bd402d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/flashinfer-ai/flashinfer/v0.7.2.post1/flashinfer/utils.py",
+      "relative_path": "flashinfer/utils.py",
+      "bytes": 62925,
+      "sha256": "abc97f7494cecc485395aeecd87d15e05ea518cf3d6ab1cc8c7e96fcdec3ad4d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/flashinfer-ai/flashinfer/v0.7.2.post1/flashinfer/jit/xqa.py",
+      "relative_path": "flashinfer/jit/xqa.py",
+      "bytes": 9348,
+      "sha256": "b47625e738bcef4324e874a20fa4c3aee91c477dafd72b24480e3d235c3d20cc"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/flashinfer-ai/flashinfer/v0.7.2.post1/csrc/xqa/mha_sm90.cu",
+      "relative_path": "csrc/xqa/mha_sm90.cu",
+      "bytes": 128911,
+      "sha256": "1edd5708fafae8667c9b6ad3119c00d373ad53104bb4f696cb5409423cc7b068"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/flashinfer-ai/flashinfer/v0.7.2.post1/pyproject.toml",
+      "relative_path": "pyproject.toml",
+      "bytes": 12553,
+      "sha256": "1cc5767dcee6a0d9fa50f066314d3a40f9da797f22f024cfb559b179bd0ca881"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/flashinfer-ai/flashinfer/v0.7.2.post1/flashinfer/version.py",
+      "relative_path": "flashinfer/version.py",
+      "bytes": 1335,
+      "sha256": "a7dde55794323d8d61edf7153a66275b571f039322772ae0ec125d3099607001"
+    }
+  ],
+  "sm90_core_file_comparison": {
+    "installed_sha256": "1edd5708fafae8667c9b6ad3119c00d373ad53104bb4f696cb5409423cc7b068",
+    "upstream_sha256": "1edd5708fafae8667c9b6ad3119c00d373ad53104bb4f696cb5409423cc7b068",
+    "byte_identical": true
+  },
+  "confirmed_new_FA3_contract": "is_fa3_backend_supported still rejects BF16-Q with FP8-KV; dtype mixing does not become available merely by installing this release",
+  "limitations": [
+    "Core translation-unit identity does not prove equality of transitive headers/compiler/JIT dispatch/workspaces",
+    "Wrapper/speculative/other architecture changes exist; not a proof that every H800 result is unchanged",
+    "No package installed or upgraded on H800; current immutable quality experiment remains on0.6.18.post1"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "source_sha256": "ba1d02138445e4d357968832843ff7a0059523ac36f7ff180c0e021ae45ea96f",
+  "good_input_copy_verified": true,
+  "wrong_remote_SHA_rejected": true,
+  "unsafe_path_rejected": true,
+  "invalid_size_rejected": true,
+  "raw_output_never_reused": true,
+  "existing_target_never_overwritten": true,
+  "remote_or_GPU_used": false
+}

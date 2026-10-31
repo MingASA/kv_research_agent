@@ -1,0 +1,42 @@
+{
+  "sha_manifests": [
+    "results/mirrors/nextgen-bf16-qwen38-mixed8192-prefix32-r1-20261030wc-complete-a1/SHA_MANIFEST.json",
+    "results/mirrors/nextgen-fp8fa2-qwen38-mixed8192-prefix32-r0-20261030xc-complete-a1/SHA_MANIFEST.json",
+    "results/mirrors/nextgen-nvfp4-qwen38-mixed8192-prefix32-r0-20261030yc-complete-a1/SHA_MANIFEST.json"
+  ],
+  "include": [
+    "reports/experiments/nextgen-mixed-prefill-20261030/PRESSURE_ANALYSIS.md",
+    "reports/experiments/nextgen-mixed-prefill-20261030/pressure-outcomes-v1",
+    "reports/experiments/nextgen-mixed-prefill-20261030/residency-figure-v1",
+    "reports/experiments/nextgen-mixed-prefill-20261030/actual-cache-storage-accounting-a1.json",
+    "reports/experiments/nextgen-mixed-prefill-20261030/actual-cache-storage-accounting-a1.csv",
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-bf16-wc-application-metrics-original-a1",
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-fp8-xc-application-metrics-original-a1",
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-nvfp4-yc-application-metrics-original-a1",
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-BF16-WC-independent-AIPerf-audit-a1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-FP8-XC-independent-AIPerf-audit-a1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-NVFP4-YC-independent-failed-load-audit-a1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-FP8-XC-vs-BF16-WC-independent-a1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-BF16-WC-independent-residency-a1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-FP8-XC-independent-residency-a1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-BF16-WC-raw-content-gaps-a1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-FP8-XC-raw-content-gaps-a1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/old-BF16-O-raw-content-gaps-a1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/ITL_METRIC_DEFINITION-a1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-YC-observer-SSH-reply-loss-a1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-YC-original-timeout-failure-closeout-a1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-YC-original-after-observer-SSH-loss-readonly-a1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-YC-original-failed-request-metadata-readonly-a1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/audit_failed_mixed_pressure.py",
+    "reports/operations/session-recovery-20261030-01a1765d/test_failed_pressure_inventory.py",
+    "reports/operations/session-recovery-20261030-01a1765d/failed-load-audit-first-CPU-source-a1.py",
+    "reports/operations/session-recovery-20261030-01a1765d/failed-load-audit-first-CPU-failure-a1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/audit_mixed_pressure_residency.py",
+    "reports/operations/session-recovery-20261030-01a1765d/audit_stream_content_gaps.py",
+    "reports/operations/session-recovery-20261030-01a1765d/local-posthoc-analysis-diagnostic-a1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/render_mixed_residency.py",
+    "reports/operations/session-recovery-20261030-01a1765d/tabulate_mixed_pressure.py",
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-pressure-figures-visual-verification-a1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-WC-real-GPU-session-repair-acceptance-a1.json"
+  ]
+}

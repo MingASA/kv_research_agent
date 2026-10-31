@@ -1,0 +1,78 @@
+"""Compare paired core scores with dataset-appropriate uncertainty units."""
+
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+from pathlib import Path
+
+import numpy as np
+
+from scripts.audit_nextgen_validation import _jsonl
+from scripts.controller.durable import write_new_json
+
+
+def _cluster_bootstrap(differences: np.ndarray, groups: list[str], rng: np.random.Generator, repeats: int) -> np.ndarray:
+    """Resample complete context clusters, retaining their question weights."""
+    unique=sorted(set(groups))
+    values=[differences[np.asarray(groups)==group] for group in unique]
+    totals=np.array([float(value.sum()) for value in values])
+    counts=np.array([len(value) for value in values])
+    sampled=rng.integers(0,len(unique),(repeats,len(unique)))
+    return totals[sampled].sum(axis=1)/counts[sampled].sum(axis=1)
+
+
+def compare(reference: Path, candidate: Path, *, repeats: int = 4000) -> dict:
+    baseline=json.loads((reference/'summary.json').read_text())
+    low=json.loads((candidate/'summary.json').read_text())
+    for field in ('model_id','canonical_API_payloads_sha256','labels_sha256','scoring_protocol_sha256',
+                  'binary_sha256','server_source_commit','service'):
+        if baseline[field]!=low[field]:
+            raise ValueError('Paired quality configurations/input identities differ: '+field)
+    left_rows=_jsonl(reference/'per_record_scores.jsonl');right_rows=_jsonl(candidate/'per_record_scores.jsonl')
+    left={row['id']:row for row in left_rows};right={row['id']:row for row in right_rows}
+    if set(left)!=set(right) or len(left)!=1720 or len(left_rows)!=1720 or len(right_rows)!=1720:
+        raise ValueError('Missing/duplicate paired quality record')
+    rng=np.random.default_rng(20261027)
+    tasks={};longbench_boot=[]
+    for task in sorted({row['task'] for row in left.values() if row['group']=='core'}):
+        ids=sorted(identifier for identifier,row in left.items() if row['task']==task and row['group']=='core')
+        for identifier in ids:
+            if any(left[identifier][field]!=right[identifier][field] for field in ('task','group','source_index','context_sha256')):
+                raise ValueError('A paired record maps to another source context')
+        differences=np.array([right[identifier]['score']-left[identifier]['score'] for identifier in ids])
+        groups=[left[identifier]['context_sha256'] or identifier for identifier in ids]
+        boot=_cluster_bootstrap(differences,groups,rng,repeats)
+        if task!='gsm8k':longbench_boot.append(boot)
+        tasks[task]={'paired_records':len(ids),'independent_context_clusters':len(set(groups)),
+                     'delta_percentage_points':float(differences.mean()*100),
+                     'paired_95pct_context_cluster_CI_pp':(np.quantile(boot,[.025,.975])*100).tolist(),
+                     'improved_questions':int((differences>0).sum()),'worsened_questions':int((differences<0).sum()),
+                     'ties':int((differences==0).sum()),
+                     'reference_capped':sum(left[identifier]['finish_reason']=='length' for identifier in ids),
+                     'candidate_capped':sum(right[identifier]['finish_reason']=='length' for identifier in ids)}
+    macro=np.stack(longbench_boot).mean(axis=0)*100
+    return {'schema':'nextgen_paired_core_quality_comparison_v1','reference_run':baseline['run_id'],
+            'candidate_run':low['run_id'],'reference_arm':baseline['arm'],'candidate_arm':low['arm'],
+            'reference_summary_sha256':hashlib.sha256((reference/'summary.json').read_bytes()).hexdigest(),
+            'candidate_summary_sha256':hashlib.sha256((candidate/'summary.json').read_bytes()).hexdigest(),
+            'task_differences':tasks,'LongBench_core_macro_delta_pp':
+                 low['LongBench_core_macro_percent_unrounded']-baseline['LongBench_core_macro_percent_unrounded'],
+            'LongBench_macro_paired_95pct_context_cluster_CI_pp':np.quantile(macro,[.025,.975]).tolist(),
+            'bootstrap_repeats':repeats,'bootstrap_seed':20261027,
+            'bootstrap_scope':'Paired questions for GSM; complete same-context question clusters within each fixed LongBench task. '
+                              'Eight core tasks retain equal macro weight; one long supplement excluded.',
+            'user_quality_tolerance_provided':False,'production_quality_accepted':False,
+            'service_performance_claim':False}
+
+
+def main() -> None:
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--reference',type=Path,required=True)
+    parser.add_argument('--candidate',type=Path,required=True)
+    parser.add_argument('--out',type=Path,required=True)
+    args=parser.parse_args();write_new_json(args.out,compare(args.reference,args.candidate))
+
+
+if __name__=='__main__':main()

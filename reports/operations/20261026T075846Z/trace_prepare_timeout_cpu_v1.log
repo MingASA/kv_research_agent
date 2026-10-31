@@ -1,0 +1,50 @@
+test_absent_remote_after_lost_reply_keeps_unknown_reservation (tests.test_execution.DispatchTests) ... ok
+test_changed_or_revoked_authority_never_dispatches (tests.test_execution.DispatchTests) ... ok
+test_lost_prepare_reply_becomes_unknown_and_cannot_relaunch (tests.test_execution.DispatchTests) ... ok
+test_lost_start_reply_recovers_readonly_without_second_start (tests.test_execution.DispatchTests) ... ok
+test_concrete_authority_and_protocol_are_accepted (tests.test_execution.PolicyTests) ... ok
+test_docker_has_only_new_run_writable_and_exact_gpu (tests.test_execution.PolicyTests) ... ok
+test_eager_and_natural_stopping_cannot_masquerade_as_fixed_decode (tests.test_execution.PolicyTests) ... ok
+test_missing_graph_source_and_mount_encoding_are_rejected (tests.test_execution.PolicyTests) ... ok
+test_standing_grant_preserves_shared_server_conditions (tests.test_execution.PolicyTests) ... ok
+test_worker_env_strips_inherited_backend_and_preserves_cuda_compat (tests.test_execution.PolicyTests) ... ok
+test_worker_rejects_early_eos_even_if_average_looks_good (tests.test_execution.PolicyTests) ... ok
+test_corrupt_assets_do_not_create_remote_subtree (tests.test_execution.RemotePreparationTests) ... ok
+test_ownership_and_ancestry_change_are_refused (tests.test_execution.RemotePreparationTests) ... ok
+test_preparation_is_exclusive_and_preserves_existing_result (tests.test_execution.RemotePreparationTests) ... ok
+test_start_intent_prevents_second_launch_even_with_lost_reply (tests.test_execution.RemotePreparationTests) ... ok
+test_status_absent_never_creates_or_launches_anything (tests.test_execution.RemotePreparationTests) ... ok
+test_symlinked_existing_subtree_is_refused_without_touching_target (tests.test_execution.RemotePreparationTests) ... ok
+test_lost_reply_records_actual_stderr_without_dumping_rpc_source (tests.test_execution.TransportTests) ... ok
+test_mutations_are_attempted_exactly_once (tests.test_execution.TransportTests) ... ok
+test_only_existing_exact_approved_key_is_selected (tests.test_execution.TransportTests) ... ok
+test_readonly_ssh_has_three_bounded_retries (tests.test_execution.TransportTests) ... ok
+test_device_time_excludes_inter_arm_idle_windows (tests.test_quota_ledger.QuotaTests) ... ok
+test_dispatch_disconnect_blocks_all_new_launches (tests.test_quota_ledger.QuotaTests) ... ok
+test_expiry_or_notes_edit_does_not_reset_budget (tests.test_quota_ledger.QuotaTests) ... ok
+test_failure_time_is_charged_and_settlement_is_exactly_once (tests.test_quota_ledger.QuotaTests) ... ok
+test_foreign_identity_terminal_is_rejected (tests.test_quota_ledger.QuotaTests) ... ok
+test_historical_id_is_not_relaunched (tests.test_quota_ledger.QuotaTests) ... ok
+test_lost_database_is_not_reinitialized (tests.test_quota_ledger.QuotaTests) ... ok
+test_only_never_dispatched_reservation_can_cancel (tests.test_quota_ledger.QuotaTests) ... ok
+test_overrun_is_recorded_without_capping_and_blocks_future (tests.test_quota_ledger.QuotaTests) ... ok
+test_replicate_dedupe_survives_terminal_failure (tests.test_quota_ledger.QuotaTests) ... ok
+test_reserve_and_reopen_keeps_full_reservation (tests.test_quota_ledger.QuotaTests) ... ok
+test_surviving_container_cannot_be_settled (tests.test_quota_ledger.QuotaTests) ... ok
+test_terminal_without_gpu_release_cannot_free_quota (tests.test_quota_ledger.QuotaTests) ... ok
+test_two_processes_cannot_reserve_same_gpu (tests.test_quota_ledger.QuotaTests) ... ok
+test_any_old_writer_process_container_or_gpu_pid_keeps_unknown (tests.test_absent_dispatch.AbsentDispatchTests) ... ok
+test_changed_identity_boot_or_short_observation_keeps_unknown (tests.test_absent_dispatch.AbsentDispatchTests) ... ok
+test_missing_witness_and_missing_process_evidence_keep_unknown (tests.test_absent_dispatch.AbsentDispatchTests) ... ok
+test_remote_readonly_program_compiles (tests.test_absent_dispatch.AbsentDispatchTests) ... ok
+test_stable_absence_has_zero_gpu_cost_and_no_remote_success (tests.test_absent_dispatch.AbsentDispatchTests) ... ok
+test_large_payload_and_future_import_roundtrip_unchanged (tests.test_transport_wire.WireEnvelopeTests) ... ok
+test_oversized_json_rejected_before_subprocess (tests.test_transport_wire.WireEnvelopeTests) ... ok
+test_remote_decompression_limit_precedes_original_source (tests.test_transport_wire.WireEnvelopeTests) ... ok
+test_small_readonly_payload_keeps_plain_protocol (tests.test_transport_wire.WireEnvelopeTests) ... ok
+test_truncated_transport_never_executes_original_program (tests.test_transport_wire.WireEnvelopeTests) ... ok
+
+----------------------------------------------------------------------
+Ran 45 tests in 1.485s
+
+OK

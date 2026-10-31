@@ -1,0 +1,1 @@
+{"classification": "CPU_input_proposal_no_activations", "requests": 128, "canonical_sha256": "1a36f83244b09b3edd85895586ec324624640ade004eb3ece672e94ee5dcfe5a", "prompt_tokens_cpu": {"min": 4103, "max": 20227, "total": 1458582, "at_least8K": 84, "at_least16K": 34}, "overlap_with_previous_evaluation": {"record_ids": 0, "exact_records": 0, "exact_contexts": 0}}

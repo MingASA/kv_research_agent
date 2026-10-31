@@ -1,0 +1,22 @@
+{
+  "classification": "confirmed_source_bytes_only",
+  "performance_source_commit": "1c2be15976b7fbb1d8b79e469659b2c8e52cff00",
+  "engine_files_sha256": {
+    "xllm/python/model_executor/executor.py": "95b37f5d812128f272ca1075607d011cacc1f739935d27227e0efc61fd7d5e42",
+    "xllm/python/attention/flashinfer.py": "d330d076f675acc74e6abc0352c869381ed2c62ca79e54c88cc5a929721c46bb",
+    "xllm/python/attention/flashinfer_fp8.py": "69629bff41fa3ed2f1fcfaa4cc2ccf8ed5822eabcd02360c4761f7e92687b806",
+    "xllm/python/attention/quantized.py": "44879acc8b6d0af83e1494a0a4a8726ad430bfd6ad5af5b49d34a5f3c3b380c8",
+    "xllm/python/attention/quantized_triton.py": "98cec576320f50886c72c0ecb1a9125d561175f894975dccb4a761490a53f1f6",
+    "xllm/python/attention/native_kv.py": "08b9b07ac97e42a32c5b0d31d0be5aa3f1d86d8998dd85e7d69b094252aae3b1",
+    "xllm/python/model_executor/runners/decode_cuda_graph.py": "70459b505bde58a214ba3facf6f356a4334da8485de9a0415217d9ff00e4836e",
+    "xllm/core/runtime/worker_impl.cpp": "f0ea93deb9d06d52351239f327061849dee4257a1b6a1d8ab108101518b40765",
+    "xllm/python/attention/native_profile.py": "8f631f433ed5793c579870f753117911bf28dba55779de477bbc4174a762b77f",
+    "xllm/python/attention/query_quantization.py": "8dd21054df27ac4e0879b7b77de31a4289aa73e02427fb2ace4e72f50c549dad",
+    "tools/check_native_fa3_operator.py": "39cc5941be332f2f990719b78a94e6d6f853011597cbe8d2a1f688d380656289",
+    "xllm/python/attention/xqa_decode.py": "ff80c1d407f102322834446065ca87718f0821789a3ade8c042e5956d89ff14d"
+  },
+  "whole_runtime_identical_claim": false,
+  "quality_tools_changed": true,
+  "CPU_tests_passed": 76,
+  "CUDA_skipped": 1
+}

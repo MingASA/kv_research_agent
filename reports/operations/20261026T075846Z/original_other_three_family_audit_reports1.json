@@ -1,0 +1,38 @@
+[
+  {
+    "family": "burstgpt",
+    "run_id": "prod-trace-xqa-burstgpt-s1-r0-20261027f",
+    "root_complete": true,
+    "classification": "confirmed_trace_measurement_integrity",
+    "completion_rate_delta_pct": 0.0,
+    "measurement_successes": {
+      "bf16": 6221,
+      "fp8_e4m3": 6221
+    },
+    "report": "reports/experiments/production-xqa-burstgpt-original-20261027/REPORT.md"
+  },
+  {
+    "family": "synthetic",
+    "run_id": "prod-trace-xqa-synthetic-s1-r0-20261027f",
+    "root_complete": true,
+    "classification": "confirmed_trace_measurement_integrity",
+    "completion_rate_delta_pct": 35.78916870656273,
+    "measurement_successes": {
+      "bf16": 342,
+      "fp8_e4m3": 381
+    },
+    "report": "reports/experiments/production-xqa-synthetic-original-20261027/REPORT.md"
+  },
+  {
+    "family": "conversation",
+    "run_id": "prod-trace-xqa-conversation-s1-r0-20261027f",
+    "root_complete": false,
+    "classification": "confirmed_trace_measurement_integrity_runtime_conflict_retained",
+    "completion_rate_delta_pct": 150.12470786579857,
+    "measurement_successes": {
+      "bf16": 219,
+      "fp8_e4m3": 373
+    },
+    "report": "reports/experiments/production-xqa-conversation-original-20261027/REPORT.md"
+  }
+]

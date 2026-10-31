@@ -1,0 +1,76 @@
+{
+  "schema": "kv-aiperf-schedule-cpu-v1",
+  "classification": "cpu_loopback_fixture_only",
+  "model_inference_performed": false,
+  "gpu_used": false,
+  "cases": {
+    "mooncake_payload": {
+      "command": [
+        "/home/mingasa/venvs/vllm/bin/python",
+        "-B",
+        "-m",
+        "aiperf",
+        "profile",
+        "--model",
+        "Qwen2.5-14B-Instruct",
+        "--tokenizer",
+        "/home/mingasa/kv-research-agent/results/mirrors/quality-protocols-20261026T075846Z/files/model_metadata",
+        "--url",
+        "http://127.0.0.1:44740",
+        "--endpoint-type",
+        "chat",
+        "--streaming",
+        "--use-server-token-count",
+        "--use-legacy-max-tokens",
+        "--random-seed",
+        "20261026",
+        "--input-file",
+        "/home/mingasa/kv-research-agent/results/prepared/aiperf-payload-schedule-cpu-20261026-a1/mooncake_payload/fixture.jsonl",
+        "--custom-dataset-type",
+        "mooncake_trace",
+        "--fixed-schedule",
+        "--fixed-schedule-auto-offset",
+        "--request-count",
+        "4",
+        "--concurrency",
+        "16",
+        "--workers-max",
+        "1",
+        "--no-gpu-telemetry",
+        "--ui",
+        "none",
+        "--request-timeout-seconds",
+        "30",
+        "--export-level",
+        "raw",
+        "--output-artifact-dir",
+        "/home/mingasa/kv-research-agent/results/prepared/aiperf-payload-schedule-cpu-20261026-a1/mooncake_payload/artifacts"
+      ],
+      "source_sha256": "f258d75bebe53953cd7327ad8026c834225b9a2ad94525595f8fc7ab5de5ba70",
+      "received": 4,
+      "expected_relative_seconds": [
+        0.0,
+        0.10000000000000009,
+        0.5,
+        1.1
+      ],
+      "observed_relative_seconds": [
+        0.0,
+        0.093604635,
+        0.494400407,
+        1.096210968
+      ],
+      "errors_seconds": [
+        0.0,
+        -0.006395365000000083,
+        -0.005599593000000014,
+        -0.0037890320000000255
+      ],
+      "within_200ms_fixture_bound": true,
+      "parent_payload_file_sha256": "bfac6a3e2ef500d33ea88191c8eef3b52117028b588f7de5035769eca345ef06",
+      "all_frozen_payloads_unchanged_on_wire": true,
+      "fixture_timestamps_override_source": true
+    }
+  },
+  "limitation": "Short deterministic fixture, not a production trace or server performance result; GPU-load pacing still needs runtime audit"
+}

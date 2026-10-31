@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "schema": "kvra-absent-dispatch-readonly-witness-v1",
+  "run_id": "prod-sharegpt-xqa-c128-r0-20261026a",
+  "reservation_id": "f02e420faf4c49a298c8865ba91bc1f9",
+  "request_sha256": "8f63bba418385468bf05da5ed6c1311022ef62ac194a95397f645be871a18af1",
+  "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+  "observed_utc": "2026-10-26T23:44:56.814917+00:00",
+  "monotonic_ns": 3662338554185095,
+  "root_absent": true,
+  "remote_rpc_processes": [],
+  "run_processes": [],
+  "all_run_containers": [],
+  "selected_compute_apps": [],
+  "remote_writes": 0
+}

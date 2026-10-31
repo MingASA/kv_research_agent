@@ -1,0 +1,20 @@
+{
+  "automatic_queue": {
+    "current_run_id": "nextgen-fp8-qwen38-quality-core1720-r2-20261028o",
+    "cursor": 0,
+    "directory": "/home/mingasa/kv-research-agent/state/queues/nextgen-core-sequential-20261028b",
+    "not_after_utc": "2026-10-29T08:57:14.407599+00:00",
+    "status": "HALTED_EXPERIMENT_FAILURE_OR_UNKNOWN",
+    "updated_utc": "2026-10-28T14:22:34.920193+00:00"
+  },
+  "observed_utc": "2026-10-28T21:40:59.672636+00:00",
+  "remote": {
+    "rpc_error": "RuntimeError: Read-only SSH recovery exhausted: SSH timed out after 45 seconds"
+  },
+  "root_active_run_ids": [],
+  "rpc": "one status+GPU terminal y anchor; mutation=False",
+  "schema": "luna-live-watch-receipt-v1",
+  "sequence": 79,
+  "started_utc": "2026-10-28T21:39:16.289727+00:00",
+  "ticket_run_id": "nextgen-fp8fa2-qwen38-quality-completion802-r0-20261028y"
+}

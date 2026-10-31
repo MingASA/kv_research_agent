@@ -1,0 +1,89 @@
+{
+  "classification": "confirmed_raw_timing_and_installed_source_analysis",
+  "run_id": "prod-trace-xqa-toolagent-s1-r2-20261027c",
+  "audit_sha256": "4c7c44217dccec39425460d9c047336d48e833e3320ebe2f126b2cc4a9d417b3",
+  "script_sha256": "44896356a6fd1688cb7fde50f25afab5797c70ca2369dac6819ab88b8c8b3022",
+  "arms": {
+    "bf16": {
+      "raw_sha256": "10dbe5da13ca1445c6ca9799b371a846580136faf0b0fe3543dd0b2e3f1a0689",
+      "successful_measurement_records": 271,
+      "terminal_minus_content_ms": {
+        "count": 271,
+        "mean": 1770.3420401660517,
+        "min": 0.0,
+        "max": 41482.987926,
+        "p50": 0.112926,
+        "p95": 10932.4939045,
+        "p99": 34152.50050590004
+      },
+      "OSL_le4_terminal_minus_content_ms": {
+        "count": 73,
+        "mean": 0.09358082191780821,
+        "min": 0.0,
+        "max": 0.689329,
+        "p50": 0.06158,
+        "p95": 0.39852299999999974,
+        "p99": 0.5965642000000001
+      },
+      "OSL_gt4_terminal_minus_content_ms": {
+        "count": 198,
+        "mean": 2423.009401439394,
+        "min": 0.0,
+        "max": 41482.987926,
+        "p50": 0.147575,
+        "p95": 19387.383472449907,
+        "p99": 36713.45960021
+      }
+    },
+    "fp8_e4m3": {
+      "raw_sha256": "b8c8b8ea7b961ddfe700ecda7ec02794b02cb1033ab183c186c8e960ab069c71",
+      "successful_measurement_records": 528,
+      "terminal_minus_content_ms": {
+        "count": 528,
+        "mean": 1358.4998374564395,
+        "min": 0.0,
+        "max": 52623.507654,
+        "p50": 0.14155,
+        "p95": 8717.688835149955,
+        "p99": 31929.844997160064
+      },
+      "OSL_le4_terminal_minus_content_ms": {
+        "count": 128,
+        "mean": 0.0871134140625,
+        "min": 0.0,
+        "max": 3.631212,
+        "p50": 0.0,
+        "p95": 0.3686681999999988,
+        "p99": 0.7944435200000004
+      },
+      "OSL_gt4_terminal_minus_content_ms": {
+        "count": 400,
+        "mean": 1793.1919091500001,
+        "min": 0.0,
+        "max": 52623.507654,
+        "p50": 0.19906600000000002,
+        "p95": 12449.34331724996,
+        "p99": 34171.727240309985
+      }
+    }
+  },
+  "source_sha256": {
+    "metrics/types/request_latency_metric.py": "c79db67c59e90650a31aaaa09cc2d65ccc8db07c085e9b200355bce7b06d610b",
+    "records/record_processor_service.py": "fbcf266650c0b3604d0f605f2f3c105f07bc59519943a882257a1b71a58c399d",
+    "common/models/record_models.py": "a33cff0072dd3e3d8af2419891c64a8cd440f0cbe5ba41429a8ec248a8fb14e1",
+    "endpoints/openai_chat.py": "61b913f6c7836169816998b89eb758f72710048b30a8993b33528cf4b9d9e147"
+  },
+  "definitions": {
+    "request_latency": "AIPerf start to last nonempty parsed content response",
+    "request_end_ns": "Epoch-mapped timestamp of the last raw SSE response, including content-free terminal packets",
+    "offered_e2e_ms": "Source offered timestamp to last raw SSE response; includes client start lag and content-free terminal tail",
+    "stream_tail_gap_ms": "Last raw SSE response minus last nonempty content response"
+  },
+  "new_GPU_work": false,
+  "original_metrics_changed": false,
+  "limitations": [
+    "Final SSE is an application observation, not TCP EOF or a hardware wire timestamp",
+    "These timestamps do not identify a GPU/kernel/queue cause for the terminal tail",
+    "Both latency definitions are retained; no metric or original record is rewritten"
+  ]
+}

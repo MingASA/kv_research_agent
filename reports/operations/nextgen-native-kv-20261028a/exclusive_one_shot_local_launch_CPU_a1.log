@@ -1,0 +1,8 @@
+test_existing_intent_refuses_before_spawn_and_preserves_receipt (test_launch_once.LaunchOnceTests) ... ok
+test_existing_receipt_refuses_without_truncating (test_launch_once.LaunchOnceTests) ... ok
+test_registered_history_never_relaunches (test_launch_once.LaunchOnceTests) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.165s
+
+OK

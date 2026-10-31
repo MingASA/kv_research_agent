@@ -1,0 +1,192 @@
+{
+  "files": {
+    "START_INTENT.json": {
+      "sha256": "36916084038f7de902c35780c04e59d3a50816fec7e181e83fdec02e3639a30e",
+      "value": {
+        "request_sha256": "57d2b8dc15bda5fc9269c2f895c5ebc14bdcc60f8e01b9f716a50e5c0fcf0f00"
+      }
+    },
+    "SUPERVISOR_PROCESS.json": {
+      "sha256": "b791bd4d2f3cfbe831c9f12f039889bbf98e4fabaaef53b6380c7b08345f70af",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-523927.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-523927.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-523927.scope\n",
+          "pid": 2371064,
+          "start_ticks": 370226443,
+          "uid": 1005
+        }
+      }
+    },
+    "SUPERVISOR_STARTED.json": {
+      "sha256": "9af3cf7a4de6417a90860cf7602b9b8af3398544fbac9d4b69d1a041763f1156",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-523927.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-523927.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-523927.scope\n",
+          "pid": 2371064,
+          "start_ticks": 370226443,
+          "uid": 1005
+        },
+        "ticket_sha256": "3f9b717f331c9dfac8a9bdaa9affcb3d9a3ced8e15935bb7e2cd6c7e1ac77942"
+      }
+    },
+    "owned_containers.json": {
+      "sha256": "62a47b4e5737afb2db8fb102ddf6050faf678ea40a9655e2baf1eaa399959633",
+      "value": {
+        "containers": [
+          {
+            "container_id": "afe8a02df66ac1ecdbc9b3ab08042505ba7c1ac54422f7db7c6011e935546053",
+            "pid_identity": {
+              "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+              "cgroup": "12:rdma:/system.slice/docker-afe8a02df66ac1ecdbc9b3ab08042505ba7c1ac54422f7db7c6011e935546053.scope\n11:blkio:/system.slice/docker-afe8a02df66ac1ecdbc9b3ab08042505ba7c1ac54422f7db7c6011e935546053.scope\n10:net_cls,net_prio:/system.slice/docker-afe8a02df66ac1ecdbc9b3ab08042505ba7c1ac54422f7db7c6011e935546053.scope\n9:freezer:/system.slice/docker-afe8a02df66ac1ecdbc9b3ab08042505ba7c1ac54422f7db7c6011e935546053.scope\n8:memory:/system.slice/docker-afe8a02df66ac1ecdbc9b3ab08042505ba7c1ac54422f7db7c6011e935546053.scope\n7:hugetlb:/system.slice/docker-afe8a02df66ac1ecdbc9b3ab08042505ba7c1ac54422f7db7c6011e935546053.scope\n6:perf_event:/system.slice/docker-afe8a02df66ac1ecdbc9b3ab08042505ba7c1ac54422f7db7c6011e935546053.scope\n5:pids:/system.slice/docker-afe8a02df66ac1ecdbc9b3ab08042505ba7c1ac54422f7db7c6011e935546053.scope\n4:devices:/system.slice/docker-afe8a02df66ac1ecdbc9b3ab08042505ba7c1ac54422f7db7c6011e935546053.scope\n3:cpu,cpuacct:/system.slice/docker-afe8a02df66ac1ecdbc9b3ab08042505ba7c1ac54422f7db7c6011e935546053.scope\n2:cpuset:/system.slice/docker-afe8a02df66ac1ecdbc9b3ab08042505ba7c1ac54422f7db7c6011e935546053.scope\n1:name=systemd:/system.slice/docker-afe8a02df66ac1ecdbc9b3ab08042505ba7c1ac54422f7db7c6011e935546053.scope\n",
+              "pid": 2384509,
+              "start_ticks": 370238770,
+              "uid": 1005
+            },
+            "released": false
+          }
+        ],
+        "request_sha256": "57d2b8dc15bda5fc9269c2f895c5ebc14bdcc60f8e01b9f716a50e5c0fcf0f00",
+        "reservation_id": "336425c339534ca0b54858617b3967f6"
+      }
+    },
+    "state.json": {
+      "sha256": "9a21243421b89f2632b8767e89a749fa0247f870d2cb10a5cd698ccd5d9538a4",
+      "value": {
+        "arm": "bf16",
+        "containers": [
+          "afe8a02df66ac1ecdbc9b3ab08042505ba7c1ac54422f7db7c6011e935546053"
+        ],
+        "request_sha256": "57d2b8dc15bda5fc9269c2f895c5ebc14bdcc60f8e01b9f716a50e5c0fcf0f00",
+        "status": "RUNNING"
+      }
+    }
+  },
+  "gpu_snapshot": "0, GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 29351, 0\n1, GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 0, 0\n2, GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 0, 0\n3, GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 0, 0\n4, GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 0, 0\n5, GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 0, 0\n6, GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 0, 0\n7, GPU-47211491-ba0d-78bf-5c84-f968c0648213, 0, 0",
+  "live_owned_containers": [
+    "afe8a02df66ac1ecdbc9b3ab08042505ba7c1ac54422f7db7c6011e935546053"
+  ],
+  "log_tail": {
+    "events.jsonl": "{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3702264993939321,\"utc\":\"2026-10-27T10:50:23.254874+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3702264993939321,\"utc\":\"2026-10-27T10:50:53.578757+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3702264993939321,\"utc\":\"2026-10-27T10:51:24.080872+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3702264993939321,\"utc\":\"2026-10-27T10:51:54.408721+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3702264993939321,\"utc\":\"2026-10-27T10:52:24.805464+00:00\"}\n{\"action\":\"OWNED_CONTAINER_CREATED\",\"arm\":\"bf16\",\"id\":\"afe8a02df66ac1ecdbc9b3ab08042505ba7c1ac54422f7db7c6011e935546053\",\"utc\":\"2026-10-27T10:52:25.843178+00:00\"}\n",
+    "output/bf16/container.log": "",
+    "output/bf16/operator_acceptance.log": "I20261027 18:52:30.516861 10 flashinfer.py:179] KV_ALLOCATION {\"layers\": [{\"tensors\": {\"key\": {\"dtype\": \"torch.bfloat16\", \"shape\": [7, 128, 8, 128], \"bytes\": 1835008}, \"value\": {\"dtype\": \"torch.bfloat16\", \"shape\": [7, 128, 8, 128], \"bytes\": 1835008}}, \"key_format\": \"bf16\", \"value_format\": \"bf16\", \"resident_bytes\": 3670016, \"bytes_per_token\": 4096}], \"resident_bytes\": 3670016, \"token_capacity\": 896}\nI20261027 18:55:17.752724 10 check_native_fa3_operator.py:118] OPERATOR_REFERENCE prefill {'relative_l2': 0.0022824311163276434, 'max_abs': 0.0005266666412353516}\nI20261027 18:55:27.506278 10 check_native_fa3_operator.py:118] OPERATOR_REFERENCE capture_replay {'relative_l2': 0.003906028810888529, 'max_abs': 0.0008789524435997009}\nI20261027 18:55:27.508676 10 check_native_fa3_operator.py:118] OPERATOR_REFERENCE changed_context {'relative_l2': 0.0028711154591292143, 'max_abs': 0.0009812712669372559}\nI20261027 18:55:27.511619 10 check_native_fa3_operator.py:118] OPERATOR_REFERENCE padded_graph {'relative_l2': 0.0028711154591292143, 'max_abs': 0.0009812712669372559}\nI20261027 18:55:27.513211 10 check_native_fa3_operator.py:118] OPERATOR_REFERENCE restored_finite_padding {'relative_l2': 0.0028711154591292143, 'max_abs': 0.0009812712669372559}\nI20261027 18:55:27.514117 10 check_native_fa3_operator.py:219] Native production operator/Graph acceptance passed for bf16; no model/service/quality claim\n",
+    "output/bf16/range_operator/probe.log": "I20261027 18:55:31.599041 408 kv_range_probe.py:128] KV_RANGE_PROBE_BOUND {\"method\": \"heldout_BF16_KV_distribution_GPU_aggregate_v1\", \"reserved_bytes\": 105216, \"layers\": 48, \"heads\": 8, \"counts_in_graph\": true, \"host_reads_in_forward\": false}\nI20261027 18:55:31.856539 408 check_kv_range_probe.py:145] KV range numerical, padded stride, real Graph and reset/export checks completed\n",
+    "output/bf16/server.log": "6a:36435 in web browser.\nI20261027 18:55:33.326009   426 xllm_server.cpp:307] DistributeWorker server started on address 127.0.0.1:36435, idle_timeout_sec: -1, num_threads: 8\nI20261027 18:55:33.326017   426 worker_server.cpp:152] Worker 0: server address: 127.0.0.1:36435\nI20261027 18:55:33.327360   426 worker_server.cpp:516] Worker#0 connect to 127.0.0.1:19888 success.\nI20261027 18:55:33.329458   426 worker_server.cpp:197] Worker CP config: cp_size=1, cp_group_size=1, cp_sharding_stage=disabled, instance_role=DEFAULT\nI20261027 18:55:33.329483   426 threadpool.cpp:32] ThreadPool created, thread count 1, pool name Worker.async, cpu_binding false.\nI20261027 18:55:33.329706   426 threadpool.cpp:32] ThreadPool created, thread count 1, pool name WorkerImpl.schedule, cpu_binding false.\nE20261027 18:55:33.925000   423 net.cpp:68] getaddrinfo failed\nE20261027 18:55:33.925097   423 net.cpp:68] getaddrinfo failed\nI20261027 18:55:33.925130   423 threadpool.cpp:32] ThreadPool created, thread count 1, pool name RemoteWorker.request, cpu_binding false.\nI20261027 18:55:33.925372   423 threadpool.cpp:32] ThreadPool created, thread count 4, pool name RemoteWorker.copy, cpu_binding false.\nI20261027 18:55:33.926506   423 remote_worker.cpp:57] RemoteWorker Hello connected, server_address: 127.0.0.1:36435, global_rank_: 0\nI20261027 18:55:33.926697   423 dist_manager.cpp:331] Started cluster health check thread\nI20261027 18:55:33.926710   423 threadpool.cpp:32] ThreadPool created, thread count 1, pool name LLMEngine.link, cpu_binding false.\nI20261027 18:55:33.926915   423 threadpool.cpp:32] ThreadPool created, thread count 16, pool name LLMEngine.forward_input, cpu_binding false.\nI20261027 18:55:33.955349   423 threadpool.cpp:32] ThreadPool created, thread count 32, pool name HFModelLoader.load_weights, cpu_binding false.\nI20261027 18:55:33.960827   423 llm_engine.cpp:236] Initializing model from: /models/Qwen2.5-14B-Instruct\nI20261027 18:55:33.960873   423 tokenizer_factory.cpp:33] Create fast tokenizer.\nI20261027 18:55:34.382311   423 llm_engine.cpp:267] Block info, block_size: 128, n_local_kv_heads: 8, head_dim: 128, n_layers: 48, dtype: BFloat16, kv_cache_dtype: auto\nI20261027 18:55:34.823567   423 llm_engine.cpp:287] Tokenizer/model vocab differ: tokenizer=151665, model=152064\nI20261027 18:55:34.823637   423 llm_engine.cpp:293] Initializing model with ModelArgs: [model_type: qwen2, encoder_embedding_mode: 0, embedding_mode: 0, dtype: bfloat16, hidden_size: 5120, hidden_act: silu, intermediate_size: 13824, moe_intermediate_size: 0, n_routed_experts: 0, n_activated_experts: 0, num_experts_per_tok: 0, n_layers: 48, n_encoder_layers: 0, head_dim: 128, decoder_head_dim: 0, n_heads: 40, decoder_n_heads: 0, n_kv_heads: 8, decoder_n_kv_heads: -1, vocab_size: 152064, rms_norm_eps: 1e-06, layer_norm_eps: 0, rotary_dim: 0, rope_theta: 1e+06, rope_scaling_rope_type: , rope_scaling_factor: 0, rope_scaling_low_freq_factor: 0, rope_scaling_high_freq_factor: 0, rope_scaling_original_max_position_embeddings: 0, rope_scaling_mrope_section: [], max_position_embeddings: 32768, use_absolute_position_embedding: 0, bos_token_id: 0, eos_token_id: 151645, pad_token_id: 0, attn_scalar: 0, no_bias: 0, qkv_bias: 0, stop_token_ids: [151645, ], vision_start_token_id: 0, vision_end_token_id: 0, vision_token_id: 0, image_token_id: 0, video_token_id: 0, vision_custom_adapter: , vision_max_slice_nums: 0, mm_dropout: 0, mm_hidden_act: , mm_hidden_size: 0, mm_image_size: 0, mm_intermediate_size: 0, mm_num_channels: 0, mm_initializer_range: 0, mm_layer_norm_eps: 0, mm_num_attention_heads: 0, mm_num_beam_groups: 0, mm_num_beams: 0, mm_num_hidden_layers: 0, mm_num_return_sequences: 0, mm_output_attentions: 0, mm_output_hidden_states: 0, mm_output_scores: 0, mm_patch_size: 0, mm_projection_dim: 0, mm_spatial_merge_size: 0, mm_spatial_patch_size: 0, mm_remove_invalid_values: 0, mm_repetition_penalty: 0, mm_return_dict: 0, mm_return_dict_in_generate: 0, mm_temperature: 0, mm_tie_encoder_decoder: 0, mm_tie_word_embeddings: 0, mm_top_k: 0, mm_top_p: 0, mm_torchscript: 0, mm_use_bfloat16: 0, mm_head_dim: 0, mm_vocab_size: 0, mm_window_size: 0, mm_fullatt_block_indexes: [], mm_deepstack_visual_indexes: [], mm_tokens_per_second: 0, mm_temporal_patch_size: 0, mm_projector_type: , mm_projector_hidden_act: , mm_projector_n_layers: 0, mm_vision_feature_layer: 0, mm_vision_feature_select_strategy: , mm_image_do_center_crop: 0, mm_image_crop_height_size: 336, mm_image_crop_width_size: 336, mm_image_do_resize: 0, mm_image_resize_shortest_edge: 336, mm_image_resample: 0, mm_image_do_rescale: 0, mm_video_do_rescale: 0, mm_image_rescale_factor: 0, mm_image_do_normalize: 0, mm_image_normalize_mean: [], mm_image_normalize_std: [], mm_image_shortest_edge: 0, mm_image_longest_edge: 0, mm_image_min_pixels: 0, mm_image_max_pixels: 0, mm_image_patch_size: 0, mm_image_temporal_patch_size: 0, mm_image_merge_size: 0, mm_image_token_index: 0, mm_video_normalize_mean: [], mm_video_normalize_std: [], mm_video_shortest_edge: 0, mm_video_longest_edge: 0, mm_video_patch_size: 0, mm_video_temporal_patch_size: 0, mm_video_merge_size: 0, mm_pad_token_id: 0, tie_word_embeddings: 0, use_sliding_window: 0, sliding_window: 131072, max_window_layers: 70, query_num: 0, num_speculative_tokens: 0, in_channels: -1, out_channels: -1, down_block_types: [], up_block_types: [], block_out_channels: [], layers_per_block: 1, latent_channels: -1, norm_num_groups: -1, sample_size: -1, scale_factor: 0, shift_factor: 0, mid_block_add_attention: 1, force_upcast: 1, use_quant_conv: 0, use_post_quant_conv: 0, joint_attention_dim: 0, pooled_projection_dim: 0, guidance_embeds: 1, axes_dims_rope: [], num_single_layers: 0, d_model: 0, num_layers: 0, d_kv: 0, d_ff: 0, act_fn: , is_gated_act: 1, relative_attention_num_buckets: 0, relative_attention_max_distance: 0, num_train_timesteps: 0, shift: 0, use_dynamic_shifting: 0, base_shift: 0, max_shift: 0, base_image_seq_len: 0, max_image_seq_len: 0]\nI20261027 18:55:34.823704   423 llm_engine.cpp:294] Initializing model with quant args: QuantArgs: [quant_method: , quantize_type: , bits: 0, moe_weight_bits: 8, group_size: 0, desc_act: 0, is_sym: 0, activation_dynamic: 1, fmt: e4m3, ignored_modules: 0, quant_version: , quant_desc_count: 0]\nI20261027 18:55:34.823710   423 llm_engine.cpp:295] Initializing model with tokenizer args: TokenizerArgs: [tokenizer_type: fast, add_bos_token: 0, add_eos_token: 0, bos_token: , eos_token: <|im_end|>, pad_token: <|endoftext|>, tokenizer_class: Qwen2Tokenizer, pattern: ]\nI20261027 18:55:34.823732   423 llm_engine.cpp:296] Initializing model with random seed: 41047410\nI20261027 18:55:34.860992   455 threadpool.cpp:32] ThreadPool created, thread count 32, pool name HFModelLoader.load_weights, cpu_binding false.\nI20261027 18:55:34.866523   455 tokenizer_factory.cpp:33] Create fast tokenizer.\nI20261027 18:55:37.809477   455 worker_impl.cpp:2166] Temporarily setting ATen threads to 1 during weight loading, tp_world_size=1, prev_threads=1\nI20261027 18:55:37.809602   515 hf_model_loader.cpp:545] Loading model weights from /models/Qwen2.5-14B-Instruct/model-00005-of-00008.safetensors\nI20261027 18:55:37.809598   514 hf_model_loader.cpp:545] Loading model weights from /models/Qwen2.5-14B-Instruct/model-00004-of-00008.safetensors\nI20261027 18:55:37.809588   512 hf_model_loader.cpp:545] Loading model weights from /models/Qwen2.5-14B-Instruct/model-00002-of-00008.safetensors\nI20261027 18:55:37.809617   517 hf_model_loader.cpp:545] Loading model weights from /models/Qwen2.5-14B-Instruct/model-00007-of-00008.safetensors\nI20261027 18:55:37.809618   518 hf_model_loader.cpp:545] Loading model weights from /models/Qwen2.5-14B-Instruct/model-00008-of-00008.safetensors\nI20261027 18:55:37.809607   516 hf_model_loader.cpp:545] Loading model weights from /models/Qwen2.5-14B-Instruct/model-00006-of-00008.safetensors\nI20261027 18:55:37.809587   511 hf_model_loader.cpp:545] Loading model weights from /models/Qwen2.5-14B-Instruct/model-00001-of-00008.safetensors\nI20261027 18:55:37.809592   513 hf_model_loader.cpp:545] Loading model weights from /models/Qwen2.5-14B-Instruct/model-00003-of-00008.safetensors\n",
+    "supervisor.log": "",
+    "watchdog.log": ""
+  },
+  "ok": true,
+  "operator_acceptance": {
+    "bf16": {
+      "sha256": "4d3c8ea48951d8c1457559c0e57d1bd2f48584ec85c1606f1896a48c49a39d8e",
+      "value": {
+        "arm": "bf16",
+        "backend": {
+          "attention_impl": "flashinfer",
+          "class": "FlashInferBackend",
+          "decode_impl": "xqa",
+          "decode_internal_q_data_type": "torch.bfloat16",
+          "decode_tensor_cores": true,
+          "flashinfer_version": "0.6.18.post1",
+          "kv_cache_dtype": "auto",
+          "kv_data_type": "torch.bfloat16",
+          "paged_prefill": true,
+          "planner_backend": "fa3",
+          "profile_scope": "production_xqa",
+          "q_data_type": "torch.bfloat16",
+          "q_scale": null,
+          "quality_transform": false,
+          "scale_strategy": "none",
+          "xqa_enable_pdl": true,
+          "xqa_graph_padding": "reserved_page0_one_token_discard",
+          "xqa_max_context": 32768,
+          "xqa_unused_kv_policy": "finite_full_initialization"
+        },
+        "classification": "operator_correctness_only",
+        "decode_impl": "xqa",
+        "device": "NVIDIA H800",
+        "fresh_dirty_cache_initialized_to_zero": true,
+        "invalid_nan_padding_diagnostics": {
+          "key": {
+            "finite_outputs": 10240,
+            "total_outputs": 10240
+          },
+          "value": {
+            "finite_outputs": 10240,
+            "total_outputs": 10240
+          }
+        },
+        "model_loaded": false,
+        "model_quality_validated": false,
+        "noncontiguous_q_checked": true,
+        "padded_graph_bucket_checked": true,
+        "partial_page_and_replan": true,
+        "prefill_planner": "fa3",
+        "real_capture_and_replay": true,
+        "reference": "FP32 dense causal attention on the same representable Q/K/V; relative L2 <=.05 plus rtol .08, atol .015",
+        "reference_comparisons": {
+          "capture_replay": {
+            "max_abs": 0.0008789524435997009,
+            "relative_l2": 0.003906028810888529
+          },
+          "changed_context": {
+            "max_abs": 0.0009812712669372559,
+            "relative_l2": 0.0028711154591292143
+          },
+          "padded_graph": {
+            "max_abs": 0.0009812712669372559,
+            "relative_l2": 0.0028711154591292143
+          },
+          "prefill": {
+            "max_abs": 0.0005266666412353516,
+            "relative_l2": 0.0022824311163276434
+          },
+          "restored_finite_padding": {
+            "max_abs": 0.0009812712669372559,
+            "relative_l2": 0.0028711154591292143
+          }
+        },
+        "reserved_page0_not_used_for_live_sequences": true,
+        "schema": "kv-native-fa3-operator-acceptance-v1",
+        "service_performance_measured": false,
+        "unused_padding_reference": "maximum_finite_FP8_or_large_finite_BF16"
+      }
+    }
+  },
+  "owned_containers": [
+    {
+      "created": "2026-10-27T10:52:25.801372072Z",
+      "id": "afe8a02df66ac1ecdbc9b3ab08042505ba7c1ac54422f7db7c6011e935546053",
+      "running": true
+    }
+  ],
+  "quality_progress": {
+    "bf16": {},
+    "fp8_e4m3": {}
+  },
+  "range_probe_progress": {
+    "range_operator/acceptance.json": {
+      "sha256": "fa32d854233f10eaec7e2acd4e598b97ccb038dc8b16ae3b4293f21d2e79565b",
+      "value": {
+        "FP32_moments_match_Torch_QDQ": true,
+        "actual_capture_and_changed_input_replay": true,
+        "actual_quiescent_reset_export_thread_handshake": true,
+        "classification": "operator_only_KV_distribution_reduction_Graph_control_checks",
+        "exact_integer_counts_match_Torch_QDQ": true,
+        "layers_and_phases_separate": true,
+        "model_loaded": false,
+        "noncontiguous_key_and_value": true,
+        "nonpositive_padding_NaN_Inf_excluded": true,
+        "production_probe_reserved_bytes": 105216,
+        "reset_excludes_warmup_and_preserves_Graph_buffers": true,
+        "service_or_model_quality_certified": false,
+        "valid_nonfinite_values_counted": true
+      }
+    }
+  },
+  "relaunch_allowed": false,
+  "run_id": "prod-calib-bf16xqa-heldout128-r0-20261027a",
+  "status": "RUNNING",
+  "supervisor_alive": true
+}

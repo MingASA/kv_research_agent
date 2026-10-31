@@ -1,0 +1,1 @@
+{"argv":["python3","-B","-m","scripts.controller.cli","launch","--package","/home/mingasa/kv-research-agent/results/prepared/packages/prod-diag-bf16xqa-toolagent-s0125-r1-20261027b/package.json"],"parent_pid":182944,"pid":182945,"run_id":"prod-diag-bf16xqa-toolagent-s0125-r1-20261027b","utc":"2026-10-27T06:54:48.771367+00:00"}

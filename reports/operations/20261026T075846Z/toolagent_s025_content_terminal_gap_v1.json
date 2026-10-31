@@ -1,0 +1,193 @@
+{
+  "classification": "confirmed_raw_timing_and_installed_source_analysis",
+  "run_id": "prod-trace-bf16xqa-toolagent-s025-r0-20261027b",
+  "audit_sha256": "4c42db71a841f362b1ea71df8a5b026990c3933de8c9603eab5e8376cf58d96d",
+  "script_sha256": "eea8b0d59719477ad70d6b552b8d9b92240275aa0426b19587985b74d70e96ea",
+  "arms": {
+    "bf16": {
+      "raw_sha256": "a1aeed9f168f3398d2cf36f31acddcef375fc5abb794d8fcbff2eacbf487d69e",
+      "successful_measurement_records": 1689,
+      "terminal_minus_content_ms": {
+        "count": 1689,
+        "mean": 961.3185169775015,
+        "min": 0.0,
+        "max": 43671.751051,
+        "p50": 0.135885,
+        "p95": 7378.189426999992,
+        "p99": 18769.54854215995
+      },
+      "OSL_le4_terminal_minus_content_ms": {
+        "count": 405,
+        "mean": 0.24317089876543208,
+        "min": 0.0,
+        "max": 4.531152,
+        "p50": 0.096246,
+        "p95": 0.8429867999999995,
+        "p99": 1.7027541999999956
+      },
+      "OSL_gt4_terminal_minus_content_ms": {
+        "count": 1284,
+        "mean": 1264.4614415584113,
+        "min": 0.0,
+        "max": 43671.751051,
+        "p50": 0.142839,
+        "p95": 9983.365910499979,
+        "p99": 20970.487399530004
+      },
+      "final_SSE_inclusive_per_server_output_token_ms": {
+        "count": 1686,
+        "mean": 129.93140773798032,
+        "min": 14.776163088461537,
+        "max": 774.7377345,
+        "p50": 54.43948411545725,
+        "p95": 573.79990575,
+        "p99": 688.7506610750002
+      },
+      "illustrative_TTFT_and_final_SSE_inclusive_mean100ms_qualified_RPS": {
+        "1": 0.1492062169199787,
+        "5": 0.5795697269476724,
+        "10": 0.7998265233533552
+      },
+      "largest_terminal_tails": [
+        {
+          "session_id": "toolagent-source-14996",
+          "server_output_tokens": 984,
+          "terminal_minus_content_ms": 43671.751051,
+          "official_request_mean_ITL_ms": 6.601027185147508,
+          "final_SSE_inclusive_per_server_output_token_ms": 51.028037409969485
+        },
+        {
+          "session_id": "toolagent-source-14156",
+          "server_output_tokens": 842,
+          "terminal_minus_content_ms": 32433.596697,
+          "official_request_mean_ITL_ms": 5.285656712247324,
+          "final_SSE_inclusive_per_server_output_token_ms": 43.85117002615933
+        },
+        {
+          "session_id": "toolagent-source-14852",
+          "server_output_tokens": 658,
+          "terminal_minus_content_ms": 30519.891492,
+          "official_request_mean_ITL_ms": 10.991032764079147,
+          "final_SSE_inclusive_per_server_output_token_ms": 57.444444471841706
+        },
+        {
+          "session_id": "toolagent-source-15473",
+          "server_output_tokens": 581,
+          "terminal_minus_content_ms": 27335.100247,
+          "official_request_mean_ITL_ms": 10.840397172413791,
+          "final_SSE_inclusive_per_server_output_token_ms": 57.96988035689655
+        },
+        {
+          "session_id": "toolagent-source-14407",
+          "server_output_tokens": 614,
+          "terminal_minus_content_ms": 26624.879283,
+          "official_request_mean_ITL_ms": 9.16374685807504,
+          "final_SSE_inclusive_per_server_output_token_ms": 52.59748141435563
+        }
+      ]
+    },
+    "fp8_e4m3": {
+      "raw_sha256": "6b28b83ed6f52c4f4bc2f53b1f0c906ad0718ba137f9c439f266ce7f0284e163",
+      "successful_measurement_records": 1689,
+      "terminal_minus_content_ms": {
+        "count": 1689,
+        "mean": 793.4782922078153,
+        "min": 0.0,
+        "max": 38796.471716,
+        "p50": 0.141389,
+        "p95": 5272.8537537999855,
+        "p99": 20141.11854703996
+      },
+      "OSL_le4_terminal_minus_content_ms": {
+        "count": 405,
+        "mean": 0.2499487160493827,
+        "min": 0.0,
+        "max": 1.733248,
+        "p50": 0.147572,
+        "p95": 0.8799799999999998,
+        "p99": 1.4356391999999945
+      },
+      "OSL_gt4_terminal_minus_content_ms": {
+        "count": 1284,
+        "mean": 1043.6788211129283,
+        "min": 0.0,
+        "max": 38796.471716,
+        "p50": 0.1382985,
+        "p95": 7356.634470949997,
+        "p99": 21784.809579470006
+      },
+      "final_SSE_inclusive_per_server_output_token_ms": {
+        "count": 1686,
+        "mean": 216.3744830713285,
+        "min": 13.761960762550881,
+        "max": 1015.03718,
+        "p50": 85.9785980427987,
+        "p95": 735.3361297499998,
+        "p99": 906.1567798250005
+      },
+      "illustrative_TTFT_and_final_SSE_inclusive_mean100ms_qualified_RPS": {
+        "1": 0.16675200429591486,
+        "5": 0.6209721877768118,
+        "10": 0.8746807587301056
+      },
+      "largest_terminal_tails": [
+        {
+          "session_id": "toolagent-source-14785",
+          "server_output_tokens": 422,
+          "terminal_minus_content_ms": 38796.471716,
+          "official_request_mean_ITL_ms": 12.534433847980997,
+          "final_SSE_inclusive_per_server_output_token_ms": 104.68757331591449
+        },
+        {
+          "session_id": "toolagent-source-15261",
+          "server_output_tokens": 886,
+          "terminal_minus_content_ms": 36574.384347,
+          "official_request_mean_ITL_ms": 9.41749187118644,
+          "final_SSE_inclusive_per_server_output_token_ms": 50.7444798338983
+        },
+        {
+          "session_id": "toolagent-source-14783",
+          "server_output_tokens": 384,
+          "terminal_minus_content_ms": 32624.865262,
+          "official_request_mean_ITL_ms": 15.93463540992167,
+          "final_SSE_inclusive_per_server_output_token_ms": 101.11705123759792
+        },
+        {
+          "session_id": "toolagent-source-14765",
+          "server_output_tokens": 449,
+          "terminal_minus_content_ms": 30301.094477,
+          "official_request_mean_ITL_ms": 16.20184361607143,
+          "final_SSE_inclusive_per_server_output_token_ms": 83.83821521651785
+        },
+        {
+          "session_id": "toolagent-source-14106",
+          "server_output_tokens": 437,
+          "terminal_minus_content_ms": 28772.879353,
+          "official_request_mean_ITL_ms": 20.96967982798165,
+          "final_SSE_inclusive_per_server_output_token_ms": 86.96252238073394
+        }
+      ]
+    }
+  },
+  "source_sha256": {
+    "metrics/types/request_latency_metric.py": "c79db67c59e90650a31aaaa09cc2d65ccc8db07c085e9b200355bce7b06d610b",
+    "records/record_processor_service.py": "fbcf266650c0b3604d0f605f2f3c105f07bc59519943a882257a1b71a58c399d",
+    "common/models/record_models.py": "a33cff0072dd3e3d8af2419891c64a8cd440f0cbe5ba41429a8ec248a8fb14e1",
+    "endpoints/openai_chat.py": "61b913f6c7836169816998b89eb758f72710048b30a8993b33528cf4b9d9e147"
+  },
+  "definitions": {
+    "request_latency": "AIPerf start to last nonempty parsed content response",
+    "request_end_ns": "Epoch-mapped timestamp of the last raw SSE response, including content-free terminal packets",
+    "offered_e2e_ms": "Source offered timestamp to last raw SSE response; includes client start lag and content-free terminal tail",
+    "stream_tail_gap_ms": "Last raw SSE response minus last nonempty content response"
+  },
+  "new_GPU_work": false,
+  "original_metrics_changed": false,
+  "limitations": [
+    "Final SSE is an application observation, not TCP EOF or a hardware wire timestamp",
+    "These timestamps do not identify a GPU/kernel/queue cause for the terminal tail",
+    "Final-SSE-inclusive per-server-token mean is an added completion-time proxy, not hardware step timing or per-token tail latency",
+    "Anonymous ignore-EOS replay can include output tokens without visible content; their exact token IDs were not exported",
+    "Both latency definitions are retained; no metric or original record is rewritten"
+  ]
+}

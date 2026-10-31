@@ -1,0 +1,604 @@
+{
+  "classification": "confirmed_cpu_loader_only",
+  "gpu_used": false,
+  "model_inference_performed": false,
+  "tokenizer": "/home/mingasa/kv-research-agent/results/mirrors/quality-protocols-20261026T075846Z/files/model_metadata",
+  "cases": {
+    "conversation_trace.jsonl": {
+      "source_sha256": "b8cbb061a85206d729d91cdc2981f43c9e0d99209dce588d3af5f7934408b9df",
+      "loaded_requests": 12031,
+      "contiguous_first_requests_exercised": 8,
+      "block_size": 512,
+      "lengths": [
+        {
+          "source_input": 6758,
+          "reencoded_input": 6758,
+          "source_output": 500,
+          "loader_timestamp_ms": 0
+        },
+        {
+          "source_input": 7322,
+          "reencoded_input": 7322,
+          "source_output": 490,
+          "loader_timestamp_ms": 0
+        },
+        {
+          "source_input": 7236,
+          "reencoded_input": 7236,
+          "source_output": 794,
+          "loader_timestamp_ms": 0
+        },
+        {
+          "source_input": 2290,
+          "reencoded_input": 2290,
+          "source_output": 316,
+          "loader_timestamp_ms": 0
+        },
+        {
+          "source_input": 6760,
+          "reencoded_input": 6760,
+          "source_output": 3,
+          "loader_timestamp_ms": 0
+        },
+        {
+          "source_input": 4834,
+          "reencoded_input": 4834,
+          "source_output": 173,
+          "loader_timestamp_ms": 0
+        },
+        {
+          "source_input": 23141,
+          "reencoded_input": 23141,
+          "source_output": 453,
+          "loader_timestamp_ms": 0
+        },
+        {
+          "source_input": 26888,
+          "reencoded_input": 26888,
+          "source_output": 458,
+          "loader_timestamp_ms": 0
+        }
+      ],
+      "prefix_checks": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            0,
+            5
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            0,
+            6
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            0,
+            7
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            1,
+            3
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            1,
+            4
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            1,
+            5
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            1,
+            6
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            1,
+            7
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            2,
+            3
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            2,
+            4
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            2,
+            5
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            2,
+            6
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            2,
+            7
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            3,
+            4
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            3,
+            5
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            3,
+            6
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            3,
+            7
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            4,
+            5
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            4,
+            6
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            4,
+            7
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            5,
+            6
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            5,
+            7
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            6,
+            7
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        }
+      ],
+      "exact_input_lengths": true,
+      "full_source_prefixes_preserved": true
+    },
+    "synthetic_trace.jsonl": {
+      "source_sha256": "bd070915a98fc0ed264d7cfef2ce746002eb3076a695ec31ba2674c0111ec131",
+      "loaded_requests": 3993,
+      "contiguous_first_requests_exercised": 8,
+      "block_size": 512,
+      "lengths": [
+        {
+          "source_input": 40160,
+          "reencoded_input": 40160,
+          "source_output": 6,
+          "loader_timestamp_ms": 0
+        },
+        {
+          "source_input": 36640,
+          "reencoded_input": 36640,
+          "source_output": 4,
+          "loader_timestamp_ms": 0
+        },
+        {
+          "source_input": 23769,
+          "reencoded_input": 23769,
+          "source_output": 3,
+          "loader_timestamp_ms": 40
+        },
+        {
+          "source_input": 32140,
+          "reencoded_input": 32140,
+          "source_output": 92,
+          "loader_timestamp_ms": 277
+        },
+        {
+          "source_input": 18663,
+          "reencoded_input": 18663,
+          "source_output": 210,
+          "loader_timestamp_ms": 471
+        },
+        {
+          "source_input": 28,
+          "reencoded_input": 28,
+          "source_output": 445,
+          "loader_timestamp_ms": 529
+        },
+        {
+          "source_input": 42608,
+          "reencoded_input": 42608,
+          "source_output": 7,
+          "loader_timestamp_ms": 639
+        },
+        {
+          "source_input": 23479,
+          "reencoded_input": 23479,
+          "source_output": 169,
+          "loader_timestamp_ms": 937
+        }
+      ],
+      "prefix_checks": [],
+      "exact_input_lengths": true,
+      "full_source_prefixes_preserved": true
+    },
+    "toolagent_trace.jsonl": {
+      "source_sha256": "48a2db1a13d3bc05e6330140c64f604ba366df20d3c9e128b5c35a01c1fa5f71",
+      "loaded_requests": 23608,
+      "contiguous_first_requests_exercised": 8,
+      "block_size": 512,
+      "lengths": [
+        {
+          "source_input": 6758,
+          "reencoded_input": 6758,
+          "source_output": 500,
+          "loader_timestamp_ms": 0
+        },
+        {
+          "source_input": 7322,
+          "reencoded_input": 7322,
+          "source_output": 490,
+          "loader_timestamp_ms": 0
+        },
+        {
+          "source_input": 7236,
+          "reencoded_input": 7236,
+          "source_output": 794,
+          "loader_timestamp_ms": 0
+        },
+        {
+          "source_input": 2290,
+          "reencoded_input": 2290,
+          "source_output": 316,
+          "loader_timestamp_ms": 0
+        },
+        {
+          "source_input": 9013,
+          "reencoded_input": 9013,
+          "source_output": 3,
+          "loader_timestamp_ms": 0
+        },
+        {
+          "source_input": 6506,
+          "reencoded_input": 6506,
+          "source_output": 3,
+          "loader_timestamp_ms": 0
+        },
+        {
+          "source_input": 4834,
+          "reencoded_input": 4834,
+          "source_output": 173,
+          "loader_timestamp_ms": 0
+        },
+        {
+          "source_input": 3121,
+          "reencoded_input": 3121,
+          "source_output": 20,
+          "loader_timestamp_ms": 0
+        }
+      ],
+      "prefix_checks": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            0,
+            6
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            1,
+            3
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            1,
+            6
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            2,
+            3
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            2,
+            6
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            3,
+            6
+          ],
+          "expected_full_source_prefix_tokens": 512,
+          "observed_reencoded_prefix_tokens": 513,
+          "deficit": 0
+        },
+        {
+          "pair": [
+            4,
+            5
+          ],
+          "expected_full_source_prefix_tokens": 6144,
+          "observed_reencoded_prefix_tokens": 6145,
+          "deficit": 0
+        }
+      ],
+      "exact_input_lengths": true,
+      "full_source_prefixes_preserved": true
+    },
+    "burstgpt_peak10m.csv": {
+      "source_sha256": "c37d11d1befe1f9b742514b9c5bd1f65210b93a3aafaea135c741982a7a695cd",
+      "loaded_requests": 6385,
+      "contiguous_first_requests_exercised": 8,
+      "block_size": 512,
+      "lengths": [
+        {
+          "source_input": 421,
+          "reencoded_input": 421,
+          "source_output": 354,
+          "loader_timestamp_ms": 3063609000.0
+        },
+        {
+          "source_input": 89,
+          "reencoded_input": 89,
+          "source_output": 72,
+          "loader_timestamp_ms": 3063625000.0
+        },
+        {
+          "source_input": 171,
+          "reencoded_input": 171,
+          "source_output": 4,
+          "loader_timestamp_ms": 3063632000.0
+        },
+        {
+          "source_input": 197,
+          "reencoded_input": 197,
+          "source_output": 4,
+          "loader_timestamp_ms": 3063632000.0
+        },
+        {
+          "source_input": 692,
+          "reencoded_input": 692,
+          "source_output": 4,
+          "loader_timestamp_ms": 3063632000.0
+        },
+        {
+          "source_input": 433,
+          "reencoded_input": 433,
+          "source_output": 4,
+          "loader_timestamp_ms": 3063632000.0
+        },
+        {
+          "source_input": 226,
+          "reencoded_input": 226,
+          "source_output": 4,
+          "loader_timestamp_ms": 3063632000.0
+        },
+        {
+          "source_input": 185,
+          "reencoded_input": 185,
+          "source_output": 4,
+          "loader_timestamp_ms": 3063632000.0
+        }
+      ],
+      "prefix_checks": [],
+      "exact_input_lengths": true,
+      "full_source_prefixes_preserved": true
+    }
+  },
+  "scheduling_or_server_verified": false,
+  "limitations": [
+    "Actual loader/prompt/decoder exercised on WSL with tokenizer metadata; H800 production CLI/wire still required",
+    "Eight contiguous requests per file are interface probes, not statistical samples or a throughput benchmark",
+    "Timestamp fields do not prove actual open-loop send timing; chat-template overhead also needs wire/server verification",
+    "Trace output length becomes a generation cap; natural EOS may stop earlier, so actual original OSL replay is unverified"
+  ]
+}

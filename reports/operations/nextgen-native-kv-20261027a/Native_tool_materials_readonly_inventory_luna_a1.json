@@ -1,0 +1,361 @@
+{
+  "findings": {
+    "anonymous_toolagent_trace_note": "ToolAgent payload/length traces were not read or counted as semantic fixtures or complete tool text; they are outside the native BFCL schema corpus.",
+    "corpus_and_schema": {
+      "function_schema_examples": [
+        {
+          "name": "search_engine_query",
+          "property_summaries": {
+            "include_facts": {
+              "enum_prefix": [],
+              "type": "boolean"
+            },
+            "prompt": {
+              "enum_prefix": [],
+              "type": "string"
+            },
+            "since_year": {
+              "enum_prefix": [],
+              "type": "integer"
+            },
+            "source": {
+              "enum_prefix": [
+                "all",
+                "internet",
+                "google"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "prompt"
+          ]
+        },
+        {
+          "name": "generate_image",
+          "property_summaries": {
+            "color_mode": {
+              "enum_prefix": [
+                "RGB",
+                "Grayscale"
+              ],
+              "type": "string"
+            },
+            "height": {
+              "enum_prefix": [],
+              "type": "integer"
+            },
+            "image_format": {
+              "enum_prefix": [
+                "JPEG",
+                "PNG",
+                "BMP"
+              ],
+              "type": "string"
+            },
+            "prompt": {
+              "enum_prefix": [],
+              "type": "string"
+            },
+            "width": {
+              "enum_prefix": [],
+              "type": "integer"
+            }
+          },
+          "required": [
+            "prompt"
+          ]
+        },
+        {
+          "name": "generate_human_image",
+          "property_summaries": {
+            "image_quality": {
+              "enum_prefix": [
+                "low",
+                "medium",
+                "high"
+              ],
+              "type": "string"
+            },
+            "include_background": {
+              "enum_prefix": [],
+              "type": "boolean"
+            },
+            "output_format": {
+              "enum_prefix": [
+                "JPEG",
+                "PNG",
+                "BMP"
+              ],
+              "type": "string"
+            },
+            "prompt": {
+              "enum_prefix": [],
+              "type": "string"
+            }
+          },
+          "required": [
+            "prompt",
+            "image_quality"
+          ]
+        },
+        {
+          "name": "multilingual_llm",
+          "property_summaries": {
+            "language": {
+              "enum_prefix": [
+                "Hindi",
+                "Arabic",
+                "Marathi"
+              ],
+              "type": "string"
+            },
+            "max_length": {
+              "enum_prefix": [],
+              "type": "integer"
+            },
+            "q": {
+              "enum_prefix": [],
+              "type": "string"
+            },
+            "temperature": {
+              "enum_prefix": [],
+              "type": "number"
+            }
+          },
+          "required": [
+            "q"
+          ]
+        },
+        {
+          "name": "english_llm",
+          "property_summaries": {
+            "max_tokens": {
+              "enum_prefix": [],
+              "type": "integer"
+            },
+            "q": {
+              "enum_prefix": [],
+              "type": "string"
+            },
+            "return_probabilities": {
+              "enum_prefix": [],
+              "type": "boolean"
+            },
+            "temperature": {
+              "enum_prefix": [],
+              "type": "number"
+            }
+          },
+          "required": [
+            "q"
+          ]
+        }
+      ],
+      "message_counts": {
+        "1": 262,
+        "2": 12
+      },
+      "message_roles": {
+        "system": 12,
+        "user": 274
+      },
+      "payloads_per_session": {
+        "1": 274
+      },
+      "phase_records": {
+        "measurement": 258,
+        "warmup": 16
+      },
+      "prepared_sessions": 274,
+      "tool_schema_instances": 302,
+      "tools_per_request": {
+        "1": 263,
+        "2": 2,
+        "3": 4,
+        "4": 2,
+        "5": 3
+      },
+      "unique_function_names": 117,
+      "unique_parameter_schema_hashes": 190
+    },
+    "existing_qwen_scope_facts": {
+      "new_qwen38_validated_by_these_materials": false,
+      "package_python_source_commit": "11e7cddbfe33eb21d209c7f48f5e461ac56545eb",
+      "package_response_mode": "buffered",
+      "package_run_id": "prod-tools-bf16xqa-bfcl258-buffered-c128-r0-20261027b",
+      "prep_token_budget": "Rendered prompt cap is 32768-1024 under the frozen prep script/tokenizer.",
+      "prepared_input_model_field": "Qwen2.5-14B-Instruct",
+      "tool_parser": "qwen25"
+    },
+    "fixtures": {
+      "additional_semantic_edge_cases": [
+        "one underscore_to_dot/string_normalization positive fixture",
+        "one syntactically-valid wrong-argument negative fixture"
+      ],
+      "all_existing_cpu_checks_passed": true,
+      "canonical_checker_accepts": 256,
+      "canonical_reference_constructed_calls": 258,
+      "canonical_reference_limited_rejects": 2,
+      "empty_reference_candidate_source_ids": [
+        "live_simple_106-63-0",
+        "live_simple_112-68-0"
+      ],
+      "external_tool_invocation": false,
+      "malformed_cases": [
+        "NaN",
+        "array_root",
+        "duplicate_keys",
+        "overflow",
+        "python_code"
+      ],
+      "model_generation_performed": false,
+      "per_record_no_call_negative": 258,
+      "per_record_wrong_function_negative": 258
+    },
+    "multi_turn": "No multi-turn feedback: every session contains exactly one payload; input messages contain only user/system roles, no assistant/tool response. Existing audit requires turn_index=0.",
+    "protocols": "Streaming inputs use SSE tool_calls plus include_usage; the buffered prepared variant uses one complete JSON response. Both use natural EOS (ignore_eos=false) and tool_choice=auto.",
+    "source_worktree_tools_scan": {
+      "git_head": "11e7cddbfe33eb21d209c7f48f5e461ac56545eb",
+      "narrow_keyword_search_returncode": 1,
+      "narrow_keyword_search_stdout_empty": true,
+      "native_function_tool_entrypoint_paths_found": [],
+      "nearby_files": [
+        {
+          "bytes": 12542,
+          "classification": "KV backend/operator checks; not native function-call execution",
+          "path": "/home/mingasa/projects/xllm_quant_kvcache-agent-bf16-xqa-20261027/tools/check_native_fa3_operator.py",
+          "sha256": "39cc5941be332f2f990719b78a94e6d6f853011597cbe8d2a1f688d380656289"
+        },
+        {
+          "bytes": 14765,
+          "classification": "KV backend/operator checks; not native function-call execution",
+          "path": "/home/mingasa/projects/xllm_quant_kvcache-agent-bf16-xqa-20261027/tools/check_native_flashinfer_service.py",
+          "sha256": "22b91914656d61a033a1d33fb0645cbc7d00165a10172ed032e514ad244ceee3"
+        },
+        {
+          "bytes": 9516,
+          "classification": "KV backend/operator checks; not native function-call execution",
+          "path": "/home/mingasa/projects/xllm_quant_kvcache-agent-bf16-xqa-20261027/tools/native_kv_quality_contract.py",
+          "sha256": "6f41d0fc1fa845946afc01bf567b4bbf884cd2b2d138921b44741f869030d9e0"
+        }
+      ],
+      "note": "No native function-tool API checker/dispatcher was found under this tools/ tree. Similarly named files validate KV backend/operator behavior.",
+      "path": "/home/mingasa/projects/xllm_quant_kvcache-agent-bf16-xqa-20261027/tools",
+      "sorted_tracked_tools_paths_sha256": "35c9a576361130864f21d6283a5c9fd60c176ed177a5704143dbcafcd0e47dce",
+      "tracked_tools_file_count": 44
+    },
+    "tool_execution": "Frozen inputs have no tool-return records, executor, mock return values or tool-role messages. CPU fixture calls are constructed from official reference arguments and exercise parser/checker only. The native API audit parses generated tool_calls and scores function names/arguments; it does not invoke external tools.",
+    "validator_rules": [
+      "Reject duplicate/missing call IDs, malformed function names and non-object/oversized argument JSON; reject duplicate JSON keys, nonfinite numbers and array roots.",
+      "Streaming parser requires one choice, contiguous tool indices, unchanged call IDs across deltas, DONE, finish/usage consistency and either content or a tool call.",
+      "Buffered parser requires one complete JSON choice, finish reason and consistent usage.",
+      "Audit binds raw wire payload to frozen SHA, requires one request/session at turn_index 0, retains errors/cancellations/overflows, and compares server usage with AIPerf metrics.",
+      "Official checker scores function-name and argument matching; no external function body or return is executed."
+    ]
+  },
+  "observed_scope": "Local read-only code, prepared JSON metadata and source-worktree tools. No weights or trace bodies read; no files modified other than this new inventory.",
+  "provenance": {
+    "distinction": "Current source tree and prepared package have distinct provenance. Package is pinned to commit 11e7cddb... and qwen25; this inventory makes no applicability conclusion for Qwen3.8.",
+    "existing_cpu_evaluator_record": {
+      "bytes": 50030,
+      "classification": "confirmed_CPU_evaluator_contract_only_not_model_quality_or_GPU",
+      "path": "/home/mingasa/kv-research-agent/reports/operations/20261026T075846Z/native_tool_official_evaluator_CPU_v3.json",
+      "sha256": "0a93459af4c06a18ca194df882cbbbf712147657f902281e069478ad3fa83394"
+    },
+    "pinned_bfcl_source": {
+      "repository": "berkeley-function-call-leaderboard/bfcl_eval",
+      "source_commit": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "source_sha256": {
+        "berkeley-function-call-leaderboard/bfcl_eval/constants/type_mappings.py": "1702fb67afbe2c492608e58e2b7d02e46381f50166b47f3c952f76e34c7cd3bd",
+        "berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_live_relevance.json": "e03f9e241657a137cba48a89ee12f47bf3fcb7e4f6274263e9c699a0c974203a",
+        "berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_live_simple.json": "1af2ac87dca47556db7b7e37e51e28b459a38b594e3c7b3c792b4903598ca0c4",
+        "berkeley-function-call-leaderboard/bfcl_eval/eval_checker/ast_eval/ast_checker.py": "2aae7a68461a8f76c0be3894c8901b66b56967a1989d3ab066051e3fb97f1538",
+        "berkeley-function-call-leaderboard/bfcl_eval/model_handler/utils.py": "f78fd3edce603b333dc9a88ee2c041dc547d51f71aa449ffebc044c4b1e353f3"
+      }
+    },
+    "prepared_artifacts": [
+      {
+        "bytes": 141542,
+        "path": "/home/mingasa/kv-research-agent/results/prepared/bfcl-native-tools-258-20261027a/manifest.json",
+        "role": "manifest.json",
+        "sha256": "874975f949c40b790804eaf596d5164049e54c2b98bbb34d7939ad4ba00b8f10"
+      },
+      {
+        "bytes": 358947,
+        "path": "/home/mingasa/kv-research-agent/results/prepared/bfcl-native-tools-258-20261027a/tool_inputs.json",
+        "role": "tool_inputs.json",
+        "sha256": "f01bb2122967a06d906cca8e0562ae6344312af573fc9fa1c791951c200ed83a"
+      },
+      {
+        "bytes": 471,
+        "path": "/home/mingasa/kv-research-agent/results/prepared/bfcl-native-tools-258-20261027a/pre_gold_freeze_receipt.json",
+        "role": "pre_gold_freeze_receipt.json",
+        "sha256": "d7f3a4ea82e41d2598a91c0623ddb1624db7c25cbfe0489afea351475e737415"
+      },
+      {
+        "bytes": 37156,
+        "path": "/home/mingasa/kv-research-agent/results/prepared/bfcl-native-tools-258-20261027a/tokenizer_provenance.json",
+        "role": "tokenizer_provenance.json",
+        "sha256": "0768a3d649a98441b48a4c66a007b09d07353526f8d99e6c403de353168d9770"
+      },
+      {
+        "bytes": 166965,
+        "path": "/home/mingasa/kv-research-agent/results/prepared/bfcl-native-tools-buffered-258-20261027b/manifest.json",
+        "role": "manifest.json",
+        "sha256": "3fe6656dcafed6383a59f441a3b92d51f93d554aed3b41ffbeeda2296139a894"
+      },
+      {
+        "bytes": 348261,
+        "path": "/home/mingasa/kv-research-agent/results/prepared/bfcl-native-tools-buffered-258-20261027b/tool_inputs.json",
+        "role": "tool_inputs.json",
+        "sha256": "47b4b1229449514dba089ab6f6de60a156e1f1df81b5e516b83fc493a2efbcbf"
+      },
+      {
+        "bytes": 12346,
+        "path": "/home/mingasa/kv-research-agent/results/prepared/packages/prod-tools-bf16xqa-bfcl258-buffered-c128-r0-20261027b/package.json",
+        "role": "package.json",
+        "sha256": "707243cf08efdc8b64eb093d0456e2ae260539cfd0608e503c8c00cad3a9c9c4"
+      }
+    ],
+    "source_files": [
+      {
+        "bytes": 14521,
+        "path": "/home/mingasa/kv-research-agent/scripts/controller/native_tools.py",
+        "role": "native API parser, wire validation and attempt audit",
+        "sha256": "530b45510e7e623730ce9bc6bb5989b371ef8a791a653f599c2d983f26884b0e"
+      },
+      {
+        "bytes": 6210,
+        "path": "/home/mingasa/kv-research-agent/scripts/prepare_native_tools_package.py",
+        "role": "CPU-only frozen request package builder",
+        "sha256": "086f6a18ea8257be62ba291fc12587e69e66338e049b42fd8fdc7dc00cfb9800"
+      },
+      {
+        "bytes": 8785,
+        "path": "/home/mingasa/kv-research-agent/scripts/prepare_tool_calls.py",
+        "role": "pinned BFCL prompt/schema adapter and input freezer",
+        "sha256": "f1da98b4929ed0d69642548de6943e8a110a6de0bce12116b3b3d9677e865d11"
+      },
+      {
+        "bytes": 3642,
+        "path": "/home/mingasa/kv-research-agent/scripts/bfcl_evaluator.py",
+        "role": "pinned official function-name/argument checker adapter",
+        "sha256": "0d66ae34289d3de72f663592104a01c7feef0652426ea6c77fe42c06a40fd94a"
+      },
+      {
+        "bytes": 9563,
+        "path": "/home/mingasa/kv-research-agent/scripts/validate_native_tools_cpu.py",
+        "role": "CPU contract fixture generator/checker",
+        "sha256": "93ddd341782101a5f488673e6aceab9c4854d033521333acd7a5e074ee15d735"
+      },
+      {
+        "bytes": 9661,
+        "path": "/home/mingasa/kv-research-agent/scripts/audit_native_tools_run.py",
+        "role": "raw native API outcome and checker audit",
+        "sha256": "8e3b94266a30d17647cde0625999b29086fb70e5d3742bfcf08c68dd589c1f80"
+      }
+    ]
+  },
+  "schema": "native-tool-materials-inventory-v1"
+}

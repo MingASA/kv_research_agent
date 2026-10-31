@@ -1,0 +1,157 @@
+{
+  "schema": "native-tools-cpu-d-status-watch-v1",
+  "poll": 1,
+  "run_id": "nextgen-native-tools-cpu-20261028d",
+  "observed_utc": "2026-10-28T23:15:00.963114+00:00",
+  "remote_writes": false,
+  "GPU_requested": false,
+  "root_exists": true,
+  "container_id": "61dcb64d49a16536b2fef8e0abb7379e43708db04e682f0583886185751d89d6",
+  "container": {
+    "Status": "exited",
+    "Pid": 0,
+    "Running": false,
+    "ExitCode": 0,
+    "OOMKilled": false
+  },
+  "host_config": {
+    "Runtime": "runc",
+    "NetworkMode": "none",
+    "IpcMode": "private",
+    "DeviceRequests": null,
+    "Devices": [],
+    "Privileged": false,
+    "ReadonlyRootfs": true,
+    "NanoCpus": 2000000000,
+    "Memory": 8589934592
+  },
+  "files": {
+    "manifest.json": {
+      "sha256": "47ee38d189f85c3aa2b43ebd3b807ef04aac854e01f5bbfee1ffd4650dc271b3",
+      "keys": [
+        "CPU",
+        "GPU_requested",
+        "approval_sha256_at_preparation",
+        "asset_sha256",
+        "id",
+        "image_id",
+        "local_only_at_preparation",
+        "max_seconds",
+        "memory_GiB",
+        "model_files_sha256",
+        "schema",
+        "state"
+      ]
+    },
+    "PREPARED.json": {
+      "sha256": "db14cafa6e96375bfc12cf9df9178984ea14b2aebc23f26a97c3efa8e9e24713",
+      "keys": [
+        "GPU_requested",
+        "container_id"
+      ]
+    },
+    "START_INTENT.json": {
+      "sha256": "9d28c73ef920aea0a7b0da7836f9652b8834732ed2055e2702d484f8bc29a9f6",
+      "keys": [
+        "GPU_requested",
+        "operation"
+      ]
+    },
+    "CPU_ADMISSION.json": {
+      "sha256": "ac794fcb333208f79d50ab425c5b403c68165e1981f22970d4a1495fe4fb55cd",
+      "keys": [
+        "GPU_requested",
+        "UID",
+        "max_seconds",
+        "python",
+        "python_version",
+        "state",
+        "utc"
+      ]
+    },
+    "CPU_acceptance.json": {
+      "sha256": "0bbe70279ec91d9cfd33ef58880b0c05c8b02d2789dcb58b02a1896fd0b8669b",
+      "keys": [
+        "CPU_loop_proof_sha256",
+        "CPU_only",
+        "GPU_compute_devices_visible",
+        "GPU_requested",
+        "actual_HTTP_or_model_predictions",
+        "fake_SSE_provider_invocations",
+        "id",
+        "image_id",
+        "model_files_sha256",
+        "model_weights_loaded",
+        "native_CPP_prompt_counts_matched",
+        "native_CPP_reference_sha256",
+        "native_in_memory_tool_calls",
+        "no_dependencies_installed",
+        "original_tasks",
+        "runtime_python",
+        "runtime_sources_sha256",
+        "schema",
+        "source_tasks_sha256",
+        "state",
+        "tool_source_manifest_sha256",
+        "user_turns",
+        "versions"
+      ]
+    }
+  },
+  "logs_tail_24": [],
+  "transport_error": null,
+  "CPU_acceptance": {
+    "sha256": "0bbe70279ec91d9cfd33ef58880b0c05c8b02d2789dcb58b02a1896fd0b8669b",
+    "state": "COMPLETE_CPU_TOOL_IMAGE_VALIDATION",
+    "GPU_used": null,
+    "keys": [
+      "CPU_loop_proof_sha256",
+      "CPU_only",
+      "GPU_compute_devices_visible",
+      "GPU_requested",
+      "actual_HTTP_or_model_predictions",
+      "fake_SSE_provider_invocations",
+      "id",
+      "image_id",
+      "model_files_sha256",
+      "model_weights_loaded",
+      "native_CPP_prompt_counts_matched",
+      "native_CPP_reference_sha256",
+      "native_in_memory_tool_calls",
+      "no_dependencies_installed",
+      "original_tasks",
+      "runtime_python",
+      "runtime_sources_sha256",
+      "schema",
+      "source_tasks_sha256",
+      "state",
+      "tool_source_manifest_sha256",
+      "user_turns",
+      "versions"
+    ]
+  },
+  "host_config_violations": [],
+  "CPU_CHILD_INITIAL_OBSERVATION": {
+    "path": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/scratch/nextgen-native-tools-cpu-20261028d/CPU_CHILD_INITIAL_OBSERVATION.json",
+    "size_bytes": 550,
+    "sha256": "b01a567c38e320b1caface0558f7a40fe7502ebb669d6cb242bf549b3e19f239",
+    "observed_fields": {
+      "top_level_keys": [
+        "classification",
+        "exit_code",
+        "stderr",
+        "stdout"
+      ],
+      "CPU_only_imports": false,
+      "preloaded_accelerator_modules": [
+        "cuda"
+      ],
+      "CUDA_visibility_hidden": true,
+      "CUDA_runtime_initialized": false
+    }
+  },
+  "acceptance_serialization_sha_matches_remote": true,
+  "acceptance_snapshot": "written_exact_original_serialization",
+  "acceptance_local_sha256": "0bbe70279ec91d9cfd33ef58880b0c05c8b02d2789dcb58b02a1896fd0b8669b",
+  "watch_status": "EXITED_ZERO_NO_VERIFIED_ACCEPTANCE"
+}

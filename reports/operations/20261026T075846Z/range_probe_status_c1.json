@@ -1,0 +1,94 @@
+{
+  "files": {
+    "START_INTENT.json": {
+      "sha256": "ffa20a1b50d450a150e69d8aa6e0bef83d7342306aac48f6c49c446a87162a76",
+      "value": {
+        "request_sha256": "e1636ed7ddd2e19abd9634ea787e8d4c0a2988a20a7f1418273bcca50184bd2e"
+      }
+    },
+    "SUPERVISOR_PROCESS.json": {
+      "sha256": "0d7fe0e06b75f2228f824f0471e31191a7a68b7f5063a86479944e6802c84b31",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-524515.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-524515.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-524515.scope\n",
+          "pid": 2666637,
+          "start_ticks": 370491136,
+          "uid": 1005
+        }
+      }
+    },
+    "SUPERVISOR_STARTED.json": {
+      "sha256": "55cc3e9a5fffd73da2c3ab238720ce9044b1d24a6e5e59f70f31aedb21f9bfb7",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-524515.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-524515.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-524515.scope\n",
+          "pid": 2666637,
+          "start_ticks": 370491136,
+          "uid": 1005
+        },
+        "ticket_sha256": "37d814d0a9cf6b06b3b03233a0a6b2ffdc773267a3337886433c00875613cde1"
+      }
+    },
+    "owned_containers.json": {
+      "sha256": "db6aa02111c81743266d0a54605b1c1184a2efb53de5a852488b220a523575be",
+      "value": {
+        "containers": [
+          {
+            "container_id": "cb938d1f83080bdec73ba459d301c5d941996382e9cebbd561521268bffbafc7",
+            "pid_identity": {
+              "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+              "cgroup": "12:rdma:/system.slice/docker-cb938d1f83080bdec73ba459d301c5d941996382e9cebbd561521268bffbafc7.scope\n11:blkio:/system.slice/docker-cb938d1f83080bdec73ba459d301c5d941996382e9cebbd561521268bffbafc7.scope\n10:net_cls,net_prio:/system.slice/docker-cb938d1f83080bdec73ba459d301c5d941996382e9cebbd561521268bffbafc7.scope\n9:freezer:/system.slice/docker-cb938d1f83080bdec73ba459d301c5d941996382e9cebbd561521268bffbafc7.scope\n8:memory:/system.slice/docker-cb938d1f83080bdec73ba459d301c5d941996382e9cebbd561521268bffbafc7.scope\n7:hugetlb:/system.slice/docker-cb938d1f83080bdec73ba459d301c5d941996382e9cebbd561521268bffbafc7.scope\n6:perf_event:/system.slice/docker-cb938d1f83080bdec73ba459d301c5d941996382e9cebbd561521268bffbafc7.scope\n5:pids:/system.slice/docker-cb938d1f83080bdec73ba459d301c5d941996382e9cebbd561521268bffbafc7.scope\n4:devices:/system.slice/docker-cb938d1f83080bdec73ba459d301c5d941996382e9cebbd561521268bffbafc7.scope\n3:cpu,cpuacct:/system.slice/docker-cb938d1f83080bdec73ba459d301c5d941996382e9cebbd561521268bffbafc7.scope\n2:cpuset:/system.slice/docker-cb938d1f83080bdec73ba459d301c5d941996382e9cebbd561521268bffbafc7.scope\n1:name=systemd:/system.slice/docker-cb938d1f83080bdec73ba459d301c5d941996382e9cebbd561521268bffbafc7.scope\n",
+              "pid": 2679093,
+              "start_ticks": 370503449,
+              "uid": 1005
+            },
+            "released": false
+          }
+        ],
+        "request_sha256": "e1636ed7ddd2e19abd9634ea787e8d4c0a2988a20a7f1418273bcca50184bd2e",
+        "reservation_id": "40fbeee3743f46748b18394ccad8cbc7"
+      }
+    },
+    "state.json": {
+      "sha256": "0b6ac52fee59e9763fcf7a2d52024c21381dd400f3395536c809be917c286998",
+      "value": {
+        "arm": "bf16",
+        "containers": [
+          "cb938d1f83080bdec73ba459d301c5d941996382e9cebbd561521268bffbafc7"
+        ],
+        "request_sha256": "e1636ed7ddd2e19abd9634ea787e8d4c0a2988a20a7f1418273bcca50184bd2e",
+        "status": "RUNNING"
+      }
+    }
+  },
+  "gpu_snapshot": "0, GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 0, 0\n1, GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 0, 0\n2, GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 0, 0\n3, GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 0, 0\n4, GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 0, 0\n5, GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 0, 0\n6, GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 0, 0\n7, GPU-47211491-ba0d-78bf-5c84-f968c0648213, 0, 0",
+  "live_owned_containers": [
+    "cb938d1f83080bdec73ba459d301c5d941996382e9cebbd561521268bffbafc7"
+  ],
+  "log_tail": {
+    "events.jsonl": "{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3704911942256818,\"utc\":\"2026-10-27T11:34:30.203104+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3704911942256818,\"utc\":\"2026-10-27T11:35:00.525633+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3704911942256818,\"utc\":\"2026-10-27T11:35:31.019210+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3704911942256818,\"utc\":\"2026-10-27T11:36:01.344908+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3704911942256818,\"utc\":\"2026-10-27T11:36:31.675933+00:00\"}\n{\"action\":\"OWNED_CONTAINER_CREATED\",\"arm\":\"bf16\",\"id\":\"cb938d1f83080bdec73ba459d301c5d941996382e9cebbd561521268bffbafc7\",\"utc\":\"2026-10-27T11:36:32.632540+00:00\"}\n",
+    "output/bf16/container.log": "",
+    "supervisor.log": "",
+    "watchdog.log": ""
+  },
+  "ok": true,
+  "operator_acceptance": {},
+  "owned_containers": [
+    {
+      "created": "2026-10-27T11:36:32.591293081Z",
+      "id": "cb938d1f83080bdec73ba459d301c5d941996382e9cebbd561521268bffbafc7",
+      "running": true
+    }
+  ],
+  "quality_progress": {
+    "bf16": {},
+    "fp8_e4m3": {}
+  },
+  "range_probe_progress": {},
+  "relaunch_allowed": false,
+  "run_id": "prod-calib-bf16xqa-heldout128-r2-20261027c",
+  "status": "RUNNING",
+  "supervisor_alive": true
+}

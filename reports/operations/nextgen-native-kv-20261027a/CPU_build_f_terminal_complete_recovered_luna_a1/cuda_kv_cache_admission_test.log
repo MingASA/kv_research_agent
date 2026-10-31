@@ -1,0 +1,25 @@
+Running main() from /workspace/deps/vcpkg/buildtrees/gtest/src/v1.14.0-bcf93537a8.clean/googletest/src/gtest_main.cc
+[==========] Running 8 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 8 tests from CudaKVCacheAdmissionTest
+[ RUN      ] CudaKVCacheAdmissionTest.AllowsNativeFlashInferFp8DecodeGraph
+[       OK ] CudaKVCacheAdmissionTest.AllowsNativeFlashInferFp8DecodeGraph (0 ms)
+[ RUN      ] CudaKVCacheAdmissionTest.Nvfp4RequiresNativeFlashInferEvenWithoutGraph
+[       OK ] CudaKVCacheAdmissionTest.Nvfp4RequiresNativeFlashInferEvenWithoutGraph (0 ms)
+[ RUN      ] CudaKVCacheAdmissionTest.RejectsTritonAndMixedBackendsWithFp8Graph
+[       OK ] CudaKVCacheAdmissionTest.RejectsTritonAndMixedBackendsWithFp8Graph (0 ms)
+[ RUN      ] CudaKVCacheAdmissionTest.RequiresExplicitNativeKvOptIn
+[       OK ] CudaKVCacheAdmissionTest.RequiresExplicitNativeKvOptIn (0 ms)
+[ RUN      ] CudaKVCacheAdmissionTest.RejectsOtherQuantizedDtypesWithGraph
+[       OK ] CudaKVCacheAdmissionTest.RejectsOtherQuantizedDtypesWithGraph (0 ms)
+[ RUN      ] CudaKVCacheAdmissionTest.RejectsInvalidNativeGraphModes
+[       OK ] CudaKVCacheAdmissionTest.RejectsInvalidNativeGraphModes (0 ms)
+[ RUN      ] CudaKVCacheAdmissionTest.PreservesEagerQuantizedExecution
+[       OK ] CudaKVCacheAdmissionTest.PreservesEagerQuantizedExecution (0 ms)
+[ RUN      ] CudaKVCacheAdmissionTest.PreservesAutoDtypeExecutionModes
+[       OK ] CudaKVCacheAdmissionTest.PreservesAutoDtypeExecutionModes (0 ms)
+[----------] 8 tests from CudaKVCacheAdmissionTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 8 tests.

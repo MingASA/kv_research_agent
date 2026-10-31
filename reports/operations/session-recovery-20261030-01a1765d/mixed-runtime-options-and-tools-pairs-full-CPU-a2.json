@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-30T20:47:49.483606+00:00",
+  "CPU_only": true,
+  "GPU_used": false,
+  "tests": 434,
+  "passed": true,
+  "stderr_sha256": "32a1b37a334e3c73357b20e6f11672152f9ddd400a0e89e02c71965bc8261429",
+  "preserved_first_failure": "reports/operations/session-recovery-20261030-01a1765d/CPU-a1-real-pressure-fixture-failure-preserved.json",
+  "production_admission_changed": false
+}

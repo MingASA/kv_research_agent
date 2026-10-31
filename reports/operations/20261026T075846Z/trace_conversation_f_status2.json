@@ -1,0 +1,155 @@
+{
+  "files": {
+    "START_INTENT.json": {
+      "sha256": "c46845cec090d896adc8acaf5bebc3246c58c04a17e7791fcac1317b2b4d58e9",
+      "value": {
+        "request_sha256": "80cf4fc281efb1d725a6c515f35d240a160f6faa37eee4a7a67d0285263dc38c"
+      }
+    },
+    "SUPERVISOR_PROCESS.json": {
+      "sha256": "8066265f57d5bbeee2ab8310b96bc3b2ccc6ec73f31d60fb61d52f1813f3b0ee",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-517439.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-517439.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-517439.scope\n",
+          "pid": 2526492,
+          "start_ticks": 366837289,
+          "uid": 1005
+        }
+      }
+    },
+    "SUPERVISOR_STARTED.json": {
+      "sha256": "c772b579720aba181ca30dc981433594573103b37f25bb32986bc0a283b4289e",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-517439.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-517439.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-517439.scope\n",
+          "pid": 2526492,
+          "start_ticks": 366837289,
+          "uid": 1005
+        },
+        "ticket_sha256": "9e7db0e93c585bb9fd23f9d6dd28d23eabb8b803dca97c068ef14a7d0de539d7"
+      }
+    },
+    "owned_containers.json": {
+      "sha256": "87d4f2957449fee29379ad50febc76f7756a70cd875b76a093bb852947440ceb",
+      "value": {
+        "containers": [
+          {
+            "container_id": "6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771",
+            "pid_identity": {
+              "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+              "cgroup": "12:rdma:/system.slice/docker-6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771.scope\n11:blkio:/system.slice/docker-6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771.scope\n10:net_cls,net_prio:/system.slice/docker-6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771.scope\n9:freezer:/system.slice/docker-6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771.scope\n8:memory:/system.slice/docker-6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771.scope\n7:hugetlb:/system.slice/docker-6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771.scope\n6:perf_event:/system.slice/docker-6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771.scope\n5:pids:/system.slice/docker-6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771.scope\n4:devices:/system.slice/docker-6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771.scope\n3:cpu,cpuacct:/system.slice/docker-6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771.scope\n2:cpuset:/system.slice/docker-6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771.scope\n1:name=systemd:/system.slice/docker-6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771.scope\n",
+              "pid": 2542989,
+              "start_ticks": 366849647,
+              "uid": 1005
+            },
+            "released": false
+          }
+        ],
+        "request_sha256": "80cf4fc281efb1d725a6c515f35d240a160f6faa37eee4a7a67d0285263dc38c",
+        "reservation_id": "aa69059868ce47eda68b67b09f525659"
+      }
+    },
+    "state.json": {
+      "sha256": "6aea7907dacf5df5896d27282a79928a20e36d52696fa83f5ef7b8d3924b6c15",
+      "value": {
+        "arm": "bf16",
+        "containers": [
+          "6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771"
+        ],
+        "request_sha256": "80cf4fc281efb1d725a6c515f35d240a160f6faa37eee4a7a67d0285263dc38c",
+        "status": "RUNNING"
+      }
+    }
+  },
+  "gpu_snapshot": "0, GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 66827, 94\n1, GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 0, 0\n2, GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 66823, 100\n3, GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 64993, 0\n4, GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 1047, 0\n5, GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 0, 0\n6, GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 0, 0\n7, GPU-47211491-ba0d-78bf-5c84-f968c0648213, 0, 0",
+  "live_owned_containers": [
+    "6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771"
+  ],
+  "log_tail": {
+    "events.jsonl": "{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-a6169058-34c8-6edc-e4f5-779bf9a10421\":{\"index\":2,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3668373325244023,\"utc\":\"2026-10-27T01:25:31.586085+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-a6169058-34c8-6edc-e4f5-779bf9a10421\":{\"index\":2,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3668373325244023,\"utc\":\"2026-10-27T01:26:02.048504+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-a6169058-34c8-6edc-e4f5-779bf9a10421\":{\"index\":2,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3668373325244023,\"utc\":\"2026-10-27T01:26:32.512314+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-a6169058-34c8-6edc-e4f5-779bf9a10421\":{\"index\":2,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3668373325244023,\"utc\":\"2026-10-27T01:27:03.005127+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-a6169058-34c8-6edc-e4f5-779bf9a10421\":{\"index\":2,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3668373325244023,\"utc\":\"2026-10-27T01:27:33.482106+00:00\"}\n{\"action\":\"OWNED_CONTAINER_CREATED\",\"arm\":\"bf16\",\"id\":\"6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771\",\"utc\":\"2026-10-27T01:27:34.606515+00:00\"}\n",
+    "output/bf16/aiperf.log": "09:33:10.912 INFO     Starting AIPerf System (_single_run.py:81)\n09:33:11.241 INFO     GPU telemetry disabled via --no-gpu-telemetry (system_controller.py:506)\n09:33:11.269 INFO     Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable) (otel_metrics_results_processor.py:127)\n09:33:11.270 INFO     Record metrics export enabled: /results/artifacts/profile_export.jsonl (record_export_jsonl_writer.py:62)\n09:33:11.271 INFO     Registered: Worker_Manager ('worker_manager') [0/0] (service_registry.py:196)\n09:33:11.272 INFO     Registered Worker Manager (id: 'worker_manager') (system_controller_dispatch.py:146)\n09:33:11.272 INFO     Registered Worker Manager (id: 'worker_manager') (system_controller_dispatch.py:146)\n09:33:11.297 INFO     Registered: Dataset_Manager ('dataset_manager') [0/0] (service_registry.py:196)\n09:33:11.298 INFO     Registered Dataset Manager (id: 'dataset_manager') (system_controller_dispatch.py:146)\n09:33:11.298 INFO     Registered: Records_Manager ('records_manager') [0/0] (service_registry.py:196)\n09:33:11.298 INFO     Registered Records Manager (id: 'records_manager') (system_controller_dispatch.py:146)\n09:33:11.298 INFO     Registered Records Manager (id: 'records_manager') (system_controller_dispatch.py:146)\n09:33:11.304 INFO     Server Metrics: Discovered 1 endpoints: ['http://127.0.0.1:19001/metrics'] (manager.py:197)\n09:33:11.312 INFO     RawRecordWriter initialized: /results/artifacts/raw_records/raw_records_record_processor_0e944a67.jsonl - FULL request/response data will be exported (files may be large) (raw_record_writer_processor.py:80)\n09:33:11.319 INFO     Registered: Record_Processor ('record_processor_0e944a67') [0/0] (service_registry.py:196)\n09:33:11.319 INFO     Registered Record Processor (id: 'record_processor_0e944a67') (system_controller_dispatch.py:146)\n09:33:11.319 INFO     Registered Record Processor (id: 'record_processor_0e944a67') (system_controller_dispatch.py:146)\n09:33:11.329 INFO     Registered: Server_Metrics_Manager ('server_metrics_manager') [0/0] (service_registry.py:196)\n09:33:11.329 INFO     Registered Server Metrics Manager (id: 'server_metrics_manager') (system_controller_dispatch.py:146)\n09:33:11.329 INFO     Registered Server Metrics Manager (id: 'server_metrics_manager') (system_controller_dispatch.py:146)\n09:33:11.363 INFO     Registered Dataset Manager (id: 'dataset_manager') (system_controller_dispatch.py:146)\n09:33:11.428 INFO     Registered: Timing_Manager ('timing_manager') [0/0] (service_registry.py:196)\n09:33:11.428 INFO     Registered Timing Manager (id: 'timing_manager') (system_controller_dispatch.py:146)\n09:33:11.428 INFO     Registered Timing Manager (id: 'timing_manager') (system_controller_dispatch.py:146)\n09:33:11.437 INFO     Registered: Worker ('worker_d040b967') [0/0] (service_registry.py:196)\n09:33:11.437 INFO     Registered Worker (id: 'worker_d040b967') (system_controller_dispatch.py:146)\n09:33:11.438 INFO     Registered Worker (id: 'worker_d040b967') (system_controller_dispatch.py:146)\n09:33:11.744 INFO     System state: initializing -> configuring (system_controller.py:700)\n09:33:11.745 INFO     AIPerf System is CONFIGURING (system_controller.py:536)\n09:33:11.745 INFO     Configuring all services to start profiling (system_controller.py:713)\n09:33:11.745 INFO     Tokenization is disabled for this endpoint, skipping tokenizer configuration (inference_result_parser.py:85)\n09:33:11.745 INFO     Waiting for dataset to be configured before configuring timing (manager.py:149)\n09:33:11.750 INFO     Server metrics disabled - no Prometheus endpoints reachable (system_controller.py:1046)\n09:33:11.874 INFO     Configuring tokenizer(s) for dataset manager (dataset_manager.py:271)\n09:33:13.520 INFO     Tokenizer(s) configured in 1.64 seconds (dataset_manager.py:275)\n09:33:13.520 INFO     Configuring dataset for dataset_manager (dataset_manager.py:281)\n09:33:13.901 INFO     Using explicit dataset format: mooncake_trace (custom.py:65)\n09:33:14.453 INFO     Memory-mapped backing store initialized (streaming to /tmp/aiperf_mmap_71f62ef5366f/dataset.dat) (memory_map_utils.py:160)\n09:33:14.524 INFO     Data file finalized: 1025 conversations, 34.57 MB (memory_map_utils.py:288)\n09:33:14.524 INFO     Index file created: /tmp/aiperf_mmap_71f62ef5366f/index.dat (memory_map_utils.py:295)\n09:33:14.524 INFO     Backing store finalized: client_type=DatasetClientStoreType.MEMORY_MAP format=MemoryMapFormat.PAYLOAD_BYTES data_file_path=PosixPath('/tmp/aiperf_mmap_71f62ef5366f/dataset.dat') index_file_path=PosixPath('/tmp/aiperf_mmap_71f62ef5366f/index.dat') conversation_count=1025 total_size_bytes=36253350 compressed=False compressed_data_file_path=None compressed_index_file_path=None compressed_size_bytes=0 (dataset_manager.py:1009)\n09:33:14.606 INFO     sampling strategy: sequential, unique conversations: 1025, unique turn count: 1025 (dataset_manager.py:1027)\n09:33:14.613 INFO     Skipping inputs.json generation (dataset_manager.py:285)\n09:33:14.624 INFO     Initialized 1 phase(s): ['Profiling'] (phase_orchestrator.py:341)\n09:33:14.731 INFO     Dataset client initialized and freed 1025 conversations from memory (dataset_manager.py:364)\n09:33:14.832 INFO     Populated mmap cache entry /run_cache/aiperf_mmap/1a1ddf4ad07ccd41b4a285b3fd6f81ca (mmap_cache.py:648)\n09:33:14.832 INFO     Dataset configured in 1.31 seconds (dataset_manager.py:294)\n09:33:14.833 INFO     All services configured in 3.09 seconds (system_controller.py:722)\n09:33:14.833 INFO     System state: configuring -> ready (system_controller.py:700)\n09:33:14.833 INFO     AIPerf System is CONFIGURED (system_controller.py:539)\n09:33:14.835 INFO     All services started profiling successfully (system_controller.py:742)\n09:33:14.835 INFO     System state: ready -> profiling (system_controller.py:700)\n09:33:14.835 INFO     AIPerf System is PROFILING (system_controller.py:548)\n09:33:14.835 INFO     Waiting for result domains: profile (system_controller.py:1635)\n09:33:14.838 INFO     Built schedule with 1025 timestamps, zero_ms=0, auto_offset=True (fixed_schedule.py:119)\n09:33:14.839 NOTICE   Phase profiling (profiling) started | phase_index=0 | profiling_index=0 | target: 1,025 requests, 1,025 sessions (runner.py:660)\n09:33:14.839 INFO     Credit phase start: profiling (records_manager.py:1406)\n",
+    "output/bf16/container.log": "",
+    "output/bf16/operator_acceptance.log": "I20261027 09:27:40.623512 9 flashinfer.py:168] KV_ALLOCATION {\"layers\": [{\"tensors\": {\"key\": {\"dtype\": \"torch.bfloat16\", \"shape\": [7, 128, 8, 128], \"bytes\": 1835008}, \"value\": {\"dtype\": \"torch.bfloat16\", \"shape\": [7, 128, 8, 128], \"bytes\": 1835008}}, \"key_format\": \"bf16\", \"value_format\": \"bf16\", \"resident_bytes\": 3670016, \"bytes_per_token\": 4096}], \"resident_bytes\": 3670016, \"token_capacity\": 896}\nI20261027 09:30:28.404076 9 check_native_fa3_operator.py:108] OPERATOR_REFERENCE prefill {'relative_l2': 0.0022824311163276434, 'max_abs': 0.0005266666412353516}\nI20261027 09:30:28.551712 9 check_native_fa3_operator.py:108] OPERATOR_REFERENCE capture_replay {'relative_l2': 0.0022833915427327156, 'max_abs': 0.0004392862319946289}\nI20261027 09:30:28.553688 9 check_native_fa3_operator.py:108] OPERATOR_REFERENCE changed_context {'relative_l2': 0.002186181955039501, 'max_abs': 0.0006560683250427246}\nI20261027 09:30:28.554579 9 check_native_fa3_operator.py:209] Native production operator/Graph acceptance passed for bf16; no model/service/quality claim\n",
+    "output/bf16/server.log": "[1477, 128, 8, 128], \"bytes\": 387186688}, \"value\": {\"dtype\": \"torch.bfloat16\", \"shape\": [1477, 128, 8, 128], \"bytes\": 387186688}}, \"key_format\": \"bf16\", \"value_format\": \"bf16\", \"resident_bytes\": 774373376, \"bytes_per_token\": 4096}, {\"tensors\": {\"key\": {\"dtype\": \"torch.bfloat16\", \"shape\": [1477, 128, 8, 128], \"bytes\": 387186688}, \"value\": {\"dtype\": \"torch.bfloat16\", \"shape\": [1477, 128, 8, 128], \"bytes\": 387186688}}, \"key_format\": \"bf16\", \"value_format\": \"bf16\", \"resident_bytes\": 774373376, \"bytes_per_token\": 4096}, {\"tensors\": {\"key\": {\"dtype\": \"torch.bfloat16\", \"shape\": [1477, 128, 8, 128], \"bytes\": 387186688}, \"value\": {\"dtype\": \"torch.bfloat16\", \"shape\": [1477, 128, 8, 128], \"bytes\": 387186688}}, \"key_format\": \"bf16\", \"value_format\": \"bf16\", \"resident_bytes\": 774373376, \"bytes_per_token\": 4096}, {\"tensors\": {\"key\": {\"dtype\": \"torch.bfloat16\", \"shape\": [1477, 128, 8, 128], \"bytes\": 387186688}, \"value\": {\"dtype\": \"torch.bfloat16\", \"shape\": [1477, 128, 8, 128], \"bytes\": 387186688}}, \"key_format\": \"bf16\", \"value_format\": \"bf16\", \"resident_bytes\": 774373376, \"bytes_per_token\": 4096}, {\"tensors\": {\"key\": {\"dtype\": \"torch.bfloat16\", \"shape\": [1477, 128, 8, 128], \"bytes\": 387186688}, \"value\": {\"dtype\": \"torch.bfloat16\", \"shape\": [1477, 128, 8, 128], \"bytes\": 387186688}}, \"key_format\": \"bf16\", \"value_format\": \"bf16\", \"resident_bytes\": 774373376, \"bytes_per_token\": 4096}, {\"tensors\": {\"key\": {\"dtype\": \"torch.bfloat16\", \"shape\": [1477, 128, 8, 128], \"bytes\": 387186688}, \"value\": {\"dtype\": \"torch.bfloat16\", \"shape\": [1477, 128, 8, 128], \"bytes\": 387186688}}, \"key_format\": \"bf16\", \"value_format\": \"bf16\", \"resident_bytes\": 774373376, \"bytes_per_token\": 4096}, {\"tensors\": {\"key\": {\"dtype\": \"torch.bfloat16\", \"shape\": [1477, 128, 8, 128], \"bytes\": 387186688}, \"value\": {\"dtype\": \"torch.bfloat16\", \"shape\": [1477, 128, 8, 128], \"bytes\": 387186688}}, \"key_format\": \"bf16\", \"value_format\": \"bf16\", \"resident_bytes\": 774373376, \"bytes_per_token\": 4096}, {\"tensors\": {\"key\": {\"dtype\": \"torch.bfloat16\", \"shape\": [1477, 128, 8, 128], \"bytes\": 387186688}, \"value\": {\"dtype\": \"torch.bfloat16\", \"shape\": [1477, 128, 8, 128], \"bytes\": 387186688}}, \"key_format\": \"bf16\", \"value_format\": \"bf16\", \"resident_bytes\": 774373376, \"bytes_per_token\": 4096}, {\"tensors\": {\"key\": {\"dtype\": \"torch.bfloat16\", \"shape\": [1477, 128, 8, 128], \"bytes\": 387186688}, \"value\": {\"dtype\": \"torch.bfloat16\", \"shape\": [1477, 128, 8, 128], \"bytes\": 387186688}}, \"key_format\": \"bf16\", \"value_format\": \"bf16\", \"resident_bytes\": 774373376, \"bytes_per_token\": 4096}], \"resident_bytes\": 37169922048, \"token_capacity\": 189056}\nI20261027 09:33:05.835884 239 executor.py:441] NATIVE_KV_BACKEND {\"class\": \"FlashInferBackend\", \"kv_cache_dtype\": \"auto\", \"attention_impl\": \"flashinfer\", \"planner_backend\": \"fa3\", \"decode_impl\": \"flashinfer\", \"xqa_max_context\": null, \"xqa_enable_pdl\": null, \"xqa_unused_kv_policy\": null, \"xqa_graph_padding\": null, \"decode_internal_q_data_type\": \"torch.bfloat16\", \"paged_prefill\": true, \"decode_tensor_cores\": true, \"flashinfer_version\": \"0.6.18.post1\", \"q_data_type\": \"torch.bfloat16\", \"profile_scope\": \"production_fa3\", \"q_scale\": null, \"kv_data_type\": \"torch.bfloat16\", \"scale_strategy\": \"none\", \"quality_transform\": false, \"graph_enabled\": true, \"graph_captured_batches\": [1, 2, 4, 8, 16, 32, 48, 64, 80, 96, 112, 128], \"graph_runner\": \"DecodeCudaGraphRunner\"}\nI20261027 09:33:06.406073   239 profile_manager.cpp:1267] Prefill warmup completed: tokens=10240, latency=132812 ms\nI20261027 09:33:06.407727   239 profile_manager.cpp:1311] Graph warmup started: bucket_count=12, configured_max_batch_size=128, allocatable_sequences=128, decode_seq_len=16\nI20261027 09:33:06.411889 239 decode_cuda_graph.py:226] NATIVE_KV_GRAPH_REPLAY {\"class\": \"FlashInferBackend\", \"batch_size\": 128, \"captured_batch_size\": 128}\nI20261027 09:33:06.430887   239 profile_manager.cpp:1331] Graph warmup progress: [##------------------] 1/12 8.3%, token_bucket=128, latency=22.12 ms, sequence_batch=128\nI20261027 09:33:06.451938   239 profile_manager.cpp:1331] Graph warmup progress: [###-----------------] 2/12 16.7%, token_bucket=112, latency=20.16 ms, sequence_batch=112\nI20261027 09:33:06.471611   239 profile_manager.cpp:1331] Graph warmup progress: [#####---------------] 3/12 25.0%, token_bucket=96, latency=18.96 ms, sequence_batch=96\nI20261027 09:33:06.489924   239 profile_manager.cpp:1331] Graph warmup progress: [#######-------------] 4/12 33.3%, token_bucket=80, latency=17.73 ms, sequence_batch=80\nI20261027 09:33:06.506747   239 profile_manager.cpp:1331] Graph warmup progress: [########------------] 5/12 41.7%, token_bucket=64, latency=16.36 ms, sequence_batch=64\nI20261027 09:33:06.522545   239 profile_manager.cpp:1331] Graph warmup progress: [##########----------] 6/12 50.0%, token_bucket=48, latency=15.45 ms, sequence_batch=48\nI20261027 09:33:06.537345   239 profile_manager.cpp:1331] Graph warmup progress: [############--------] 7/12 58.3%, token_bucket=32, latency=14.55 ms, sequence_batch=32\nI20261027 09:33:06.550875   239 profile_manager.cpp:1331] Graph warmup progress: [#############-------] 8/12 66.7%, token_bucket=16, latency=13.40 ms, sequence_batch=16\nI20261027 09:33:06.564057   239 profile_manager.cpp:1331] Graph warmup progress: [###############-----] 9/12 75.0%, token_bucket=8, latency=13.11 ms, sequence_batch=8\nI20261027 09:33:06.576659   239 profile_manager.cpp:1331] Graph warmup progress: [#################---] 10/12 83.3%, token_bucket=4, latency=12.55 ms, sequence_batch=4\nI20261027 09:33:06.588944   239 profile_manager.cpp:1331] Graph warmup progress: [##################--] 11/12 91.7%, token_bucket=2, latency=12.25 ms, sequence_batch=2\nI20261027 09:33:06.601342   239 profile_manager.cpp:1331] Graph warmup progress: [####################] 12/12 100.0%, token_bucket=1, latency=12.37 ms, sequence_batch=1\nI20261027 09:33:06.601356   239 profile_manager.cpp:1347] Decode warmup completed: bucket_count=12, decode_max_token_bucket=128, decode_max_sequence_batch=128, decode_seq_len=16, decode_total_latency=189.007 ms\nI20261027 09:33:06.601366   239 threadpool.cpp:32] ThreadPool created, thread count 4, pool name AsyncResponseProcessor.response, cpu_binding false.\nI20261027 09:33:06.602193   239 threadpool.cpp:32] ThreadPool created, thread count 1, pool name AsyncResponseProcessor.rpc, cpu_binding false.\nI20261027 09:33:06.602456   239 threadpool.cpp:32] ThreadPool created, thread count 16, pool name AsyncResponseProcessor.generate_output, cpu_binding false.\nI20261027 09:33:07.033586   239 chat_template.cpp:44] Using Jinja chat template for model_type: qwen2\nI20261027 09:33:07.059051   239 jinja_chat_template.cpp:132] Jinja chat template init succeed.\nI20261027 09:33:07.510864   239 threadpool.cpp:32] ThreadPool created, thread count 4, pool name LLMMaster.request, cpu_binding false.\nI20261027 09:33:07.512035   239 xllm_server_registry.cpp:22] Register server HttpServer.\nI20261027 09:33:07.512070   239 xllm_server.cpp:87] Use API route mode: master_node\nW20261027 09:33:07.513700   239 bthread.cpp:471] Fail to set concurrency by tag: 0, tag concurrency should be larger than old oncurrency. old concurrency: 9, new concurrency: 8\nI20261027 09:33:07.513954   239 server.cpp:1200] Server[xllm::APIService] is serving on port=19001.\nI20261027 09:33:07.513968   239 server.cpp:1203] Check out http://6ccd2af3024d:19001 in web browser.\nI20261027 09:33:07.513976   239 xllm_server.cpp:168] Brpc Server started on port 19001, idle_timeout_s: -1, num_threads: 8\nI20261027 09:33:07.513988   239 xllm_server.cpp:181]      Started server process [239]\nI20261027 09:33:07.513993   239 xllm_server.cpp:182]      Waiting for application startup.\nI20261027 09:33:07.513998   239 xllm_server.cpp:183]      Application startup complete.\nI20261027 09:33:09.707121   467 request.cpp:134] x-request-id: req-15933769124469343823-9fQtycFFYo5PGqTeUoAwbr, x-request-time: , request_id: chatcmpl-15933769124469343823-JaXqApSiCocoxr92eQrYWU, sequence 0, max_tokens: 1, temperature: 0, finish_reason: length, prompt_tokens: 7733, num_prefix_cache_tokens: 0, generated_tokens: 1, ttft: 376.0ms, total_latency: 824.0ms, avg tpot: 0.0ms, generation speed: 0.0 tokens/s\n",
+    "supervisor.log": "",
+    "watchdog.log": ""
+  },
+  "ok": true,
+  "operator_acceptance": {
+    "bf16": {
+      "sha256": "477f03e653547a67dde49232599ce11cdcf64c449222789b0b5f3a90693d3656",
+      "value": {
+        "arm": "bf16",
+        "backend": {
+          "attention_impl": "flashinfer",
+          "class": "FlashInferBackend",
+          "decode_impl": "flashinfer",
+          "decode_internal_q_data_type": "torch.bfloat16",
+          "decode_tensor_cores": true,
+          "flashinfer_version": "0.6.18.post1",
+          "kv_cache_dtype": "auto",
+          "kv_data_type": "torch.bfloat16",
+          "paged_prefill": true,
+          "planner_backend": "fa3",
+          "profile_scope": "production_fa3",
+          "q_data_type": "torch.bfloat16",
+          "q_scale": null,
+          "quality_transform": false,
+          "scale_strategy": "none",
+          "xqa_enable_pdl": null,
+          "xqa_graph_padding": null,
+          "xqa_max_context": null,
+          "xqa_unused_kv_policy": null
+        },
+        "classification": "operator_correctness_only",
+        "decode_impl": "flashinfer",
+        "device": "NVIDIA H800",
+        "fresh_dirty_cache_initialized_to_zero": false,
+        "invalid_nan_padding_diagnostics": {},
+        "model_loaded": false,
+        "model_quality_validated": false,
+        "noncontiguous_q_checked": true,
+        "padded_graph_bucket_checked": false,
+        "partial_page_and_replan": true,
+        "prefill_planner": "fa3",
+        "real_capture_and_replay": true,
+        "reference": "FP32 dense causal attention on the same representable Q/K/V; relative L2 <=.05 plus rtol .08, atol .015",
+        "reference_comparisons": {
+          "capture_replay": {
+            "max_abs": 0.0004392862319946289,
+            "relative_l2": 0.0022833915427327156
+          },
+          "changed_context": {
+            "max_abs": 0.0006560683250427246,
+            "relative_l2": 0.002186181955039501
+          },
+          "prefill": {
+            "max_abs": 0.0005266666412353516,
+            "relative_l2": 0.0022824311163276434
+          }
+        },
+        "reserved_page0_not_used_for_live_sequences": true,
+        "schema": "kv-native-fa3-operator-acceptance-v1",
+        "service_performance_measured": false,
+        "unused_padding_reference": "NaN"
+      }
+    }
+  },
+  "owned_containers": [
+    {
+      "created": "2026-10-27T01:27:34.478396611Z",
+      "id": "6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771",
+      "running": true
+    }
+  ],
+  "quality_progress": {
+    "bf16": {},
+    "fp8_e4m3": {}
+  },
+  "relaunch_allowed": false,
+  "run_id": "prod-trace-xqa-conversation-s1-r0-20261027f",
+  "status": "RUNNING",
+  "supervisor_alive": true
+}

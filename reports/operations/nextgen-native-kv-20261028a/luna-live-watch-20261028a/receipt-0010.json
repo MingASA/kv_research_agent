@@ -1,0 +1,401 @@
+{
+  "automatic_queue": {
+    "current_run_id": "nextgen-fp8-qwen38-quality-core1720-r2-20261028o",
+    "cursor": 0,
+    "directory": "/home/mingasa/kv-research-agent/state/queues/nextgen-core-sequential-20261028b",
+    "not_after_utc": "2026-10-29T08:57:14.407599+00:00",
+    "status": "HALTED_EXPERIMENT_FAILURE_OR_UNKNOWN",
+    "updated_utc": "2026-10-28T14:22:34.920193+00:00"
+  },
+  "gpu_by_uuid": {
+    "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a": {
+      "compute_apps": [],
+      "index": "0",
+      "memory_used_mib": 0,
+      "util_percent": 0
+    },
+    "GPU-0cb28538-7e9f-1b66-750f-1b53ff309195": {
+      "compute_apps": [],
+      "index": "3",
+      "memory_used_mib": 0,
+      "util_percent": 0
+    },
+    "GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1": {
+      "compute_apps": [],
+      "index": "4",
+      "memory_used_mib": 0,
+      "util_percent": 0
+    },
+    "GPU-47211491-ba0d-78bf-5c84-f968c0648213": {
+      "compute_apps": [
+        {
+          "comm": "xllm",
+          "gpu_uuid": "GPU-47211491-ba0d-78bf-5c84-f968c0648213",
+          "pid": 1898108,
+          "process_name": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/builds/nextgen-native-kv-862c29ca-20261027g/artifacts/xllm",
+          "uid": 1005,
+          "used_memory": "73740"
+        }
+      ],
+      "index": "7",
+      "memory_used_mib": 73749,
+      "util_percent": 89
+    },
+    "GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7": {
+      "compute_apps": [],
+      "index": "1",
+      "memory_used_mib": 0,
+      "util_percent": 0
+    },
+    "GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348": {
+      "compute_apps": [],
+      "index": "5",
+      "memory_used_mib": 0,
+      "util_percent": 0
+    },
+    "GPU-a6169058-34c8-6edc-e4f5-779bf9a10421": {
+      "compute_apps": [],
+      "index": "2",
+      "memory_used_mib": 0,
+      "util_percent": 0
+    },
+    "GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7": {
+      "compute_apps": [],
+      "index": "6",
+      "memory_used_mib": 0,
+      "util_percent": 0
+    }
+  },
+  "observed_utc": "2026-10-28T15:28:23.629092+00:00",
+  "queue": {
+    "current_run_id": "nextgen-fp8-qwen38-quality-core1720-r2-20261028o",
+    "runner_alive_identity_match": false,
+    "runner_expected": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-u",
+        "-m",
+        "scripts.guarded_native_queue",
+        "--queue",
+        "/home/mingasa/kv-research-agent/plans/queues/nextgen-core-sequential-20261028b/manifest.json",
+        "--directory",
+        "/home/mingasa/kv-research-agent/state/queues/nextgen-core-sequential-20261028b"
+      ],
+      "boot_id": "2afb7771-92c9-41af-a06d-1632040687f5",
+      "pid": 236082,
+      "process_state": "R",
+      "start_ticks": 53016705,
+      "uid": 1000
+    },
+    "runner_observed": null,
+    "status": "HALTED_EXPERIMENT_FAILURE_OR_UNKNOWN",
+    "updated_utc": "2026-10-28T14:22:34.920193+00:00"
+  },
+  "root_active_run_ids": [
+    "nextgen-nvfp4-qwen38-quality-core1720-r0-20261028p",
+    "nextgen-fp8-qwen38-quality-core1720-r2-20261028o"
+  ],
+  "rpc": "status only, check_ticket(False)+existing; mutation=False",
+  "runs": [
+    {
+      "live_owned_containers": [
+        "58c4fa3bda44eab8f1aa268e71f2e8c9d4feeade0bdf585625ca149c28bc4ac6"
+      ],
+      "log_marker_hits": {
+        "events.jsonl": [
+          "nvfp4"
+        ],
+        "output/nvfp4/native_operator.log": [
+          "nvfp4"
+        ]
+      },
+      "log_paths": [
+        "events.jsonl",
+        "output/nvfp4/container.log",
+        "output/nvfp4/native_operator.log",
+        "output/nvfp4/server.log",
+        "supervisor.log",
+        "watchdog.log"
+      ],
+      "progress": {
+        "nvfp4": {
+          "durable_rows": {
+            "validation_raw.jsonl_durable_rows": 20
+          },
+          "files": [
+            "native_pages/acceptance.json",
+            "native_pages/nvfp4-chunked_prefill.json",
+            "native_pages/nvfp4-decode.json",
+            "native_pages/nvfp4-prefill.json",
+            "quality_progress.json",
+            "validation_raw.jsonl_durable_rows",
+            "validation_result.json"
+          ],
+          "metadata": {
+            "native_pages/acceptance.json": {
+              "keys": [
+                "BF16_FP8_decode_impl",
+                "SM",
+                "XQA_metadata_capacity",
+                "actual_numerical_context_tokens",
+                "formats",
+                "head_dim",
+                "scope",
+                "seed",
+                "versions"
+              ],
+              "sha256": "8459d84a1585b8dbf107d7cb777ca1a163dbcfe1c6251deea2ff917e1fefcfbd",
+              "status": null
+            },
+            "native_pages/nvfp4-chunked_prefill.json": {
+              "keys": [
+                "CPU_reference_decompression_only",
+                "GDN_unchanged",
+                "allocation",
+                "changed_decode_context_pages_slots",
+                "changed_query_KV",
+                "format",
+                "head_dim",
+                "heads",
+                "kv_heads",
+                "native_runtime",
+                "negative_slots_skipped",
+                "observations",
+                "page_size",
+                "persistent_storage_unchanged",
+                "phase",
+                "serving_performance_measured",
+                "writer_in_actual_decode_Graph"
+              ],
+              "sha256": "172f8a70f7e93b56ce91c025c979effe1a229f66b919f4d6c82d4ebd7ac1d0d2",
+              "status": null
+            },
+            "native_pages/nvfp4-decode.json": {
+              "keys": [
+                "CPU_reference_decompression_only",
+                "GDN_unchanged",
+                "allocation",
+                "changed_decode_context_pages_slots",
+                "changed_query_KV",
+                "format",
+                "head_dim",
+                "heads",
+                "kv_heads",
+                "native_runtime",
+                "negative_slots_skipped",
+                "observations",
+                "page_size",
+                "persistent_storage_unchanged",
+                "phase",
+                "serving_performance_measured",
+                "writer_in_actual_decode_Graph"
+              ],
+              "sha256": "f119cb693cb1bbf62b1b29f52426532861eaff3da930313b849693227132d941",
+              "status": null
+            },
+            "native_pages/nvfp4-prefill.json": {
+              "keys": [
+                "CPU_reference_decompression_only",
+                "GDN_unchanged",
+                "allocation",
+                "changed_decode_context_pages_slots",
+                "changed_query_KV",
+                "format",
+                "head_dim",
+                "heads",
+                "kv_heads",
+                "native_runtime",
+                "negative_slots_skipped",
+                "observations",
+                "page_size",
+                "persistent_storage_unchanged",
+                "phase",
+                "serving_performance_measured",
+                "writer_in_actual_decode_Graph"
+              ],
+              "sha256": "9a62d78815041515939181e206fee0908a0315d04ce0230bf354d9eb8e441267",
+              "status": null
+            },
+            "quality_progress.json": {
+              "keys": [
+                "accuracy_scored",
+                "active_client_requests",
+                "capped_responses",
+                "contract_failures",
+                "durable_responses",
+                "empty_stop_outputs",
+                "reserved_client_token_budget",
+                "submitted"
+              ],
+              "sha256": "60b08e519fee17077519f2ca66e5788d2f260ec0be431ba66a7f64fd7ac08ab4",
+              "status": null
+            },
+            "validation_result.json": {
+              "keys": [
+                "A_B_A_repeated_answers_match",
+                "actual_model_Graph_replay_logged",
+                "calibration_requests",
+                "classification",
+                "known_answers_checked",
+                "model_loaded",
+                "model_quality_validated",
+                "native_allocation",
+                "native_backend",
+                "official_aiperf_complete",
+                "requests",
+                "service_performance_measured"
+              ],
+              "sha256": "f56ea13a7b56a3c6426c3bbc979d88f0310a40b2f751d80bb5dcb3597c9f8182",
+              "status": null
+            }
+          }
+        }
+      },
+      "result_status": null,
+      "run_id": "nextgen-nvfp4-qwen38-quality-core1720-r0-20261028p",
+      "state_status": "RUNNING",
+      "status": "RUNNING",
+      "supervisor_alive": true,
+      "supervisor_identity": {
+        "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+        "pid": 1730564,
+        "start_ticks": 380344898,
+        "uid": 1005
+      }
+    },
+    {
+      "live_owned_containers": [],
+      "log_marker_hits": {
+        "events.jsonl": [
+          "CONFLICT"
+        ],
+        "output/fp8_e4m3/container.log": [
+          "validation"
+        ],
+        "output/fp8_e4m3/server.log": [
+          "loading model",
+          "decode"
+        ]
+      },
+      "log_paths": [
+        "events.jsonl",
+        "output/fp8_e4m3/container.log",
+        "output/fp8_e4m3/native_operator.log",
+        "output/fp8_e4m3/server.log",
+        "supervisor.log",
+        "watchdog.log"
+      ],
+      "progress": {
+        "fp8_e4m3": {
+          "durable_rows": {},
+          "files": [
+            "native_pages/acceptance.json",
+            "native_pages/fp8_e4m3-chunked_prefill.json",
+            "native_pages/fp8_e4m3-decode.json",
+            "native_pages/fp8_e4m3-prefill.json"
+          ],
+          "metadata": {
+            "native_pages/acceptance.json": {
+              "keys": [
+                "BF16_FP8_decode_impl",
+                "SM",
+                "XQA_metadata_capacity",
+                "actual_numerical_context_tokens",
+                "formats",
+                "head_dim",
+                "scope",
+                "seed",
+                "versions"
+              ],
+              "sha256": "2469d995f75d5044626e261ec69a896d113f4be583e551344684a0d484e91a28",
+              "status": null
+            },
+            "native_pages/fp8_e4m3-chunked_prefill.json": {
+              "keys": [
+                "CPU_reference_decompression_only",
+                "GDN_unchanged",
+                "allocation",
+                "changed_decode_context_pages_slots",
+                "changed_query_KV",
+                "format",
+                "head_dim",
+                "heads",
+                "kv_heads",
+                "native_runtime",
+                "negative_slots_skipped",
+                "observations",
+                "page_size",
+                "persistent_storage_unchanged",
+                "phase",
+                "serving_performance_measured",
+                "writer_in_actual_decode_Graph"
+              ],
+              "sha256": "7e5f0edf92f7e6bd8128cda061b1168259d3ab9d579403168a3f4c71f917a21f",
+              "status": null
+            },
+            "native_pages/fp8_e4m3-decode.json": {
+              "keys": [
+                "CPU_reference_decompression_only",
+                "GDN_unchanged",
+                "allocation",
+                "changed_decode_context_pages_slots",
+                "changed_query_KV",
+                "format",
+                "head_dim",
+                "heads",
+                "kv_heads",
+                "native_runtime",
+                "negative_slots_skipped",
+                "observations",
+                "page_size",
+                "persistent_storage_unchanged",
+                "phase",
+                "serving_performance_measured",
+                "writer_in_actual_decode_Graph"
+              ],
+              "sha256": "e7cadaac989851e2fb593007ae7fb545d42749e45eb0d8279cac7a8c390563d3",
+              "status": null
+            },
+            "native_pages/fp8_e4m3-prefill.json": {
+              "keys": [
+                "CPU_reference_decompression_only",
+                "GDN_unchanged",
+                "allocation",
+                "changed_decode_context_pages_slots",
+                "changed_query_KV",
+                "format",
+                "head_dim",
+                "heads",
+                "kv_heads",
+                "native_runtime",
+                "negative_slots_skipped",
+                "observations",
+                "page_size",
+                "persistent_storage_unchanged",
+                "phase",
+                "serving_performance_measured",
+                "writer_in_actual_decode_Graph"
+              ],
+              "sha256": "e28b7d1816a82e43a32324aad85db5dc46aea4525d2f959a47d083b1808cc528",
+              "status": null
+            }
+          }
+        }
+      },
+      "result_status": "UNKNOWN",
+      "run_id": "nextgen-fp8-qwen38-quality-core1720-r2-20261028o",
+      "state_status": "UNKNOWN",
+      "status": "UNKNOWN",
+      "supervisor_alive": false,
+      "supervisor_identity": {
+        "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+        "pid": 1143677,
+        "start_ticks": 379854380,
+        "uid": 1005
+      }
+    }
+  ],
+  "schema": "luna-live-watch-receipt-v1",
+  "sequence": 10
+}

@@ -1,0 +1,164 @@
+{
+  "files": [
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/schema/aiperf-config.schema.json",
+      "size": 629075
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/templates/audio_multimodal.yaml",
+      "size": 2408
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/templates/embeddings.yaml",
+      "size": 1828
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/templates/env_var_production.yaml",
+      "size": 3166
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/templates/fixed_schedule.yaml",
+      "size": 3326
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/templates/goodput_slo.yaml",
+      "size": 2181
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/templates/gpu_telemetry.yaml",
+      "size": 2552
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/templates/http_trace_metrics.yaml",
+      "size": 2972
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/templates/inline_dataset.yaml",
+      "size": 2934
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/templates/jinja2_variables.yaml",
+      "size": 2470
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/templates/kv_cache_test.yaml",
+      "size": 2738
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/templates/latency_test.yaml",
+      "size": 2040
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/templates/long_context.yaml",
+      "size": 2389
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/templates/minimal.yaml",
+      "size": 1600
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/templates/multi_turn_conversation.yaml",
+      "size": 2333
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/templates/multi_url_load_balancing.yaml",
+      "size": 2180
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/templates/multimodal_vision.yaml",
+      "size": 1873
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/templates/public_dataset.yaml",
+      "size": 1700
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/templates/ramping.yaml",
+      "size": 2628
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/templates/request_cancellation.yaml",
+      "size": 2416
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/templates/scenario_workload_profiles.yaml",
+      "size": 3622
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/templates/speed_bench_sweep.yaml",
+      "size": 3984
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/templates/sweep_distributions.yaml",
+      "size": 2712
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/templates/sweep_with_plot.yaml",
+      "size": 7873
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/templates/time_based_soak.yaml",
+      "size": 2836
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/templates/trace_replay.yaml",
+      "size": 3045
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/templates/user_files.yaml",
+      "size": 4783
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/config/templates/warmup_profiling.yaml",
+      "size": 1620
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/agentic_code_gen/configs/default.json",
+      "size": 672
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/agentic_code_gen/configs/spec.json",
+      "size": 12796
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/agentic_code_gen/datasets/1k_sessions_200k_ctx/manifest.json",
+      "size": 1577
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plot/default_plot_config.yaml",
+      "size": 9691
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plugin/categories.yaml",
+      "size": 18576
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plugin/plugins.yaml",
+      "size": 125532
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plugin/schema/categories.schema.json",
+      "size": 2776
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/plugin/schema/plugins.schema.json",
+      "size": 76675
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf-0.13.0.dist-info/WHEEL",
+      "size": 87
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf-0.13.0.dist-info/entry_points.txt",
+      "size": 96
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf-0.13.0.dist-info/INSTALLER",
+      "size": 4
+    },
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf-0.13.0.dist-info/REQUESTED",
+      "size": 0
+    }
+  ]
+}

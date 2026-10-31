@@ -1,0 +1,33 @@
+Traceback (most recent call last):
+  File "/home/mingasa/kv-research-agent/.deps/aiperf-runtime-20261026/aiperf/common/tokenizer.py", line 528, in from_pretrained
+    return cls._load_from_hub(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/mingasa/kv-research-agent/.deps/aiperf-runtime-20261026/aiperf/common/tokenizer.py", line 560, in _load_from_hub
+    tokenizer_instance = cls._from_pretrained_local(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mingasa/kv-research-agent/.deps/aiperf-runtime-20261026/aiperf/common/tokenizer.py", line 655, in _from_pretrained_local
+    local_path = cls._resolve_local_snapshot(name, revision)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mingasa/kv-research-agent/.deps/aiperf-runtime-20261026/aiperf/common/tokenizer.py", line 686, in _resolve_local_snapshot
+    return snapshot_download(
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/mingasa/venvs/vllm/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 85, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/home/mingasa/venvs/vllm/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 133, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/home/mingasa/kv-research-agent/results/mirrors/quality-protocols-20261026T075846Z/files/model_metadata'. Use `repo_type` argument if needed.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mingasa/kv-research-agent/scripts/validate_trace_loader_cpu.py", line 81, in <module>
+    main()
+  File "/home/mingasa/kv-research-agent/scripts/validate_trace_loader_cpu.py", line 72, in main
+    report = validate(args.base, args.tokenizer)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mingasa/kv-research-agent/scripts/validate_trace_loader_cpu.py", line 21, in validate
+    tokenizer = Tokenizer.from_pretrained(str(model), resolve_alias=False)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mingasa/kv-research-agent/.deps/aiperf-runtime-20261026/aiperf/common/tokenizer.py", line 541, in from_pretrained
+    raise TokenizerError(
+aiperf.common.exceptions.TokenizerError: Failed to load tokenizer '/home/mingasa/kv-research-agent/results/mirrors/quality-protocols-20261026T075846Z/files/model_metadata': HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/home/mingasa/kv-research-agent/results/mirrors/quality-protocols-20261026T075846Z/files/model_metadata'. Use `repo_type` argument if needed.

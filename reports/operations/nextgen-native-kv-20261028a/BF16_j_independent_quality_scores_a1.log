@@ -1,0 +1,18 @@
+/home/mingasa/venvs/vllm/lib/python3.12/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/mingasa/venvs/vllm/lib/python3.12/site-packages/fuzzywuzzy/fuzz.py:11: UserWarning: Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning
+  warnings.warn('Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning')
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/mingasa/kv-research-agent/scripts/score_nextgen_core_quality.py", line 159, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/mingasa/kv-research-agent/scripts/score_nextgen_core_quality.py", line 156, in main
+    args=parser.parse_args();score(args.sha_manifest,args.cohort,args.out,args.recovery_audit)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mingasa/kv-research-agent/scripts/score_nextgen_core_quality.py", line 144, in score
+    output.mkdir(mode=0o700,exist_ok=False)
+  File "/home/mingasa/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'reports/experiments/nextgen-quality-20261028/bf16-j-v1'

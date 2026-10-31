@@ -1,0 +1,120 @@
+{
+  "ok": true,
+  "utc": "2026-10-26T19:10:40.242528+00:00",
+  "arms": {
+    "bf16": {
+      "counts": {},
+      "server_markers": [
+        "I20261027 03:10:39.662073 49 executor.py:441] NATIVE_KV_BACKEND {\"class\": \"FlashInferBackend\", \"kv_cache_dtype\": \"auto\", \"attention_impl\": \"flashinfer\", \"planner_backend\": \"fa3\", \"paged_prefill\": true, \"decode_tensor_cores\": true, \"flashinfer_version\": \"0.6.18.post1\", \"q_data_type\": \"torch.bfloat16\", \"profile_scope\": \"production_fa3\", \"q_scale\": null, \"kv_data_type\": \"torch.bfloat16\", \"scale_strategy\": \"none\", \"quality_transform\": false, \"graph_enabled\": true, \"graph_captured_batches\": [1, 2, 4, 8, 16, 32, 48, 64, 80, 96, 112, 128], \"graph_runner\": \"DecodeCudaGraphRunner\"}",
+        "I20261027 03:10:40.192225 49 decode_cuda_graph.py:226] NATIVE_KV_GRAPH_REPLAY {\"class\": \"FlashInferBackend\", \"batch_size\": 128, \"captured_batch_size\": 128}"
+      ],
+      "server_bytes": 30460,
+      "tail": "I20261027 03:10:40.192225 49 decode_cuda_graph.py:226] NATIVE_KV_GRAPH_REPLAY {\"class\": \"FlashInferBackend\", \"batch_size\": 128, \"captured_batch_size\": 128}\nI20261027 03:10:40.211807    49 profile_manager.cpp:1331] Graph warmup progress: [##------------------] 1/12 8.3%, token_bucket=128, latency=22.76 ms, sequence_batch=128\nI20261027 03:10:40.232677    49 profile_manager.cpp:1331] Graph warmup progress: [###-----------------] 2/12 16.7%, token_bucket=112, latency=20.02 ms, sequence_batch=112",
+      "weight_identity": "cf67b8e03cf159dd6017e36da84c28e143e59ce766261db2f6c97aabca7aae73",
+      "prepared_task_tokens": {
+        "gsm8k": [
+          760,
+          755,
+          736,
+          730,
+          732,
+          757,
+          726,
+          775,
+          771,
+          752,
+          736,
+          760,
+          791,
+          753,
+          740,
+          731,
+          758,
+          753,
+          747,
+          732,
+          797,
+          758,
+          746,
+          733,
+          737,
+          794,
+          731,
+          727,
+          738,
+          771,
+          750,
+          759,
+          791,
+          733,
+          748,
+          745,
+          802,
+          742,
+          768,
+          767,
+          777,
+          745,
+          755,
+          732,
+          735,
+          772,
+          734,
+          756,
+          742,
+          803,
+          794,
+          732,
+          748,
+          731,
+          740,
+          723,
+          810,
+          794,
+          743,
+          738,
+          747,
+          733,
+          759,
+          724
+        ],
+        "narrativeqa": [
+          9090,
+          32576
+        ],
+        "qasper": [
+          17958,
+          2104
+        ],
+        "multifieldqa_en": [
+          1711,
+          16527
+        ],
+        "2wikimqa": [
+          1302,
+          17013
+        ],
+        "hotpotqa": [
+          17597,
+          1927
+        ],
+        "musique": [
+          17662,
+          8224
+        ],
+        "lcc": [
+          1181,
+          8803
+        ],
+        "repobench-p": [
+          2612,
+          31897
+        ]
+      }
+    },
+    "fp8_e4m3": {
+      "counts": {},
+      "server_markers": []
+    }
+  }
+}

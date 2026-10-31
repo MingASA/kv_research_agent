@@ -1,0 +1,1 @@
+{"out": "results/prepared/production-traces-contiguous-20261026-a3", "gpu_used": false, "requests": {"conversation": 1025, "toolagent": 2088, "synthetic": 995, "burstgpt": 6385}}

@@ -1,0 +1,33 @@
+.F...................................................................... [ 94%]
+....                                                                     [100%]
+=================================== FAILURES ===================================
+_______ test_bf16_fa3_xqa_reference_arguments_and_manifest_are_explicit ________
+
+tmp_path = PosixPath('/tmp/pytest-of-mingasa/pytest-112/test_bf16_fa3_xqa_reference_ar0')
+
+    def test_bf16_fa3_xqa_reference_arguments_and_manifest_are_explicit(tmp_path: Path) -> None:
+        from tools.native_kv_quality_contract import BF16_XQA_PROFILE, validate_native_manifest
+    
+        args = _args(tmp_path, "--native-planner", "fa3", "--native-decode", "xqa", "--arms", "auto")
+        runner._validate_args(args)
+        selected = runner._environment(args, "auto")
+        assert selected["XLLM_FLASHINFER_NATIVE_PLANNER"] == "fa3"
+        assert selected["XLLM_FLASHINFER_NATIVE_DECODE"] == "xqa"
+        assert "XLLM_FLASHINFER_FP8_QUERY" not in selected
+        path, manifest = _manifest(tmp_path, arm="auto", planner="fa3", decode="xqa")
+        assert manifest["execution_profile"] == BF16_XQA_PROFILE
+        validate_native_manifest(path, manifest, "auto")
+        with pytest.raises(ValueError): validate_native_manifest(path, manifest, "fp8-e4m3")
+        args.arms = ["auto", "fp8_e4m3"]
+        with pytest.raises(ValueError): runner._validate_args(args)
+        for arm in args.arms:
+            command = runner._server_command(args, arm)
+            assert "--python_graph_backend=cudagraphs" in command
+            assert "--enable_graph=true" in command
+>           assert "--enable_prefix_cache=false" in command
+E           AssertionError: assert '--enable_prefix_cache=false' in ['/home/mingasa/projects/xllm_quant_kvcache-agent-bf16-xqa-20261027/build/cmake.cuda-x86/xllm/xllm', '--model=/tmp/pyt...hon', '--python_model_path=/home/mingasa/projects/xllm_quant_kvcache-agent-bf16-xqa-20261027', '--host=127.0.0.1', ...]
+
+tests/python/test_native_quality_contract.py:114: AssertionError
+=========================== short test summary info ============================
+FAILED tests/python/test_native_quality_contract.py::test_bf16_fa3_xqa_reference_arguments_and_manifest_are_explicit
+1 failed, 75 passed, 1 skipped in 3.83s

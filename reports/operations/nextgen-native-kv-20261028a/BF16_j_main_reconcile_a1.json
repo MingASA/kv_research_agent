@@ -1,0 +1,1936 @@
+{
+  "files": {
+    "START_INTENT.json": {
+      "sha256": "cc93d2df9636721005a20abf279aa840d5770d4b7329d60432dac19d74b95cc0",
+      "value": {
+        "request_sha256": "67822cb77bb36d6c225abf9383573a40e5767b232cbc0e7f4ceeafdc8197ddaa"
+      }
+    },
+    "SUPERVISOR_PROCESS.json": {
+      "sha256": "029ec6b063e01f4a67546149c015f7788faff29b4dd57f6377d06e66d24d36ec",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-531531.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-531531.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-531531.scope\n",
+          "pid": 3753844,
+          "start_ticks": 374322213,
+          "uid": 1005
+        }
+      }
+    },
+    "SUPERVISOR_STARTED.json": {
+      "sha256": "1955d95afc9623fdac2d2b0407327e22a41fa51d2eddc523aed7917f8e762983",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-531531.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-531531.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-531531.scope\n",
+          "pid": 3753844,
+          "start_ticks": 374322213,
+          "uid": 1005
+        },
+        "ticket_sha256": "337c202883fb978d9abbbc81da22b4a73e84e29cbff851097f63b62cf88f7802"
+      }
+    },
+    "owned_containers.json": {
+      "sha256": "66c5e590583fa6723b4fce088ca27ee6f9a9834c6e427baf39d6eba4b0054969",
+      "value": {
+        "containers": [
+          {
+            "container_id": "9a289c657b7c00b10db70f7d68dc48c69e07c774b79a975bde732efdcca3861a",
+            "pid_identity": {
+              "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+              "cgroup": "12:rdma:/system.slice/docker-9a289c657b7c00b10db70f7d68dc48c69e07c774b79a975bde732efdcca3861a.scope\n11:blkio:/system.slice/docker-9a289c657b7c00b10db70f7d68dc48c69e07c774b79a975bde732efdcca3861a.scope\n10:net_cls,net_prio:/system.slice/docker-9a289c657b7c00b10db70f7d68dc48c69e07c774b79a975bde732efdcca3861a.scope\n9:freezer:/system.slice/docker-9a289c657b7c00b10db70f7d68dc48c69e07c774b79a975bde732efdcca3861a.scope\n8:memory:/system.slice/docker-9a289c657b7c00b10db70f7d68dc48c69e07c774b79a975bde732efdcca3861a.scope\n7:hugetlb:/system.slice/docker-9a289c657b7c00b10db70f7d68dc48c69e07c774b79a975bde732efdcca3861a.scope\n6:perf_event:/system.slice/docker-9a289c657b7c00b10db70f7d68dc48c69e07c774b79a975bde732efdcca3861a.scope\n5:pids:/system.slice/docker-9a289c657b7c00b10db70f7d68dc48c69e07c774b79a975bde732efdcca3861a.scope\n4:devices:/system.slice/docker-9a289c657b7c00b10db70f7d68dc48c69e07c774b79a975bde732efdcca3861a.scope\n3:cpu,cpuacct:/system.slice/docker-9a289c657b7c00b10db70f7d68dc48c69e07c774b79a975bde732efdcca3861a.scope\n2:cpuset:/system.slice/docker-9a289c657b7c00b10db70f7d68dc48c69e07c774b79a975bde732efdcca3861a.scope\n1:name=systemd:/system.slice/docker-9a289c657b7c00b10db70f7d68dc48c69e07c774b79a975bde732efdcca3861a.scope\n",
+              "pid": 3767800,
+              "start_ticks": 374334561,
+              "uid": 1005
+            },
+            "released": true
+          }
+        ],
+        "request_sha256": "67822cb77bb36d6c225abf9383573a40e5767b232cbc0e7f4ceeafdc8197ddaa",
+        "reservation_id": "47b0711e7e5142d88b10548fe28892bd"
+      }
+    },
+    "result.json": {
+      "sha256": "ea95fe2137c49a28bbd895e347a3e95fe003169b248894e75f9e00c379b1c8b3",
+      "value": {
+        "allocation_ended_monotonic_ns": 3744969981227066,
+        "allocation_intervals_ns": [
+          {
+            "arm": "bf16",
+            "end_ns": 3744969981227066,
+            "start_ns": 3743345484872717
+          }
+        ],
+        "allocation_started_monotonic_ns": 3743345484872717,
+        "arm_results": [],
+        "error": "RuntimeError: Worker failed; inspect preserved per-arm container.log",
+        "gpu_release_verified": true,
+        "live_owned_containers": [],
+        "new_output_bytes": 297462560,
+        "request_sha256": "67822cb77bb36d6c225abf9383573a40e5767b232cbc0e7f4ceeafdc8197ddaa",
+        "reservation_id": "47b0711e7e5142d88b10548fe28892bd",
+        "run_id": "nextgen-bf16-qwen38-quality-core1720-r0-20261027j",
+        "status": "FAILED"
+      }
+    },
+    "state.json": {
+      "sha256": "ea95fe2137c49a28bbd895e347a3e95fe003169b248894e75f9e00c379b1c8b3",
+      "value": {
+        "allocation_ended_monotonic_ns": 3744969981227066,
+        "allocation_intervals_ns": [
+          {
+            "arm": "bf16",
+            "end_ns": 3744969981227066,
+            "start_ns": 3743345484872717
+          }
+        ],
+        "allocation_started_monotonic_ns": 3743345484872717,
+        "arm_results": [],
+        "error": "RuntimeError: Worker failed; inspect preserved per-arm container.log",
+        "gpu_release_verified": true,
+        "live_owned_containers": [],
+        "new_output_bytes": 297462560,
+        "request_sha256": "67822cb77bb36d6c225abf9383573a40e5767b232cbc0e7f4ceeafdc8197ddaa",
+        "reservation_id": "47b0711e7e5142d88b10548fe28892bd",
+        "run_id": "nextgen-bf16-qwen38-quality-core1720-r0-20261027j",
+        "status": "FAILED"
+      }
+    },
+    "watchdog_result.json": {
+      "sha256": "e5902f1d600ad611d6b7ee3946ea5d3db5caf3f00a7e5e46fced1868226a0438",
+      "value": {
+        "actions": [],
+        "request_sha256": "67822cb77bb36d6c225abf9383573a40e5767b232cbc0e7f4ceeafdc8197ddaa",
+        "status": "RELEASE_CONFIRMED"
+      }
+    }
+  },
+  "gpu_snapshot": "0, GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 75091, 14\n1, GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 75091, 91\n2, GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 75091, 86\n3, GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 75091, 86\n4, GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 75091, 95\n5, GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 75091, 97\n6, GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 75091, 75\n7, GPU-47211491-ba0d-78bf-5c84-f968c0648213, 75091, 97",
+  "live_owned_containers": [],
+  "log_tail": {
+    "events.jsonl": "{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3743222639426610,\"utc\":\"2026-10-27T22:13:00.900257+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3743222639426610,\"utc\":\"2026-10-27T22:13:31.269710+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3743222639426610,\"utc\":\"2026-10-27T22:14:01.597810+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3743222639426610,\"utc\":\"2026-10-27T22:14:32.091028+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3743222639426610,\"utc\":\"2026-10-27T22:15:02.431003+00:00\"}\n{\"action\":\"OWNED_CONTAINER_CREATED\",\"arm\":\"bf16\",\"id\":\"9a289c657b7c00b10db70f7d68dc48c69e07c774b79a975bde732efdcca3861a\",\"utc\":\"2026-10-27T22:15:03.745686+00:00\"}\n{\"action\":\"STOP_OR_FAILURE\",\"error\":\"RuntimeError: Worker failed; inspect preserved per-arm container.log\",\"status\":\"FAILED\",\"utc\":\"2026-10-27T22:42:07.862938+00:00\"}\n",
+    "output/bf16/container.log": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/workspace/agent_work/runs/nextgen-bf16-qwen38-quality-core1720-r0-20261027j/runtime/kv_controller/worker.py\", line 299, in <module>\n    main()\n  File \"/workspace/agent_work/runs/nextgen-bf16-qwen38-quality-core1720-r0-20261027j/runtime/kv_controller/worker.py\", line 274, in main\n    result = run_validation(ticket, root, output, args.arm, env)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/agent_work/runs/nextgen-bf16-qwen38-quality-core1720-r0-20261027j/runtime/kv_controller/nextgen.py\", line 385, in run_validation\n    return run_native_service(ticket, root, output, arm, env)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/agent_work/runs/nextgen-bf16-qwen38-quality-core1720-r0-20261027j/runtime/kv_controller/nextgen_service.py\", line 389, in run_native_service\n    quality = run_core_generations(request,root,output,available_seconds=available)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/agent_work/runs/nextgen-bf16-qwen38-quality-core1720-r0-20261027j/runtime/kv_controller/nextgen_quality.py\", line 144, in run_core_generations\n    raise ValueError('Incomplete/invalid core quality responses; original bytes retained, no accuracy acceptance')\nValueError: Incomplete/invalid core quality responses; original bytes retained, no accuracy acceptance\n",
+    "output/bf16/native_operator.log": "I20261028 06:15:08.218797 8 flashinfer.py:196] KV_ALLOCATION {\"layers\": [{\"layer_id\": 3, \"tensors\": {\"key\": {\"dtype\": \"torch.bfloat16\", \"shape\": [7, 64, 4, 256], \"bytes\": 917504}, \"value\": {\"dtype\": \"torch.bfloat16\", \"shape\": [7, 64, 4, 256], \"bytes\": 917504}}, \"key_format\": \"bf16\", \"value_format\": \"bf16\", \"resident_bytes\": 1835008, \"bytes_per_token\": 4096}], \"resident_bytes\": 1835008, \"full_attention_resident_bytes\": 1835008, \"full_attention_layer_ids\": [3], \"linear_state_layers\": [{\"layer_id\": 0, \"tensors\": {\"conv\": {\"dtype\": \"torch.float32\", \"shape\": [2, 8, 3], \"bytes\": 192}, \"ssm\": {\"dtype\": \"torch.float32\", \"shape\": [2, 4, 8, 8], \"bytes\": 2048}}, \"resident_bytes\": 2240}, {\"layer_id\": 1, \"tensors\": {\"conv\": {\"dtype\": \"torch.float32\", \"shape\": [2, 8, 3], \"bytes\": 192}, \"ssm\": {\"dtype\": \"torch.float32\", \"shape\": [2, 4, 8, 8], \"bytes\": 2048}}, \"resident_bytes\": 2240}, {\"layer_id\": 2, \"tensors\": {\"conv\": {\"dtype\": \"torch.float32\", \"shape\": [2, 8, 3], \"bytes\": 192}, \"ssm\": {\"dtype\": \"torch.float32\", \"shape\": [2, 4, 8, 8], \"bytes\": 2048}}, \"resident_bytes\": 2240}], \"linear_state_resident_bytes\": 6720, \"total_resident_bytes\": 1841728, \"token_capacity\": 448}\n",
+    "output/bf16/server.log": "t: 25.9ms, generation speed: 39.3 tokens/s\nI20261028 06:41:05.181910   579 request.cpp:134] x-request-id: req-15933769124469343823-xmcDEYGiCrcWp2GWfPUKTW, x-request-time: , request_id: cmpl-15933769124469343823-wgYaRAYzYBkxXjNR3fr6UP, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 27132, num_prefix_cache_tokens: 24576, generated_tokens: 64, ttft: 33688.0ms, total_latency: 35328.1ms, avg tpot: 26.0ms, generation speed: 39.0 tokens/s\nI20261028 06:41:07.404337   576 request.cpp:134] x-request-id: req-15933769124469343823-VkGmpwiFMVkfuqDDbKni2a, x-request-time: , request_id: cmpl-15933769124469343823-vqmRNLvY4NTeAAcPf8fsxh, sequence 0, max_tokens: 64, temperature: 0, finish_reason: stop, prompt_tokens: 4367, num_prefix_cache_tokens: 2048, generated_tokens: 58, ttft: 31474.0ms, total_latency: 32926.8ms, avg tpot: 25.5ms, generation speed: 39.9 tokens/s\nI20261028 06:41:10.110867   577 request.cpp:134] x-request-id: req-15933769124469343823-EaXNgB9AtA64BSBTkpv48y, x-request-time: , request_id: cmpl-15933769124469343823-UJDMjTWxMfCWCHqWg6gCaC, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 7375, num_prefix_cache_tokens: 4096, generated_tokens: 64, ttft: 34018.0ms, total_latency: 35625.4ms, avg tpot: 25.5ms, generation speed: 39.8 tokens/s\nI20261028 06:41:14.106652   578 request.cpp:134] x-request-id: req-15933769124469343823-pXa5ySV3VdYaaKnxE9Jjnm, x-request-time: , request_id: cmpl-15933769124469343823-bFmtK756TdgbdkcGsaMcZ4, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 16864, num_prefix_cache_tokens: 14336, generated_tokens: 64, ttft: 36843.0ms, total_latency: 38465.0ms, avg tpot: 25.7ms, generation speed: 39.5 tokens/s\nI20261028 06:41:16.594074   579 request.cpp:134] x-request-id: req-15933769124469343823-EuisJbSC2Apdz4P6gW8szG, x-request-time: , request_id: cmpl-15933769124469343823-XA2B2bYeiTYjNkztuAsK3Y, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 5671, num_prefix_cache_tokens: 2048, generated_tokens: 64, ttft: 33116.0ms, total_latency: 34725.2ms, avg tpot: 25.5ms, generation speed: 39.8 tokens/s\nI20261028 06:41:19.226032   576 request.cpp:134] x-request-id: req-15933769124469343823-3V3sv6QPRU4VMgTqXHESZ8, x-request-time: , request_id: cmpl-15933769124469343823-kak3r5FW5Mc8tY5yDW3ktP, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 6254, num_prefix_cache_tokens: 4096, generated_tokens: 64, ttft: 35752.0ms, total_latency: 37355.6ms, avg tpot: 25.5ms, generation speed: 39.9 tokens/s\nI20261028 06:41:21.544313   577 request.cpp:134] x-request-id: req-15933769124469343823-7pqFh2hjvMSSnVArmQBcij, x-request-time: , request_id: cmpl-15933769124469343823-NTEg9mCd7AKVkXAALNULr8, sequence 0, max_tokens: 64, temperature: 0, finish_reason: stop, prompt_tokens: 14911, num_prefix_cache_tokens: 12288, generated_tokens: 9, ttft: 39446.0ms, total_latency: 39652.3ms, avg tpot: 25.8ms, generation speed: 43.6 tokens/s\nI20261028 06:41:24.448395   578 request.cpp:134] x-request-id: req-15933769124469343823-rbCDiBUgDnue8P3PtLBYff, x-request-time: , request_id: cmpl-15933769124469343823-tdEatEbAznkREP7pjvDR8c, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 8583, num_prefix_cache_tokens: 6144, generated_tokens: 64, ttft: 37347.0ms, total_latency: 38961.7ms, avg tpot: 25.6ms, generation speed: 39.6 tokens/s\nI20261028 06:41:27.963891   579 request.cpp:134] x-request-id: req-15933769124469343823-tAKvginDbYVfeKDxQJADYv, x-request-time: , request_id: cmpl-15933769124469343823-hgWYQHCzMjhUcGGVERUMg7, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 13524, num_prefix_cache_tokens: 10240, generated_tokens: 64, ttft: 40841.0ms, total_latency: 42460.4ms, avg tpot: 25.7ms, generation speed: 39.5 tokens/s\nI20261028 06:41:31.532568   576 request.cpp:134] x-request-id: req-15933769124469343823-GPViW4ofQEeEWo9S9J4rEH, x-request-time: , request_id: cmpl-15933769124469343823-Zk4Y2yfUzPsKRfYEvQUT8K, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 14107, num_prefix_cache_tokens: 10240, generated_tokens: 64, ttft: 40128.0ms, total_latency: 41743.7ms, avg tpot: 25.6ms, generation speed: 39.6 tokens/s\nI20261028 06:41:32.891676   577 request.cpp:134] x-request-id: req-15933769124469343823-466DcFuvG783SxeFvkfyyX, x-request-time: , request_id: cmpl-15933769124469343823-CZBEo65JA7wmUjdpDDHbcF, sequence 0, max_tokens: 64, temperature: 0, finish_reason: stop, prompt_tokens: 9401, num_prefix_cache_tokens: 6144, generated_tokens: 1, ttft: 37161.0ms, total_latency: 37161.5ms, avg tpot: 0.0ms, generation speed: 0.0 tokens/s\nI20261028 06:41:34.805253   578 request.cpp:134] x-request-id: req-15933769124469343823-hv5JbKPaVoVWhby3rRSSbz, x-request-time: , request_id: cmpl-15933769124469343823-gJdaYuJEfWAPoU6oiJz8hZ, sequence 0, max_tokens: 64, temperature: 0, finish_reason: stop, prompt_tokens: 13748, num_prefix_cache_tokens: 10240, generated_tokens: 1, ttft: 35023.0ms, total_latency: 35023.5ms, avg tpot: 0.0ms, generation speed: 0.0 tokens/s\nI20261028 06:41:40.652410   579 request.cpp:134] x-request-id: req-15933769124469343823-vmZRw7HhFDUV6cgYufJ5FH, x-request-time: , request_id: cmpl-15933769124469343823-okpXdM5JviQRYoapUXWWN8, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 30177, num_prefix_cache_tokens: 26624, generated_tokens: 64, ttft: 33742.0ms, total_latency: 35387.2ms, avg tpot: 26.1ms, generation speed: 38.9 tokens/s\nI20261028 06:41:44.253811   576 request.cpp:134] x-request-id: req-15933769124469343823-RDZ4Kmg5oLuRenbYnmbWyG, x-request-time: , request_id: cmpl-15933769124469343823-cusdoVwagBZyymDNuhCgXs, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 15336, num_prefix_cache_tokens: 12288, generated_tokens: 64, ttft: 35190.0ms, total_latency: 36808.0ms, avg tpot: 25.7ms, generation speed: 39.6 tokens/s\nI20261028 06:41:46.673686   577 request.cpp:134] x-request-id: req-15933769124469343823-8Q4frxF7LekiQrqfJprnkn, x-request-time: , request_id: cmpl-15933769124469343823-uPoiEz7WzMcP7rXqMUQDHN, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 5010, num_prefix_cache_tokens: 2048, generated_tokens: 64, ttft: 30946.0ms, total_latency: 32549.5ms, avg tpot: 25.5ms, generation speed: 39.9 tokens/s\nI20261028 06:41:50.375264   578 request.cpp:134] x-request-id: req-15933769124469343823-WGG7BkCwq9r9ET5hHiF6jr, x-request-time: , request_id: cmpl-15933769124469343823-XkjKEcyXNJUZCaB2BVrbC5, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 14398, num_prefix_cache_tokens: 12288, generated_tokens: 64, ttft: 34608.0ms, total_latency: 36226.0ms, avg tpot: 25.7ms, generation speed: 39.6 tokens/s\nI20261028 06:42:00.763593   579 request.cpp:134] x-request-id: req-15933769124469343823-L3qqkRtiTsCfcLXZzrsZwf, x-request-time: , request_id: chatcmpl-15933769124469343823-vGYbQewDs7NgAKrBVpwRaH, sequence 0, max_tokens: 128, temperature: 0, finish_reason: stop, prompt_tokens: 67736, num_prefix_cache_tokens: 65536, generated_tokens: 3, ttft: 29038.0ms, total_latency: 29092.8ms, avg tpot: 27.4ms, generation speed: 54.7 tokens/s\nI20261028 06:42:00.807850   183 xllm_server.cpp:188]      Shutting down\nI20261028 06:42:00.807895   183 xllm_server.cpp:189]      Waiting for application shutdown.\nI20261028 06:42:00.807904   183 server.cpp:1260] Server[xllm::APIService] is going to quit\nI20261028 06:42:00.808076   183 xllm_server.cpp:193]      Application shutdown complete.\nI20261028 06:42:00.808085   183 xllm_server.cpp:194]      Finished server process [183]\nI20261028 06:42:00.808099   183 llm_master.cpp:141] LLMMaster stopping...\nI20261028 06:42:01.569419   183 server.cpp:1260] Server[xllm::CollectiveService] is going to quit\nI20261028 06:42:01.569676   183 xllm_server_registry.cpp:38] Unregister server CollectiveServer0.\nI20261028 06:42:01.570117   183 server.cpp:1260] Server[xllm::WorkerService] is going to quit\nI20261028 06:42:01.570370   183 xllm_server_registry.cpp:38] Unregister server DistributeWorkerServer0.\n",
+    "supervisor.log": "",
+    "watchdog.log": ""
+  },
+  "nextgen_progress": {
+    "bf16": {
+      "quality_progress.json": {
+        "sha256": "6bbbd7947018fd9627382e1cdb8e7cea2ba1574a76bd09dc6d8c849be4c8c74b",
+        "value": {
+          "accuracy_scored": false,
+          "active_client_requests": 0,
+          "capped_responses": 84,
+          "contract_failures": 18,
+          "durable_responses": 1720,
+          "reserved_client_token_budget": 0,
+          "submitted": 1720
+        }
+      },
+      "validation_raw.jsonl_durable_rows": 20,
+      "validation_result.json": {
+        "sha256": "a79b2819186f3f77fea953b2c15366734bf71883cd97282e5fb34546a01e2944",
+        "value": {
+          "A_B_A_repeated_answers_match": true,
+          "actual_model_Graph_replay_logged": true,
+          "calibration_requests": 0,
+          "classification": "native_hybrid_bf16_service_correctness_lifecycle",
+          "known_answers_checked": 20,
+          "model_loaded": true,
+          "model_quality_validated": false,
+          "native_allocation": {
+            "full_attention_layer_ids": [
+              3,
+              7,
+              11,
+              15,
+              19,
+              23,
+              27,
+              31,
+              35,
+              39,
+              43,
+              47,
+              51,
+              55,
+              59,
+              63
+            ],
+            "full_attention_resident_bytes": 16223567872,
+            "layers": [
+              {
+                "bytes_per_token": 4096,
+                "key_format": "bf16",
+                "layer_id": 3,
+                "resident_bytes": 1013972992,
+                "tensors": {
+                  "key": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  },
+                  "value": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  }
+                },
+                "value_format": "bf16"
+              },
+              {
+                "bytes_per_token": 4096,
+                "key_format": "bf16",
+                "layer_id": 7,
+                "resident_bytes": 1013972992,
+                "tensors": {
+                  "key": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  },
+                  "value": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  }
+                },
+                "value_format": "bf16"
+              },
+              {
+                "bytes_per_token": 4096,
+                "key_format": "bf16",
+                "layer_id": 11,
+                "resident_bytes": 1013972992,
+                "tensors": {
+                  "key": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  },
+                  "value": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  }
+                },
+                "value_format": "bf16"
+              },
+              {
+                "bytes_per_token": 4096,
+                "key_format": "bf16",
+                "layer_id": 15,
+                "resident_bytes": 1013972992,
+                "tensors": {
+                  "key": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  },
+                  "value": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  }
+                },
+                "value_format": "bf16"
+              },
+              {
+                "bytes_per_token": 4096,
+                "key_format": "bf16",
+                "layer_id": 19,
+                "resident_bytes": 1013972992,
+                "tensors": {
+                  "key": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  },
+                  "value": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  }
+                },
+                "value_format": "bf16"
+              },
+              {
+                "bytes_per_token": 4096,
+                "key_format": "bf16",
+                "layer_id": 23,
+                "resident_bytes": 1013972992,
+                "tensors": {
+                  "key": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  },
+                  "value": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  }
+                },
+                "value_format": "bf16"
+              },
+              {
+                "bytes_per_token": 4096,
+                "key_format": "bf16",
+                "layer_id": 27,
+                "resident_bytes": 1013972992,
+                "tensors": {
+                  "key": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  },
+                  "value": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  }
+                },
+                "value_format": "bf16"
+              },
+              {
+                "bytes_per_token": 4096,
+                "key_format": "bf16",
+                "layer_id": 31,
+                "resident_bytes": 1013972992,
+                "tensors": {
+                  "key": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  },
+                  "value": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  }
+                },
+                "value_format": "bf16"
+              },
+              {
+                "bytes_per_token": 4096,
+                "key_format": "bf16",
+                "layer_id": 35,
+                "resident_bytes": 1013972992,
+                "tensors": {
+                  "key": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  },
+                  "value": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  }
+                },
+                "value_format": "bf16"
+              },
+              {
+                "bytes_per_token": 4096,
+                "key_format": "bf16",
+                "layer_id": 39,
+                "resident_bytes": 1013972992,
+                "tensors": {
+                  "key": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  },
+                  "value": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  }
+                },
+                "value_format": "bf16"
+              },
+              {
+                "bytes_per_token": 4096,
+                "key_format": "bf16",
+                "layer_id": 43,
+                "resident_bytes": 1013972992,
+                "tensors": {
+                  "key": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  },
+                  "value": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  }
+                },
+                "value_format": "bf16"
+              },
+              {
+                "bytes_per_token": 4096,
+                "key_format": "bf16",
+                "layer_id": 47,
+                "resident_bytes": 1013972992,
+                "tensors": {
+                  "key": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  },
+                  "value": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  }
+                },
+                "value_format": "bf16"
+              },
+              {
+                "bytes_per_token": 4096,
+                "key_format": "bf16",
+                "layer_id": 51,
+                "resident_bytes": 1013972992,
+                "tensors": {
+                  "key": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  },
+                  "value": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  }
+                },
+                "value_format": "bf16"
+              },
+              {
+                "bytes_per_token": 4096,
+                "key_format": "bf16",
+                "layer_id": 55,
+                "resident_bytes": 1013972992,
+                "tensors": {
+                  "key": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  },
+                  "value": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  }
+                },
+                "value_format": "bf16"
+              },
+              {
+                "bytes_per_token": 4096,
+                "key_format": "bf16",
+                "layer_id": 59,
+                "resident_bytes": 1013972992,
+                "tensors": {
+                  "key": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  },
+                  "value": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  }
+                },
+                "value_format": "bf16"
+              },
+              {
+                "bytes_per_token": 4096,
+                "key_format": "bf16",
+                "layer_id": 63,
+                "resident_bytes": 1013972992,
+                "tensors": {
+                  "key": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  },
+                  "value": {
+                    "bytes": 506986496,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      3868,
+                      64,
+                      4,
+                      256
+                    ]
+                  }
+                },
+                "value_format": "bf16"
+              }
+            ],
+            "linear_state_layers": [
+              {
+                "layer_id": 0,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 1,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 2,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 4,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 5,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 6,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 8,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 9,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 10,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 12,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 13,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 14,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 16,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 17,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 18,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 20,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 21,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 22,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 24,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 25,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 26,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 28,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 29,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 30,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 32,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 33,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 34,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 36,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 37,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 38,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 40,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 41,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 42,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 44,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 45,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 46,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 48,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 49,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 50,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 52,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 53,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 54,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 56,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 57,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 58,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 60,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 61,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              },
+              {
+                "layer_id": 62,
+                "resident_bytes": 109043712,
+                "tensors": {
+                  "conv": {
+                    "bytes": 2088960,
+                    "dtype": "torch.bfloat16",
+                    "shape": [
+                      34,
+                      3,
+                      10240
+                    ]
+                  },
+                  "ssm": {
+                    "bytes": 106954752,
+                    "dtype": "torch.float32",
+                    "shape": [
+                      34,
+                      48,
+                      128,
+                      128
+                    ]
+                  }
+                }
+              }
+            ],
+            "linear_state_resident_bytes": 5234098176,
+            "resident_bytes": 16223567872,
+            "token_capacity": 247552,
+            "total_resident_bytes": 21457666048
+          },
+          "native_backend": {
+            "KV_observation_counter_storage_bytes": 0,
+            "KV_observation_enabled": false,
+            "attention_impl": "flashinfer",
+            "class": "FlashInferBackend",
+            "decode_impl": "xqa",
+            "decode_internal_q_data_type": "torch.bfloat16",
+            "decode_tensor_cores": true,
+            "flashinfer_version": "0.6.18.post1",
+            "graph_captured_batches": [
+              1,
+              2,
+              4,
+              8,
+              16
+            ],
+            "graph_enabled": true,
+            "graph_runner": "DecodeCudaGraphRunner",
+            "kv_cache_dtype": "auto",
+            "kv_data_type": "torch.bfloat16",
+            "paged_prefill": true,
+            "planner_backend": "fa3",
+            "profile_scope": "native_pages_constructor_config",
+            "q_data_type": "torch.bfloat16",
+            "q_scale": null,
+            "quality_transform": false,
+            "scale_strategy": "none",
+            "xqa_enable_pdl": true,
+            "xqa_graph_padding": "reserved_page0_one_token_discard",
+            "xqa_max_context": 262144,
+            "xqa_max_context_tokens": 262144,
+            "xqa_unused_kv_policy": "finite_full_initialization"
+          },
+          "official_aiperf_complete": false,
+          "requests": 20,
+          "service_performance_measured": false
+        }
+      }
+    }
+  },
+  "ok": true,
+  "operator_acceptance": {
+    "bf16": {
+      "sha256": "1c47ae2dc8841f595407c8d92b7e22fd36e22e644eef04505ec32b8f325a74fa",
+      "value": {
+        "classification": "SM90_native_BF16_FA3_hybrid_geometry_operator_only",
+        "head_dim": 256,
+        "heads": 24,
+        "kv_heads": 4,
+        "linear_state_unchanged": true,
+        "model_loaded": false,
+        "native_backend": {
+          "KV_observation_counter_storage_bytes": 0,
+          "KV_observation_enabled": false,
+          "attention_impl": "flashinfer",
+          "class": "FlashInferBackend",
+          "decode_impl": "xqa",
+          "decode_internal_q_data_type": "torch.bfloat16",
+          "decode_tensor_cores": true,
+          "flashinfer_version": "0.6.18.post1",
+          "kv_cache_dtype": "auto",
+          "kv_data_type": "torch.bfloat16",
+          "paged_prefill": true,
+          "planner_backend": "fa3",
+          "profile_scope": "native_pages_constructor_config",
+          "q_data_type": "torch.bfloat16",
+          "q_scale": null,
+          "quality_transform": false,
+          "scale_strategy": "none",
+          "xqa_enable_pdl": true,
+          "xqa_graph_padding": "reserved_page0_one_token_discard",
+          "xqa_max_context": 262144,
+          "xqa_max_context_tokens": 262144,
+          "xqa_unused_kv_policy": "finite_full_initialization"
+        },
+        "page_size": 64,
+        "real_capture_and_changed_input_replay": true,
+        "relative_L2": [
+          0.0022452943958342075,
+          0.0022825836203992367
+        ]
+      }
+    }
+  },
+  "owned_containers": [
+    {
+      "created": "2026-10-27T22:15:03.703432775Z",
+      "id": "9a289c657b7c00b10db70f7d68dc48c69e07c774b79a975bde732efdcca3861a",
+      "running": false
+    }
+  ],
+  "quality_progress": {
+    "bf16": {},
+    "fp8_e4m3": {}
+  },
+  "relaunch_allowed": false,
+  "run_id": "nextgen-bf16-qwen38-quality-core1720-r0-20261027j",
+  "status": "FAILED",
+  "supervisor_alive": false
+}

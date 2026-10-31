@@ -1,0 +1,19 @@
+{
+  "sha_manifests": [
+    "results/mirrors/nextgen-bf16-qwen38-mixed8192-quality1720-r0-20261030t-complete-a1/SHA_MANIFEST.json",
+    "results/mirrors/nextgen-fp8fa2-qwen38-mixed8192-quality1720-r0-20261030u-complete-a1/SHA_MANIFEST.json",
+    "results/mirrors/nextgen-nvfp4-qwen38-mixed8192-quality1720-r0-20261030v-complete-a1/SHA_MANIFEST.json"
+  ],
+  "include": [
+    "reports/experiments/nextgen-mixed-prefill-20261030/bf16-t-v1",
+    "reports/experiments/nextgen-mixed-prefill-20261030/fp8-u-v1",
+    "reports/experiments/nextgen-mixed-prefill-20261030/nvfp4-v-v1",
+    "reports/experiments/nextgen-mixed-prefill-20261030/fp8-u-vs-bf16-t-a1.json",
+    "reports/experiments/nextgen-mixed-prefill-20261030/nvfp4-v-vs-bf16-t-a1.json",
+    "reports/experiments/nextgen-mixed-prefill-20261030/quality-figure-v2",
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-bf16-t-uninterrupted-quality-serving-span-a1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-fp8-u-uninterrupted-quality-serving-span-a1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-nvfp4-v-uninterrupted-quality-serving-span-a1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-TU-actual-resolved-options-a1.json"
+  ]
+}

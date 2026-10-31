@@ -1,0 +1,154 @@
+{
+  "files": {
+    "START_INTENT.json": {
+      "sha256": "3e09c1a82b77de12760d579a0738333e80e99b8f9f08e7686ebe65a027002c0e",
+      "value": {
+        "request_sha256": "1e2a0da282e1f3a521860b790726449f397e324c7efa7d315d64362dfcf03eb4"
+      }
+    },
+    "SUPERVISOR_PROCESS.json": {
+      "sha256": "3d40b280ab60212f81ffb2e250f66d444748c87ea7845ea487eb91bb47478b36",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-528474.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-528474.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-528474.scope\n",
+          "pid": 1427395,
+          "start_ticks": 372638872,
+          "uid": 1005
+        }
+      }
+    },
+    "SUPERVISOR_STARTED.json": {
+      "sha256": "c4bddcb56209676b39f6eebb5946828b8b51ea19afa8e2790c2fce3ac1271473",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-528474.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-528474.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-528474.scope\n",
+          "pid": 1427395,
+          "start_ticks": 372638872,
+          "uid": 1005
+        },
+        "ticket_sha256": "23fed0a00b44ee4c5563b5c47e5f7f770675fe29a6b2cddef8db79e3791293f2"
+      }
+    },
+    "owned_containers.json": {
+      "sha256": "5f055d396aa0b409ade68125b9a3b05a049ec8cf50cd190b01a5f0974621caf2",
+      "value": {
+        "containers": [
+          {
+            "container_id": "07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869",
+            "pid_identity": {
+              "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+              "cgroup": "12:rdma:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\n11:blkio:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\n10:net_cls,net_prio:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\n9:freezer:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\n8:memory:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\n7:hugetlb:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\n6:perf_event:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\n5:pids:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\n4:devices:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\n3:cpu,cpuacct:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\n2:cpuset:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\n1:name=systemd:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\n",
+              "pid": 1454528,
+              "start_ticks": 372651237,
+              "uid": 1005
+            },
+            "released": true
+          }
+        ],
+        "request_sha256": "1e2a0da282e1f3a521860b790726449f397e324c7efa7d315d64362dfcf03eb4",
+        "reservation_id": "0b5727656935481389f2a3e1f7c7d5b1"
+      }
+    },
+    "result.json": {
+      "sha256": "6ed8772bb0a8fed20ba1f956b75f003d7dd31236d56ce6d33921e8163bf27ee4",
+      "value": {
+        "allocation_ended_monotonic_ns": 3727620879811049,
+        "allocation_intervals_ns": [
+          {
+            "arm": "bf16",
+            "end_ns": 3727620879811049,
+            "start_ns": 3726512207163282
+          }
+        ],
+        "allocation_started_monotonic_ns": 3726512207163282,
+        "arm_results": [],
+        "error": "RuntimeError: Worker failed; inspect preserved per-arm container.log",
+        "gpu_release_verified": true,
+        "live_owned_containers": [],
+        "new_output_bytes": 130512792,
+        "request_sha256": "1e2a0da282e1f3a521860b790726449f397e324c7efa7d315d64362dfcf03eb4",
+        "reservation_id": "0b5727656935481389f2a3e1f7c7d5b1",
+        "run_id": "nextgen-bf16-qwen38-validation-r0-20261027b",
+        "status": "FAILED"
+      }
+    },
+    "state.json": {
+      "sha256": "6ed8772bb0a8fed20ba1f956b75f003d7dd31236d56ce6d33921e8163bf27ee4",
+      "value": {
+        "allocation_ended_monotonic_ns": 3727620879811049,
+        "allocation_intervals_ns": [
+          {
+            "arm": "bf16",
+            "end_ns": 3727620879811049,
+            "start_ns": 3726512207163282
+          }
+        ],
+        "allocation_started_monotonic_ns": 3726512207163282,
+        "arm_results": [],
+        "error": "RuntimeError: Worker failed; inspect preserved per-arm container.log",
+        "gpu_release_verified": true,
+        "live_owned_containers": [],
+        "new_output_bytes": 130512792,
+        "request_sha256": "1e2a0da282e1f3a521860b790726449f397e324c7efa7d315d64362dfcf03eb4",
+        "reservation_id": "0b5727656935481389f2a3e1f7c7d5b1",
+        "run_id": "nextgen-bf16-qwen38-validation-r0-20261027b",
+        "status": "FAILED"
+      }
+    },
+    "watchdog_result.json": {
+      "sha256": "4f33f54c1da8947687ad3de381ccc777f20e6b2a4fc5e7c39f5f632061f421c9",
+      "value": {
+        "actions": [],
+        "request_sha256": "1e2a0da282e1f3a521860b790726449f397e324c7efa7d315d64362dfcf03eb4",
+        "status": "RELEASE_CONFIRMED"
+      }
+    }
+  },
+  "gpu_snapshot": "0, GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 3, 0\n1, GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 3, 0\n2, GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 3, 0\n3, GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 3, 0\n4, GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 3, 0\n5, GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 3, 0\n6, GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 3, 0\n7, GPU-47211491-ba0d-78bf-5c84-f968c0648213, 3, 0",
+  "live_owned_containers": [],
+  "log_tail": {
+    "events.jsonl": "ue,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3726389169657279,\"utc\":\"2026-10-27T17:33:28.373027+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3726389169657279,\"utc\":\"2026-10-27T17:33:58.767933+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3726389169657279,\"utc\":\"2026-10-27T17:34:29.336699+00:00\"}\n{\"action\":\"OWNED_CONTAINER_CREATED\",\"arm\":\"bf16\",\"id\":\"07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869\",\"utc\":\"2026-10-27T17:34:30.468074+00:00\"}\n{\"action\":\"OWNED_GPU_PID_EXIT_RECHECK\",\"fresh_selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"owned_containers\":[\"07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869\"],\"previous_process_proof\":{\"boot_id\":\"5afaf1c0-ecf6-4bda-a039-5341ef954efb\",\"cgroup\":\"12:rdma:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n11:blkio:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n10:net_cls,net_prio:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n9:freezer:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n8:memory:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n7:hugetlb:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n6:perf_event:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n5:pids:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n4:devices:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n3:cpu,cpuacct:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n2:cpuset:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n1:name=systemd:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n\",\"pid\":1455137,\"start_ticks\":372651361,\"uid\":1005},\"process\":{\"boot_id\":\"5afaf1c0-ecf6-4bda-a039-5341ef954efb\",\"cgroup\":\"12:rdma:/\\n11:blkio:/\\n10:net_cls,net_prio:/\\n9:freezer:/\\n8:memory:/\\n7:hugetlb:/\\n6:perf_event:/\\n5:pids:/\\n4:devices:/\\n3:cpu,cpuacct:/\\n2:cpuset:/\\n1:name=systemd:/\\n\",\"pid\":1455137,\"start_ticks\":372651361,\"uid\":1005},\"process_lifecycle\":{\"kernel_flags\":4194564,\"pid\":1455137,\"start_ticks\":372651361,\"state\":\"R\",\"uid\":1005},\"reason\":\"live_unowned_gpu_process\",\"retired_owned_pid\":{\"boot_id\":\"5afaf1c0-ecf6-4bda-a039-5341ef954efb\",\"cgroup\":\"12:rdma:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n11:blkio:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n10:net_cls,net_prio:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n9:freezer:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n8:memory:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n7:hugetlb:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n6:perf_event:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n5:pids:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n4:devices:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n3:cpu,cpuacct:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n2:cpuset:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n1:name=systemd:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n\",\"pid\":1455137,\"start_ticks\":372651361,\"uid\":1005},\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":791,\"pids\":[1455137],\"util_pct\":1}},\"utc\":\"2026-10-27T17:37:54.479763+00:00\"}\n{\"action\":\"OWNED_GPU_PID_EXIT_RECHECK\",\"fresh_selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":52473,\"pids\":[],\"util_pct\":0}},\"owned_containers\":[\"07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869\"],\"previous_process_proof\":{\"boot_id\":\"5afaf1c0-ecf6-4bda-a039-5341ef954efb\",\"cgroup\":\"12:rdma:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n11:blkio:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n10:net_cls,net_prio:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n9:freezer:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n8:memory:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n7:hugetlb:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n6:perf_event:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n5:pids:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n4:devices:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n3:cpu,cpuacct:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n2:cpuset:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n1:name=systemd:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n\",\"pid\":1495746,\"start_ticks\":372671600,\"uid\":1005},\"process\":{\"boot_id\":\"5afaf1c0-ecf6-4bda-a039-5341ef954efb\",\"cgroup\":\"12:rdma:/\\n11:blkio:/\\n10:net_cls,net_prio:/\\n9:freezer:/\\n8:memory:/\\n7:hugetlb:/\\n6:perf_event:/\\n5:pids:/\\n4:devices:/\\n3:cpu,cpuacct:/\\n2:cpuset:/\\n1:name=systemd:/\\n\",\"pid\":1495746,\"start_ticks\":372671600,\"uid\":1005},\"process_lifecycle\":{\"kernel_flags\":4227332,\"pid\":1495746,\"start_ticks\":372671600,\"state\":\"Z\",\"uid\":1005},\"reason\":\"live_unowned_gpu_process\",\"retired_owned_pid\":{\"boot_id\":\"5afaf1c0-ecf6-4bda-a039-5341ef954efb\",\"cgroup\":\"12:rdma:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n11:blkio:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n10:net_cls,net_prio:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n9:freezer:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n8:memory:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n7:hugetlb:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n6:perf_event:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n5:pids:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n4:devices:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n3:cpu,cpuacct:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n2:cpuset:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n1:name=systemd:/system.slice/docker-07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869.scope\\n\",\"pid\":1495746,\"start_ticks\":372671600,\"uid\":1005},\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":52473,\"pids\":[1495746],\"util_pct\":0}},\"utc\":\"2026-10-27T17:52:57.502800+00:00\"}\n{\"action\":\"STOP_OR_FAILURE\",\"error\":\"RuntimeError: Worker failed; inspect preserved per-arm container.log\",\"status\":\"FAILED\",\"utc\":\"2026-10-27T17:52:58.571671+00:00\"}\n",
+    "output/bf16/container.log": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/workspace/agent_work/runs/nextgen-bf16-qwen38-validation-r0-20261027b/runtime/kv_controller/worker.py\", line 299, in <module>\n    main()\n  File \"/workspace/agent_work/runs/nextgen-bf16-qwen38-validation-r0-20261027b/runtime/kv_controller/worker.py\", line 274, in main\n    result = run_validation(ticket, root, output, args.arm, env)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/agent_work/runs/nextgen-bf16-qwen38-validation-r0-20261027b/runtime/kv_controller/nextgen.py\", line 222, in run_validation\n    raise TimeoutError(\"Native hybrid startup deadline exceeded\")\nTimeoutError: Native hybrid startup deadline exceeded\n",
+    "output/bf16/operator_acceptance.log": "I20261028 01:34:34.754832 8 flashinfer.py:167] KV_ALLOCATION {\"layers\": [{\"layer_id\": 3, \"tensors\": {\"key\": {\"dtype\": \"torch.bfloat16\", \"shape\": [7, 64, 4, 256], \"bytes\": 917504}, \"value\": {\"dtype\": \"torch.bfloat16\", \"shape\": [7, 64, 4, 256], \"bytes\": 917504}}, \"key_format\": \"bf16\", \"value_format\": \"bf16\", \"resident_bytes\": 1835008, \"bytes_per_token\": 4096}], \"resident_bytes\": 1835008, \"full_attention_resident_bytes\": 1835008, \"full_attention_layer_ids\": [3], \"linear_state_layers\": [{\"layer_id\": 0, \"tensors\": {\"conv\": {\"dtype\": \"torch.float32\", \"shape\": [2, 8, 3], \"bytes\": 192}, \"ssm\": {\"dtype\": \"torch.float32\", \"shape\": [2, 4, 8, 8], \"bytes\": 2048}}, \"resident_bytes\": 2240}, {\"layer_id\": 1, \"tensors\": {\"conv\": {\"dtype\": \"torch.float32\", \"shape\": [2, 8, 3], \"bytes\": 192}, \"ssm\": {\"dtype\": \"torch.float32\", \"shape\": [2, 4, 8, 8], \"bytes\": 2048}}, \"resident_bytes\": 2240}, {\"layer_id\": 2, \"tensors\": {\"conv\": {\"dtype\": \"torch.float32\", \"shape\": [2, 8, 3], \"bytes\": 192}, \"ssm\": {\"dtype\": \"torch.float32\", \"shape\": [2, 4, 8, 8], \"bytes\": 2048}}, \"resident_bytes\": 2240}], \"linear_state_resident_bytes\": 6720, \"total_resident_bytes\": 1841728, \"token_capacity\": 448}\n",
+    "output/bf16/server.log": "1   238 threadpool.cpp:32] ThreadPool created, thread count 32, pool name HFModelLoader.load_weights, cpu_binding false.\nI20261028 01:37:55.856649   238 llm_engine.cpp:236] Initializing model from: /models/Qwen3.8-27B\nI20261028 01:37:55.856833   238 tokenizer_factory.cpp:33] Create fast tokenizer.\nI20261028 01:37:56.819686   238 llm_engine.cpp:267] Block info, block_size: 128, n_local_kv_heads: 4, head_dim: 256, n_layers: 64, dtype: BFloat16, kv_cache_dtype: auto\nI20261028 01:37:57.684878   238 llm_engine.cpp:287] Tokenizer/model vocab differ: tokenizer=248077, model=248320\nI20261028 01:37:57.684960   238 llm_engine.cpp:293] Initializing model with ModelArgs: [model_type: qwen3_5_text, encoder_embedding_mode: 0, embedding_mode: 0, dtype: bfloat16, hidden_size: 5120, hidden_act: silu, intermediate_size: 17408, moe_intermediate_size: 0, n_routed_experts: 0, n_activated_experts: 0, num_experts_per_tok: 0, n_layers: 64, n_encoder_layers: 0, head_dim: 256, decoder_head_dim: 0, n_heads: 24, decoder_n_heads: 0, n_kv_heads: 4, decoder_n_kv_heads: -1, vocab_size: 248320, rms_norm_eps: 1e-06, layer_norm_eps: 0, rotary_dim: 0, rope_theta: 1e+07, rope_scaling_rope_type: , rope_scaling_factor: 0, rope_scaling_low_freq_factor: 0, rope_scaling_high_freq_factor: 0, rope_scaling_original_max_position_embeddings: 0, rope_scaling_mrope_section: [11, 11, 10, ], max_position_embeddings: 262144, use_absolute_position_embedding: 0, bos_token_id: 248044, eos_token_id: 248044, pad_token_id: 0, attn_scalar: 0, no_bias: 0, qkv_bias: 0, stop_token_ids: [248046, 248044, ], vision_start_token_id: 0, vision_end_token_id: 0, vision_token_id: 0, image_token_id: 0, video_token_id: 0, vision_custom_adapter: , vision_max_slice_nums: 0, mm_dropout: 0, mm_hidden_act: , mm_hidden_size: 0, mm_image_size: 0, mm_intermediate_size: 0, mm_num_channels: 0, mm_initializer_range: 0, mm_layer_norm_eps: 0, mm_num_attention_heads: 0, mm_num_beam_groups: 0, mm_num_beams: 0, mm_num_hidden_layers: 0, mm_num_return_sequences: 0, mm_output_attentions: 0, mm_output_hidden_states: 0, mm_output_scores: 0, mm_patch_size: 0, mm_projection_dim: 0, mm_spatial_merge_size: 0, mm_spatial_patch_size: 0, mm_remove_invalid_values: 0, mm_repetition_penalty: 0, mm_return_dict: 0, mm_return_dict_in_generate: 0, mm_temperature: 0, mm_tie_encoder_decoder: 0, mm_tie_word_embeddings: 0, mm_top_k: 0, mm_top_p: 0, mm_torchscript: 0, mm_use_bfloat16: 0, mm_head_dim: 0, mm_vocab_size: 0, mm_window_size: 0, mm_fullatt_block_indexes: [], mm_deepstack_visual_indexes: [], mm_tokens_per_second: 0, mm_temporal_patch_size: 0, mm_projector_type: , mm_projector_hidden_act: , mm_projector_n_layers: 0, mm_vision_feature_layer: 0, mm_vision_feature_select_strategy: , mm_image_do_center_crop: 0, mm_image_crop_height_size: 335, mm_image_crop_width_size: 335, mm_image_do_resize: 0, mm_image_resize_shortest_edge: 65536, mm_image_resample: 335, mm_image_do_rescale: 0, mm_video_do_rescale: 0, mm_image_rescale_factor: 0, mm_image_do_normalize: 0, mm_image_normalize_mean: [0.5, 0.5, 0.5, ], mm_image_normalize_std: [0.5, 0.5, 0.5, ], mm_image_shortest_edge: 65536, mm_image_longest_edge: 16777216, mm_image_min_pixels: 0, mm_image_max_pixels: 0, mm_image_patch_size: 16, mm_image_temporal_patch_size: 2, mm_image_merge_size: 2, mm_image_token_index: 0, mm_video_normalize_mean: [0.5, 0.5, 0.5, ], mm_video_normalize_std: [0.5, 0.5, 0.5, ], mm_video_shortest_edge: 4096, mm_video_longest_edge: 25165824, mm_video_patch_size: 16, mm_video_temporal_patch_size: 2, mm_video_merge_size: 2, mm_pad_token_id: 0, tie_word_embeddings: 0, use_sliding_window: 0, sliding_window: 4096, max_window_layers: 28, query_num: 0, num_speculative_tokens: 0, in_channels: -1, out_channels: -1, down_block_types: [], up_block_types: [], block_out_channels: [], layers_per_block: 1, latent_channels: -1, norm_num_groups: -1, sample_size: -1, scale_factor: 0, shift_factor: 0, mid_block_add_attention: 1, force_upcast: 1, use_quant_conv: 0, use_post_quant_conv: 0, joint_attention_dim: 0, pooled_projection_dim: 0, guidance_embeds: 1, axes_dims_rope: [], num_single_layers: 0, d_model: 0, num_layers: 0, d_kv: 0, d_ff: 0, act_fn: , is_gated_act: 1, relative_attention_num_buckets: 0, relative_attention_max_distance: 0, num_train_timesteps: 0, shift: 0, use_dynamic_shifting: 0, base_shift: 0, max_shift: 0, base_image_seq_len: 0, max_image_seq_len: 0]\nI20261028 01:37:57.685009   238 llm_engine.cpp:294] Initializing model with quant args: QuantArgs: [quant_method: , quantize_type: , bits: 0, moe_weight_bits: 8, group_size: 0, desc_act: 0, is_sym: 0, activation_dynamic: 1, fmt: e4m3, ignored_modules: 0, quant_version: , quant_desc_count: 0]\nI20261028 01:37:57.685024   238 llm_engine.cpp:295] Initializing model with tokenizer args: TokenizerArgs: [tokenizer_type: fast, add_bos_token: 0, add_eos_token: 0, bos_token: , eos_token: <|im_end|>, pad_token: <|endoftext|>, tokenizer_class: Qwen2Tokenizer, pattern: ]\nI20261028 01:37:57.685045   238 llm_engine.cpp:296] Initializing model with random seed: 669676681\nI20261028 01:37:57.707979   270 hf_model_loader.cpp:1164] Success to parse image preprocess args file: /models/Qwen3.8-27B/preprocessor_config.json\nI20261028 01:37:57.710280   270 hf_model_loader.cpp:1253] Success to parse video preprocess args file: /models/Qwen3.8-27B/video_preprocessor_config.json\nI20261028 01:37:57.712369   270 threadpool.cpp:32] ThreadPool created, thread count 32, pool name HFModelLoader.load_weights, cpu_binding false.\nI20261028 01:37:57.717694   270 tokenizer_factory.cpp:33] Create fast tokenizer.\nI20261028 01:38:01.987414   270 worker_impl.cpp:2166] Temporarily setting ATen threads to 1 during weight loading, tp_world_size=1, prev_threads=1\nI20261028 01:38:01.987618   342 hf_model_loader.cpp:545] Loading model weights from /models/Qwen3.8-27B/model-00017-of-00018.safetensors\nI20261028 01:38:01.987567   332 hf_model_loader.cpp:545] Loading model weights from /models/Qwen3.8-27B/model-00007-of-00018.safetensors\nI20261028 01:38:01.987546   328 hf_model_loader.cpp:545] Loading model weights from /models/Qwen3.8-27B/model-00003-of-00018.safetensors\nI20261028 01:38:01.987582   335 hf_model_loader.cpp:545] Loading model weights from /models/Qwen3.8-27B/model-00010-of-00018.safetensors\nI20261028 01:38:01.987551   329 hf_model_loader.cpp:545] Loading model weights from /models/Qwen3.8-27B/model-00004-of-00018.safetensors\nI20261028 01:38:01.987586   336 hf_model_loader.cpp:545] Loading model weights from /models/Qwen3.8-27B/model-00011-of-00018.safetensors\nI20261028 01:38:01.987603   339 hf_model_loader.cpp:545] Loading model weights from /models/Qwen3.8-27B/model-00014-of-00018.safetensors\nI20261028 01:38:01.987610   341 hf_model_loader.cpp:545] Loading model weights from /models/Qwen3.8-27B/model-00016-of-00018.safetensors\nI20261028 01:38:01.987540   327 hf_model_loader.cpp:545] Loading model weights from /models/Qwen3.8-27B/model-00002-of-00018.safetensors\nI20261028 01:38:01.987562   331 hf_model_loader.cpp:545] Loading model weights from /models/Qwen3.8-27B/model-00006-of-00018.safetensors\nI20261028 01:38:01.987578   334 hf_model_loader.cpp:545] Loading model weights from /models/Qwen3.8-27B/model-00009-of-00018.safetensors\nI20261028 01:38:01.987594   337 hf_model_loader.cpp:545] Loading model weights from /models/Qwen3.8-27B/model-00012-of-00018.safetensors\nI20261028 01:38:01.987607   340 hf_model_loader.cpp:545] Loading model weights from /models/Qwen3.8-27B/model-00015-of-00018.safetensors\nI20261028 01:38:01.987623   343 hf_model_loader.cpp:545] Loading model weights from /models/Qwen3.8-27B/model-00018-of-00018.safetensors\nI20261028 01:38:01.987571   333 hf_model_loader.cpp:545] Loading model weights from /models/Qwen3.8-27B/model-00008-of-00018.safetensors\nI20261028 01:38:01.987597   338 hf_model_loader.cpp:545] Loading model weights from /models/Qwen3.8-27B/model-00013-of-00018.safetensors\nI20261028 01:38:01.987540   326 hf_model_loader.cpp:545] Loading model weights from /models/Qwen3.8-27B/model-00001-of-00018.safetensors\nI20261028 01:38:01.987557   330 hf_model_loader.cpp:545] Loading model weights from /models/Qwen3.8-27B/model-00005-of-00018.safetensors\n",
+    "supervisor.log": "",
+    "watchdog.log": ""
+  },
+  "ok": true,
+  "operator_acceptance": {
+    "bf16": {
+      "sha256": "6f0d534acf3ce6c47b7bd06d3630c5ed89cb38bd8e88e690807a348d8d7b25b7",
+      "value": {
+        "classification": "SM90_native_BF16_FA3_hybrid_geometry_operator_only",
+        "head_dim": 256,
+        "heads": 24,
+        "kv_heads": 4,
+        "linear_state_unchanged": true,
+        "model_loaded": false,
+        "page_size": 64,
+        "real_capture_and_changed_input_replay": true,
+        "relative_L2": [
+          0.0021007503382861614,
+          0.0021165036596357822
+        ]
+      }
+    }
+  },
+  "owned_containers": [
+    {
+      "created": "2026-10-27T17:34:30.406201768Z",
+      "id": "07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869",
+      "running": false
+    }
+  ],
+  "quality_progress": {
+    "bf16": {},
+    "fp8_e4m3": {}
+  },
+  "relaunch_allowed": false,
+  "run_id": "nextgen-bf16-qwen38-validation-r0-20261027b",
+  "status": "FAILED",
+  "supervisor_alive": false
+}

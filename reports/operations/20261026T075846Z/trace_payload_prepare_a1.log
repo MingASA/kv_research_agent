@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/home/mingasa/kv-research-agent/scripts/freeze_production_traces.py", line 154, in <module>
+    main()
+  File "/home/mingasa/kv-research-agent/scripts/freeze_production_traces.py", line 148, in main
+    result = freeze(args.base.absolute(), args.tokenizer.absolute(), args.out.absolute())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mingasa/kv-research-agent/scripts/freeze_production_traces.py", line 89, in freeze
+    raise ValueError("Actual loader changed input length or trace timing/output budget")
+ValueError: Actual loader changed input length or trace timing/output budget

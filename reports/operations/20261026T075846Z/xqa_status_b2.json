@@ -1,0 +1,94 @@
+{
+  "files": {
+    "START_INTENT.json": {
+      "sha256": "265426bd9698810921bee74b5469b58b1ceb94ef70f799cc0c63da5d231a7ab8",
+      "value": {
+        "request_sha256": "aeee474caf8429d4c1e8f020ff37d5854f6e35a163dc52b947b72df20d73f6a4"
+      }
+    },
+    "SUPERVISOR_PROCESS.json": {
+      "sha256": "b9414e1ff4839effb337d31295d6210c74eec416d93215d6e0e241765808fcbe",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-515133.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-515133.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-515133.scope\n",
+          "pid": 1002924,
+          "start_ticks": 365392989,
+          "uid": 1005
+        }
+      }
+    },
+    "SUPERVISOR_STARTED.json": {
+      "sha256": "e0b09049251d4395efefceb537e760fa6b937e91bf239a8f5410a0ead14ae869",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-515133.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-515133.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-515133.scope\n",
+          "pid": 1002924,
+          "start_ticks": 365392989,
+          "uid": 1005
+        },
+        "ticket_sha256": "d86acb8ede1a438232b3a626bddb91efee0c9d9c6bd3302c0f42ebacce7afc26"
+      }
+    },
+    "owned_containers.json": {
+      "sha256": "00d15978e589e47407412a4f1cb15dd3ecb2bf1f4f42c2d1ae646a379a65a7bd",
+      "value": {
+        "containers": [
+          {
+            "container_id": "67d78d1637975b689ddaeaedb0908ecffd4da82e7a98d9fdb31a3b280a0632ef",
+            "pid_identity": {
+              "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+              "cgroup": "12:rdma:/system.slice/docker-67d78d1637975b689ddaeaedb0908ecffd4da82e7a98d9fdb31a3b280a0632ef.scope\n11:blkio:/system.slice/docker-67d78d1637975b689ddaeaedb0908ecffd4da82e7a98d9fdb31a3b280a0632ef.scope\n10:net_cls,net_prio:/system.slice/docker-67d78d1637975b689ddaeaedb0908ecffd4da82e7a98d9fdb31a3b280a0632ef.scope\n9:freezer:/system.slice/docker-67d78d1637975b689ddaeaedb0908ecffd4da82e7a98d9fdb31a3b280a0632ef.scope\n8:memory:/system.slice/docker-67d78d1637975b689ddaeaedb0908ecffd4da82e7a98d9fdb31a3b280a0632ef.scope\n7:hugetlb:/system.slice/docker-67d78d1637975b689ddaeaedb0908ecffd4da82e7a98d9fdb31a3b280a0632ef.scope\n6:perf_event:/system.slice/docker-67d78d1637975b689ddaeaedb0908ecffd4da82e7a98d9fdb31a3b280a0632ef.scope\n5:pids:/system.slice/docker-67d78d1637975b689ddaeaedb0908ecffd4da82e7a98d9fdb31a3b280a0632ef.scope\n4:devices:/system.slice/docker-67d78d1637975b689ddaeaedb0908ecffd4da82e7a98d9fdb31a3b280a0632ef.scope\n3:cpu,cpuacct:/system.slice/docker-67d78d1637975b689ddaeaedb0908ecffd4da82e7a98d9fdb31a3b280a0632ef.scope\n2:cpuset:/system.slice/docker-67d78d1637975b689ddaeaedb0908ecffd4da82e7a98d9fdb31a3b280a0632ef.scope\n1:name=systemd:/system.slice/docker-67d78d1637975b689ddaeaedb0908ecffd4da82e7a98d9fdb31a3b280a0632ef.scope\n",
+              "pid": 1016187,
+              "start_ticks": 365405317,
+              "uid": 1005
+            },
+            "released": false
+          }
+        ],
+        "request_sha256": "aeee474caf8429d4c1e8f020ff37d5854f6e35a163dc52b947b72df20d73f6a4",
+        "reservation_id": "9f3dae8f4cae4e3dadf2f0a3d1a4de2a"
+      }
+    },
+    "state.json": {
+      "sha256": "5ddab09fe1f04e95589fc53ecb67335f824587e71b3470b5c3d80f12140276a0",
+      "value": {
+        "arm": "fp8_e4m3",
+        "containers": [
+          "67d78d1637975b689ddaeaedb0908ecffd4da82e7a98d9fdb31a3b280a0632ef"
+        ],
+        "request_sha256": "aeee474caf8429d4c1e8f020ff37d5854f6e35a163dc52b947b72df20d73f6a4",
+        "status": "RUNNING"
+      }
+    }
+  },
+  "gpu_snapshot": "0, GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 1049, 0\n1, GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 0, 0\n2, GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 0, 0\n3, GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 0, 0\n4, GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 1257, 0\n5, GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 0, 0\n6, GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 0, 0\n7, GPU-47211491-ba0d-78bf-5c84-f968c0648213, 0, 0",
+  "live_owned_containers": [
+    "67d78d1637975b689ddaeaedb0908ecffd4da82e7a98d9fdb31a3b280a0632ef"
+  ],
+  "log_tail": {
+    "events.jsonl": "{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3653930298801237,\"utc\":\"2026-10-26T21:24:48.559658+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3653930298801237,\"utc\":\"2026-10-26T21:25:19.039837+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3653930298801237,\"utc\":\"2026-10-26T21:25:49.358796+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3653930298801237,\"utc\":\"2026-10-26T21:26:19.751973+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3653930298801237,\"utc\":\"2026-10-26T21:26:50.208237+00:00\"}\n{\"action\":\"OWNED_CONTAINER_CREATED\",\"arm\":\"fp8_e4m3\",\"id\":\"67d78d1637975b689ddaeaedb0908ecffd4da82e7a98d9fdb31a3b280a0632ef\",\"utc\":\"2026-10-26T21:26:51.309083+00:00\"}\n",
+    "output/fp8_e4m3/container.log": "",
+    "output/fp8_e4m3/operator_acceptance.log": "I20261027 05:26:54.895194 11 flashinfer.py:168] KV_ALLOCATION {\"layers\": [{\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [6, 128, 8, 128], \"bytes\": 786432}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [6, 128, 8, 128], \"bytes\": 786432}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [6, 128, 8], \"bytes\": 24576}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [6, 128, 8], \"bytes\": 24576}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 1622016, \"bytes_per_token\": 2112}], \"resident_bytes\": 1622016, \"token_capacity\": 768}\n",
+    "output/fp8_e4m3/scorer_cpu_preflight.log": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/experiments/joint-kv-14b/longbench-deps-py312/fuzzywuzzy/fuzz.py:11: UserWarning: Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning\n  warnings.warn('Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning')\n{\"qa_f1\": 1.0, \"code_sim\": 1.0}\n",
+    "supervisor.log": "",
+    "watchdog.log": ""
+  },
+  "ok": true,
+  "owned_containers": [
+    {
+      "created": "2026-10-26T21:26:51.266707142Z",
+      "id": "67d78d1637975b689ddaeaedb0908ecffd4da82e7a98d9fdb31a3b280a0632ef",
+      "running": true
+    }
+  ],
+  "quality_progress": {
+    "bf16": {},
+    "fp8_e4m3": {}
+  },
+  "relaunch_allowed": false,
+  "run_id": "prod-quality-xqa-pilot80-r0-20261026b",
+  "status": "RUNNING",
+  "supervisor_alive": true
+}

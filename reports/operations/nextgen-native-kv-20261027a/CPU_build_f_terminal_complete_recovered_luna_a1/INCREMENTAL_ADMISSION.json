@@ -1,0 +1,8 @@
+{
+  "combined_new_disk_GiB_limit": 20,
+  "original_host_source_preserved": true,
+  "parent_failed_build": "nextgen-native-kv-59fc32ac-20261027d",
+  "reused_build": "/workspace/agent_work/builds/nextgen-native-kv-59fc32ac-20261027d/build",
+  "source_commit": "862c29cade05e47691147b8f50c979a812495470",
+  "source_mount": "/workspace/agent_work/builds/nextgen-native-kv-59fc32ac-20261027d/source_repo"
+}

@@ -1,0 +1,6 @@
+{
+  "GPU_job": false,
+  "error": "RuntimeError: configure exited 1",
+  "source_commit": "862c29cade05e47691147b8f50c979a812495470",
+  "success": false
+}

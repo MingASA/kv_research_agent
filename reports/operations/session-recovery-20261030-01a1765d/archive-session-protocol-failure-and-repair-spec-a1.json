@@ -1,0 +1,34 @@
+{
+  "sha_manifests": [
+    "results/mirrors/nextgen-bf16-qwen38-mixed8192-prefix32-r0-20261030w-complete-a1/SHA_MANIFEST.json"
+  ],
+  "include": [
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-bf16-w-independent-failure-audit-a1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-bf16-w-application-metrics-original-a1",
+    "reports/operations/session-recovery-20261030-01a1765d/session-stop-CPU-negative-a1",
+    "reports/operations/session-recovery-20261030-01a1765d/session-stop-CPU-positive-a1",
+    "reports/operations/session-recovery-20261030-01a1765d/session-stop-full-CLI-independent-CPU-proof-a1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/W_FAILED_ORIGINAL_CPU_VALIDATOR_SOURCE.py",
+    "reports/operations/session-recovery-20261030-01a1765d/audit_session_stop_cpu.py",
+    "reports/operations/session-recovery-20261030-01a1765d/session-stop-SDK-fresh-readonly-a1/REMOTE_SOURCE.py",
+    "reports/operations/session-recovery-20261030-01a1765d/session-stop-SDK-fresh-readonly-a1/RESPONSE.json",
+    "reports/operations/session-recovery-20261030-01a1765d/session-stop-SDK-fresh-readonly-a1/COMPARISON.json",
+    "reports/operations/session-recovery-20261030-01a1765d/session-stop-current-full-CPU-a1.stderr.log",
+    "reports/operations/session-recovery-20261030-01a1765d/session-recovery-final-full-CPU-d1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/session-recovery-final-full-CPU-d1.stderr.log",
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-wc-prepare-a1.stdout.log",
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-wc-prepare-a1.stderr.log",
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-bf16-wc-main-original-status-a1.stderr.log",
+    "reports/operations/session-recovery-20261030-01a1765d/session-stop-exact-CLI-parser-CPU-a1.raw.json",
+    "reports/operations/session-recovery-20261030-01a1765d/session-protocol-code-provenance-a1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/session-stop-repair-bounded-Luna-review-reported-a1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/SESSION_PROTOCOL_REPAIR_NOTES.md",
+    "scripts/controller/nextgen_performance.py",
+    "scripts/controller/nextgen_service.py",
+    "scripts/controller/aiperf_cli_admission.py",
+    "scripts/audit_nextgen_performance.py",
+    "scripts/prepare_nextgen_service.py",
+    "scripts/validate_nextgen_aiperf_cli_cpu.py",
+    "tests/test_nextgen_session_recovery.py"
+  ]
+}

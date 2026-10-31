@@ -1,0 +1,1 @@
+{"do_not_duplicate":true,"exec_session":22007,"identity":{"argv":["python3","-B","-m","scripts.controller.cli","launch","--package","plans/experiments/nextgen-fp8fa2-qwen38-quality-core1720-r0-20261028q/package.json"],"boot_id":"2afb7771-92c9-41af-a06d-1632040687f5","pid":241393,"process_state":"S","start_ticks":54231761,"uid":1000}}

@@ -1,0 +1,352 @@
+{
+  "files": [
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/ticket.json",
+      "size": 14956
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/PREPARED.json",
+      "size": 22604
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/dispatch.lock",
+      "size": 0
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/START_INTENT.json",
+      "size": 86
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/supervisor.log",
+      "size": 0
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/SUPERVISOR_PROCESS.json",
+      "size": 488
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/supervisor.lock",
+      "size": 0
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/SUPERVISOR_STARTED.json",
+      "size": 571
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/watchdog_config.json",
+      "size": 178
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/watchdog.log",
+      "size": 0
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/WATCHDOG_READY.json",
+      "size": 572
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/events.jsonl",
+      "size": 1503
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/owned_containers.json",
+      "size": 1630
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/state.json",
+      "size": 643
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/result.json",
+      "size": 643
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/WATCHDOG_FINISHED.json",
+      "size": 197
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/COMPLETE",
+      "size": 85
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/watchdog_result.json",
+      "size": 128
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/output/fp8_e4m3/docker_command.json",
+      "size": 2688
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/output/fp8_e4m3/container.log",
+      "size": 0
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/output/fp8_e4m3/container_identity.json",
+      "size": 1511
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/output/fp8_e4m3/lease.json",
+      "size": 138
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/output/fp8_e4m3/runtime_environment.json",
+      "size": 891
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/output/fp8_e4m3/nextgen_environment.json",
+      "size": 992
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/output/fp8_e4m3/native_operator.log",
+      "size": 3981
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/output/fp8_e4m3/native_operator_command.json",
+      "size": 210
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/output/fp8_e4m3/native_operator_environment.json",
+      "size": 992
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/output/fp8_e4m3/server_command.json",
+      "size": 949
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/output/fp8_e4m3/server.log",
+      "size": 390648
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/output/fp8_e4m3/validation_raw.jsonl",
+      "size": 192716
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/output/fp8_e4m3/lifecycle_gate.json",
+      "size": 1091
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/output/fp8_e4m3/validation_result.json",
+      "size": 18007
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/output/fp8_e4m3/quality_predictions.jsonl",
+      "size": 22765174
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/output/fp8_e4m3/quality_progress.json",
+      "size": 193
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/output/fp8_e4m3/quality_generation_result.json",
+      "size": 799
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/output/fp8_e4m3/measurement.json",
+      "size": 21188
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/output/fp8_e4m3/native_pages/fp8_e4m3-prefill.json",
+      "size": 5665
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/output/fp8_e4m3/native_pages/fp8_e4m3-chunked_prefill.json",
+      "size": 5673
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/output/fp8_e4m3/native_pages/fp8_e4m3-decode-replay0-reference.npz",
+      "size": 2254541
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/output/fp8_e4m3/native_pages/fp8_e4m3-decode-replay1-reference.npz",
+      "size": 2271925
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/output/fp8_e4m3/native_pages/fp8_e4m3-decode.json",
+      "size": 5949
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/output/fp8_e4m3/native_pages/acceptance.json",
+      "size": 408
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/input/gdn_dependency_CPU_import.json",
+      "size": 1075
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/input/partial_quality_certificate.json",
+      "size": 39870
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/input/quality_manifest.json",
+      "size": 5654
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/input/quality_requests.jsonl",
+      "size": 21073086
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/input/scale_calibration_audit.json",
+      "size": 3095
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/input/scoring_protocol.json",
+      "size": 2286
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/input/source.bundle",
+      "size": 88189
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/input/validation.json",
+      "size": 117581
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/input/validation_tokenization_CPU.json",
+      "size": 2896
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/__init__.py",
+      "size": 70
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/absent_recovery.py",
+      "size": 2152
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/aiperf_cli_admission.py",
+      "size": 2629
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/approval.py",
+      "size": 9391
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/bf16q_operator.py",
+      "size": 4563
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/cli.py",
+      "size": 13650
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/component_profile.py",
+      "size": 8059
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/discovery.py",
+      "size": 3415
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/dispatch.py",
+      "size": 5674
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/durable.py",
+      "size": 2344
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/evidence.py",
+      "size": 260
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/idle_wait_recovery.py",
+      "size": 5450
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/model_source_equivalence.py",
+      "size": 2503
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/native_tools.py",
+      "size": 14521
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/nextgen.py",
+      "size": 33462
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/nextgen_performance.py",
+      "size": 13204
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/nextgen_quality.py",
+      "size": 9185
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/nextgen_service.py",
+      "size": 44541
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/nextgen_tool_child.py",
+      "size": 7469
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/nextgen_tools_env.py",
+      "size": 10452
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/owned_result_mirror.py",
+      "size": 8136
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/policy.py",
+      "size": 30427
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/prefill_operator.py",
+      "size": 3709
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/processes.py",
+      "size": 2472
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/production.py",
+      "size": 40898
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/protocols.py",
+      "size": 8186
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/quota.py",
+      "size": 15684
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/range_probe.py",
+      "size": 10143
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/remote_rpc.py",
+      "size": 29801
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/scale_coverage.py",
+      "size": 7085
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/service_metrics.py",
+      "size": 6699
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/supervisor.py",
+      "size": 39790
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/trace_serving.py",
+      "size": 11331
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/transport.py",
+      "size": 8578
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/watchdog.py",
+      "size": 3713
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab/runtime/kv_controller/worker.py",
+      "size": 17583
+    }
+  ]
+}

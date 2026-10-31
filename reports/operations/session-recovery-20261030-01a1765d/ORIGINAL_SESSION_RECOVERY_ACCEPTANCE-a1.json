@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-30T21:00:27.445872+00:00",
+  "scope": "original requested session recovery; ongoing research remains active",
+  "source_session_id": "01a1765d-9953-7760-a9fa-102c05c766d7",
+  "original_bytes_rehashed": 129515448,
+  "source_sha256": "3c38100d41de4af38ccfd4f67fe9383e7c52af763307c126a0d38cc9ebe587d8",
+  "source_records": 35205,
+  "context_compactions": 20,
+  "user_messages": 37,
+  "original_user_messages_document": "reports/operations/session-recovery-20261030-01a1765d/USER_INSTRUCTIONS_FULL.md",
+  "original_messages_machine_readable": "reports/operations/session-recovery-20261030-01a1765d/USER_MESSAGES.json",
+  "last_root_tool_original_line": 34487,
+  "last_explicit_user_request_original_line": 35175,
+  "original_cutoff_unfinished_action": "report and handoff prompt after AE/AF CPU-only frozen assets; actual model tools/performance remained outstanding",
+  "actual_remote_recovery_completed_and_advanced": true,
+  "old_ab_never_relaunched": true,
+  "new_native_quality_service_tools_evidence_in_concentrated_report": true,
+  "research_objective_complete": false,
+  "latest_active_run_id": "nextgen-bf16-qwen38-mixed8192-quality1720-r0-20261030t",
+  "mandatory_documents_read_prior_to_work": {
+    "AGENTS.md": "a03bb56ae5ba1c5ef1c8c1bf510471492ca1bfa0c3dc466031cbfaa7a1113467",
+    "MASTER_PROMPT.md": "ad6ca9bf4e86b2c8e34959946cba3920e222e67ef40d047522f6363d71aa7e32",
+    "ops/PRODUCTION_DECISION_STANDARD.md": "7ed3727acd2433901c4a216447a7bcf2bae5f64fbc977f0d845c24df7c646388",
+    "ops/NEXTGEN_NATIVE_KV_STANDARD.md": "b72794901db9ad351e4b447248aaf2e337f2e3d37f1c25d2d7a6077ce44c4c69",
+    "policy/REMOTE_SAFETY.md": "3baede51438be2eea0fb2af3b5e5f5cbf785e8dc017357e1e0e161e9c5010411",
+    "ops/PATHS_AND_FILE_PLACEMENT.md": "0bbb60ab4407ad24a94fb6afb708f2066c5a9c68d913abbb0fc8c1b7b00e9b6b",
+    "ops/APPROVAL_AND_OPERATOR_GUIDE.md": "0f5db916585e69d8f2592a3ef1d3547f67a38f606e8533ffba1b233a2836d5dc"
+  },
+  "provenance_documents": {
+    "USER_INSTRUCTIONS_FULL.md": "f825dcaf562a8fe26eb6edef4c07756919cb35050df0997dff299be59f03bce8",
+    "USER_MESSAGES.json": "43f7f3c84325c98921e3179d04839ceabac8791ca90a7e13bf9304294fe20a71",
+    "SOURCE_RECOVERY.json": "d59c0a75b528009cf3159802ad3b7e6ba67c770f1b5eedc1554c0feb909ac413",
+    "LAST_ACTIONS.json": "112a608e6be595ae02bcf7aafcc27c4f6689883305cada25101940e6aa22a477"
+  }
+}

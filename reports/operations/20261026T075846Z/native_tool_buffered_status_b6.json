@@ -1,0 +1,486 @@
+{
+  "files": {
+    "START_INTENT.json": {
+      "sha256": "6f1609ab6d9151fed67dca9ca0b6101de027b7a1bbb39a1b87502ab489cb9652",
+      "value": {
+        "request_sha256": "5b7444f9e25bd61847852ca2070d07d4447f1e9a0b9da3fb8eb869d749644d6b"
+      }
+    },
+    "SUPERVISOR_PROCESS.json": {
+      "sha256": "f9d102ddb6b66a71d45d69dc1ef0c4d0e2d43425e74bc3175b0c99abc5667528",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-522570.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-522570.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-522570.scope\n",
+          "pid": 1796730,
+          "start_ticks": 369714690,
+          "uid": 1005
+        }
+      }
+    },
+    "SUPERVISOR_STARTED.json": {
+      "sha256": "04820dc3ee355ef9d0c9976dd77fc528908740f40832ead4b8c6a9d499339ac8",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-522570.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-522570.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-522570.scope\n",
+          "pid": 1796730,
+          "start_ticks": 369714690,
+          "uid": 1005
+        },
+        "ticket_sha256": "e2324f73ab870a1ac29736535b600d5f1e79f37143bf27d4810e6ecc82a21261"
+      }
+    },
+    "owned_containers.json": {
+      "sha256": "f8765dfa549d08a7acfaabb574d0ffbac5df033ef81de8d4c5300c44a64c9023",
+      "value": {
+        "containers": [
+          {
+            "container_id": "c198f90ee3ee8c1f4b92f6fe9e12e35348c8ea3897d7a7725aa608cb523e568b",
+            "pid_identity": {
+              "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+              "cgroup": "12:rdma:/system.slice/docker-c198f90ee3ee8c1f4b92f6fe9e12e35348c8ea3897d7a7725aa608cb523e568b.scope\n11:blkio:/system.slice/docker-c198f90ee3ee8c1f4b92f6fe9e12e35348c8ea3897d7a7725aa608cb523e568b.scope\n10:net_cls,net_prio:/system.slice/docker-c198f90ee3ee8c1f4b92f6fe9e12e35348c8ea3897d7a7725aa608cb523e568b.scope\n9:freezer:/system.slice/docker-c198f90ee3ee8c1f4b92f6fe9e12e35348c8ea3897d7a7725aa608cb523e568b.scope\n8:memory:/system.slice/docker-c198f90ee3ee8c1f4b92f6fe9e12e35348c8ea3897d7a7725aa608cb523e568b.scope\n7:hugetlb:/system.slice/docker-c198f90ee3ee8c1f4b92f6fe9e12e35348c8ea3897d7a7725aa608cb523e568b.scope\n6:perf_event:/system.slice/docker-c198f90ee3ee8c1f4b92f6fe9e12e35348c8ea3897d7a7725aa608cb523e568b.scope\n5:pids:/system.slice/docker-c198f90ee3ee8c1f4b92f6fe9e12e35348c8ea3897d7a7725aa608cb523e568b.scope\n4:devices:/system.slice/docker-c198f90ee3ee8c1f4b92f6fe9e12e35348c8ea3897d7a7725aa608cb523e568b.scope\n3:cpu,cpuacct:/system.slice/docker-c198f90ee3ee8c1f4b92f6fe9e12e35348c8ea3897d7a7725aa608cb523e568b.scope\n2:cpuset:/system.slice/docker-c198f90ee3ee8c1f4b92f6fe9e12e35348c8ea3897d7a7725aa608cb523e568b.scope\n1:name=systemd:/system.slice/docker-c198f90ee3ee8c1f4b92f6fe9e12e35348c8ea3897d7a7725aa608cb523e568b.scope\n",
+              "pid": 1810681,
+              "start_ticks": 369727024,
+              "uid": 1005
+            },
+            "released": true
+          },
+          {
+            "container_id": "439448eebe191354a1884c6a5820d813aee62482b8556025283932589cee45de",
+            "pid_identity": {
+              "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+              "cgroup": "12:rdma:/system.slice/docker-439448eebe191354a1884c6a5820d813aee62482b8556025283932589cee45de.scope\n11:blkio:/system.slice/docker-439448eebe191354a1884c6a5820d813aee62482b8556025283932589cee45de.scope\n10:net_cls,net_prio:/system.slice/docker-439448eebe191354a1884c6a5820d813aee62482b8556025283932589cee45de.scope\n9:freezer:/system.slice/docker-439448eebe191354a1884c6a5820d813aee62482b8556025283932589cee45de.scope\n8:memory:/system.slice/docker-439448eebe191354a1884c6a5820d813aee62482b8556025283932589cee45de.scope\n7:hugetlb:/system.slice/docker-439448eebe191354a1884c6a5820d813aee62482b8556025283932589cee45de.scope\n6:perf_event:/system.slice/docker-439448eebe191354a1884c6a5820d813aee62482b8556025283932589cee45de.scope\n5:pids:/system.slice/docker-439448eebe191354a1884c6a5820d813aee62482b8556025283932589cee45de.scope\n4:devices:/system.slice/docker-439448eebe191354a1884c6a5820d813aee62482b8556025283932589cee45de.scope\n3:cpu,cpuacct:/system.slice/docker-439448eebe191354a1884c6a5820d813aee62482b8556025283932589cee45de.scope\n2:cpuset:/system.slice/docker-439448eebe191354a1884c6a5820d813aee62482b8556025283932589cee45de.scope\n1:name=systemd:/system.slice/docker-439448eebe191354a1884c6a5820d813aee62482b8556025283932589cee45de.scope\n",
+              "pid": 1870999,
+              "start_ticks": 369776311,
+              "uid": 1005
+            },
+            "released": false
+          }
+        ],
+        "request_sha256": "5b7444f9e25bd61847852ca2070d07d4447f1e9a0b9da3fb8eb869d749644d6b",
+        "reservation_id": "6b97bb6bfeb846cc93b41e241e565ff6"
+      }
+    },
+    "state.json": {
+      "sha256": "472eeab58aad8b61042dde27215f4eca10cf27600331fe8b5702e785ce8c681e",
+      "value": {
+        "arm": "fp8_e4m3",
+        "containers": [
+          "c198f90ee3ee8c1f4b92f6fe9e12e35348c8ea3897d7a7725aa608cb523e568b",
+          "439448eebe191354a1884c6a5820d813aee62482b8556025283932589cee45de"
+        ],
+        "request_sha256": "5b7444f9e25bd61847852ca2070d07d4447f1e9a0b9da3fb8eb869d749644d6b",
+        "status": "RUNNING"
+      }
+    }
+  },
+  "gpu_snapshot": "0, GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 65173, 0\n1, GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 0, 0\n2, GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 0, 0\n3, GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 0, 0\n4, GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 0, 0\n5, GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 48009, 100\n6, GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 41213, 41\n7, GPU-47211491-ba0d-78bf-5c84-f968c0648213, 38721, 41",
+  "live_owned_containers": [
+    "439448eebe191354a1884c6a5820d813aee62482b8556025283932589cee45de"
+  ],
+  "log_tail": {
+    "events.jsonl": "{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3697147317297635,\"utc\":\"2026-10-27T09:25:05.578200+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3697147317297635,\"utc\":\"2026-10-27T09:25:36.065181+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3697147317297635,\"utc\":\"2026-10-27T09:26:06.391792+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3697147317297635,\"utc\":\"2026-10-27T09:26:36.787948+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3697147317297635,\"utc\":\"2026-10-27T09:27:07.235870+00:00\"}\n{\"action\":\"OWNED_CONTAINER_CREATED\",\"arm\":\"bf16\",\"id\":\"c198f90ee3ee8c1f4b92f6fe9e12e35348c8ea3897d7a7725aa608cb523e568b\",\"utc\":\"2026-10-27T09:27:08.376324+00:00\"}\n{\"action\":\"ARM_VERIFIED\",\"arm\":\"bf16\",\"id\":\"c198f90ee3ee8c1f4b92f6fe9e12e35348c8ea3897d7a7725aa608cb523e568b\",\"utc\":\"2026-10-27T09:33:18.332618+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3697640368329513,\"utc\":\"2026-10-27T09:33:18.629134+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3697640368329513,\"utc\":\"2026-10-27T09:33:49.116977+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3697640368329513,\"utc\":\"2026-10-27T09:34:19.438884+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3697640368329513,\"utc\":\"2026-10-27T09:34:49.819449+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3697640368329513,\"utc\":\"2026-10-27T09:35:20.227599+00:00\"}\n{\"action\":\"OWNED_CONTAINER_CREATED\",\"arm\":\"fp8_e4m3\",\"id\":\"439448eebe191354a1884c6a5820d813aee62482b8556025283932589cee45de\",\"utc\":\"2026-10-27T09:35:21.250822+00:00\"}\n",
+    "output/bf16/aiperf.log": "  N/A │    N/A │    N/A │\n│                                (tokens) │            │        │          │        │        │        │        │\n│  Total Usage Completion Tokens (tokens) │  13,208.00 │    N/A │      N/A │    N/A │    N/A │    N/A │    N/A │\n│   Total Usage Reasoning Tokens (tokens) │       0.00 │    N/A │      N/A │    N/A │    N/A │    N/A │    N/A │\n│     Total Usage Completion Audio Tokens │       0.00 │    N/A │      N/A │    N/A │    N/A │    N/A │    N/A │\n│                                (tokens) │            │        │          │        │        │        │        │\n│       Total Usage Total Tokens (tokens) │ 101,139.00 │    N/A │      N/A │    N/A │    N/A │    N/A │    N/A │\n└─────────────────────────────────────────┴────────────┴────────┴──────────┴────────┴────────┴────────┴────────┘\n                                                 NVIDIA AIPerf | LLM Metrics                                                 \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┓\n┃                                        Metric ┃       avg ┃    min ┃      max ┃      p99 ┃      p90 ┃      p50 ┃      std ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━┩\n│                          Request Latency (ms) │  2,598.38 │ 646.01 │ 7,846.85 │ 5,944.11 │ 4,458.25 │ 2,480.01 │ 1,241.86 │\n│ E2E Output Token Throughput (tokens/sec/user) │     21.18 │   9.77 │    68.81 │    58.45 │    36.64 │    17.57 │    11.12 │\n│               Output Sequence Length (tokens) │     51.19 │  19.00 │   305.00 │   220.75 │    88.60 │    40.00 │    38.18 │\n│                Input Sequence Length (tokens) │    340.82 │ 172.00 │   836.00 │   669.79 │   491.00 │   304.50 │   106.20 │\n│          Output Token Throughput (tokens/sec) │  1,681.18 │    N/A │      N/A │      N/A │      N/A │      N/A │      N/A │\n│           Input Token Throughput (tokens/sec) │ 11,192.30 │    N/A │      N/A │      N/A │      N/A │      N/A │      N/A │\n│             Request Throughput (requests/sec) │     32.84 │    N/A │      N/A │      N/A │      N/A │      N/A │      N/A │\n│          Completed Requests (Success + Error) │    258.00 │    N/A │      N/A │      N/A │      N/A │      N/A │      N/A │\n│                                    (requests) │           │        │          │          │          │          │          │\n│                        Request Error Rate (%) │      0.00 │    N/A │      N/A │      N/A │      N/A │      N/A │      N/A │\n│                      Request Count (requests) │    258.00 │    N/A │      N/A │      N/A │      N/A │      N/A │      N/A │\n└───────────────────────────────────────────────┴───────────┴────────┴──────────┴──────────┴──────────┴──────────┴──────────┘\n\n\n╭──────────────────────────────────────────── GPU Telemetry Platform ─────────────────────────────────────────────╮\n│  Platform: unknown                                                                                              │\n│  Metric semantics are platform-specific; cross-platform comparisons require workload and collector validation.  │\n╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯\n\n\nNo GPU telemetry data collected during the benchmarking run.\n\n╭─────────────────────────────── Output Sequence Length Mismatch Warning ────────────────────────────────╮\n│  258 of 258 requests (100.0%) have output length differing from requested by more than the threshold.  │\n│  Threshold (tokens): min(requested x 5%, 50)                                                           │\n│  Average mismatch: -95.0%                                                                              │\n│                                                                                                        │\n│  Why: Server hit EOS token before reaching requested output length.                                    │\n│                                                                                                        │\n│  Fix Options:                                                                                          │\n│    - --extra-inputs ignore_eos:true - Generate until max_tokens (vLLM, TensorRT-LLM)                   │\n│    - --extra-inputs min_tokens:<N> - Set minimum output length (vLLM, TensorRT-LLM, SGLang)            │\n│    - --use-server-token-count - Use server-reported token counts if tokenizer mismatch suspected       │\n│                                                                                                        │\n│  Diagnostics:                                                                                          │\n│    - Review profile_export.jsonl -> osl_mismatch_diff_pct for per-request values                       │\n│    - Adjust: AIPERF_METRICS_OSL_MISMATCH_PCT_THRESHOLD=5                                               │\n│    - Adjust: AIPERF_METRICS_OSL_MISMATCH_MAX_TOKEN_THRESHOLD=50                                        │\n╰────────────────────────────────────────────────────────────────────────────────────────────────────────╯\n\nCLI Command: aiperf profile --model 'Qwen2.5-14B-Instruct' --tokenizer \n'/models/Qwen2.5-14B-Instruct' --url 'http://127.0.0.1:19001' --endpoint-type 'chat' \n--use-legacy-max-tokens --use-server-token-count --random-seed 20261026 --export-level 'raw' \n--output-artifact-dir '/results/artifacts' --request-count 258 --concurrency 128 \n--dataset-sampling-strategy 'sequential' --request-timeout-seconds 1200 --input-file \n'/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/runs/prod-tools-bf16xqa-bfcl258-buffe\nred-c128-r0-20261027b/input/canonical_inputs.json' --custom-dataset-type 'inputs_json' \n--warmup-request-count 16\nBenchmark Duration: 7.85 sec\nCSV Export: /results/artifacts/profile_export_aiperf.csv\nJSON Export: /results/artifacts/profile_export_aiperf.json\nRaw Records: /results/artifacts/profile_export_raw.jsonl\nLog File: /results/artifacts/logs/aiperf.log\n\n",
+    "output/bf16/container.log": "",
+    "output/bf16/operator_acceptance.log": "I20261027 17:27:13.157515 9 flashinfer.py:168] KV_ALLOCATION {\"layers\": [{\"tensors\": {\"key\": {\"dtype\": \"torch.bfloat16\", \"shape\": [7, 128, 8, 128], \"bytes\": 1835008}, \"value\": {\"dtype\": \"torch.bfloat16\", \"shape\": [7, 128, 8, 128], \"bytes\": 1835008}}, \"key_format\": \"bf16\", \"value_format\": \"bf16\", \"resident_bytes\": 3670016, \"bytes_per_token\": 4096}], \"resident_bytes\": 3670016, \"token_capacity\": 896}\nI20261027 17:30:04.911075 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE prefill {'relative_l2': 0.0022824311163276434, 'max_abs': 0.0005266666412353516}\nI20261027 17:30:14.746429 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE capture_replay {'relative_l2': 0.003906028810888529, 'max_abs': 0.0008789524435997009}\nI20261027 17:30:14.748360 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE changed_context {'relative_l2': 0.0028711154591292143, 'max_abs': 0.0009812712669372559}\nI20261027 17:30:14.760344 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE padded_graph {'relative_l2': 0.0028711154591292143, 'max_abs': 0.0009812712669372559}\nI20261027 17:30:14.761805 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE restored_finite_padding {'relative_l2': 0.0028711154591292143, 'max_abs': 0.0009812712669372559}\nI20261027 17:30:14.762628 9 check_native_fa3_operator.py:219] Native production operator/Graph acceptance passed for bf16; no model/service/quality claim\n",
+    "output/bf16/server.log": "33769124469343823-ivTFZKvNNkmtYEYuxXSC5e, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 353, num_prefix_cache_tokens: 0, generated_tokens: 85, ttft: 233.0ms, total_latency: 2546.2ms, avg tpot: 27.5ms, generation speed: 36.7 tokens/s\nI20261027 17:33:09.564591   643 request.cpp:134] x-request-id: 8fe09cb6-2b7c-4c31-bbfe-acb0a21af8c0, x-request-time: , request_id: chatcmpl-15933769124469343823-cTGizBsMd8UJ2GP3NHwNmv, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 573, num_prefix_cache_tokens: 0, generated_tokens: 90, ttft: 108.0ms, total_latency: 2618.2ms, avg tpot: 28.2ms, generation speed: 35.9 tokens/s\nI20261027 17:33:09.603295   640 request.cpp:134] x-request-id: cf4a7552-9c9c-4c7e-a730-cbc8184af9c0, x-request-time: , request_id: chatcmpl-15933769124469343823-ZzGXX6JM2tmGjpmQqnaoMw, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 254, num_prefix_cache_tokens: 0, generated_tokens: 103, ttft: 186.0ms, total_latency: 3379.6ms, avg tpot: 31.3ms, generation speed: 32.3 tokens/s\nI20261027 17:33:09.654559   641 request.cpp:134] x-request-id: ca64eaf3-14cc-44fe-b476-2dcfa4f3eae2, x-request-time: , request_id: chatcmpl-15933769124469343823-GycTxNwU4qve7vrrK9VVBS, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 646, num_prefix_cache_tokens: 0, generated_tokens: 96, ttft: 233.0ms, total_latency: 2689.3ms, avg tpot: 25.9ms, generation speed: 39.1 tokens/s\nI20261027 17:33:09.718598   642 request.cpp:134] x-request-id: 47de9be6-f1dd-44af-b7f5-a5ed73e1e8dd, x-request-time: , request_id: chatcmpl-15933769124469343823-2Smaeyx5rdUoa8U8fbTNZn, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 453, num_prefix_cache_tokens: 0, generated_tokens: 137, ttft: 1409.0ms, total_latency: 5690.1ms, avg tpot: 31.5ms, generation speed: 32.0 tokens/s\nI20261027 17:33:09.795463   643 request.cpp:134] x-request-id: 53fe7498-76f1-4a5a-b5bd-febf61d393d9, x-request-time: , request_id: chatcmpl-15933769124469343823-DVSuFAY5jmp6VYFKvnadXL, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 351, num_prefix_cache_tokens: 0, generated_tokens: 112, ttft: 209.0ms, total_latency: 3224.9ms, avg tpot: 27.2ms, generation speed: 37.1 tokens/s\nI20261027 17:33:09.986876   640 request.cpp:134] x-request-id: 82b015b9-e9d1-49a6-8a46-270574b65b08, x-request-time: , request_id: chatcmpl-15933769124469343823-x5B9cxL7iQFZMPXbnp5qDG, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 305, num_prefix_cache_tokens: 0, generated_tokens: 90, ttft: 87.0ms, total_latency: 1382.3ms, avg tpot: 14.6ms, generation speed: 69.5 tokens/s\nI20261027 17:33:10.038028   641 request.cpp:134] x-request-id: 8b9737cc-42d9-4805-bc03-4dd09bf830ea, x-request-time: , request_id: chatcmpl-15933769124469343823-G7ZMFSbPPXxzLqeuQgWnZs, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 305, num_prefix_cache_tokens: 128, generated_tokens: 93, ttft: 86.0ms, total_latency: 1389.7ms, avg tpot: 14.2ms, generation speed: 71.3 tokens/s\nI20261027 17:33:10.076243   642 request.cpp:134] x-request-id: 02f93675-3982-4f8f-9085-9ed1cdb1d303, x-request-time: , request_id: chatcmpl-15933769124469343823-d3Nn92BUncJx9yUE4GDCL3, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 474, num_prefix_cache_tokens: 0, generated_tokens: 166, ttft: 965.0ms, total_latency: 6051.5ms, avg tpot: 30.8ms, generation speed: 32.6 tokens/s\nI20261027 17:33:10.379750   643 request.cpp:134] x-request-id: aa1bd6d9-da43-4174-8ad4-6057eb012188, x-request-time: , request_id: chatcmpl-15933769124469343823-wE3364kheerzLcLvgncSbZ, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 279, num_prefix_cache_tokens: 256, generated_tokens: 161, ttft: 66.0ms, total_latency: 3920.2ms, avg tpot: 24.1ms, generation speed: 41.8 tokens/s\nI20261027 17:33:10.392673   640 request.cpp:134] x-request-id: b2cbb89e-7566-44e2-a4a3-909f3c04d863, x-request-time: , request_id: chatcmpl-15933769124469343823-4Y8BoCQNzhCAhWvFwg6zWt, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 389, num_prefix_cache_tokens: 0, generated_tokens: 145, ttft: 142.0ms, total_latency: 2941.3ms, avg tpot: 19.4ms, generation speed: 51.8 tokens/s\nI20261027 17:33:10.418562   641 request.cpp:134] x-request-id: ac2c3730-3bfe-454f-93a2-b0756de36167, x-request-time: , request_id: chatcmpl-15933769124469343823-oiQzzpZKFHC3i5ywSiewa5, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 352, num_prefix_cache_tokens: 0, generated_tokens: 159, ttft: 162.0ms, total_latency: 3636.7ms, avg tpot: 22.0ms, generation speed: 45.8 tokens/s\nI20261027 17:33:10.534607   642 request.cpp:134] x-request-id: f1c9f422-118c-41a2-9cba-47f834f4236f, x-request-time: , request_id: chatcmpl-15933769124469343823-SXAZYw8bkDuwBRHZC7yNuc, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 283, num_prefix_cache_tokens: 256, generated_tokens: 173, ttft: 66.0ms, total_latency: 4075.0ms, avg tpot: 23.3ms, generation speed: 43.2 tokens/s\nI20261027 17:33:10.637660   643 request.cpp:134] x-request-id: 35f3155a-6aed-41bf-ae47-a29beec1c1bd, x-request-time: , request_id: chatcmpl-15933769124469343823-Pp8LZUrzu9TvwqDY4iFGED, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 356, num_prefix_cache_tokens: 0, generated_tokens: 179, ttft: 158.0ms, total_latency: 4108.5ms, avg tpot: 22.2ms, generation speed: 45.3 tokens/s\nI20261027 17:33:10.662966   640 request.cpp:134] x-request-id: 3adcbe75-3709-4a0e-8dc7-e9b069d24974, x-request-time: , request_id: chatcmpl-15933769124469343823-sPwN4m8QCTSdFJ8n4UzMAk, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 450, num_prefix_cache_tokens: 384, generated_tokens: 210, ttft: 1642.0ms, total_latency: 6630.7ms, avg tpot: 23.9ms, generation speed: 42.1 tokens/s\nI20261027 17:33:11.759860   641 request.cpp:134] x-request-id: 2f7b2133-4b54-4cb9-b75b-0b4b24a7a67f, x-request-time: , request_id: chatcmpl-15933769124469343823-Qbj9usLMHJYATmeEboSsu9, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 316, num_prefix_cache_tokens: 0, generated_tokens: 235, ttft: 129.0ms, total_latency: 3413.7ms, avg tpot: 14.0ms, generation speed: 71.5 tokens/s\nI20261027 17:33:11.784757   642 request.cpp:134] x-request-id: 607d1fd4-33a6-4c06-a5ea-b4f5dacb5022, x-request-time: , request_id: chatcmpl-15933769124469343823-Da6DfQ7vT5mCbx7GgzMgUG, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 371, num_prefix_cache_tokens: 0, generated_tokens: 282, ttft: 65.0ms, total_latency: 5841.9ms, avg tpot: 20.6ms, generation speed: 48.8 tokens/s\nI20261027 17:33:11.846946   643 request.cpp:134] x-request-id: c78d6bcd-3386-462d-89ad-ac1e408dc0f8, x-request-time: , request_id: chatcmpl-15933769124469343823-GFkEVYztwpFXUv7v4fqnti, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 836, num_prefix_cache_tokens: 0, generated_tokens: 305, ttft: 1412.0ms, total_latency: 7821.1ms, avg tpot: 21.1ms, generation speed: 47.6 tokens/s\nI20261027 17:33:12.737903   407 xllm_server.cpp:188]      Shutting down\nI20261027 17:33:12.737960   407 xllm_server.cpp:189]      Waiting for application shutdown.\nI20261027 17:33:12.737967   407 server.cpp:1260] Server[xllm::APIService] is going to quit\nI20261027 17:33:12.738162   407 xllm_server.cpp:193]      Application shutdown complete.\nI20261027 17:33:12.738173   407 xllm_server.cpp:194]      Finished server process [407]\nI20261027 17:33:12.738191   407 llm_master.cpp:141] LLMMaster stopping...\nI20261027 17:33:13.960502   407 server.cpp:1260] Server[xllm::CollectiveService] is going to quit\nI20261027 17:33:13.960681   407 xllm_server_registry.cpp:38] Unregister server CollectiveServer0.\nI20261027 17:33:13.961051   407 server.cpp:1260] Server[xllm::WorkerService] is going to quit\nI20261027 17:33:13.961248   407 xllm_server_registry.cpp:38] Unregister server DistributeWorkerServer0.\n",
+    "output/fp8_e4m3/container.log": "",
+    "output/fp8_e4m3/operator_acceptance.log": "I20261027 17:35:26.109807 9 flashinfer.py:168] KV_ALLOCATION {\"layers\": [{\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [7, 128, 8, 128], \"bytes\": 917504}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [7, 128, 8, 128], \"bytes\": 917504}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [7, 128, 8], \"bytes\": 28672}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [7, 128, 8], \"bytes\": 28672}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 1892352, \"bytes_per_token\": 2112}], \"resident_bytes\": 1892352, \"token_capacity\": 896}\nI20261027 17:37:53.027012 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE prefill {'relative_l2': 0.0027969107031822205, 'max_abs': 0.0007567703723907471}\nI20261027 17:38:02.047043 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE capture_replay {'relative_l2': 0.02470334619283676, 'max_abs': 0.0036779604852199554}\nI20261027 17:38:02.049254 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE changed_context {'relative_l2': 0.023303190246224403, 'max_abs': 0.005400955677032471}\nI20261027 17:38:02.056030 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE padded_graph {'relative_l2': 0.023303190246224403, 'max_abs': 0.005400955677032471}\nI20261027 17:38:02.057758 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE restored_finite_padding {'relative_l2': 0.023303190246224403, 'max_abs': 0.005400955677032471}\nI20261027 17:38:02.058728 9 check_native_fa3_operator.py:219] Native production operator/Graph acceptance passed for fp8_e4m3; no model/service/quality claim\n",
+    "output/fp8_e4m3/server.log": "e\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}], \"resident_bytes\": 37176606720, \"token_capacity\": 366720}\n",
+    "supervisor.log": "",
+    "watchdog.log": ""
+  },
+  "native_tool_progress": {
+    "bf16": {
+      "admission_probe.json": {
+        "sha256": "023f979801c3cb7658a2080649244df4b7d3e5a466b7b8cd532f0b52f37f5f5f",
+        "value": {
+          "cache_effect": "First source prompt prefix remains cached before the continuous warm-cache stream",
+          "included_in_measurement": false,
+          "payload": {
+            "ignore_eos": false,
+            "max_tokens": 1024,
+            "messages": [
+              {
+                "content": "I'd like to have a digital painting created. The image should be a detailed portrait of a masked woman, including bright peacock feathers, with an elegant and highly detailed style. It should have a fluid illustration quality, with green highlighted lines and complex patterns, reminiscent of cyberpunk and Alphonse Mucha's art.",
+                "role": "user"
+              }
+            ],
+            "model": "Qwen2.5-14B-Instruct",
+            "stream": false,
+            "temperature": 0,
+            "tool_choice": "auto",
+            "tools": [
+              {
+                "function": {
+                  "description": "Conducts a search based on the provided prompt and returns relevant real-time information, specific details, or general facts from various sources, including internet browsing and data from Google.",
+                  "name": "search_engine_query",
+                  "parameters": {
+                    "properties": {
+                      "include_facts": {
+                        "default": true,
+                        "description": "Indicates whether to include factual information in the search results. Default is true.",
+                        "type": "boolean"
+                      },
+                      "prompt": {
+                        "description": "The search query to be executed by the search engine. Example: 'latest scientific discoveries'.",
+                        "type": "string"
+                      },
+                      "since_year": {
+                        "default": 2023,
+                        "description": "Filter results to include only information published after the specified year. Default to the current year if not provided.",
+                        "type": "integer"
+                      },
+                      "source": {
+                        "default": "all",
+                        "description": "Preferred source for the search results, such as 'all', 'internet', or 'google'.",
+                        "enum": [
+                          "all",
+                          "internet",
+                          "google"
+                        ],
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "prompt"
+                    ],
+                    "type": "object"
+                  }
+                },
+                "type": "function"
+              },
+              {
+                "function": {
+                  "description": "Generate an image based on a given text prompt. The function is versatile and can be used for various general purposes without specializing in any specific category.",
+                  "name": "generate_image",
+                  "parameters": {
+                    "properties": {
+                      "color_mode": {
+                        "default": "RGB",
+                        "description": "The color mode of the image.",
+                        "enum": [
+                          "RGB",
+                          "Grayscale"
+                        ],
+                        "type": "string"
+                      },
+                      "height": {
+                        "default": 768,
+                        "description": "The height of the generated image in pixels.",
+                        "type": "integer"
+                      },
+                      "image_format": {
+                        "default": "PNG",
+                        "description": "The file format for the output image.",
+                        "enum": [
+                          "JPEG",
+                          "PNG",
+                          "BMP"
+                        ],
+                        "type": "string"
+                      },
+                      "prompt": {
+                        "description": "The text prompt that describes the desired content of the image.",
+                        "type": "string"
+                      },
+                      "width": {
+                        "default": 1024,
+                        "description": "The width of the generated image in pixels.",
+                        "type": "integer"
+                      }
+                    },
+                    "required": [
+                      "prompt"
+                    ],
+                    "type": "object"
+                  }
+                },
+                "type": "function"
+              },
+              {
+                "function": {
+                  "description": "Generates a realistic image of a human based on the provided prompt, with options for creating images representing different age groups and genders.",
+                  "name": "generate_human_image",
+                  "parameters": {
+                    "properties": {
+                      "image_quality": {
+                        "description": "The desired quality of the generated image, affecting the level of detail and realism. Options include 'low', 'medium', and 'high'.",
+                        "enum": [
+                          "low",
+                          "medium",
+                          "high"
+                        ],
+                        "type": "string"
+                      },
+                      "include_background": {
+                        "default": false,
+                        "description": "Determines whether a background should be included in the generated image.",
+                        "type": "boolean"
+                      },
+                      "output_format": {
+                        "default": "JPEG",
+                        "description": "Specifies the file format for the output image.",
+                        "enum": [
+                          "JPEG",
+                          "PNG",
+                          "BMP"
+                        ],
+                        "type": "string"
+                      },
+                      "prompt": {
+                        "description": "A descriptive text guiding the generation of the human image, such as 'a smiling girl with blue eyes' or 'an elderly man playing chess'.",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "prompt",
+                      "image_quality"
+                    ],
+                    "type": "object"
+                  }
+                },
+                "type": "function"
+              }
+            ],
+            "top_p": 1
+          }
+        }
+      },
+      "bootstrap.json": {
+        "sha256": "36f4ee6f915afb290193d912bc757eeb9b341839e44c2927cc0ae1c5b0e6bf7f",
+        "value": {
+          "done": true,
+          "finish": "length",
+          "payload": {
+            "ignore_eos": true,
+            "max_tokens": 16,
+            "messages": [
+              {
+                "content": "Explain a CUDA warp in one sentence.",
+                "role": "user"
+              }
+            ],
+            "model": "Qwen2.5-14B-Instruct",
+            "stream": true,
+            "stream_options": {
+              "include_usage": true
+            },
+            "temperature": 0
+          },
+          "tokens": 16
+        }
+      },
+      "native_tool_admission.json": {
+        "sha256": "9fbd0d32d4e4c7bdbeed7044f39cce158957ccaef6b5b6791d83064ffe34b508",
+        "value": {
+          "complete_json_body": true,
+          "content": "",
+          "finish_reason": "tool_calls",
+          "tool_calls": [
+            {
+              "function": {
+                "arguments": "{\"height\":1080,\"image_format\":\"PNG\",\"prompt\":\"a detailed portrait of a masked woman with bright peacock feathers, elegant and highly detailed style, fluid illustration quality, green highlighted lines, complex patterns, cyberpunk, Alphonse Mucha's art\",\"width\":1920}",
+                "name": "generate_image"
+              },
+              "id": "call_HYhENoDhrwfJWXgBsghnVh",
+              "type": "function"
+            }
+          ],
+          "usage": {
+            "completion_tokens": 84,
+            "completion_tokens_details": {
+              "audio_tokens": 0,
+              "reasoning_tokens": 0
+            },
+            "prompt_tokens": 892,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0
+            },
+            "total_tokens": 976
+          }
+        }
+      }
+    },
+    "fp8_e4m3": {}
+  },
+  "ok": true,
+  "operator_acceptance": {
+    "bf16": {
+      "sha256": "4d3c8ea48951d8c1457559c0e57d1bd2f48584ec85c1606f1896a48c49a39d8e",
+      "value": {
+        "arm": "bf16",
+        "backend": {
+          "attention_impl": "flashinfer",
+          "class": "FlashInferBackend",
+          "decode_impl": "xqa",
+          "decode_internal_q_data_type": "torch.bfloat16",
+          "decode_tensor_cores": true,
+          "flashinfer_version": "0.6.18.post1",
+          "kv_cache_dtype": "auto",
+          "kv_data_type": "torch.bfloat16",
+          "paged_prefill": true,
+          "planner_backend": "fa3",
+          "profile_scope": "production_xqa",
+          "q_data_type": "torch.bfloat16",
+          "q_scale": null,
+          "quality_transform": false,
+          "scale_strategy": "none",
+          "xqa_enable_pdl": true,
+          "xqa_graph_padding": "reserved_page0_one_token_discard",
+          "xqa_max_context": 32768,
+          "xqa_unused_kv_policy": "finite_full_initialization"
+        },
+        "classification": "operator_correctness_only",
+        "decode_impl": "xqa",
+        "device": "NVIDIA H800",
+        "fresh_dirty_cache_initialized_to_zero": true,
+        "invalid_nan_padding_diagnostics": {
+          "key": {
+            "finite_outputs": 10240,
+            "total_outputs": 10240
+          },
+          "value": {
+            "finite_outputs": 10240,
+            "total_outputs": 10240
+          }
+        },
+        "model_loaded": false,
+        "model_quality_validated": false,
+        "noncontiguous_q_checked": true,
+        "padded_graph_bucket_checked": true,
+        "partial_page_and_replan": true,
+        "prefill_planner": "fa3",
+        "real_capture_and_replay": true,
+        "reference": "FP32 dense causal attention on the same representable Q/K/V; relative L2 <=.05 plus rtol .08, atol .015",
+        "reference_comparisons": {
+          "capture_replay": {
+            "max_abs": 0.0008789524435997009,
+            "relative_l2": 0.003906028810888529
+          },
+          "changed_context": {
+            "max_abs": 0.0009812712669372559,
+            "relative_l2": 0.0028711154591292143
+          },
+          "padded_graph": {
+            "max_abs": 0.0009812712669372559,
+            "relative_l2": 0.0028711154591292143
+          },
+          "prefill": {
+            "max_abs": 0.0005266666412353516,
+            "relative_l2": 0.0022824311163276434
+          },
+          "restored_finite_padding": {
+            "max_abs": 0.0009812712669372559,
+            "relative_l2": 0.0028711154591292143
+          }
+        },
+        "reserved_page0_not_used_for_live_sequences": true,
+        "schema": "kv-native-fa3-operator-acceptance-v1",
+        "service_performance_measured": false,
+        "unused_padding_reference": "maximum_finite_FP8_or_large_finite_BF16"
+      }
+    },
+    "fp8_e4m3": {
+      "sha256": "8ee7fc29c1c6a99e367e65488049b6046d328a74d915860eef1ca9397c16ea8f",
+      "value": {
+        "arm": "fp8_e4m3",
+        "backend": {
+          "attention_impl": "flashinfer",
+          "class": "FlashInferFP8Backend",
+          "decode_impl": "xqa",
+          "decode_internal_q_data_type": "torch.float8_e4m3fn",
+          "decode_tensor_cores": true,
+          "flashinfer_version": "0.6.18.post1",
+          "fp8_views_alias_resident_pages": true,
+          "k_scale": 0.125,
+          "kv_cache_dtype": "fp8_e4m3",
+          "kv_data_type": "torch.float8_e4m3fn",
+          "paged_prefill": true,
+          "planner_backend": "fa2",
+          "profile_scope": "production_xqa",
+          "q_data_type": "torch.bfloat16",
+          "q_scale": null,
+          "quality_transform": false,
+          "scale_strategy": "immutable_global_scalar_per_K_or_V",
+          "v_scale": 0.0625,
+          "writer": "triton_quantize_scatter_only",
+          "xqa_enable_pdl": true,
+          "xqa_graph_padding": "reserved_page0_one_token_discard",
+          "xqa_max_context": 32768,
+          "xqa_unused_kv_policy": "finite_full_initialization"
+        },
+        "classification": "operator_correctness_only",
+        "decode_impl": "xqa",
+        "device": "NVIDIA H800",
+        "fresh_dirty_cache_initialized_to_zero": true,
+        "invalid_nan_padding_diagnostics": {
+          "key": {
+            "finite_outputs": 10240,
+            "total_outputs": 10240
+          },
+          "value": {
+            "finite_outputs": 0,
+            "total_outputs": 10240
+          }
+        },
+        "model_loaded": false,
+        "model_quality_validated": false,
+        "noncontiguous_q_checked": true,
+        "padded_graph_bucket_checked": true,
+        "partial_page_and_replan": true,
+        "prefill_planner": "fa2",
+        "real_capture_and_replay": true,
+        "reference": "FP32 dense causal attention on the same representable Q/K/V; relative L2 <=.05 plus rtol .08, atol .015",
+        "reference_comparisons": {
+          "capture_replay": {
+            "max_abs": 0.0036779604852199554,
+            "relative_l2": 0.02470334619283676
+          },
+          "changed_context": {
+            "max_abs": 0.005400955677032471,
+            "relative_l2": 0.023303190246224403
+          },
+          "padded_graph": {
+            "max_abs": 0.005400955677032471,
+            "relative_l2": 0.023303190246224403
+          },
+          "prefill": {
+            "max_abs": 0.0007567703723907471,
+            "relative_l2": 0.0027969107031822205
+          },
+          "restored_finite_padding": {
+            "max_abs": 0.005400955677032471,
+            "relative_l2": 0.023303190246224403
+          }
+        },
+        "reserved_page0_not_used_for_live_sequences": true,
+        "schema": "kv-native-fa3-operator-acceptance-v1",
+        "service_performance_measured": false,
+        "unused_padding_reference": "maximum_finite_FP8_or_large_finite_BF16"
+      }
+    }
+  },
+  "owned_containers": [
+    {
+      "created": "2026-10-27T09:35:21.208754549Z",
+      "id": "439448eebe191354a1884c6a5820d813aee62482b8556025283932589cee45de",
+      "running": true
+    },
+    {
+      "created": "2026-10-27T09:27:08.333550781Z",
+      "id": "c198f90ee3ee8c1f4b92f6fe9e12e35348c8ea3897d7a7725aa608cb523e568b",
+      "running": false
+    }
+  ],
+  "quality_progress": {
+    "bf16": {},
+    "fp8_e4m3": {}
+  },
+  "relaunch_allowed": false,
+  "run_id": "prod-tools-bf16xqa-bfcl258-buffered-c128-r0-20261027b",
+  "status": "RUNNING",
+  "supervisor_alive": true
+}

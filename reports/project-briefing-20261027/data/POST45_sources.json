@@ -1,0 +1,80 @@
+{
+  "scope": "post45_run46",
+  "sources": [
+    {
+      "repo_relative_path": "reports/operations/20261026T075846Z/bf16q_full1719_quality_independent_audit_b1.json",
+      "bytes": 514947,
+      "sha256": "5496ad307e815ab2cbe35cc0530e4232f58678c964ae150b1d192a8f7675b433"
+    },
+    {
+      "repo_relative_path": "reports/operations/20261026T075846Z/production_C128_quality_independent_audit_b1.json",
+      "bytes": 571835,
+      "sha256": "225142374bcffb2a198c4fcc2fc0ec8190a16297598e66e1c7fc02e2cbc5080a"
+    },
+    {
+      "repo_relative_path": "reports/operations/20261026T075846Z/bf16q_full1719_quality_comparison_b1.json",
+      "bytes": 5521,
+      "sha256": "e8e89981a58e98c08dc425e7c7cbac101bb66318e4b800c58ee1a03945030f78"
+    },
+    {
+      "repo_relative_path": "reports/operations/20261026T075846Z/bf16q_full1719_quality_cohort_latency_b1.json",
+      "bytes": 16617,
+      "sha256": "cc9c0f90ce5fe531bcc935796730800598c8659f0056b3310ea8df19a60a7c99"
+    },
+    {
+      "repo_relative_path": "reports/operations/20261026T075846Z/bf16q_quality_scoring_compatibility_CPU_v1.json",
+      "bytes": 387,
+      "sha256": "63c3f1ce8b6f1f82c7d8831c63c5d307028a9e03d2d9494816e2567a9c97ead3"
+    },
+    {
+      "repo_relative_path": "reports/experiments/production-bf16q-quality-20261027/audit_summary.json",
+      "bytes": 1350,
+      "sha256": "3bd6f08a7f98267e28c2b0fe9f55d4c033908f6ea5871a7ad9a214fb29b2e6f3"
+    },
+    {
+      "repo_relative_path": "reports/experiments/production-bf16q-quality-20261027/figures-v1/manifest.json",
+      "bytes": 600,
+      "sha256": "a8bfb982b43d455e9e071f3099bb363428abf04ee2254b96a11ad7a1c6c6590e"
+    },
+    {
+      "repo_relative_path": "reports/experiments/production-bf16q-quality-20261027/figures-v1/quality_delta_data.csv",
+      "bytes": 535,
+      "sha256": "2932d016f4eea093a7765e33af27717b3ce71f58e6a8285685e01a6fce394ed9"
+    },
+    {
+      "repo_relative_path": "reports/experiments/production-bf16q-quality-20261027/figures-v1/quality_deltas.png",
+      "bytes": 135872,
+      "sha256": "f9cb1c8942e6b2c4809dab58a200606b437d5958a95600e81a1281c7eb47f763"
+    },
+    {
+      "repo_relative_path": "reports/experiments/production-bf16q-quality-20261027/figures-v1/quality_deltas.svg",
+      "bytes": 82370,
+      "sha256": "32da2c8f7fb02d389aa865bf966c46c3f41fb1b8c4d99220827c32258863f4e3"
+    },
+    {
+      "repo_relative_path": "results/mirrors/prod-quality-bf16q-full1719-c128-r1-20261027b-terminal-b2-gzip/files/SNAPSHOT.json",
+      "bytes": 52750,
+      "sha256": "14a87766538f52026ab7bc9354899756434b81b74c90ad6380101d45c3e6bc4c"
+    },
+    {
+      "repo_relative_path": "results/mirrors/prod-quality-bf16q-full1719-c128-r1-20261027b-terminal-b2-gzip/files/support/agent_work/runs/prod-quality-bf16q-full1719-c128-r1-20261027b/result.json",
+      "bytes": 631,
+      "sha256": "e8eea5e9dc794b8ff8f27b2f7d8f4bcd93fa566fe546df0bdd7fb5dec5207084"
+    },
+    {
+      "repo_relative_path": "results/mirrors/prod-quality-bf16q-full1719-c128-r1-20261027b-terminal-b1/transport.json",
+      "bytes": 725,
+      "sha256": "5fdbfd08dc073bb96e7144e8a9e4b727ba0701b70bc8d6513adc0f7a90057aaf"
+    },
+    {
+      "repo_relative_path": "results/mirrors/prod-quality-bf16q-full1719-c128-r1-20261027b-terminal-b2-gzip/transport.json",
+      "bytes": 669,
+      "sha256": "8376f66828ed8bc85529822e52e47252c52cffbce79e0610402a5dd534a03675"
+    },
+    {
+      "repo_relative_path": "results/INDEX.csv",
+      "bytes": 41723,
+      "sha256": "1e79f698f5c7a0acf3dba8a5d1dca401e7be30264f4699a1dae86e253ebb0e21"
+    }
+  ]
+}

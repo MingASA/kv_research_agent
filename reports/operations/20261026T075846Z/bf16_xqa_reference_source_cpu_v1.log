@@ -1,0 +1,74 @@
+..F..................................................................... [ 96%]
+...                                                                      [100%]
+=================================== FAILURES ===================================
+________ test_bf16_xqa_dispatch_keeps_native_bf16_pages_and_unit_scales ________
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x77d51c92bf50>
+
+    def test_bf16_xqa_dispatch_keeps_native_bf16_pages_and_unit_scales(monkeypatch: pytest.MonkeyPatch) -> None:
+        fake_fi = types.ModuleType("flashinfer"); fake_fi.__version__ = "0.6.18.post1"
+        fake_decode = types.ModuleType("flashinfer.decode"); fake_decode.fast_decode_plan = lambda *args, **kwargs: None
+        monkeypatch.setitem(sys.modules, "flashinfer", fake_fi)
+        monkeypatch.setitem(sys.modules, "flashinfer.decode", fake_decode)
+        from xllm.python.attention.backend import LayerCache
+    
+        module = importlib.import_module("xllm.python.attention.flashinfer")
+        backend = module.FlashInferBackend.__new__(module.FlashInferBackend)
+        backend.num_heads, backend.head_dim, backend.scale = 2, 8, 8 ** -.5
+        backend._decode_impl = "xqa"
+        backend._metadata = SimpleNamespace(is_prefill=False, is_chunked_prefill=False)
+        cache = LayerCache(torch.zeros((1, 128, 1, 8), dtype=torch.bfloat16),
+                           torch.zeros((1, 128, 1, 8), dtype=torch.bfloat16))
+        backend._kv_caches = [cache]
+        backend._decode_workspace = torch.zeros(1, dtype=torch.uint8)
+    
+        class Plan:
+            def run(self, query: torch.Tensor, pages: tuple, workspace: torch.Tensor, *scales: float) -> torch.Tensor:
+                assert query.dtype == torch.bfloat16
+                assert pages[0] is cache.key and pages[1] is cache.value
+                assert workspace is backend._decode_workspace
+                assert scales == (8 ** -.5, 1.0, 1.0)
+                return query.clone()
+    
+        backend._active_xqa_plan = Plan()
+        query = torch.ones(3, 2, 8, dtype=torch.bfloat16)
+>       torch.testing.assert_close(backend.execute_attention(query, SimpleNamespace(layer_id=0)), query.view(3, 16))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/python/test_production_native_profile.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <xllm.python.attention.flashinfer.FlashInferBackend object at 0x77d51c92bb30>
+q = tensor([[[1., 1., 1., 1., 1., 1., 1., 1.],
+         [1., 1., 1., 1., 1., 1., 1., 1.]],
+
+        [[1., 1., 1., 1., 1., ...., 1.]],
+
+        [[1., 1., 1., 1., 1., 1., 1., 1.],
+         [1., 1., 1., 1., 1., 1., 1., 1.]]], dtype=torch.bfloat16)
+layer = namespace(layer_id=0), k = None, v = None
+
+    def execute_attention(
+        self,
+        q: torch.Tensor,
+        layer: Attention,
+        k: torch.Tensor | None = None,
+        v: torch.Tensor | None = None,
+    ) -> torch.Tensor:
+        """Run the prepared FlashInfer attention plan without writing the cache.
+    
+        This split is useful for stage-level benchmarks and keeps the ordinary
+        ``execute`` lifecycle unchanged: normal callers still write K/V and run
+        attention together.
+        """
+        metadata = self._metadata
+        if metadata is None:
+            raise RuntimeError("FlashInferBackend.prepare() was not called")
+>       q_3d = q.view(-1, layer.num_heads, layer.head_dim)
+                          ^^^^^^^^^^^^^^^
+E       AttributeError: 'types.SimpleNamespace' object has no attribute 'num_heads'
+
+xllm/python/attention/flashinfer.py:431: AttributeError
+=========================== short test summary info ============================
+FAILED tests/python/test_production_native_profile.py::test_bf16_xqa_dispatch_keeps_native_bf16_pages_and_unit_scales
+1 failed, 74 passed, 1 skipped in 2.52s

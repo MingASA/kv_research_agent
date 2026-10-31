@@ -1,0 +1,336 @@
+{
+  "files": [
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-0/2wikimqa.jsonl",
+      "size": 200585
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-0/gsm8k.jsonl",
+      "size": 100446
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-0/hotpotqa.jsonl",
+      "size": 357439
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-0/lcc.jsonl",
+      "size": 94669
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-0/multifieldqa_en.jsonl",
+      "size": 195267
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-0/musique.jsonl",
+      "size": 440617
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-0/narrativeqa.jsonl",
+      "size": 603855
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-0/qasper.jsonl",
+      "size": 147413
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-0/repobench-p.jsonl",
+      "size": 301665
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-1/2wikimqa.jsonl",
+      "size": 199317
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-1/gsm8k.jsonl",
+      "size": 99431
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-1/hotpotqa.jsonl",
+      "size": 352499
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-1/lcc.jsonl",
+      "size": 90253
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-1/multifieldqa_en.jsonl",
+      "size": 177885
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-1/musique.jsonl",
+      "size": 442586
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-1/narrativeqa.jsonl",
+      "size": 644757
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-1/qasper.jsonl",
+      "size": 117095
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-1/repobench-p.jsonl",
+      "size": 307843
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-2/2wikimqa.jsonl",
+      "size": 197420
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-2/gsm8k.jsonl",
+      "size": 95761
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-2/hotpotqa.jsonl",
+      "size": 354791
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-2/lcc.jsonl",
+      "size": 89840
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-2/multifieldqa_en.jsonl",
+      "size": 164524
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-2/musique.jsonl",
+      "size": 447235
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-2/narrativeqa.jsonl",
+      "size": 656587
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-2/qasper.jsonl",
+      "size": 122866
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-2/repobench-p.jsonl",
+      "size": 294934
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-3/2wikimqa.jsonl",
+      "size": 194596
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-3/gsm8k.jsonl",
+      "size": 93744
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-3/hotpotqa.jsonl",
+      "size": 363108
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-3/lcc.jsonl",
+      "size": 85740
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-3/multifieldqa_en.jsonl",
+      "size": 167923
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-3/musique.jsonl",
+      "size": 436076
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-3/narrativeqa.jsonl",
+      "size": 611074
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-3/qasper.jsonl",
+      "size": 176767
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-3/repobench-p.jsonl",
+      "size": 311789
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-4/2wikimqa.jsonl",
+      "size": 200786
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-4/gsm8k.jsonl",
+      "size": 98086
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-4/hotpotqa.jsonl",
+      "size": 346243
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-4/lcc.jsonl",
+      "size": 92217
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-4/multifieldqa_en.jsonl",
+      "size": 198779
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-4/musique.jsonl",
+      "size": 440180
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-4/narrativeqa.jsonl",
+      "size": 606342
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-4/qasper.jsonl",
+      "size": 146174
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-4/repobench-p.jsonl",
+      "size": 299930
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-5/2wikimqa.jsonl",
+      "size": 204634
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-5/gsm8k.jsonl",
+      "size": 98601
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-5/hotpotqa.jsonl",
+      "size": 365203
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-5/lcc.jsonl",
+      "size": 84681
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-5/multifieldqa_en.jsonl",
+      "size": 185222
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-5/musique.jsonl",
+      "size": 430802
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-5/narrativeqa.jsonl",
+      "size": 608918
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-5/qasper.jsonl",
+      "size": 155159
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-5/repobench-p.jsonl",
+      "size": 308097
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-6/2wikimqa.jsonl",
+      "size": 198005
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-6/gsm8k.jsonl",
+      "size": 96091
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-6/hotpotqa.jsonl",
+      "size": 364539
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-6/lcc.jsonl",
+      "size": 65542
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-6/multifieldqa_en.jsonl",
+      "size": 192327
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-6/musique.jsonl",
+      "size": 463120
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-6/narrativeqa.jsonl",
+      "size": 607419
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-6/qasper.jsonl",
+      "size": 148204
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-6/repobench-p.jsonl",
+      "size": 285406
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-7/2wikimqa.jsonl",
+      "size": 202508
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-7/gsm8k.jsonl",
+      "size": 96000
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-7/hotpotqa.jsonl",
+      "size": 359126
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-7/lcc.jsonl",
+      "size": 54285
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-7/multifieldqa_en.jsonl",
+      "size": 187005
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-7/musique.jsonl",
+      "size": 493894
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-7/narrativeqa.jsonl",
+      "size": 617376
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-7/qasper.jsonl",
+      "size": 141561
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shards/gpu-7/repobench-p.jsonl",
+      "size": 280098
+    },
+    {
+      "base_rel": "experiments/joint-kv-14b/joint14b-full-quality-v1-8gpu/shard_manifest.json",
+      "size": 33830
+    },
+    {
+      "base_rel": "inputs/quality/eval-data/gsm8k-3101c7d5072418e28b9008a6636bde82a006892c/prepared/five_train_examples.json",
+      "size": 2002
+    },
+    {
+      "base_rel": "inputs/longbench-scorer/LongBench/metrics.py",
+      "size": 5190
+    },
+    {
+      "base_rel": "inputs/longbench-scorer/LongBench/config/dataset2prompt.json",
+      "size": 5437
+    },
+    {
+      "base_rel": "inputs/longbench-scorer/LongBench/config/dataset2maxlen.json",
+      "size": 459
+    },
+    {
+      "model_rel": "config.json",
+      "size": 663
+    },
+    {
+      "model_rel": "tokenizer.json",
+      "size": 7031645
+    },
+    {
+      "model_rel": "tokenizer_config.json",
+      "size": 7305
+    },
+    {
+      "model_rel": "generation_config.json",
+      "size": 242
+    },
+    {
+      "model_rel": "vocab.json",
+      "size": 2776833
+    },
+    {
+      "model_rel": "merges.txt",
+      "size": 1671839
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+test_busy_driver_or_compute_pid_is_not_a_release_proof (test_unknown_release.UnknownReleaseTests) ... ok
+test_changed_identity_result_clock_or_boot_keeps_unknown (test_unknown_release.UnknownReleaseTests) ... ok
+test_completed_arm_or_bad_allocation_is_not_recovered_by_failure_path (test_unknown_release.UnknownReleaseTests) ... ok
+test_live_or_missing_container_supervisor_or_worker_is_not_released (test_unknown_release.UnknownReleaseTests) ... ok
+test_readonly_program_compiles (test_unknown_release.UnknownReleaseTests) ... ok
+test_released_run_is_failed_and_charged_through_witness_without_changing_original (test_unknown_release.UnknownReleaseTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.003s
+
+OK

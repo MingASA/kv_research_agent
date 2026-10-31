@@ -1,0 +1,46 @@
+{
+  "D_exact_paths": {
+    "bin/xllm": {
+      "exists": false
+    },
+    "xllm/xllm": {
+      "exists": true,
+      "gid": 1005,
+      "regular": true,
+      "sha256": "dbc1c53a6d711ad883d2227c55429c1977347acd9e1bfa50b1fb479a0cc25f09",
+      "size": 568639344,
+      "symlink": false,
+      "uid": 1005
+    }
+  },
+  "build_result": {
+    "GPU_job": false,
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/agent_work/builds/nextgen-native-kv-59fc32ac-20261027d/build/bin/xllm'",
+    "source_commit": "862c29cade05e47691147b8f50c979a812495470",
+    "success": false
+  },
+  "schema": "cpu-build-f-test-summary-v1",
+  "test_logs": {
+    "cuda_kv_cache_admission_test.log": {
+      "failed": 0,
+      "first_error": null,
+      "passed": 8,
+      "runs": 8,
+      "skipped": 0
+    },
+    "kv_cache_estimation_test.log": {
+      "failed": 0,
+      "first_error": null,
+      "passed": 26,
+      "runs": 26,
+      "skipped": 0
+    },
+    "kv_cache_test.log": {
+      "failed": 0,
+      "first_error": null,
+      "passed": 2,
+      "runs": 2,
+      "skipped": 0
+    }
+  }
+}

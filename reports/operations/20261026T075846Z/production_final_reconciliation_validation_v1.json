@@ -1,0 +1,28 @@
+{
+  "classification": "confirmed_local_final_integrity_and_quota_reconciliation",
+  "utc": "2026-10-27T04:39:20.076888+00:00",
+  "approval_sha256_unchanged": "3bcaaf2e851162e21fd732733f3fd92e433d55e282eb0e6d6ac16e37ae45ad0c",
+  "initial_GPU_hours12_unchanged": true,
+  "GPU_hours_consumed": 8.098758379166666,
+  "reserved_GPU_hours": 0,
+  "active_owned_jobs": 0,
+  "unknown_jobs": 0,
+  "index_rows": 34,
+  "C128_integrity_and_rescoring_verified": true,
+  "candidate_quality_accepted": false,
+  "figure_sources_and_artifacts_SHA_verified": true,
+  "figures_visually_inspected": true,
+  "controller_CPU_checks_passed": 171,
+  "business_source_worktrees": {
+    "/home/mingasa/projects/xllm_quant_kvcache-agent-bf16-xqa-20261027": {
+      "commit": "11e7cddbfe33eb21d209c7f48f5e461ac56545eb",
+      "clean": true
+    },
+    "/home/mingasa/projects/xllm_quant_kvcache-agent-xqa-20261026": {
+      "commit": "ede2b9e7c61573825645a6b710a7534d0091bac2",
+      "clean": true
+    }
+  },
+  "no_GPU_relaunch_after_this_compaction": true,
+  "next_component_diagnostic_started": false
+}

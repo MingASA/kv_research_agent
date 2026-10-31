@@ -1,0 +1,10 @@
+Collecting clang-format==20.1.6
+  Using cached clang_format-20.1.6-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.7 kB)
+Collecting ruff==0.14.2
+  Downloading ruff-0.14.2-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (25 kB)
+Using cached clang_format-20.1.6-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.8 MB)
+Downloading ruff-0.14.2-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.3/13.3 MB 10.6 MB/s  0:00:01
+Installing collected packages: clang-format, ruff
+
+Successfully installed clang-format-20.1.6 ruff-0.14.2

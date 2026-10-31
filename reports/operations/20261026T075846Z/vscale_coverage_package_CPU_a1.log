@@ -1,0 +1,1 @@
+{"run_id": "prod-quality-xqa-vcover-full1719-c128-r0-20261027a", "source_commit": "1d34d421c219a4497ccf93b2e928d35ee07119aa", "assets": 47, "new_FP8_predictions_pending": 1719, "BF16_repeated": false, "GPU_started": false}

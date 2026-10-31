@@ -1,0 +1,20 @@
+{
+  "schema": "kv-project-briefing-seal-v1",
+  "report_cutoff_run": 46,
+  "report_cutoff_run_id": "prod-quality-bf16q-full1719-c128-r1-20261027b",
+  "sealed_utc": "2026-10-27T14:00:21.834723+00:00",
+  "evidence_status": "independent_complete_quality_comparison_and_stopped_extra_service_GPU_matrix",
+  "quality_accepted": false,
+  "original_45_index_and_state_bytes_unchanged": true,
+  "original_frozen_files_verified": 35,
+  "tables": 20,
+  "numeric_check_groups": 23,
+  "next_report_starts_after_run": 46,
+  "automatic_report_updates": false,
+  "future_updates_require_user_request": true,
+  "source_manifest": "data/source_manifest.json",
+  "source_manifest_sha256": "a64b37cfbf26c3a1f8ebfc5c3cdd53f5a14673aec5b5e70b52d180dd5076745f",
+  "validation": "data/validation.json",
+  "artifact_manifest": "data/artifact_manifest.json",
+  "main_experiments_continue_independently": true
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "ok": true,
+    "run_id": "prod-trace-bf16xqa-toolagent-s0125-r0-20261027a",
+    "rawfiles": [
+      {
+        "arm": "bf16",
+        "size": 150098697,
+        "sealed": true
+      }
+    ],
+    "remote_writes": 0
+  },
+  {
+    "ok": true,
+    "run_id": "prod-trace-bf16xqa-toolagent-s025-r0-20261027b",
+    "rawfiles": [
+      {
+        "arm": "bf16",
+        "size": 149827437,
+        "sealed": true
+      }
+    ],
+    "remote_writes": 0
+  }
+]

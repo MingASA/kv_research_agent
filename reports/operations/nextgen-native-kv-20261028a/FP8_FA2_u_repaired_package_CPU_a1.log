@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/mingasa/kv-research-agent/scripts/prepare_nextgen_service.py", line 221, in <module>
+    main()
+  File "/home/mingasa/kv-research-agent/scripts/prepare_nextgen_service.py", line 179, in main
+    add('input/gdn_dependency_CPU_import.json', proof.read_bytes())
+AttributeError: 'dict' object has no attribute 'read_bytes'

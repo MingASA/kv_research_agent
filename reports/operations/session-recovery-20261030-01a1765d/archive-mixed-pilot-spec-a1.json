@@ -1,0 +1,27 @@
+{
+  "sha_manifests": [
+    "results/mirrors/nextgen-bf16-qwen38-mixed8192-calibration-r0-20261030s-complete-a1/SHA_MANIFEST.json"
+  ],
+  "include": [
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-bf16-s-application-metrics-original-a1",
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-bf16-s-independent-calibration-a1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-bf16-s-independent-residency-pilot-a1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-bf16-s-original-launch-a1.stdout.json",
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-bf16-s-original-reconcile-a1.stdout.json",
+    "reports/operations/session-recovery-20261030-01a1765d/mixed-bf16-s-frozen-CPU-proof-a1.json",
+    "reports/experiments/nextgen-mixed-prefill-20261030/pilot-figure-v2",
+    "scripts/audit_nextgen_headroom_pilot.py",
+    "scripts/audit_nextgen_calibration.py",
+    "scripts/audit_nextgen_validation.py",
+    "scripts/render_nextgen_headroom_pilot.py",
+    ".deps/nextgen-official-models-20261027-a1/Qwen3.8-27B/README.md",
+    ".deps/nextgen-official-models-20261027-a1/Qwen3.8-27B/model.safetensors.index.json",
+    ".deps/nextgen-official-models-20261027-a1/Qwen3.8-27B/tokenizer_config.json",
+    ".deps/nextgen-official-models-20261027-a1/Qwen3.8-27B/model_info.json",
+    ".deps/nextgen-official-models-20261027-a1/Qwen3.8-27B/metadata_receipt.json",
+    ".deps/nextgen-official-models-20261027-a1/Qwen3.8-27B/config.json",
+    ".deps/nextgen-official-models-20261027-a1/Qwen3.8-27B/generation_config.json",
+    ".deps/nextgen-official-models-20261027-a1/Qwen3.8-27B/chat_template.jinja",
+    ".deps/nextgen-official-models-20261027-a1/Qwen3.8-27B/tokenizer.json"
+  ]
+}

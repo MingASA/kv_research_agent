@@ -1,0 +1,75 @@
+{
+  "schema": "mixed-prefix-failed-cohort-audit-v1",
+  "classification": "confirmed",
+  "audit_utc": "2026-10-30T23:05:56.717267+00:00",
+  "run_id": "nextgen-bf16-qwen38-mixed8192-prefix32-r0-20261030w",
+  "terminal": "FAILED",
+  "GPU_release_verified": true,
+  "ledger": {
+    "state": "SETTLED",
+    "actual_gpu_us": 490355487,
+    "quota_breach": 0
+  },
+  "collection": "reports/operations/session-recovery-20261030-01a1765d/mixed-w-terminal-a1/COLLECTION_COMPLETE.json",
+  "full_SHA_manifest": "results/mirrors/nextgen-bf16-qwen38-mixed8192-prefix32-r0-20261030w-complete-a1/SHA_MANIFEST.json",
+  "full_SHA_manifest_sha256": "86b005cdada7fa5f4041077d5ff5a58549ddf445f7be7e0b94d5c01026cafd62",
+  "profile_export_sha256": "454b1db184700f3c7b667fa8963d5874179f7e5255b5614bd549295b839193a1",
+  "source_sha256": "18ef0e035bff1e8055fa989a7a07b467a697ef71ec26149c96a21e5db1b84035",
+  "actual_rows": 32,
+  "expected_unique_session_turns": 32,
+  "observed_unique_session_turns": 27,
+  "duplicate_session_turns": [
+    {
+      "session": "longdoc-narrativeqa-0",
+      "turn": 0,
+      "count": 2
+    },
+    {
+      "session": "longdoc-narrativeqa-1",
+      "turn": 0,
+      "count": 2
+    },
+    {
+      "session": "longdoc-narrativeqa-4",
+      "turn": 0,
+      "count": 2
+    },
+    {
+      "session": "longdoc-narrativeqa-6",
+      "turn": 0,
+      "count": 2
+    },
+    {
+      "session": "longdoc-narrativeqa-7",
+      "turn": 0,
+      "count": 2
+    }
+  ],
+  "missing_session_turns": [
+    {
+      "session": "longdoc-gov_report-46",
+      "turn": 1
+    },
+    {
+      "session": "longdoc-gov_report-56",
+      "turn": 1
+    },
+    {
+      "session": "longdoc-gov_report-59",
+      "turn": 1
+    },
+    {
+      "session": "longdoc-gov_report-93",
+      "turn": 1
+    },
+    {
+      "session": "longdoc-gov_report-98",
+      "turn": 1
+    }
+  ],
+  "duplicate_x_request_ids": 0,
+  "valid_intended_performance_measurement": false,
+  "raw_filtering_or_denominator_changes_permitted": false,
+  "worker_failure": "ValueError: Duplicated/missing actual request/session/phase",
+  "hypothesis": "Request-count stop permits fast completed sessions to cycle before slow sessions finish; verify actual installed session-count stop with heterogeneous CPU latencies before new GPU dispatch."
+}

@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-30T22:07:18.019782+00:00",
+  "classification": "read-only diagnostic wrapper protocol failure, not experiment failure or SSH outage",
+  "error": "Remote RPC refused: None / read-only recovery exhausted",
+  "reason": "Remote diagnostic returned well-formed JSON without required ok:true envelope",
+  "read_only_repeated_queries": 3,
+  "GPU_model_requests_or_remote_writes": false,
+  "original_V_remains_untouched": true,
+  "repair": "new readonly a2 with required ok:true; preserve a1 pin/audit"
+}

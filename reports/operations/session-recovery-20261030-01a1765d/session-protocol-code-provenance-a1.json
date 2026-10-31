@@ -1,0 +1,219 @@
+{
+  "schema": "session-protocol-freeze-to-commit-provenance-v1",
+  "ticket_controller_commit_at_launch": "fd2238d892da66d65257691b4a5159417501721d",
+  "local_runtime_edits_were_not_yet_committed_when_ticket_was_issued": true,
+  "recording_commit": "261ceea5952da2151d318e7439e9c354ae86bbd6",
+  "all_frozen_controller_modules_match_recording_commit": true,
+  "modules": [
+    {
+      "frozen_runtime": "runtime/kv_controller/__init__.py",
+      "committed_source": "scripts/controller/__init__.py",
+      "sha256": "062f8f358d836a3b082ee9926504c1fe619a172bb1f303c1b33feb5d857b971f"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/absent_recovery.py",
+      "committed_source": "scripts/controller/absent_recovery.py",
+      "sha256": "0b971fd74fe8f4a0b9a17c39cbf257ce96662dff501ec43dac8ff82db7b863f3"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/aiperf_cli_admission.py",
+      "committed_source": "scripts/controller/aiperf_cli_admission.py",
+      "sha256": "3e698a6dea6e74cfb26983d436b08f5e777304ab6eac333d862265cab85b3741"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/approval.py",
+      "committed_source": "scripts/controller/approval.py",
+      "sha256": "b08378450b41cc62447a5a9ab45ecfcf42290e3e82114b670d9f66e709a119fc"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/bf16q_operator.py",
+      "committed_source": "scripts/controller/bf16q_operator.py",
+      "sha256": "0f87ca7e3cebd4bbcdba6432a4979c049a75bebaf86d73fe61588eb0958209c1"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/cli.py",
+      "committed_source": "scripts/controller/cli.py",
+      "sha256": "8ddafc300380fb70e620fc93a1dc574bd589bf3fa8dbd2f4733d6ebddc0ea303"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/component_profile.py",
+      "committed_source": "scripts/controller/component_profile.py",
+      "sha256": "5bc119832ea4e7ffaa4b9f859439da29bc9f28b125d9896c2097654613ad4712"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/deployment_quality.py",
+      "committed_source": "scripts/controller/deployment_quality.py",
+      "sha256": "60b26caaf6d467797362d90d8daa0f381fc670e3bac8dd5c550085e1248037e3"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/discovery.py",
+      "committed_source": "scripts/controller/discovery.py",
+      "sha256": "e3778713d67c87ccacc82c565bfc7958f1bddda75f07249e0c2dc5aebdfee891"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/dispatch.py",
+      "committed_source": "scripts/controller/dispatch.py",
+      "sha256": "ee683195cbfb634baaddd269db354b1c81df36a8dec559b17f09ea7460940791"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/durable.py",
+      "committed_source": "scripts/controller/durable.py",
+      "sha256": "702655044ff40f09eb90ff5c4025bbaf3a16148788768d8acb7dcf9a3ab118c2"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/evidence.py",
+      "committed_source": "scripts/audit_native_results.py",
+      "sha256": "ad1593edc4a87a2c1b31fcfcbdcaaaf14fecb6553c34ba3847e59b7cba595d6d"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/idle_wait_recovery.py",
+      "committed_source": "scripts/controller/idle_wait_recovery.py",
+      "sha256": "f4ef5cf70a687547de5475b636b89747654bf66655a02be0f00d4e3da00539c9"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/model_source_equivalence.py",
+      "committed_source": "scripts/controller/model_source_equivalence.py",
+      "sha256": "f72a25a36559a6d63ab8112bfab7d02fbc7e47cfb67473e2f289909e5659e2a2"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/native_tools.py",
+      "committed_source": "scripts/controller/native_tools.py",
+      "sha256": "d1397e99e03b9ee72d6fffb2137499c0b7acae01813c1f83884fff755292fe37"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/nextgen.py",
+      "committed_source": "scripts/controller/nextgen.py",
+      "sha256": "d9d2b1c0bba5969b11d5e63286681eb25a38d54ff3331eed5273c87d931de2ef"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/nextgen_multiturn.py",
+      "committed_source": "scripts/controller/nextgen_multiturn.py",
+      "sha256": "29971015d567e7fcb3398d085f74fc7fae61a9e0d34911cf2f6b437a95cc3c60"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/nextgen_performance.py",
+      "committed_source": "scripts/controller/nextgen_performance.py",
+      "sha256": "78095b069d7f4085b9673425fd8b73b2bc088e4279b0fd46d5b4459fcc45627a"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/nextgen_quality.py",
+      "committed_source": "scripts/controller/nextgen_quality.py",
+      "sha256": "566f981575627618fca788b6cae57b96ccc6925e108ff3e2b86ecdbcee518e2e"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/nextgen_service.py",
+      "committed_source": "scripts/controller/nextgen_service.py",
+      "sha256": "73990dc9be3fd39c4f8a693f842ddc88a3b9f5986b1c0c4c7e330e9023475a2c"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/nextgen_tool_child.py",
+      "committed_source": "scripts/controller/nextgen_tool_child.py",
+      "sha256": "9d7733fe225e67934e71f567d7b5c92ca8d9fb11d2eb8296236b7656cffe6219"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/nextgen_tools_env.py",
+      "committed_source": "scripts/controller/nextgen_tools_env.py",
+      "sha256": "f224ee207a230c3252ccef4a52d70e1a63d08d47f11b9c92e5837672ea91ed37"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/nextgen_tools_service.py",
+      "committed_source": "scripts/controller/nextgen_tools_service.py",
+      "sha256": "cf62b98204fb2f96566097237be114d524745e849ea82aab6761c53748f5652c"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/official_tokenization.py",
+      "committed_source": "scripts/controller/official_tokenization.py",
+      "sha256": "b99f03eacbc514f11b3094c7d38ed32115a897bbc5ac8acb90fa45e749b4c6c4"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/owned_result_mirror.py",
+      "committed_source": "scripts/controller/owned_result_mirror.py",
+      "sha256": "6eb72d3d327e78d12484a88c5224a273a40096e6932af0a1c8b471a361562eeb"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/policy.py",
+      "committed_source": "scripts/controller/policy.py",
+      "sha256": "69523d244e940a84076651605810b620648a4ca41dffb28c32c978684ed90ef9"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/prefill_operator.py",
+      "committed_source": "scripts/controller/prefill_operator.py",
+      "sha256": "439d9105b6f2d59ce05843987f980dc8c63bc4eb7c684eee8ed2faf8c3f36fb8"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/processes.py",
+      "committed_source": "scripts/controller/processes.py",
+      "sha256": "2231d2c629949723ee67d4e4d7ba8cff76cea9b6f8d09a407bc44c37410cc83e"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/production.py",
+      "committed_source": "scripts/controller/production.py",
+      "sha256": "46d7870296a2b4bc5bb36eb270a1c7f204b20f5dc4b327c233481b4e785f3c04"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/protocols.py",
+      "committed_source": "scripts/controller/protocols.py",
+      "sha256": "3980b604ffbe5bf7f48d79df5f6ebc8f4596fdee9c7c9096e0b45dbdb2096c37"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/quota.py",
+      "committed_source": "scripts/controller/quota.py",
+      "sha256": "059ac6277ca208d2826bfd6f8ea218e90df8de80920534bd1b5b5836273ea425"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/range_probe.py",
+      "committed_source": "scripts/controller/range_probe.py",
+      "sha256": "c6623b1f050e0cbf32cbee66c0d5972491ba88f0a724bba6d62fe0e06b1ccf72"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/readonly_connection.py",
+      "committed_source": "scripts/controller/readonly_connection.py",
+      "sha256": "d276ad99112dc7836f440de8559ea74551510ad52b7da79bcb0942a598d913ff"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/remote_rpc.py",
+      "committed_source": "scripts/controller/remote_rpc.py",
+      "sha256": "16dca3fba0e5558dae2fe00d1d735f42df1d1c7d651b726df9efc0beb1b2bae9"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/scale_coverage.py",
+      "committed_source": "scripts/controller/scale_coverage.py",
+      "sha256": "0fd77386cc92fb1f654fce5ed9e881a88345e871edec2d88b2258a87e1a4dc02"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/service_metrics.py",
+      "committed_source": "scripts/controller/service_metrics.py",
+      "sha256": "3eb51c2d265bd1bd46b48a865c5dfcba3022920437932522f714f48e32e7f4a3"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/supervisor.py",
+      "committed_source": "scripts/controller/supervisor.py",
+      "sha256": "5251a55ac916fdd24dcfce0e0e2701ba8c9f24ae24cde171cf32c795e0daa464"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/trace_serving.py",
+      "committed_source": "scripts/controller/trace_serving.py",
+      "sha256": "d8958d2bf6c2791eba0ea5a8b170aca4e55d4cc67d7fb77a6441d3c0261d3aa2"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/transport.py",
+      "committed_source": "scripts/controller/transport.py",
+      "sha256": "9340e5f65215406c90d58b30db1a5bd17fdb2ec4a411854d9550037c1e5ed09b"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/watchdog.py",
+      "committed_source": "scripts/controller/watchdog.py",
+      "sha256": "5ad71c687b3206b18964a69e656c8f5326f0c1221fc6edbe3a1161c97b3e8979"
+    },
+    {
+      "frozen_runtime": "runtime/kv_controller/worker.py",
+      "committed_source": "scripts/controller/worker.py",
+      "sha256": "49549e826039b3bc429b6f0c17371c4ca619a0b5232608e59d861d3260bc180e"
+    }
+  ],
+  "package_sha256": "d5d8c84c74a3dee61d76f016bed4e725629ed6c7b6b64f4ebdea9150c133594d",
+  "actual_model_source_commit": "03134b72ec904254890300a647c939095f7900e2",
+  "actual_CXX_source_commit": "862c29cade05e47691147b8f50c979a812495470",
+  "actual_binary_sha256": "dbc1c53a6d711ad883d2227c55429c1977347acd9e1bfa50b1fb479a0cc25f09",
+  "original_ticket_unchanged": true
+}

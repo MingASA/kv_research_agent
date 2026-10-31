@@ -1,0 +1,10 @@
+test_accounting_does_not_follow_borrowed_readonly_dependency_symlinks (test_cpu_build_contract.CpuBuildContractTests) ... ok
+test_deadline_stops_only_the_newly_created_child_group_and_preserves_log (test_cpu_build_contract.CpuBuildContractTests) ... ok
+test_high_load_average_does_not_replace_measured_CPU_availability (test_cpu_build_contract.CpuBuildContractTests) ... ok
+test_inspection_is_readonly_and_requires_shared_resource_headroom (test_cpu_build_contract.CpuBuildContractTests) ... ok
+test_noncanonical_dependency_is_not_adopted_as_writable_owned_path (test_cpu_build_contract.CpuBuildContractTests) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 4.022s
+
+OK

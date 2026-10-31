@@ -1,0 +1,180 @@
+## H800 xLLM 实验补充说明：AIPerf 性能测试
+
+### 1. AIPerf 是什么，负责什么
+
+AIPerf 是 NVIDIA 提供的 LLM 推理服务性能基准测试工具。 它不是 GSM8K、LongBench 那样的模型能力评测集，而是向正在运行的推理服务发送请求，测量系统的吞吐、延迟和负载表现。
+
+本项目需要明确区分两套实验：
+
+- 质量实验：GSM8K、LongBench，判断 KV Cache 量化是否损害模型效果。
+- 性能实验：AIPerf，使用 ShareGPT、BurstGPT 等真实请求负载，研究 KV Cache 量化对推理服务性能的影响。
+
+不能把 GSM8K、LongBench 当作 AIPerf 的主要性能测试负载，也不能用 GSM8K 的准确率评价 AIPerf 性能。
+
+AIPerf 的基本组成包括：
+
+1. 推理服务端：xLLM 加载模型，提供 OpenAI 兼容 API。
+2. 负载数据：ShareGPT、BurstGPT，提供请求内容或请求长度、到达过程等工作负载信息；具体适配方式取决于数据格式与 AIPerf 配置。
+3. 负载生成和请求调度：控制并发、请求速率、测试时长或请求数量，向服务端发送请求。
+4. 客户端指标采集：统计请求完成情况、TTFT、ITL/TPOT、端到端延迟、吞吐及其分位数。
+5. 服务端和 GPU 指标采集：结合 GPU 显存、利用率、HBM 带宽等观测手段分析瓶颈。注意，并非所有硬件指标都由 AIPerf 自身直接提供。
+6. 结果文件和日志：保存测试配置、请求结果、性能统计和服务端日志，用于不同量化实验臂的可重复比较。
+
+其中，TTFT 是首 Token 延迟，ITL 是生成 Token 之间的时间间隔，TPOT 是平均每个输出 Token 对应的耗时；它们相关，但统计定义不能随意混用。
+
+### 2. 我们要研究的问题
+
+项目研究的是 KV Cache 混合精度量化的质量—性能权衡，而非单纯比较模型权重量化方式。
+
+主要实验配置为：
+
+| 实验臂             | K Cache | V Cache  | 作用          |
+| --------------- | ------- | -------- | ----------- |
+| `auto`          | BF16    | BF16     | 基线          |
+| `bf16_int8`     | BF16    | INT8     | V-only INT8 |
+| `bf16_fp8_e4m3` | BF16    | FP8 E4M3 | V-only FP8  |
+| `bf16_int4`     | BF16    | INT4     | V-only INT4 |
+
+主要研究指标分三类：
+
+服务性能：请求吞吐、输出 Token 吞吐、TTFT、ITL/TPOT、端到端延迟、P50/P95/P99，以及请求成功率。
+
+GPU 资源性能：KV Cache 驻留显存、总显存占用、GPU 计算利用率、HBM 带宽使用情况、量化和反量化的额外计算开销。
+
+质量代价：同一模型及相同量化配置在 GSM8K、LongBench 等评测上的质量变化。质量实验本身不由 AIPerf 替代。
+
+实验目的是判断：降低 V Cache 精度后，减少的显存占用及访存量，能否在真实服务负载下转化为可观的吞吐、延迟或并发容量收益。
+
+特别需要区分 KV Cache 容量缩减和真实端到端性能提升。存储字节减少，并不意味着 TTFT、ITL 或吞吐必然改善，因为还存在反量化、Kernel 实现、调度以及其他系统瓶颈。
+
+### 3. AIPerf 实验环境及文件位置
+
+以下为 H800 上已经使用过的路径。统一根目录：
+
+```
+BASE=/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800
+```
+
+| 内容               | 路径                                                                      |
+| ---------------- | ----------------------------------------------------------------------- |
+| 混合 V 量化实验代码      | `$BASE/xllm_quant_kvcache-qwen25/`                                      |
+| xLLM 编译后的服务端程序   | `$BASE/xllm_quant_kvcache/build/lib.linux-x86_64-cpython-312/xllm/xllm` |
+| AIPerf 可执行程序     | `$BASE/.venv-aiperf/bin/aiperf`                                         |
+| AIPerf Python 环境 | `$BASE/.venv-aiperf/`                                                   |
+| xLLM Python 环境   | `$BASE/.venv/`                                                          |
+| AIPerf 输入和脚本目录   | `$BASE/inputs/aiperf/`                                                  |
+| 7B Smoke 脚本      | `$BASE/inputs/aiperf/aiperf_xllm_7b_smoke_v1.sh`                        |
+| Qwen2.5 正确性门禁    | `$BASE/experiments/h800-mixed-v/gates-qwen25/correctness_gates.json`    |
+| AIPerf 实验结果根目录   | `$BASE/experiments/aiperf/`                                             |
+
+已验证的核心环境：
+
+```
+AIPerf: 0.13.0
+模型: Qwen2.5-7B-Instruct
+xLLM 代码 commit: e1cea47008e427358dbdd237702920d35e96ac90
+推理后端: flashinfer_mixed
+Docker 镜像: quay.io/jd_xllm/xllm-ai:xllm-dev-cuda130-x86
+```
+
+模型文件位于：
+
+```
+/mnt/cfs/9n-das-admin/llm_models/Qwen2.5-7B-Instruct
+```
+
+容器内映射为：
+
+```
+/models/Qwen2.5-7B-Instruct
+```
+
+注意不同 Git Worktree 的区别：
+
+- `xllm_quant_kvcache-qwen25` 用于此前的 7B 混合 V AIPerf 实验。
+- `xllm_quant_kvcache-joint14b` 用于现在的 14B 联合 K/V 量化质量实验。
+- 不要因为正在做 14B 实验，就把 AIPerf 服务端切换到 14B 的 Runner 或工作树；这两条实验主线的量化对象、模型及评测目的不同。
+
+### 4. 已经准备好的负载数据
+
+ShareGPT
+
+数据文件：
+
+```
+$BASE/inputs/aiperf/.cache/aiperf/datasets/ShareGPT_V3_unfiltered_cleaned_split.json
+```
+
+此前检查确认约 94,145 条对话。它是 ShareGPT 原始对话数据，正式压测前仍需按选定协议明确对话展开规则、采样方法和输入输出长度控制。不能直接将数据集的对话条数当作实际 AIPerf 请求数。
+
+BurstGPT
+
+此前计划使用 BurstGPT 作为请求到达负载，重点观察突发流量下的服务行为。BurstGPT 更适合描述请求到达时间、请求长度等服务负载特征，而非直接评价语义生成质量。必须核对当前使用的具体 Trace 文件和 AIPerf 适配方式。
+
+Mooncake
+
+此前也讨论过将 Mooncake Trace 纳入性能实验，但它不是已完成的正式测试。可作为后续工作负载扩展，主要考虑请求长度、前缀及到达模式等特征。
+
+当前可确认的 ShareGPT 路径如上；BurstGPT、Mooncake 的最终冻结输入路径尚未从现有记录中核实，不应编造。
+
+### 5. 已经完成的 AIPerf 工作
+
+第一阶段：实验环境与正确性门禁
+
+已经建立 AIPerf 0.13.0 独立运行环境，使用 xLLM 的 OpenAI 兼容接口实施性能测试。
+
+此前还完成了 Qwen2.5 的正确性门禁，包括核对实际 KV Cache 格式、Scale、显存存储及原生计算路径，防止出现“命令指定了低精度，但实际仍使用 BF16 KV Cache”的伪实验。
+
+尤其是 V-INT4，已经检查其原生混合精度 CUDA 构建标识及相关证据。
+
+第二阶段：7B 四组 AIPerf Smoke
+
+四组 Smoke 已在 H800 GPU1 完成。
+
+测试规模：每组 warmup 4 个请求、profiling 20 个请求，请求并发为 2。
+
+| 配置            | ITL 中位数   | 相对 BF16 |
+| ------------- | --------- | ------- |
+| BF16/BF16     | 9.661 ms  | 基线      |
+| BF16/INT8     | 10.106 ms | +4.6%   |
+| BF16/FP8 E4M3 | 9.945 ms  | +2.9%   |
+| BF16/INT4     | 9.993 ms  | +3.4%   |
+
+已核验的结果包括：
+
+- 四组真实 KV Cache dtype、format、scale 和存储字节检查通过。
+- AIPerf 请求均能完成，采集到有效的非零 ITL。
+- 请求 Token 数没有出现不一致。
+- 四组均导出了正式 AIPerf 格式的请求级及汇总结果。
+
+结果目录：
+
+```
+$BASE/experiments/aiperf/aiperf-smoke-7b-4arms-g1-20261020-122736/
+```
+
+其中包含各实验臂的 `aiperf.log`、`profile_export_aiperf.csv`、`profile_export_aiperf.json`、`.aiperf_results_ready.json` 等。
+
+这些结果只能证明功能和测量链路正常。 由于使用短 Prompt、并发 2、每臂仅 20 个 Profile 请求，当前 V 量化的 ITL 小幅劣于 BF16 不能作为正式性能结论。长上下文和高并发场景下的性能尚未验证。
+
+### 6. 还没有完成的工作
+
+目前真正缺失的是基于 ShareGPT、BurstGPT 等负载的正式 AIPerf 性能实验矩阵，而不是进一步增加 GSM8K 或 LongBench 题量。
+
+建议以此前的 7B 四实验臂为基础，按以下顺序推进：
+
+1. 冻结正式负载协议：确定 ShareGPT 请求样本及随机种子；确定 BurstGPT Trace、时间戳缩放和输入输出长度处理方法；记录文件 SHA256。
+2. 确定测试压力矩阵：ShareGPT 分别测试低、中、高并发；BurstGPT 按原始或指定缩放到达过程回放，同时保留相同实验规模和请求条件。
+3. 执行八卡并行实验：八张 H800 可运行八个彼此独立的 TP=1 xLLM 服务实例，把不同精度和负载组合分配给不同 GPU。需要考虑 GPU 间硬件差异及实验顺序的潜在影响，不能简单将 GPU 差异当成量化差异。
+4. 同步采集 GPU 资源指标：AIPerf 采集请求级性能；额外通过 NVML/DCGM 等工具采集 GPU 显存、利用率、HBM 流量或带宽相关计数器。若无法采集真实硬件带宽计数器，应明确标注缺失，不能用利用率代替 HBM 带宽。
+5. 分析和生成报告：同时比较吞吐、TTFT、ITL、端到端延迟及 P50/P95/P99，并结合 KV Cache 字节占用分析性能变化原因。必要时补充长上下文、并发压力和复测实验。
+
+性能测试中尤其要关注工作负载规模能否让 KV Cache 真正成为资源瓶颈。只让模型生成很少的 Token、保持很低的并发，就无法充分评价 KV Cache 压缩的系统价值。
+
+### 7. 与当前 14B 质量实验的关系
+
+当前正在进行的八卡 Qwen2.5-14B 实验研究的是 BF16/BF16、INT8/INT8、FP8/FP8、INT4/INT4 联合 K/V 量化质量；AIPerf 主线则是 Qwen2.5-7B K 保持 BF16、只量化 V 的推理性能。
+
+两组实验不能直接合并形成一个控制变量严格的“质量—性能”结论。若后续希望形成完整的研究报告，应进一步保证模型规模、量化方案、实现后端及测试协议具有可比性，或明确将它们报告为两组独立实验。
+
+当前状态一句话总结：7B AIPerf 四精度功能 Smoke 已完成，ShareGPT/BurstGPT 高负载正式实验尚未进行；14B 联合 KV 质量实验是另一条已经开始八卡部署的实验主线。&#x20;

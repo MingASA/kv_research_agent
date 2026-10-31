@@ -1,0 +1,16 @@
+{
+  "classification": "reported_by_bounded_readonly_monitor_pending_main_reconcile",
+  "utc": "2026-10-30T21:20:38.041347Z",
+  "response_sha256": "a70f6ab2930f16387dd11a473c533060ca7103c76c8d37f7ac9c5b7f888e0868",
+  "run_id": "nextgen-bf16-qwen38-mixed8192-quality1720-r0-20261030t",
+  "status": "COMPLETE",
+  "supervisor_alive": false,
+  "live_owned_containers": [],
+  "GPU_release_verified": true,
+  "watchdog": "RELEASE_CONFIRMED",
+  "quality_complete_LF_rows": 1720,
+  "quality_bytes": 27446215,
+  "partial_line": false,
+  "all_GPUs_idle_snapshot": true,
+  "quality_independently_scored": false
+}

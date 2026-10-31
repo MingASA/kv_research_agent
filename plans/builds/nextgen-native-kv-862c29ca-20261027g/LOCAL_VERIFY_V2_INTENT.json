@@ -1,0 +1,1 @@
+{"documented_profile":"policy.docker_command already uses seccomp=unconfined; preserved UID/noGPU/noNetwork/capDrop/readOnly/1CPU8GiB","old_G_verification_preserved":true,"operation":"CPU_only_metadata_new_isolated_revision","rpc_sha256":"3f44126cd08d9e5082aa378fe50ff401590c2e014e1ecc2bc7e1393306580a4c","utc":"2026-10-27T21:18:42.668354+00:00"}

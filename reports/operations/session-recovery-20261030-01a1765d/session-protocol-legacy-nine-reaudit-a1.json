@@ -1,0 +1,63 @@
+{
+  "utc": "2026-10-30T23:26:12.310041+00:00",
+  "all_original_nine_raw_audits_unchanged": true,
+  "reports": [
+    {
+      "run_id": "nextgen-bf16-qwen38-chat128-c16-r2-20261030e",
+      "original_successful_requests": 128,
+      "recomputed_exactly_equals_original": true,
+      "source_audit_sha256": "00f61623e53222cf59ceb705228e42dcd17d2cd75ed88b74bbcfc36b01aafa8f"
+    },
+    {
+      "run_id": "nextgen-fp8fa2-qwen38-chat128-c16-r0-20261030c",
+      "original_successful_requests": 128,
+      "recomputed_exactly_equals_original": true,
+      "source_audit_sha256": "f1a1b82d0ed34158ef3be1569e198931e554fca43f28bf1f14d9051f2860a837"
+    },
+    {
+      "run_id": "nextgen-nvfp4-qwen38-chat128-c16-r0-20261030b",
+      "original_successful_requests": 128,
+      "recomputed_exactly_equals_original": true,
+      "source_audit_sha256": "2db1f067e83799b6e9c6abefa204e825f0e59d5247645b8fbda8590cdbc3dceb"
+    },
+    {
+      "run_id": "nextgen-bf16-qwen38-long16-c8-r0-20261030f",
+      "original_successful_requests": 16,
+      "recomputed_exactly_equals_original": true,
+      "source_audit_sha256": "3c6e9f48971c02ca17da28550ac4d7b8305a561907bf613062e28c84af020fad"
+    },
+    {
+      "run_id": "nextgen-fp8fa2-qwen38-long16-c8-r0-20261030h",
+      "original_successful_requests": 16,
+      "recomputed_exactly_equals_original": true,
+      "source_audit_sha256": "925051e6b24ce88c146d5a2cd81a4f2330de70dc1e6e75878ee6b0e63e243c3e"
+    },
+    {
+      "run_id": "nextgen-nvfp4-qwen38-long16-c8-r0-20261030g",
+      "original_successful_requests": 16,
+      "recomputed_exactly_equals_original": true,
+      "source_audit_sha256": "af80228e21909cbc8d6e9293654344d1c34326fb69833d85d3fd0f7ee897edb6"
+    },
+    {
+      "run_id": "nextgen-bf16-qwen38-prefix32-c16-r0-20261030o",
+      "original_successful_requests": 32,
+      "recomputed_exactly_equals_original": true,
+      "source_audit_sha256": "fe2ba704da53b0b5dfd6ae019174558be9125370e8d8defae6dbce4d3866c95c"
+    },
+    {
+      "run_id": "nextgen-nvfp4-qwen38-prefix32-c16-r0-20261030p",
+      "original_successful_requests": 32,
+      "recomputed_exactly_equals_original": true,
+      "source_audit_sha256": "fb1726a36a28a2aff5f0ca49fbe1d1fdb161105fbf7e820e96e8fd7b61ea29ab"
+    },
+    {
+      "run_id": "nextgen-fp8fa2-qwen38-prefix32-c16-r0-20261030q",
+      "original_successful_requests": 32,
+      "recomputed_exactly_equals_original": true,
+      "source_audit_sha256": "36dab24b2ff454819fa9f702f80fcc8efe668268acf16bd8bc2021ce6550cd74"
+    }
+  ],
+  "original_total_measured_requests": 528,
+  "new_session_proof_not_used_to_relabel_old_runs": true,
+  "GPU_or_remote_calls": false
+}

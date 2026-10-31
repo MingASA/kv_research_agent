@@ -1,0 +1,36 @@
+{
+  "archive_sha256": "cb0d395a00a576b3bcf5b0f6b726df78ed47bc759ae69aef0a0746456a998428",
+  "batches": [
+    {
+      "bytes": 15716,
+      "file_count": 4,
+      "remote_writes": 0,
+      "result": "complete"
+    },
+    {
+      "bytes": 438377,
+      "file_count": 56,
+      "remote_writes": 0,
+      "result": "complete"
+    }
+  ],
+  "final_directory": "results/mirrors/nextgen-nvfp4-pages-sm90-r0-20261027h-complete-h2",
+  "inventory_file_count": 60,
+  "inventory_path": "reports/operations/nextgen-native-kv-20261027a/NVFP4_h_mirror_inventory_luna_a1.json",
+  "inventory_total_bytes": 454093,
+  "local_files_sha_verified": 60,
+  "method": "PinnedSSH same-pin bounded read-only file batches; 4 native_pages priority JSON first, then remaining 56; local gzip snapshot assembled from SHA-verified bytes",
+  "outcome": "COMPLETE_ALL_FILES_SHA_VERIFIED",
+  "prior_failed_partials_preserved": [
+    "results/mirrors/nextgen-nvfp4-pages-sm90-r0-20261027h-complete-h1",
+    "results/mirrors/nextgen-nvfp4-pages-sm90-r0-20261027h-complete-h1-retry-a1"
+  ],
+  "remote_writes": 0,
+  "run_id": "nextgen-nvfp4-pages-sm90-r0-20261027h",
+  "schema": "kv-complete-run-mirror-transport-v1",
+  "selection_path": "reports/operations/nextgen-native-kv-20261027a/NVFP4_h_mirror_selection_luna_a1.json",
+  "terminal_result_sha256": "028c0cfc348f8f417180b485e6259d6d1d4d83ed87b587f04b1a541d423b197a",
+  "terminal_status": "COMPLETE",
+  "verified_bytes": 454093,
+  "whole_run_new_output_bytes": 158901254
+}

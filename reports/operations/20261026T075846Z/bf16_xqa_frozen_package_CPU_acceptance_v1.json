@@ -1,0 +1,14 @@
+{
+  "classification": "CPU_frozen_actual_policy_and_old_raw_regression",
+  "new_package": "results/prepared/packages/prod-sharegpt-bf16xqa-c128-r0-20261027a/package.json",
+  "source_commit": "1c2be15976b7fbb1d8b79e469659b2c8e52cff00",
+  "actual_shipped_policy_passed": true,
+  "all_assets_sha256_verified": true,
+  "unchanged_old_sharegpt_audit_c2_exact": true,
+  "new_GPU_operator_verified": false,
+  "max_wall_seconds": 3600,
+  "max_output_gib": 3,
+  "selected_future_gpu_uuid": [
+    "GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1"
+  ]
+}

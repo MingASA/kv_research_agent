@@ -1,0 +1,55 @@
+{
+  "BF16_correct": 26,
+  "candidate_correct": 26,
+  "tasks_per_arm": 32,
+  "BF16_percent": 81.25,
+  "candidate_percent": 81.25,
+  "change_percentage_points": 0.0,
+  "paired_outcome_ids": {
+    "both_correct": [
+      "multi_turn_base_1",
+      "multi_turn_base_3",
+      "multi_turn_base_5",
+      "multi_turn_base_7",
+      "multi_turn_base_50",
+      "multi_turn_base_51",
+      "multi_turn_base_53",
+      "multi_turn_base_54",
+      "multi_turn_base_55",
+      "multi_turn_base_56",
+      "multi_turn_base_57",
+      "multi_turn_base_100",
+      "multi_turn_base_101",
+      "multi_turn_base_102",
+      "multi_turn_base_103",
+      "multi_turn_base_104",
+      "multi_turn_base_105",
+      "multi_turn_base_106",
+      "multi_turn_base_107",
+      "multi_turn_base_150",
+      "multi_turn_base_151",
+      "multi_turn_base_153",
+      "multi_turn_base_154",
+      "multi_turn_base_155",
+      "multi_turn_base_157"
+    ],
+    "both_failed": [
+      "multi_turn_base_2",
+      "multi_turn_base_4",
+      "multi_turn_base_6",
+      "multi_turn_base_52",
+      "multi_turn_base_152"
+    ],
+    "BF16_correct_candidate_failed": [
+      "multi_turn_base_0"
+    ],
+    "BF16_failed_candidate_correct": [
+      "multi_turn_base_156"
+    ]
+  },
+  "all_original_tasks_in_denominator": true,
+  "classification": "cross-profile sameBF16 fixedtask diagnostic; not dtype causal or run variance",
+  "old_audit_sha256": "49b73007fec083bbc8a82931e6378a99cf4072161b716dc9cc5b8449645efcdd",
+  "new_audit_sha256": "bd8f79ce2650949429e2f79e7b916445475763df8e57d7f7679868ab52019359",
+  "quality_or_SLO_acceptance": false
+}

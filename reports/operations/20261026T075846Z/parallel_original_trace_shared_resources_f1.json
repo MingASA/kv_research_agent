@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "utc": "2026-10-27T01:21:14.160557+00:00",
+  "uid": 1005,
+  "hostname": "A03-R40-I18-195-B000010.JD.LOCAL",
+  "cpu_count": 192,
+  "loadavg": [
+    4.11,
+    2.6,
+    2.03
+  ],
+  "MemAvailable": "1924149276 kB",
+  "MemTotal": "2113043820 kB",
+  "remote_writes": 0,
+  "GPU_started": false
+}

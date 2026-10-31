@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-30T20:50:03.775320+00:00",
+  "tests": 9,
+  "passed": true,
+  "INNER_OUTER_ast_compile": true,
+  "source_sha256": "6be2c96e3f5cb161c63cdb25b8de3345357b4674d6cc59d64039bce964eb18da",
+  "change": "Exact W X Y allowlist only; explicit8192/2048, prefix32 and observerfalse checks; no GPU/model request or remote file write",
+  "GPU_used": false
+}

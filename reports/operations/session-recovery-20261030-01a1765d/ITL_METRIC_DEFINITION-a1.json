@@ -1,0 +1,76 @@
+{
+  "schema": "actual_AIPerf_ITL_definition-v1",
+  "classification": "confirmed current SDK source and raw-auditor algebra",
+  "SDK_source_matches_remote_evidence": "reports/operations/session-recovery-20261030-01a1765d/session-stop-SDK-fresh-readonly-a1/COMPARISON.json",
+  "request_ITL": "(request_latency - time_to_first_token) / (output_token_count - 1) for this command, which does not enable per-chunk usage",
+  "reported_p95_basis": "95th percentile across per-request average ITL values, excluding legitimate one-token answers that have no inter-token interval",
+  "not_a_global_p95_of_individual_token_gap_samples": true,
+  "native_decoder_or_CUDA_kernel_time_measured_by_this_metric": false,
+  "values_and_historical_audits_changed": false,
+  "sources": [
+    {
+      "path": ".deps/aiperf-runtime-20261026/aiperf/metrics/types/inter_token_latency_metric.py",
+      "sha256": "756bb7817fb5ad2bd9d7331d964a0da00386ad32725623601c88509f6559a3e9"
+    },
+    {
+      "path": ".deps/aiperf-runtime-20261026/aiperf/metrics/types/decode_duration_metric.py",
+      "sha256": "a1a6e4cde5edb2f755830c90aa8a9c79c46740a7081e3975b5ca027b14a88ca8"
+    },
+    {
+      "path": "scripts/controller/production.py",
+      "sha256": "46d7870296a2b4bc5bb36eb270a1c7f204b20f5dc4b327c233481b4e785f3c04"
+    }
+  ],
+  "actual_original_commands_checked": [
+    {
+      "run_id": "nextgen-bf16-qwen38-chat128-c16-r2-20261030e",
+      "command_sha256": "500939e3d416c803b3dcc12207ed580dc3038bea87fc480526bb06ce57e4036a",
+      "per_chunk_usage_enabled": false
+    },
+    {
+      "run_id": "nextgen-fp8fa2-qwen38-chat128-c16-r0-20261030c",
+      "command_sha256": "d83ce9663c564bc882fe02479df700da456082e9207c2fad124b1d6edf8133c7",
+      "per_chunk_usage_enabled": false
+    },
+    {
+      "run_id": "nextgen-nvfp4-qwen38-chat128-c16-r0-20261030b",
+      "command_sha256": "bd2b4979fa1728acf9bbd086c9c5fd60d7303554d6fd093ff9e37dc6afc10492",
+      "per_chunk_usage_enabled": false
+    },
+    {
+      "run_id": "nextgen-bf16-qwen38-long16-c8-r0-20261030f",
+      "command_sha256": "73370ee873b033e40427bd78ddbf378cab0f9cf04c90293d3cc6b08fe6569a2b",
+      "per_chunk_usage_enabled": false
+    },
+    {
+      "run_id": "nextgen-fp8fa2-qwen38-long16-c8-r0-20261030h",
+      "command_sha256": "1ed7c46831263395d19071177ca7b8950f55ce27660d28c0093330eaf16ebc43",
+      "per_chunk_usage_enabled": false
+    },
+    {
+      "run_id": "nextgen-nvfp4-qwen38-long16-c8-r0-20261030g",
+      "command_sha256": "6db56f76527445e9d58b9b6cc516379ba11e48122263cae5525926d06c44bab9",
+      "per_chunk_usage_enabled": false
+    },
+    {
+      "run_id": "nextgen-bf16-qwen38-prefix32-c16-r0-20261030o",
+      "command_sha256": "7284ff34d5583d1ca241c9684fd25065201fa10d01974bd09ccda2a6492f096f",
+      "per_chunk_usage_enabled": false
+    },
+    {
+      "run_id": "nextgen-nvfp4-qwen38-prefix32-c16-r0-20261030p",
+      "command_sha256": "e271347f89bfbd4f41157f7733475f30ee269e728cf53f0f4f0dfd8bffb58eb9",
+      "per_chunk_usage_enabled": false
+    },
+    {
+      "run_id": "nextgen-fp8fa2-qwen38-prefix32-c16-r0-20261030q",
+      "command_sha256": "4b0bd2dcd3b75c7cc33f08143fa2b6b18ecfd831f9c913138f1950061e15a140",
+      "per_chunk_usage_enabled": false
+    },
+    {
+      "run_id": "nextgen-bf16-qwen38-mixed8192-prefix32-r1-20261030wc",
+      "command_sha256": "1f09b304b12f4f33407f6a4e5ad884cf5030b16463b783dbcebba3ca71fb5c19",
+      "per_chunk_usage_enabled": false
+    }
+  ]
+}

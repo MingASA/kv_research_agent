@@ -1,0 +1,441 @@
+{
+  "schema": "kv-failed-jk-recovery-audit-v1",
+  "classification": "confirmed_read_only_original_run_evidence_recovered",
+  "observed_utc": "2026-10-28T07:16:38.332445+00:00",
+  "runs": {
+    "nextgen-bf16-qwen38-quality-core1720-r0-20261027j": {
+      "status": "FAILED",
+      "supervisor_alive": false,
+      "driver_release_verified": true,
+      "watchdog_status": "RELEASE_CONFIRMED",
+      "owned_container_running": false,
+      "owned_container_id": "9a289c657b7c00b10db70f7d68dc48c69e07c774b79a975bde732efdcca3861a",
+      "failure": "RuntimeError: Worker failed; inspect preserved per-arm container.log",
+      "container_traceback_terminal": "ValueError: Incomplete/invalid core quality responses; original bytes retained, no accuracy acceptance",
+      "mirror": {
+        "mirror": "results/mirrors/nextgen-bf16-qwen38-quality-core1720-r0-20261027j-failed-20261028a1",
+        "files": 71,
+        "bytes": 52457714,
+        "all_sha_verified": true,
+        "prior_snapshot_preserved": true
+      },
+      "quality_generation_result": {
+        "accuracy_scored": false,
+        "actual_all_inputs_sent": true,
+        "all_response_contracts_valid": false,
+        "capped_responses": 84,
+        "classification": "core_quality_actual_API_generations_not_accuracy_or_performance_acceptance",
+        "client_concurrency": 16,
+        "client_token_budget": 160000,
+        "cohort_requests": 1720,
+        "contract_failures": 18,
+        "durable_responses": 1720,
+        "model_quality_validated": false,
+        "official_aiperf_complete": false,
+        "prediction_journal_sha256": "3e41a160b837910c9db3055d25ccdfd88603ffc70648ba2ac53381785bb222f8",
+        "scheduling_scope": "Original submission order; bounded logical prompt+cap reservations common to all formats; no prefix-reuse or quantized capacity benefit claimed from this quality client",
+        "service_performance_measured": false
+      },
+      "quality_progress": {
+        "accuracy_scored": false,
+        "active_client_requests": 0,
+        "capped_responses": 84,
+        "contract_failures": 18,
+        "durable_responses": 1720,
+        "reserved_client_token_budget": 0,
+        "submitted": 1720
+      },
+      "prediction_journal": {
+        "path": "output/bf16/quality_predictions.jsonl",
+        "sha256": "3e41a160b837910c9db3055d25ccdfd88603ffc70648ba2ac53381785bb222f8",
+        "bytes": 27455821,
+        "physical_LF_terminated_rows": 1720,
+        "ends_LF": true,
+        "all_json_rows_parse": true,
+        "durable_responses": 1720,
+        "contract_failures": 18,
+        "contract_valid_rows": 1702,
+        "capped_responses_finish_length": 84
+      },
+      "validation_result_summary": {
+        "classification": "native_hybrid_bf16_service_correctness_lifecycle",
+        "model_loaded": true,
+        "known_answers_checked": 20,
+        "actual_model_Graph_replay_logged": true,
+        "A_B_A_repeated_answers_match": true,
+        "model_quality_validated": false,
+        "official_aiperf_complete": false,
+        "service_performance_measured": false
+      },
+      "contract_failure_predicate_counts": {
+        "prompt_tokens_mismatch": 13,
+        "empty_answer": 6
+      },
+      "contract_failure_overlap": {
+        "prompt_token_mismatch_and_empty_answer": 1
+      },
+      "contract_failure_rows": [
+        {
+          "row_index": 1474,
+          "id": "core-2wikimqa-5",
+          "task": "2wikimqa",
+          "http_status": 200,
+          "error": null,
+          "expected_prompt_tokens_cpu": 7963,
+          "actual_usage_prompt_tokens": 7960,
+          "prompt_token_delta_actual_minus_expected": -3,
+          "usage_completion_tokens": 10,
+          "usage_total_tokens": 7970,
+          "finish_reason": "stop",
+          "answer_empty": false,
+          "answer_length": 35,
+          "contract_failure_checks": [
+            "prompt_tokens_mismatch"
+          ]
+        },
+        {
+          "row_index": 1488,
+          "id": "core-2wikimqa-19",
+          "task": "2wikimqa",
+          "http_status": 200,
+          "error": null,
+          "expected_prompt_tokens_cpu": 5607,
+          "actual_usage_prompt_tokens": 5605,
+          "prompt_token_delta_actual_minus_expected": -2,
+          "usage_completion_tokens": 4,
+          "usage_total_tokens": 5609,
+          "finish_reason": "stop",
+          "answer_empty": false,
+          "answer_length": 6,
+          "contract_failure_checks": [
+            "prompt_tokens_mismatch"
+          ]
+        },
+        {
+          "row_index": 1497,
+          "id": "core-2wikimqa-28",
+          "task": "2wikimqa",
+          "http_status": 200,
+          "error": null,
+          "expected_prompt_tokens_cpu": 7169,
+          "actual_usage_prompt_tokens": 7164,
+          "prompt_token_delta_actual_minus_expected": -5,
+          "usage_completion_tokens": 7,
+          "usage_total_tokens": 7171,
+          "finish_reason": "stop",
+          "answer_empty": false,
+          "answer_length": 13,
+          "contract_failure_checks": [
+            "prompt_tokens_mismatch"
+          ]
+        },
+        {
+          "row_index": 1498,
+          "id": "core-2wikimqa-29",
+          "task": "2wikimqa",
+          "http_status": 200,
+          "error": null,
+          "expected_prompt_tokens_cpu": 7578,
+          "actual_usage_prompt_tokens": 7577,
+          "prompt_token_delta_actual_minus_expected": -1,
+          "usage_completion_tokens": 6,
+          "usage_total_tokens": 7583,
+          "finish_reason": "stop",
+          "answer_empty": false,
+          "answer_length": 16,
+          "contract_failure_checks": [
+            "prompt_tokens_mismatch"
+          ]
+        },
+        {
+          "row_index": 1500,
+          "id": "core-2wikimqa-31",
+          "task": "2wikimqa",
+          "http_status": 200,
+          "error": null,
+          "expected_prompt_tokens_cpu": 8873,
+          "actual_usage_prompt_tokens": 8870,
+          "prompt_token_delta_actual_minus_expected": -3,
+          "usage_completion_tokens": 5,
+          "usage_total_tokens": 8875,
+          "finish_reason": "stop",
+          "answer_empty": false,
+          "answer_length": 13,
+          "contract_failure_checks": [
+            "prompt_tokens_mismatch"
+          ]
+        },
+        {
+          "row_index": 1526,
+          "id": "core-hotpotqa-6",
+          "task": "hotpotqa",
+          "http_status": 200,
+          "error": null,
+          "expected_prompt_tokens_cpu": 2332,
+          "actual_usage_prompt_tokens": 15843,
+          "prompt_token_delta_actual_minus_expected": 13511,
+          "usage_completion_tokens": 5,
+          "usage_total_tokens": 15848,
+          "finish_reason": "stop",
+          "answer_empty": false,
+          "answer_length": 13,
+          "contract_failure_checks": [
+            "prompt_tokens_mismatch"
+          ]
+        },
+        {
+          "row_index": 1540,
+          "id": "core-hotpotqa-21",
+          "task": "hotpotqa",
+          "http_status": 200,
+          "error": null,
+          "expected_prompt_tokens_cpu": 16156,
+          "actual_usage_prompt_tokens": 16154,
+          "prompt_token_delta_actual_minus_expected": -2,
+          "usage_completion_tokens": 3,
+          "usage_total_tokens": 16157,
+          "finish_reason": "stop",
+          "answer_empty": false,
+          "answer_length": 6,
+          "contract_failure_checks": [
+            "prompt_tokens_mismatch"
+          ]
+        },
+        {
+          "row_index": 1562,
+          "id": "core-hotpotqa-43",
+          "task": "hotpotqa",
+          "http_status": 200,
+          "error": null,
+          "expected_prompt_tokens_cpu": 16514,
+          "actual_usage_prompt_tokens": 16509,
+          "prompt_token_delta_actual_minus_expected": -5,
+          "usage_completion_tokens": 2,
+          "usage_total_tokens": 16511,
+          "finish_reason": "stop",
+          "answer_empty": false,
+          "answer_length": 4,
+          "contract_failure_checks": [
+            "prompt_tokens_mismatch"
+          ]
+        },
+        {
+          "row_index": 1567,
+          "id": "core-hotpotqa-48",
+          "task": "hotpotqa",
+          "http_status": 200,
+          "error": null,
+          "expected_prompt_tokens_cpu": 10432,
+          "actual_usage_prompt_tokens": 10430,
+          "prompt_token_delta_actual_minus_expected": -2,
+          "usage_completion_tokens": 6,
+          "usage_total_tokens": 10436,
+          "finish_reason": "stop",
+          "answer_empty": false,
+          "answer_length": 13,
+          "contract_failure_checks": [
+            "prompt_tokens_mismatch"
+          ]
+        },
+        {
+          "row_index": 1601,
+          "id": "core-musique-32",
+          "task": "musique",
+          "http_status": 200,
+          "error": null,
+          "expected_prompt_tokens_cpu": 16586,
+          "actual_usage_prompt_tokens": 16585,
+          "prompt_token_delta_actual_minus_expected": -1,
+          "usage_completion_tokens": 4,
+          "usage_total_tokens": 16589,
+          "finish_reason": "stop",
+          "answer_empty": false,
+          "answer_length": 7,
+          "contract_failure_checks": [
+            "prompt_tokens_mismatch"
+          ]
+        },
+        {
+          "row_index": 1602,
+          "id": "core-musique-33",
+          "task": "musique",
+          "http_status": 200,
+          "error": null,
+          "expected_prompt_tokens_cpu": 15695,
+          "actual_usage_prompt_tokens": 15694,
+          "prompt_token_delta_actual_minus_expected": -1,
+          "usage_completion_tokens": 4,
+          "usage_total_tokens": 15698,
+          "finish_reason": "stop",
+          "answer_empty": false,
+          "answer_length": 19,
+          "contract_failure_checks": [
+            "prompt_tokens_mismatch"
+          ]
+        },
+        {
+          "row_index": 1613,
+          "id": "core-musique-44",
+          "task": "musique",
+          "http_status": 200,
+          "error": null,
+          "expected_prompt_tokens_cpu": 17266,
+          "actual_usage_prompt_tokens": 17265,
+          "prompt_token_delta_actual_minus_expected": -1,
+          "usage_completion_tokens": 3,
+          "usage_total_tokens": 17268,
+          "finish_reason": "stop",
+          "answer_empty": false,
+          "answer_length": 8,
+          "contract_failure_checks": [
+            "prompt_tokens_mismatch"
+          ]
+        },
+        {
+          "row_index": 1674,
+          "id": "core-repobench-p-6",
+          "task": "repobench-p",
+          "http_status": 200,
+          "error": null,
+          "expected_prompt_tokens_cpu": 16379,
+          "actual_usage_prompt_tokens": 3561,
+          "prompt_token_delta_actual_minus_expected": -12818,
+          "usage_completion_tokens": 1,
+          "usage_total_tokens": 3562,
+          "finish_reason": "stop",
+          "answer_empty": true,
+          "answer_length": 0,
+          "contract_failure_checks": [
+            "empty_answer",
+            "prompt_tokens_mismatch"
+          ]
+        },
+        {
+          "row_index": 1676,
+          "id": "core-repobench-p-7",
+          "task": "repobench-p",
+          "http_status": 200,
+          "error": null,
+          "expected_prompt_tokens_cpu": 16016,
+          "actual_usage_prompt_tokens": 16016,
+          "prompt_token_delta_actual_minus_expected": 0,
+          "usage_completion_tokens": 1,
+          "usage_total_tokens": 16017,
+          "finish_reason": "stop",
+          "answer_empty": true,
+          "answer_length": 0,
+          "contract_failure_checks": [
+            "empty_answer"
+          ]
+        },
+        {
+          "row_index": 1693,
+          "id": "core-repobench-p-24",
+          "task": "repobench-p",
+          "http_status": 200,
+          "error": null,
+          "expected_prompt_tokens_cpu": 7728,
+          "actual_usage_prompt_tokens": 7728,
+          "prompt_token_delta_actual_minus_expected": 0,
+          "usage_completion_tokens": 1,
+          "usage_total_tokens": 7729,
+          "finish_reason": "stop",
+          "answer_empty": true,
+          "answer_length": 0,
+          "contract_failure_checks": [
+            "empty_answer"
+          ]
+        },
+        {
+          "row_index": 1698,
+          "id": "core-repobench-p-29",
+          "task": "repobench-p",
+          "http_status": 200,
+          "error": null,
+          "expected_prompt_tokens_cpu": 6571,
+          "actual_usage_prompt_tokens": 6571,
+          "prompt_token_delta_actual_minus_expected": 0,
+          "usage_completion_tokens": 1,
+          "usage_total_tokens": 6572,
+          "finish_reason": "stop",
+          "answer_empty": true,
+          "answer_length": 0,
+          "contract_failure_checks": [
+            "empty_answer"
+          ]
+        },
+        {
+          "row_index": 1713,
+          "id": "core-repobench-p-44",
+          "task": "repobench-p",
+          "http_status": 200,
+          "error": null,
+          "expected_prompt_tokens_cpu": 9401,
+          "actual_usage_prompt_tokens": 9401,
+          "prompt_token_delta_actual_minus_expected": 0,
+          "usage_completion_tokens": 1,
+          "usage_total_tokens": 9402,
+          "finish_reason": "stop",
+          "answer_empty": true,
+          "answer_length": 0,
+          "contract_failure_checks": [
+            "empty_answer"
+          ]
+        },
+        {
+          "row_index": 1714,
+          "id": "core-repobench-p-45",
+          "task": "repobench-p",
+          "http_status": 200,
+          "error": null,
+          "expected_prompt_tokens_cpu": 13748,
+          "actual_usage_prompt_tokens": 13748,
+          "prompt_token_delta_actual_minus_expected": 0,
+          "usage_completion_tokens": 1,
+          "usage_total_tokens": 13749,
+          "finish_reason": "stop",
+          "answer_empty": true,
+          "answer_length": 0,
+          "contract_failure_checks": [
+            "empty_answer"
+          ]
+        }
+      ],
+      "interpretation": "All 18 rows HTTP 200 and error=null. Frozen response contract requires a nonempty string answer and exact usage.prompt_tokens==prompt_tokens_cpu. Thirteen rows fail exact prompt-token equality, six are empty answer; one row belongs to both groups. Empty answers have finish_reason=stop and completion_tokens=1; they may be immediate EOS, so retain as response-contract failures, not model-quality evidence."
+    },
+    "nextgen-fp8-qwen38-quality-core1720-r0-20261027k": {
+      "status": "FAILED",
+      "supervisor_alive": false,
+      "driver_release_verified": true,
+      "watchdog_status": "RELEASE_CONFIRMED",
+      "owned_container_running": false,
+      "owned_container_id": "55b651bd5da4df2f0c365d69a7250689069e578001fc84ee6025c87fbc2ccf0e",
+      "failure": "RuntimeError: Worker failed; inspect preserved per-arm container.log",
+      "container_traceback_terminal": "ValueError: fp8_e4m3/decode native attention disagrees with resident-byte reference: 0.03452601283788681",
+      "quality_progress": {
+        "bf16": {},
+        "fp8_e4m3": {}
+      },
+      "model_quality_started": false,
+      "mirror": {
+        "mirror": "results/mirrors/nextgen-fp8-qwen38-quality-core1720-r0-20261027k-failed-20261028a1",
+        "files": 65,
+        "bytes": 24035444,
+        "all_sha_verified": true,
+        "prior_snapshot_preserved": true
+      }
+    }
+  },
+  "transfers": {
+    "remote_operations": "Pinned read-only status plus bounded custom inventory/read RPC; no reconcile/start/stop/write remote",
+    "byte_path_sha_verification": "all selected original files rehashed locally; all matched remote inventory",
+    "caps_respected": true,
+    "full_root_inventory": "all UID-owned regular files beneath exact run root; excludes source_repo/cache; no symlink followed",
+    "inventory_skipped_entries": {
+      "j": [],
+      "k": []
+    },
+    "local_partial_preserved": true,
+    "no_model_output_scored": true
+  }
+}

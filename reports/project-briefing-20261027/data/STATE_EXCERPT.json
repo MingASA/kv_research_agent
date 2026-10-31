@@ -1,0 +1,9 @@
+{
+  "phase": "BF16Q_QUALITY_A_FAILED_BEFORE_MODEL_PLAN_ENV_CPU_REPAIR",
+  "active_run_id": null,
+  "active_run_ids": [],
+  "last_checkpoint_utc": "2026-10-27T12:42:56.436902+00:00",
+  "last_evidence_utc": "2026-10-27T04:37:59.589915+00:00",
+  "project_complete": false,
+  "scope_note": "只保存安全最小摘录；旧current_work状态文本可能过时，主agent实时STATE优先。"
+}

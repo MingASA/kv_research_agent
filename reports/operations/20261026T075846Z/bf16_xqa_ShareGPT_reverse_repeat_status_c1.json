@@ -1,0 +1,175 @@
+{
+  "files": {
+    "START_INTENT.json": {
+      "sha256": "c60553e5498173471669f86913eb79dd321b4ed4c62c20d0df3048c4798a4d5c",
+      "value": {
+        "request_sha256": "3b72ba89c26e8fb6250384cc1291292946f7ca4f4b3262485dcf41377456d0f3"
+      }
+    },
+    "SUPERVISOR_PROCESS.json": {
+      "sha256": "10c29f95635380ff343258ea655b228c77c413ed80dc1952f468f0be8373febc",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-518651.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-518651.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-518651.scope\n",
+          "pid": 3422160,
+          "start_ticks": 367480822,
+          "uid": 1005
+        }
+      }
+    },
+    "SUPERVISOR_STARTED.json": {
+      "sha256": "5bf141e3351ad8a4914471870d122564f0d40ca40d80f281aa3e49b177bba821",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-518651.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-518651.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-518651.scope\n",
+          "pid": 3422160,
+          "start_ticks": 367480822,
+          "uid": 1005
+        },
+        "ticket_sha256": "44cf62c886525d304b93943937171df3693449bd90cab79cb3855cfa7428ca52"
+      }
+    },
+    "owned_containers.json": {
+      "sha256": "19f60e01fbf114013e86a9966bfde2ec01e3527385f632468ed886628ff1808d",
+      "value": {
+        "containers": [
+          {
+            "container_id": "0ffe97ca5dd246077abba7926bac07f3ad934941cc5c644fa2fda747ea9cbc95",
+            "pid_identity": {
+              "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+              "cgroup": "12:rdma:/system.slice/docker-0ffe97ca5dd246077abba7926bac07f3ad934941cc5c644fa2fda747ea9cbc95.scope\n11:blkio:/system.slice/docker-0ffe97ca5dd246077abba7926bac07f3ad934941cc5c644fa2fda747ea9cbc95.scope\n10:net_cls,net_prio:/system.slice/docker-0ffe97ca5dd246077abba7926bac07f3ad934941cc5c644fa2fda747ea9cbc95.scope\n9:freezer:/system.slice/docker-0ffe97ca5dd246077abba7926bac07f3ad934941cc5c644fa2fda747ea9cbc95.scope\n8:memory:/system.slice/docker-0ffe97ca5dd246077abba7926bac07f3ad934941cc5c644fa2fda747ea9cbc95.scope\n7:hugetlb:/system.slice/docker-0ffe97ca5dd246077abba7926bac07f3ad934941cc5c644fa2fda747ea9cbc95.scope\n6:perf_event:/system.slice/docker-0ffe97ca5dd246077abba7926bac07f3ad934941cc5c644fa2fda747ea9cbc95.scope\n5:pids:/system.slice/docker-0ffe97ca5dd246077abba7926bac07f3ad934941cc5c644fa2fda747ea9cbc95.scope\n4:devices:/system.slice/docker-0ffe97ca5dd246077abba7926bac07f3ad934941cc5c644fa2fda747ea9cbc95.scope\n3:cpu,cpuacct:/system.slice/docker-0ffe97ca5dd246077abba7926bac07f3ad934941cc5c644fa2fda747ea9cbc95.scope\n2:cpuset:/system.slice/docker-0ffe97ca5dd246077abba7926bac07f3ad934941cc5c644fa2fda747ea9cbc95.scope\n1:name=systemd:/system.slice/docker-0ffe97ca5dd246077abba7926bac07f3ad934941cc5c644fa2fda747ea9cbc95.scope\n",
+              "pid": 3438188,
+              "start_ticks": 367493248,
+              "uid": 1005
+            },
+            "released": false
+          }
+        ],
+        "request_sha256": "3b72ba89c26e8fb6250384cc1291292946f7ca4f4b3262485dcf41377456d0f3",
+        "reservation_id": "047d81d05ff34f03aae83d933ffb9abc"
+      }
+    },
+    "state.json": {
+      "sha256": "05c085b2d51d2bf2eb8a95ed7b8b424fc5006e379df4dff10154744415656ca0",
+      "value": {
+        "arm": "fp8_e4m3",
+        "containers": [
+          "0ffe97ca5dd246077abba7926bac07f3ad934941cc5c644fa2fda747ea9cbc95"
+        ],
+        "request_sha256": "3b72ba89c26e8fb6250384cc1291292946f7ca4f4b3262485dcf41377456d0f3",
+        "status": "RUNNING"
+      }
+    }
+  },
+  "gpu_snapshot": "0, GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 0, 0\n1, GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 65173, 0\n2, GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 66905, 100\n3, GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 0, 0\n4, GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 66907, 97\n5, GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 0, 0\n6, GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 0, 0\n7, GPU-47211491-ba0d-78bf-5c84-f968c0648213, 0, 0",
+  "live_owned_containers": [
+    "0ffe97ca5dd246077abba7926bac07f3ad934941cc5c644fa2fda747ea9cbc95"
+  ],
+  "log_tail": {
+    "events.jsonl": "{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7\":{\"index\":1,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3674808815733928,\"utc\":\"2026-10-27T03:12:47.076583+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7\":{\"index\":1,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3674808815733928,\"utc\":\"2026-10-27T03:13:17.686260+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7\":{\"index\":1,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3674808815733928,\"utc\":\"2026-10-27T03:13:48.272565+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7\":{\"index\":1,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3674808815733928,\"utc\":\"2026-10-27T03:14:18.681286+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7\":{\"index\":1,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3674808815733928,\"utc\":\"2026-10-27T03:14:49.191642+00:00\"}\n{\"action\":\"OWNED_CONTAINER_CREATED\",\"arm\":\"fp8_e4m3\",\"id\":\"0ffe97ca5dd246077abba7926bac07f3ad934941cc5c644fa2fda747ea9cbc95\",\"utc\":\"2026-10-27T03:14:50.600074+00:00\"}\n",
+    "output/fp8_e4m3/container.log": "",
+    "output/fp8_e4m3/operator_acceptance.log": "I20261027 11:14:55.941916 9 flashinfer.py:168] KV_ALLOCATION {\"layers\": [{\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [7, 128, 8, 128], \"bytes\": 917504}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [7, 128, 8, 128], \"bytes\": 917504}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [7, 128, 8], \"bytes\": 28672}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [7, 128, 8], \"bytes\": 28672}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 1892352, \"bytes_per_token\": 2112}], \"resident_bytes\": 1892352, \"token_capacity\": 896}\nI20261027 11:17:23.154781 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE prefill {'relative_l2': 0.0027969107031822205, 'max_abs': 0.0007567703723907471}\nI20261027 11:17:32.424582 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE capture_replay {'relative_l2': 0.02470334619283676, 'max_abs': 0.0036779604852199554}\nI20261027 11:17:32.426385 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE changed_context {'relative_l2': 0.023303190246224403, 'max_abs': 0.005400955677032471}\nI20261027 11:17:32.453554 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE padded_graph {'relative_l2': 0.023303190246224403, 'max_abs': 0.005400955677032471}\nI20261027 11:17:32.455121 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE restored_finite_padding {'relative_l2': 0.023303190246224403, 'max_abs': 0.005400955677032471}\nI20261027 11:17:32.455970 9 check_native_fa3_operator.py:219] Native production operator/Graph acceptance passed for fp8_e4m3; no model/service/quality claim\n",
+    "output/fp8_e4m3/server.log": "e\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}, {\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [2865, 128, 8, 128], \"bytes\": 375521280}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [2865, 128, 8], \"bytes\": 11735040}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 774512640, \"bytes_per_token\": 2112}], \"resident_bytes\": 37176606720, \"token_capacity\": 366720}\n",
+    "supervisor.log": "",
+    "watchdog.log": ""
+  },
+  "ok": true,
+  "operator_acceptance": {
+    "fp8_e4m3": {
+      "sha256": "8ee7fc29c1c6a99e367e65488049b6046d328a74d915860eef1ca9397c16ea8f",
+      "value": {
+        "arm": "fp8_e4m3",
+        "backend": {
+          "attention_impl": "flashinfer",
+          "class": "FlashInferFP8Backend",
+          "decode_impl": "xqa",
+          "decode_internal_q_data_type": "torch.float8_e4m3fn",
+          "decode_tensor_cores": true,
+          "flashinfer_version": "0.6.18.post1",
+          "fp8_views_alias_resident_pages": true,
+          "k_scale": 0.125,
+          "kv_cache_dtype": "fp8_e4m3",
+          "kv_data_type": "torch.float8_e4m3fn",
+          "paged_prefill": true,
+          "planner_backend": "fa2",
+          "profile_scope": "production_xqa",
+          "q_data_type": "torch.bfloat16",
+          "q_scale": null,
+          "quality_transform": false,
+          "scale_strategy": "immutable_global_scalar_per_K_or_V",
+          "v_scale": 0.0625,
+          "writer": "triton_quantize_scatter_only",
+          "xqa_enable_pdl": true,
+          "xqa_graph_padding": "reserved_page0_one_token_discard",
+          "xqa_max_context": 32768,
+          "xqa_unused_kv_policy": "finite_full_initialization"
+        },
+        "classification": "operator_correctness_only",
+        "decode_impl": "xqa",
+        "device": "NVIDIA H800",
+        "fresh_dirty_cache_initialized_to_zero": true,
+        "invalid_nan_padding_diagnostics": {
+          "key": {
+            "finite_outputs": 10240,
+            "total_outputs": 10240
+          },
+          "value": {
+            "finite_outputs": 0,
+            "total_outputs": 10240
+          }
+        },
+        "model_loaded": false,
+        "model_quality_validated": false,
+        "noncontiguous_q_checked": true,
+        "padded_graph_bucket_checked": true,
+        "partial_page_and_replan": true,
+        "prefill_planner": "fa2",
+        "real_capture_and_replay": true,
+        "reference": "FP32 dense causal attention on the same representable Q/K/V; relative L2 <=.05 plus rtol .08, atol .015",
+        "reference_comparisons": {
+          "capture_replay": {
+            "max_abs": 0.0036779604852199554,
+            "relative_l2": 0.02470334619283676
+          },
+          "changed_context": {
+            "max_abs": 0.005400955677032471,
+            "relative_l2": 0.023303190246224403
+          },
+          "padded_graph": {
+            "max_abs": 0.005400955677032471,
+            "relative_l2": 0.023303190246224403
+          },
+          "prefill": {
+            "max_abs": 0.0007567703723907471,
+            "relative_l2": 0.0027969107031822205
+          },
+          "restored_finite_padding": {
+            "max_abs": 0.005400955677032471,
+            "relative_l2": 0.023303190246224403
+          }
+        },
+        "reserved_page0_not_used_for_live_sequences": true,
+        "schema": "kv-native-fa3-operator-acceptance-v1",
+        "service_performance_measured": false,
+        "unused_padding_reference": "maximum_finite_FP8_or_large_finite_BF16"
+      }
+    }
+  },
+  "owned_containers": [
+    {
+      "created": "2026-10-27T03:14:50.555198837Z",
+      "id": "0ffe97ca5dd246077abba7926bac07f3ad934941cc5c644fa2fda747ea9cbc95",
+      "running": true
+    }
+  ],
+  "quality_progress": {
+    "bf16": {},
+    "fp8_e4m3": {}
+  },
+  "relaunch_allowed": false,
+  "run_id": "prod-sharegpt-bf16xqa-c128-r2-20261027c",
+  "status": "RUNNING",
+  "supervisor_alive": true
+}

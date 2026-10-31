@@ -1,0 +1,357 @@
+{
+  "files": {
+    "COMPLETE": {
+      "sha256": "0ff08c0e507039256d80996d959bb2ea797d66ad02fcf3fd019b8964124bf887",
+      "value": {
+        "result_sha256": "94a8c6af862812008dfa54946ed4a9cfaea28dc892c22651bf1f3ec6efd2386e"
+      }
+    },
+    "START_INTENT.json": {
+      "sha256": "9b41381baff7f0efba2d2ab9351e8ac562bff0a9a464c78a6686b68563b1ac52",
+      "value": {
+        "request_sha256": "8102f82a99232f7cce0c3ee5a4685feb396e6955b68d3bf89af2d0dff8d67d69"
+      }
+    },
+    "SUPERVISOR_PROCESS.json": {
+      "sha256": "4a8622bf481f6637a59d5580dff92bc6c00e3fcfacfaa4a7ad4141c0b243e1ce",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-526182.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-526182.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-526182.scope\n",
+          "pid": 3703753,
+          "start_ticks": 371455875,
+          "uid": 1005
+        }
+      }
+    },
+    "SUPERVISOR_STARTED.json": {
+      "sha256": "f8bb4b9d2f49b1bf289e6101ab301bb69cf1c307a3cfb8dd47d7dd238bea2ccf",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-526182.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-526182.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-526182.scope\n",
+          "pid": 3703753,
+          "start_ticks": 371455875,
+          "uid": 1005
+        },
+        "ticket_sha256": "be8cb14b6a8f136b95faa88991e8c32ea0705f97e4c3ec6e44907a3961d12838"
+      }
+    },
+    "owned_containers.json": {
+      "sha256": "0b8dbfa430577c0e56ecd9ce10ae4b2d47b2a0e56cbc5634b1366bebd2232636",
+      "value": {
+        "containers": [
+          {
+            "container_id": "5c765276d15bdccf25458d6625cd64235f331b7480a54a8ed98b938f57a2aa2c",
+            "pid_identity": {
+              "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+              "cgroup": "12:rdma:/system.slice/docker-5c765276d15bdccf25458d6625cd64235f331b7480a54a8ed98b938f57a2aa2c.scope\n11:blkio:/system.slice/docker-5c765276d15bdccf25458d6625cd64235f331b7480a54a8ed98b938f57a2aa2c.scope\n10:net_cls,net_prio:/system.slice/docker-5c765276d15bdccf25458d6625cd64235f331b7480a54a8ed98b938f57a2aa2c.scope\n9:freezer:/system.slice/docker-5c765276d15bdccf25458d6625cd64235f331b7480a54a8ed98b938f57a2aa2c.scope\n8:memory:/system.slice/docker-5c765276d15bdccf25458d6625cd64235f331b7480a54a8ed98b938f57a2aa2c.scope\n7:hugetlb:/system.slice/docker-5c765276d15bdccf25458d6625cd64235f331b7480a54a8ed98b938f57a2aa2c.scope\n6:perf_event:/system.slice/docker-5c765276d15bdccf25458d6625cd64235f331b7480a54a8ed98b938f57a2aa2c.scope\n5:pids:/system.slice/docker-5c765276d15bdccf25458d6625cd64235f331b7480a54a8ed98b938f57a2aa2c.scope\n4:devices:/system.slice/docker-5c765276d15bdccf25458d6625cd64235f331b7480a54a8ed98b938f57a2aa2c.scope\n3:cpu,cpuacct:/system.slice/docker-5c765276d15bdccf25458d6625cd64235f331b7480a54a8ed98b938f57a2aa2c.scope\n2:cpuset:/system.slice/docker-5c765276d15bdccf25458d6625cd64235f331b7480a54a8ed98b938f57a2aa2c.scope\n1:name=systemd:/system.slice/docker-5c765276d15bdccf25458d6625cd64235f331b7480a54a8ed98b938f57a2aa2c.scope\n",
+              "pid": 3717590,
+              "start_ticks": 371468210,
+              "uid": 1005
+            },
+            "released": true
+          }
+        ],
+        "request_sha256": "8102f82a99232f7cce0c3ee5a4685feb396e6955b68d3bf89af2d0dff8d67d69",
+        "reservation_id": "fdd5bb9418854831b9fd8dd40df4fcdc"
+      }
+    },
+    "result.json": {
+      "sha256": "94a8c6af862812008dfa54946ed4a9cfaea28dc892c22651bf1f3ec6efd2386e",
+      "value": {
+        "allocation_ended_monotonic_ns": 3715132249873761,
+        "allocation_intervals_ns": [
+          {
+            "arm": "bf16",
+            "end_ns": 3715132249873761,
+            "start_ns": 3714681976807684
+          }
+        ],
+        "allocation_started_monotonic_ns": 3714681976807684,
+        "arm_results": [
+          {
+            "arm": "bf16",
+            "result_sha256": "135730e46e234b3717c7b034b69afdbafd9bc613bbc2934b4f039503197cdce5"
+          }
+        ],
+        "error": null,
+        "gpu_release_verified": true,
+        "live_owned_containers": [],
+        "new_output_bytes": 162484162,
+        "request_sha256": "8102f82a99232f7cce0c3ee5a4685feb396e6955b68d3bf89af2d0dff8d67d69",
+        "reservation_id": "fdd5bb9418854831b9fd8dd40df4fcdc",
+        "run_id": "prod-calib-bf16xqa-longqa128-r0-20261027a",
+        "status": "COMPLETE"
+      }
+    },
+    "state.json": {
+      "sha256": "94a8c6af862812008dfa54946ed4a9cfaea28dc892c22651bf1f3ec6efd2386e",
+      "value": {
+        "allocation_ended_monotonic_ns": 3715132249873761,
+        "allocation_intervals_ns": [
+          {
+            "arm": "bf16",
+            "end_ns": 3715132249873761,
+            "start_ns": 3714681976807684
+          }
+        ],
+        "allocation_started_monotonic_ns": 3714681976807684,
+        "arm_results": [
+          {
+            "arm": "bf16",
+            "result_sha256": "135730e46e234b3717c7b034b69afdbafd9bc613bbc2934b4f039503197cdce5"
+          }
+        ],
+        "error": null,
+        "gpu_release_verified": true,
+        "live_owned_containers": [],
+        "new_output_bytes": 162484162,
+        "request_sha256": "8102f82a99232f7cce0c3ee5a4685feb396e6955b68d3bf89af2d0dff8d67d69",
+        "reservation_id": "fdd5bb9418854831b9fd8dd40df4fcdc",
+        "run_id": "prod-calib-bf16xqa-longqa128-r0-20261027a",
+        "status": "COMPLETE"
+      }
+    },
+    "watchdog_result.json": {
+      "sha256": "56a965ce323b9f01645413250da7b75d6f69fb29487cb2461afb249ba70945f6",
+      "value": {
+        "actions": [],
+        "request_sha256": "8102f82a99232f7cce0c3ee5a4685feb396e6955b68d3bf89af2d0dff8d67d69",
+        "status": "RELEASE_CONFIRMED"
+      }
+    }
+  },
+  "gpu_snapshot": "0, GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 0, 0\n1, GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 0, 0\n2, GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 0, 0\n3, GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 0, 0\n4, GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 0, 0\n5, GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 0, 0\n6, GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 0, 0\n7, GPU-47211491-ba0d-78bf-5c84-f968c0648213, 0, 0",
+  "live_owned_containers": [],
+  "log_tail": {
+    "events.jsonl": "{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3714559162353753,\"utc\":\"2026-10-27T14:15:17.423193+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3714559162353753,\"utc\":\"2026-10-27T14:15:47.829387+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3714559162353753,\"utc\":\"2026-10-27T14:16:18.273219+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3714559162353753,\"utc\":\"2026-10-27T14:16:48.603206+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3714559162353753,\"utc\":\"2026-10-27T14:17:19.113236+00:00\"}\n{\"action\":\"OWNED_CONTAINER_CREATED\",\"arm\":\"bf16\",\"id\":\"5c765276d15bdccf25458d6625cd64235f331b7480a54a8ed98b938f57a2aa2c\",\"utc\":\"2026-10-27T14:17:20.237636+00:00\"}\n{\"action\":\"ARM_VERIFIED\",\"arm\":\"bf16\",\"id\":\"5c765276d15bdccf25458d6625cd64235f331b7480a54a8ed98b938f57a2aa2c\",\"utc\":\"2026-10-27T14:24:50.510707+00:00\"}\n",
+    "output/bf16/aiperf.log": "                                           NVIDIA AIPerf | LLM Metrics                                                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓\n┃                                        Metric ┃       avg ┃      min ┃       max ┃       p99 ┃       p90 ┃       p50 ┃       std ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩\n│                      Time to First Token (ms) │ 38,302.19 │   770.52 │ 86,721.04 │ 85,817.03 │ 75,151.89 │ 36,280.73 │ 24,842.93 │\n│                     Time to Second Token (ms) │    576.17 │    20.70 │    710.97 │    707.22 │    679.69 │    582.83 │    116.35 │\n│               Time to First Output Token (ms) │ 38,302.19 │   770.52 │ 86,721.04 │ 85,817.03 │ 75,151.89 │ 36,280.73 │ 24,842.93 │\n│                          Request Latency (ms) │ 45,498.53 │ 1,300.83 │ 87,180.02 │ 87,001.00 │ 81,171.30 │ 44,364.07 │ 24,999.30 │\n│                          Decode Duration (ms) │  7,196.34 │     0.00 │ 37,831.54 │ 37,645.74 │ 21,455.15 │  1,902.36 │  9,846.68 │\n│                      Inter Token Latency (ms) │    423.08 │     0.00 │    600.50 │    599.29 │    578.42 │    456.19 │    160.11 │\n│              Output Token Throughput Per User │      2.84 │     1.67 │     66.91 │      5.57 │      3.19 │      2.15 │      5.96 │\n│                             (tokens/sec/user) │           │          │           │           │           │           │           │\n│ E2E Output Token Throughput (tokens/sec/user) │      0.43 │     0.03 │      3.07 │      1.79 │      1.10 │      0.21 │      0.50 │\n│               Output Sequence Length (tokens) │     14.66 │     2.00 │     64.00 │     64.00 │     46.30 │      5.00 │     17.40 │\n│                Input Sequence Length (tokens) │ 11,395.17 │ 4,103.00 │ 20,227.00 │ 17,858.89 │ 16,993.90 │ 11,281.00 │  4,754.26 │\n│          Output Token Throughput (tokens/sec) │     21.52 │      N/A │       N/A │       N/A │       N/A │       N/A │       N/A │\n│           Input Token Throughput (tokens/sec) │ 16,728.90 │      N/A │       N/A │       N/A │       N/A │       N/A │       N/A │\n│             Request Throughput (requests/sec) │      1.47 │      N/A │       N/A │       N/A │       N/A │       N/A │       N/A │\n│          Completed Requests (Success + Error) │    128.00 │      N/A │       N/A │       N/A │       N/A │       N/A │       N/A │\n│                                    (requests) │           │          │           │           │           │           │           │\n│                        Request Error Rate (%) │      0.00 │      N/A │       N/A │       N/A │       N/A │       N/A │       N/A │\n│                      Request Count (requests) │    128.00 │      N/A │       N/A │       N/A │       N/A │       N/A │       N/A │\n└───────────────────────────────────────────────┴───────────┴──────────┴───────────┴───────────┴───────────┴───────────┴───────────┘\n\n\n╭──────────────────────────────────────────── GPU Telemetry Platform ─────────────────────────────────────────────╮\n│  Platform: unknown                                                                                              │\n│  Metric semantics are platform-specific; cross-platform comparisons require workload and collector validation.  │\n╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯\n\n\nNo GPU telemetry data collected during the benchmarking run.\n\n╭─────────────────────────────── Output Sequence Length Mismatch Warning ───────────────────────────────╮\n│  120 of 128 requests (93.8%) have output length differing from requested by more than the threshold.  │\n│  Threshold (tokens): min(requested x 5%, 50)                                                          │\n│  Average mismatch: -75.8%                                                                             │\n│                                                                                                       │\n│  Why: Server hit EOS token before reaching requested output length.                                   │\n│                                                                                                       │\n│  Fix Options:                                                                                         │\n│    - --extra-inputs ignore_eos:true - Generate until max_tokens (vLLM, TensorRT-LLM)                  │\n│    - --extra-inputs min_tokens:<N> - Set minimum output length (vLLM, TensorRT-LLM, SGLang)           │\n│    - --use-server-token-count - Use server-reported token counts if tokenizer mismatch suspected      │\n│                                                                                                       │\n│  Diagnostics:                                                                                         │\n│    - Review profile_export.jsonl -> osl_mismatch_diff_pct for per-request values                      │\n│    - Adjust: AIPERF_METRICS_OSL_MISMATCH_PCT_THRESHOLD=5                                              │\n│    - Adjust: AIPERF_METRICS_OSL_MISMATCH_MAX_TOKEN_THRESHOLD=50                                       │\n╰───────────────────────────────────────────────────────────────────────────────────────────────────────╯\n\nCLI Command: aiperf profile --model 'Qwen2.5-14B-Instruct' --tokenizer \n'/models/Qwen2.5-14B-Instruct' --url 'http://127.0.0.1:19001' --endpoint-type 'chat' --streaming \n--use-legacy-max-tokens --use-server-token-count --random-seed 20261026 --export-level 'raw' \n--output-artifact-dir '/results/artifacts' --request-count 128 --concurrency 128 \n--dataset-sampling-strategy 'sequential' --request-timeout-seconds 1200 --input-file \n'/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/runs/prod-calib-bf16xqa-longqa128-r0-\n20261027a/input/canonical_inputs.json' --custom-dataset-type 'inputs_json'\nBenchmark Duration: 87.19 sec\nCSV Export: /results/artifacts/profile_export_aiperf.csv\nJSON Export: /results/artifacts/profile_export_aiperf.json\nRaw Records: /results/artifacts/profile_export_raw.jsonl\nLog File: /results/artifacts/logs/aiperf.log\n\n",
+    "output/bf16/container.log": "",
+    "output/bf16/operator_acceptance.log": "I20261027 22:17:26.119445 10 flashinfer.py:179] KV_ALLOCATION {\"layers\": [{\"tensors\": {\"key\": {\"dtype\": \"torch.bfloat16\", \"shape\": [7, 128, 8, 128], \"bytes\": 1835008}, \"value\": {\"dtype\": \"torch.bfloat16\", \"shape\": [7, 128, 8, 128], \"bytes\": 1835008}}, \"key_format\": \"bf16\", \"value_format\": \"bf16\", \"resident_bytes\": 3670016, \"bytes_per_token\": 4096}], \"resident_bytes\": 3670016, \"token_capacity\": 896}\nI20261027 22:20:15.195605 10 check_native_fa3_operator.py:118] OPERATOR_REFERENCE prefill {'relative_l2': 0.0022824311163276434, 'max_abs': 0.0005266666412353516}\nI20261027 22:20:25.055999 10 check_native_fa3_operator.py:118] OPERATOR_REFERENCE capture_replay {'relative_l2': 0.003906028810888529, 'max_abs': 0.0008789524435997009}\nI20261027 22:20:25.058879 10 check_native_fa3_operator.py:118] OPERATOR_REFERENCE changed_context {'relative_l2': 0.0028711154591292143, 'max_abs': 0.0009812712669372559}\nI20261027 22:20:25.077756 10 check_native_fa3_operator.py:118] OPERATOR_REFERENCE padded_graph {'relative_l2': 0.0028711154591292143, 'max_abs': 0.0009812712669372559}\nI20261027 22:20:25.079465 10 check_native_fa3_operator.py:118] OPERATOR_REFERENCE restored_finite_padding {'relative_l2': 0.0028711154591292143, 'max_abs': 0.0009812712669372559}\nI20261027 22:20:25.080469 10 check_native_fa3_operator.py:219] Native production operator/Graph acceptance passed for bf16; no model/service/quality claim\n",
+    "output/bf16/range_operator/probe.log": "I20261027 22:20:28.825704 408 kv_range_probe.py:128] KV_RANGE_PROBE_BOUND {\"method\": \"heldout_BF16_KV_distribution_GPU_aggregate_v1\", \"reserved_bytes\": 105216, \"layers\": 48, \"heads\": 8, \"counts_in_graph\": true, \"host_reads_in_forward\": false}\nI20261027 22:20:29.082786 408 check_kv_range_probe.py:145] KV range numerical, padded stride, real Graph and reset/export checks completed\n",
+    "output/bf16/server.log": " 0, max_tokens: 32, temperature: 0, finish_reason: stop, prompt_tokens: 10891, num_prefix_cache_tokens: 0, generated_tokens: 5, ttft: 75598.0ms, total_latency: 78088.5ms, avg tpot: 622.6ms, generation speed: 2.0 tokens/s\nI20261027 22:24:35.254338   682 request.cpp:134] x-request-id: 85a9c689-19a1-4bb6-b923-9bce45d1140b, x-request-time: , request_id: chatcmpl-15933769124469343823-tXmQNkeHAL59LQ6yFrCw8N, sequence 0, max_tokens: 32, temperature: 0, finish_reason: stop, prompt_tokens: 16709, num_prefix_cache_tokens: 1408, generated_tokens: 5, ttft: 76841.0ms, total_latency: 79384.9ms, avg tpot: 636.0ms, generation speed: 2.0 tokens/s\nI20261027 22:24:35.862593   681 request.cpp:134] x-request-id: bb95009b-cbdb-4242-9eb0-039ef7cf655a, x-request-time: , request_id: chatcmpl-15933769124469343823-f9ESAo3WaHNGqwCEdGZ6zf, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 12951, num_prefix_cache_tokens: 1536, generated_tokens: 64, ttft: 42782.0ms, total_latency: 80408.6ms, avg tpot: 597.2ms, generation speed: 1.7 tokens/s\nI20261027 22:24:35.862587   682 request.cpp:134] x-request-id: 33f2d58e-68b2-481f-ab12-dbac3d814378, x-request-time: , request_id: chatcmpl-15933769124469343823-PFv95J7gpDZRT8iGRTV9DX, sequence 0, max_tokens: 64, temperature: 0, finish_reason: stop, prompt_tokens: 6962, num_prefix_cache_tokens: 0, generated_tokens: 40, ttft: 56674.0ms, total_latency: 80238.5ms, avg tpot: 604.2ms, generation speed: 1.7 tokens/s\nI20261027 22:24:35.862586   680 request.cpp:134] x-request-id: c050e30b-2280-4878-a283-bfcb1c906e28, x-request-time: , request_id: chatcmpl-15933769124469343823-Yj3aXXHUvE6Cucnv827KDZ, sequence 0, max_tokens: 32, temperature: 0, finish_reason: stop, prompt_tokens: 16406, num_prefix_cache_tokens: 0, generated_tokens: 3, ttft: 78707.0ms, total_latency: 79959.2ms, avg tpot: 626.1ms, generation speed: 2.4 tokens/s\nI20261027 22:24:36.556706   679 request.cpp:134] x-request-id: cb622cf8-a868-43bb-ab18-7e4015cfd0a3, x-request-time: , request_id: chatcmpl-15933769124469343823-cisDmnLsHdWNz46Vc9zMer, sequence 0, max_tokens: 32, temperature: 0, finish_reason: stop, prompt_tokens: 15982, num_prefix_cache_tokens: 5120, generated_tokens: 5, ttft: 78074.0ms, total_latency: 80672.9ms, avg tpot: 649.7ms, generation speed: 1.9 tokens/s\nI20261027 22:24:38.361457   681 request.cpp:134] x-request-id: 24aba44c-4463-4d3c-b0ac-503c8c06a0bf, x-request-time: , request_id: chatcmpl-15933769124469343823-ByoxmtYPKfkhz3Wyoi9Bto, sequence 0, max_tokens: 32, temperature: 0, finish_reason: stop, prompt_tokens: 16582, num_prefix_cache_tokens: 3456, generated_tokens: 5, ttft: 79956.0ms, total_latency: 82455.3ms, avg tpot: 624.8ms, generation speed: 2.0 tokens/s\nI20261027 22:24:38.983174   680 request.cpp:134] x-request-id: 65377711-ef2e-46f1-a238-180da28c61af, x-request-time: , request_id: chatcmpl-15933769124469343823-GZPVg98Ya8giaZiEjrMfV3, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 8631, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 45655.0ms, total_latency: 83486.7ms, avg tpot: 600.5ms, generation speed: 1.7 tokens/s\nI20261027 22:24:39.602450   679 request.cpp:134] x-request-id: a7161d62-b2b9-4165-8a3b-a6c545be7ecf, x-request-time: , request_id: chatcmpl-15933769124469343823-AdT3aUkxSNAMiMWTdTku2U, sequence 0, max_tokens: 32, temperature: 0, finish_reason: stop, prompt_tokens: 13873, num_prefix_cache_tokens: 384, generated_tokens: 4, ttft: 81794.0ms, total_latency: 83669.8ms, avg tpot: 625.3ms, generation speed: 2.1 tokens/s\nI20261027 22:24:40.867340   680 request.cpp:134] x-request-id: 6f287a6e-cd21-4cb6-9901-9a45a1da7f13, x-request-time: , request_id: chatcmpl-15933769124469343823-UmSurdmzxeEHtWUBerZM9R, sequence 0, max_tokens: 32, temperature: 0, finish_reason: stop, prompt_tokens: 14563, num_prefix_cache_tokens: 0, generated_tokens: 5, ttft: 82416.0ms, total_latency: 84922.0ms, avg tpot: 626.5ms, generation speed: 2.0 tokens/s\nI20261027 22:24:40.867340   682 request.cpp:134] x-request-id: e8702cf0-023e-4b96-b04d-b8128e085e5d, x-request-time: , request_id: chatcmpl-15933769124469343823-VtkrjgaYpkK39xTqUdu7hT, sequence 0, max_tokens: 32, temperature: 0, finish_reason: stop, prompt_tokens: 17229, num_prefix_cache_tokens: 0, generated_tokens: 8, ttft: 80640.0ms, total_latency: 84950.4ms, avg tpot: 615.8ms, generation speed: 1.9 tokens/s\nI20261027 22:24:41.471969   682 request.cpp:134] x-request-id: 866d9138-4d6e-4a7a-93fa-729e06bfa185, x-request-time: , request_id: chatcmpl-15933769124469343823-UXQpbAeYbBPKJN65QPLQ7W, sequence 0, max_tokens: 32, temperature: 0, finish_reason: stop, prompt_tokens: 16778, num_prefix_cache_tokens: 6144, generated_tokens: 4, ttft: 84886.0ms, total_latency: 85491.0ms, avg tpot: 201.7ms, generation speed: 6.6 tokens/s\nI20261027 22:24:41.490906   681 request.cpp:134] x-request-id: 2df3b055-0182-4c71-926a-7c791e2c35f2, x-request-time: , request_id: chatcmpl-15933769124469343823-qcx2Q2eLSsHHhKR4qpfvuc, sequence 0, max_tokens: 32, temperature: 0, finish_reason: length, prompt_tokens: 12118, num_prefix_cache_tokens: 0, generated_tokens: 32, ttft: 68921.0ms, total_latency: 85708.2ms, avg tpot: 541.5ms, generation speed: 1.9 tokens/s\nI20261027 22:24:41.508965   681 request.cpp:134] x-request-id: 771cb39a-4649-4b5c-8940-d4de54c53626, x-request-time: , request_id: chatcmpl-15933769124469343823-XqCJERZi4TCoTRefK45fjb, sequence 0, max_tokens: 32, temperature: 0, finish_reason: stop, prompt_tokens: 16945, num_prefix_cache_tokens: 2688, generated_tokens: 8, ttft: 83633.0ms, total_latency: 85540.3ms, avg tpot: 272.5ms, generation speed: 4.2 tokens/s\nI20261027 22:24:41.508962   679 request.cpp:134] x-request-id: 069787ac-c918-4c5c-a690-9c0964751748, x-request-time: , request_id: chatcmpl-15933769124469343823-2GdwkKMhSgkqhJnSsbQhSP, sequence 0, max_tokens: 32, temperature: 0, finish_reason: stop, prompt_tokens: 17718, num_prefix_cache_tokens: 0, generated_tokens: 5, ttft: 85413.0ms, total_latency: 85491.2ms, avg tpot: 19.5ms, generation speed: 64.0 tokens/s\nI20261027 22:24:41.689030   679 request.cpp:134] x-request-id: 22a2839a-b937-460e-8739-a84e7143b569, x-request-time: , request_id: chatcmpl-15933769124469343823-RAwjKHUN9sz8JXSngzHyT9, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 9243, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 57238.0ms, total_latency: 86055.4ms, avg tpot: 457.4ms, generation speed: 2.2 tokens/s\nI20261027 22:24:41.703248   679 request.cpp:134] x-request-id: 30e2e133-f93c-46d7-8f46-3a8d1c173557, x-request-time: , request_id: chatcmpl-15933769124469343823-u3VmbBiPMnSisYmJicPKm3, sequence 0, max_tokens: 64, temperature: 0, finish_reason: stop, prompt_tokens: 7987, num_prefix_cache_tokens: 0, generated_tokens: 49, ttft: 67104.0ms, total_latency: 85948.5ms, avg tpot: 392.6ms, generation speed: 2.6 tokens/s\nI20261027 22:24:41.868299   680 request.cpp:134] x-request-id: d3af4fd7-52a9-4251-92e4-cbb45e0a3c2b, x-request-time: , request_id: chatcmpl-15933769124469343823-HwemVmCYtvjxFL9e5vvpKm, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 12775, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 65318.0ms, total_latency: 86130.5ms, avg tpot: 330.4ms, generation speed: 3.1 tokens/s\nI20261027 22:24:42.912900   423 xllm_server.cpp:188]      Shutting down\nI20261027 22:24:42.912942   423 xllm_server.cpp:189]      Waiting for application shutdown.\nI20261027 22:24:42.912949   423 server.cpp:1260] Server[xllm::APIService] is going to quit\nI20261027 22:24:42.913098   423 xllm_server.cpp:193]      Application shutdown complete.\nI20261027 22:24:42.913107   423 xllm_server.cpp:194]      Finished server process [423]\nI20261027 22:24:42.913125   423 llm_master.cpp:141] LLMMaster stopping...\nI20261027 22:24:46.294852   423 server.cpp:1260] Server[xllm::CollectiveService] is going to quit\nI20261027 22:24:46.295047   423 xllm_server_registry.cpp:38] Unregister server CollectiveServer0.\nI20261027 22:24:46.295506   423 server.cpp:1260] Server[xllm::WorkerService] is going to quit\nI20261027 22:24:46.295692   423 xllm_server_registry.cpp:38] Unregister server DistributeWorkerServer0.\n",
+    "supervisor.log": "",
+    "watchdog.log": ""
+  },
+  "ok": true,
+  "operator_acceptance": {
+    "bf16": {
+      "sha256": "4d3c8ea48951d8c1457559c0e57d1bd2f48584ec85c1606f1896a48c49a39d8e",
+      "value": {
+        "arm": "bf16",
+        "backend": {
+          "attention_impl": "flashinfer",
+          "class": "FlashInferBackend",
+          "decode_impl": "xqa",
+          "decode_internal_q_data_type": "torch.bfloat16",
+          "decode_tensor_cores": true,
+          "flashinfer_version": "0.6.18.post1",
+          "kv_cache_dtype": "auto",
+          "kv_data_type": "torch.bfloat16",
+          "paged_prefill": true,
+          "planner_backend": "fa3",
+          "profile_scope": "production_xqa",
+          "q_data_type": "torch.bfloat16",
+          "q_scale": null,
+          "quality_transform": false,
+          "scale_strategy": "none",
+          "xqa_enable_pdl": true,
+          "xqa_graph_padding": "reserved_page0_one_token_discard",
+          "xqa_max_context": 32768,
+          "xqa_unused_kv_policy": "finite_full_initialization"
+        },
+        "classification": "operator_correctness_only",
+        "decode_impl": "xqa",
+        "device": "NVIDIA H800",
+        "fresh_dirty_cache_initialized_to_zero": true,
+        "invalid_nan_padding_diagnostics": {
+          "key": {
+            "finite_outputs": 10240,
+            "total_outputs": 10240
+          },
+          "value": {
+            "finite_outputs": 10240,
+            "total_outputs": 10240
+          }
+        },
+        "model_loaded": false,
+        "model_quality_validated": false,
+        "noncontiguous_q_checked": true,
+        "padded_graph_bucket_checked": true,
+        "partial_page_and_replan": true,
+        "prefill_planner": "fa3",
+        "real_capture_and_replay": true,
+        "reference": "FP32 dense causal attention on the same representable Q/K/V; relative L2 <=.05 plus rtol .08, atol .015",
+        "reference_comparisons": {
+          "capture_replay": {
+            "max_abs": 0.0008789524435997009,
+            "relative_l2": 0.003906028810888529
+          },
+          "changed_context": {
+            "max_abs": 0.0009812712669372559,
+            "relative_l2": 0.0028711154591292143
+          },
+          "padded_graph": {
+            "max_abs": 0.0009812712669372559,
+            "relative_l2": 0.0028711154591292143
+          },
+          "prefill": {
+            "max_abs": 0.0005266666412353516,
+            "relative_l2": 0.0022824311163276434
+          },
+          "restored_finite_padding": {
+            "max_abs": 0.0009812712669372559,
+            "relative_l2": 0.0028711154591292143
+          }
+        },
+        "reserved_page0_not_used_for_live_sequences": true,
+        "schema": "kv-native-fa3-operator-acceptance-v1",
+        "service_performance_measured": false,
+        "unused_padding_reference": "maximum_finite_FP8_or_large_finite_BF16"
+      }
+    }
+  },
+  "owned_containers": [
+    {
+      "created": "2026-10-27T14:17:20.196686535Z",
+      "id": "5c765276d15bdccf25458d6625cd64235f331b7480a54a8ed98b938f57a2aa2c",
+      "running": false
+    }
+  ],
+  "quality_progress": {
+    "bf16": {},
+    "fp8_e4m3": {}
+  },
+  "range_probe_progress": {
+    "aiperf_cli_CPU_acceptance.json": {
+      "sha256": "ea2208bc4f1e7096e6d467c3b2628a8ada1bce2ae213b77eb736616845b2bdaf",
+      "value": {
+        "GPU_used": false,
+        "actual_Cyclopts_CLIConfig_accepted": true,
+        "aiperf_version": "0.13.0",
+        "benchmark_started": false,
+        "cli_config_sha256": "2be937b185ddfe3a19e8090aa4411f1015a2e00899d29db3055d3f7e19bdd42b",
+        "concurrency": 128,
+        "request_count": 128,
+        "warmup_request_count": null
+      }
+    },
+    "range_operator/acceptance.json": {
+      "sha256": "fa32d854233f10eaec7e2acd4e598b97ccb038dc8b16ae3b4293f21d2e79565b",
+      "value": {
+        "FP32_moments_match_Torch_QDQ": true,
+        "actual_capture_and_changed_input_replay": true,
+        "actual_quiescent_reset_export_thread_handshake": true,
+        "classification": "operator_only_KV_distribution_reduction_Graph_control_checks",
+        "exact_integer_counts_match_Torch_QDQ": true,
+        "layers_and_phases_separate": true,
+        "model_loaded": false,
+        "noncontiguous_key_and_value": true,
+        "nonpositive_padding_NaN_Inf_excluded": true,
+        "production_probe_reserved_bytes": 105216,
+        "reset_excludes_warmup_and_preserves_Graph_buffers": true,
+        "service_or_model_quality_certified": false,
+        "valid_nonfinite_values_counted": true
+      }
+    },
+    "range_probe/RESET_DONE.json": {
+      "sha256": "b02b211b73f1f6e89926afa04245829709f06b1e7da8864a381f2bce46034a45",
+      "value": {
+        "command": "RESET",
+        "command_sha256": "55e104a3ec75d00bbbbc85b368f3f3e16d209fce0c9b67da53ce17de830d5727",
+        "method": "heldout_BF16_KV_distribution_GPU_aggregate_v1",
+        "request_sha256": "8102f82a99232f7cce0c3ee5a4685feb396e6955b68d3bf89af2d0dff8d67d69",
+        "reset_monotonic_ns": 3715031912911206,
+        "run_id": "prod-calib-bf16xqa-longqa128-r0-20261027a"
+      }
+    },
+    "range_probe/audit.json": {
+      "sha256": "c8fdae626ad073ae674d18eadfa19bfc9061a03ed1b722a8306226ac86659396",
+      "value": {
+        "FP8_generation_or_model_quality_certified": false,
+        "aggregate": {
+          "decode/key": {
+            "absmax": 34.5,
+            "clipped": 0,
+            "clipped_pct": 0.0,
+            "finite": 3686400,
+            "nonfinite": 0,
+            "normal": 3681890,
+            "relative_l2": 0.02651115993975168,
+            "squared_energy": 14732294.720703125,
+            "squared_error": 10354.469613075256,
+            "subnormal": 4510,
+            "underflow_nonzero_to_zero": 280,
+            "underflow_pct": 0.007595486111111111,
+            "zero": 0
+          },
+          "decode/value": {
+            "absmax": 17.875,
+            "clipped": 0,
+            "clipped_pct": 0.0,
+            "finite": 3686400,
+            "nonfinite": 0,
+            "normal": 3677298,
+            "relative_l2": 0.026623483398678906,
+            "squared_energy": 2619261.390505314,
+            "squared_error": 1856.5583211942576,
+            "subnormal": 9102,
+            "underflow_nonzero_to_zero": 564,
+            "underflow_pct": 0.015299479166666666,
+            "zero": 0
+          },
+          "prefill/key": {
+            "absmax": 45.25,
+            "clipped": 0,
+            "clipped_pct": 0.0,
+            "finite": 71774453760,
+            "nonfinite": 0,
+            "normal": 71687120371,
+            "relative_l2": 0.026453311447955073,
+            "squared_energy": 288492548176.0,
+            "squared_error": 201880647.953125,
+            "subnormal": 87333385,
+            "underflow_nonzero_to_zero": 5485838,
+            "underflow_pct": 0.00764316231279668,
+            "zero": 4
+          },
+          "prefill/value": {
+            "absmax": 37.0,
+            "clipped": 68,
+            "clipped_pct": 9.474122955693811e-08,
+            "finite": 71774453760,
+            "nonfinite": 0,
+            "normal": 71603817722,
+            "relative_l2": 0.026605462761654628,
+            "squared_energy": 56813090932.35156,
+            "squared_error": 40215183.274627686,
+            "subnormal": 170635828,
+            "underflow_nonzero_to_zero": 10742849,
+            "underflow_pct": 0.014967510635360634,
+            "zero": 142
+          }
+        },
+        "classification": "BF16_actual_valid_KV_writes_fixed_FP8_QDQ_distribution_not_quality",
+        "content_scope": "heldout_original_LongBench_long_document_QA",
+        "headline_performance_result": false,
+        "heldout_chat_only_not_long_document_or_code_coverage": false,
+        "long_document_QA_only_not_code_coverage": true,
+        "method": "heldout_BF16_KV_distribution_GPU_aggregate_v1",
+        "rows": 1536,
+        "valid_tokens_written_per_layer_by_phase": {
+          "decode": 75,
+          "prefill": 1460255
+        },
+        "writer_calls_per_layer": {
+          "decode": 29,
+          "prefill": 147
+        }
+      }
+    }
+  },
+  "relaunch_allowed": false,
+  "run_id": "prod-calib-bf16xqa-longqa128-r0-20261027a",
+  "status": "COMPLETE",
+  "supervisor_alive": false
+}

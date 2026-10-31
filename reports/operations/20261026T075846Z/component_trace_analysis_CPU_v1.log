@@ -1,0 +1,14 @@
+test_activity_validation_rejects_corrupt_or_wrong_phase_evidence (test_component_profile.ComponentContractTests) ... ok
+test_explicit_bounded_diagnostic_and_required_probe_source (test_component_profile.ComponentContractTests) ... ok
+test_no_observer_injection_into_ordinary_run (test_component_profile.ComponentContractTests) ... ok
+test_observer_limits_and_scope_cannot_be_increased (test_component_profile.ComponentContractTests) ... ok
+test_window_anchor_waits_for_real_post_client_counter_increase (test_component_profile.ComponentContractTests) ... ok
+test_ambiguous_launch_scope_is_retained_unassigned (test_component_trace_analysis.ComponentTraceAnalysisTests) ... ok
+test_cpu_time_kernel_sum_and_overlapping_union_stay_distinct (test_component_trace_analysis.ComponentTraceAnalysisTests) ... ok
+test_graph_replay_has_no_invented_writer_or_attention_breakdown (test_component_trace_analysis.ComponentTraceAnalysisTests) ... ok
+test_wrong_device_missing_kernel_and_batch_phase_drift_are_refused (test_component_trace_analysis.ComponentTraceAnalysisTests) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.027s
+
+OK

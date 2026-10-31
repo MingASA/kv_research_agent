@@ -1,0 +1,7 @@
+FFFF                                                                     [100%]
+=========================== short test summary info ============================
+FAILED tests/python/test_model_executor.py::TestCreateAttentionBackend::test_deepseek_v4_creates_dsa_backend
+FAILED tests/python/test_model_executor.py::TestCreateAttentionBackend::test_npu_device_creates_npu_backend
+FAILED tests/python/test_model_executor.py::TestCreateAttentionBackend::test_prefill_cp_uses_npu_backend_with_dcp_group
+FAILED tests/python/test_model_executor.py::TestCreateAttentionBackend::test_decode_cp1_uses_sfa_dcp_backend
+4 failed, 89 deselected in 1.70s

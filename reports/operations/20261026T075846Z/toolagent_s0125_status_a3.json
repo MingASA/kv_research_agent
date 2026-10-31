@@ -1,0 +1,172 @@
+{
+  "files": {
+    "START_INTENT.json": {
+      "sha256": "28759064b39dd97cac4343a4982d1d1f74501671b21434a330543d29efceb848",
+      "value": {
+        "request_sha256": "95f7cd1c11aa6361d55cb6aaca4b74343171039717b8f1fc02f3b52524477d6f"
+      }
+    },
+    "SUPERVISOR_PROCESS.json": {
+      "sha256": "982175656ce595f22a6307e6396ff11768ce44898684b07ce60e242dfb79450f",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-517979.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-517979.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-517979.scope\n",
+          "pid": 2923482,
+          "start_ticks": 367117491,
+          "uid": 1005
+        }
+      }
+    },
+    "SUPERVISOR_STARTED.json": {
+      "sha256": "8e5543a9a112e5c6db0c148432c8cbc63feb53ac4379b0a6a9f2852d09dc79d1",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-517979.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-517979.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-517979.scope\n",
+          "pid": 2923482,
+          "start_ticks": 367117491,
+          "uid": 1005
+        },
+        "ticket_sha256": "78bd3c393eee60842e1ef5c77f71068a7af96872f53d122b61861829415947c5"
+      }
+    },
+    "owned_containers.json": {
+      "sha256": "b3146ab38303fbf0f2d759f9fcb7dffc99b8b0eb77674ff64a70fc3a60d33322",
+      "value": {
+        "containers": [
+          {
+            "container_id": "7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4",
+            "pid_identity": {
+              "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+              "cgroup": "12:rdma:/system.slice/docker-7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4.scope\n11:blkio:/system.slice/docker-7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4.scope\n10:net_cls,net_prio:/system.slice/docker-7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4.scope\n9:freezer:/system.slice/docker-7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4.scope\n8:memory:/system.slice/docker-7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4.scope\n7:hugetlb:/system.slice/docker-7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4.scope\n6:perf_event:/system.slice/docker-7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4.scope\n5:pids:/system.slice/docker-7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4.scope\n4:devices:/system.slice/docker-7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4.scope\n3:cpu,cpuacct:/system.slice/docker-7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4.scope\n2:cpuset:/system.slice/docker-7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4.scope\n1:name=systemd:/system.slice/docker-7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4.scope\n",
+              "pid": 2936317,
+              "start_ticks": 367129820,
+              "uid": 1005
+            },
+            "released": false
+          }
+        ],
+        "request_sha256": "95f7cd1c11aa6361d55cb6aaca4b74343171039717b8f1fc02f3b52524477d6f",
+        "reservation_id": "c32ff63230554280b5a382c397641b0e"
+      }
+    },
+    "state.json": {
+      "sha256": "d29065ce2668f95e754966a7c037160dd2966abc6fe2d3772695fecf51ae4e48",
+      "value": {
+        "arm": "bf16",
+        "containers": [
+          "7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4"
+        ],
+        "request_sha256": "95f7cd1c11aa6361d55cb6aaca4b74343171039717b8f1fc02f3b52524477d6f",
+        "status": "RUNNING"
+      }
+    }
+  },
+  "gpu_snapshot": "0, GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 0, 0\n1, GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 0, 0\n2, GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 66733, 97\n3, GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 64993, 0\n4, GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 66733, 100\n5, GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 0, 0\n6, GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 0, 0\n7, GPU-47211491-ba0d-78bf-5c84-f968c0648213, 0, 0",
+  "live_owned_containers": [
+    "7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4"
+  ],
+  "log_tail": {
+    "events.jsonl": "{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1\":{\"index\":4,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3671175328773201,\"utc\":\"2026-10-27T02:12:13.589599+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1\":{\"index\":4,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3671175328773201,\"utc\":\"2026-10-27T02:12:44.092457+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1\":{\"index\":4,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3671175328773201,\"utc\":\"2026-10-27T02:13:14.419454+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1\":{\"index\":4,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3671175328773201,\"utc\":\"2026-10-27T02:13:44.836453+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1\":{\"index\":4,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3671175328773201,\"utc\":\"2026-10-27T02:14:15.264555+00:00\"}\n{\"action\":\"OWNED_CONTAINER_CREATED\",\"arm\":\"bf16\",\"id\":\"7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4\",\"utc\":\"2026-10-27T02:14:16.340911+00:00\"}\n",
+    "output/bf16/aiperf.log": "10:20:02.195 INFO     Starting AIPerf System (_single_run.py:81)\n10:20:02.541 INFO     GPU telemetry disabled via --no-gpu-telemetry (system_controller.py:506)\n10:20:02.564 INFO     Registered: Worker_Manager ('worker_manager') [0/0] (service_registry.py:196)\n10:20:02.565 INFO     Registered Worker Manager (id: 'worker_manager') (system_controller_dispatch.py:146)\n10:20:02.565 INFO     Registered Worker Manager (id: 'worker_manager') (system_controller_dispatch.py:146)\n10:20:02.567 INFO     Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable) (otel_metrics_results_processor.py:127)\n10:20:02.570 INFO     Record metrics export enabled: /results/artifacts/profile_export.jsonl (record_export_jsonl_writer.py:62)\n10:20:02.587 INFO     Registered: Dataset_Manager ('dataset_manager') [0/0] (service_registry.py:196)\n10:20:02.588 INFO     Registered Dataset Manager (id: 'dataset_manager') (system_controller_dispatch.py:146)\n10:20:02.588 INFO     Registered: Records_Manager ('records_manager') [0/0] (service_registry.py:196)\n10:20:02.588 INFO     Registered Records Manager (id: 'records_manager') (system_controller_dispatch.py:146)\n10:20:02.588 INFO     Registered Records Manager (id: 'records_manager') (system_controller_dispatch.py:146)\n10:20:02.602 INFO     RawRecordWriter initialized: /results/artifacts/raw_records/raw_records_record_processor_79598567.jsonl - FULL request/response data will be exported (files may be large) (raw_record_writer_processor.py:80)\n10:20:02.603 INFO     Server Metrics: Discovered 1 endpoints: ['http://127.0.0.1:19001/metrics'] (manager.py:197)\n10:20:02.608 INFO     Registered: Record_Processor ('record_processor_79598567') [0/0] (service_registry.py:196)\n10:20:02.608 INFO     Registered Record Processor (id: 'record_processor_79598567') (system_controller_dispatch.py:146)\n10:20:02.609 INFO     Registered Record Processor (id: 'record_processor_79598567') (system_controller_dispatch.py:146)\n10:20:02.625 INFO     Registered: Server_Metrics_Manager ('server_metrics_manager') [0/0] (service_registry.py:196)\n10:20:02.625 INFO     Registered Server Metrics Manager (id: 'server_metrics_manager') (system_controller_dispatch.py:146)\n10:20:02.625 INFO     Registered Server Metrics Manager (id: 'server_metrics_manager') (system_controller_dispatch.py:146)\n10:20:02.663 INFO     Registered Dataset Manager (id: 'dataset_manager') (system_controller_dispatch.py:146)\n10:20:02.718 INFO     Registered: Worker ('worker_a7691fe3') [0/0] (service_registry.py:196)\n10:20:02.718 INFO     Registered Worker (id: 'worker_a7691fe3') (system_controller_dispatch.py:146)\n10:20:02.718 INFO     Registered Worker (id: 'worker_a7691fe3') (system_controller_dispatch.py:146)\n10:20:02.719 INFO     Registered: Timing_Manager ('timing_manager') [0/0] (service_registry.py:196)\n10:20:02.719 INFO     Registered Timing Manager (id: 'timing_manager') (system_controller_dispatch.py:146)\n10:20:02.719 INFO     Registered Timing Manager (id: 'timing_manager') (system_controller_dispatch.py:146)\n10:20:03.045 INFO     System state: initializing -> configuring (system_controller.py:700)\n10:20:03.045 INFO     AIPerf System is CONFIGURING (system_controller.py:536)\n10:20:03.045 INFO     Configuring all services to start profiling (system_controller.py:713)\n10:20:03.046 INFO     Tokenization is disabled for this endpoint, skipping tokenizer configuration (inference_result_parser.py:85)\n10:20:03.046 INFO     Waiting for dataset to be configured before configuring timing (manager.py:149)\n10:20:03.050 INFO     Server metrics disabled - no Prometheus endpoints reachable (system_controller.py:1046)\n10:20:03.204 INFO     Configuring tokenizer(s) for dataset manager (dataset_manager.py:271)\n10:20:04.859 INFO     Tokenizer(s) configured in 1.65 seconds (dataset_manager.py:275)\n10:20:04.859 INFO     Configuring dataset for dataset_manager (dataset_manager.py:281)\n10:20:05.238 INFO     Using explicit dataset format: mooncake_trace (custom.py:65)\n10:20:05.999 INFO     Memory-mapped backing store initialized (streaming to /tmp/aiperf_mmap_e524969b685d/dataset.dat) (memory_map_utils.py:160)\n10:20:06.134 INFO     Data file finalized: 2088 conversations, 61.68 MB (memory_map_utils.py:288)\n10:20:06.135 INFO     Index file created: /tmp/aiperf_mmap_e524969b685d/index.dat (memory_map_utils.py:295)\n10:20:06.135 INFO     Backing store finalized: client_type=DatasetClientStoreType.MEMORY_MAP format=MemoryMapFormat.PAYLOAD_BYTES data_file_path=PosixPath('/tmp/aiperf_mmap_e524969b685d/dataset.dat') index_file_path=PosixPath('/tmp/aiperf_mmap_e524969b685d/index.dat') conversation_count=2088 total_size_bytes=64679682 compressed=False compressed_data_file_path=None compressed_index_file_path=None compressed_size_bytes=0 (dataset_manager.py:1009)\n10:20:06.165 INFO     sampling strategy: sequential, unique conversations: 2088, unique turn count: 2088 (dataset_manager.py:1027)\n10:20:06.176 INFO     Skipping inputs.json generation (dataset_manager.py:285)\n10:20:06.197 INFO     Initialized 1 phase(s): ['Profiling'] (phase_orchestrator.py:341)\n10:20:06.308 INFO     Dataset client initialized and freed 2088 conversations from memory (dataset_manager.py:364)\n10:20:06.432 INFO     Populated mmap cache entry /run_cache/aiperf_mmap/79e230dcf8df75bbf48de50bdc038efd (mmap_cache.py:648)\n10:20:06.432 INFO     Dataset configured in 1.57 seconds (dataset_manager.py:294)\n10:20:06.433 INFO     All services configured in 3.39 seconds (system_controller.py:722)\n10:20:06.433 INFO     System state: configuring -> ready (system_controller.py:700)\n10:20:06.433 INFO     AIPerf System is CONFIGURED (system_controller.py:539)\n10:20:06.435 INFO     All services started profiling successfully (system_controller.py:742)\n10:20:06.435 INFO     System state: ready -> profiling (system_controller.py:700)\n10:20:06.435 INFO     AIPerf System is PROFILING (system_controller.py:548)\n10:20:06.435 INFO     Waiting for result domains: profile (system_controller.py:1635)\n10:20:06.441 INFO     Built schedule with 2088 timestamps, zero_ms=0, auto_offset=True (fixed_schedule.py:119)\n10:20:06.441 NOTICE   Phase profiling (profiling) started | phase_index=0 | profiling_index=0 | target: 2,088 requests, 2,088 sessions (runner.py:660)\n10:20:06.442 INFO     Credit phase start: profiling (records_manager.py:1406)\n10:20:32.534 WARNING  Optional service 'server_metrics_manager' (server_metrics_manager) missed heartbeats on 2 consecutive ticks; dropping it and continuing the benchmark without it. (base_service_manager.py:145)\n",
+    "output/bf16/container.log": "",
+    "output/bf16/operator_acceptance.log": "I20261027 10:14:22.164927 9 flashinfer.py:168] KV_ALLOCATION {\"layers\": [{\"tensors\": {\"key\": {\"dtype\": \"torch.bfloat16\", \"shape\": [7, 128, 8, 128], \"bytes\": 1835008}, \"value\": {\"dtype\": \"torch.bfloat16\", \"shape\": [7, 128, 8, 128], \"bytes\": 1835008}}, \"key_format\": \"bf16\", \"value_format\": \"bf16\", \"resident_bytes\": 3670016, \"bytes_per_token\": 4096}], \"resident_bytes\": 3670016, \"token_capacity\": 896}\nI20261027 10:17:11.489210 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE prefill {'relative_l2': 0.0022824311163276434, 'max_abs': 0.0005266666412353516}\nI20261027 10:17:21.263706 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE capture_replay {'relative_l2': 0.003906028810888529, 'max_abs': 0.0008789524435997009}\nI20261027 10:17:21.265617 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE changed_context {'relative_l2': 0.0028711154591292143, 'max_abs': 0.0009812712669372559}\nI20261027 10:17:21.298118 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE padded_graph {'relative_l2': 0.0028711154591292143, 'max_abs': 0.0009812712669372559}\nI20261027 10:17:21.299578 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE restored_finite_padding {'relative_l2': 0.0028711154591292143, 'max_abs': 0.0009812712669372559}\nI20261027 10:17:21.300398 9 check_native_fa3_operator.py:219] Native production operator/Graph acceptance passed for bf16; no model/service/quality claim\n",
+    "output/bf16/server.log": "DJAvZQN7TvDfdXbppqZN, sequence 0, max_tokens: 36, temperature: 0, finish_reason: length, prompt_tokens: 925, num_prefix_cache_tokens: 512, generated_tokens: 36, ttft: 4027.0ms, total_latency: 9312.2ms, avg tpot: 151.0ms, generation speed: 6.8 tokens/s\nI20261027 10:59:03.853602   641 request.cpp:134] x-request-id: 0054103f-39ff-40a6-8557-e4d16ed1e2ea, x-request-time: , request_id: chatcmpl-15933769124469343823-6QXwrnxGhJcnimaP3UCcsp, sequence 0, max_tokens: 37, temperature: 0, finish_reason: length, prompt_tokens: 6786, num_prefix_cache_tokens: 6144, generated_tokens: 37, ttft: 4014.0ms, total_latency: 9324.9ms, avg tpot: 147.5ms, generation speed: 7.0 tokens/s\nI20261027 10:59:03.878829   640 request.cpp:134] x-request-id: f84bc64d-f70e-4552-a685-1f3f12d3b15c, x-request-time: , request_id: chatcmpl-15933769124469343823-5SKFuLtQfHKLAporVvp4w6, sequence 0, max_tokens: 36, temperature: 0, finish_reason: length, prompt_tokens: 7292, num_prefix_cache_tokens: 6144, generated_tokens: 36, ttft: 5269.0ms, total_latency: 9339.0ms, avg tpot: 116.3ms, generation speed: 8.8 tokens/s\nI20261027 10:59:04.326733   642 request.cpp:134] x-request-id: af7659f6-7c64-49b5-b512-a9e2801128d7, x-request-time: , request_id: chatcmpl-15933769124469343823-KrhTMY9NEG64YA2PEyZFeT, sequence 0, max_tokens: 58, temperature: 0, finish_reason: length, prompt_tokens: 14383, num_prefix_cache_tokens: 512, generated_tokens: 58, ttft: 2820.0ms, total_latency: 9815.6ms, avg tpot: 122.7ms, generation speed: 8.3 tokens/s\nI20261027 10:59:04.425783   643 request.cpp:134] x-request-id: e47202af-24cb-45c3-a73a-51c30377b438, x-request-time: , request_id: chatcmpl-15933769124469343823-Vbyjh4i3xrrRHBCYzYs7KN, sequence 0, max_tokens: 54, temperature: 0, finish_reason: length, prompt_tokens: 7190, num_prefix_cache_tokens: 6144, generated_tokens: 54, ttft: 8043.0ms, total_latency: 9841.6ms, avg tpot: 33.9ms, generation speed: 30.0 tokens/s\nI20261027 10:59:06.210484   640 request.cpp:134] x-request-id: 8d35844f-2085-4863-b95a-080fe9a511e1, x-request-time: , request_id: chatcmpl-15933769124469343823-7aiRpTUyCUQMmQVZCfGtbw, sequence 0, max_tokens: 128, temperature: 0, finish_reason: length, prompt_tokens: 26009, num_prefix_cache_tokens: 12416, generated_tokens: 128, ttft: 7389.0ms, total_latency: 11649.2ms, avg tpot: 33.5ms, generation speed: 30.0 tokens/s\nI20261027 10:59:08.196518   640 request.cpp:134] x-request-id: 9f927c1e-9e18-4760-99f5-347b9c49de1f, x-request-time: , request_id: chatcmpl-15933769124469343823-jm7c2YdCAYjvPuvGJaiXFC, sequence 0, max_tokens: 235, temperature: 0, finish_reason: length, prompt_tokens: 5191, num_prefix_cache_tokens: 512, generated_tokens: 235, ttft: 513.0ms, total_latency: 13733.7ms, avg tpot: 56.5ms, generation speed: 17.8 tokens/s\nI20261027 10:59:09.255842   643 request.cpp:134] x-request-id: a97aac21-7cab-4d04-968e-417cce7bebb2, x-request-time: , request_id: chatcmpl-15933769124469343823-3qBLuBu7stN4JybmGVBpNH, sequence 0, max_tokens: 280, temperature: 0, finish_reason: length, prompt_tokens: 16036, num_prefix_cache_tokens: 1408, generated_tokens: 280, ttft: 4030.0ms, total_latency: 14743.0ms, avg tpot: 38.4ms, generation speed: 26.1 tokens/s\nI20261027 10:59:09.447592   641 request.cpp:134] x-request-id: 76ca97f0-d91f-4645-a9a7-64f5922164ca, x-request-time: , request_id: chatcmpl-15933769124469343823-LxKTHAPTp8rSJNVs3XE5TC, sequence 0, max_tokens: 289, temperature: 0, finish_reason: length, prompt_tokens: 3141, num_prefix_cache_tokens: 512, generated_tokens: 289, ttft: 5269.0ms, total_latency: 14907.5ms, avg tpot: 33.5ms, generation speed: 30.0 tokens/s\nI20261027 10:59:09.925992   642 request.cpp:134] x-request-id: 1ddc6bc2-402c-454a-a555-f012285b864d, x-request-time: , request_id: chatcmpl-15933769124469343823-hwUKmm6e42dwPJ75EBxwJA, sequence 0, max_tokens: 316, temperature: 0, finish_reason: length, prompt_tokens: 17309, num_prefix_cache_tokens: 3584, generated_tokens: 316, ttft: 5277.0ms, total_latency: 15394.2ms, avg tpot: 32.1ms, generation speed: 31.2 tokens/s\nI20261027 10:59:10.499563   642 request.cpp:134] x-request-id: a9752057-6617-4149-b21d-b1367141f89a, x-request-time: , request_id: chatcmpl-15933769124469343823-8FtCGQHAPjrUYHqHxsQ84F, sequence 0, max_tokens: 346, temperature: 0, finish_reason: length, prompt_tokens: 14432, num_prefix_cache_tokens: 512, generated_tokens: 346, ttft: 8046.0ms, total_latency: 15918.3ms, avg tpot: 22.8ms, generation speed: 44.0 tokens/s\nI20261027 10:59:11.205148   641 request.cpp:134] x-request-id: c37ed205-cb78-4393-97ed-194dfc537957, x-request-time: , request_id: chatcmpl-15933769124469343823-88AeaLCKLufbKJ9f8xE7kg, sequence 0, max_tokens: 400, temperature: 0, finish_reason: length, prompt_tokens: 7153, num_prefix_cache_tokens: 512, generated_tokens: 400, ttft: 1040.0ms, total_latency: 16734.2ms, avg tpot: 39.3ms, generation speed: 25.5 tokens/s\nI20261027 10:59:11.263284   641 request.cpp:134] x-request-id: a1c4247d-7c56-453a-938a-fd8c72db51f0, x-request-time: , request_id: chatcmpl-15933769124469343823-r5WRbr6Vgog4R2eejUBfDk, sequence 0, max_tokens: 402, temperature: 0, finish_reason: length, prompt_tokens: 16544, num_prefix_cache_tokens: 640, generated_tokens: 402, ttft: 2202.0ms, total_latency: 16761.2ms, avg tpot: 36.3ms, generation speed: 27.6 tokens/s\nI20261027 10:59:12.395274   643 request.cpp:134] x-request-id: 0bc9fbdb-3cf6-4e30-8d71-cb2c0b9d63fe, x-request-time: , request_id: chatcmpl-15933769124469343823-sWrYzBfcnoWZe3fRJRum2j, sequence 0, max_tokens: 488, temperature: 0, finish_reason: length, prompt_tokens: 2494, num_prefix_cache_tokens: 512, generated_tokens: 488, ttft: 1042.0ms, total_latency: 17926.0ms, avg tpot: 34.7ms, generation speed: 28.9 tokens/s\nI20261027 10:59:13.262387   642 request.cpp:134] x-request-id: 58e96721-d4b5-492c-b4c5-72cb3b9d1331, x-request-time: , request_id: chatcmpl-15933769124469343823-7BxgSzcPSw46NZbbApjb2g, sequence 0, max_tokens: 543, temperature: 0, finish_reason: length, prompt_tokens: 8793, num_prefix_cache_tokens: 512, generated_tokens: 543, ttft: 8464.0ms, total_latency: 18653.3ms, avg tpot: 18.8ms, generation speed: 53.3 tokens/s\nI20261027 10:59:13.349123   641 request.cpp:134] x-request-id: 6fdd8093-0e81-4513-a62c-40571713c509, x-request-time: , request_id: chatcmpl-15933769124469343823-nc5aeWNvsQRJaPGnNEsxuu, sequence 0, max_tokens: 557, temperature: 0, finish_reason: length, prompt_tokens: 954, num_prefix_cache_tokens: 512, generated_tokens: 557, ttft: 4028.0ms, total_latency: 18834.5ms, avg tpot: 26.6ms, generation speed: 37.6 tokens/s\nI20261027 10:59:19.979101   643 request.cpp:134] x-request-id: f5a6f3ea-54d6-472e-bff7-9dc7534ee1b0, x-request-time: , request_id: chatcmpl-15933769124469343823-54qBC633LJq2yAX4KCZ5nX, sequence 0, max_tokens: 3, temperature: 0, finish_reason: length, prompt_tokens: 6780, num_prefix_cache_tokens: 6144, generated_tokens: 3, ttft: 378.0ms, total_latency: 1519.6ms, avg tpot: 570.8ms, generation speed: 2.6 tokens/s\nI20261027 10:59:19.979104   642 request.cpp:134] x-request-id: 792a3ebd-35fd-42ef-b560-acf221a63a82, x-request-time: , request_id: chatcmpl-15933769124469343823-MAWamfvojCcCZ4YdCAKYCD, sequence 0, max_tokens: 3, temperature: 0, finish_reason: length, prompt_tokens: 6222, num_prefix_cache_tokens: 6144, generated_tokens: 3, ttft: 379.0ms, total_latency: 1520.1ms, avg tpot: 570.6ms, generation speed: 2.6 tokens/s\nI20261027 10:59:20.560252   641 request.cpp:134] x-request-id: bd2cba97-102f-4c2c-b369-4f0ac3867162, x-request-time: , request_id: chatcmpl-15933769124469343823-Uvx75fv2d82fUaasnqZyqx, sequence 0, max_tokens: 3, temperature: 0, finish_reason: length, prompt_tokens: 6389, num_prefix_cache_tokens: 6144, generated_tokens: 3, ttft: 858.0ms, total_latency: 2084.2ms, avg tpot: 613.1ms, generation speed: 2.4 tokens/s\nI20261027 10:59:20.560254   640 request.cpp:134] x-request-id: 01428739-8964-4092-90a0-03d0bdc64e83, x-request-time: , request_id: chatcmpl-15933769124469343823-woAznRUiNpFcnWrtsGz39t, sequence 0, max_tokens: 3, temperature: 0, finish_reason: length, prompt_tokens: 6997, num_prefix_cache_tokens: 6144, generated_tokens: 3, ttft: 860.0ms, total_latency: 2086.0ms, avg tpot: 613.0ms, generation speed: 2.4 tokens/s\n",
+    "supervisor.log": "",
+    "watchdog.log": ""
+  },
+  "ok": true,
+  "operator_acceptance": {
+    "bf16": {
+      "sha256": "4d3c8ea48951d8c1457559c0e57d1bd2f48584ec85c1606f1896a48c49a39d8e",
+      "value": {
+        "arm": "bf16",
+        "backend": {
+          "attention_impl": "flashinfer",
+          "class": "FlashInferBackend",
+          "decode_impl": "xqa",
+          "decode_internal_q_data_type": "torch.bfloat16",
+          "decode_tensor_cores": true,
+          "flashinfer_version": "0.6.18.post1",
+          "kv_cache_dtype": "auto",
+          "kv_data_type": "torch.bfloat16",
+          "paged_prefill": true,
+          "planner_backend": "fa3",
+          "profile_scope": "production_xqa",
+          "q_data_type": "torch.bfloat16",
+          "q_scale": null,
+          "quality_transform": false,
+          "scale_strategy": "none",
+          "xqa_enable_pdl": true,
+          "xqa_graph_padding": "reserved_page0_one_token_discard",
+          "xqa_max_context": 32768,
+          "xqa_unused_kv_policy": "finite_full_initialization"
+        },
+        "classification": "operator_correctness_only",
+        "decode_impl": "xqa",
+        "device": "NVIDIA H800",
+        "fresh_dirty_cache_initialized_to_zero": true,
+        "invalid_nan_padding_diagnostics": {
+          "key": {
+            "finite_outputs": 10240,
+            "total_outputs": 10240
+          },
+          "value": {
+            "finite_outputs": 10240,
+            "total_outputs": 10240
+          }
+        },
+        "model_loaded": false,
+        "model_quality_validated": false,
+        "noncontiguous_q_checked": true,
+        "padded_graph_bucket_checked": true,
+        "partial_page_and_replan": true,
+        "prefill_planner": "fa3",
+        "real_capture_and_replay": true,
+        "reference": "FP32 dense causal attention on the same representable Q/K/V; relative L2 <=.05 plus rtol .08, atol .015",
+        "reference_comparisons": {
+          "capture_replay": {
+            "max_abs": 0.0008789524435997009,
+            "relative_l2": 0.003906028810888529
+          },
+          "changed_context": {
+            "max_abs": 0.0009812712669372559,
+            "relative_l2": 0.0028711154591292143
+          },
+          "padded_graph": {
+            "max_abs": 0.0009812712669372559,
+            "relative_l2": 0.0028711154591292143
+          },
+          "prefill": {
+            "max_abs": 0.0005266666412353516,
+            "relative_l2": 0.0022824311163276434
+          },
+          "restored_finite_padding": {
+            "max_abs": 0.0009812712669372559,
+            "relative_l2": 0.0028711154591292143
+          }
+        },
+        "reserved_page0_not_used_for_live_sequences": true,
+        "schema": "kv-native-fa3-operator-acceptance-v1",
+        "service_performance_measured": false,
+        "unused_padding_reference": "maximum_finite_FP8_or_large_finite_BF16"
+      }
+    }
+  },
+  "owned_containers": [
+    {
+      "created": "2026-10-27T02:14:16.297003162Z",
+      "id": "7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4",
+      "running": true
+    }
+  ],
+  "quality_progress": {
+    "bf16": {},
+    "fp8_e4m3": {}
+  },
+  "relaunch_allowed": false,
+  "run_id": "prod-trace-bf16xqa-toolagent-s0125-r0-20261027a",
+  "status": "RUNNING",
+  "supervisor_alive": true
+}

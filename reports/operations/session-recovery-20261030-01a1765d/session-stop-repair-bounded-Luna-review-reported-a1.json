@@ -1,0 +1,19 @@
+{
+  "classification": "reported_bounded_Luna_local_readonly_static_review",
+  "agent": "/root/archive_readonly_audit_luna",
+  "sources": [
+    "scripts/controller/nextgen_performance.py",
+    "scripts/controller/nextgen_service.py",
+    "scripts/controller/aiperf_cli_admission.py",
+    "scripts/prepare_nextgen_service.py",
+    "reports/operations/session-recovery-20261030-01a1765d/audit_session_stop_cpu.py",
+    "tests/test_nextgen_session_recovery.py"
+  ],
+  "findings": [
+    "New runtime proof requires194/session-limit/heterogeneousC16/negativecontrol; legacy argv retained only for historical audit",
+    "Two initial suggestions resolved: parser request_count/concurrency directly checked; independent proof actual session-turn identity/fullset checked",
+    "Typed recovery binds FAILED/released predecessor with unchanged deployment; no second retry or combined recovery reasons"
+  ],
+  "no_blocking_issue_found": true,
+  "not_remote_or_GPU_validation": true
+}

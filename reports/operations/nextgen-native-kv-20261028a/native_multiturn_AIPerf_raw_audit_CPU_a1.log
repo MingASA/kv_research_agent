@@ -1,0 +1,19 @@
+test_complete_two_turn_session_preserves_counts_and_one_token_semantics (test_nextgen_multi_turn_audit.MultiTurnAuditTests) ... ok
+test_duplicate_or_missing_raw_record_is_rejected (test_nextgen_multi_turn_audit.MultiTurnAuditTests) ... ok
+test_missing_stream_done_is_rejected (test_nextgen_multi_turn_audit.MultiTurnAuditTests) ... ok
+test_natural_one_token_answer_is_valid_and_has_no_invented_itl (test_nextgen_multi_turn_audit.MultiTurnAuditTests) ... ok
+test_overlap_between_session_turns_is_not_a_valid_replay (test_nextgen_multi_turn_audit.MultiTurnAuditTests) ... ok
+test_raw_phase_or_prompt_usage_drift_cannot_pass (test_nextgen_multi_turn_audit.MultiTurnAuditTests) ... ok
+test_wire_payload_drift_is_rejected (test_nextgen_multi_turn_audit.MultiTurnAuditTests) ... ok
+test_zero_usage_cannot_be_counted_as_success (test_nextgen_multi_turn_audit.MultiTurnAuditTests) ... ok
+test_duplicate_or_missing_raw_record_is_rejected (test_production_serving.ProductionRawAuditTests) ... ok
+test_missing_stream_done_is_rejected (test_production_serving.ProductionRawAuditTests) ... ok
+test_natural_one_token_answer_is_valid_and_has_no_invented_itl (test_production_serving.ProductionRawAuditTests) ... ok
+test_raw_phase_or_prompt_usage_drift_cannot_pass (test_production_serving.ProductionRawAuditTests) ... ok
+test_wire_payload_drift_is_rejected (test_production_serving.ProductionRawAuditTests) ... ok
+test_zero_usage_cannot_be_counted_as_success (test_production_serving.ProductionRawAuditTests) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.024s
+
+OK

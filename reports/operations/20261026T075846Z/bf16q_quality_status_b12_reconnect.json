@@ -1,0 +1,163 @@
+{
+  "files": {
+    "COMPLETE": {
+      "sha256": "fe77dfc0af0a2eed030e423e6d25cd8dc6c8031e3d8ae65ff4b55801bb39625c",
+      "value": {
+        "result_sha256": "e8eea5e9dc794b8ff8f27b2f7d8f4bcd93fa566fe546df0bdd7fb5dec5207084"
+      }
+    },
+    "START_INTENT.json": {
+      "sha256": "1bd63cb287abe95f2dcd3a51be204ad777f8a9da3cf26ae29fc30ee54cc39847",
+      "value": {
+        "request_sha256": "44c71c8c38470ee8458aaa5e3240b50b40ee4a8b2b06f8e0248558cf6d7a6c17"
+      }
+    },
+    "SUPERVISOR_PROCESS.json": {
+      "sha256": "568d5f1cf93b62158e74cf93ed171a24a1133334181a50587c95379e2a3588fc",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-525309.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-525309.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-525309.scope\n",
+          "pid": 3157569,
+          "start_ticks": 370945194,
+          "uid": 1005
+        }
+      }
+    },
+    "SUPERVISOR_STARTED.json": {
+      "sha256": "976366d4ce58d12d1a69586d9c48af4a276600b82ba5788afb07bc5d8fc27e7a",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-525309.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-525309.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-525309.scope\n",
+          "pid": 3157569,
+          "start_ticks": 370945194,
+          "uid": 1005
+        },
+        "ticket_sha256": "283dd852a96e23e413ee1475e0834983a288eb5704fe77b0099fe5f02ba9be82"
+      }
+    },
+    "owned_containers.json": {
+      "sha256": "1c6de1646ab789b57713d45b4190c71faa09af17270ae2710aa2b68b0445ad5b",
+      "value": {
+        "containers": [
+          {
+            "container_id": "49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a",
+            "pid_identity": {
+              "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+              "cgroup": "12:rdma:/system.slice/docker-49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a.scope\n11:blkio:/system.slice/docker-49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a.scope\n10:net_cls,net_prio:/system.slice/docker-49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a.scope\n9:freezer:/system.slice/docker-49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a.scope\n8:memory:/system.slice/docker-49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a.scope\n7:hugetlb:/system.slice/docker-49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a.scope\n6:perf_event:/system.slice/docker-49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a.scope\n5:pids:/system.slice/docker-49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a.scope\n4:devices:/system.slice/docker-49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a.scope\n3:cpu,cpuacct:/system.slice/docker-49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a.scope\n2:cpuset:/system.slice/docker-49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a.scope\n1:name=systemd:/system.slice/docker-49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a.scope\n",
+              "pid": 3170691,
+              "start_ticks": 370957525,
+              "uid": 1005
+            },
+            "released": true
+          }
+        ],
+        "request_sha256": "44c71c8c38470ee8458aaa5e3240b50b40ee4a8b2b06f8e0248558cf6d7a6c17",
+        "reservation_id": "a569bb1c67d94e9a870bd3f2ac0313c7"
+      }
+    },
+    "result.json": {
+      "sha256": "e8eea5e9dc794b8ff8f27b2f7d8f4bcd93fa566fe546df0bdd7fb5dec5207084",
+      "value": {
+        "allocation_ended_monotonic_ns": 3710402807663566,
+        "allocation_intervals_ns": [
+          {
+            "arm": "fp8_e4m3",
+            "end_ns": 3710402807663566,
+            "start_ns": 3709575123709045
+          }
+        ],
+        "allocation_started_monotonic_ns": 3709575123709045,
+        "arm_results": [
+          {
+            "arm": "fp8_e4m3",
+            "result_sha256": "f1b7a56fb1317814d872c7b55e3d4c04b4e3b6fdfaf4d8779c432b9108abdb28"
+          }
+        ],
+        "error": null,
+        "gpu_release_verified": true,
+        "live_owned_containers": [],
+        "new_output_bytes": 191663393,
+        "request_sha256": "44c71c8c38470ee8458aaa5e3240b50b40ee4a8b2b06f8e0248558cf6d7a6c17",
+        "reservation_id": "a569bb1c67d94e9a870bd3f2ac0313c7",
+        "run_id": "prod-quality-bf16q-full1719-c128-r1-20261027b",
+        "status": "COMPLETE"
+      }
+    },
+    "state.json": {
+      "sha256": "e8eea5e9dc794b8ff8f27b2f7d8f4bcd93fa566fe546df0bdd7fb5dec5207084",
+      "value": {
+        "allocation_ended_monotonic_ns": 3710402807663566,
+        "allocation_intervals_ns": [
+          {
+            "arm": "fp8_e4m3",
+            "end_ns": 3710402807663566,
+            "start_ns": 3709575123709045
+          }
+        ],
+        "allocation_started_monotonic_ns": 3709575123709045,
+        "arm_results": [
+          {
+            "arm": "fp8_e4m3",
+            "result_sha256": "f1b7a56fb1317814d872c7b55e3d4c04b4e3b6fdfaf4d8779c432b9108abdb28"
+          }
+        ],
+        "error": null,
+        "gpu_release_verified": true,
+        "live_owned_containers": [],
+        "new_output_bytes": 191663393,
+        "request_sha256": "44c71c8c38470ee8458aaa5e3240b50b40ee4a8b2b06f8e0248558cf6d7a6c17",
+        "reservation_id": "a569bb1c67d94e9a870bd3f2ac0313c7",
+        "run_id": "prod-quality-bf16q-full1719-c128-r1-20261027b",
+        "status": "COMPLETE"
+      }
+    },
+    "watchdog_result.json": {
+      "sha256": "4b7650794731010f62d2134a7adbd5ad03b3e6518a0975d2e2a851ad8dca266d",
+      "value": {
+        "actions": [],
+        "request_sha256": "44c71c8c38470ee8458aaa5e3240b50b40ee4a8b2b06f8e0248558cf6d7a6c17",
+        "status": "RELEASE_CONFIRMED"
+      }
+    }
+  },
+  "gpu_snapshot": "0, GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 0, 0\n1, GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 0, 0\n2, GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 0, 0\n3, GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 0, 0\n4, GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 0, 0\n5, GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 0, 0\n6, GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 0, 0\n7, GPU-47211491-ba0d-78bf-5c84-f968c0648213, 0, 0",
+  "live_owned_containers": [],
+  "log_tail": {
+    "events.jsonl": "{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3709452511501588,\"utc\":\"2026-10-27T12:50:10.772381+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3709452511501588,\"utc\":\"2026-10-27T12:50:41.232710+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3709452511501588,\"utc\":\"2026-10-27T12:51:11.559020+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3709452511501588,\"utc\":\"2026-10-27T12:51:42.062125+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3709452511501588,\"utc\":\"2026-10-27T12:52:12.381525+00:00\"}\n{\"action\":\"OWNED_CONTAINER_CREATED\",\"arm\":\"fp8_e4m3\",\"id\":\"49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a\",\"utc\":\"2026-10-27T12:52:13.384534+00:00\"}\n{\"action\":\"ARM_VERIFIED\",\"arm\":\"fp8_e4m3\",\"id\":\"49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a\",\"utc\":\"2026-10-27T13:06:01.068485+00:00\"}\n",
+    "output/fp8_e4m3/container.log": "",
+    "output/fp8_e4m3/quality.log": "I20261027 20:52:15.397588 10 run_qwen25_joint_kv_quality.py:879] Hashing local checkpoint shards and validating model/configuration: /models/Qwen2.5-14B-Instruct\n/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/experiments/joint-kv-14b/longbench-deps-py312/fuzzywuzzy/fuzz.py:11: UserWarning: Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning\n  warnings.warn('Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning')\nI20261027 20:52:59.176593 10 run_qwen25_joint_kv_quality.py:633] Starting fp8_e4m3: 9 pending tasks; evidence in /results/quality/arms/fp8_e4m3/attempt-0001\nI20261027 20:58:03.347876 10 run_qwen25_joint_kv_quality.py:700] Evaluating fp8_e4m3/gsm8k; detailed progress is in eval-gsm8k.log\nI20261027 20:59:42.704766 10 run_qwen25_joint_kv_quality.py:700] Evaluating fp8_e4m3/narrativeqa; detailed progress is in eval-narrativeqa.log\nI20261027 21:01:10.453591 10 run_qwen25_joint_kv_quality.py:700] Evaluating fp8_e4m3/qasper; detailed progress is in eval-qasper.log\nI20261027 21:01:35.402349 10 run_qwen25_joint_kv_quality.py:700] Evaluating fp8_e4m3/multifieldqa_en; detailed progress is in eval-multifieldqa_en.log\nI20261027 21:02:06.052574 10 run_qwen25_joint_kv_quality.py:700] Evaluating fp8_e4m3/2wikimqa; detailed progress is in eval-2wikimqa.log\nI20261027 21:02:40.346366 10 run_qwen25_joint_kv_quality.py:700] Evaluating fp8_e4m3/hotpotqa; detailed progress is in eval-hotpotqa.log\nI20261027 21:03:35.352260 10 run_qwen25_joint_kv_quality.py:700] Evaluating fp8_e4m3/musique; detailed progress is in eval-musique.log\nI20261027 21:04:46.505096 10 run_qwen25_joint_kv_quality.py:700] Evaluating fp8_e4m3/lcc; detailed progress is in eval-lcc.log\nI20261027 21:05:06.016897 10 run_qwen25_joint_kv_quality.py:700] Evaluating fp8_e4m3/repobench-p; detailed progress is in eval-repobench-p.log\nI20261027 21:05:58.385992 10 run_qwen25_joint_kv_quality.py:964] Joint-KV quality run complete: /results/quality\n",
+    "output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/server.log": "0ms, total_latency: 33812.2ms, avg tpot: 256.9ms, generation speed: 4.0 tokens/s\nI20261027 21:05:52.425202  1109 request.cpp:134] x-request-id: req-15933769124469343823-3LkB8SWA9r3owha6BkVLds, x-request-time: , request_id: cmpl-15933769124469343823-6imTZuuQhFHUCcK5WUHcpk, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 4246, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 17619.0ms, total_latency: 33804.3ms, avg tpot: 256.9ms, generation speed: 4.0 tokens/s\nI20261027 21:05:52.468987  1107 request.cpp:134] x-request-id: req-15933769124469343823-dTgh9dCB3hhWTHqtkkc9XX, x-request-time: , request_id: cmpl-15933769124469343823-7rox4hm2ALVGTrsDiJASJz, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 14167, num_prefix_cache_tokens: 1408, generated_tokens: 64, ttft: 18606.0ms, total_latency: 33844.4ms, avg tpot: 241.9ms, generation speed: 4.2 tokens/s\nI20261027 21:05:52.489869  1108 request.cpp:134] x-request-id: req-15933769124469343823-WLWkdBHncWBGDUrFY2YvTe, x-request-time: , request_id: cmpl-15933769124469343823-uhjpcshrMVcUtquanMJjS3, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 3365, num_prefix_cache_tokens: 1024, generated_tokens: 64, ttft: 18796.0ms, total_latency: 33860.3ms, avg tpot: 239.1ms, generation speed: 4.2 tokens/s\nI20261027 21:05:53.199980  1109 request.cpp:134] x-request-id: req-15933769124469343823-8bQc7RY2zdZbxgnW6FFkiE, x-request-time: , request_id: cmpl-15933769124469343823-R8obPpjkCwKPVobp22CZ5J, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 4913, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 21402.0ms, total_latency: 34562.4ms, avg tpot: 208.9ms, generation speed: 4.9 tokens/s\nI20261027 21:05:53.200004  1110 request.cpp:134] x-request-id: req-15933769124469343823-5e4mBBvodsVpqU5FwipUFh, x-request-time: , request_id: cmpl-15933769124469343823-asfvTxNw7CHnjT6ARdNMYF, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 11201, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 21408.0ms, total_latency: 34568.6ms, avg tpot: 208.9ms, generation speed: 4.9 tokens/s\nI20261027 21:05:53.220592  1107 request.cpp:134] x-request-id: req-15933769124469343823-VtU6aCM7BMiwTe2n4F8FTZ, x-request-time: , request_id: cmpl-15933769124469343823-rpbsdJgGikRTSsBSnLyD8A, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 4061, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 21985.0ms, total_latency: 34581.5ms, avg tpot: 199.9ms, generation speed: 5.1 tokens/s\nI20261027 21:05:53.241024  1109 request.cpp:134] x-request-id: req-15933769124469343823-gyXYkfbG5ZWsproQTgeTxJ, x-request-time: , request_id: cmpl-15933769124469343823-hdhtp7dCwZ9LAf56y47AUJ, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 6484, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 22478.0ms, total_latency: 34596.1ms, avg tpot: 192.4ms, generation speed: 5.3 tokens/s\nI20261027 21:05:53.241039  1108 request.cpp:134] x-request-id: req-15933769124469343823-2hKvAHMucWkTRtZUpzDNRk, x-request-time: , request_id: cmpl-15933769124469343823-rPtnewtrprqmrZ3PNXoAtP, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 7572, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 22467.0ms, total_latency: 34584.8ms, avg tpot: 192.3ms, generation speed: 5.3 tokens/s\nI20261027 21:05:53.281277  1110 request.cpp:134] x-request-id: req-15933769124469343823-bDpjr6jKhQTAuNgyqS7mzq, x-request-time: , request_id: cmpl-15933769124469343823-9MDtd9cKE7Bgbx4rnymcfE, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 18537, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 24004.0ms, total_latency: 34623.2ms, avg tpot: 168.6ms, generation speed: 6.0 tokens/s\nI20261027 21:05:53.299563  1108 request.cpp:134] x-request-id: req-15933769124469343823-F4yydMXAVBdbCxt7fM7hRp, x-request-time: , request_id: cmpl-15933769124469343823-3tHxTHn2qv7ZYJ5n4tCsgn, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 5849, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 24578.0ms, total_latency: 34626.6ms, avg tpot: 159.5ms, generation speed: 6.4 tokens/s\nI20261027 21:05:53.299573  1107 request.cpp:134] x-request-id: req-15933769124469343823-4p2qxF63eqnWZpmrB8qGjt, x-request-time: , request_id: cmpl-15933769124469343823-FVhR5jJ9PG7ByPFLnbZdJL, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 4224, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 24567.0ms, total_latency: 34615.9ms, avg tpot: 159.5ms, generation speed: 6.4 tokens/s\nI20261027 21:05:53.335354  1109 request.cpp:134] x-request-id: req-15933769124469343823-AKEAkPs2r9Pkk4bEbE9C9y, x-request-time: , request_id: cmpl-15933769124469343823-VWmzcH2CdTNXCFRLiUrbj5, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 15851, num_prefix_cache_tokens: 1920, generated_tokens: 64, ttft: 25664.0ms, total_latency: 34649.5ms, avg tpot: 142.6ms, generation speed: 7.1 tokens/s\nI20261027 21:05:53.386507  1110 request.cpp:134] x-request-id: req-15933769124469343823-h9MTMHGDMheg7K8ggApWaT, x-request-time: , request_id: cmpl-15933769124469343823-A8jKR5Kr5cBVU3EcJjuxHF, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 21655, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 27459.0ms, total_latency: 34667.8ms, avg tpot: 114.4ms, generation speed: 8.9 tokens/s\nI20261027 21:05:53.448611  1107 request.cpp:134] x-request-id: req-15933769124469343823-Bpg9gZzEL8EHy9JTzsjCAo, x-request-time: , request_id: cmpl-15933769124469343823-zdPLuFBMxnz5ekb2mVLbLZ, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 31505, num_prefix_cache_tokens: 20352, generated_tokens: 64, ttft: 31140.0ms, total_latency: 34729.6ms, avg tpot: 57.0ms, generation speed: 17.8 tokens/s\nI20261027 21:05:53.462987  1108 request.cpp:134] x-request-id: req-15933769124469343823-s3t9quJpnHfXrDJjhVDei8, x-request-time: , request_id: cmpl-15933769124469343823-WCkxBAvRwtcT9LJ4oAwRt5, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 16688, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 31939.0ms, total_latency: 34738.6ms, avg tpot: 44.4ms, generation speed: 22.9 tokens/s\nI20261027 21:05:53.476325  1109 request.cpp:134] x-request-id: req-15933769124469343823-rpYLDfErJVW7khdrUYHqyL, x-request-time: , request_id: cmpl-15933769124469343823-QBEZuALNC7EPbnmxaNYMT6, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 5899, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 32549.0ms, total_latency: 34737.8ms, avg tpot: 34.7ms, generation speed: 29.2 tokens/s\nI20261027 21:05:53.489384  1110 request.cpp:134] x-request-id: req-15933769124469343823-P5yQJDNCBB4yEEG3TJBYVo, x-request-time: , request_id: cmpl-15933769124469343823-ypptAHz7K6jTNxLKw2LxaA, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 16612, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 33308.0ms, total_latency: 34710.1ms, avg tpot: 22.3ms, generation speed: 45.6 tokens/s\nI20261027 21:05:54.381407    59 xllm_server.cpp:188]      Shutting down\nI20261027 21:05:54.381475    59 xllm_server.cpp:189]      Waiting for application shutdown.\nI20261027 21:05:54.381484    59 server.cpp:1260] Server[xllm::APIService] is going to quit\nI20261027 21:05:54.381692    59 xllm_server.cpp:193]      Application shutdown complete.\nI20261027 21:05:54.381705    59 xllm_server.cpp:194]      Finished server process [59]\nI20261027 21:05:54.381726    59 llm_master.cpp:141] LLMMaster stopping...\nI20261027 21:05:54.791255    59 server.cpp:1260] Server[xllm::CollectiveService] is going to quit\nI20261027 21:05:54.791507    59 xllm_server_registry.cpp:38] Unregister server CollectiveServer0.\nI20261027 21:05:54.791869    59 server.cpp:1260] Server[xllm::WorkerService] is going to quit\nI20261027 21:05:54.792095    59 xllm_server_registry.cpp:38] Unregister server DistributeWorkerServer0.\n",
+    "output/fp8_e4m3/scorer_cpu_preflight.log": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/experiments/joint-kv-14b/longbench-deps-py312/fuzzywuzzy/fuzz.py:11: UserWarning: Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning\n  warnings.warn('Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning')\n{\"qa_f1\": 1.0, \"code_sim\": 1.0}\n",
+    "supervisor.log": "",
+    "watchdog.log": ""
+  },
+  "ok": true,
+  "operator_acceptance": {},
+  "owned_containers": [
+    {
+      "created": "2026-10-27T12:52:13.342712594Z",
+      "id": "49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a",
+      "running": false
+    }
+  ],
+  "quality_progress": {
+    "bf16": {},
+    "fp8_e4m3": {
+      "2wikimqa": 50,
+      "gsm8k": 1319,
+      "hotpotqa": 50,
+      "lcc": 50,
+      "multifieldqa_en": 50,
+      "musique": 50,
+      "narrativeqa": 50,
+      "qasper": 50,
+      "repobench-p": 50
+    }
+  },
+  "relaunch_allowed": false,
+  "run_id": "prod-quality-bf16q-full1719-c128-r1-20261027b",
+  "status": "COMPLETE",
+  "supervisor_alive": false
+}

@@ -1,0 +1,1 @@
+{"GPU_dispatch_deferred_all8cards_occupied":true,"GPU_started":false,"assets":32,"frozen_policy_valid":true,"input_budget":16384,"prompt_plus_output":8890,"prompt_tokens":8794,"run_id":"nextgen-bf16-qwen38-validation-r1-20261027d","server_context_capacity":262144,"source_commit":"ab90f9636ed908b53f5b5a0e51a543f6ba01440c"}

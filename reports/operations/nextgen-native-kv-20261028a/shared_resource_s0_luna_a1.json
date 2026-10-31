@@ -1,0 +1,6052 @@
+{
+  "commands_scope": [
+    "nvidia-smi gpu uuid/memory/util",
+    "nvidia-smi compute gpu_uuid/pid",
+    "GPU PID uid/comm/redacted argv prefix",
+    "docker ps+GPU device/label metadata max128; no env/log/exec"
+  ],
+  "endpoint": {
+    "fingerprint": "SHA256:QZwhu4BzgiOmHYABTUK1kXdAYHPun3iNioo69CKCgEI",
+    "host": "h800-41594a.fkpku.cn",
+    "port": 45291,
+    "user": "yinjinrun"
+  },
+  "observed_at_utc": "2026-10-28T07:03:02.999705+00:00",
+  "remote_script_sha256": "41779e4cb9b75f83349f131308e4f33fdf62935025ce1350284e771965ba6480",
+  "remote_writes": false,
+  "response": {
+    "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+    "compute_rows": [
+      "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 2171585",
+      "GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 2171586",
+      "GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 2171587",
+      "GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 2171588",
+      "GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 2171589",
+      "GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 2171590",
+      "GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 2171591",
+      "GPU-47211491-ba0d-78bf-5c84-f968c0648213, 2171592"
+    ],
+    "docker_containers": [
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": -1,
+            "DeviceIDs": null,
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia1",
+            "PathOnHost": "/dev/nvidia1"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia2",
+            "PathOnHost": "/dev/nvidia2"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia3",
+            "PathOnHost": "/dev/nvidia3"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia4",
+            "PathOnHost": "/dev/nvidia4"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia5",
+            "PathOnHost": "/dev/nvidia5"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia6",
+            "PathOnHost": "/dev/nvidia6"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia7",
+            "PathOnHost": "/dev/nvidia7"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "76b23e529acf677598ceb021a131f20ab88fa1d535e65167a40f364ead338ff7",
+        "label_count": 10,
+        "labels": {},
+        "name": "xiemingxiang-swechat-full-235b-ep8",
+        "status": "running",
+        "user": ""
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia5",
+            "PathOnHost": "/dev/nvidia5"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "55b651bd5da4df2f0c365d69a7250689069e578001fc84ee6025c87fbc2ccf0e",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "fp8_e4m3",
+          "kvra.request_sha256": "1e46b95f78c7a7338e38497d0f6bc8d3100b28691a659ac95a1871029401205b",
+          "kvra.reservation_id": "75530a23f4f74bea9a76a176364219c7",
+          "kvra.run_id": "nextgen-fp8-qwen38-quality-core1720-r0-20261027k"
+        },
+        "name": "kvra-75530a23f4f74bea9a76-fp8_e4m3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "9a289c657b7c00b10db70f7d68dc48c69e07c774b79a975bde732efdcca3861a",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "67822cb77bb36d6c225abf9383573a40e5767b232cbc0e7f4ceeafdc8197ddaa",
+          "kvra.reservation_id": "47b0711e7e5142d88b10548fe28892bd",
+          "kvra.run_id": "nextgen-bf16-qwen38-quality-core1720-r0-20261027j"
+        },
+        "name": "kvra-47b0711e7e5142d88b10-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "5fad7aaa338fc4fa51441febace00f63a54dd1259a65ac0d6655dff4febae81d",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "927b2a8363f44dbd9a86564c6ad6839f297f46004a6fca4bc1f90c9754d99352",
+          "kvra.reservation_id": "d750093a5bfd4c2f85451b8946af6d4d",
+          "kvra.run_id": "nextgen-bf16-qwen38-calibration-r0-20261027i"
+        },
+        "name": "kvra-d750093a5bfd4c2f8545-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": null,
+        "Devices": [],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "fa0132404c6a3fe7850c16c2c0d34d91eb694da50dce84cf9dbacbba50b2cd5d",
+        "label_count": 6,
+        "labels": {
+          "kvra.cpu_finalize_id": "nextgen-native-kv-862c29ca-20261027g",
+          "kvra.cpu_verify_revision": "2"
+        },
+        "name": "kvra-cpu-finalize-nextgen-native-kv-862c29ca-20261027g-v2",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": null,
+        "Devices": [],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "a8b1c83421a52c530eb65dd3d85dd10433b955226907fecb0e9ecb9b69137019",
+        "label_count": 5,
+        "labels": {
+          "kvra.cpu_finalize_id": "nextgen-native-kv-862c29ca-20261027g"
+        },
+        "name": "kvra-cpu-finalize-nextgen-native-kv-862c29ca-20261027g",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": null,
+        "Devices": [],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "afcab6d6ac36dc6d0e7e27cf1a1ab3c51c6ad4fc7092f7e1021b8ab10c3cd2d9",
+        "label_count": 6,
+        "labels": {
+          "kvra.cpu_build_id": "nextgen-native-kv-862c29ca-20261027f",
+          "kvra.uid": "1005"
+        },
+        "name": "kvra-cpu-nextgen-native-kv-862c29ca-20261027f",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": null,
+        "Devices": [],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "cfb5443dc695a965d21a84b3f1e254fe791e93fc7327e824d2da0c4ab361003f",
+        "label_count": 6,
+        "labels": {
+          "kvra.cpu_build_id": "nextgen-native-kv-862c29ca-20261027e",
+          "kvra.uid": "1005"
+        },
+        "name": "kvra-cpu-nextgen-native-kv-862c29ca-20261027e",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "9d9dc5139ee9f2d89f77397cddaa90efc6838bab3bbbe8015d44ea857ea22cdd",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "nvfp4",
+          "kvra.request_sha256": "cdae9e4ab59d354cf0afe251c207981de0f9613da45c7c10a8cbdb46bf2e8827",
+          "kvra.reservation_id": "d55df3140d4a437ea1ea56183ae66873",
+          "kvra.run_id": "nextgen-nvfp4-pages-sm90-r0-20261027h"
+        },
+        "name": "kvra-d55df3140d4a437ea1ea-nvfp4",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "620b524d12f56a49e643c79b3dad85bdd5dcbbfebf5dd7cabade9a859af257c8",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "4272dfc938e4808b2b50c83894616833c7a03f572c6e64127b4fa65306b1ab1b",
+          "kvra.reservation_id": "443fecf9633343df9a814433de99d381",
+          "kvra.run_id": "nextgen-bf16-qwen38-validation-r2-20261027e"
+        },
+        "name": "kvra-443fecf9633343df9a81-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": null,
+        "Devices": [],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "0eccd54320b8e83b287b93c59ce0bd2002d28b9a6651da3360920e5373998039",
+        "label_count": 6,
+        "labels": {
+          "kvra.cpu_build_id": "nextgen-native-kv-59fc32ac-20261027d",
+          "kvra.uid": "1005"
+        },
+        "name": "kvra-cpu-nextgen-native-kv-59fc32ac-20261027d",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "8c0787c74b462100674ffe8dccb749f5d1cda6d1c65550914f709732c5a719d2",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "2a97eccdfc9fa6f6cf4627b3f61b86975c7be68f3092c59bdef3e1ce8a9ec328",
+          "kvra.reservation_id": "5a608afdf1df4cf1af67ca8db1ce5fd6",
+          "kvra.run_id": "nextgen-bf16-qwen38-validation-r1-20261027d"
+        },
+        "name": "kvra-5a608afdf1df4cf1af67-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": null,
+        "Devices": [],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "6f5aa2ee3d70b24e1b60df23dacad17558a921f094d3a35abacd457c5c0adcb1",
+        "label_count": 6,
+        "labels": {
+          "kvra.cpu_build_id": "nextgen-native-kv-78f14606-20261027c",
+          "kvra.uid": "1005"
+        },
+        "name": "kvra-cpu-nextgen-native-kv-78f14606-20261027c",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": null,
+        "Devices": [],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "9617617041dbdc76edc66a8161db6207541b209140f92601cab2b374db0325b7",
+        "label_count": 6,
+        "labels": {
+          "kvra.cpu_build_id": "nextgen-native-kv-78f14606-20261027a",
+          "kvra.uid": "1005"
+        },
+        "name": "kvra-cpu-nextgen-native-kv-78f14606-20261027a",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "07f2bef21eb6f449b4072ef35cda3765645ca935ff85e26a321735df14247869",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "1e2a0da282e1f3a521860b790726449f397e324c7efa7d315d64362dfcf03eb4",
+          "kvra.reservation_id": "0b5727656935481389f2a3e1f7c7d5b1",
+          "kvra.run_id": "nextgen-bf16-qwen38-validation-r0-20261027b"
+        },
+        "name": "kvra-0b5727656935481389f2-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia1",
+            "PathOnHost": "/dev/nvidia1"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "5cb7dbafe9477ad8cb4ceb439bf9a1d413c0a7b284914487596077221b4e8905",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "fp8_e4m3",
+          "kvra.request_sha256": "00161b71e946d53b4858d63ece3a68e7d729ba69f8864c84012bb0d57f005c10",
+          "kvra.reservation_id": "2c3032482d774828834276d3c732a798",
+          "kvra.run_id": "prod-trace-bf16xqa-conversation-s1-r1-20261027b"
+        },
+        "name": "kvra-2c3032482d7748288342-fp8_e4m3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia1",
+            "PathOnHost": "/dev/nvidia1"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "96b1a98be3bc6af9408a8cc74f2e18dfb482ee456443379cd5b1ba2e11a84961",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "00161b71e946d53b4858d63ece3a68e7d729ba69f8864c84012bb0d57f005c10",
+          "kvra.reservation_id": "2c3032482d774828834276d3c732a798",
+          "kvra.run_id": "prod-trace-bf16xqa-conversation-s1-r1-20261027b"
+        },
+        "name": "kvra-2c3032482d7748288342-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "431a2cc0fdcf7233b5a8f87fdd44132ccd44d19e26a61b05a30fb537a982925c",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "feaa152c5fef3cc591739891c70c92a519e74d3defbe2ac40223f33c484d636b",
+          "kvra.reservation_id": "96381fe5b5fc4991b62517daa22bc195",
+          "kvra.run_id": "prod-trace-bf16xqa-conversation-s1-r0-20261027a"
+        },
+        "name": "kvra-96381fe5b5fc4991b625-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "708dad3cfebe0d200676662b205e3fdfd5901bab5c15fcfc7ddccbb03cf47992",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "fp8_e4m3",
+          "kvra.request_sha256": "1223ab2ce49551bc9a08297bf013828ea4868d6e2024fd707fd27903e374f071",
+          "kvra.reservation_id": "36df43db253a435181702e77dedc3c68",
+          "kvra.run_id": "prod-quality-xqa-vcover-full1719-c128-r0-20261027a"
+        },
+        "name": "kvra-36df43db253a43518170-fp8_e4m3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "5c765276d15bdccf25458d6625cd64235f331b7480a54a8ed98b938f57a2aa2c",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "8102f82a99232f7cce0c3ee5a4685feb396e6955b68d3bf89af2d0dff8d67d69",
+          "kvra.reservation_id": "fdd5bb9418854831b9fd8dd40df4fcdc",
+          "kvra.run_id": "prod-calib-bf16xqa-longqa128-r0-20261027a"
+        },
+        "name": "kvra-fdd5bb9418854831b9fd-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "fp8_e4m3",
+          "kvra.request_sha256": "44c71c8c38470ee8458aaa5e3240b50b40ee4a8b2b06f8e0248558cf6d7a6c17",
+          "kvra.reservation_id": "a569bb1c67d94e9a870bd3f2ac0313c7",
+          "kvra.run_id": "prod-quality-bf16q-full1719-c128-r1-20261027b"
+        },
+        "name": "kvra-a569bb1c67d94e9a870b-fp8_e4m3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "d5d24f4234d62636335f750d5912d0c94410c67810beedeb7e9bada941d403fd",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "fp8_e4m3",
+          "kvra.request_sha256": "e4ea975cc124e1cb74fb4161097dd7cecbcc51c5a167af91acac387572f2c95d",
+          "kvra.reservation_id": "0c5e0be038fa43509b909508530de3a4",
+          "kvra.run_id": "prod-quality-bf16q-full1719-c128-r0-20261027a"
+        },
+        "name": "kvra-0c5e0be038fa43509b90-fp8_e4m3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "b7807fadd961f5184be0b95976650acfefb38baaccb14b90c115dd88cce02053",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "fp8_e4m3",
+          "kvra.request_sha256": "5e1da3ce9904b73b26b70ecf5c800eb88b24631bc824f1ff21977b71d240cc16",
+          "kvra.reservation_id": "0508d8ae63e045d9b0e46d22654ca9d4",
+          "kvra.run_id": "prod-bf16q-decode-op-r0-20261027a"
+        },
+        "name": "kvra-0508d8ae63e045d9b0e4-fp8_e4m3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "cb938d1f83080bdec73ba459d301c5d941996382e9cebbd561521268bffbafc7",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "e1636ed7ddd2e19abd9634ea787e8d4c0a2988a20a7f1418273bcca50184bd2e",
+          "kvra.reservation_id": "40fbeee3743f46748b18394ccad8cbc7",
+          "kvra.run_id": "prod-calib-bf16xqa-heldout128-r2-20261027c"
+        },
+        "name": "kvra-40fbeee3743f46748b18-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "3a5c7c1e3790c9bb24cb018465ea4f37883fb05641701e87a6a06639bc732090",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "5526a384b897a32c5119f0d86b40570f5addc30d5f7d45c9215ca3ba3717e95c",
+          "kvra.reservation_id": "bef652a60b7342879a800df458cdbafd",
+          "kvra.run_id": "prod-calib-bf16xqa-heldout128-r1-20261027b"
+        },
+        "name": "kvra-bef652a60b7342879a80-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "afe8a02df66ac1ecdbc9b3ab08042505ba7c1ac54422f7db7c6011e935546053",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "57d2b8dc15bda5fc9269c2f895c5ebc14bdcc60f8e01b9f716a50e5c0fcf0f00",
+          "kvra.reservation_id": "336425c339534ca0b54858617b3967f6",
+          "kvra.run_id": "prod-calib-bf16xqa-heldout128-r0-20261027a"
+        },
+        "name": "kvra-336425c339534ca0b548-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "7e83a480dbf1d9b01a91c779fd874a0ec5f7be00adc38d20bf7b312b627175f8",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "fp8_e4m3",
+          "kvra.request_sha256": "99a27ecea3ebef680500fcf678643a8d1fa93ab828cd05810e6a4d36108bb414",
+          "kvra.reservation_id": "380cee2622634a4ba4b2ce72cc80367b",
+          "kvra.run_id": "prod-prefill-workspace-op-r0-20261027a"
+        },
+        "name": "kvra-380cee2622634a4ba4b2-fp8_e4m3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "439448eebe191354a1884c6a5820d813aee62482b8556025283932589cee45de",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "fp8_e4m3",
+          "kvra.request_sha256": "5b7444f9e25bd61847852ca2070d07d4447f1e9a0b9da3fb8eb869d749644d6b",
+          "kvra.reservation_id": "6b97bb6bfeb846cc93b41e241e565ff6",
+          "kvra.run_id": "prod-tools-bf16xqa-bfcl258-buffered-c128-r0-20261027b"
+        },
+        "name": "kvra-6b97bb6bfeb846cc93b4-fp8_e4m3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "c198f90ee3ee8c1f4b92f6fe9e12e35348c8ea3897d7a7725aa608cb523e568b",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "5b7444f9e25bd61847852ca2070d07d4447f1e9a0b9da3fb8eb869d749644d6b",
+          "kvra.reservation_id": "6b97bb6bfeb846cc93b41e241e565ff6",
+          "kvra.run_id": "prod-tools-bf16xqa-bfcl258-buffered-c128-r0-20261027b"
+        },
+        "name": "kvra-6b97bb6bfeb846cc93b4-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "2ef818baeef97194be33818fe9dfb3ed71e64eb348a7a4ae967623274d96b434",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "cb2a69600517a85f31e84dfea0edec95c0e5f0226d2e89da787f0b516ade1b1a",
+          "kvra.reservation_id": "bd5ec6f993c7449cb97912729e4bfecd",
+          "kvra.run_id": "prod-tools-bf16xqa-bfcl258-c128-r0-20261027a"
+        },
+        "name": "kvra-bd5ec6f993c7449cb979-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "a830a13d952660e2b896891d1a9a4c2cce2f7b600ce9311a44b8482560d97a88",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "fp8_e4m3",
+          "kvra.request_sha256": "7bcfbb503c940e2018b59f4bb36eef848a37f6453026e33d3a9736a4b9b925cf",
+          "kvra.reservation_id": "4a803f20cb034ede9d7d8c7d4eabf5c3",
+          "kvra.run_id": "prod-diag-bf16xqa-toolagent-s0125-r2-20261027c"
+        },
+        "name": "kvra-4a803f20cb034ede9d7d-fp8_e4m3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "218a104899f16a858ee257d966980f56af1716796572efa72c47cf7fb67c04b3",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "7bcfbb503c940e2018b59f4bb36eef848a37f6453026e33d3a9736a4b9b925cf",
+          "kvra.reservation_id": "4a803f20cb034ede9d7d8c7d4eabf5c3",
+          "kvra.run_id": "prod-diag-bf16xqa-toolagent-s0125-r2-20261027c"
+        },
+        "name": "kvra-4a803f20cb034ede9d7d-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "7a812ea7dce8f67638d901d33b96f0bc1ae3b8b2f0596f434d5928e1d0702f1e",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "81096dc1cf2089622d20da47646a2bf2ed07efea2e8920dac351435acec54e5f",
+          "kvra.reservation_id": "9cc0c86ce5fe4faf98260ad8b459083f",
+          "kvra.run_id": "prod-diag-bf16xqa-toolagent-s0125-r1-20261027b"
+        },
+        "name": "kvra-9cc0c86ce5fe4faf9826-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0cb28538-7e9f-1b66-750f-1b53ff309195"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia3",
+            "PathOnHost": "/dev/nvidia3"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "bea50029726b0b33729f3cab99baf5988f120b96f1864ade610802d0f8a27a64",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "fp8_e4m3",
+          "kvra.request_sha256": "7a0bf66111606b69c33f82d8521df8f6f83dc3d482801feee6e73b0f95bdecf9",
+          "kvra.reservation_id": "500dfaa99df54a39aa69eed0516f7057",
+          "kvra.run_id": "prod-quality-bf16xqa-full1719-c128-r0-20261027b"
+        },
+        "name": "kvra-500dfaa99df54a39aa69-fp8_e4m3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0cb28538-7e9f-1b66-750f-1b53ff309195"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia3",
+            "PathOnHost": "/dev/nvidia3"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "3e7e71e7a56797fc5eb02aab60b229e35ec46321be10d3ff4ea22ae3324a861f",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "7a0bf66111606b69c33f82d8521df8f6f83dc3d482801feee6e73b0f95bdecf9",
+          "kvra.reservation_id": "500dfaa99df54a39aa69eed0516f7057",
+          "kvra.run_id": "prod-quality-bf16xqa-full1719-c128-r0-20261027b"
+        },
+        "name": "kvra-500dfaa99df54a39aa69-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia1",
+            "PathOnHost": "/dev/nvidia1"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "42aa61f8a91ba8d6c1c752989555cfc2650a0b29b3a26e53184c5af56743dde9",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "3b72ba89c26e8fb6250384cc1291292946f7ca4f4b3262485dcf41377456d0f3",
+          "kvra.reservation_id": "047d81d05ff34f03aae83d933ffb9abc",
+          "kvra.run_id": "prod-sharegpt-bf16xqa-c128-r2-20261027c"
+        },
+        "name": "kvra-047d81d05ff34f03aae8-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia1",
+            "PathOnHost": "/dev/nvidia1"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "0ffe97ca5dd246077abba7926bac07f3ad934941cc5c644fa2fda747ea9cbc95",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "fp8_e4m3",
+          "kvra.request_sha256": "3b72ba89c26e8fb6250384cc1291292946f7ca4f4b3262485dcf41377456d0f3",
+          "kvra.reservation_id": "047d81d05ff34f03aae83d933ffb9abc",
+          "kvra.run_id": "prod-sharegpt-bf16xqa-c128-r2-20261027c"
+        },
+        "name": "kvra-047d81d05ff34f03aae8-fp8_e4m3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-a6169058-34c8-6edc-e4f5-779bf9a10421"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia2",
+            "PathOnHost": "/dev/nvidia2"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "e3f7adc4eba7e53574840ca0f517ec63409959995cf908eb755a73a0c9dd9ad5",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "fp8_e4m3",
+          "kvra.request_sha256": "e01e5181d31997959721aeada04ea774b679adea40c31b0b0b9eb203f749acd8",
+          "kvra.reservation_id": "731b4fd01ce44f3680475e05f48d36e4",
+          "kvra.run_id": "prod-trace-bf16xqa-toolagent-s025-r0-20261027b"
+        },
+        "name": "kvra-731b4fd01ce44f368047-fp8_e4m3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia4",
+            "PathOnHost": "/dev/nvidia4"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "21e0cee957c4fa02008a849b8993a0cdb7208be516090b4d6a6895f3ba124b18",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "fp8_e4m3",
+          "kvra.request_sha256": "95f7cd1c11aa6361d55cb6aaca4b74343171039717b8f1fc02f3b52524477d6f",
+          "kvra.reservation_id": "c32ff63230554280b5a382c397641b0e",
+          "kvra.run_id": "prod-trace-bf16xqa-toolagent-s0125-r0-20261027a"
+        },
+        "name": "kvra-c32ff63230554280b5a3-fp8_e4m3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0cb28538-7e9f-1b66-750f-1b53ff309195"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia3",
+            "PathOnHost": "/dev/nvidia3"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "7b62ded7ea50aec0f7a8eb0fb225339589488fe3658c82ce7fb1ca1fdfa3b9b3",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "92573636f2a4db405f537a89984a0eb1b206729aceeb9a7eb752f35b57e10d67",
+          "kvra.reservation_id": "52362c17ae90459498d32636cea8fdec",
+          "kvra.run_id": "prod-quality-bf16xqa-full1719-r0-20261027a"
+        },
+        "name": "kvra-52362c17ae90459498d3-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-a6169058-34c8-6edc-e4f5-779bf9a10421"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia2",
+            "PathOnHost": "/dev/nvidia2"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "d851e6e6def39fe3e25982a67ab515db0449edc82d9ceb2dc34ed3264cb8f4c5",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "e01e5181d31997959721aeada04ea774b679adea40c31b0b0b9eb203f749acd8",
+          "kvra.reservation_id": "731b4fd01ce44f3680475e05f48d36e4",
+          "kvra.run_id": "prod-trace-bf16xqa-toolagent-s025-r0-20261027b"
+        },
+        "name": "kvra-731b4fd01ce44f368047-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia4",
+            "PathOnHost": "/dev/nvidia4"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "95f7cd1c11aa6361d55cb6aaca4b74343171039717b8f1fc02f3b52524477d6f",
+          "kvra.reservation_id": "c32ff63230554280b5a382c397641b0e",
+          "kvra.run_id": "prod-trace-bf16xqa-toolagent-s0125-r0-20261027a"
+        },
+        "name": "kvra-c32ff63230554280b5a3-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia1",
+            "PathOnHost": "/dev/nvidia1"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "a1f03d6e293cd51df9888c4ed1122e2bd668c727fc3b40eef2112e5eb646bf2f",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "fp8_e4m3",
+          "kvra.request_sha256": "95ccdf9380cd265bf52efe9db3b5062f4fe5d01f842baf3a8b6cf2af3b4b0dad",
+          "kvra.reservation_id": "47a22a125a7445448c3f7b04beba533f",
+          "kvra.run_id": "prod-sharegpt-bf16xqa-c128-r1-20261027b"
+        },
+        "name": "kvra-47a22a125a7445448c3f-fp8_e4m3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia1",
+            "PathOnHost": "/dev/nvidia1"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "cd03a07576243d151eb47ba7cece94a24c01a9d2d57b6c5b4ea12eecce6b4636",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "95ccdf9380cd265bf52efe9db3b5062f4fe5d01f842baf3a8b6cf2af3b4b0dad",
+          "kvra.reservation_id": "47a22a125a7445448c3f7b04beba533f",
+          "kvra.run_id": "prod-sharegpt-bf16xqa-c128-r1-20261027b"
+        },
+        "name": "kvra-47a22a125a7445448c3f-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-a6169058-34c8-6edc-e4f5-779bf9a10421"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia2",
+            "PathOnHost": "/dev/nvidia2"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "893feb0c3022d77c6e99fd165b3d9a9bc3ac9bf25154383c15c1f05e2ae0747e",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "fp8_e4m3",
+          "kvra.request_sha256": "80cf4fc281efb1d725a6c515f35d240a160f6faa37eee4a7a67d0285263dc38c",
+          "kvra.reservation_id": "aa69059868ce47eda68b67b09f525659",
+          "kvra.run_id": "prod-trace-xqa-conversation-s1-r0-20261027f"
+        },
+        "name": "kvra-aa69059868ce47eda68b-fp8_e4m3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0cb28538-7e9f-1b66-750f-1b53ff309195"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia3",
+            "PathOnHost": "/dev/nvidia3"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "df6b973c25478b9efc88cca68cc9d67907b584ffe742cbfdae8fdb416efa203f",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "fp8_e4m3",
+          "kvra.request_sha256": "48089c7882cb5acc183f546fe8ac2e2368195d46b2a33d97ac1ce94f58816c08",
+          "kvra.reservation_id": "db2844e7e0124add97b132bdc4c0a3e7",
+          "kvra.run_id": "prod-trace-xqa-synthetic-s1-r0-20261027f"
+        },
+        "name": "kvra-db2844e7e0124add97b1-fp8_e4m3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "000a13c048611e8e3554948655e8e9d3b1b7700f6045eee8b2f85abc62499e7c",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "fp8_e4m3",
+          "kvra.request_sha256": "8558d6e50d1e8f64a33ead9f830a9d89a68b5d7c4489c409dcff1ad7e4972ccf",
+          "kvra.reservation_id": "8bba182cacaf448fbddc5d7a1c8eae5f",
+          "kvra.run_id": "prod-trace-xqa-burstgpt-s1-r0-20261027f"
+        },
+        "name": "kvra-8bba182cacaf448fbddc-fp8_e4m3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia4",
+            "PathOnHost": "/dev/nvidia4"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "adc435342fe2e7ff91dc3129a6f3393c0589ec44dd90f7d91e35e81290b7e4c8",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "6b6e8cec91b6bec5f679589bbdc41b77973a68ee114f2e333bdebc33b288f211",
+          "kvra.reservation_id": "091ed00a7ebf4a1abfc13e3630d902f3",
+          "kvra.run_id": "prod-sharegpt-bf16xqa-c128-r0-20261027a"
+        },
+        "name": "kvra-091ed00a7ebf4a1abfc1-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0cb28538-7e9f-1b66-750f-1b53ff309195"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia3",
+            "PathOnHost": "/dev/nvidia3"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "34952b49e8a2af49b4eb142df57155567b1f3656622ca212f178d54e49098a27",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "48089c7882cb5acc183f546fe8ac2e2368195d46b2a33d97ac1ce94f58816c08",
+          "kvra.reservation_id": "db2844e7e0124add97b132bdc4c0a3e7",
+          "kvra.run_id": "prod-trace-xqa-synthetic-s1-r0-20261027f"
+        },
+        "name": "kvra-db2844e7e0124add97b1-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-a6169058-34c8-6edc-e4f5-779bf9a10421"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia2",
+            "PathOnHost": "/dev/nvidia2"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "6ccd2af3024d0f069d663f10982c80b493ed9572692fd95a0f7f48daffa74771",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "80cf4fc281efb1d725a6c515f35d240a160f6faa37eee4a7a67d0285263dc38c",
+          "kvra.reservation_id": "aa69059868ce47eda68b67b09f525659",
+          "kvra.run_id": "prod-trace-xqa-conversation-s1-r0-20261027f"
+        },
+        "name": "kvra-aa69059868ce47eda68b-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "3655813d4aebface7ddf316253ad04694dafa9619b49185275ba96a24027b33e",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "8558d6e50d1e8f64a33ead9f830a9d89a68b5d7c4489c409dcff1ad7e4972ccf",
+          "kvra.reservation_id": "8bba182cacaf448fbddc5d7a1c8eae5f",
+          "kvra.run_id": "prod-trace-xqa-burstgpt-s1-r0-20261027f"
+        },
+        "name": "kvra-8bba182cacaf448fbddc-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia1",
+            "PathOnHost": "/dev/nvidia1"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "269d169ecaba0abdfefc7ed0f8fab5f715cdef77320ddd1370d95d6c1f481c43",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "fp8_e4m3",
+          "kvra.request_sha256": "b138f43d115f59f3bb1a543a38818487ee08e733f24774b2acc6f18972dd04c6",
+          "kvra.reservation_id": "a4020a4bb93f4ab68fc89adb66dc3f39",
+          "kvra.run_id": "prod-trace-xqa-toolagent-s1-r2-20261027c"
+        },
+        "name": "kvra-a4020a4bb93f4ab68fc8-fp8_e4m3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia1",
+            "PathOnHost": "/dev/nvidia1"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "4832bb6f45b4e600784d24bab4e855a61266488958778c05b9d2315a219b32aa",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "b138f43d115f59f3bb1a543a38818487ee08e733f24774b2acc6f18972dd04c6",
+          "kvra.reservation_id": "a4020a4bb93f4ab68fc89adb66dc3f39",
+          "kvra.run_id": "prod-trace-xqa-toolagent-s1-r2-20261027c"
+        },
+        "name": "kvra-a4020a4bb93f4ab68fc8-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-a6169058-34c8-6edc-e4f5-779bf9a10421"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia2",
+            "PathOnHost": "/dev/nvidia2"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "7f95c39654e6aaf7f5ab392c95981ff2d9030c1699bfca8ddef52b7bae1769ef",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "fp8_e4m3",
+          "kvra.request_sha256": "664eca417d5b436101e4303b0f6a69a723853ee563aa9735190bef56792e9f8d",
+          "kvra.reservation_id": "c1a2fe13422347aa9e716f57e426af2c",
+          "kvra.run_id": "prod-sharegpt-xqa-c128-r2-20261027a"
+        },
+        "name": "kvra-c1a2fe13422347aa9e71-fp8_e4m3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-a6169058-34c8-6edc-e4f5-779bf9a10421"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia2",
+            "PathOnHost": "/dev/nvidia2"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "bc946c085f068992695ffc49cf9b672722eb34f9861217dead4a4ce1717be7bb",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "664eca417d5b436101e4303b0f6a69a723853ee563aa9735190bef56792e9f8d",
+          "kvra.reservation_id": "c1a2fe13422347aa9e716f57e426af2c",
+          "kvra.run_id": "prod-sharegpt-xqa-c128-r2-20261027a"
+        },
+        "name": "kvra-c1a2fe13422347aa9e71-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "1028583c807afa9a366eb78099bc044cb99faab416a8c47d3835f36673cbf954",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "c1f22aa21dbbd71ecb9f967b26549119e9da77545c0a761ce279bcb74dc48118",
+          "kvra.reservation_id": "6aea4e6f92084ccc84cedad5b9c0496f",
+          "kvra.run_id": "prod-quality-xqa-missingbf16-1639-r0-20261026b"
+        },
+        "name": "kvra-6aea4e6f92084ccc84ce-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "b7a3d1eceb2019698e87c1637a236b3348448b74cdaaf6e9f49456665e9c0699",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "fp8_e4m3",
+          "kvra.request_sha256": "d4fde8874284646642ca87dadec77eca1a1335b873af478d5c936884f7c14769",
+          "kvra.reservation_id": "9cdbdf2dcf954708b81a0a7b8ea2d253",
+          "kvra.run_id": "prod-quality-xqa-completion1639-r0-20261026a"
+        },
+        "name": "kvra-9cdbdf2dcf954708b81a-fp8_e4m3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "a8c504756016ac8287f6d9f125a4c293427d03e039839227f470353587bfb4ac",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "a87605d9e55d84e562fbd4aa1a6e49e9dedeb72ed12985228335aff241ea29ec",
+          "kvra.reservation_id": "34fa151a75134b97a5d133763c46813d",
+          "kvra.run_id": "prod-quality-xqa-pilot80-r0-20261026c"
+        },
+        "name": "kvra-34fa151a75134b97a5d1-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "6cabf269efb02555df6dcdb1659ed7e8406d39d600f28f3942f1f334a57761a9",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "fp8_e4m3",
+          "kvra.request_sha256": "a87605d9e55d84e562fbd4aa1a6e49e9dedeb72ed12985228335aff241ea29ec",
+          "kvra.reservation_id": "34fa151a75134b97a5d133763c46813d",
+          "kvra.run_id": "prod-quality-xqa-pilot80-r0-20261026c"
+        },
+        "name": "kvra-34fa151a75134b97a5d1-fp8_e4m3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "67d78d1637975b689ddaeaedb0908ecffd4da82e7a98d9fdb31a3b280a0632ef",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "fp8_e4m3",
+          "kvra.request_sha256": "aeee474caf8429d4c1e8f020ff37d5854f6e35a163dc52b947b72df20d73f6a4",
+          "kvra.reservation_id": "9f3dae8f4cae4e3dadf2f0a3d1a4de2a",
+          "kvra.run_id": "prod-quality-xqa-pilot80-r0-20261026b"
+        },
+        "name": "kvra-9f3dae8f4cae4e3dadf2-fp8_e4m3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "1033c404dedd8ea8cb8aafda6315c59ccc46ebc5341af0ba978345e8484ee056",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "fp8_e4m3",
+          "kvra.request_sha256": "f36a4110704d9876956c2e5447d2c2a7eb224a803d3ff14c35b277fa2d39977a",
+          "kvra.reservation_id": "ec6d0008eff54198b000fe85b5920e58",
+          "kvra.run_id": "prod-quality-xqa-pilot80-r0-20261026a"
+        },
+        "name": "kvra-ec6d0008eff54198b000-fp8_e4m3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "a9c126cdcc27aa17fe99bceb227e278a9e3ff145d220176ab048d7e65ff551d9",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "fp8_e4m3",
+          "kvra.request_sha256": "40cee39446a977671ec5dcdf7736b086a5fc917bb2fc0c83077a3221f16fac91",
+          "kvra.reservation_id": "986b318628de44439fb3082fedc59265",
+          "kvra.run_id": "prod-quality-fa3-completion1639-r0-20261026b"
+        },
+        "name": "kvra-986b318628de44439fb3-fp8_e4m3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "080b2a226f7e9533dcda132128f9bce2c26efc7cbce1d82e074c61e7e74fe052",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "40cee39446a977671ec5dcdf7736b086a5fc917bb2fc0c83077a3221f16fac91",
+          "kvra.reservation_id": "986b318628de44439fb3082fedc59265",
+          "kvra.run_id": "prod-quality-fa3-completion1639-r0-20261026b"
+        },
+        "name": "kvra-986b318628de44439fb3-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "12baf15b8c9a23b6888c9967fc20f3cc3e36796dcbf10d5c4a13562b3b105b0a",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "fp8_e4m3",
+          "kvra.request_sha256": "3e804153c10e468fd00d347ed480d32348e902cf61597ea81be15cf531be46cc",
+          "kvra.reservation_id": "52d153bbdfaa44b8a02e5eb627a3e1d7",
+          "kvra.run_id": "prod-quality-fa3-pilot80-r0-20261026b"
+        },
+        "name": "kvra-52d153bbdfaa44b8a02e-fp8_e4m3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "b01c324b0402b85c811c9a7594f2c2b8529b6d781105201b877aa890859fac0e",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "3e804153c10e468fd00d347ed480d32348e902cf61597ea81be15cf531be46cc",
+          "kvra.reservation_id": "52d153bbdfaa44b8a02e5eb627a3e1d7",
+          "kvra.run_id": "prod-quality-fa3-pilot80-r0-20261026b"
+        },
+        "name": "kvra-52d153bbdfaa44b8a02e-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "40638335a7a9c47165a0787b42ddc48fa226f0b1707d39cc8273ef316e571ab4",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "fp8_e4m3",
+          "kvra.request_sha256": "1a250de50252e27b54d81990afc64bebfe8ac986deb9205e47910e5093193d99",
+          "kvra.reservation_id": "dddeb0f9c96e448daf7685aa3151ab45",
+          "kvra.run_id": "prod-sharegpt-fa3-c128-r0-20261026b"
+        },
+        "name": "kvra-dddeb0f9c96e448daf76-fp8_e4m3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "179e695ee89a11698ae40224b19eb2091c0285e738e15bc18b0c610279f3c3d5",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "1a250de50252e27b54d81990afc64bebfe8ac986deb9205e47910e5093193d99",
+          "kvra.reservation_id": "dddeb0f9c96e448daf7685aa3151ab45",
+          "kvra.run_id": "prod-sharegpt-fa3-c128-r0-20261026b"
+        },
+        "name": "kvra-dddeb0f9c96e448daf76-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "8b9d7c71f0f8909b30717b04f215e5e61290df94b08415ba1378cfe551886eef",
+        "label_count": 8,
+        "labels": {
+          "kvra.arm": "bf16",
+          "kvra.request_sha256": "136fe20aacd1a285bc1ceac6905aa6b2df5e6f6b733d8ef075855140cef79be2",
+          "kvra.reservation_id": "b6789090d3d8401a8b638e5aa30140b6",
+          "kvra.run_id": "native-fixed16k512-c4-r0-20261026a"
+        },
+        "name": "kvra-b6789090d3d8401a8b63-bf16",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": -1,
+            "DeviceIDs": null,
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "1051047e4b72715e37b9f2f901c4eadbae37a11ed368a19670ee80891b1483d6",
+        "label_count": 3,
+        "labels": {},
+        "name": "slsong-claude",
+        "status": "exited",
+        "user": ""
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "7"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia7",
+            "PathOnHost": "/dev/nvidia7"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "dd8c73d7d4f510ffb2861624343d1af8ed195a96f3b6b35dc3da8c6df4d8d5ca",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-overnight-20261020-v2-Q-repair-v4-g7",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "5"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia5",
+            "PathOnHost": "/dev/nvidia5"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "e35cefa4879a0da36ff1fa811097db25567451a745d52348e1884ee533ba9070",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-overnight-20261020-v2-Q-repair-v4-g5",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "3"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia3",
+            "PathOnHost": "/dev/nvidia3"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "0da24b2123132a0e3a73673f22b4d5bc1c61e12e388afdf23e51bfedda7cf73e",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-overnight-20261020-v2-Q-repair-v4-g3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "1"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia1",
+            "PathOnHost": "/dev/nvidia1"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "9ef5220aee4056b48615055132749021ea2101a926013e02315374c293d065a0",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-overnight-20261020-v2-Q-repair-v4-g1",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "7"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia7",
+            "PathOnHost": "/dev/nvidia7"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "c186e7cf5633597eb7b39000765cb7efb82f42e65528f9fe6f0c0fc8fc0e2183",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-overnight-20261020-v2-Q-repair-v3-g7",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "5"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia5",
+            "PathOnHost": "/dev/nvidia5"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "7dc3d3bae7c38814f999e14b2e1b02a4341c21520a0a833035d09af972a4b988",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-overnight-20261020-v2-Q-repair-v3-g5",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "3"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia3",
+            "PathOnHost": "/dev/nvidia3"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "4ceb3a342a2f399e8ba4554ed853606101a37113a2d846a691ab8cc55f0fe835",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-overnight-20261020-v2-Q-repair-v3-g3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "1"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia1",
+            "PathOnHost": "/dev/nvidia1"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "0fdcb1d5cdf9f7790d3a60fc6953fea15aa95f10136237073acddf1214fb3485",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-overnight-20261020-v2-Q-repair-v3-g1",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "7"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia7",
+            "PathOnHost": "/dev/nvidia7"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "fe275326126a5c24dcc8325912e5e51c77e7697d9f4944d40c2e1021bf8036ae",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-qwen25-overnight-20261020-v2-Q-g7",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "6"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia6",
+            "PathOnHost": "/dev/nvidia6"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "cb402626e1835eabf15259db8e34a000b063483e5bbc4c5b49749ad667e8bfab",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-qwen25-overnight-20261020-v2-Q-g6",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "5"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia5",
+            "PathOnHost": "/dev/nvidia5"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "ac0907fcc959fe712f0285a286790b711f31fe2aebcb39841062d5c1cee72568",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-qwen25-overnight-20261020-v2-Q-g5",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "4"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia4",
+            "PathOnHost": "/dev/nvidia4"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "1c275afdde9a2a2dee66bf7d247b4140d0d68363dfb7c816bf422b691486dde4",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-qwen25-overnight-20261020-v2-Q-g4",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "3"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia3",
+            "PathOnHost": "/dev/nvidia3"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "fb5cef61477531ca8c4927bf962e4da3f95d5bac7a9c21d55b8fa8a9794c6e3a",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-qwen25-overnight-20261020-v2-Q-g3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "2"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia2",
+            "PathOnHost": "/dev/nvidia2"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "9fd05abb2434968727dae842f513f7761a4ed1c6bb4768de85ddd8b01b5a3ca1",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-qwen25-overnight-20261020-v2-Q-g2",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "1"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia1",
+            "PathOnHost": "/dev/nvidia1"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "c401ac50ac8006d761c05a16fd5d3ce08985bafb61714c9b438ac247e1f32b47",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-qwen25-overnight-20261020-v2-Q-g1",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "0"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "97ffb0e62724c5f7cdb71ccb7b231f83380870997aea36d9f452b2e273a26b99",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-qwen25-overnight-20261020-v2-Q-g0",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "7"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia7",
+            "PathOnHost": "/dev/nvidia7"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "5d33d9490ce2a447474b755d8477e0313df3ee355624828db07252e31864a633",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-overnight-20261020-v2-BC-g7",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "6"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia6",
+            "PathOnHost": "/dev/nvidia6"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "21da24b57b8fb0625e9b1ad0ddd65f3463f4606e7edae41e09ce3faff7898f70",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-overnight-20261020-v2-BC-g6",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "5"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia5",
+            "PathOnHost": "/dev/nvidia5"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "634eb445d9a111430e07a8275346a7479d2c7a8ddb2104f94496c954256d817a",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-overnight-20261020-v2-BC-g5",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "4"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia4",
+            "PathOnHost": "/dev/nvidia4"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "63e546ecca83566aed65b7a1a395f488f56515e325306b1cae7fd3adbe8743ef",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-overnight-20261020-v2-BC-g4",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "3"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia3",
+            "PathOnHost": "/dev/nvidia3"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "2a8a54437a7ea686fa94cadbecb334a51e17c9651854994d31dad7f6e10d07e2",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-overnight-20261020-v2-BC-g3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "2"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia2",
+            "PathOnHost": "/dev/nvidia2"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "7c353901abf02f0b90246bce2c9cc36a0e95e8d48034b7e898e4b44a5d171616",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-overnight-20261020-v2-BC-g2",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "1"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia1",
+            "PathOnHost": "/dev/nvidia1"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "277fa33be908e989fc665d2449e044d4bcdc6f3db76cbca0130d3bd70119d7ed",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-overnight-20261020-v2-BC-g1",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "0"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "2d3b0e66f0b8df3da4200f7caff9bf52d4ee984af9bd63ecb4ee024b0e8f4d60",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-overnight-20261020-v2-BC-g0",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "7"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia7",
+            "PathOnHost": "/dev/nvidia7"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "73e440de1d441d0ba58377ab95cd82cf0d96f0e0f07b502a21d162d5279fd686",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v5-g7",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "6"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia6",
+            "PathOnHost": "/dev/nvidia6"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "c6fe5e67b02dd7da4bbd6e2226ed8ae60a49e98b8f3762d1e0defb10f503a8eb",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v5-g6",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "5"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia5",
+            "PathOnHost": "/dev/nvidia5"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "05df23d50bfdd4f3711b5e9c0b247bfef1099bb2090ebee6f58a261c524c660a",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v5-g5",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "4"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia4",
+            "PathOnHost": "/dev/nvidia4"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "c4f40fea429f26c381ba9b0d34b31cb61cb14c36d21e35b20168386ed48f616a",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v5-g4",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "3"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia3",
+            "PathOnHost": "/dev/nvidia3"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "b22a921f46ec1bb8c476f4c96f5dc9fd2ff20ebd9da05a919c28e58d9f2d3321",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v5-g3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "2"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia2",
+            "PathOnHost": "/dev/nvidia2"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "baec357f28850848926d0f1acbac4d84a4561700ee74dd37cb8917858dd59184",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v5-g2",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "1"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia1",
+            "PathOnHost": "/dev/nvidia1"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "9e95e1c57f7c69010222d4477b507e57d629933458d56fcf43532e64525efa86",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v5-g1",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "0"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "08bd83d8c844e97f204e05026603a3ec2fbed7f4d0194d663ff4655aa6038a43",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v5-g0",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "7"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia7",
+            "PathOnHost": "/dev/nvidia7"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "22d36a230851a8ea49c4499077458cbd3d8a21317dc3ca090834023b93719303",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v3-g7",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "6"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia6",
+            "PathOnHost": "/dev/nvidia6"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "a1158114f9435343d03474687ceb8a64b92878a64438639ed925e76190ea0ca5",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v3-g6",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "5"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia5",
+            "PathOnHost": "/dev/nvidia5"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "780755350d3c15de27e8e4717c37c8b9932f601bf914ce4467daf70e7edcfe3a",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v3-g5",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "4"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia4",
+            "PathOnHost": "/dev/nvidia4"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "1be045ce945caaa73fedf91cc49d7753725acff739ef74b1b7853d0b4f420157",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v3-g4",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "3"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia3",
+            "PathOnHost": "/dev/nvidia3"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "2435a318bc93dfa5603e23e71b6d08499ed89b70fc87bb4acb19e672e10d0299",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v3-g3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "2"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia2",
+            "PathOnHost": "/dev/nvidia2"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "0b50f0ccb0102e67f6533855d624d6ad82323a83f5b13dccb8cc34b264db79ca",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v3-g2",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "1"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia1",
+            "PathOnHost": "/dev/nvidia1"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "98ae2b70cec933ee869a83f7a831499e25add9f4dfcade97219d17cf4934a75e",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v3-g1",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "0"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "d65c033805906072ae70b88153f0b11ef007322325351e15497d3924289d7117",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v3-g0",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-47211491-ba0d-78bf-5c84-f968c0648213"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia7",
+            "PathOnHost": "/dev/nvidia7"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "35a899f6f23bf618a33a394385dd6f6cb27d9b14130ba11c8f65a1c14ebf8238",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v2-g7",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia6",
+            "PathOnHost": "/dev/nvidia6"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "ad838e3cf62b6e0c0d3dd9a46fbf3b076809f6ea6d6cd7dba9761a17307737d8",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v2-g6",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia5",
+            "PathOnHost": "/dev/nvidia5"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "a50e39a5cfde1f1ba211535446360762f43b4b682380a4e2da5b66c81e081652",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v2-g5",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia4",
+            "PathOnHost": "/dev/nvidia4"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "4919d2d0fcf94b1bf6c11629b66153170bfd535876aebc2897817a0627a416d0",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v2-g4",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0cb28538-7e9f-1b66-750f-1b53ff309195"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia3",
+            "PathOnHost": "/dev/nvidia3"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "6801931025e4cb7ace462ee4a2a31685f61729bd5f308f7214205f6f6c4bb9e4",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v2-g3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-a6169058-34c8-6edc-e4f5-779bf9a10421"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia2",
+            "PathOnHost": "/dev/nvidia2"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "0a11d3d7832495d954bb68cc5b74a75e695125227ca963f42ebca9b40008a4f6",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v2-g2",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia1",
+            "PathOnHost": "/dev/nvidia1"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "da974be5fea36e4c3334434c7ab68b7daa526b7f6acbd500f5f4e11fd3905750",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v2-g1",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia0",
+            "PathOnHost": "/dev/nvidia0"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "0b4e7513ff83301c44ff08ac76aad78ab3b1ed21fd7e899b8170d2677be455ef",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v2-g0",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-47211491-ba0d-78bf-5c84-f968c0648213"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "c57cccbd8c95d60281a96ede58f1ca8e93f5b587963bc6ff87b90715cbc0bc93",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v1-g7",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "fb170a2eaef7cf3b7acc6e7a5bb7cffed34cd1ae4527bb531d43dd223c20ea1f",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v1-g6",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "fadcbf7a285b956c6d45c6eaac2bc39154e004b0a83022e65b5b98d6d96da1dc",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v1-g5",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "7977b8a3463fe3450cba7219009ac8b93c90dda3d77c74bf165229d6e713c473",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v1-g4",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0cb28538-7e9f-1b66-750f-1b53ff309195"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "dfbfd90f31d827019a76e2c66040e28cdeee902fb6c948b438cf46006b64ac10",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v1-g3",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-a6169058-34c8-6edc-e4f5-779bf9a10421"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "10f1da923fc5a77ca2868611b7effe251c14bf34b35bb34675d249b29498a1fa",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v1-g2",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "9017086e4f9f71f43101db2e3dc686d0be40ec483eee05977c709bd626ef3eb3",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v1-g1",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "eff50a374dd0c83d72f83c3f3c99cac3e2ebe090b50be578cb8ce5f617533cf6",
+        "label_count": 5,
+        "labels": {},
+        "name": "cjyu-h800-formal-8gpu-20261019-v1-g0",
+        "status": "exited",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "7"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia7",
+            "PathOnHost": "/dev/nvidia7"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "096bf33f0b9d71eb45254a6b41f2999b98efd9e1dcccf21f30282c6a1e5723a3",
+        "label_count": 4,
+        "labels": {},
+        "name": "cjyu-xllm-h800-build",
+        "status": "running",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "7"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia7",
+            "PathOnHost": "/dev/nvidia7"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidiactl",
+            "PathOnHost": "/dev/nvidiactl"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm",
+            "PathOnHost": "/dev/nvidia-uvm"
+          },
+          {
+            "CgroupPermissions": "rwm",
+            "PathInContainer": "/dev/nvidia-uvm-tools",
+            "PathOnHost": "/dev/nvidia-uvm-tools"
+          }
+        ],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "05f5965a7bcbd7c3d3bbbf3ad78fbee4f5f363335edd73016852ba61dbfe17a8",
+        "label_count": 4,
+        "labels": {},
+        "name": "cjyu-xllm-h800-cu130-v2",
+        "status": "running",
+        "user": "1005:1005"
+      },
+      {
+        "DeviceRequests": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": 0,
+            "DeviceIDs": [
+              "7"
+            ],
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "Devices": [],
+        "Privileged": false,
+        "Runtime": "nvidia",
+        "id": "1024c4b1c64742814d4c1d38ca27f7af937909dd154fdec9dd7bacb1ce89566c",
+        "label_count": 4,
+        "labels": {},
+        "name": "cjyu-xllm-h800-cu130",
+        "status": "running",
+        "user": "1005:1005"
+      }
+    ],
+    "docker_total_seen": 142,
+    "docker_truncated_at_128": true,
+    "gid": 1005,
+    "gpu_processes": [
+      {
+        "argv_redacted_prefix_200": "VLLM::Worker_TP0_EP0",
+        "argv_sha256": "c0915e4cbc67fd03d7f1079edbb8014a2a8b7cfd539f03391560085212940d82",
+        "argv_truncated": false,
+        "comm": "VLLM::Worker_TP",
+        "gpu_uuid": "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a",
+        "is_vllm_argv": true,
+        "pid": 2171585,
+        "redacted_slots_or_args": 0,
+        "uid": 0
+      },
+      {
+        "argv_redacted_prefix_200": "VLLM::Worker_TP1_EP1",
+        "argv_sha256": "b50fd1d02b0b8b0e2419b4c7bb7da5921f64d793dc892689d42db24b62ab1f93",
+        "argv_truncated": false,
+        "comm": "VLLM::Worker_TP",
+        "gpu_uuid": "GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7",
+        "is_vllm_argv": true,
+        "pid": 2171586,
+        "redacted_slots_or_args": 0,
+        "uid": 0
+      },
+      {
+        "argv_redacted_prefix_200": "VLLM::Worker_TP2_EP2",
+        "argv_sha256": "4d40e62bae40ad0a820010d7c79f4c161fd8928dc0dcee0537764161e74bb081",
+        "argv_truncated": false,
+        "comm": "VLLM::Worker_TP",
+        "gpu_uuid": "GPU-a6169058-34c8-6edc-e4f5-779bf9a10421",
+        "is_vllm_argv": true,
+        "pid": 2171587,
+        "redacted_slots_or_args": 0,
+        "uid": 0
+      },
+      {
+        "argv_redacted_prefix_200": "VLLM::Worker_TP3_EP3",
+        "argv_sha256": "34714121fd945d4948cb322e41a52c00087cdc3c6ed80e775a5540be2ffb8b99",
+        "argv_truncated": false,
+        "comm": "VLLM::Worker_TP",
+        "gpu_uuid": "GPU-0cb28538-7e9f-1b66-750f-1b53ff309195",
+        "is_vllm_argv": true,
+        "pid": 2171588,
+        "redacted_slots_or_args": 0,
+        "uid": 0
+      },
+      {
+        "argv_redacted_prefix_200": "VLLM::Worker_TP4_EP4",
+        "argv_sha256": "184edc159715f4043b9c76bb0b734524226b038b9aacf08bd04ff9d350a14c2a",
+        "argv_truncated": false,
+        "comm": "VLLM::Worker_TP",
+        "gpu_uuid": "GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1",
+        "is_vllm_argv": true,
+        "pid": 2171589,
+        "redacted_slots_or_args": 0,
+        "uid": 0
+      },
+      {
+        "argv_redacted_prefix_200": "VLLM::Worker_TP5_EP5",
+        "argv_sha256": "ccaeff1bcfb2e50f3fd8290b9d6352c3a1280bbcd7596ccc2f8c445bd647470c",
+        "argv_truncated": false,
+        "comm": "VLLM::Worker_TP",
+        "gpu_uuid": "GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348",
+        "is_vllm_argv": true,
+        "pid": 2171590,
+        "redacted_slots_or_args": 0,
+        "uid": 0
+      },
+      {
+        "argv_redacted_prefix_200": "VLLM::Worker_TP6_EP6",
+        "argv_sha256": "86cf3cbd56af03ec30ab8a5a79520c5e7ec2e895f0b06dbaca7ee09129857b97",
+        "argv_truncated": false,
+        "comm": "VLLM::Worker_TP",
+        "gpu_uuid": "GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7",
+        "is_vllm_argv": true,
+        "pid": 2171591,
+        "redacted_slots_or_args": 0,
+        "uid": 0
+      },
+      {
+        "argv_redacted_prefix_200": "VLLM::Worker_TP7_EP7",
+        "argv_sha256": "6325d749d11f0fd64051bb25f20c99481bea8f3c97cb822691c286fbf66c3c76",
+        "argv_truncated": false,
+        "comm": "VLLM::Worker_TP",
+        "gpu_uuid": "GPU-47211491-ba0d-78bf-5c84-f968c0648213",
+        "is_vllm_argv": true,
+        "pid": 2171592,
+        "redacted_slots_or_args": 0,
+        "uid": 0
+      }
+    ],
+    "gpu_rows": [
+      "0, GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 75057, 0",
+      "1, GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 75057, 100",
+      "2, GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 75057, 100",
+      "3, GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 75057, 100",
+      "4, GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 75057, 100",
+      "5, GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 75057, 100",
+      "6, GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 75057, 100",
+      "7, GPU-47211491-ba0d-78bf-5c84-f968c0648213, 75057, 100"
+    ],
+    "hostname": "A03-R40-I18-195-B000010.JD.LOCAL",
+    "observed_at_utc": "2026-10-28T07:03:02.368132+00:00",
+    "ok": true,
+    "uid": 1005
+  },
+  "schema": "h800-shared-resource-s0-readonly-luna-v1"
+}

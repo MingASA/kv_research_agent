@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-30T20:02:31.980100+00:00",
+  "phase": "local_service_archive_spec_and_dependent_read",
+  "first_error": "AttributeError list object has no attribute get; an operations JSON was a list",
+  "dependent_step_also_called": true,
+  "dependent_error_stderr_sha256": "8695a626c2a39176df9fadfddbc9e92b8053bcef5d5cf0a99b331cd4ca1a7428",
+  "archive_output_directory_created": false,
+  "GPU_or_remote_actions": false,
+  "repair": "Filter to dictionary schemas, inspect successful exit code before dependent archive; retain originalfailedlogs."
+}

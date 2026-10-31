@@ -1,0 +1,9 @@
+test_atomic_progress_rename_retries_a_full_scan_and_counts_final_file (test_output_tree_accounting.OutputTreeAccountingTests) ... ok
+test_continuous_disappearance_stops_after_three_scans_instead_of_zero_usage (test_output_tree_accounting.OutputTreeAccountingTests) ... ok
+test_files_and_symlink_metadata_are_counted_without_following_outside_root (test_output_tree_accounting.OutputTreeAccountingTests) ... ok
+test_permission_or_other_accounting_error_is_never_silenced (test_output_tree_accounting.OutputTreeAccountingTests) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.004s
+
+OK

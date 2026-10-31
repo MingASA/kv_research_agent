@@ -1,0 +1,22 @@
+{
+  "observed_utc": "2026-10-26T04:40:09.241987+00:00",
+  "repo": "/home/mingasa/projects/xllm_quant_kvcache",
+  "results": {
+    "head": {
+      "rc": 0,
+      "stdout": "ceff00bbd38054d2b6b4aa44513d773f2bd174b2\n",
+      "stderr": ""
+    },
+    "status": {
+      "rc": 0,
+      "stdout": " M third_party/xllm_ops\n?? CMakeFiles/\n?? CODEX_5060_FLASHINFER_TASK_CORRECTED.md\n?? CODEX_5060_FLASHINFER_TASK_CORRECTED.md:Zone.Identifier\n?? Codex_14B_JointKV_Short_Task.md\n?? Codex_14B_JointKV_Short_Task.md:Zone.Identifier\n?? docs/flashinfer-int8-support-probe-20261007.md\n?? results/flashinfer-default-scheduler-20261010/\n?? results/flashinfer-default-token-budget-20261010/\n?? results/flashinfer-govreport-20261011/\n?? results/flashinfer-govreport-seq256-20261011/\n?? results/flashinfer-mixed-v2-20261010/formal-two-passes/\n?? results/flashinfer-mixed-v2-20261010/formal_launch_review.md\n?? results/flashinfer-mixed-v2-20261010/full-suite/trace_gsm8k.jsonl\n?? results/flashinfer-mixed-v2-20261010/full-suite/trace_longbench.jsonl\n?? results/flashinfer-mixed-v2-20261010/full-suite/trace_quality.jsonl\n?? results/flashinfer-mixed-v2-20261010/gates/\n?? results/flashinfer-mixed-v2-20261010/kernel_calibration.json\n?? results/flashinfer-mixed-v2-20261010/runner-smoke/trace_longbench.jsonl\n?? results/flashinfer-mixed-v2-20261010/runner-smoke/trace_quality.jsonl\n?? results/flashinfer-mixed-v2-20261010/status.json\n?? results/flashinfer-original-scheduler-20261010/\n?? results/flashinfer-scheduler-budget-20261010/\n?? results/flashinfer-service-profile-20261011/\n?? results/flashinfer-service-seq256-20261011/\n?? results/hopper-adaptation-smoke-20261016/\n?? results/kernel-ncu-round2-20261014/\n?? results/kernel-ncu-round3-20261015/\n?? results/kernel-ncu-round4-20261015/\n?? results/kernel-performance-round2-20261014/\n?? results/kernel-performance-round3-20261015/\n?? results/kernel-performance-round4-20261015/\n?? results/kernel-variant-performance-20261014/\n?? results/kernel-variant-validation-20261014/\n?? results/kernel-variant-validation-round2-20261014/\n?? results/kernel-variant-validation-round3-20261014/\n?? results/kernel-variant-validation-round4-20261015/\n?? results/mixed-v-cache-20261009/\n?? results/mixed-v-cache-20261010/\n?? results/operator-ablation-producer-decode-20261013/\n?? results/operator-ablation-warps2-20261013/\n",
+      "stderr": ""
+    },
+    "branch": {
+      "rc": 0,
+      "stdout": "bugfix/native-fp8-graph-admission\n",
+      "stderr": ""
+    }
+  },
+  "our_source_modifications": 0
+}

@@ -1,0 +1,142 @@
+{
+  "classification": "confirmed_input_and_loader_audit_only",
+  "gpu_experiment": false,
+  "traces": {
+    "conversation_trace": {
+      "sha256": "b8cbb061a85206d729d91cdc2981f43c9e0d99209dce588d3af5f7934408b9df",
+      "requests": 12031,
+      "timestamp_unit": "ms",
+      "timestamp_monotonic": true,
+      "duration_seconds": 3536.999,
+      "input_tokens": {
+        "min": 891,
+        "mean": 12035.061341534369,
+        "p50": 6909.0,
+        "p95": 39550.5,
+        "p99": 85400.4,
+        "max": 126195
+      },
+      "output_tokens": {
+        "min": 1,
+        "mean": 342.6189011719724,
+        "p50": 350.0,
+        "p95": 698.0,
+        "p99": 1118.5000000000036,
+        "max": 2000
+      },
+      "zero_outputs": 0,
+      "over_32k_input_plus_output": 846,
+      "unbounded_previous_prefix_token_fraction": 0.373379905854133,
+      "prefix_reference_scope": "source 512-token blocks with unlimited retention; not engine cache hits",
+      "old_264_source_mapping_verified": true,
+      "origin_line_number_base": 1,
+      "old_264_kept_fraction": 0.021943313107804837
+    },
+    "synthetic_trace": {
+      "sha256": "bd070915a98fc0ed264d7cfef2ce746002eb3076a695ec31ba2674c0111ec131",
+      "requests": 3993,
+      "timestamp_unit": "ms",
+      "timestamp_monotonic": true,
+      "duration_seconds": 1022.025,
+      "input_tokens": {
+        "min": 13,
+        "mean": 15325.476584022039,
+        "p50": 11587.0,
+        "p95": 48904.59999999993,
+        "p99": 66456.16,
+        "max": 191378
+      },
+      "output_tokens": {
+        "min": 1,
+        "mean": 149.11895817680943,
+        "p50": 69.0,
+        "p95": 519.0,
+        "p99": 768.0799999999999,
+        "max": 893
+      },
+      "zero_outputs": 0,
+      "over_32k_input_plus_output": 646,
+      "unbounded_previous_prefix_token_fraction": 0.6504309495925035,
+      "prefix_reference_scope": "source 512-token blocks with unlimited retention; not engine cache hits",
+      "old_264_source_mapping_verified": true,
+      "origin_line_number_base": 1,
+      "old_264_kept_fraction": 0.06611570247933884
+    },
+    "toolagent_trace": {
+      "sha256": "48a2db1a13d3bc05e6330140c64f604ba366df20d3c9e128b5c35a01c1fa5f71",
+      "requests": 23608,
+      "timestamp_unit": "ms",
+      "timestamp_monotonic": true,
+      "duration_seconds": 3536.999,
+      "input_tokens": {
+        "min": 891,
+        "mean": 8596.242121314808,
+        "p50": 6346.0,
+        "p95": 26110.499999999978,
+        "p99": 61660.78000000004,
+        "max": 126195
+      },
+      "output_tokens": {
+        "min": 1,
+        "mean": 182.1338952897323,
+        "p50": 30.0,
+        "p95": 600.0,
+        "p99": 897.9300000000003,
+        "max": 2000
+      },
+      "zero_outputs": 0,
+      "over_32k_input_plus_output": 743,
+      "unbounded_previous_prefix_token_fraction": 0.5703244707437886,
+      "prefix_reference_scope": "source 512-token blocks with unlimited retention; not engine cache hits",
+      "old_264_source_mapping_verified": true,
+      "origin_line_number_base": 1,
+      "old_264_kept_fraction": 0.011182649949169773
+    }
+  },
+  "sources": [
+    "https://github.com/kvcache-ai/Mooncake/blob/main/FAST25-release/README.md",
+    "https://github.com/HPMLL/BurstGPT/blob/main/README.md"
+  ],
+  "burstgpt_peak10m": {
+    "sha256": "c37d11d1befe1f9b742514b9c5bd1f65210b93a3aafaea135c741982a7a695cd",
+    "requests": 6385,
+    "timestamp_unit": "seconds",
+    "first_timestamp": 3063609,
+    "last_timestamp": 3064204,
+    "span_seconds": 595,
+    "declared_window_seconds": 600,
+    "offered_rps_over_600s": 10.641666666666667,
+    "one_second_peak_requests": 29,
+    "input_tokens": {
+      "min": 11,
+      "mean": 282.4311667971809,
+      "p50": 226.0,
+      "p95": 692.0,
+      "p99": 692.0,
+      "max": 1794
+    },
+    "output_tokens": {
+      "min": 1,
+      "mean": 4.694596711041504,
+      "p50": 4.0,
+      "p95": 4.0,
+      "p99": 16.159999999999854,
+      "max": 1182
+    },
+    "zero_outputs": 0,
+    "model_counts": {
+      "ChatGPT": 64,
+      "GPT-4": 6321
+    },
+    "session_ids_available": false,
+    "raw_text_available": false
+  },
+  "required_before_replay": [
+    "Use contiguous original windows and timestamp normalization; sparse 264-row samples are not full traces",
+    "Preserve 512 source-token prefix blocks regardless of xLLM page128; verify retokenized shared prefixes",
+    "Preserve open-loop arrivals with adequate inflight allowance; report offered/actual rate and drain time",
+    "Disclose missing semantic text and distinguish natural generation from response-length emulation",
+    "Account for original failed/zero-output requests and context filtering instead of fabricating successes",
+    "Normalize aggregate multi-model demand to a deployment instance explicitly; retain original burst shape"
+  ]
+}

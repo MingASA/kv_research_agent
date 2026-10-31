@@ -1,0 +1,68 @@
+...............F........................................................ [100%]
+=================================== FAILURES ===================================
+__ test_fa3_fp8_dispatch_converts_query_passes_scale_and_returns_model_dtype ___
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7d21d22ab4a0>
+
+    def test_fa3_fp8_dispatch_converts_query_passes_scale_and_returns_model_dtype(monkeypatch: pytest.MonkeyPatch) -> None:
+        # Real xLLM dispatch with CPU tensors; the CUDA conversion and FI kernel are explicit fixtures.
+        fake_fi = types.ModuleType("flashinfer"); fake_fi.__version__ = "0.6.18.post1"
+        fake_decode = types.ModuleType("flashinfer.decode"); fake_decode.fast_decode_plan = lambda *args, **kwargs: None
+        monkeypatch.setitem(sys.modules, "flashinfer", fake_fi)
+        monkeypatch.setitem(sys.modules, "flashinfer.decode", fake_decode)
+        # Existing tests may have previously imported the native backend with real/fake FI.
+        module = importlib.import_module("xllm.python.attention.flashinfer_fp8")
+        backend = module.FlashInferFP8Backend.__new__(module.FlashInferFP8Backend)
+        backend.num_heads, backend.head_dim = 2, 8
+        backend._fixed_scales = (.125, .0625)
+        backend._fp8_query_enabled, backend._fp8_query_scale = True, .5
+        backend._metadata = SimpleNamespace(is_prefill=True, is_chunked_prefill=False)
+        backend._fp8_caches = [(torch.zeros(1), torch.zeros(1))]
+        calls = []
+    
+        def _convert(query: torch.Tensor, scale: float) -> torch.Tensor:
+            calls.append((query.clone(), scale))
+            return (query / scale).to(torch.float8_e4m3fn)
+    
+        class Wrapper:
+            def run(self, query: torch.Tensor, pages: tuple, **kwargs: Any) -> torch.Tensor:
+                assert query.dtype == torch.float8_e4m3fn
+                assert kwargs == {"q_scale": .5, "k_scale": .125, "v_scale": .0625}
+                return query.to(torch.bfloat16) * .5
+    
+        monkeypatch.setattr(module, "quantize_query_fp8", _convert)
+        backend._prefill_paged_wrapper = Wrapper()
+        query = torch.ones(3, 2, 8, dtype=torch.bfloat16)
+>       output = backend.execute_attention(query, SimpleNamespace(layer_id=0))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/python/test_production_native_profile.py:84: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <xllm.python.attention.flashinfer_fp8.FlashInferFP8Backend object at 0x7d21d22ab6e0>
+q = tensor([[[1., 1., 1., 1., 1., 1., 1., 1.],
+         [1., 1., 1., 1., 1., 1., 1., 1.]],
+
+        [[1., 1., 1., 1., 1., ...., 1.]],
+
+        [[1., 1., 1., 1., 1., 1., 1., 1.],
+         [1., 1., 1., 1., 1., 1., 1., 1.]]], dtype=torch.bfloat16)
+layer = namespace(layer_id=0), k = None, v = None
+
+    def execute_attention(
+        self,
+        q: torch.Tensor,
+        layer: Attention,
+        k: torch.Tensor | None = None,
+        v: torch.Tensor | None = None,
+    ) -> torch.Tensor:
+        if self._metadata is None:
+            raise RuntimeError("FlashInferFP8Backend.prepare() was not called")
+>       if self._decode_impl == "xqa" and not (self._metadata.is_prefill or self._metadata.is_chunked_prefill):
+           ^^^^^^^^^^^^^^^^^
+E       AttributeError: 'FlashInferFP8Backend' object has no attribute '_decode_impl'
+
+xllm/python/attention/flashinfer_fp8.py:173: AttributeError
+=========================== short test summary info ============================
+FAILED tests/python/test_production_native_profile.py::test_fa3_fp8_dispatch_converts_query_passes_scale_and_returns_model_dtype
+1 failed, 71 passed in 2.82s

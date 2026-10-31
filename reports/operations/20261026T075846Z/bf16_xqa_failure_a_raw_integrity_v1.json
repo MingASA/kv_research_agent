@@ -1,0 +1,10 @@
+{
+  "classification": "confirmed_failure_raw_integrity_and_operator_output_no_service_success",
+  "files": 41,
+  "bytes": 5911811,
+  "terminal_status": "CONFLICT",
+  "old_kernel_exit_cause": "unverified_missing_flags",
+  "operator_checked": true,
+  "AIPerf_measurement_found": false,
+  "result_sha256": "b368624e3da8da834ee9fec931395665afe79cbe99f669709deb6f8b7a237713"
+}

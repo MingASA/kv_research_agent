@@ -1,0 +1,522 @@
+{
+  "endpoint": {
+    "fingerprint": "SHA256:QZwhu4BzgiOmHYABTUK1kXdAYHPun3iNioo69CKCgEI",
+    "host": "h800-41594a.fkpku.cn",
+    "port": 45291,
+    "user": "yinjinrun"
+  },
+  "excluded": [
+    {
+      "path": "cache",
+      "reason": "excluded_source_repo_or_cache",
+      "type": "directory"
+    },
+    {
+      "path": "source_repo",
+      "reason": "excluded_source_repo_or_cache",
+      "type": "directory"
+    }
+  ],
+  "files": [
+    {
+      "bytes": 85,
+      "mode": 384,
+      "path": "COMPLETE",
+      "sha256": "37915b45eb8caa3f0f2cd077d15170faf2e87b89166705ef3d360e108b680664"
+    },
+    {
+      "bytes": 98,
+      "mode": 384,
+      "path": "PREPARED.json",
+      "sha256": "a00d535f66adc925d657169a9bbe66766c7b32a16e6d0ab1666005bb87b92ea3"
+    },
+    {
+      "bytes": 86,
+      "mode": 384,
+      "path": "START_INTENT.json",
+      "sha256": "840c44bb5c948db9099060387fc53000c243e412a0d19ad7d4700e3b9f8f7ff7"
+    },
+    {
+      "bytes": 488,
+      "mode": 384,
+      "path": "SUPERVISOR_PROCESS.json",
+      "sha256": "74753ccc930e9e815cabdefde91758310a782bce51a8a315f282a6a587c4f27d"
+    },
+    {
+      "bytes": 571,
+      "mode": 384,
+      "path": "SUPERVISOR_STARTED.json",
+      "sha256": "4a61e4bbb0f77ce7105b9850d22884b15ce6a9ad5e154c1dd44bdb69aae934b2"
+    },
+    {
+      "bytes": 197,
+      "mode": 384,
+      "path": "WATCHDOG_FINISHED.json",
+      "sha256": "5ed1c039ac90bae26e54840ba0263abb8a1183af42f9255395a1950d644f3772"
+    },
+    {
+      "bytes": 572,
+      "mode": 384,
+      "path": "WATCHDOG_READY.json",
+      "sha256": "ce3315edd65bd22bb4ca2951dc089864ea96b5bb4f7454a1be9a9df97125b0eb"
+    },
+    {
+      "bytes": 0,
+      "mode": 384,
+      "path": "dispatch.lock",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 5094,
+      "mode": 384,
+      "path": "events.jsonl",
+      "sha256": "a08603e407fb414d8978ad04ebff2946d3cbb2eb958a89a0c3fcc07b3e953b2d"
+    },
+    {
+      "bytes": 1993108,
+      "mode": 384,
+      "path": "input/calibration.json",
+      "sha256": "c241e7e8c58d3be456de39ea080a33a2a2e52384221859c4b9b2f7ac3b11885e"
+    },
+    {
+      "bytes": 1585,
+      "mode": 384,
+      "path": "input/calibration_manifest.json",
+      "sha256": "c18579c5f060210fb74d32e98b8be63f00b003f75b4fad66c6d34f9c17c6f4f4"
+    },
+    {
+      "bytes": 1075,
+      "mode": 384,
+      "path": "input/gdn_dependency_CPU_import.json",
+      "sha256": "f9211af75285968d17a8a6f8bc5ab1d2af85ec5e956f5780cef2a7aa8c7a57c6"
+    },
+    {
+      "bytes": 83602,
+      "mode": 384,
+      "path": "input/source.bundle",
+      "sha256": "0715d97c1e7316e9f28fe2c4d8081a78a612b5852ac534c1c2c6509984b8459a"
+    },
+    {
+      "bytes": 117581,
+      "mode": 384,
+      "path": "input/validation.json",
+      "sha256": "ff1a7a935d75671f0c26091949d562812074081dd1cd357702978ccaf06ded2f"
+    },
+    {
+      "bytes": 2896,
+      "mode": 384,
+      "path": "input/validation_tokenization_CPU.json",
+      "sha256": "19de043be4801e955d31e71512349632f82750e3efc6563c8d21b99199d6791a"
+    },
+    {
+      "bytes": 194,
+      "mode": 420,
+      "path": "output/bf16/.kv_observer_export_ack.json.prepared",
+      "sha256": "b195a5dada70b6e2142d0e51141571b82dbf9210d4599af35512e940eff2992e"
+    },
+    {
+      "bytes": 131,
+      "mode": 420,
+      "path": "output/bf16/.kv_observer_reset_ack.json.prepared",
+      "sha256": "1eaf78e0a9b98b64d535fdc76cb5343c6632eeba13abe013abf9f2ffaa437afc"
+    },
+    {
+      "bytes": 34964,
+      "mode": 420,
+      "path": "output/bf16/.kv_observer_snapshot.json.prepared",
+      "sha256": "3c9d96181a7b7640e4c9040045db4418e7e7ac15db6b97ed5407e01aedd90cbd"
+    },
+    {
+      "bytes": 3124601,
+      "mode": 420,
+      "path": "output/bf16/calibration_raw.jsonl",
+      "sha256": "9f18b9f10c6f8901437bc87fe5a4edf40d63971567d70aabe595296e4ca5b4a3"
+    },
+    {
+      "bytes": 0,
+      "mode": 384,
+      "path": "output/bf16/container.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1506,
+      "mode": 384,
+      "path": "output/bf16/container_identity.json",
+      "sha256": "0d3fddb9ade3b9d0cb755596d25111c7c9b283146fa0510d8a4b5e4caee5f4f9"
+    },
+    {
+      "bytes": 2590,
+      "mode": 384,
+      "path": "output/bf16/docker_command.json",
+      "sha256": "38ecd82ad668471f9b55e7807f456970178b60562b66a85fdad892e3a92232b3"
+    },
+    {
+      "bytes": 300,
+      "mode": 384,
+      "path": "output/bf16/kv_observer_config.json",
+      "sha256": "5f0770db1cc2816833c07bee6323c9292949791e9a993315682a2b9618a8fefa"
+    },
+    {
+      "bytes": 104,
+      "mode": 384,
+      "path": "output/bf16/kv_observer_export.json",
+      "sha256": "a00702d9f18582a2a32e29b60aaf5587477b59963155d685131ed995ddca0a73"
+    },
+    {
+      "bytes": 194,
+      "mode": 420,
+      "path": "output/bf16/kv_observer_export_ack.json",
+      "sha256": "b195a5dada70b6e2142d0e51141571b82dbf9210d4599af35512e940eff2992e"
+    },
+    {
+      "bytes": 103,
+      "mode": 384,
+      "path": "output/bf16/kv_observer_reset.json",
+      "sha256": "f015ae8774414e868025d50351192ac4a2284e631deea9ec79927df807b106b9"
+    },
+    {
+      "bytes": 131,
+      "mode": 420,
+      "path": "output/bf16/kv_observer_reset_ack.json",
+      "sha256": "1eaf78e0a9b98b64d535fdc76cb5343c6632eeba13abe013abf9f2ffaa437afc"
+    },
+    {
+      "bytes": 34964,
+      "mode": 420,
+      "path": "output/bf16/kv_observer_snapshot.json",
+      "sha256": "3c9d96181a7b7640e4c9040045db4418e7e7ac15db6b97ed5407e01aedd90cbd"
+    },
+    {
+      "bytes": 138,
+      "mode": 384,
+      "path": "output/bf16/lease.json",
+      "sha256": "0376f84e4fc72c9df05c269d9712594ae9bb7ece2bd13664364702e949896364"
+    },
+    {
+      "bytes": 17859,
+      "mode": 384,
+      "path": "output/bf16/measurement.json",
+      "sha256": "cc80fd6c8e15ef12bb1beb1f84ff7e82741b735530a7209d9b6e333f2d832320"
+    },
+    {
+      "bytes": 1174,
+      "mode": 420,
+      "path": "output/bf16/native_operator.log",
+      "sha256": "0559b744ad87eaff4fbcabdc9b629e729e8e07d4d56bbe297f5398ce8e8b54c8"
+    },
+    {
+      "bytes": 140,
+      "mode": 384,
+      "path": "output/bf16/native_operator_command.json",
+      "sha256": "8e3f45842cbe251e99a97a363fa32ca3e3ae0d90cd56f0cb147dd5df98e2cddb"
+    },
+    {
+      "bytes": 966,
+      "mode": 384,
+      "path": "output/bf16/native_operator_environment.json",
+      "sha256": "969dee69699e45d229a22b6aac40619367e65190f614dda8496242579d337a44"
+    },
+    {
+      "bytes": 1030,
+      "mode": 384,
+      "path": "output/bf16/nextgen_environment.json",
+      "sha256": "ff4244fbd64300227cc1794d33e9263fc06171c0e10a298226272856d88cc2c7"
+    },
+    {
+      "bytes": 14338,
+      "mode": 420,
+      "path": "output/bf16/observer_Graph.json",
+      "sha256": "04603e4b35aa78b8964cf6108b6c315865d85f44d51dc4f09418c84c8cba0e56"
+    },
+    {
+      "bytes": 0,
+      "mode": 420,
+      "path": "output/bf16/observer_Graph.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 994,
+      "mode": 384,
+      "path": "output/bf16/operator_acceptance.json",
+      "sha256": "1c47ae2dc8841f595407c8d92b7e22fd36e22e644eef04505ec32b8f325a74fa"
+    },
+    {
+      "bytes": 772,
+      "mode": 384,
+      "path": "output/bf16/runtime_environment.json",
+      "sha256": "14d4f7384bd82b1d003b87ec2b075fa54b96f5472c3a98c736ad98db7a4a8cfc"
+    },
+    {
+      "bytes": 104619,
+      "mode": 420,
+      "path": "output/bf16/server.log",
+      "sha256": "77a1d0c932c34bf2baee599d5bce90d6e32e4494120d28360d5842d789764510"
+    },
+    {
+      "bytes": 872,
+      "mode": 384,
+      "path": "output/bf16/server_command.json",
+      "sha256": "130504deead570872ac1d4d0c7f54ace65cd531110212f958b45ec580bb2b008"
+    },
+    {
+      "bytes": 192716,
+      "mode": 420,
+      "path": "output/bf16/validation_raw.jsonl",
+      "sha256": "8199312769e017e66f0a395f462752e8d4243ead7e3c7ba6283db9fd4be8cee9"
+    },
+    {
+      "bytes": 15296,
+      "mode": 384,
+      "path": "output/bf16/validation_result.json",
+      "sha256": "351f81dbd36fa5798dc445da8efd206e6324e3cbea54b173b49c42bf44d9e908"
+    },
+    {
+      "bytes": 1630,
+      "mode": 384,
+      "path": "owned_containers.json",
+      "sha256": "565531284ae00d8b59d44abadc4affb9f9f6ba580a55c3af4515f7bd997bf608"
+    },
+    {
+      "bytes": 622,
+      "mode": 384,
+      "path": "result.json",
+      "sha256": "fd4bead5075e4be9e1e44e5945d62dd504789873d564fd0179aa5b394d306aec"
+    },
+    {
+      "bytes": 70,
+      "mode": 384,
+      "path": "runtime/kv_controller/__init__.py",
+      "sha256": "062f8f358d836a3b082ee9926504c1fe619a172bb1f303c1b33feb5d857b971f"
+    },
+    {
+      "bytes": 2629,
+      "mode": 384,
+      "path": "runtime/kv_controller/aiperf_cli_admission.py",
+      "sha256": "4b17178e471bef7438647e4a8692c3f94b58b10a436531076e432eaed8262c50"
+    },
+    {
+      "bytes": 9391,
+      "mode": 384,
+      "path": "runtime/kv_controller/approval.py",
+      "sha256": "b08378450b41cc62447a5a9ab45ecfcf42290e3e82114b670d9f66e709a119fc"
+    },
+    {
+      "bytes": 4563,
+      "mode": 384,
+      "path": "runtime/kv_controller/bf16q_operator.py",
+      "sha256": "0f87ca7e3cebd4bbcdba6432a4979c049a75bebaf86d73fe61588eb0958209c1"
+    },
+    {
+      "bytes": 12735,
+      "mode": 384,
+      "path": "runtime/kv_controller/cli.py",
+      "sha256": "1e069183da244aeb3378bbca3b2120879084d5b6a5271760a00da5404fc101f0"
+    },
+    {
+      "bytes": 8059,
+      "mode": 384,
+      "path": "runtime/kv_controller/component_profile.py",
+      "sha256": "5bc119832ea4e7ffaa4b9f859439da29bc9f28b125d9896c2097654613ad4712"
+    },
+    {
+      "bytes": 3415,
+      "mode": 384,
+      "path": "runtime/kv_controller/discovery.py",
+      "sha256": "e3778713d67c87ccacc82c565bfc7958f1bddda75f07249e0c2dc5aebdfee891"
+    },
+    {
+      "bytes": 5674,
+      "mode": 384,
+      "path": "runtime/kv_controller/dispatch.py",
+      "sha256": "ee683195cbfb634baaddd269db354b1c81df36a8dec559b17f09ea7460940791"
+    },
+    {
+      "bytes": 2198,
+      "mode": 384,
+      "path": "runtime/kv_controller/durable.py",
+      "sha256": "e8cae733035f451503cb577d818bc4cea34b1b1f7d246b1da5ff0e13d6b4a74c"
+    },
+    {
+      "bytes": 260,
+      "mode": 384,
+      "path": "runtime/kv_controller/evidence.py",
+      "sha256": "e7e0eb86e863601a25835076107e44b781b9da99ec02aedc39d82db5f6656816"
+    },
+    {
+      "bytes": 14521,
+      "mode": 384,
+      "path": "runtime/kv_controller/native_tools.py",
+      "sha256": "530b45510e7e623730ce9bc6bb5989b371ef8a791a653f599c2d983f26884b0e"
+    },
+    {
+      "bytes": 32587,
+      "mode": 384,
+      "path": "runtime/kv_controller/nextgen.py",
+      "sha256": "627193b07fa61bb9d1ef0eb775f67d2c2993465d6fc4d87559204d0f766f0afa"
+    },
+    {
+      "bytes": 24207,
+      "mode": 384,
+      "path": "runtime/kv_controller/nextgen_service.py",
+      "sha256": "f245ac58d968d19db22d433a3f7291275e64a0451872d542b9a10815df7621cd"
+    },
+    {
+      "bytes": 30427,
+      "mode": 384,
+      "path": "runtime/kv_controller/policy.py",
+      "sha256": "69523d244e940a84076651605810b620648a4ca41dffb28c32c978684ed90ef9"
+    },
+    {
+      "bytes": 3709,
+      "mode": 384,
+      "path": "runtime/kv_controller/prefill_operator.py",
+      "sha256": "439d9105b6f2d59ce05843987f980dc8c63bc4eb7c684eee8ed2faf8c3f36fb8"
+    },
+    {
+      "bytes": 2472,
+      "mode": 384,
+      "path": "runtime/kv_controller/processes.py",
+      "sha256": "2231d2c629949723ee67d4e4d7ba8cff76cea9b6f8d09a407bc44c37410cc83e"
+    },
+    {
+      "bytes": 39677,
+      "mode": 384,
+      "path": "runtime/kv_controller/production.py",
+      "sha256": "2933c79d113a4955e1fe313cedf0febba007d8716ae31d357b45c0a9c779bcc1"
+    },
+    {
+      "bytes": 8186,
+      "mode": 384,
+      "path": "runtime/kv_controller/protocols.py",
+      "sha256": "3980b604ffbe5bf7f48d79df5f6ebc8f4596fdee9c7c9096e0b45dbdb2096c37"
+    },
+    {
+      "bytes": 15684,
+      "mode": 384,
+      "path": "runtime/kv_controller/quota.py",
+      "sha256": "059ac6277ca208d2826bfd6f8ea218e90df8de80920534bd1b5b5836273ea425"
+    },
+    {
+      "bytes": 10143,
+      "mode": 384,
+      "path": "runtime/kv_controller/range_probe.py",
+      "sha256": "c6623b1f050e0cbf32cbee66c0d5972491ba88f0a724bba6d62fe0e06b1ccf72"
+    },
+    {
+      "bytes": 25236,
+      "mode": 384,
+      "path": "runtime/kv_controller/remote_rpc.py",
+      "sha256": "6c27cfac689f9453e35e297198e9d2b7b74d97b498ac73368b074183df3f63c6"
+    },
+    {
+      "bytes": 7085,
+      "mode": 384,
+      "path": "runtime/kv_controller/scale_coverage.py",
+      "sha256": "0fd77386cc92fb1f654fce5ed9e881a88345e871edec2d88b2258a87e1a4dc02"
+    },
+    {
+      "bytes": 6699,
+      "mode": 384,
+      "path": "runtime/kv_controller/service_metrics.py",
+      "sha256": "3eb51c2d265bd1bd46b48a865c5dfcba3022920437932522f714f48e32e7f4a3"
+    },
+    {
+      "bytes": 39177,
+      "mode": 384,
+      "path": "runtime/kv_controller/supervisor.py",
+      "sha256": "54ae343f8f26b33d5caccdbfb67434d792715fe8897f39374ea7f1459b2ac8b1"
+    },
+    {
+      "bytes": 11331,
+      "mode": 384,
+      "path": "runtime/kv_controller/trace_serving.py",
+      "sha256": "d8958d2bf6c2791eba0ea5a8b170aca4e55d4cc67d7fb77a6441d3c0261d3aa2"
+    },
+    {
+      "bytes": 6238,
+      "mode": 384,
+      "path": "runtime/kv_controller/transport.py",
+      "sha256": "6b1d18264eb1f5aaa84bf266d9f7139eb4029ae3faa1cb36eb49d4d8cea04543"
+    },
+    {
+      "bytes": 3713,
+      "mode": 384,
+      "path": "runtime/kv_controller/watchdog.py",
+      "sha256": "5ad71c687b3206b18964a69e656c8f5326f0c1221fc6edbe3a1161c97b3e8979"
+    },
+    {
+      "bytes": 17361,
+      "mode": 384,
+      "path": "runtime/kv_controller/worker.py",
+      "sha256": "2faaa69ca5e225793b13e39c02b0d344d4497acad33cca593e1882571c68efb1"
+    },
+    {
+      "bytes": 622,
+      "mode": 384,
+      "path": "state.json",
+      "sha256": "fd4bead5075e4be9e1e44e5945d62dd504789873d564fd0179aa5b394d306aec"
+    },
+    {
+      "bytes": 0,
+      "mode": 384,
+      "path": "supervisor.lock",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "mode": 384,
+      "path": "supervisor.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 12687,
+      "mode": 384,
+      "path": "ticket.json",
+      "sha256": "c3377e422c3b3475cec4bccc8007e1e05e7e5ffbe0641ba736077b7d32a687a2"
+    },
+    {
+      "bytes": 0,
+      "mode": 384,
+      "path": "watchdog.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 178,
+      "mode": 384,
+      "path": "watchdog_config.json",
+      "sha256": "e09757d728e129e5e4bd6990e9c5364b748e17eec35bac42265a3134d4119b20"
+    },
+    {
+      "bytes": 128,
+      "mode": 384,
+      "path": "watchdog_result.json",
+      "sha256": "55547dc03c7a010a538791e5659161dc1c653cae564d604b50780c9c9f72ffec"
+    }
+  ],
+  "observed_at_utc": "2026-10-27T21:54:48.354234+00:00",
+  "oversized": [],
+  "owned_containers": [
+    {
+      "OOMKilled": false,
+      "exit_code": 0,
+      "id": "5fad7aaa338fc4fa51441febace00f63a54dd1259a65ac0d6655dff4febae81d",
+      "running": false,
+      "status": "exited"
+    }
+  ],
+  "remote_script_sha256": "4db1a253a6c9a6883217d3fba862601342f47b7a056ea25a5192b08548d1e363",
+  "remote_writes": false,
+  "request_sha256": "927b2a8363f44dbd9a86564c6ad6839f297f46004a6fca4bc1f90c9754d99352",
+  "reservation_id": "d750093a5bfd4c2f85451b8946af6d4d",
+  "result_status": "COMPLETE",
+  "run_id": "nextgen-bf16-qwen38-calibration-r0-20261027i",
+  "schema": "bf16-i-terminal-selection-inventory-luna-v1",
+  "supervisor_alive": false,
+  "total_bytes": 6121048,
+  "watchdog_result": {
+    "actions": [],
+    "request_sha256": "927b2a8363f44dbd9a86564c6ad6839f297f46004a6fca4bc1f90c9754d99352",
+    "status": "RELEASE_CONFIRMED"
+  },
+  "within_limits": true
+}

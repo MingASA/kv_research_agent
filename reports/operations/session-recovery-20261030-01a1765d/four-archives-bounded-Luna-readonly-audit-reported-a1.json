@@ -1,0 +1,17 @@
+{
+  "classification": "reported_by_bounded_readonly_Luna",
+  "agent": "/root/archive_readonly_audit_luna",
+  "observed_utc": "2026-10-30T20:59Z",
+  "four_existing_archives_reported_passed": true,
+  "scope": "stream archive SHA and bytes, safe member paths, receipt count, local and embedded manifest SHA, member sets and every file SHA/size",
+  "initial_monitor_script_error_preserved": "count compared to manifest files alone; format includes one embedded ARCHIVE_FILE_MANIFEST.json, so correct count is files+1. Corrected readonly rerun reported no actual archive discrepancy.",
+  "manual_hex_transcription_not_used_as_authoritative": true,
+  "authoritative_values_in_each_original_ARCHIVE_ACCEPTANCE": true,
+  "directories": [
+    "quality-a1",
+    "service-original-a2",
+    "tools-original-a2",
+    "mixed-pilot-a1"
+  ],
+  "GPU_remote_or_file_writes_by_Luna": false
+}

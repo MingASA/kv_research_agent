@@ -1,0 +1,52 @@
+{
+  "files": [
+    {
+      "base_rel": "inputs/aiperf/v3_sources/conversation_trace.jsonl",
+      "size": 3029533
+    },
+    {
+      "base_rel": "inputs/aiperf/v3_sources/synthetic_trace.jsonl",
+      "size": 1136313
+    },
+    {
+      "base_rel": "inputs/aiperf/v3_sources/toolagent_trace.jsonl",
+      "size": 4415857
+    },
+    {
+      "base_rel": "inputs/aiperf/v3_frozen/conversation_trace_264_seed20261020.jsonl",
+      "size": 47076
+    },
+    {
+      "base_rel": "inputs/aiperf/v3_frozen/conversation_trace_264_seed20261020.jsonl.manifest.json",
+      "size": 3984
+    },
+    {
+      "base_rel": "inputs/aiperf/v3_frozen/toolagent_trace_264_seed20261020.jsonl",
+      "size": 38647
+    },
+    {
+      "base_rel": "inputs/aiperf/v3_frozen/toolagent_trace_264_seed20261020.jsonl.manifest.json",
+      "size": 4095
+    },
+    {
+      "base_rel": "inputs/aiperf/v3_frozen/synthetic_trace_264_seed20261020.jsonl",
+      "size": 47444
+    },
+    {
+      "base_rel": "inputs/aiperf/v3_frozen/synthetic_trace_264_seed20261020.jsonl.manifest.json",
+      "size": 3869
+    },
+    {
+      "base_rel": "inputs/aiperf/traces/frozen/mooncake_32k.jsonl",
+      "size": 2244763
+    },
+    {
+      "base_rel": "inputs/aiperf/traces/frozen/burstgpt_peak10m.csv",
+      "size": 211466
+    },
+    {
+      "base_rel": "inputs/aiperf/traces/frozen/manifest.json",
+      "size": 669
+    }
+  ]
+}

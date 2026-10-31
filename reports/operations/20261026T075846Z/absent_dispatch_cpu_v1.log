@@ -1,0 +1,24 @@
+test_any_old_writer_process_container_or_gpu_pid_keeps_unknown (tests.test_absent_dispatch.AbsentDispatchTests) ... ok
+test_changed_identity_boot_or_short_observation_keeps_unknown (tests.test_absent_dispatch.AbsentDispatchTests) ... ok
+test_missing_witness_and_missing_process_evidence_keep_unknown (tests.test_absent_dispatch.AbsentDispatchTests) ... ok
+test_remote_readonly_program_compiles (tests.test_absent_dispatch.AbsentDispatchTests) ... ok
+test_stable_absence_has_zero_gpu_cost_and_no_remote_success (tests.test_absent_dispatch.AbsentDispatchTests) ... ok
+test_device_time_excludes_inter_arm_idle_windows (tests.test_quota_ledger.QuotaTests) ... ok
+test_dispatch_disconnect_blocks_all_new_launches (tests.test_quota_ledger.QuotaTests) ... ok
+test_expiry_or_notes_edit_does_not_reset_budget (tests.test_quota_ledger.QuotaTests) ... ok
+test_failure_time_is_charged_and_settlement_is_exactly_once (tests.test_quota_ledger.QuotaTests) ... ok
+test_foreign_identity_terminal_is_rejected (tests.test_quota_ledger.QuotaTests) ... ok
+test_historical_id_is_not_relaunched (tests.test_quota_ledger.QuotaTests) ... ok
+test_lost_database_is_not_reinitialized (tests.test_quota_ledger.QuotaTests) ... ok
+test_only_never_dispatched_reservation_can_cancel (tests.test_quota_ledger.QuotaTests) ... ok
+test_overrun_is_recorded_without_capping_and_blocks_future (tests.test_quota_ledger.QuotaTests) ... ok
+test_replicate_dedupe_survives_terminal_failure (tests.test_quota_ledger.QuotaTests) ... ok
+test_reserve_and_reopen_keeps_full_reservation (tests.test_quota_ledger.QuotaTests) ... ok
+test_surviving_container_cannot_be_settled (tests.test_quota_ledger.QuotaTests) ... ok
+test_terminal_without_gpu_release_cannot_free_quota (tests.test_quota_ledger.QuotaTests) ... ok
+test_two_processes_cannot_reserve_same_gpu (tests.test_quota_ledger.QuotaTests) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.867s
+
+OK

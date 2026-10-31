@@ -1,0 +1,17 @@
+{
+  "schema": "kv-takeover-validation-v1",
+  "observed_utc": "2026-10-26T04:44:05.529744+00:00",
+  "rc": 0,
+  "indexed_manifests": 9,
+  "audited_native_runs": 6,
+  "arm_cases": 18,
+  "profiling_records": 2304,
+  "warmup_records": 144,
+  "cpu_test_suite_last_observed_passes": 33,
+  "ast_parse": "passed",
+  "audit_script_hash_matches": "passed",
+  "state_event_index_references": "passed",
+  "remote_git_configured": false,
+  "gpu_launches": 0,
+  "remote_mutations": 0
+}

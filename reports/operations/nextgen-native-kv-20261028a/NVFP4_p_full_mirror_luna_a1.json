@@ -1,0 +1,46 @@
+{
+  "schema": "kv-complete-run-mirror-receipt-v1",
+  "classification": "confirmed_readonly_complete_mirror",
+  "run_id": "nextgen-nvfp4-qwen38-quality-core1720-r0-20261028p",
+  "reservation_id": "07be43b3dd6a4887b080bae9c6ee19b3",
+  "remote_status_expected": "COMPLETE",
+  "remote_result_sha256": "a81f77fe4cf161f3b062cc79922e3749b1237032d9b6c3d3f9172e40ccf26a9a",
+  "manifest_path": "/home/mingasa/kv-research-agent/results/mirrors/nextgen-nvfp4-qwen38-quality-core1720-r0-20261028p-complete-a1/SHA_MANIFEST.json",
+  "mirror_directory": "/home/mingasa/kv-research-agent/results/mirrors/nextgen-nvfp4-qwen38-quality-core1720-r0-20261028p-complete-a1",
+  "status": "complete",
+  "asset_reuse_receipt": "/home/mingasa/kv-research-agent/results/mirrors/nextgen-nvfp4-qwen38-quality-core1720-r0-20261028p-complete-a1/ASSET_REUSE_RECEIPT.json",
+  "files": 80,
+  "bytes": 56531532,
+  "sha_all_verified": true,
+  "errors": [],
+  "remote_terminal": "COMPLETE",
+  "inventory_file_count": 80,
+  "inventory_bytes": 56531532,
+  "seeded_asset_count": 38,
+  "seeded_asset_bytes": 24005890,
+  "not_seeded_asset_count": 0,
+  "recovery_attempts": 1,
+  "complete_result_sha256": "a81f77fe4cf161f3b062cc79922e3749b1237032d9b6c3d3f9172e40ccf26a9a",
+  "other_files_downloaded_and_verified": 42,
+  "no_output_or_raw_artifacts_seeded": true,
+  "recovery_completed": true,
+  "original_remote_result_sha256": "a81f77fe4cf161f3b062cc79922e3749b1237032d9b6c3d3f9172e40ccf26a9a",
+  "local_full_tree_recheck": {
+    "files": 80,
+    "bytes": 56531532,
+    "all_manifest_paths_regular_owned_non_symlink": true,
+    "all_local_hashes_equal_remote_sha256": true,
+    "remaining_partials": 0,
+    "checked_utc": "2026-10-28T16:43:43.985235+00:00"
+  },
+  "network_recovery_history": [
+    {
+      "attempt": 1,
+      "result": "bounded read-only SSH timeout; local partial preserved"
+    },
+    {
+      "attempt": 2,
+      "result": "read-only resume completed and all hashes verified"
+    }
+  ]
+}

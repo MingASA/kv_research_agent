@@ -1,0 +1,106 @@
+{
+  "files": {
+    "START_INTENT.json": {
+      "sha256": "1bd63cb287abe95f2dcd3a51be204ad777f8a9da3cf26ae29fc30ee54cc39847",
+      "value": {
+        "request_sha256": "44c71c8c38470ee8458aaa5e3240b50b40ee4a8b2b06f8e0248558cf6d7a6c17"
+      }
+    },
+    "SUPERVISOR_PROCESS.json": {
+      "sha256": "568d5f1cf93b62158e74cf93ed171a24a1133334181a50587c95379e2a3588fc",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-525309.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-525309.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-525309.scope\n",
+          "pid": 3157569,
+          "start_ticks": 370945194,
+          "uid": 1005
+        }
+      }
+    },
+    "SUPERVISOR_STARTED.json": {
+      "sha256": "976366d4ce58d12d1a69586d9c48af4a276600b82ba5788afb07bc5d8fc27e7a",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-525309.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-525309.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-525309.scope\n",
+          "pid": 3157569,
+          "start_ticks": 370945194,
+          "uid": 1005
+        },
+        "ticket_sha256": "283dd852a96e23e413ee1475e0834983a288eb5704fe77b0099fe5f02ba9be82"
+      }
+    },
+    "owned_containers.json": {
+      "sha256": "9f6a709a9e0afa399d205d69dcac7840bc38378de4ff91ca066c3e685da5593b",
+      "value": {
+        "containers": [
+          {
+            "container_id": "49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a",
+            "pid_identity": {
+              "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+              "cgroup": "12:rdma:/system.slice/docker-49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a.scope\n11:blkio:/system.slice/docker-49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a.scope\n10:net_cls,net_prio:/system.slice/docker-49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a.scope\n9:freezer:/system.slice/docker-49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a.scope\n8:memory:/system.slice/docker-49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a.scope\n7:hugetlb:/system.slice/docker-49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a.scope\n6:perf_event:/system.slice/docker-49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a.scope\n5:pids:/system.slice/docker-49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a.scope\n4:devices:/system.slice/docker-49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a.scope\n3:cpu,cpuacct:/system.slice/docker-49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a.scope\n2:cpuset:/system.slice/docker-49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a.scope\n1:name=systemd:/system.slice/docker-49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a.scope\n",
+              "pid": 3170691,
+              "start_ticks": 370957525,
+              "uid": 1005
+            },
+            "released": false
+          }
+        ],
+        "request_sha256": "44c71c8c38470ee8458aaa5e3240b50b40ee4a8b2b06f8e0248558cf6d7a6c17",
+        "reservation_id": "a569bb1c67d94e9a870bd3f2ac0313c7"
+      }
+    },
+    "state.json": {
+      "sha256": "7d25b72910c012703698acbef13bcbe0b9d22987f5f74c8dbc7eb3388e245c15",
+      "value": {
+        "arm": "fp8_e4m3",
+        "containers": [
+          "49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a"
+        ],
+        "request_sha256": "44c71c8c38470ee8458aaa5e3240b50b40ee4a8b2b06f8e0248558cf6d7a6c17",
+        "status": "RUNNING"
+      }
+    }
+  },
+  "gpu_snapshot": "0, GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 67013, 99\n1, GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 0, 0\n2, GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 0, 0\n3, GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 0, 0\n4, GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 0, 0\n5, GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 0, 0\n6, GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 0, 0\n7, GPU-47211491-ba0d-78bf-5c84-f968c0648213, 0, 0",
+  "live_owned_containers": [
+    "49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a"
+  ],
+  "log_tail": {
+    "events.jsonl": "{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3709452511501588,\"utc\":\"2026-10-27T12:50:10.772381+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3709452511501588,\"utc\":\"2026-10-27T12:50:41.232710+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3709452511501588,\"utc\":\"2026-10-27T12:51:11.559020+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3709452511501588,\"utc\":\"2026-10-27T12:51:42.062125+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3709452511501588,\"utc\":\"2026-10-27T12:52:12.381525+00:00\"}\n{\"action\":\"OWNED_CONTAINER_CREATED\",\"arm\":\"fp8_e4m3\",\"id\":\"49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a\",\"utc\":\"2026-10-27T12:52:13.384534+00:00\"}\n",
+    "output/fp8_e4m3/container.log": "",
+    "output/fp8_e4m3/quality.log": "I20261027 20:52:15.397588 10 run_qwen25_joint_kv_quality.py:879] Hashing local checkpoint shards and validating model/configuration: /models/Qwen2.5-14B-Instruct\n/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/experiments/joint-kv-14b/longbench-deps-py312/fuzzywuzzy/fuzz.py:11: UserWarning: Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning\n  warnings.warn('Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning')\nI20261027 20:52:59.176593 10 run_qwen25_joint_kv_quality.py:633] Starting fp8_e4m3: 9 pending tasks; evidence in /results/quality/arms/fp8_e4m3/attempt-0001\nI20261027 20:58:03.347876 10 run_qwen25_joint_kv_quality.py:700] Evaluating fp8_e4m3/gsm8k; detailed progress is in eval-gsm8k.log\nI20261027 20:59:42.704766 10 run_qwen25_joint_kv_quality.py:700] Evaluating fp8_e4m3/narrativeqa; detailed progress is in eval-narrativeqa.log\nI20261027 21:01:10.453591 10 run_qwen25_joint_kv_quality.py:700] Evaluating fp8_e4m3/qasper; detailed progress is in eval-qasper.log\nI20261027 21:01:35.402349 10 run_qwen25_joint_kv_quality.py:700] Evaluating fp8_e4m3/multifieldqa_en; detailed progress is in eval-multifieldqa_en.log\nI20261027 21:02:06.052574 10 run_qwen25_joint_kv_quality.py:700] Evaluating fp8_e4m3/2wikimqa; detailed progress is in eval-2wikimqa.log\nI20261027 21:02:40.346366 10 run_qwen25_joint_kv_quality.py:700] Evaluating fp8_e4m3/hotpotqa; detailed progress is in eval-hotpotqa.log\nI20261027 21:03:35.352260 10 run_qwen25_joint_kv_quality.py:700] Evaluating fp8_e4m3/musique; detailed progress is in eval-musique.log\nI20261027 21:04:46.505096 10 run_qwen25_joint_kv_quality.py:700] Evaluating fp8_e4m3/lcc; detailed progress is in eval-lcc.log\nI20261027 21:05:06.016897 10 run_qwen25_joint_kv_quality.py:700] Evaluating fp8_e4m3/repobench-p; detailed progress is in eval-repobench-p.log\n",
+    "output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/server.log": "e: 0, finish_reason: length, prompt_tokens: 2485, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 2526.0ms, total_latency: 6282.2ms, avg tpot: 59.6ms, generation speed: 17.0 tokens/s\nI20261027 21:05:05.149209  1107 request.cpp:134] x-request-id: req-15933769124469343823-BhPKiwj8qXo79tpmZFFE6P, x-request-time: , request_id: cmpl-15933769124469343823-H8ynpAoem2pbTdFP4mQYEZ, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 1262, num_prefix_cache_tokens: 128, generated_tokens: 64, ttft: 2527.0ms, total_latency: 6284.0ms, avg tpot: 59.6ms, generation speed: 17.0 tokens/s\nI20261027 21:05:05.149204  1110 request.cpp:134] x-request-id: req-15933769124469343823-A5KhQcVqceiz3Cd6ohE8Pv, x-request-time: , request_id: cmpl-15933769124469343823-JywsnCFhB76FjH3M2cha6P, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 2011, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 2527.0ms, total_latency: 6283.6ms, avg tpot: 59.6ms, generation speed: 17.0 tokens/s\nI20261027 21:05:05.149315  1108 request.cpp:134] x-request-id: req-15933769124469343823-RZixqotcJrkbgXT3KsRWu2, x-request-time: , request_id: cmpl-15933769124469343823-8bYz2yocy5K2nJoCpL4jZ6, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 2083, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 2528.0ms, total_latency: 6284.9ms, avg tpot: 59.6ms, generation speed: 17.0 tokens/s\nI20261027 21:05:05.149358  1109 request.cpp:134] x-request-id: req-15933769124469343823-ZQYWYtcrXXemdesbJA5FfD, x-request-time: , request_id: cmpl-15933769124469343823-HVZ8a2vLaM498pkK766dnN, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 2793, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 2531.0ms, total_latency: 6287.5ms, avg tpot: 59.6ms, generation speed: 17.0 tokens/s\nI20261027 21:05:05.164397  1108 request.cpp:134] x-request-id: req-15933769124469343823-MZKAGhNHqz9gWZsRXVc5QE, x-request-time: , request_id: cmpl-15933769124469343823-iQWHfMBCiXnQiqUcAMFMRk, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 2285, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 3014.0ms, total_latency: 6292.6ms, avg tpot: 52.0ms, generation speed: 19.5 tokens/s\nI20261027 21:05:05.164412  1110 request.cpp:134] x-request-id: req-15933769124469343823-nhjX8gdDsF9dY2wFnrDcQn, x-request-time: , request_id: cmpl-15933769124469343823-GVv9AC5A5JUidYvCQHQPxi, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 1555, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 3010.0ms, total_latency: 6289.1ms, avg tpot: 52.0ms, generation speed: 19.5 tokens/s\nI20261027 21:05:05.164412  1109 request.cpp:134] x-request-id: req-15933769124469343823-8MyWpDKU6BsDFNCTN3Um4g, x-request-time: , request_id: cmpl-15933769124469343823-R6RJ9ZAuFP5H5SMmdr5Jdj, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 2423, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 3014.0ms, total_latency: 6293.0ms, avg tpot: 52.0ms, generation speed: 19.5 tokens/s\nI20261027 21:05:05.164412  1107 request.cpp:134] x-request-id: req-15933769124469343823-G34yVzxryExKUHRBXCJYxq, x-request-time: , request_id: cmpl-15933769124469343823-w7xCTZYkjqogyAYuNHoham, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 1935, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 3012.0ms, total_latency: 6290.5ms, avg tpot: 52.0ms, generation speed: 19.5 tokens/s\nI20261027 21:05:05.179180  1108 request.cpp:134] x-request-id: req-15933769124469343823-ZBnvr5anQSjGF8UMcwPWz6, x-request-time: , request_id: cmpl-15933769124469343823-BcwkcRgsJQ8Krj6YifTHfK, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 6517, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 3540.0ms, total_latency: 6298.0ms, avg tpot: 43.8ms, generation speed: 23.2 tokens/s\nI20261027 21:05:05.179198  1107 request.cpp:134] x-request-id: req-15933769124469343823-EQWdcEea3BuYXxuQkJS2ZU, x-request-time: , request_id: cmpl-15933769124469343823-FvrQDjU8SjmdHfvTs7VgMg, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 3884, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 3539.0ms, total_latency: 6297.1ms, avg tpot: 43.8ms, generation speed: 23.2 tokens/s\nI20261027 21:05:05.179198  1110 request.cpp:134] x-request-id: req-15933769124469343823-asrofyRFfAHitJBAxpTeXq, x-request-time: , request_id: cmpl-15933769124469343823-QBHempWmMXxEifaRJpaHK7, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 1789, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 3539.0ms, total_latency: 6296.9ms, avg tpot: 43.8ms, generation speed: 23.2 tokens/s\nI20261027 21:05:05.193197  1108 request.cpp:134] x-request-id: req-15933769124469343823-ukeatvmcpWMSLQukS86gGo, x-request-time: , request_id: cmpl-15933769124469343823-uzkuCBCzqHTthuWaqPbLq7, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 2570, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 4042.0ms, total_latency: 6307.8ms, avg tpot: 36.0ms, generation speed: 28.2 tokens/s\nI20261027 21:05:05.193197  1107 request.cpp:134] x-request-id: req-15933769124469343823-oetKxaPTeqxDbVsvRG2mfS, x-request-time: , request_id: cmpl-15933769124469343823-R7gCo98o9jXuD57vtJmyv6, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 1626, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 4041.0ms, total_latency: 6307.3ms, avg tpot: 36.0ms, generation speed: 28.2 tokens/s\nI20261027 21:05:05.193212  1110 request.cpp:134] x-request-id: req-15933769124469343823-27TgyduijaAoCv3tbqL8Ma, x-request-time: , request_id: cmpl-15933769124469343823-vZ8WXgjXQj5x5Fr9UKAovz, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 3971, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 4036.0ms, total_latency: 6301.9ms, avg tpot: 36.0ms, generation speed: 28.2 tokens/s\nI20261027 21:05:05.193221  1109 request.cpp:134] x-request-id: req-15933769124469343823-oFiMsBRr5opx5f4qRBGzm4, x-request-time: , request_id: cmpl-15933769124469343823-ix6fpaAt9xLdGGqA3nAg4C, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 2066, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 4036.0ms, total_latency: 6301.7ms, avg tpot: 36.0ms, generation speed: 28.2 tokens/s\nI20261027 21:05:05.206871  1109 request.cpp:134] x-request-id: req-15933769124469343823-xPLdauWj8QKHVRctzWa4xz, x-request-time: , request_id: cmpl-15933769124469343823-ZZMWooLBNxVkZSK42pnYfs, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 5643, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 4554.0ms, total_latency: 6308.9ms, avg tpot: 27.9ms, generation speed: 36.5 tokens/s\nI20261027 21:05:05.206894  1110 request.cpp:134] x-request-id: req-15933769124469343823-a2G4H24fuPtoTkTQ3Q4vDs, x-request-time: , request_id: cmpl-15933769124469343823-9f23e7HFciKPoQUeMh3p7M, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 2968, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 4559.0ms, total_latency: 6313.9ms, avg tpot: 27.9ms, generation speed: 36.5 tokens/s\nI20261027 21:05:05.219781  1107 request.cpp:134] x-request-id: req-15933769124469343823-6WUNSRYUv7m8zEiShbEZNX, x-request-time: , request_id: cmpl-15933769124469343823-oPmJT2ynCASQNEuhCtrFdh, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 3465, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 4859.0ms, total_latency: 6308.9ms, avg tpot: 23.0ms, generation speed: 44.1 tokens/s\nI20261027 21:05:05.219797  1108 request.cpp:134] x-request-id: req-15933769124469343823-aQzXvfkmrmgme2s6j87VjM, x-request-time: , request_id: cmpl-15933769124469343823-migHNjUJMac5qfaKsJysMz, sequence 0, max_tokens: 64, temperature: 0, finish_reason: length, prompt_tokens: 4669, num_prefix_cache_tokens: 0, generated_tokens: 64, ttft: 4867.0ms, total_latency: 6316.5ms, avg tpot: 23.0ms, generation speed: 44.2 tokens/s\n",
+    "output/fp8_e4m3/scorer_cpu_preflight.log": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/experiments/joint-kv-14b/longbench-deps-py312/fuzzywuzzy/fuzz.py:11: UserWarning: Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning\n  warnings.warn('Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning')\n{\"qa_f1\": 1.0, \"code_sim\": 1.0}\n",
+    "supervisor.log": "",
+    "watchdog.log": ""
+  },
+  "ok": true,
+  "operator_acceptance": {},
+  "owned_containers": [
+    {
+      "created": "2026-10-27T12:52:13.342712594Z",
+      "id": "49eda117c21c190d050cbf322a9157f643d529d8f704ccc0f890adfe2ab9d05a",
+      "running": true
+    }
+  ],
+  "quality_progress": {
+    "bf16": {},
+    "fp8_e4m3": {
+      "2wikimqa": 50,
+      "gsm8k": 1319,
+      "hotpotqa": 50,
+      "lcc": 50,
+      "multifieldqa_en": 50,
+      "musique": 50,
+      "narrativeqa": 50,
+      "qasper": 50,
+      "repobench-p": 0
+    }
+  },
+  "relaunch_allowed": false,
+  "run_id": "prod-quality-bf16q-full1719-c128-r1-20261027b",
+  "status": "RUNNING",
+  "supervisor_alive": true
+}

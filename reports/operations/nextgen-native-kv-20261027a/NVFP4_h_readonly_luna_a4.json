@@ -1,0 +1,149 @@
+{
+  "files": {
+    "COMPLETE": {
+      "sha256": "4a54a4e505d6478f9fea0b4d25df626fe359e3e78b153bf0f1704405daf3a7fa",
+      "value": {
+        "result_sha256": "028c0cfc348f8f417180b485e6259d6d1d4d83ed87b587f04b1a541d423b197a"
+      }
+    },
+    "START_INTENT.json": {
+      "sha256": "c43f99583018a05012e58da682d41221f2efe8860730d35d02260ee9e23a6c2a",
+      "value": {
+        "request_sha256": "cdae9e4ab59d354cf0afe251c207981de0f9613da45c7c10a8cbdb46bf2e8827"
+      }
+    },
+    "SUPERVISOR_PROCESS.json": {
+      "sha256": "1447e7d7286455897dd6ba1a28638878bdb5d530c36afeccd04a29c53d295859",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-530257.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-530257.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-530257.scope\n",
+          "pid": 2666866,
+          "start_ticks": 373584587,
+          "uid": 1005
+        }
+      }
+    },
+    "SUPERVISOR_STARTED.json": {
+      "sha256": "bec0fbcf73fa212ead1fd4220f84bb3ce7eb63c5a83d2adc164dbe8e7ac9f5b3",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-530257.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-530257.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-530257.scope\n",
+          "pid": 2666866,
+          "start_ticks": 373584587,
+          "uid": 1005
+        },
+        "ticket_sha256": "8d475aa48de208c315c5f074f2678db153c738dfd6256bf3db2f03c33be2eef0"
+      }
+    },
+    "owned_containers.json": {
+      "sha256": "1a2350968df9216810c75f5ce9a0bbde437c895c0413fbc4fc0a8f7fc9fccb0a",
+      "value": {
+        "containers": [
+          {
+            "container_id": "9d9dc5139ee9f2d89f77397cddaa90efc6838bab3bbbe8015d44ea857ea22cdd",
+            "pid_identity": {
+              "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+              "cgroup": "12:rdma:/system.slice/docker-9d9dc5139ee9f2d89f77397cddaa90efc6838bab3bbbe8015d44ea857ea22cdd.scope\n11:blkio:/system.slice/docker-9d9dc5139ee9f2d89f77397cddaa90efc6838bab3bbbe8015d44ea857ea22cdd.scope\n10:net_cls,net_prio:/system.slice/docker-9d9dc5139ee9f2d89f77397cddaa90efc6838bab3bbbe8015d44ea857ea22cdd.scope\n9:freezer:/system.slice/docker-9d9dc5139ee9f2d89f77397cddaa90efc6838bab3bbbe8015d44ea857ea22cdd.scope\n8:memory:/system.slice/docker-9d9dc5139ee9f2d89f77397cddaa90efc6838bab3bbbe8015d44ea857ea22cdd.scope\n7:hugetlb:/system.slice/docker-9d9dc5139ee9f2d89f77397cddaa90efc6838bab3bbbe8015d44ea857ea22cdd.scope\n6:perf_event:/system.slice/docker-9d9dc5139ee9f2d89f77397cddaa90efc6838bab3bbbe8015d44ea857ea22cdd.scope\n5:pids:/system.slice/docker-9d9dc5139ee9f2d89f77397cddaa90efc6838bab3bbbe8015d44ea857ea22cdd.scope\n4:devices:/system.slice/docker-9d9dc5139ee9f2d89f77397cddaa90efc6838bab3bbbe8015d44ea857ea22cdd.scope\n3:cpu,cpuacct:/system.slice/docker-9d9dc5139ee9f2d89f77397cddaa90efc6838bab3bbbe8015d44ea857ea22cdd.scope\n2:cpuset:/system.slice/docker-9d9dc5139ee9f2d89f77397cddaa90efc6838bab3bbbe8015d44ea857ea22cdd.scope\n1:name=systemd:/system.slice/docker-9d9dc5139ee9f2d89f77397cddaa90efc6838bab3bbbe8015d44ea857ea22cdd.scope\n",
+              "pid": 2680203,
+              "start_ticks": 373596961,
+              "uid": 1005
+            },
+            "released": true
+          }
+        ],
+        "request_sha256": "cdae9e4ab59d354cf0afe251c207981de0f9613da45c7c10a8cbdb46bf2e8827",
+        "reservation_id": "d55df3140d4a437ea1ea56183ae66873"
+      }
+    },
+    "result.json": {
+      "sha256": "028c0cfc348f8f417180b485e6259d6d1d4d83ed87b587f04b1a541d423b197a",
+      "value": {
+        "allocation_ended_monotonic_ns": 3736725308332881,
+        "allocation_intervals_ns": [
+          {
+            "arm": "nvfp4",
+            "end_ns": 3736725308332881,
+            "start_ns": 3735969470827868
+          }
+        ],
+        "allocation_started_monotonic_ns": 3735969470827868,
+        "arm_results": [
+          {
+            "arm": "nvfp4",
+            "result_sha256": "ce3f057a3867dd2644ee98d8c702ffe0318ecc897a1b69e0fe1100591bbb8fab"
+          }
+        ],
+        "error": null,
+        "gpu_release_verified": true,
+        "live_owned_containers": [],
+        "new_output_bytes": 158901254,
+        "request_sha256": "cdae9e4ab59d354cf0afe251c207981de0f9613da45c7c10a8cbdb46bf2e8827",
+        "reservation_id": "d55df3140d4a437ea1ea56183ae66873",
+        "run_id": "nextgen-nvfp4-pages-sm90-r0-20261027h",
+        "status": "COMPLETE"
+      }
+    },
+    "state.json": {
+      "sha256": "028c0cfc348f8f417180b485e6259d6d1d4d83ed87b587f04b1a541d423b197a",
+      "value": {
+        "allocation_ended_monotonic_ns": 3736725308332881,
+        "allocation_intervals_ns": [
+          {
+            "arm": "nvfp4",
+            "end_ns": 3736725308332881,
+            "start_ns": 3735969470827868
+          }
+        ],
+        "allocation_started_monotonic_ns": 3735969470827868,
+        "arm_results": [
+          {
+            "arm": "nvfp4",
+            "result_sha256": "ce3f057a3867dd2644ee98d8c702ffe0318ecc897a1b69e0fe1100591bbb8fab"
+          }
+        ],
+        "error": null,
+        "gpu_release_verified": true,
+        "live_owned_containers": [],
+        "new_output_bytes": 158901254,
+        "request_sha256": "cdae9e4ab59d354cf0afe251c207981de0f9613da45c7c10a8cbdb46bf2e8827",
+        "reservation_id": "d55df3140d4a437ea1ea56183ae66873",
+        "run_id": "nextgen-nvfp4-pages-sm90-r0-20261027h",
+        "status": "COMPLETE"
+      }
+    },
+    "watchdog_result.json": {
+      "sha256": "3b2a32ad9f49937a73609ec6cfb9f4790485f52df2e7fcdb278034677bad4f17",
+      "value": {
+        "actions": [],
+        "request_sha256": "cdae9e4ab59d354cf0afe251c207981de0f9613da45c7c10a8cbdb46bf2e8827",
+        "status": "RELEASE_CONFIRMED"
+      }
+    }
+  },
+  "gpu_snapshot": "0, GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 0, 0\n1, GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 3, 0\n2, GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 527, 0\n3, GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 3, 0\n4, GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 525, 2\n5, GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 0, 0\n6, GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 0, 0\n7, GPU-47211491-ba0d-78bf-5c84-f968c0648213, 0, 0",
+  "live_owned_containers": [],
+  "log_tail": {
+    "events.jsonl": "{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3735846305105588,\"utc\":\"2026-10-27T20:10:04.566295+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3735846305105588,\"utc\":\"2026-10-27T20:10:35.122415+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3735846305105588,\"utc\":\"2026-10-27T20:11:05.457854+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3735846305105588,\"utc\":\"2026-10-27T20:11:36.181864+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-0c628a64-5f31-3501-fa3c-723f5b69254a\":{\"index\":0,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3735846305105588,\"utc\":\"2026-10-27T20:12:06.548449+00:00\"}\n{\"action\":\"OWNED_CONTAINER_CREATED\",\"arm\":\"nvfp4\",\"id\":\"9d9dc5139ee9f2d89f77397cddaa90efc6838bab3bbbe8015d44ea857ea22cdd\",\"utc\":\"2026-10-27T20:12:07.731711+00:00\"}\n{\"action\":\"ARM_VERIFIED\",\"arm\":\"nvfp4\",\"id\":\"9d9dc5139ee9f2d89f77397cddaa90efc6838bab3bbbe8015d44ea857ea22cdd\",\"utc\":\"2026-10-27T20:24:43.569139+00:00\"}\n",
+    "supervisor.log": "",
+    "watchdog.log": ""
+  },
+  "ok": true,
+  "operator_acceptance": {},
+  "owned_containers": [
+    {
+      "created": "2026-10-27T20:12:07.668670622Z",
+      "id": "9d9dc5139ee9f2d89f77397cddaa90efc6838bab3bbbe8015d44ea857ea22cdd",
+      "running": false
+    }
+  ],
+  "quality_progress": {
+    "bf16": {},
+    "fp8_e4m3": {}
+  },
+  "relaunch_allowed": false,
+  "run_id": "nextgen-nvfp4-pages-sm90-r0-20261027h",
+  "status": "COMPLETE",
+  "supervisor_alive": false
+}

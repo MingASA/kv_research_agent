@@ -1,0 +1,345 @@
+{
+  "classification": "confirmed_descriptive_paired_source_cohort_latency_groups",
+  "pressure_comparison_sha256": "1d0d466acc341dc9f8df73cc1a6eb6dbf7f5bb5b2bf78b281c82cce235956298",
+  "points": [
+    {
+      "arrival_scaling": 0.125,
+      "offered_rps": 0.8796875,
+      "input_length_groups": [
+        {
+          "input_tokens": "<4K",
+          "requests": 487,
+          "arms": {
+            "bf16": {
+              "offered_ttft_ms": {
+                "p50": 1082.64186,
+                "p95": 5445.2084356999985
+              },
+              "offered_e2e_ms": {
+                "p50": 7660.953556,
+                "p95": 17931.8017443
+              }
+            },
+            "fp8_e4m3": {
+              "offered_ttft_ms": {
+                "p50": 1228.0474649999999,
+                "p95": 6364.684877899999
+              },
+              "offered_e2e_ms": {
+                "p50": 8429.018306,
+                "p95": 18879.142888199996
+              }
+            }
+          },
+          "paired_FP8_minus_BF16_ms": {
+            "offered_ttft_ms": {
+              "p50": 126.18846100000064,
+              "p95": 1335.386902199999,
+              "faster_FP8_count": 63,
+              "slower_FP8_count": 424
+            },
+            "offered_e2e_ms": {
+              "p50": 673.0529070000011,
+              "p95": 1658.2007454000002,
+              "faster_FP8_count": 22,
+              "slower_FP8_count": 465
+            }
+          }
+        },
+        {
+          "input_tokens": "4K-8K",
+          "requests": 870,
+          "arms": {
+            "bf16": {
+              "offered_ttft_ms": {
+                "p50": 1138.1879665000001,
+                "p95": 5795.589910899999
+              },
+              "offered_e2e_ms": {
+                "p50": 4925.60649,
+                "p95": 15136.090761499994
+              }
+            },
+            "fp8_e4m3": {
+              "offered_ttft_ms": {
+                "p50": 1395.9400525,
+                "p95": 6991.3507534499995
+              },
+              "offered_e2e_ms": {
+                "p50": 5665.9876595000005,
+                "p95": 16042.84669455
+              }
+            }
+          },
+          "paired_FP8_minus_BF16_ms": {
+            "offered_ttft_ms": {
+              "p50": 168.66927750000013,
+              "p95": 1658.0384157999995,
+              "faster_FP8_count": 103,
+              "slower_FP8_count": 767
+            },
+            "offered_e2e_ms": {
+              "p50": 584.5566994999999,
+              "p95": 1728.4615434999987,
+              "faster_FP8_count": 40,
+              "slower_FP8_count": 830
+            }
+          }
+        },
+        {
+          "input_tokens": "8K-16K",
+          "requests": 208,
+          "arms": {
+            "bf16": {
+              "offered_ttft_ms": {
+                "p50": 2649.4838389999995,
+                "p95": 7171.312777249988
+              },
+              "offered_e2e_ms": {
+                "p50": 12211.926373,
+                "p95": 22276.322135699997
+              }
+            },
+            "fp8_e4m3": {
+              "offered_ttft_ms": {
+                "p50": 2977.6861105,
+                "p95": 8741.653253949991
+              },
+              "offered_e2e_ms": {
+                "p50": 13195.441704,
+                "p95": 23494.96341735
+              }
+            }
+          },
+          "paired_FP8_minus_BF16_ms": {
+            "offered_ttft_ms": {
+              "p50": 319.9854485000003,
+              "p95": 2177.493534949999,
+              "faster_FP8_count": 30,
+              "slower_FP8_count": 178
+            },
+            "offered_e2e_ms": {
+              "p50": 627.5365905000008,
+              "p95": 2014.0002944500004,
+              "faster_FP8_count": 9,
+              "slower_FP8_count": 199
+            }
+          }
+        },
+        {
+          "input_tokens": "16K-32K",
+          "requests": 124,
+          "arms": {
+            "bf16": {
+              "offered_ttft_ms": {
+                "p50": 4301.8533505,
+                "p95": 8805.79851945
+              },
+              "offered_e2e_ms": {
+                "p50": 14786.232954,
+                "p95": 23814.089477799997
+              }
+            },
+            "fp8_e4m3": {
+              "offered_ttft_ms": {
+                "p50": 5167.7789395,
+                "p95": 10417.315426
+              },
+              "offered_e2e_ms": {
+                "p50": 15326.5651845,
+                "p95": 31313.066591149975
+              }
+            }
+          },
+          "paired_FP8_minus_BF16_ms": {
+            "offered_ttft_ms": {
+              "p50": 753.8644649999994,
+              "p95": 2317.9423218499996,
+              "faster_FP8_count": 12,
+              "slower_FP8_count": 112
+            },
+            "offered_e2e_ms": {
+              "p50": 803.7019765,
+              "p95": 2231.0526833499994,
+              "faster_FP8_count": 5,
+              "slower_FP8_count": 119
+            }
+          }
+        }
+      ]
+    },
+    {
+      "arrival_scaling": 0.25,
+      "offered_rps": 1.759375,
+      "input_length_groups": [
+        {
+          "input_tokens": "<4K",
+          "requests": 487,
+          "arms": {
+            "bf16": {
+              "offered_ttft_ms": {
+                "p50": 2201.772148,
+                "p95": 26674.073223299998
+              },
+              "offered_e2e_ms": {
+                "p50": 10625.546368,
+                "p95": 41860.69946329999
+              }
+            },
+            "fp8_e4m3": {
+              "offered_ttft_ms": {
+                "p50": 1490.6595409999998,
+                "p95": 8038.843519199999
+              },
+              "offered_e2e_ms": {
+                "p50": 9705.288973,
+                "p95": 38972.605235799994
+              }
+            }
+          },
+          "paired_FP8_minus_BF16_ms": {
+            "offered_ttft_ms": {
+              "p50": -101.69895799999995,
+              "p95": 785.7534457999989,
+              "faster_FP8_count": 276,
+              "slower_FP8_count": 211
+            },
+            "offered_e2e_ms": {
+              "p50": 374.3014540000004,
+              "p95": 7903.357642099999,
+              "faster_FP8_count": 170,
+              "slower_FP8_count": 317
+            }
+          }
+        },
+        {
+          "input_tokens": "4K-8K",
+          "requests": 870,
+          "arms": {
+            "bf16": {
+              "offered_ttft_ms": {
+                "p50": 3073.262914,
+                "p95": 28170.96007305
+              },
+              "offered_e2e_ms": {
+                "p50": 7290.1292905,
+                "p95": 35085.65217689998
+              }
+            },
+            "fp8_e4m3": {
+              "offered_ttft_ms": {
+                "p50": 1855.1070255,
+                "p95": 9774.829686049998
+              },
+              "offered_e2e_ms": {
+                "p50": 6136.1556165,
+                "p95": 35448.21622189999
+              }
+            }
+          },
+          "paired_FP8_minus_BF16_ms": {
+            "offered_ttft_ms": {
+              "p50": -226.10558249999994,
+              "p95": 961.6391647999995,
+              "faster_FP8_count": 503,
+              "slower_FP8_count": 367
+            },
+            "offered_e2e_ms": {
+              "p50": 182.311414,
+              "p95": 7731.580253399994,
+              "faster_FP8_count": 367,
+              "slower_FP8_count": 503
+            }
+          }
+        },
+        {
+          "input_tokens": "8K-16K",
+          "requests": 208,
+          "arms": {
+            "bf16": {
+              "offered_ttft_ms": {
+                "p50": 5603.488096499999,
+                "p95": 27117.49737574999
+              },
+              "offered_e2e_ms": {
+                "p50": 21880.864559499998,
+                "p95": 52764.32860095
+              }
+            },
+            "fp8_e4m3": {
+              "offered_ttft_ms": {
+                "p50": 3446.998052,
+                "p95": 11018.319904049993
+              },
+              "offered_e2e_ms": {
+                "p50": 20528.840214999997,
+                "p95": 49152.259238949955
+              }
+            }
+          },
+          "paired_FP8_minus_BF16_ms": {
+            "offered_ttft_ms": {
+              "p50": -633.5862189999996,
+              "p95": 1277.800556449997,
+              "faster_FP8_count": 121,
+              "slower_FP8_count": 87
+            },
+            "offered_e2e_ms": {
+              "p50": 524.4337305000014,
+              "p95": 11370.177236949989,
+              "faster_FP8_count": 84,
+              "slower_FP8_count": 124
+            }
+          }
+        },
+        {
+          "input_tokens": "16K-32K",
+          "requests": 124,
+          "arms": {
+            "bf16": {
+              "offered_ttft_ms": {
+                "p50": 7123.2142285,
+                "p95": 33419.924595599994
+              },
+              "offered_e2e_ms": {
+                "p50": 27592.575321,
+                "p95": 63355.49868025
+              }
+            },
+            "fp8_e4m3": {
+              "offered_ttft_ms": {
+                "p50": 5756.754628,
+                "p95": 16400.505221149993
+              },
+              "offered_e2e_ms": {
+                "p50": 30427.938867,
+                "p95": 57392.77013019999
+              }
+            }
+          },
+          "paired_FP8_minus_BF16_ms": {
+            "offered_ttft_ms": {
+              "p50": -204.35664799999995,
+              "p95": 1309.3434497499998,
+              "faster_FP8_count": 67,
+              "slower_FP8_count": 57
+            },
+            "offered_e2e_ms": {
+              "p50": 712.2916934999994,
+              "p95": 10631.993752450002,
+              "faster_FP8_count": 50,
+              "slower_FP8_count": 74
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "GPU_work": false,
+  "limitations": [
+    "Same original1689 measured source requests per point, not additional independent samples",
+    "Length bins have different payload/prefix/output/arrival composition; no causal attribution to input length or kernels",
+    "One pair per point and different GPU/time across points; no run confidence intervals",
+    "Full final-SSE offered completion timing, not content-only latency or GPU-step timing"
+  ]
+}

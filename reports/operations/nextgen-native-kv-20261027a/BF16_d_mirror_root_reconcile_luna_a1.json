@@ -1,0 +1,188 @@
+{
+  "classification": "read_only_run_root_output_anomaly_reconciliation",
+  "hostname": "A03-R40-I18-195-B000010.JD.LOCAL",
+  "large_or_core_candidates": [],
+  "nonregular_or_unsafe": [],
+  "observed_utc": "2026-10-27T19:14:04.788861+00:00",
+  "ok": true,
+  "remote_writes": 0,
+  "root": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d",
+  "top_level": [
+    {
+      "canonical": true,
+      "mode": 32768,
+      "name": "PREPARED.json",
+      "size": 98,
+      "uid": 1005
+    },
+    {
+      "canonical": true,
+      "mode": 32768,
+      "name": "START_INTENT.json",
+      "size": 86,
+      "uid": 1005
+    },
+    {
+      "canonical": true,
+      "mode": 32768,
+      "name": "SUPERVISOR_PROCESS.json",
+      "size": 488,
+      "uid": 1005
+    },
+    {
+      "canonical": true,
+      "mode": 32768,
+      "name": "SUPERVISOR_STARTED.json",
+      "size": 571,
+      "uid": 1005
+    },
+    {
+      "canonical": true,
+      "mode": 32768,
+      "name": "WATCHDOG_FINISHED.json",
+      "size": 197,
+      "uid": 1005
+    },
+    {
+      "canonical": true,
+      "mode": 32768,
+      "name": "WATCHDOG_READY.json",
+      "size": 572,
+      "uid": 1005
+    },
+    {
+      "canonical": true,
+      "mode": 16384,
+      "name": "cache",
+      "size": 26,
+      "uid": 1005
+    },
+    {
+      "canonical": true,
+      "mode": 32768,
+      "name": "dispatch.lock",
+      "size": 0,
+      "uid": 1005
+    },
+    {
+      "canonical": true,
+      "mode": 16384,
+      "name": "empty_git_templates",
+      "size": 10,
+      "uid": 1005
+    },
+    {
+      "canonical": true,
+      "mode": 32768,
+      "name": "events.jsonl",
+      "size": 1510,
+      "uid": 1005
+    },
+    {
+      "canonical": true,
+      "mode": 16384,
+      "name": "input",
+      "size": 188,
+      "uid": 1005
+    },
+    {
+      "canonical": true,
+      "mode": 16384,
+      "name": "output",
+      "size": 26,
+      "uid": 1005
+    },
+    {
+      "canonical": true,
+      "mode": 32768,
+      "name": "owned_containers.json",
+      "size": 1630,
+      "uid": 1005
+    },
+    {
+      "canonical": true,
+      "mode": 32768,
+      "name": "result.json",
+      "size": 588,
+      "uid": 1005
+    },
+    {
+      "canonical": true,
+      "mode": 16384,
+      "name": "runtime",
+      "size": 35,
+      "uid": 1005
+    },
+    {
+      "canonical": true,
+      "mode": 16384,
+      "name": "runtime_support",
+      "size": 10,
+      "uid": 1005
+    },
+    {
+      "canonical": true,
+      "mode": 16384,
+      "name": "source_repo",
+      "size": 4096,
+      "uid": 1005
+    },
+    {
+      "canonical": true,
+      "mode": 32768,
+      "name": "state.json",
+      "size": 588,
+      "uid": 1005
+    },
+    {
+      "canonical": true,
+      "mode": 32768,
+      "name": "supervisor.lock",
+      "size": 0,
+      "uid": 1005
+    },
+    {
+      "canonical": true,
+      "mode": 32768,
+      "name": "supervisor.log",
+      "size": 0,
+      "uid": 1005
+    },
+    {
+      "canonical": true,
+      "mode": 32768,
+      "name": "ticket.json",
+      "size": 10602,
+      "uid": 1005
+    },
+    {
+      "canonical": true,
+      "mode": 16384,
+      "name": "tools_source",
+      "size": 10,
+      "uid": 1005
+    },
+    {
+      "canonical": true,
+      "mode": 32768,
+      "name": "watchdog.log",
+      "size": 0,
+      "uid": 1005
+    },
+    {
+      "canonical": true,
+      "mode": 32768,
+      "name": "watchdog_config.json",
+      "size": 178,
+      "uid": 1005
+    },
+    {
+      "canonical": true,
+      "mode": 32768,
+      "name": "watchdog_result.json",
+      "size": 128,
+      "uid": 1005
+    }
+  ],
+  "uid": 1005
+}

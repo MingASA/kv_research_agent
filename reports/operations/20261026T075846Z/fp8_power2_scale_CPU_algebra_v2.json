@@ -1,0 +1,55 @@
+{
+  "classification": "confirmed_CPU_FP8_representation_algebra_not_model_calibration",
+  "scope": "All positive finite BF16 bit patterns; FP8 E4M3 RNE QDQ, no model activations or GPU timing",
+  "torch_version": "2.13.0+cu132",
+  "device": "cpu",
+  "rows": [
+    {
+      "cache": "key",
+      "current_scalar": 0.125,
+      "alternative_power_of_two_scalar": 0.0625,
+      "positive_BF16_values_in_common_normal_unsaturated_domain": 1761,
+      "different_dequantized_values_in_that_domain": 0,
+      "current_max_finite": 56.0,
+      "current_smallest_nonzero_subnormal": 0.000244140625,
+      "current_smallest_normal": 0.001953125
+    },
+    {
+      "cache": "key",
+      "current_scalar": 0.125,
+      "alternative_power_of_two_scalar": 0.25,
+      "positive_BF16_values_in_common_normal_unsaturated_domain": 1761,
+      "different_dequantized_values_in_that_domain": 0,
+      "current_max_finite": 56.0,
+      "current_smallest_nonzero_subnormal": 0.000244140625,
+      "current_smallest_normal": 0.001953125
+    },
+    {
+      "cache": "value",
+      "current_scalar": 0.0625,
+      "alternative_power_of_two_scalar": 0.03125,
+      "positive_BF16_values_in_common_normal_unsaturated_domain": 1761,
+      "different_dequantized_values_in_that_domain": 0,
+      "current_max_finite": 28.0,
+      "current_smallest_nonzero_subnormal": 0.0001220703125,
+      "current_smallest_normal": 0.0009765625
+    },
+    {
+      "cache": "value",
+      "current_scalar": 0.0625,
+      "alternative_power_of_two_scalar": 0.125,
+      "positive_BF16_values_in_common_normal_unsaturated_domain": 1761,
+      "different_dequantized_values_in_that_domain": 0,
+      "current_max_finite": 28.0,
+      "current_smallest_nonzero_subnormal": 0.0001220703125,
+      "current_smallest_normal": 0.0009765625
+    }
+  ],
+  "script_sha256": "36687a6d422a1a98b227b0a8ddc7f967a5730b738442f497c4e4bea7e7ebf578",
+  "inference": "Power-of-two scalar changes preserve dequantized values in the shared normal unsaturated domain; investigate observed clipping/underflow before assuming calibration will improve model quality.",
+  "limitations": [
+    "Datatype values are not production activation frequencies",
+    "This does not locate observed quality losses or certify a scale",
+    "Actual GPU writer/kernel rounding and activation statistics remain separate evidence"
+  ]
+}

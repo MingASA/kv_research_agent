@@ -1,0 +1,404 @@
+{
+  "approval_saved": false,
+  "endpoint": {
+    "fingerprint": "SHA256:QZwhu4BzgiOmHYABTUK1kXdAYHPun3iNioo69CKCgEI",
+    "host": "h800-41594a.fkpku.cn",
+    "port": 45291,
+    "user": "yinjinrun"
+  },
+  "error": null,
+  "gpu_uuid": "GPU-47211491-ba0d-78bf-5c84-f968c0648213",
+  "observed_at_utc": "2026-10-28T15:29:26.601308+00:00",
+  "probe_source_sha256": "e18d5a480856eaa87db28049ff8617c8a123d7204dac14658cc8746e97607133",
+  "remote_rpc_source_sha256": "bac979550c278f3f13ca26cb3005593665515cd4698fe5d07b0eb6f8cb5550a0",
+  "remote_writes": false,
+  "request_sha256": "1c4c978d7e2eed9a421b958fdd0ba3dc667d416ca0cf62219cfe2e3da06a7739",
+  "reservation_id": "07be43b3dd6a4887b080bae9c6ee19b3",
+  "response": {
+    "interval_seconds": 25,
+    "log_markers": [
+      {
+        "bytes": 431294,
+        "exists": true,
+        "markers": [],
+        "path": "output/nvfp4/server.log",
+        "tail_bytes": 4096,
+        "tail_sha256": "8446b51d597d2b43436720d2cabbe031c75aa5af44e006c90ad87687dc11dee8",
+        "uid": 1005
+      },
+      {
+        "bytes": 3981,
+        "exists": true,
+        "markers": [],
+        "path": "output/nvfp4/native_operator.log",
+        "tail_bytes": 3981,
+        "tail_sha256": "384ceee652487f21bf104690d9617e65ac8a7344ee6f43edf2876a457371d6c1",
+        "uid": 1005
+      }
+    ],
+    "ok": true,
+    "snapshots": [
+      {
+        "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+        "gpu_compute_pid_count": 1,
+        "gpu_memory_util_csv": "GPU-47211491-ba0d-78bf-5c84-f968c0648213, 73749, 93",
+        "gpu_uuid": "GPU-47211491-ba0d-78bf-5c84-f968c0648213",
+        "hostname": "A03-R40-I18-195-B000010.JD.LOCAL",
+        "matching_owned_xllm_processes": [
+          {
+            "Threads": 82,
+            "VmRSS_kB": 3589696,
+            "VmSize_kB": 110756360,
+            "cgroup": "12:rdma:/system.slice/docker-58c4fa3bda44eab8f1aa268e71f2e8c9d4feeade0bdf585625ca149c28bc4ac6.scope\n11:blkio:/system.slice/docker-58c4fa3bda44eab8f1aa268e71f2e8c9d4feeade0bdf585625ca149c28bc4ac6.scope\n10:net_cls,net_prio:/system.slice/docker-58c4fa3bda44eab8f1aa268e71f2e8c9d4feeade0bdf585625ca149c28bc4ac6.scope\n9:freezer:/system.slice/docker-58c4fa3bda44eab8f1aa268e71f2e8c9d4feeade0bdf585625ca149c28bc4ac6.scope\n8:memory:/system.slice/docker-58c4fa3bda44eab8f1aa268e71f2e8c9d4feeade0bdf585625ca149c28bc4ac6.scope\n7:hugetlb:/system.slice/docker-58c4fa3bda44eab8f1aa268e71f2e8c9d4feeade0bdf585625ca149c28bc4ac6.scope\n6:perf_event:/system.slice/docker-58c4fa3bda44eab8f1aa268e71f2e8c9d4feeade0bdf585625ca149c28bc4ac6.scope\n5:pids:/system.slice/docker-58c4fa3bda44eab8f1aa268e71f2e8c9d4feeade0bdf585625ca149c28bc4ac6.scope\n4:devices:/system.slice/docker-58c4fa3bda44eab8f1aa268e71f2e8c9d4feeade0bdf585625ca149c28bc4ac6.scope\n3:cpu,cpuacct:/system.slice/docker-58c4fa3bda44eab8f1aa268e71f2e8c9d4feeade0bdf585625ca149c28bc4ac6.scope\n2:cpuset:/system.slice/docker-58c4fa3bda44eab8f1aa268e71f2e8c9d4feeade0bdf585625ca149c28bc4ac6.scope\n1:name=systemd:/system.slice/docker-58c4fa3bda44eab8f1aa268e71f2e8c9d4feeade0bdf585625ca149c28bc4ac6.scope\n",
+            "comm": "xllm",
+            "container_id": "58c4fa3bda44eab8f1aa268e71f2e8c9d4feeade0bdf585625ca149c28bc4ac6",
+            "cpu_ticks": 41148,
+            "io": {
+              "cancelled_write_bytes": 0,
+              "rchar": 988301514,
+              "read_bytes": 7475515392,
+              "syscr": 107139,
+              "syscw": 36486,
+              "wchar": 88459485,
+              "write_bytes": 37761024
+            },
+            "pid": 1898108,
+            "start_ticks": 380477993,
+            "state": "S",
+            "stime": 3211,
+            "thread_aggregate": {
+              "comm_top": [
+                [
+                  "xllm",
+                  63
+                ],
+                [
+                  "pt_nccl_heartbt",
+                  2
+                ],
+                [
+                  "pt_nccl_watchdg",
+                  2
+                ],
+                [
+                  "pt_tcpstore_uv",
+                  2
+                ],
+                [
+                  "brpc_timer",
+                  1
+                ],
+                [
+                  "brpc_wkr:0-0",
+                  1
+                ],
+                [
+                  "brpc_wkr:0-1",
+                  1
+                ],
+                [
+                  "brpc_wkr:0-2",
+                  1
+                ],
+                [
+                  "brpc_wkr:0-3",
+                  1
+                ],
+                [
+                  "brpc_wkr:0-4",
+                  1
+                ],
+                [
+                  "brpc_wkr:0-5",
+                  1
+                ],
+                [
+                  "brpc_wkr:0-6",
+                  1
+                ]
+              ],
+              "limit": 256,
+              "sampled_thread_cpu_ticks": 41115,
+              "sampled_tids": 82,
+              "state_counts": {
+                "R": 1,
+                "S": 81
+              },
+              "total_tids": 82,
+              "wchan_top": [
+                [
+                  "futex_wait_queue_me",
+                  73
+                ],
+                [
+                  "ep_poll",
+                  3
+                ],
+                [
+                  "hrtimer_nanosleep",
+                  3
+                ],
+                [
+                  "do_poll.constprop.0",
+                  2
+                ],
+                [
+                  "0",
+                  1
+                ]
+              ]
+            },
+            "uid": 1005,
+            "utime": 37937
+          }
+        ],
+        "nonmatching_pids_skipped_count": 0,
+        "owned_containers": [
+          {
+            "DeviceRequests": [
+              {
+                "Capabilities": [
+                  [
+                    "gpu"
+                  ]
+                ],
+                "Count": 0,
+                "DeviceIDs": [
+                  "GPU-47211491-ba0d-78bf-5c84-f968c0648213"
+                ],
+                "Driver": "",
+                "Options": {}
+              }
+            ],
+            "Devices": [
+              {
+                "CgroupPermissions": "rwm",
+                "PathInContainer": "/dev/nvidia7",
+                "PathOnHost": "/dev/nvidia7"
+              },
+              {
+                "CgroupPermissions": "rwm",
+                "PathInContainer": "/dev/nvidiactl",
+                "PathOnHost": "/dev/nvidiactl"
+              },
+              {
+                "CgroupPermissions": "rwm",
+                "PathInContainer": "/dev/nvidia-uvm",
+                "PathOnHost": "/dev/nvidia-uvm"
+              },
+              {
+                "CgroupPermissions": "rwm",
+                "PathInContainer": "/dev/nvidia-uvm-tools",
+                "PathOnHost": "/dev/nvidia-uvm-tools"
+              }
+            ],
+            "Privileged": false,
+            "container_id": "58c4fa3bda44eab8f1aa268e71f2e8c9d4feeade0bdf585625ca149c28bc4ac6",
+            "exit_code": 0,
+            "oom": false,
+            "request_sha256": "1c4c978d7e2eed9a421b958fdd0ba3dc667d416ca0cf62219cfe2e3da06a7739",
+            "reservation_id": "07be43b3dd6a4887b080bae9c6ee19b3",
+            "run_id": "nextgen-nvfp4-qwen38-quality-core1720-r0-20261028p",
+            "running": true,
+            "state": "running",
+            "uid": "1005:1005"
+          }
+        ],
+        "sample": 1,
+        "ssh_uid": 1005,
+        "utc": "2026-10-28T15:28:59.728109+00:00"
+      },
+      {
+        "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+        "gpu_compute_pid_count": 1,
+        "gpu_memory_util_csv": "GPU-47211491-ba0d-78bf-5c84-f968c0648213, 73749, 86",
+        "gpu_uuid": "GPU-47211491-ba0d-78bf-5c84-f968c0648213",
+        "hostname": "A03-R40-I18-195-B000010.JD.LOCAL",
+        "matching_owned_xllm_processes": [
+          {
+            "Threads": 82,
+            "VmRSS_kB": 3590612,
+            "VmSize_kB": 110757384,
+            "cgroup": "12:rdma:/system.slice/docker-58c4fa3bda44eab8f1aa268e71f2e8c9d4feeade0bdf585625ca149c28bc4ac6.scope\n11:blkio:/system.slice/docker-58c4fa3bda44eab8f1aa268e71f2e8c9d4feeade0bdf585625ca149c28bc4ac6.scope\n10:net_cls,net_prio:/system.slice/docker-58c4fa3bda44eab8f1aa268e71f2e8c9d4feeade0bdf585625ca149c28bc4ac6.scope\n9:freezer:/system.slice/docker-58c4fa3bda44eab8f1aa268e71f2e8c9d4feeade0bdf585625ca149c28bc4ac6.scope\n8:memory:/system.slice/docker-58c4fa3bda44eab8f1aa268e71f2e8c9d4feeade0bdf585625ca149c28bc4ac6.scope\n7:hugetlb:/system.slice/docker-58c4fa3bda44eab8f1aa268e71f2e8c9d4feeade0bdf585625ca149c28bc4ac6.scope\n6:perf_event:/system.slice/docker-58c4fa3bda44eab8f1aa268e71f2e8c9d4feeade0bdf585625ca149c28bc4ac6.scope\n5:pids:/system.slice/docker-58c4fa3bda44eab8f1aa268e71f2e8c9d4feeade0bdf585625ca149c28bc4ac6.scope\n4:devices:/system.slice/docker-58c4fa3bda44eab8f1aa268e71f2e8c9d4feeade0bdf585625ca149c28bc4ac6.scope\n3:cpu,cpuacct:/system.slice/docker-58c4fa3bda44eab8f1aa268e71f2e8c9d4feeade0bdf585625ca149c28bc4ac6.scope\n2:cpuset:/system.slice/docker-58c4fa3bda44eab8f1aa268e71f2e8c9d4feeade0bdf585625ca149c28bc4ac6.scope\n1:name=systemd:/system.slice/docker-58c4fa3bda44eab8f1aa268e71f2e8c9d4feeade0bdf585625ca149c28bc4ac6.scope\n",
+            "comm": "xllm",
+            "container_id": "58c4fa3bda44eab8f1aa268e71f2e8c9d4feeade0bdf585625ca149c28bc4ac6",
+            "cpu_ticks": 43708,
+            "io": {
+              "cancelled_write_bytes": 0,
+              "rchar": 992316521,
+              "read_bytes": 7475515392,
+              "syscr": 112188,
+              "syscw": 38985,
+              "wchar": 92380067,
+              "write_bytes": 38019072
+            },
+            "pid": 1898108,
+            "start_ticks": 380477993,
+            "state": "S",
+            "stime": 3222,
+            "thread_aggregate": {
+              "comm_top": [
+                [
+                  "xllm",
+                  63
+                ],
+                [
+                  "pt_nccl_heartbt",
+                  2
+                ],
+                [
+                  "pt_nccl_watchdg",
+                  2
+                ],
+                [
+                  "pt_tcpstore_uv",
+                  2
+                ],
+                [
+                  "brpc_timer",
+                  1
+                ],
+                [
+                  "brpc_wkr:0-0",
+                  1
+                ],
+                [
+                  "brpc_wkr:0-1",
+                  1
+                ],
+                [
+                  "brpc_wkr:0-2",
+                  1
+                ],
+                [
+                  "brpc_wkr:0-3",
+                  1
+                ],
+                [
+                  "brpc_wkr:0-4",
+                  1
+                ],
+                [
+                  "brpc_wkr:0-5",
+                  1
+                ],
+                [
+                  "brpc_wkr:0-6",
+                  1
+                ]
+              ],
+              "limit": 256,
+              "sampled_thread_cpu_ticks": 43678,
+              "sampled_tids": 82,
+              "state_counts": {
+                "R": 1,
+                "S": 81
+              },
+              "total_tids": 82,
+              "wchan_top": [
+                [
+                  "futex_wait_queue_me",
+                  73
+                ],
+                [
+                  "ep_poll",
+                  3
+                ],
+                [
+                  "hrtimer_nanosleep",
+                  3
+                ],
+                [
+                  "do_poll.constprop.0",
+                  2
+                ],
+                [
+                  "0",
+                  1
+                ]
+              ]
+            },
+            "uid": 1005,
+            "utime": 40486
+          }
+        ],
+        "nonmatching_pids_skipped_count": 0,
+        "owned_containers": [
+          {
+            "DeviceRequests": [
+              {
+                "Capabilities": [
+                  [
+                    "gpu"
+                  ]
+                ],
+                "Count": 0,
+                "DeviceIDs": [
+                  "GPU-47211491-ba0d-78bf-5c84-f968c0648213"
+                ],
+                "Driver": "",
+                "Options": {}
+              }
+            ],
+            "Devices": [
+              {
+                "CgroupPermissions": "rwm",
+                "PathInContainer": "/dev/nvidia7",
+                "PathOnHost": "/dev/nvidia7"
+              },
+              {
+                "CgroupPermissions": "rwm",
+                "PathInContainer": "/dev/nvidiactl",
+                "PathOnHost": "/dev/nvidiactl"
+              },
+              {
+                "CgroupPermissions": "rwm",
+                "PathInContainer": "/dev/nvidia-uvm",
+                "PathOnHost": "/dev/nvidia-uvm"
+              },
+              {
+                "CgroupPermissions": "rwm",
+                "PathInContainer": "/dev/nvidia-uvm-tools",
+                "PathOnHost": "/dev/nvidia-uvm-tools"
+              }
+            ],
+            "Privileged": false,
+            "container_id": "58c4fa3bda44eab8f1aa268e71f2e8c9d4feeade0bdf585625ca149c28bc4ac6",
+            "exit_code": 0,
+            "oom": false,
+            "request_sha256": "1c4c978d7e2eed9a421b958fdd0ba3dc667d416ca0cf62219cfe2e3da06a7739",
+            "reservation_id": "07be43b3dd6a4887b080bae9c6ee19b3",
+            "run_id": "nextgen-nvfp4-qwen38-quality-core1720-r0-20261028p",
+            "running": true,
+            "state": "running",
+            "uid": "1005:1005"
+          }
+        ],
+        "sample": 2,
+        "ssh_uid": 1005,
+        "utc": "2026-10-28T15:29:25.247967+00:00"
+      }
+    ],
+    "stop_reason": null,
+    "validation_checks": [
+      {
+        "canonical": true,
+        "check_ticket_mutation": false,
+        "existing_ticket_matches": true,
+        "root": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/runs/nextgen-nvfp4-qwen38-quality-core1720-r0-20261028p",
+        "root_uid": 1005,
+        "utc": "2026-10-28T15:28:59.695355+00:00"
+      },
+      {
+        "canonical": true,
+        "check_ticket_mutation": false,
+        "existing_ticket_matches": true,
+        "root": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/runs/nextgen-nvfp4-qwen38-quality-core1720-r0-20261028p",
+        "root_uid": 1005,
+        "utc": "2026-10-28T15:29:25.215537+00:00"
+      }
+    ]
+  },
+  "run_id": "nextgen-nvfp4-qwen38-quality-core1720-r0-20261028p",
+  "schema": "nvfp4-p-load-process-probe-luna-v1"
+}

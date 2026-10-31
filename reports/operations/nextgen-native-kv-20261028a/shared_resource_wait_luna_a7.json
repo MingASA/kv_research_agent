@@ -1,0 +1,92 @@
+{
+  "container_exec": false,
+  "endpoint": {
+    "fingerprint": "SHA256:QZwhu4BzgiOmHYABTUK1kXdAYHPun3iNioo69CKCgEI",
+    "host": "h800-41594a.fkpku.cn",
+    "port": 45291,
+    "user": "yinjinrun"
+  },
+  "gpu_request": false,
+  "recorded_at_utc": "2026-10-28T08:33:53.244198+00:00",
+  "remote_script_sha256": "7066fcf645e0462fd499e86cddd91daf74c0b671f40a02af3eeff96c979adf02",
+  "remote_writes": false,
+  "response": {
+    "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+    "compute_rows": [
+      "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 2171585",
+      "GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 2171586",
+      "GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 2171587",
+      "GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 2171588",
+      "GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 2171589",
+      "GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 2171590",
+      "GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 2171591",
+      "GPU-47211491-ba0d-78bf-5c84-f968c0648213, 2171592"
+    ],
+    "gpu_rows": [
+      "0, GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 75091, 0",
+      "1, GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 75091, 0",
+      "2, GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 75091, 0",
+      "3, GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 75091, 0",
+      "4, GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 75091, 0",
+      "5, GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 75091, 0",
+      "6, GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 75091, 0",
+      "7, GPU-47211491-ba0d-78bf-5c84-f968c0648213, 75091, 0"
+    ],
+    "hostname": "A03-R40-I18-195-B000010.JD.LOCAL",
+    "observed_at_utc": "2026-10-28T08:33:52.689826+00:00",
+    "ok": true,
+    "processes": [
+      {
+        "comm": "VLLM::Worker_TP",
+        "gpu_uuid": "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a",
+        "pid": 2171585,
+        "uid": 0
+      },
+      {
+        "comm": "VLLM::Worker_TP",
+        "gpu_uuid": "GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7",
+        "pid": 2171586,
+        "uid": 0
+      },
+      {
+        "comm": "VLLM::Worker_TP",
+        "gpu_uuid": "GPU-a6169058-34c8-6edc-e4f5-779bf9a10421",
+        "pid": 2171587,
+        "uid": 0
+      },
+      {
+        "comm": "VLLM::Worker_TP",
+        "gpu_uuid": "GPU-0cb28538-7e9f-1b66-750f-1b53ff309195",
+        "pid": 2171588,
+        "uid": 0
+      },
+      {
+        "comm": "VLLM::Worker_TP",
+        "gpu_uuid": "GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1",
+        "pid": 2171589,
+        "uid": 0
+      },
+      {
+        "comm": "VLLM::Worker_TP",
+        "gpu_uuid": "GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348",
+        "pid": 2171590,
+        "uid": 0
+      },
+      {
+        "comm": "VLLM::Worker_TP",
+        "gpu_uuid": "GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7",
+        "pid": 2171591,
+        "uid": 0
+      },
+      {
+        "comm": "VLLM::Worker_TP",
+        "gpu_uuid": "GPU-47211491-ba0d-78bf-5c84-f968c0648213",
+        "pid": 2171592,
+        "uid": 0
+      }
+    ],
+    "uid": 1005
+  },
+  "schema": "shared-resource-wait-s0-readonly-luna-v1",
+  "snapshot": "a7"
+}

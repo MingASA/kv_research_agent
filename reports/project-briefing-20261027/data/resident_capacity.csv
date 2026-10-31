@@ -1,0 +1,3 @@
+arm,B/token/layer（含scale）,physical pages/layer,物理 token容量（含page0）,扣page0 token容量,48层 resident B,48层 resident GiB
+bf16,4096,1477,189056,188928,37169922048,34.617188
+fp8_e4m3,2112,2865,366720,366592,37176606720,34.623413

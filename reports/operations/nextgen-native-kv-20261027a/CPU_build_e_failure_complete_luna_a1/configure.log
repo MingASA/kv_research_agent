@@ -1,0 +1,410 @@
+-- Using the C++-11 ABI.
+-- Using ccache: /usr/bin/ccache
+-- Using CCACHE_DIR: /workspace/agent_work/builds/nextgen-native-kv-862c29ca-20261027e/ccache
+-- VCPKG_ROOT found, using vcpkg at /vcpkg
+-- Found Boost: /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/include (found version "1.84.0")  
+CMake Warning at /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1398 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1523 (_Boost_COMPONENT_DEPENDENCIES)
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:2134 (_Boost_MISSING_DEPENDENCIES)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/boost/vcpkg-cmake-wrapper.cmake:11 (_find_package)
+  /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:813 (include)
+  CMakeLists.txt:382 (find_package)
+
+
+-- Found Boost: /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/include (found version "1.84.0") found components: serialization 
+-- Found libevent include directory: /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/include
+-- Found libevent component: /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/debug/lib/libevent_cored.a
+-- Found libevent component: /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/lib/libevent_core.a
+-- Found libevent component: /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/debug/lib/libevent_extrad.a
+-- Found libevent component: /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/lib/libevent_extra.a
+-- Found libevent component: /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/debug/lib/libevent_pthreadsd.a
+-- Found libevent component: /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/lib/libevent_pthreads.a
+-- Found libevent 2.2.0 in /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux
+CMake Warning at /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1398 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1523 (_Boost_COMPONENT_DEPENDENCIES)
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:2134 (_Boost_MISSING_DEPENDENCIES)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/boost/vcpkg-cmake-wrapper.cmake:11 (_find_package)
+  /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:813 (include)
+  /opt/cmake/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/folly/folly-config.cmake:84 (find_dependency)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/folly/vcpkg-cmake-wrapper.cmake:4 (_find_package)
+  /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:813 (include)
+  CMakeLists.txt:388 (find_package)
+
+
+CMake Warning at /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1398 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1523 (_Boost_COMPONENT_DEPENDENCIES)
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:2134 (_Boost_MISSING_DEPENDENCIES)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/boost/vcpkg-cmake-wrapper.cmake:11 (_find_package)
+  /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:813 (include)
+  /opt/cmake/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/folly/folly-config.cmake:84 (find_dependency)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/folly/vcpkg-cmake-wrapper.cmake:4 (_find_package)
+  /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:813 (include)
+  CMakeLists.txt:388 (find_package)
+
+
+CMake Warning at /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1398 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1523 (_Boost_COMPONENT_DEPENDENCIES)
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:2134 (_Boost_MISSING_DEPENDENCIES)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/boost/vcpkg-cmake-wrapper.cmake:11 (_find_package)
+  /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:813 (include)
+  /opt/cmake/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/folly/folly-config.cmake:84 (find_dependency)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/folly/vcpkg-cmake-wrapper.cmake:4 (_find_package)
+  /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:813 (include)
+  CMakeLists.txt:388 (find_package)
+
+
+CMake Warning at /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1398 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1523 (_Boost_COMPONENT_DEPENDENCIES)
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:2134 (_Boost_MISSING_DEPENDENCIES)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/boost/vcpkg-cmake-wrapper.cmake:11 (_find_package)
+  /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:813 (include)
+  /opt/cmake/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/folly/folly-config.cmake:84 (find_dependency)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/folly/vcpkg-cmake-wrapper.cmake:4 (_find_package)
+  /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:813 (include)
+  CMakeLists.txt:388 (find_package)
+
+
+CMake Warning at /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1398 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1523 (_Boost_COMPONENT_DEPENDENCIES)
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:2134 (_Boost_MISSING_DEPENDENCIES)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/boost/vcpkg-cmake-wrapper.cmake:11 (_find_package)
+  /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:813 (include)
+  /opt/cmake/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/folly/folly-config.cmake:84 (find_dependency)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/folly/vcpkg-cmake-wrapper.cmake:4 (_find_package)
+  /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:813 (include)
+  CMakeLists.txt:388 (find_package)
+
+
+CMake Warning at /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1398 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1523 (_Boost_COMPONENT_DEPENDENCIES)
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:2134 (_Boost_MISSING_DEPENDENCIES)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/boost/vcpkg-cmake-wrapper.cmake:11 (_find_package)
+  /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:813 (include)
+  /opt/cmake/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/folly/folly-config.cmake:84 (find_dependency)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/folly/vcpkg-cmake-wrapper.cmake:4 (_find_package)
+  /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:813 (include)
+  CMakeLists.txt:388 (find_package)
+
+
+CMake Warning at /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1398 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1523 (_Boost_COMPONENT_DEPENDENCIES)
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:2134 (_Boost_MISSING_DEPENDENCIES)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/boost/vcpkg-cmake-wrapper.cmake:11 (_find_package)
+  /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:813 (include)
+  /opt/cmake/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/folly/folly-config.cmake:84 (find_dependency)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/folly/vcpkg-cmake-wrapper.cmake:4 (_find_package)
+  /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:813 (include)
+  CMakeLists.txt:388 (find_package)
+
+
+CMake Warning at /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1398 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1523 (_Boost_COMPONENT_DEPENDENCIES)
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:2134 (_Boost_MISSING_DEPENDENCIES)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/boost/vcpkg-cmake-wrapper.cmake:11 (_find_package)
+  /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:813 (include)
+  /opt/cmake/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/folly/folly-config.cmake:84 (find_dependency)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/folly/vcpkg-cmake-wrapper.cmake:4 (_find_package)
+  /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:813 (include)
+  CMakeLists.txt:388 (find_package)
+
+
+-- Found Boost: /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/include (found version "1.84.0") found components: context filesystem program_options regex system thread chrono atomic 
+-- Found folly: /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux
+-- Found ZLIB: optimized;/workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/lib/libz.a;debug;/workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/debug/lib/libz.a (found version "1.3.1")  
+-- Found Protobuf: /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/tools/protobuf/protoc (found version "3.21.12.0") 
+-- Found RE2 via CMake.
+-- Found Python: /usr/include/python3.12 (found version "3.12.3") found components: Development Development.Module Development.Embed 
+-- Found pybind11: /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/include (found version "2.11.1")
+CMake Warning at /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package):
+  By not providing "FindJemalloc.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "Jemalloc",
+  but CMake did not find one.
+
+  Could not find a package configuration file provided by "Jemalloc" with any
+  of the following names:
+
+    JemallocConfig.cmake
+    jemalloc-config.cmake
+
+  Add the installation prefix of "Jemalloc" to CMAKE_PREFIX_PATH or set
+  "Jemalloc_DIR" to a directory containing one of the above files.  If
+  "Jemalloc" provides a separate development package or SDK, be sure it has
+  been installed.
+Call Stack (most recent call first):
+  CMakeLists.txt:420 (find_package)
+
+
+-- Found CUDAToolkit: /usr/local/cuda/include (found version "13.0.88") 
+-- PyTorch: CUDA detected: 13.0
+-- PyTorch: CUDA nvcc is: /usr/local/cuda/bin/nvcc
+-- PyTorch: CUDA toolkit directory: /usr/local/cuda
+-- PyTorch: Header version is: 13.0
+-- Found Python: /workspace/.venv/bin/python (found version "3.12.3") found components: Interpreter 
+CMake Warning at /usr/local/lib/python3.12/dist-packages/torch/share/cmake/Caffe2/public/cuda.cmake:149 (message):
+  Failed to compute shorthash for libnvrtc.so
+Call Stack (most recent call first):
+  /usr/local/lib/python3.12/dist-packages/torch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)
+  /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)
+  /usr/local/lib/python3.12/dist-packages/torch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)
+  /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)
+  CMakeLists.txt:454 (find_package)
+
+
+-- USE_CUDNN is set to 0. Compiling without cuDNN support
+-- USE_CUSPARSELT is set to 0. Compiling without cuSPARSELt support
+-- USE_CUDSS is set to 0. Compiling without cuDSS support
+-- USE_CUFILE is set to 0. Compiling without cuFile support
+CMake Warning at /usr/local/lib/python3.12/dist-packages/torch/share/cmake/Caffe2/public/cuda.cmake:332 (message):
+  pytorch is not compatible with `CMAKE_CUDA_ARCHITECTURES` and will ignore
+  its value.  Please configure `TORCH_CUDA_ARCH_LIST` instead.
+Call Stack (most recent call first):
+  /usr/local/lib/python3.12/dist-packages/torch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)
+  /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)
+  /usr/local/lib/python3.12/dist-packages/torch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)
+  /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)
+  CMakeLists.txt:454 (find_package)
+
+
+-- Added CUDA NVCC flags for: -gencode;arch=compute_80,code=sm_80;-gencode;arch=compute_86,code=sm_86;-gencode;arch=compute_89,code=sm_89;-gencode;arch=compute_90a,code=sm_90a;-gencode;arch=compute_100a,code=sm_100a;-gencode;arch=compute_120a,code=sm_120a
+CMake Warning at /usr/local/lib/python3.12/dist-packages/torch/share/cmake/Torch/TorchConfig.cmake:22 (message):
+  static library kineto_LIBRARY-NOTFOUND not found.
+Call Stack (most recent call first):
+  /usr/local/lib/python3.12/dist-packages/torch/share/cmake/Torch/TorchConfig.cmake:125 (append_torchlib_if_found)
+  /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)
+  CMakeLists.txt:454 (find_package)
+
+
+-- Using libtorch at /usr/local/lib/python3.12/dist-packages/torch
+-- TORCH_CUDA_ARCH_LIST: 8.0 8.6 8.9 9.0a 10.0a 12.0a
+-- CMAKE_CUDA_FLAGS:  -DONNX_NAMESPACE=onnx_c2 -gencode arch=compute_80,code=sm_80 -gencode arch=compute_86,code=sm_86 -gencode arch=compute_89,code=sm_89 -gencode arch=compute_90a,code=sm_90a -gencode arch=compute_100a,code=sm_100a -gencode arch=compute_120a,code=sm_120a -Xcudafe --diag_suppress=cc_clobber_ignored,--diag_suppress=field_without_dll_interface,--diag_suppress=base_class_has_different_dll_interface,--diag_suppress=dll_interface_conflict_none_assumed,--diag_suppress=dll_interface_conflict_dllexport_assumed,--diag_suppress=bad_friend_decl --expt-relaxed-constexpr --expt-extended-lambda -O3 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --use_fast_math -Xfatbin -compress-all --threads 1
+-- TORCH_CXX_FLAGS: 
+-- CMAKE_CXX_FLAGS:  -fPIC -Wno-format-truncation -DC10_USE_GLOG
+-- CMAKE_CXX_FLAGS_DEBUG: -g -Og
+CMake Deprecation Warning at third_party/brpc/CMakeLists.txt:18 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Error: Could not open file for write in copy operation /workspace/agent_work/builds/nextgen-native-kv-59fc32ac-20261027d/source_repo/third_party/brpc/src/butil/config.h.tmp
+CMake Error: : System Error: Read-only file system
+CMake Error at third_party/brpc/CMakeLists.txt:111 (configure_file):
+  configure_file Problem configuring file
+
+
+-- Found gflags: /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/lib/libgflags.a
+cat: /workspace/agent_work/builds/nextgen-native-kv-59fc32ac-20261027d/source_repo/third_party/brpc/RELEASE_VERSION: No such file or directory
+-- Found Protobuf: optimized;/workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/lib/libprotobuf.a;debug;/workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/debug/lib/libprotobufd.a (found version "3.21.12") 
+CMake Deprecation Warning at third_party/smhasher/src/CMakeLists.txt:3 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- Setting gcc options
+CMake Warning at /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1398 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1523 (_Boost_COMPONENT_DEPENDENCIES)
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:2134 (_Boost_MISSING_DEPENDENCIES)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/boost/vcpkg-cmake-wrapper.cmake:11 (_find_package)
+  /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:813 (include)
+  third_party/cpprestsdk/Release/cmake/cpprest_find_boost.cmake:49 (find_package)
+  third_party/cpprestsdk/Release/src/CMakeLists.txt:129 (cpprest_find_boost)
+
+
+CMake Warning at /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1398 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1523 (_Boost_COMPONENT_DEPENDENCIES)
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:2134 (_Boost_MISSING_DEPENDENCIES)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/boost/vcpkg-cmake-wrapper.cmake:11 (_find_package)
+  /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:813 (include)
+  third_party/cpprestsdk/Release/cmake/cpprest_find_boost.cmake:49 (find_package)
+  third_party/cpprestsdk/Release/src/CMakeLists.txt:129 (cpprest_find_boost)
+
+
+CMake Warning at /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1398 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1523 (_Boost_COMPONENT_DEPENDENCIES)
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:2134 (_Boost_MISSING_DEPENDENCIES)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/boost/vcpkg-cmake-wrapper.cmake:11 (_find_package)
+  /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:813 (include)
+  third_party/cpprestsdk/Release/cmake/cpprest_find_boost.cmake:49 (find_package)
+  third_party/cpprestsdk/Release/src/CMakeLists.txt:129 (cpprest_find_boost)
+
+
+CMake Warning at /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1398 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1523 (_Boost_COMPONENT_DEPENDENCIES)
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:2134 (_Boost_MISSING_DEPENDENCIES)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/boost/vcpkg-cmake-wrapper.cmake:11 (_find_package)
+  /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:813 (include)
+  third_party/cpprestsdk/Release/cmake/cpprest_find_boost.cmake:49 (find_package)
+  third_party/cpprestsdk/Release/src/CMakeLists.txt:129 (cpprest_find_boost)
+
+
+CMake Warning at /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1398 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1523 (_Boost_COMPONENT_DEPENDENCIES)
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:2134 (_Boost_MISSING_DEPENDENCIES)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/boost/vcpkg-cmake-wrapper.cmake:11 (_find_package)
+  /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:813 (include)
+  third_party/cpprestsdk/Release/cmake/cpprest_find_boost.cmake:49 (find_package)
+  third_party/cpprestsdk/Release/src/CMakeLists.txt:129 (cpprest_find_boost)
+
+
+CMake Warning at /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1398 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1523 (_Boost_COMPONENT_DEPENDENCIES)
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:2134 (_Boost_MISSING_DEPENDENCIES)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/boost/vcpkg-cmake-wrapper.cmake:11 (_find_package)
+  /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:813 (include)
+  third_party/cpprestsdk/Release/cmake/cpprest_find_boost.cmake:49 (find_package)
+  third_party/cpprestsdk/Release/src/CMakeLists.txt:129 (cpprest_find_boost)
+
+
+CMake Warning at /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1398 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1523 (_Boost_COMPONENT_DEPENDENCIES)
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:2134 (_Boost_MISSING_DEPENDENCIES)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/boost/vcpkg-cmake-wrapper.cmake:11 (_find_package)
+  /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:813 (include)
+  third_party/cpprestsdk/Release/cmake/cpprest_find_boost.cmake:49 (find_package)
+  third_party/cpprestsdk/Release/src/CMakeLists.txt:129 (cpprest_find_boost)
+
+
+CMake Warning at /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1398 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:1523 (_Boost_COMPONENT_DEPENDENCIES)
+  /opt/cmake/share/cmake-3.27/Modules/FindBoost.cmake:2134 (_Boost_MISSING_DEPENDENCIES)
+  /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/share/boost/vcpkg-cmake-wrapper.cmake:11 (_find_package)
+  /workspace/deps/vcpkg/scripts/buildsystems/vcpkg.cmake:813 (include)
+  third_party/cpprestsdk/Release/cmake/cpprest_find_boost.cmake:49 (find_package)
+  third_party/cpprestsdk/Release/src/CMakeLists.txt:129 (cpprest_find_boost)
+
+
+-- Found Boost: /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/include (found version "1.84.0") found components: random system thread filesystem chrono atomic date_time regex 
+-- Added test library httpclient_test
+-- Added test library httplistener_test
+-- Added test library json_test
+-- Added test library pplx_test
+-- Added test library streams_test
+-- Added test library uri_test
+-- Added test library utils_test
+-- Applied GCC 12+ warning suppressions for cpprestsdk
+CMake Deprecation Warning at third_party/etcd_cpp_apiv3/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- Building etcd-cpp-apiv3 with C++20
+-- Found GRPC: gRPC::gpr;gRPC::grpc;gRPC::grpc++, /workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/tools/grpc/grpc_cpp_plugin (found version: "1.51.1")
+-- xxHash: target architecture = x86_64
+-- xxHash: x86 dispatch enabled (SSE2 / AVX2 / AVX512)
+-- Build spdlog: 1.12.0
+-- Build type: Release
+CMAKE_BUILD_TYPE: Release
+-- [limit_jobs] Available memory: 65513 MB, CPU cores: 4
+-- [limit_jobs] Compile jobs: 4 (1500 MB/job), Link jobs: 4 (4000 MB/job)
+-- [limit_jobs] Ninja job pools: compile=4, link=4
+-- Event-driven completion is disabled
+-- CUDA support is enabled
+-- Http as metadata server support is enabled
+-- metrics is enabled
+YLT is imported by find_package
+-- -------------YLT CONFIG SETTING-------------
+-- YLT_ENABLE_DL: ON
+-- YLT_ENABLE_SSL: OFF
+-- Enable ibverbs support
+-- YLT_ENABLE_PMR: OFF
+-- YLT_ENABLE_IO_URING: OFF
+-- YLT_ENABLE_STRUCT_PACK_UNPORTABLE_TYPE: OFF
+-- YLT_ENABLE_STRUCT_PACK_OPTIMIZE: OFF
+-- --------------------------------------------
+-- USE_NOF=OFF, NoF SSD pool support is disabled
+-- Found ASIO at: /workspace/deps/prefix/include
+-- Found ZLIB: optimized;/workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/lib/libz.a;debug;/workspace/xllm_quant_kvcache/build/cmake.linux-x86_64-cpython-312/vcpkg_installed/x64-linux/debug/lib/libz.a (found suitable version "1.3.1", minimum required is "1")  
+-- Found CUDAToolkit: /usr/local/cuda/include (found version "13.0.88") 
+-- CUDA: Enabled
+-- ROCm/HIP: Disabled
+-- Sunrise/Tang: Disabled
+-- Mooncake Store will be built
+-- Store HA backends are disabled
+-- AWS SDK not found, S3 functionality will be disabled
+-- Found xxHash: include=/workspace/deps/prefix/include lib=/workspace/deps/prefix/lib/libxxhash.so
+-- io_uring: Disabled (liburing not found)
+-- mooncake_store: CUDAToolkit detected, enabling D2H staging
+-- Mooncake Store Rust bindings will be built
+/workspace/.venv/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages
+/workspace/.venv/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages
+YLT is imported by find_package
+-- -------------YLT CONFIG SETTING-------------
+-- YLT_ENABLE_DL: ON
+-- YLT_ENABLE_SSL: OFF
+-- Enable ibverbs support
+-- YLT_ENABLE_PMR: OFF
+-- YLT_ENABLE_IO_URING: OFF
+-- YLT_ENABLE_STRUCT_PACK_UNPORTABLE_TYPE: OFF
+-- YLT_ENABLE_STRUCT_PACK_OPTIMIZE: OFF
+-- --------------------------------------------
+-- running: /opt/cmake/bin/cmake;-E;env;CARGO_TARGET_DIR=/workspace/agent_work/builds/nextgen-native-kv-59fc32ac-20261027d/build/xllm/core/framework/state_dict/safetensors /workspace/agent_work/builds/nextgen-native-kv-59fc32ac-20261027d/cargo/bin/cargo ARGS build;--target;x86_64-unknown-linux-gnu;--release
+-- running: /opt/cmake/bin/cmake;-E;env;CARGO_TARGET_DIR=/workspace/agent_work/builds/nextgen-native-kv-59fc32ac-20261027d/build/xllm/core/framework/tokenizer/tokenizers /workspace/agent_work/builds/nextgen-native-kv-59fc32ac-20261027d/cargo/bin/cargo ARGS build;--target;x86_64-unknown-linux-gnu;--release
+-- build xllm binary and install
+-- Configuring incomplete, errors occurred!

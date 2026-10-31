@@ -1,0 +1,16 @@
+{
+  "schema": "kv-agent-approval-v1",
+  "enabled": false,
+  "ssh_target": "FILL_VERIFIED_SSH_ALIAS",
+  "approved_host_fingerprint": "FILL_TRUSTED_HOSTKEY_FINGERPRINT",
+  "approved_workspace": "FILL_VERIFIED_PROJECT_BASE_ABSOLUTE_PATH",
+  "allow_remote_user_workspace_writes": false,
+  "allow_gpu_jobs": false,
+  "allowed_gpu_uuids": ["REPLACE_WITH_UUIDS_OBSERVED_AND_APPROVED_FOR_USE"],
+  "max_concurrent_gpus": 8,
+  "max_gpu_hours_per_job": 16,
+  "max_gpu_hours_total": 96,
+  "max_disk_gib_new_outputs": 100,
+  "valid_until_utc": "FILL_UTC_EXPIRATION_ISO8601",
+  "notes": "未生效的演示模板。用户需确认真实身份/路径/UUID、选择实际预算与到期日，并亲自启用；不要交由 Agent 自行签发。此 JSON 不是 OS 级安全隔离。"
+}

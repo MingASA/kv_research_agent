@@ -1,0 +1,1395 @@
+{
+  "excluded_archive_tasks": [
+    {
+      "path": "data/2wikimqa_e.jsonl",
+      "reason": "_e LongBench-E variant omitted under the 25-task cap; all 21 base tasks processed"
+    },
+    {
+      "path": "data/gov_report_e.jsonl",
+      "reason": "_e LongBench-E variant omitted under the 25-task cap; all 21 base tasks processed"
+    },
+    {
+      "path": "data/hotpotqa_e.jsonl",
+      "reason": "_e LongBench-E variant omitted under the 25-task cap; all 21 base tasks processed"
+    },
+    {
+      "path": "data/lcc_e.jsonl",
+      "reason": "_e LongBench-E variant omitted under the 25-task cap; all 21 base tasks processed"
+    },
+    {
+      "path": "data/multi_news_e.jsonl",
+      "reason": "_e LongBench-E variant omitted under the 25-task cap; all 21 base tasks processed"
+    },
+    {
+      "path": "data/multifieldqa_en_e.jsonl",
+      "reason": "_e LongBench-E variant omitted under the 25-task cap; all 21 base tasks processed"
+    },
+    {
+      "path": "data/passage_count_e.jsonl",
+      "reason": "_e LongBench-E variant omitted under the 25-task cap; all 21 base tasks processed"
+    },
+    {
+      "path": "data/passage_retrieval_en_e.jsonl",
+      "reason": "_e LongBench-E variant omitted under the 25-task cap; all 21 base tasks processed"
+    },
+    {
+      "path": "data/qasper_e.jsonl",
+      "reason": "_e LongBench-E variant omitted under the 25-task cap; all 21 base tasks processed"
+    },
+    {
+      "path": "data/repobench-p_e.jsonl",
+      "reason": "_e LongBench-E variant omitted under the 25-task cap; all 21 base tasks processed"
+    },
+    {
+      "path": "data/samsum_e.jsonl",
+      "reason": "_e LongBench-E variant omitted under the 25-task cap; all 21 base tasks processed"
+    },
+    {
+      "path": "data/trec_e.jsonl",
+      "reason": "_e LongBench-E variant omitted under the 25-task cap; all 21 base tasks processed"
+    },
+    {
+      "path": "data/triviaqa_e.jsonl",
+      "reason": "_e LongBench-E variant omitted under the 25-task cap; all 21 base tasks processed"
+    }
+  ],
+  "longest_sampled_contexts": [
+    {
+      "context_chars": 210429,
+      "context_tokens": 67621,
+      "input_chars": 94,
+      "source_row_index": 63,
+      "task": "narrativeqa"
+    },
+    {
+      "context_chars": 210429,
+      "context_tokens": 67621,
+      "input_chars": 17,
+      "source_row_index": 66,
+      "task": "narrativeqa"
+    },
+    {
+      "context_chars": 210429,
+      "context_tokens": 67621,
+      "input_chars": 41,
+      "source_row_index": 110,
+      "task": "narrativeqa"
+    },
+    {
+      "context_chars": 210429,
+      "context_tokens": 67621,
+      "input_chars": 15,
+      "source_row_index": 124,
+      "task": "narrativeqa"
+    },
+    {
+      "context_chars": 210429,
+      "context_tokens": 67621,
+      "input_chars": 48,
+      "source_row_index": 125,
+      "task": "narrativeqa"
+    },
+    {
+      "context_chars": 257121,
+      "context_tokens": 52383,
+      "input_chars": 0,
+      "source_row_index": 116,
+      "task": "gov_report"
+    },
+    {
+      "context_chars": 205877,
+      "context_tokens": 45949,
+      "input_chars": 0,
+      "source_row_index": 60,
+      "task": "gov_report"
+    },
+    {
+      "context_chars": 208864,
+      "context_tokens": 41923,
+      "input_chars": 5283,
+      "source_row_index": 237,
+      "task": "repobench-p"
+    },
+    {
+      "context_chars": 145097,
+      "context_tokens": 41821,
+      "input_chars": 5797,
+      "source_row_index": 290,
+      "task": "repobench-p"
+    },
+    {
+      "context_chars": 203983,
+      "context_tokens": 41567,
+      "input_chars": 0,
+      "source_row_index": 57,
+      "task": "gov_report"
+    }
+  ],
+  "method": {
+    "char_quantiles": "Nearest rank: sorted observation at index ceil(q*n)-1 for q in 50, 90, 95, 99.",
+    "full_context_limit_tokens": 262144,
+    "max_task_cap": 25,
+    "selected_per_task": 5,
+    "selection": "largest context character length, ties resolved by earliest 1-based source row index",
+    "task_policy": "All base LongBench task JSONL files (exclude *_e variants); cap 25 respected. *_e files listed as excluded variants.",
+    "tasks_processed": 21,
+    "token_count_scope": "context field only, tokenizer.encode(add_special_tokens=False); excludes input/question, prompt wrapper, system messages and special tokens; these are context-only counts, not full request token counts.",
+    "token_quantiles": "not computed over every row; actual tokenizer counts cover only selected longest-by-character rows.",
+    "tokenizer_load": {
+      "CUDA_VISIBLE_DEVICES": "",
+      "HF_HUB_OFFLINE": "1",
+      "OMP_NUM_THREADS": "1",
+      "TOKENIZERS_PARALLELISM": "false",
+      "local_files_only": true,
+      "trust_remote_code": false
+    },
+    "tokenizer_path": ".deps/nextgen-official-models-20261027-a1/Qwen3.8-27B"
+  },
+  "provenance": {
+    "archive_bytes": 113932529,
+    "archive_sha256": "cb45b11a4133c6bc1d6a44b0f8e701335ff1e543195db1103472e575857f7f64",
+    "archive_sha_matches_receipt": true,
+    "archive_url": "https://huggingface.co/datasets/zai-org/LongBench/resolve/5e628be450b7e67fb7ae6e201bd6d8f7056f7672/data.zip",
+    "dataset": "zai-org/LongBench",
+    "license_field_in_dataset_card": null,
+    "receipt_archive_sha256": "cb45b11a4133c6bc1d6a44b0f8e701335ff1e543195db1103472e575857f7f64",
+    "receipt_classification": "confirmed_pinned_public_source_archive_download_only",
+    "receipt_completed_utc": "2026-10-27T13:59:46.297628+00:00",
+    "receipt_path": ".deps/longbench-official-5e628be-20261027-a1/download_receipt.json",
+    "revision": "5e628be450b7e67fb7ae6e201bd6d8f7056f7672",
+    "source_execution": false
+  },
+  "sampled_context_token_coverage": {
+    "131072": {
+      "covered": false,
+      "max_sampled_context_tokens": 67621,
+      "sample_count_at_or_above": 0
+    },
+    "32768": {
+      "covered": true,
+      "max_sampled_context_tokens": 67621,
+      "sample_count_at_or_above": 12
+    },
+    "65536": {
+      "covered": true,
+      "max_sampled_context_tokens": 67621,
+      "sample_count_at_or_above": 5
+    },
+    "8192": {
+      "covered": true,
+      "max_sampled_context_tokens": 67621,
+      "sample_count_at_or_above": 95
+    }
+  },
+  "schema": "kv-longbench-context-range-audit-v1",
+  "summary": {
+    "max_context_chars": 257121,
+    "max_sampled_context_tokens": 67621,
+    "natural_context_only_thresholds_covered": [
+      8192,
+      32768,
+      65536
+    ],
+    "sampled_contexts_tokenized": 105,
+    "total_records": 4750
+  },
+  "tasks": [
+    {
+      "context_chars": {
+        "max": 72498,
+        "min": 2847,
+        "quantiles_nearest_rank": {
+          "p50": 25426,
+          "p90": 55900,
+          "p95": 62736,
+          "p99": 69089
+        }
+      },
+      "input_chars": {
+        "max": 119,
+        "min": 33,
+        "quantiles_nearest_rank": {
+          "p50": 66,
+          "p90": 88,
+          "p95": 93,
+          "p99": 112
+        }
+      },
+      "longest_context_samples": [
+        {
+          "context_chars": 72498,
+          "context_tokens": 16890,
+          "input_chars": 51,
+          "source_row_index": 193
+        },
+        {
+          "context_chars": 70709,
+          "context_tokens": 16910,
+          "input_chars": 41,
+          "source_row_index": 158
+        },
+        {
+          "context_chars": 69089,
+          "context_tokens": 17028,
+          "input_chars": 66,
+          "source_row_index": 33
+        },
+        {
+          "context_chars": 68021,
+          "context_tokens": 16125,
+          "input_chars": 66,
+          "source_row_index": 79
+        },
+        {
+          "context_chars": 67536,
+          "context_tokens": 16395,
+          "input_chars": 75,
+          "source_row_index": 190
+        }
+      ],
+      "record_count": 200,
+      "source_archive_path": "data/2wikimqa.jsonl",
+      "task": "2wikimqa"
+    },
+    {
+      "context_chars": {
+        "max": 27064,
+        "min": 7965,
+        "quantiles_nearest_rank": {
+          "p50": 15174,
+          "p90": 20608,
+          "p95": 22180,
+          "p99": 25006
+        }
+      },
+      "input_chars": {
+        "max": 20,
+        "min": 3,
+        "quantiles_nearest_rank": {
+          "p50": 9,
+          "p90": 14,
+          "p95": 16,
+          "p99": 19
+        }
+      },
+      "longest_context_samples": [
+        {
+          "context_chars": 27064,
+          "context_tokens": 17244,
+          "input_chars": 15,
+          "source_row_index": 112
+        },
+        {
+          "context_chars": 25526,
+          "context_tokens": 15739,
+          "input_chars": 10,
+          "source_row_index": 100
+        },
+        {
+          "context_chars": 25006,
+          "context_tokens": 15372,
+          "input_chars": 5,
+          "source_row_index": 153
+        },
+        {
+          "context_chars": 24678,
+          "context_tokens": 14825,
+          "input_chars": 5,
+          "source_row_index": 102
+        },
+        {
+          "context_chars": 24641,
+          "context_tokens": 15845,
+          "input_chars": 12,
+          "source_row_index": 32
+        }
+      ],
+      "record_count": 200,
+      "source_archive_path": "data/dureader.jsonl",
+      "task": "dureader"
+    },
+    {
+      "context_chars": {
+        "max": 257121,
+        "min": 11102,
+        "quantiles_nearest_rank": {
+          "p50": 46339,
+          "p90": 92100,
+          "p95": 107343,
+          "p99": 203983
+        }
+      },
+      "input_chars": {
+        "max": 0,
+        "min": 0,
+        "quantiles_nearest_rank": {
+          "p50": 0,
+          "p90": 0,
+          "p95": 0,
+          "p99": 0
+        }
+      },
+      "longest_context_samples": [
+        {
+          "context_chars": 257121,
+          "context_tokens": 52383,
+          "input_chars": 0,
+          "source_row_index": 116
+        },
+        {
+          "context_chars": 205877,
+          "context_tokens": 45949,
+          "input_chars": 0,
+          "source_row_index": 60
+        },
+        {
+          "context_chars": 203983,
+          "context_tokens": 41567,
+          "input_chars": 0,
+          "source_row_index": 57
+        },
+        {
+          "context_chars": 147287,
+          "context_tokens": 27537,
+          "input_chars": 0,
+          "source_row_index": 99
+        },
+        {
+          "context_chars": 142196,
+          "context_tokens": 27192,
+          "input_chars": 0,
+          "source_row_index": 94
+        }
+      ],
+      "record_count": 200,
+      "source_archive_path": "data/gov_report.jsonl",
+      "task": "gov_report"
+    },
+    {
+      "context_chars": {
+        "max": 81304,
+        "min": 6558,
+        "quantiles_nearest_rank": {
+          "p50": 62489,
+          "p90": 74399,
+          "p95": 76462,
+          "p99": 80010
+        }
+      },
+      "input_chars": {
+        "max": 231,
+        "min": 33,
+        "quantiles_nearest_rank": {
+          "p50": 83,
+          "p90": 130,
+          "p95": 142,
+          "p99": 191
+        }
+      },
+      "longest_context_samples": [
+        {
+          "context_chars": 81304,
+          "context_tokens": 16917,
+          "input_chars": 89,
+          "source_row_index": 18
+        },
+        {
+          "context_chars": 80499,
+          "context_tokens": 16857,
+          "input_chars": 104,
+          "source_row_index": 4
+        },
+        {
+          "context_chars": 80010,
+          "context_tokens": 16891,
+          "input_chars": 79,
+          "source_row_index": 41
+        },
+        {
+          "context_chars": 78008,
+          "context_tokens": 16547,
+          "input_chars": 70,
+          "source_row_index": 129
+        },
+        {
+          "context_chars": 77861,
+          "context_tokens": 16810,
+          "input_chars": 152,
+          "source_row_index": 107
+        }
+      ],
+      "record_count": 200,
+      "source_archive_path": "data/hotpotqa.jsonl",
+      "task": "hotpotqa"
+    },
+    {
+      "context_chars": {
+        "max": 104060,
+        "min": 4160,
+        "quantiles_nearest_rank": {
+          "p50": 9788,
+          "p90": 23026,
+          "p95": 32267,
+          "p99": 68388
+        }
+      },
+      "input_chars": {
+        "max": 0,
+        "min": 0,
+        "quantiles_nearest_rank": {
+          "p50": 0,
+          "p90": 0,
+          "p95": 0,
+          "p99": 0
+        }
+      },
+      "longest_context_samples": [
+        {
+          "context_chars": 104060,
+          "context_tokens": 24360,
+          "input_chars": 0,
+          "source_row_index": 249
+        },
+        {
+          "context_chars": 87613,
+          "context_tokens": 18984,
+          "input_chars": 0,
+          "source_row_index": 251
+        },
+        {
+          "context_chars": 76735,
+          "context_tokens": 16473,
+          "input_chars": 0,
+          "source_row_index": 201
+        },
+        {
+          "context_chars": 71563,
+          "context_tokens": 16149,
+          "input_chars": 0,
+          "source_row_index": 300
+        },
+        {
+          "context_chars": 71195,
+          "context_tokens": 19618,
+          "input_chars": 0,
+          "source_row_index": 265
+        }
+      ],
+      "record_count": 500,
+      "source_archive_path": "data/lcc.jsonl",
+      "task": "lcc"
+    },
+    {
+      "context_chars": {
+        "max": 43878,
+        "min": 5576,
+        "quantiles_nearest_rank": {
+          "p50": 20328,
+          "p90": 33815,
+          "p95": 36005,
+          "p99": 39908
+        }
+      },
+      "input_chars": {
+        "max": 5170,
+        "min": 34,
+        "quantiles_nearest_rank": {
+          "p50": 580,
+          "p90": 1640,
+          "p95": 2250,
+          "p99": 3581
+        }
+      },
+      "longest_context_samples": [
+        {
+          "context_chars": 43878,
+          "context_tokens": 26240,
+          "input_chars": 342,
+          "source_row_index": 94
+        },
+        {
+          "context_chars": 40357,
+          "context_tokens": 23577,
+          "input_chars": 603,
+          "source_row_index": 73
+        },
+        {
+          "context_chars": 39908,
+          "context_tokens": 23108,
+          "input_chars": 495,
+          "source_row_index": 85
+        },
+        {
+          "context_chars": 38052,
+          "context_tokens": 22275,
+          "input_chars": 1613,
+          "source_row_index": 110
+        },
+        {
+          "context_chars": 37595,
+          "context_tokens": 21486,
+          "input_chars": 708,
+          "source_row_index": 53
+        }
+      ],
+      "record_count": 200,
+      "source_archive_path": "data/lsht.jsonl",
+      "task": "lsht"
+    },
+    {
+      "context_chars": {
+        "max": 63426,
+        "min": 603,
+        "quantiles_nearest_rank": {
+          "p50": 9415,
+          "p90": 22081,
+          "p95": 27924,
+          "p99": 60561
+        }
+      },
+      "input_chars": {
+        "max": 0,
+        "min": 0,
+        "quantiles_nearest_rank": {
+          "p50": 0,
+          "p90": 0,
+          "p95": 0,
+          "p99": 0
+        }
+      },
+      "longest_context_samples": [
+        {
+          "context_chars": 63426,
+          "context_tokens": 14366,
+          "input_chars": 0,
+          "source_row_index": 74
+        },
+        {
+          "context_chars": 63126,
+          "context_tokens": 13990,
+          "input_chars": 0,
+          "source_row_index": 89
+        },
+        {
+          "context_chars": 60561,
+          "context_tokens": 12856,
+          "input_chars": 0,
+          "source_row_index": 54
+        },
+        {
+          "context_chars": 48308,
+          "context_tokens": 11732,
+          "input_chars": 0,
+          "source_row_index": 45
+        },
+        {
+          "context_chars": 40839,
+          "context_tokens": 9727,
+          "input_chars": 0,
+          "source_row_index": 116
+        }
+      ],
+      "record_count": 200,
+      "source_archive_path": "data/multi_news.jsonl",
+      "task": "multi_news"
+    },
+    {
+      "context_chars": {
+        "max": 64118,
+        "min": 4493,
+        "quantiles_nearest_rank": {
+          "p50": 31376,
+          "p90": 47708,
+          "p95": 51398,
+          "p99": 60897
+        }
+      },
+      "input_chars": {
+        "max": 144,
+        "min": 15,
+        "quantiles_nearest_rank": {
+          "p50": 60,
+          "p90": 86,
+          "p95": 100,
+          "p99": 121
+        }
+      },
+      "longest_context_samples": [
+        {
+          "context_chars": 64118,
+          "context_tokens": 13004,
+          "input_chars": 59,
+          "source_row_index": 95
+        },
+        {
+          "context_chars": 60897,
+          "context_tokens": 13408,
+          "input_chars": 72,
+          "source_row_index": 117
+        },
+        {
+          "context_chars": 59602,
+          "context_tokens": 12804,
+          "input_chars": 73,
+          "source_row_index": 86
+        },
+        {
+          "context_chars": 58922,
+          "context_tokens": 13530,
+          "input_chars": 120,
+          "source_row_index": 28
+        },
+        {
+          "context_chars": 57362,
+          "context_tokens": 13109,
+          "input_chars": 26,
+          "source_row_index": 100
+        }
+      ],
+      "record_count": 150,
+      "source_archive_path": "data/multifieldqa_en.jsonl",
+      "task": "multifieldqa_en"
+    },
+    {
+      "context_chars": {
+        "max": 16733,
+        "min": 1233,
+        "quantiles_nearest_rank": {
+          "p50": 5915,
+          "p90": 11645,
+          "p95": 12921,
+          "p99": 16732
+        }
+      },
+      "input_chars": {
+        "max": 40,
+        "min": 6,
+        "quantiles_nearest_rank": {
+          "p50": 16,
+          "p90": 25,
+          "p95": 28,
+          "p99": 37
+        }
+      },
+      "longest_context_samples": [
+        {
+          "context_chars": 16733,
+          "context_tokens": 8031,
+          "input_chars": 11,
+          "source_row_index": 132
+        },
+        {
+          "context_chars": 16733,
+          "context_tokens": 8031,
+          "input_chars": 8,
+          "source_row_index": 136
+        },
+        {
+          "context_chars": 16732,
+          "context_tokens": 8030,
+          "input_chars": 12,
+          "source_row_index": 68
+        },
+        {
+          "context_chars": 14783,
+          "context_tokens": 7896,
+          "input_chars": 26,
+          "source_row_index": 94
+        },
+        {
+          "context_chars": 14783,
+          "context_tokens": 7896,
+          "input_chars": 19,
+          "source_row_index": 157
+        }
+      ],
+      "record_count": 200,
+      "source_archive_path": "data/multifieldqa_zh.jsonl",
+      "task": "multifieldqa_zh"
+    },
+    {
+      "context_chars": {
+        "max": 81895,
+        "min": 22958,
+        "quantiles_nearest_rank": {
+          "p50": 71575,
+          "p90": 75624,
+          "p95": 77001,
+          "p99": 79717
+        }
+      },
+      "input_chars": {
+        "max": 187,
+        "min": 35,
+        "quantiles_nearest_rank": {
+          "p50": 79,
+          "p90": 125,
+          "p95": 151,
+          "p99": 164
+        }
+      },
+      "longest_context_samples": [
+        {
+          "context_chars": 81895,
+          "context_tokens": 16780,
+          "input_chars": 70,
+          "source_row_index": 65
+        },
+        {
+          "context_chars": 80360,
+          "context_tokens": 16588,
+          "input_chars": 124,
+          "source_row_index": 23
+        },
+        {
+          "context_chars": 79717,
+          "context_tokens": 17238,
+          "input_chars": 87,
+          "source_row_index": 183
+        },
+        {
+          "context_chars": 78565,
+          "context_tokens": 17005,
+          "input_chars": 178,
+          "source_row_index": 89
+        },
+        {
+          "context_chars": 78077,
+          "context_tokens": 16812,
+          "input_chars": 77,
+          "source_row_index": 48
+        }
+      ],
+      "record_count": 200,
+      "source_archive_path": "data/musique.jsonl",
+      "task": "musique"
+    },
+    {
+      "context_chars": {
+        "max": 210429,
+        "min": 33711,
+        "quantiles_nearest_rank": {
+          "p50": 106854,
+          "p90": 199268,
+          "p95": 202039,
+          "p99": 210429
+        }
+      },
+      "input_chars": {
+        "max": 125,
+        "min": 15,
+        "quantiles_nearest_rank": {
+          "p50": 46,
+          "p90": 75,
+          "p95": 89,
+          "p99": 109
+        }
+      },
+      "longest_context_samples": [
+        {
+          "context_chars": 210429,
+          "context_tokens": 67621,
+          "input_chars": 94,
+          "source_row_index": 63
+        },
+        {
+          "context_chars": 210429,
+          "context_tokens": 67621,
+          "input_chars": 17,
+          "source_row_index": 66
+        },
+        {
+          "context_chars": 210429,
+          "context_tokens": 67621,
+          "input_chars": 41,
+          "source_row_index": 110
+        },
+        {
+          "context_chars": 210429,
+          "context_tokens": 67621,
+          "input_chars": 15,
+          "source_row_index": 124
+        },
+        {
+          "context_chars": 210429,
+          "context_tokens": 67621,
+          "input_chars": 48,
+          "source_row_index": 125
+        }
+      ],
+      "record_count": 200,
+      "source_archive_path": "data/narrativeqa.jsonl",
+      "task": "narrativeqa"
+    },
+    {
+      "context_chars": {
+        "max": 126439,
+        "min": 21562,
+        "quantiles_nearest_rank": {
+          "p50": 68690,
+          "p90": 92469,
+          "p95": 100977,
+          "p99": 110136
+        }
+      },
+      "input_chars": {
+        "max": 0,
+        "min": 0,
+        "quantiles_nearest_rank": {
+          "p50": 0,
+          "p90": 0,
+          "p95": 0,
+          "p99": 0
+        }
+      },
+      "longest_context_samples": [
+        {
+          "context_chars": 126439,
+          "context_tokens": 29489,
+          "input_chars": 0,
+          "source_row_index": 5
+        },
+        {
+          "context_chars": 113259,
+          "context_tokens": 25220,
+          "input_chars": 0,
+          "source_row_index": 127
+        },
+        {
+          "context_chars": 110136,
+          "context_tokens": 24676,
+          "input_chars": 0,
+          "source_row_index": 106
+        },
+        {
+          "context_chars": 110003,
+          "context_tokens": 24642,
+          "input_chars": 0,
+          "source_row_index": 38
+        },
+        {
+          "context_chars": 107900,
+          "context_tokens": 24270,
+          "input_chars": 0,
+          "source_row_index": 77
+        }
+      ],
+      "record_count": 200,
+      "source_archive_path": "data/passage_count.jsonl",
+      "task": "passage_count"
+    },
+    {
+      "context_chars": {
+        "max": 67723,
+        "min": 43906,
+        "quantiles_nearest_rank": {
+          "p50": 54623,
+          "p90": 61615,
+          "p95": 62589,
+          "p99": 66572
+        }
+      },
+      "input_chars": {
+        "max": 1758,
+        "min": 260,
+        "quantiles_nearest_rank": {
+          "p50": 786,
+          "p90": 1203,
+          "p95": 1410,
+          "p99": 1541
+        }
+      },
+      "longest_context_samples": [
+        {
+          "context_chars": 67723,
+          "context_tokens": 15247,
+          "input_chars": 959,
+          "source_row_index": 98
+        },
+        {
+          "context_chars": 67101,
+          "context_tokens": 15227,
+          "input_chars": 939,
+          "source_row_index": 15
+        },
+        {
+          "context_chars": 66572,
+          "context_tokens": 14767,
+          "input_chars": 1541,
+          "source_row_index": 70
+        },
+        {
+          "context_chars": 66228,
+          "context_tokens": 15204,
+          "input_chars": 1327,
+          "source_row_index": 82
+        },
+        {
+          "context_chars": 64748,
+          "context_tokens": 15219,
+          "input_chars": 931,
+          "source_row_index": 122
+        }
+      ],
+      "record_count": 200,
+      "source_archive_path": "data/passage_retrieval_en.jsonl",
+      "task": "passage_retrieval_en"
+    },
+    {
+      "context_chars": {
+        "max": 8748,
+        "min": 4865,
+        "quantiles_nearest_rank": {
+          "p50": 6544,
+          "p90": 7540,
+          "p95": 8042,
+          "p99": 8555
+        }
+      },
+      "input_chars": {
+        "max": 1073,
+        "min": 17,
+        "quantiles_nearest_rank": {
+          "p50": 130,
+          "p90": 230,
+          "p95": 276,
+          "p99": 369
+        }
+      },
+      "longest_context_samples": [
+        {
+          "context_chars": 8748,
+          "context_tokens": 5576,
+          "input_chars": 214,
+          "source_row_index": 33
+        },
+        {
+          "context_chars": 8636,
+          "context_tokens": 5482,
+          "input_chars": 123,
+          "source_row_index": 177
+        },
+        {
+          "context_chars": 8555,
+          "context_tokens": 6179,
+          "input_chars": 230,
+          "source_row_index": 117
+        },
+        {
+          "context_chars": 8403,
+          "context_tokens": 5286,
+          "input_chars": 71,
+          "source_row_index": 146
+        },
+        {
+          "context_chars": 8206,
+          "context_tokens": 5001,
+          "input_chars": 247,
+          "source_row_index": 31
+        }
+      ],
+      "record_count": 200,
+      "source_archive_path": "data/passage_retrieval_zh.jsonl",
+      "task": "passage_retrieval_zh"
+    },
+    {
+      "context_chars": {
+        "max": 101028,
+        "min": 9022,
+        "quantiles_nearest_rank": {
+          "p50": 21751,
+          "p90": 32718,
+          "p95": 41987,
+          "p99": 84442
+        }
+      },
+      "input_chars": {
+        "max": 152,
+        "min": 22,
+        "quantiles_nearest_rank": {
+          "p50": 43,
+          "p90": 71,
+          "p95": 83,
+          "p99": 110
+        }
+      },
+      "longest_context_samples": [
+        {
+          "context_chars": 101028,
+          "context_tokens": 21661,
+          "input_chars": 34,
+          "source_row_index": 58
+        },
+        {
+          "context_chars": 97047,
+          "context_tokens": 20020,
+          "input_chars": 59,
+          "source_row_index": 55
+        },
+        {
+          "context_chars": 84442,
+          "context_tokens": 17857,
+          "input_chars": 23,
+          "source_row_index": 16
+        },
+        {
+          "context_chars": 67698,
+          "context_tokens": 15785,
+          "input_chars": 56,
+          "source_row_index": 17
+        },
+        {
+          "context_chars": 55506,
+          "context_tokens": 10551,
+          "input_chars": 29,
+          "source_row_index": 36
+        }
+      ],
+      "record_count": 200,
+      "source_archive_path": "data/qasper.jsonl",
+      "task": "qasper"
+    },
+    {
+      "context_chars": {
+        "max": 143473,
+        "min": 9978,
+        "quantiles_nearest_rank": {
+          "p50": 56387,
+          "p90": 95966,
+          "p95": 120229,
+          "p99": 143473
+        }
+      },
+      "input_chars": {
+        "max": 195,
+        "min": 21,
+        "quantiles_nearest_rank": {
+          "p50": 66,
+          "p90": 123,
+          "p95": 137,
+          "p99": 161
+        }
+      },
+      "longest_context_samples": [
+        {
+          "context_chars": 143473,
+          "context_tokens": 30602,
+          "input_chars": 75,
+          "source_row_index": 65
+        },
+        {
+          "context_chars": 143473,
+          "context_tokens": 30602,
+          "input_chars": 69,
+          "source_row_index": 71
+        },
+        {
+          "context_chars": 143473,
+          "context_tokens": 30602,
+          "input_chars": 47,
+          "source_row_index": 120
+        },
+        {
+          "context_chars": 143473,
+          "context_tokens": 30602,
+          "input_chars": 65,
+          "source_row_index": 134
+        },
+        {
+          "context_chars": 143473,
+          "context_tokens": 30602,
+          "input_chars": 36,
+          "source_row_index": 136
+        }
+      ],
+      "record_count": 200,
+      "source_archive_path": "data/qmsum.jsonl",
+      "task": "qmsum"
+    },
+    {
+      "context_chars": {
+        "max": 208864,
+        "min": 4442,
+        "quantiles_nearest_rank": {
+          "p50": 37686,
+          "p90": 78239,
+          "p95": 102536,
+          "p99": 144553
+        }
+      },
+      "input_chars": {
+        "max": 19234,
+        "min": 474,
+        "quantiles_nearest_rank": {
+          "p50": 4447,
+          "p90": 7172,
+          "p95": 8065,
+          "p99": 10575
+        }
+      },
+      "longest_context_samples": [
+        {
+          "context_chars": 208864,
+          "context_tokens": 41923,
+          "input_chars": 5283,
+          "source_row_index": 237
+        },
+        {
+          "context_chars": 151549,
+          "context_tokens": 36461,
+          "input_chars": 6483,
+          "source_row_index": 258
+        },
+        {
+          "context_chars": 145751,
+          "context_tokens": 30415,
+          "input_chars": 3217,
+          "source_row_index": 162
+        },
+        {
+          "context_chars": 145097,
+          "context_tokens": 41821,
+          "input_chars": 5797,
+          "source_row_index": 290
+        },
+        {
+          "context_chars": 145005,
+          "context_tokens": 35282,
+          "input_chars": 5128,
+          "source_row_index": 475
+        }
+      ],
+      "record_count": 500,
+      "source_archive_path": "data/repobench-p.jsonl",
+      "task": "repobench-p"
+    },
+    {
+      "context_chars": {
+        "max": 67533,
+        "min": 4950,
+        "quantiles_nearest_rank": {
+          "p50": 34558,
+          "p90": 56710,
+          "p95": 60682,
+          "p99": 64449
+        }
+      },
+      "input_chars": {
+        "max": 1958,
+        "min": 69,
+        "quantiles_nearest_rank": {
+          "p50": 399,
+          "p90": 1251,
+          "p95": 1516,
+          "p99": 1856
+        }
+      },
+      "longest_context_samples": [
+        {
+          "context_chars": 67533,
+          "context_tokens": 18350,
+          "input_chars": 211,
+          "source_row_index": 96
+        },
+        {
+          "context_chars": 67160,
+          "context_tokens": 18533,
+          "input_chars": 141,
+          "source_row_index": 30
+        },
+        {
+          "context_chars": 64449,
+          "context_tokens": 17492,
+          "input_chars": 865,
+          "source_row_index": 118
+        },
+        {
+          "context_chars": 64164,
+          "context_tokens": 17505,
+          "input_chars": 256,
+          "source_row_index": 149
+        },
+        {
+          "context_chars": 62457,
+          "context_tokens": 17156,
+          "input_chars": 120,
+          "source_row_index": 198
+        }
+      ],
+      "record_count": 200,
+      "source_archive_path": "data/samsum.jsonl",
+      "task": "samsum"
+    },
+    {
+      "context_chars": {
+        "max": 50212,
+        "min": 8329,
+        "quantiles_nearest_rank": {
+          "p50": 29887,
+          "p90": 46603,
+          "p95": 48347,
+          "p99": 49433
+        }
+      },
+      "input_chars": {
+        "max": 93,
+        "min": 30,
+        "quantiles_nearest_rank": {
+          "p50": 49,
+          "p90": 67,
+          "p95": 76,
+          "p99": 87
+        }
+      },
+      "longest_context_samples": [
+        {
+          "context_chars": 50212,
+          "context_tokens": 12027,
+          "input_chars": 52,
+          "source_row_index": 117
+        },
+        {
+          "context_chars": 49762,
+          "context_tokens": 11922,
+          "input_chars": 65,
+          "source_row_index": 78
+        },
+        {
+          "context_chars": 49433,
+          "context_tokens": 11829,
+          "input_chars": 30,
+          "source_row_index": 191
+        },
+        {
+          "context_chars": 49358,
+          "context_tokens": 11819,
+          "input_chars": 51,
+          "source_row_index": 87
+        },
+        {
+          "context_chars": 49306,
+          "context_tokens": 11718,
+          "input_chars": 46,
+          "source_row_index": 123
+        }
+      ],
+      "record_count": 200,
+      "source_archive_path": "data/trec.jsonl",
+      "task": "trec"
+    },
+    {
+      "context_chars": {
+        "max": 101431,
+        "min": 5518,
+        "quantiles_nearest_rank": {
+          "p50": 47930,
+          "p90": 80974,
+          "p95": 85879,
+          "p99": 91338
+        }
+      },
+      "input_chars": {
+        "max": 7172,
+        "min": 349,
+        "quantiles_nearest_rank": {
+          "p50": 2708,
+          "p90": 5605,
+          "p95": 5854,
+          "p99": 6415
+        }
+      },
+      "longest_context_samples": [
+        {
+          "context_chars": 101431,
+          "context_tokens": 22999,
+          "input_chars": 1295,
+          "source_row_index": 152
+        },
+        {
+          "context_chars": 95328,
+          "context_tokens": 23317,
+          "input_chars": 4498,
+          "source_row_index": 136
+        },
+        {
+          "context_chars": 91338,
+          "context_tokens": 23594,
+          "input_chars": 4088,
+          "source_row_index": 107
+        },
+        {
+          "context_chars": 90809,
+          "context_tokens": 22228,
+          "input_chars": 970,
+          "source_row_index": 105
+        },
+        {
+          "context_chars": 88602,
+          "context_tokens": 21445,
+          "input_chars": 2331,
+          "source_row_index": 169
+        }
+      ],
+      "record_count": 200,
+      "source_archive_path": "data/triviaqa.jsonl",
+      "task": "triviaqa"
+    },
+    {
+      "context_chars": {
+        "max": 42072,
+        "min": 1113,
+        "quantiles_nearest_rank": {
+          "p50": 13289,
+          "p90": 28053,
+          "p95": 30364,
+          "p99": 40204
+        }
+      },
+      "input_chars": {
+        "max": 0,
+        "min": 0,
+        "quantiles_nearest_rank": {
+          "p50": 0,
+          "p90": 0,
+          "p95": 0,
+          "p99": 0
+        }
+      },
+      "longest_context_samples": [
+        {
+          "context_chars": 42072,
+          "context_tokens": 23528,
+          "input_chars": 0,
+          "source_row_index": 188
+        },
+        {
+          "context_chars": 40212,
+          "context_tokens": 21106,
+          "input_chars": 0,
+          "source_row_index": 104
+        },
+        {
+          "context_chars": 40204,
+          "context_tokens": 23320,
+          "input_chars": 0,
+          "source_row_index": 69
+        },
+        {
+          "context_chars": 36111,
+          "context_tokens": 19447,
+          "input_chars": 0,
+          "source_row_index": 22
+        },
+        {
+          "context_chars": 35016,
+          "context_tokens": 17941,
+          "input_chars": 0,
+          "source_row_index": 35
+        }
+      ],
+      "record_count": 200,
+      "source_archive_path": "data/vcsum.jsonl",
+      "task": "vcsum"
+    }
+  ]
+}

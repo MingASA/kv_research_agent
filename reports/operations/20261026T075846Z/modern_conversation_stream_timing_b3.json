@@ -1,0 +1,193 @@
+{
+  "classification": "confirmed_raw_timing_and_installed_source_analysis",
+  "run_id": "prod-trace-bf16xqa-conversation-s1-r1-20261027b",
+  "audit_sha256": "64c49690154e0064480adb4c2af66c431ec74c7359ceded0c17be02518d3460e",
+  "script_sha256": "eea8b0d59719477ad70d6b552b8d9b92240275aa0426b19587985b74d70e96ea",
+  "arms": {
+    "bf16": {
+      "raw_sha256": "8c95d0c38ada6adcd77612980d7efef6c869f309fa160db882b8b7de00165f93",
+      "successful_measurement_records": 347,
+      "terminal_minus_content_ms": {
+        "count": 347,
+        "mean": 3306.882411927954,
+        "min": 0.0,
+        "max": 69185.236372,
+        "p50": 0.26915,
+        "p95": 20294.4735152,
+        "p99": 29923.321860320026
+      },
+      "OSL_le4_terminal_minus_content_ms": {
+        "count": 9,
+        "mean": 0.11322111111111112,
+        "min": 0.0,
+        "max": 0.246614,
+        "p50": 0.106352,
+        "p95": 0.22196559999999999,
+        "p99": 0.24168432
+      },
+      "OSL_gt4_terminal_minus_content_ms": {
+        "count": 338,
+        "mean": 3394.932479139053,
+        "min": 0.0,
+        "max": 69185.236372,
+        "p50": 0.2831595,
+        "p95": 20321.447629549995,
+        "p99": 30043.365800539992
+      },
+      "final_SSE_inclusive_per_server_output_token_ms": {
+        "count": 345,
+        "mean": 53.7622000055069,
+        "min": 18.834376070844705,
+        "max": 176.19409950000409,
+        "p50": 53.36852284311051,
+        "p95": 73.52186285404049,
+        "p99": 107.00538030799864
+      },
+      "illustrative_TTFT_and_final_SSE_inclusive_mean100ms_qualified_RPS": {
+        "1": 0.0,
+        "5": 0.0,
+        "10": 0.0
+      },
+      "largest_terminal_tails": [
+        {
+          "session_id": "conversation-source-8447",
+          "server_output_tokens": 1554,
+          "terminal_minus_content_ms": 69185.236372,
+          "official_request_mean_ITL_ms": 10.002704303283966,
+          "final_SSE_inclusive_per_server_output_token_ms": 54.552116004507404
+        },
+        {
+          "session_id": "conversation-source-8349",
+          "server_output_tokens": 1092,
+          "terminal_minus_content_ms": 59360.647411,
+          "official_request_mean_ITL_ms": 6.030055589367552,
+          "final_SSE_inclusive_per_server_output_token_ms": 60.43944826672778
+        },
+        {
+          "session_id": "conversation-source-8750",
+          "server_output_tokens": 849,
+          "terminal_minus_content_ms": 42765.405614,
+          "official_request_mean_ITL_ms": 8.377611497641508,
+          "final_SSE_inclusive_per_server_output_token_ms": 58.80851434433965
+        },
+        {
+          "session_id": "conversation-source-8602",
+          "server_output_tokens": 902,
+          "terminal_minus_content_ms": 30536.879777,
+          "official_request_mean_ITL_ms": 18.592622216426193,
+          "final_SSE_inclusive_per_server_output_token_ms": 52.48483062597114
+        },
+        {
+          "session_id": "conversation-source-8269",
+          "server_output_tokens": 708,
+          "terminal_minus_content_ms": 29203.058219,
+          "official_request_mean_ITL_ms": 15.714125803394625,
+          "final_SSE_inclusive_per_server_output_token_ms": 57.01972441584161
+        }
+      ]
+    },
+    "fp8_e4m3": {
+      "raw_sha256": "7efcaf4b1575e3fe3f3b03b54be0d6af5d9bebe8bebea0f6fb692f0d342da5f0",
+      "successful_measurement_records": 371,
+      "terminal_minus_content_ms": {
+        "count": 371,
+        "mean": 5656.99161355256,
+        "min": 0.0,
+        "max": 64960.493401,
+        "p50": 0.445209,
+        "p95": 32255.901118,
+        "p99": 49446.263514700026
+      },
+      "OSL_le4_terminal_minus_content_ms": {
+        "count": 9,
+        "mean": 0.11413388888888888,
+        "min": 0.0,
+        "max": 0.231003,
+        "p50": 0.146803,
+        "p95": 0.21493419999999996,
+        "p99": 0.22778923999999998
+      },
+      "OSL_gt4_terminal_minus_content_ms": {
+        "count": 362,
+        "mean": 5797.632213875691,
+        "min": 0.0,
+        "max": 64960.493401,
+        "p50": 0.46883149999999996,
+        "p95": 32256.7386229,
+        "p99": 49673.02950360996
+      },
+      "final_SSE_inclusive_per_server_output_token_ms": {
+        "count": 369,
+        "mean": 90.06455569111543,
+        "min": 19.889423471894514,
+        "max": 390.4039279999997,
+        "p50": 88.580455713555,
+        "p95": 129.06918321228065,
+        "p99": 227.85270252444388
+      },
+      "illustrative_TTFT_and_final_SSE_inclusive_mean100ms_qualified_RPS": {
+        "1": 0.0,
+        "5": 0.0,
+        "10": 0.0
+      },
+      "largest_terminal_tails": [
+        {
+          "session_id": "conversation-source-8416",
+          "server_output_tokens": 944,
+          "terminal_minus_content_ms": 64960.493401,
+          "official_request_mean_ITL_ms": 13.047588703075292,
+          "final_SSE_inclusive_per_server_output_token_ms": 81.93464427147403
+        },
+        {
+          "session_id": "conversation-source-8469",
+          "server_output_tokens": 943,
+          "terminal_minus_content_ms": 59621.299094,
+          "official_request_mean_ITL_ms": 24.903545123142248,
+          "final_SSE_inclusive_per_server_output_token_ms": 88.19579469214439
+        },
+        {
+          "session_id": "conversation-source-8439",
+          "server_output_tokens": 863,
+          "terminal_minus_content_ms": 58420.93283,
+          "official_request_mean_ITL_ms": 16.334149554524362,
+          "final_SSE_inclusive_per_server_output_token_ms": 84.10785353364271
+        },
+        {
+          "session_id": "conversation-source-8185",
+          "server_output_tokens": 739,
+          "terminal_minus_content_ms": 51209.998984,
+          "official_request_mean_ITL_ms": 37.35056392140921,
+          "final_SSE_inclusive_per_server_output_token_ms": 106.74080644715448
+        },
+        {
+          "session_id": "conversation-source-8233",
+          "server_output_tokens": 779,
+          "terminal_minus_content_ms": 48690.376885,
+          "official_request_mean_ITL_ms": 30.20972155141388,
+          "final_SSE_inclusive_per_server_output_token_ms": 92.7937535372751
+        }
+      ]
+    }
+  },
+  "source_sha256": {
+    "metrics/types/request_latency_metric.py": "c79db67c59e90650a31aaaa09cc2d65ccc8db07c085e9b200355bce7b06d610b",
+    "records/record_processor_service.py": "fbcf266650c0b3604d0f605f2f3c105f07bc59519943a882257a1b71a58c399d",
+    "common/models/record_models.py": "a33cff0072dd3e3d8af2419891c64a8cd440f0cbe5ba41429a8ec248a8fb14e1",
+    "endpoints/openai_chat.py": "61b913f6c7836169816998b89eb758f72710048b30a8993b33528cf4b9d9e147"
+  },
+  "definitions": {
+    "request_latency": "AIPerf start to last nonempty parsed content response",
+    "request_end_ns": "Epoch-mapped timestamp of the last raw SSE response, including content-free terminal packets",
+    "offered_e2e_ms": "Source offered timestamp to last raw SSE response; includes client start lag and content-free terminal tail",
+    "stream_tail_gap_ms": "Last raw SSE response minus last nonempty content response"
+  },
+  "new_GPU_work": false,
+  "original_metrics_changed": false,
+  "limitations": [
+    "Final SSE is an application observation, not TCP EOF or a hardware wire timestamp",
+    "These timestamps do not identify a GPU/kernel/queue cause for the terminal tail",
+    "Final-SSE-inclusive per-server-token mean is an added completion-time proxy, not hardware step timing or per-token tail latency",
+    "Anonymous ignore-EOS replay can include output tokens without visible content; their exact token IDs were not exported",
+    "Both latency definitions are retained; no metric or original record is rewritten"
+  ]
+}

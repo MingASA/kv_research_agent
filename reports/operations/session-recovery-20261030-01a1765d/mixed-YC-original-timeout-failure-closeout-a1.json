@@ -1,0 +1,49 @@
+{
+  "classification": "confirmed original load failure; not acceptance of filtered successful subset",
+  "run_id": "nextgen-nvfp4-qwen38-mixed8192-prefix32-r0-20261030yc",
+  "original_terminal": "FAILED",
+  "gpu_release_verified": true,
+  "ledger": "SETTLED",
+  "actual_gpu_us": 1444497482,
+  "measured_records": 32,
+  "failed_records": 1,
+  "successful_records_reported_pending_full_raw_audit": 31,
+  "error": {
+    "metadata": {
+      "session_num": 13,
+      "x_request_id": "a89be080-bc37-4d10-9100-9d50002fcecd",
+      "x_correlation_id": "4c415e64-7518-4f45-912d-26a2b835aa85",
+      "conversation_id": "longdoc-gov_report-59",
+      "turn_index": 0,
+      "credit_issued_ns": 1793405133005933354,
+      "request_start_ns": 1793405133014169151,
+      "request_ack_ns": 1793405133024280783,
+      "request_end_ns": 1793405732739700949,
+      "worker_id": "worker_f62a8d6e",
+      "record_processor_id": "record_processor_aecc8e8d",
+      "benchmark_phase": "profiling",
+      "phase_index": 0,
+      "profiling_index": 0,
+      "phase_name": "profiling",
+      "phase_kind": "profiling",
+      "was_cancelled": false,
+      "context_overflow_skip": false,
+      "agent_depth": 0,
+      "root_correlation_id": "4c415e64-7518-4f45-912d-26a2b835aa85"
+    },
+    "metrics": {},
+    "error": {
+      "type": "TimeoutError",
+      "message": "TimeoutError()",
+      "cause": "CancelledError()",
+      "cause_chain": [
+        "TimeoutError",
+        "CancelledError"
+      ]
+    }
+  },
+  "original_request_timeout_seconds": 600,
+  "full_raw_SHA_audit_pending": true,
+  "GPU_retry_planned_for_same_condition": false,
+  "source_metadata": "reports/operations/session-recovery-20261030-01a1765d/mixed-YC-original-failed-request-metadata-readonly-a1.json"
+}

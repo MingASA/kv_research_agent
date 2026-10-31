@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-30T21:42:31.878540+00:00",
+  "schema": "nextgen-verified-bounded-quality-serving-span-v1",
+  "run_id": "nextgen-bf16-qwen38-mixed8192-quality1720-r0-20261030t",
+  "terminal": "COMPLETE",
+  "independently_verified_raw_rows": 1720,
+  "actual_request_span_seconds": 1073.015075433,
+  "first_request_started_monotonic_ns": 3998144545068714,
+  "last_request_ended_monotonic_ns": 3999217560144147,
+  "observed_peak_client_overlap": 16,
+  "client_overlap_is_not_resident_capacity": true,
+  "client_error_rows": 0,
+  "finish_reason_counts": {
+    "stop": 1639,
+    "length": 81
+  },
+  "empty_stop_output_count": 6,
+  "empty_outputs_all_scored_zero_and_retained": true,
+  "empty_output_ids": [
+    "core-repobench-p-6",
+    "core-repobench-p-7",
+    "core-repobench-p-24",
+    "core-repobench-p-29",
+    "core-repobench-p-44",
+    "core-repobench-p-45"
+  ],
+  "quality_summary_sha256": "bd7f1ef18e6ef7152df8e29875138ab829ddb69a248d2c795bd69f5a94f84314",
+  "raw_prediction_sha256": "0a00be3df9d3b87d7ceafd4d1374f928e47c48cca75d56391108373429c85eb0",
+  "AIPerf_throughput_or_long_term_soak_claim": false
+}

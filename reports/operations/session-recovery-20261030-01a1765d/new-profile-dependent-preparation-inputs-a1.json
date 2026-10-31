@@ -1,0 +1,50 @@
+{
+  "utc": "2026-10-30T21:06:25.687158+00:00",
+  "classification": "CPU preparation inputs for later finite proposals only; no dispatch authority or new job",
+  "prior_frozen_inputs_SHA_reverified": [
+    {
+      "asset": "input/full_CLI_protocol_CPU_audit.json",
+      "path": "/home/mingasa/kv-research-agent/plans/experiments/nextgen-bf16-qwen38-prefix32-c16-r0-20261030o/input/full_CLI_protocol_CPU_audit.json",
+      "sha256": "eeb071b6400b9f5a64024564047edc76ca20c473b70305bac201daff25a5850b"
+    },
+    {
+      "asset": "input/production/manifest.json",
+      "path": "/home/mingasa/kv-research-agent/results/prepared/nextgen-production-real-inputs-20261028a/manifest.json",
+      "sha256": "6ccd4e070de7a30a17cff100111787bd56dab82cbbebc1bd71acbfd2538b1dce"
+    },
+    {
+      "asset": "input/tool_source/source_manifest.json",
+      "path": "/home/mingasa/kv-research-agent/plans/experiments/nextgen-bf16-qwen38-native-tools32-r0-20261030r/input/tool_source/source_manifest.json",
+      "sha256": "d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200"
+    },
+    {
+      "asset": "input/tools32/manifest.json",
+      "path": "/home/mingasa/kv-research-agent/results/prepared/nextgen-native-tools-multiturn32-20261028b/manifest.json",
+      "sha256": "b9510183fe7edacf9480addfe837291ff5954b463bf4b0acaf2729e825a0f409"
+    },
+    {
+      "asset": "input/tool_CPU_protocol_rollup.json",
+      "path": "/home/mingasa/kv-research-agent/plans/experiments/nextgen-bf16-qwen38-native-tools32-r0-20261030r/input/tool_CPU_protocol_rollup.json",
+      "sha256": "71dee652803d7ec36c18f08d381fa562782caf7c62d64a98f5cd41b7514ffaad"
+    },
+    {
+      "asset": "input/tool_CPU_image_evidence.json",
+      "path": "/home/mingasa/kv-research-agent/plans/experiments/nextgen-bf16-qwen38-native-tools32-r0-20261030r/input/tool_CPU_image_evidence.json",
+      "sha256": "53bb95d7ad9ab01a0aa2d4577127f4dc6996b64ce6693ea7ea125dce0f5200be"
+    }
+  ],
+  "performance": {
+    "case": "long-prefix-c16",
+    "production_inputs": "/home/mingasa/kv-research-agent/results/prepared/nextgen-production-real-inputs-20261028a",
+    "full_cli_cpu_proof": "/home/mingasa/kv-research-agent/plans/experiments/nextgen-bf16-qwen38-prefix32-c16-r0-20261030o/input/full_CLI_protocol_CPU_audit.json",
+    "aiperf_cli_config_sha256": "2be937b185ddfe3a19e8090aa4411f1015a2e00899d29db3055d3f7e19bdd42b"
+  },
+  "tools": {
+    "tools_inputs": "/home/mingasa/kv-research-agent/results/prepared/nextgen-native-tools-multiturn32-20261028b",
+    "tools_source": "/home/mingasa/kv-research-agent/plans/experiments/nextgen-bf16-qwen38-native-tools32-r0-20261030r/input/tool_source",
+    "tools_cpu_protocol_proof": "/home/mingasa/kv-research-agent/plans/experiments/nextgen-bf16-qwen38-native-tools32-r0-20261030r/input/tool_CPU_protocol_rollup.json",
+    "tools_cpu_image_proof": "/home/mingasa/kv-research-agent/plans/experiments/nextgen-bf16-qwen38-native-tools32-r0-20261030r/input/tool_CPU_image_evidence.json"
+  },
+  "required_before_any_prepare": "actual new-profile corresponding BF16T/FP8U/NVFP4V independently scored full1720 summary plus S verified pilot; no old quality substitution",
+  "source_commit": "03134b72ec904254890300a647c939095f7900e2"
+}

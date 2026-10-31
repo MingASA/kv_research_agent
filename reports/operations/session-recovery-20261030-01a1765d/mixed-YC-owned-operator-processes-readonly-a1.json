@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "run_id": "nextgen-nvfp4-qwen38-mixed8192-prefix32-r0-20261030yc",
+  "container_id": "1674ca57d62084036c0e1cd907cb88efd3c3da72e202b2aaf6dd212c912a45d3",
+  "observed_epoch_ns": 1793405021950973952,
+  "own_processes": [
+    {
+      "pid": 249656,
+      "ppid": 249629,
+      "state": "S",
+      "utime_ticks": 56,
+      "stime_ticks": 22,
+      "start_ticks": 400838086,
+      "argv_first3": [
+        "/workspace/.venv/bin/python",
+        "-B",
+        "-m"
+      ]
+    },
+    {
+      "pid": 267821,
+      "ppid": 249656,
+      "state": "S",
+      "utime_ticks": 1228,
+      "stime_ticks": 942,
+      "start_ticks": 400904096,
+      "argv_first3": [
+        "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/builds/nextgen-native-kv-862c29ca-20261027g/artifacts/xllm",
+        "--model=/models/Qwen3.8-27B",
+        "--model_id=Qwen3.8-27B"
+      ]
+    }
+  ],
+  "logs": {
+    "native_operator.log": {
+      "bytes": 3981,
+      "mtime_ns": 1793404997055709212,
+      "tail": "orch.float32\", \"shape\": [2, 4, 8, 8], \"bytes\": 2048}}, \"resident_bytes\": 2240}], \"linear_state_resident_bytes\": 6720, \"total_resident_bytes\": 522816, \"token_capacity\": 448}\nI20261031 08:03:17.057173 8 flashinfer.py:196] KV_ALLOCATION {\"layers\": [{\"layer_id\": 3, \"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [7, 64, 4, 128], \"bytes\": 229376}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [7, 64, 4, 128], \"bytes\": 229376}, \"key_scale\": {\"dtype\": \"torch.uint8\", \"shape\": [7, 64, 4, 16], \"bytes\": 28672}, \"value_scale\": {\"dtype\": \"torch.uint8\", \"shape\": [7, 64, 4, 16], \"bytes\": 28672}}, \"key_format\": \"nvfp4\", \"value_format\": \"nvfp4\", \"resident_bytes\": 516096, \"bytes_per_token\": 1152}], \"resident_bytes\": 516096, \"full_attention_resident_bytes\": 516096, \"full_attention_layer_ids\": [3], \"linear_state_layers\": [{\"layer_id\": 0, \"tensors\": {\"conv\": {\"dtype\": \"torch.float32\", \"shape\": [2, 8, 3], \"bytes\": 192}, \"ssm\": {\"dtype\": \"torch.float32\", \"shape\": [2, 4, 8, 8], \"bytes\": 2048}}, \"resident_bytes\": 2240}, {\"layer_id\": 1, \"tensors\": {\"conv\": {\"dtype\": \"torch.float32\", \"shape\": [2, 8, 3], \"bytes\": 192}, \"ssm\": {\"dtype\": \"torch.float32\", \"shape\": [2, 4, 8, 8], \"bytes\": 2048}}, \"resident_bytes\": 2240}, {\"layer_id\": 2, \"tensors\": {\"conv\": {\"dtype\": \"torch.float32\", \"shape\": [2, 8, 3], \"bytes\": 192}, \"ssm\": {\"dtype\": \"torch.float32\", \"shape\": [2, 4, 8, 8], \"bytes\": 2048}}, \"resident_bytes\": 2240}], \"linear_state_resident_bytes\": 6720, \"total_resident_bytes\": 522816, \"token_capacity\": 448}\n"
+    },
+    "container.log": {
+      "bytes": 0,
+      "mtime_ns": 1793404339025620659,
+      "tail": ""
+    },
+    "server.log": {
+      "bytes": 15842,
+      "mtime_ns": 1793405007881562553,
+      "tail": "31 08:03:27.881765   734 hf_model_loader.cpp:545] Loading model weights from /models/Qwen3.8-27B/model-00016-of-00018.safetensors\nI20261031 08:03:27.881759   733 hf_model_loader.cpp:545] Loading model weights from /models/Qwen3.8-27B/model-00015-of-00018.safetensors\nI20261031 08:03:27.881695   721 hf_model_loader.cpp:545] Loading model weights from /models/Qwen3.8-27B/model-00003-of-00018.safetensors\nI20261031 08:03:27.881733   728 hf_model_loader.cpp:545] Loading model weights from /models/Qwen3.8-27B/model-00010-of-00018.safetensors\nI20261031 08:03:27.881738   729 hf_model_loader.cpp:545] Loading model weights from /models/Qwen3.8-27B/model-00011-of-00018.safetensors\nI20261031 08:03:27.881711   724 hf_model_loader.cpp:545] Loading model weights from /models/Qwen3.8-27B/model-00006-of-00018.safetensors\nI20261031 08:03:27.881705   723 hf_model_loader.cpp:545] Loading model weights from /models/Qwen3.8-27B/model-00005-of-00018.safetensors\nI20261031 08:03:27.881688   719 hf_model_loader.cpp:545] Loading model weights from /models/Qwen3.8-27B/model-00001-of-00018.safetensors\nI20261031 08:03:27.881768   735 hf_model_loader.cpp:545] Loading model weights from /models/Qwen3.8-27B/model-00017-of-00018.safetensors\nI20261031 08:03:27.881690   720 hf_model_loader.cpp:545] Loading model weights from /models/Qwen3.8-27B/model-00002-of-00018.safetensors\nI20261031 08:03:27.881717   725 hf_model_loader.cpp:545] Loading model weights from /models/Qwen3.8-27B/model-00007-of-00018.safetensors\n"
+    }
+  },
+  "remote_file_writes": false,
+  "GPU_or_model_or_start_stop_calls": false
+}

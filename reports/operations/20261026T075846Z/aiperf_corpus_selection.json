@@ -1,0 +1,8 @@
+{
+  "files": [
+    {
+      "base_rel": ".venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/generator/assets/shakespeare.txt",
+      "size": 5020475
+    }
+  ]
+}

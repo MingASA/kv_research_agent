@@ -1,0 +1,208 @@
+{
+  "automatic_queue": {
+    "current_run_id": "nextgen-fp8-qwen38-quality-core1720-r2-20261028o",
+    "cursor": 0,
+    "directory": "/home/mingasa/kv-research-agent/state/queues/nextgen-core-sequential-20261028b",
+    "not_after_utc": "2026-10-29T08:57:14.407599+00:00",
+    "status": "HALTED_EXPERIMENT_FAILURE_OR_UNKNOWN",
+    "updated_utc": "2026-10-28T14:22:34.920193+00:00"
+  },
+  "gpu_by_uuid": {
+    "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a": {
+      "compute_apps": [],
+      "index": "0",
+      "memory_used_mib": 0,
+      "util_percent": 0
+    },
+    "GPU-0cb28538-7e9f-1b66-750f-1b53ff309195": {
+      "compute_apps": [],
+      "index": "3",
+      "memory_used_mib": 0,
+      "util_percent": 0
+    },
+    "GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1": {
+      "compute_apps": [],
+      "index": "4",
+      "memory_used_mib": 0,
+      "util_percent": 0
+    },
+    "GPU-47211491-ba0d-78bf-5c84-f968c0648213": {
+      "compute_apps": [
+        {
+          "comm": "xllm",
+          "gpu_uuid": "GPU-47211491-ba0d-78bf-5c84-f968c0648213",
+          "pid": 1898108,
+          "process_name": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/builds/nextgen-native-kv-862c29ca-20261027g/artifacts/xllm",
+          "uid": 1005,
+          "used_memory": "73740"
+        }
+      ],
+      "index": "7",
+      "memory_used_mib": 73749,
+      "util_percent": 97
+    },
+    "GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7": {
+      "compute_apps": [
+        {
+          "comm": "VLLM::EngineCor",
+          "gpu_uuid": "GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7",
+          "pid": 1972769,
+          "process_name": "VLLM::EngineCore",
+          "uid": 0,
+          "used_memory": "69990"
+        }
+      ],
+      "index": "1",
+      "memory_used_mib": 69999,
+      "util_percent": 0
+    },
+    "GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348": {
+      "compute_apps": [],
+      "index": "5",
+      "memory_used_mib": 0,
+      "util_percent": 0
+    },
+    "GPU-a6169058-34c8-6edc-e4f5-779bf9a10421": {
+      "compute_apps": [],
+      "index": "2",
+      "memory_used_mib": 0,
+      "util_percent": 0
+    },
+    "GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7": {
+      "compute_apps": [],
+      "index": "6",
+      "memory_used_mib": 0,
+      "util_percent": 0
+    }
+  },
+  "observed_utc": "2026-10-28T15:33:13.157312+00:00",
+  "queue": {
+    "current_run_id": "nextgen-fp8-qwen38-quality-core1720-r2-20261028o",
+    "runner_alive_identity_match": false,
+    "runner_expected": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-u",
+        "-m",
+        "scripts.guarded_native_queue",
+        "--queue",
+        "/home/mingasa/kv-research-agent/plans/queues/nextgen-core-sequential-20261028b/manifest.json",
+        "--directory",
+        "/home/mingasa/kv-research-agent/state/queues/nextgen-core-sequential-20261028b"
+      ],
+      "boot_id": "2afb7771-92c9-41af-a06d-1632040687f5",
+      "pid": 236082,
+      "process_state": "R",
+      "start_ticks": 53016705,
+      "uid": 1000
+    },
+    "runner_observed": null,
+    "status": "HALTED_EXPERIMENT_FAILURE_OR_UNKNOWN",
+    "updated_utc": "2026-10-28T14:22:34.920193+00:00"
+  },
+  "root_active_run_ids": [
+    "nextgen-nvfp4-qwen38-quality-core1720-r0-20261028p",
+    "nextgen-fp8-qwen38-quality-core1720-r2-20261028o"
+  ],
+  "rpc": "operation=status only; remote check_ticket(False)+existing; mutation=False",
+  "runs": [
+    {
+      "live_owned_containers": [
+        "58c4fa3bda44eab8f1aa268e71f2e8c9d4feeade0bdf585625ca149c28bc4ac6"
+      ],
+      "log_markers": {},
+      "log_paths": [
+        "events.jsonl",
+        "output/nvfp4/container.log",
+        "output/nvfp4/native_operator.log",
+        "output/nvfp4/server.log",
+        "supervisor.log",
+        "watchdog.log"
+      ],
+      "quality_validation": {
+        "nvfp4": {
+          "quality": {
+            "accuracy_scored": false,
+            "active_client_requests": 5,
+            "capped_responses": 5,
+            "contract_failures": 0,
+            "durable_responses": 1327,
+            "empty_stop_outputs": 0,
+            "submitted": 1332
+          },
+          "validation": {
+            "actual_model_Graph_replay_logged": true,
+            "known_answers_checked": 20,
+            "model_loaded": true,
+            "model_quality_validated": false,
+            "official_aiperf_complete": false,
+            "service_performance_measured": false
+          },
+          "validation_rows": 20
+        }
+      },
+      "result_status": null,
+      "run_id": "nextgen-nvfp4-qwen38-quality-core1720-r0-20261028p",
+      "state_status": "RUNNING",
+      "status": "RUNNING",
+      "supervisor_alive": true,
+      "supervisor_identity": {
+        "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+        "pid": 1730564,
+        "start_ticks": 380344898,
+        "uid": 1005
+      },
+      "watchdog_files": {
+        "watchdog_ready": false,
+        "watchdog_result": false
+      }
+    },
+    {
+      "live_owned_containers": [],
+      "log_markers": {
+        "events.jsonl": [
+          "CONFLICT"
+        ],
+        "output/fp8_e4m3/container.log": [
+          "quality"
+        ],
+        "output/fp8_e4m3/server.log": [
+          "loading model"
+        ]
+      },
+      "log_paths": [
+        "events.jsonl",
+        "output/fp8_e4m3/container.log",
+        "output/fp8_e4m3/native_operator.log",
+        "output/fp8_e4m3/server.log",
+        "supervisor.log",
+        "watchdog.log"
+      ],
+      "quality_validation": {
+        "fp8_e4m3": {
+          "quality": {},
+          "validation": {},
+          "validation_rows": null
+        }
+      },
+      "result_status": "UNKNOWN",
+      "run_id": "nextgen-fp8-qwen38-quality-core1720-r2-20261028o",
+      "state_status": "UNKNOWN",
+      "status": "UNKNOWN",
+      "supervisor_alive": false,
+      "supervisor_identity": {
+        "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+        "pid": 1143677,
+        "start_ticks": 379854380,
+        "uid": 1005
+      },
+      "watchdog_files": {
+        "watchdog_ready": false,
+        "watchdog_result": true
+      }
+    }
+  ],
+  "schema": "luna-live-watch-receipt-v1",
+  "sequence": 12
+}

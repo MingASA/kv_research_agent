@@ -1,0 +1,12 @@
+test_arrival_scaling_must_match_unchanged_source_clock (tests.test_trace_serving.TraceAuditTests) ... ok
+test_length_or_wire_mismatch_prevents_valid_replay (tests.test_trace_serving.TraceAuditTests) ... ok
+test_missing_exact_phase_clock_prevents_invented_arrival_lag (tests.test_trace_serving.TraceAuditTests) ... ok
+test_missing_raw_attempt_cannot_be_silently_discarded (tests.test_trace_serving.TraceAuditTests) ... ok
+test_rejections_retained_and_offered_latency_includes_client_delay (tests.test_trace_serving.TraceAuditTests) ... ok
+test_missing_duplicate_nonfinite_or_wrong_count_cannot_become_valid_data (tests.test_service_metrics.ServiceMetricsTests) ... ok
+test_real_own_server_html_shape_and_ratio_units (tests.test_service_metrics.ServiceMetricsTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.011s
+
+OK

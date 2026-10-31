@@ -1,0 +1,58 @@
+{
+  "schema": "kv-fp8-k-readonly-monitor-v1",
+  "classification": "confirmed_remote_readonly_status_snapshot",
+  "observed_utc": "2026-10-27T22:21:32.912043+00:00",
+  "run_id": "nextgen-fp8-qwen38-quality-core1720-r0-20261027k",
+  "reservation_id": "75530a23f4f74bea9a76a176364219c7",
+  "supervisor_identity": {
+    "pid": 3787417,
+    "start_ticks": 374350035,
+    "uid": 1005,
+    "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb"
+  },
+  "status": "RUNNING",
+  "supervisor_alive": true,
+  "current_action": "owned container started",
+  "selected_gpu": "GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348",
+  "selected_gpu_snapshot": {
+    "index": 5,
+    "memory_mib": 1047,
+    "util_pct": 0
+  },
+  "live_owned_containers": [
+    "55b651bd5da4df2f0c365d69a7250689069e578001fc84ee6025c87fbc2ccf0e"
+  ],
+  "operator_acceptance": {},
+  "nextgen_progress": {
+    "fp8_e4m3": {}
+  },
+  "quality_progress": {
+    "bf16": {},
+    "fp8_e4m3": {}
+  },
+  "contract_failures": [],
+  "error_logs": {
+    "supervisor.log": "empty",
+    "watchdog.log": "empty"
+  },
+  "log_tail_last_events": [
+    "2026-10-27T22:17:39.152156+00:00 WAIT_GPU",
+    "2026-10-27T22:18:09.500893+00:00 WAIT_GPU",
+    "2026-10-27T22:19:42.535347+00:00 OWNED_CONTAINER_CREATED fp8_e4m3"
+  ],
+  "relaunch_allowed": false,
+  "quality_interpretation": "No model/operator/Graph or quality durable evidence yet; not a quality result.",
+  "rpc": "status, mutation=false, timeout=60",
+  "owned_container_id": "55b651bd5da4df2f0c365d69a7250689069e578001fc84ee6025c87fbc2ccf0e",
+  "owned_container_pid_identity": {
+    "pid": 3803554,
+    "uid": 1005,
+    "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb"
+  },
+  "small_writer_log_excerpt": "KV_ALLOCATION reports FP8 E4M3 K/V, 938560 total resident bytes, 448-token capacity in a small operator gate",
+  "other_gpu0_snapshot": {
+    "memory_mib": 73689,
+    "util_pct": 98
+  },
+  "latest_status_confirmed": "RUNNING, same supervisor and owned container; native_operator.log still only KV_ALLOCATION; no quality durable counts"
+}

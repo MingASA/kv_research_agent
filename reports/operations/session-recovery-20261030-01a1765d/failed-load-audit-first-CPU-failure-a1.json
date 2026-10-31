@@ -1,0 +1,8 @@
+{
+  "exit_code": 1,
+  "scope": "CPU-only posthoc audit before any output accepted",
+  "cause": "Overly narrow whole usage dictionary equality rejected legitimate additional API cached-token metadata",
+  "original_source_sha256": "f51fbadd1d2e4705f0439620490997bfb07eea70203aeb4f166b4309571c8e0a",
+  "repair": "Compare the three count fields and preserve all original raw fields; identical to established production count semantics",
+  "GPU_repeated_or_original_data_modified": false
+}

@@ -1,0 +1,195 @@
+{
+  "ok": true,
+  "remote_writes": 0,
+  "classification": "remote_reported_scores_full_rescore_pending",
+  "files": {
+    "bf16": {
+      "sha256": "0ce297cfb7df7e414d0c9719d5dcdbbe174520483970524c50e169eb1fc9aca1",
+      "summary": {
+        "scope": "evaluation_fragment_no_full_quality_claim",
+        "tasks": [
+          {
+            "task": "gsm8k",
+            "arm": "auto",
+            "n": 1255,
+            "scores": {
+              "auto_strict_em": 0.6900398406374502,
+              "auto_flexible_em": 0.8932270916334661
+            },
+            "length_exhaustion": 1
+          },
+          {
+            "task": "narrativeqa",
+            "arm": "auto",
+            "n": 48,
+            "scores": {
+              "auto": 0.32971982619073137
+            },
+            "length_exhaustion": 0
+          },
+          {
+            "task": "qasper",
+            "arm": "auto",
+            "n": 48,
+            "scores": {
+              "auto": 0.4154596205144519
+            },
+            "length_exhaustion": 1
+          },
+          {
+            "task": "multifieldqa_en",
+            "arm": "auto",
+            "n": 48,
+            "scores": {
+              "auto": 0.46798046368938545
+            },
+            "length_exhaustion": 7
+          },
+          {
+            "task": "2wikimqa",
+            "arm": "auto",
+            "n": 48,
+            "scores": {
+              "auto": 0.6115779645191409
+            },
+            "length_exhaustion": 0
+          },
+          {
+            "task": "hotpotqa",
+            "arm": "auto",
+            "n": 48,
+            "scores": {
+              "auto": 0.6482519157088122
+            },
+            "length_exhaustion": 1
+          },
+          {
+            "task": "musique",
+            "arm": "auto",
+            "n": 48,
+            "scores": {
+              "auto": 0.3918279251612585
+            },
+            "length_exhaustion": 3
+          },
+          {
+            "task": "lcc",
+            "arm": "auto",
+            "n": 48,
+            "scores": {
+              "auto": 0.67875
+            },
+            "length_exhaustion": 48
+          },
+          {
+            "task": "repobench-p",
+            "arm": "auto",
+            "n": 48,
+            "scores": {
+              "auto": 0.4970833333333333
+            },
+            "length_exhaustion": 48
+          }
+        ],
+        "longbench_8_task_macro": {
+          "auto": 0.5050813811396392
+        },
+        "paired": "paired/<task>/<arm>/paired_scores.json"
+      }
+    },
+    "fp8_e4m3": {
+      "sha256": "0d40882e62d5fbdaf85b4e39aae5c0caf9e509a2387832a3e0a24bef728a220d",
+      "summary": {
+        "scope": "evaluation_fragment_no_full_quality_claim",
+        "tasks": [
+          {
+            "task": "gsm8k",
+            "arm": "fp8_e4m3",
+            "n": 1255,
+            "scores": {
+              "fp8-e4m3_strict_em": 0.6956175298804781,
+              "fp8-e4m3_flexible_em": 0.8860557768924303
+            },
+            "length_exhaustion": 4
+          },
+          {
+            "task": "narrativeqa",
+            "arm": "fp8_e4m3",
+            "n": 48,
+            "scores": {
+              "fp8-e4m3": 0.28881691271175297
+            },
+            "length_exhaustion": 0
+          },
+          {
+            "task": "qasper",
+            "arm": "fp8_e4m3",
+            "n": 48,
+            "scores": {
+              "fp8-e4m3": 0.3909797721641188
+            },
+            "length_exhaustion": 2
+          },
+          {
+            "task": "multifieldqa_en",
+            "arm": "fp8_e4m3",
+            "n": 48,
+            "scores": {
+              "fp8-e4m3": 0.4514797738198666
+            },
+            "length_exhaustion": 7
+          },
+          {
+            "task": "2wikimqa",
+            "arm": "fp8_e4m3",
+            "n": 48,
+            "scores": {
+              "fp8-e4m3": 0.5992311507936509
+            },
+            "length_exhaustion": 0
+          },
+          {
+            "task": "hotpotqa",
+            "arm": "fp8_e4m3",
+            "n": 48,
+            "scores": {
+              "fp8-e4m3": 0.6471230158730159
+            },
+            "length_exhaustion": 2
+          },
+          {
+            "task": "musique",
+            "arm": "fp8_e4m3",
+            "n": 48,
+            "scores": {
+              "fp8-e4m3": 0.3797877594446222
+            },
+            "length_exhaustion": 3
+          },
+          {
+            "task": "lcc",
+            "arm": "fp8_e4m3",
+            "n": 48,
+            "scores": {
+              "fp8-e4m3": 0.6275000000000001
+            },
+            "length_exhaustion": 48
+          },
+          {
+            "task": "repobench-p",
+            "arm": "fp8_e4m3",
+            "n": 48,
+            "scores": {
+              "fp8-e4m3": 0.51625
+            },
+            "length_exhaustion": 48
+          }
+        ],
+        "longbench_8_task_macro": {
+          "fp8_e4m3": 0.4876460481008784
+        },
+        "paired": "unavailable: baseline not selected"
+      }
+    }
+  }
+}

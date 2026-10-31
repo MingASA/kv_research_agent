@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/home/mingasa/kv-research-agent/scripts/freeze_production_traces.py", line 159, in <module>
+    main()
+  File "/home/mingasa/kv-research-agent/scripts/freeze_production_traces.py", line 153, in main
+    result = freeze(args.base.absolute(), args.tokenizer.absolute(), args.out.absolute())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mingasa/kv-research-agent/scripts/freeze_production_traces.py", line 94, in freeze
+    raise ValueError("Actual loader trace mismatch: " + json.dumps(failure))
+ValueError: Actual loader trace mismatch: {"family": "conversation", "source_index": 8155, "source_input": 20471, "reencoded_input": 20472, "source_timestamp": 2484000, "turn_timestamp": 2484000, "source_output": 378, "turn_max_tokens": 378}

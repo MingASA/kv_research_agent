@@ -1,0 +1,15 @@
+{
+  "classification": "confirmed_fixture_reference_failure_before_model",
+  "run_id": "prod-quality-xqa-pilot80-r0-20261026b",
+  "source_commit": "acbf3478986cea6fd79230cda4e2e0b7ef0ca3ca",
+  "files_hash_verified": 50,
+  "result_sha256": "a7c9f7231a43393fb4a4d802aa2c1fd20250f96f770d798f31a7ca856de07306",
+  "gpu_release_verified": true,
+  "model_loaded": false,
+  "bf16_arm_started": false,
+  "actual_gpu_hours": 0.044656504771944446,
+  "failure": "5012/10240 mismatch at padded_graph maxabs28.197",
+  "root_cause": "CPU-confirmed test planner indices alias mutated the immutable page mapping; row1 read poisoned page1 twice",
+  "repair_source_commit": "d60812fd61131a7a0df3a6f490a24e250bb0b981",
+  "gpu_reverification": "pending"
+}

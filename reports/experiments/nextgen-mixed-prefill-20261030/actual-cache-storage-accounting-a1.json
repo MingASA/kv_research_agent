@@ -1,0 +1,72 @@
+{
+  "schema": "actual_native_cache_storage_arithmetic-v1",
+  "classification": "confirmed tensor-shape accounting; not maximum service admission",
+  "rows": [
+    {
+      "arm": "bf16",
+      "Full_KV_physical_token_slots": 247552,
+      "Full_KV_payload_bytes_per_token_all16layers": 65536,
+      "Full_KV_scale_buffer_bytes_per_token_all16layers": 0,
+      "Full_KV_total_bytes_per_token_all16layers": 65536,
+      "Full_KV_payload_bytes": 16223567872,
+      "Full_KV_scale_buffer_bytes": 0,
+      "Full_KV_total_bytes": 16223567872,
+      "GDN_state_bytes": 5234098176,
+      "GDN_physical_rows": 34,
+      "total_cache_bytes": 21457666048,
+      "Full_KV_physical_slot_ratio_to_BF16": 1.0,
+      "fixed_cache_budget_is_reinvested_into_more_token_slots": true,
+      "maximum_successful_admission_certified": false
+    },
+    {
+      "arm": "fp8_e4m3",
+      "Full_KV_physical_token_slots": 487552,
+      "Full_KV_payload_bytes_per_token_all16layers": 32768,
+      "Full_KV_scale_buffer_bytes_per_token_all16layers": 512,
+      "Full_KV_total_bytes_per_token_all16layers": 33280,
+      "Full_KV_payload_bytes": 15976103936,
+      "Full_KV_scale_buffer_bytes": 249626624,
+      "Full_KV_total_bytes": 16225730560,
+      "GDN_state_bytes": 5234098176,
+      "GDN_physical_rows": 34,
+      "total_cache_bytes": 21459828736,
+      "Full_KV_physical_slot_ratio_to_BF16": 1.969493278179938,
+      "fixed_cache_budget_is_reinvested_into_more_token_slots": true,
+      "maximum_successful_admission_certified": false
+    },
+    {
+      "arm": "nvfp4",
+      "Full_KV_physical_token_slots": 880320,
+      "Full_KV_payload_bytes_per_token_all16layers": 16384,
+      "Full_KV_scale_buffer_bytes_per_token_all16layers": 2048,
+      "Full_KV_total_bytes_per_token_all16layers": 18432,
+      "Full_KV_payload_bytes": 14423162880,
+      "Full_KV_scale_buffer_bytes": 1802895360,
+      "Full_KV_total_bytes": 16226058240,
+      "GDN_state_bytes": 5234098176,
+      "GDN_physical_rows": 34,
+      "total_cache_bytes": 21460156416,
+      "Full_KV_physical_slot_ratio_to_BF16": 3.5561013443640124,
+      "fixed_cache_budget_is_reinvested_into_more_token_slots": true,
+      "maximum_successful_admission_certified": false
+    }
+  ],
+  "sources": [
+    {
+      "path": "results/mirrors/nextgen-bf16-qwen38-mixed8192-quality1720-r0-20261030t-complete-a1/files/output/bf16/validation_result.json",
+      "sha256": "a976246f55742f083486d5a950fbc22a651dcad37d839eb7c51ca0731de686bb"
+    },
+    {
+      "path": "results/mirrors/nextgen-fp8fa2-qwen38-mixed8192-quality1720-r0-20261030u-complete-a1/files/output/fp8_e4m3/validation_result.json",
+      "sha256": "81a4ff88542611ccdbcc2966e00fd8d0ed3998680922728472d7cf6edcddd3b6"
+    },
+    {
+      "path": "results/mirrors/nextgen-nvfp4-qwen38-mixed8192-quality1720-r0-20261030v-complete-a1/files/output/nvfp4/validation_result.json",
+      "sha256": "f56ea13a7b56a3c6426c3bbc979d88f0310a40b2f751d80bb5dcb3597c9f8182"
+    }
+  ],
+  "all_actual_tensor_shape_dtype_byte_sums_verified": true,
+  "GPU_or_remote_calls": false,
+  "same_allocated_cache_budget_does_not_imply_same_token_capacity": true,
+  "scope": "Actual T/U/V model allocations. FP8 retained key/value scale buffers counted even when global scalar path is used; NVFP4 packed payload and block scale buffers included. GDN unchanged; no whole service memory reduction claim."
+}

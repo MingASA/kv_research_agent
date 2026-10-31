@@ -1,0 +1,173 @@
+{
+  "utc": "2026-10-30T21:36:50.343926+00:00",
+  "classification": "CPU preparation inputs for later finite proposals only; no dispatch authority or new job",
+  "prior_frozen_inputs_SHA_reverified": [
+    {
+      "asset": "input/full_CLI_protocol_CPU_audit.json",
+      "path": "/home/mingasa/kv-research-agent/plans/experiments/nextgen-bf16-qwen38-prefix32-c16-r0-20261030o/input/full_CLI_protocol_CPU_audit.json",
+      "sha256": "eeb071b6400b9f5a64024564047edc76ca20c473b70305bac201daff25a5850b"
+    },
+    {
+      "asset": "input/production/manifest.json",
+      "path": "/home/mingasa/kv-research-agent/results/prepared/nextgen-production-real-inputs-20261028a/manifest.json",
+      "sha256": "6ccd4e070de7a30a17cff100111787bd56dab82cbbebc1bd71acbfd2538b1dce"
+    },
+    {
+      "asset": "input/tool_source/source_manifest.json",
+      "path": "/home/mingasa/kv-research-agent/plans/experiments/nextgen-bf16-qwen38-native-tools32-r0-20261030r/input/tool_source/source_manifest.json",
+      "sha256": "d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200"
+    },
+    {
+      "asset": "input/tools32/manifest.json",
+      "path": "/home/mingasa/kv-research-agent/results/prepared/nextgen-native-tools-multiturn32-20261028b/manifest.json",
+      "sha256": "b9510183fe7edacf9480addfe837291ff5954b463bf4b0acaf2729e825a0f409"
+    },
+    {
+      "asset": "input/tool_CPU_protocol_rollup.json",
+      "path": "/home/mingasa/kv-research-agent/plans/experiments/nextgen-bf16-qwen38-native-tools32-r0-20261030r/input/tool_CPU_protocol_rollup.json",
+      "sha256": "71dee652803d7ec36c18f08d381fa562782caf7c62d64a98f5cd41b7514ffaad"
+    },
+    {
+      "asset": "input/tool_CPU_image_evidence.json",
+      "path": "/home/mingasa/kv-research-agent/plans/experiments/nextgen-bf16-qwen38-native-tools32-r0-20261030r/input/tool_CPU_image_evidence.json",
+      "sha256": "53bb95d7ad9ab01a0aa2d4577127f4dc6996b64ce6693ea7ea125dce0f5200be"
+    }
+  ],
+  "performance": {
+    "case": "long-prefix-c16",
+    "production_inputs": "/home/mingasa/kv-research-agent/results/prepared/nextgen-production-real-inputs-20261028a",
+    "full_cli_cpu_proof": "/home/mingasa/kv-research-agent/plans/experiments/nextgen-bf16-qwen38-prefix32-c16-r0-20261030o/input/full_CLI_protocol_CPU_audit.json",
+    "aiperf_cli_config_sha256": "2be937b185ddfe3a19e8090aa4411f1015a2e00899d29db3055d3f7e19bdd42b"
+  },
+  "tools": {
+    "tools_inputs": "/home/mingasa/kv-research-agent/results/prepared/nextgen-native-tools-multiturn32-20261028b",
+    "tools_source": "/home/mingasa/kv-research-agent/results/prepared/bfcl-multiturn-native-source-20261028a",
+    "tools_cpu_protocol_proof": "/home/mingasa/kv-research-agent/plans/experiments/nextgen-bf16-qwen38-native-tools32-r0-20261030r/input/tool_CPU_protocol_rollup.json",
+    "tools_cpu_image_proof": "/home/mingasa/kv-research-agent/plans/experiments/nextgen-bf16-qwen38-native-tools32-r0-20261030r/input/tool_CPU_image_evidence.json"
+  },
+  "required_before_any_prepare": "actual new-profile corresponding BF16T/FP8U/NVFP4V independently scored full1720 summary plus S verified pilot; no old quality substitution",
+  "source_commit": "03134b72ec904254890300a647c939095f7900e2",
+  "tool_source_all_original_files_SHA_verified": [
+    {
+      "relative": "eval_checker/multi_turn_eval/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "relative": "eval_checker/multi_turn_eval/multi_turn_checker.py",
+      "sha256": "b3b787515eda3bf0e365e39634a8fc7f831763f010f716d35d86f96fd5aab1b5"
+    },
+    {
+      "relative": "eval_checker/multi_turn_eval/multi_turn_utils.py",
+      "sha256": "9fdbd779ec715959c310445b54b431e91abaa8b45a302abb6fd8db8d61b62ba2"
+    },
+    {
+      "relative": "eval_checker/multi_turn_eval/func_source_code/long_context.py",
+      "sha256": "5c9a5710115609c779e5b2ccb43f6ad58271ed96f2ea7a797edb0d65c385aa38"
+    },
+    {
+      "relative": "constants/executable_backend_config.py",
+      "sha256": "1214b960de5d86840e379007c70bc9570203e0b5a926ea740ff00c605a531e57"
+    },
+    {
+      "relative": "constants/enums.py",
+      "sha256": "2182becfa2a1d071ee1db30db593b4758c6bf866aa12d2d4b8daf09175ea518a"
+    },
+    {
+      "relative": "constants/type_mappings.py",
+      "sha256": "1702fb67afbe2c492608e58e2b7d02e46381f50166b47f3c952f76e34c7cd3bd"
+    },
+    {
+      "relative": "constants/default_prompts.py",
+      "sha256": "4cc033be99ae2b10bbde30e7751ddcac5468cb45841b6dc7b3a97b92adf38205"
+    },
+    {
+      "relative": "model_handler/utils.py",
+      "sha256": "f78fd3edce603b333dc9a88ee2c041dc547d51f71aa449ffebc044c4b1e353f3"
+    },
+    {
+      "relative": "model_handler/parser/java_parser.py",
+      "sha256": "78aa38dcfae655b5e3a982d0aaadf72aad0bb64a62cc4db4d7b7aa2185e666f5"
+    },
+    {
+      "relative": "model_handler/parser/js_parser.py",
+      "sha256": "65eea903e538cc2afa5f37e15cccfc303462f750ca45556ee654f6722f4b1e52"
+    },
+    {
+      "relative": "model_handler/parser/json_parser.py",
+      "sha256": "b36f1cc561b247cf0b1adfc9190bbf2e081ad39c133205732e26605c75add81e"
+    },
+    {
+      "relative": "model_handler/parser/xml_parser.py",
+      "sha256": "ca4181de9d29fc136283e8fb2dc18f4739ab5fc340e514ae3afa0fc55ab7d167"
+    },
+    {
+      "relative": "utils.py",
+      "sha256": "3703b9bb63f83581c60b8e0b82aac74c360c9ca781e99e7d4eb28b0cce2285dd"
+    },
+    {
+      "relative": "eval_checker/multi_turn_eval/func_source_code/gorilla_file_system.py",
+      "sha256": "84173750930b09aaa31b90547c9bd79ce75714682608b35e78a9c1ea259faf2b"
+    },
+    {
+      "relative": "eval_checker/multi_turn_eval/func_source_code/math_api.py",
+      "sha256": "abde32cc25e71b2ff3acf4d028a3c005b98409c174aba4abddbfe1c018afb9a8"
+    },
+    {
+      "relative": "eval_checker/multi_turn_eval/func_source_code/message_api.py",
+      "sha256": "cf72af1635654147af17df1891a7fb354549e78a61930139f741a31f4be21121"
+    },
+    {
+      "relative": "eval_checker/multi_turn_eval/func_source_code/ticket_api.py",
+      "sha256": "6a9375aa6425410c07a151aef27f3e44e9ed1023bb5cc5c25f14f4a9b3c99116"
+    },
+    {
+      "relative": "eval_checker/multi_turn_eval/func_source_code/vehicle_control.py",
+      "sha256": "f5f7a2f28968728927a98ae12ec68a32d70781cfb74c2d7b14801772362b12d1"
+    },
+    {
+      "relative": "eval_checker/multi_turn_eval/func_source_code/trading_bot.py",
+      "sha256": "cc2e3949035b561e9d07418b081561aa07b211672200e2e511aec074bf79fcb2"
+    },
+    {
+      "relative": "eval_checker/multi_turn_eval/func_source_code/travel_booking.py",
+      "sha256": "e698e22adccf0d6d41b297f2d5e44faebd828cef4752df6a4ffb1570c0c35296"
+    },
+    {
+      "relative": "eval_checker/multi_turn_eval/func_source_code/posting_api.py",
+      "sha256": "32b887aaa37c7167ad9c84ddfa7bbb855c75d3c1edab19ba868aba29acc4cfa1"
+    },
+    {
+      "relative": "data/multi_turn_func_doc/gorilla_file_system.json",
+      "sha256": "c4c1b741c71e2a17c97a5dc9c4a91d89978c4eaece56494d14272d5df6c650e9"
+    },
+    {
+      "relative": "data/multi_turn_func_doc/math_api.json",
+      "sha256": "83fa31708c89442bdcf12ac4dfbe3be8663ec9183a1b1524a9fda98164bc7e0b"
+    },
+    {
+      "relative": "data/multi_turn_func_doc/message_api.json",
+      "sha256": "4d58ea933a5d2b280d7a52366617fb47fecd333d7b0e08e724db6fa12fb5f847"
+    },
+    {
+      "relative": "data/multi_turn_func_doc/ticket_api.json",
+      "sha256": "31324e0380782664fe82ba05bd23517808ad55692b45a5fe7c3d4d395fe4f0f8"
+    },
+    {
+      "relative": "data/multi_turn_func_doc/vehicle_control.json",
+      "sha256": "0c8a66292844874ef7b168f343bc394d8615d2d9e1f4387999a9ee23011eac78"
+    },
+    {
+      "relative": "data/multi_turn_func_doc/trading_bot.json",
+      "sha256": "1a7933fd8f0cb8fbec38aeae05cb8c24132747cad4904fe1c13ac3d01fc22c2d"
+    },
+    {
+      "relative": "data/multi_turn_func_doc/travel_booking.json",
+      "sha256": "f17b950c13adddf41d0848077df58788252e4c2e7cad5cfa71c8c4bf04f57b26"
+    },
+    {
+      "relative": "data/multi_turn_func_doc/posting_api.json",
+      "sha256": "87f9fc404a06e4107d7c366f1399c596440e84c16cb119faf374b2f532d86e8b"
+    }
+  ],
+  "supersedes": "a1 tool source parent inferred from copied manifest; all real sibling assets now checked from original local_path"
+}

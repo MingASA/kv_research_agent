@@ -1,0 +1,272 @@
+{
+  "files": {
+    "START_INTENT.json": {
+      "sha256": "28759064b39dd97cac4343a4982d1d1f74501671b21434a330543d29efceb848",
+      "value": {
+        "request_sha256": "95f7cd1c11aa6361d55cb6aaca4b74343171039717b8f1fc02f3b52524477d6f"
+      }
+    },
+    "SUPERVISOR_PROCESS.json": {
+      "sha256": "982175656ce595f22a6307e6396ff11768ce44898684b07ce60e242dfb79450f",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-517979.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-517979.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-517979.scope\n",
+          "pid": 2923482,
+          "start_ticks": 367117491,
+          "uid": 1005
+        }
+      }
+    },
+    "SUPERVISOR_STARTED.json": {
+      "sha256": "8e5543a9a112e5c6db0c148432c8cbc63feb53ac4379b0a6a9f2852d09dc79d1",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-517979.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-517979.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-517979.scope\n",
+          "pid": 2923482,
+          "start_ticks": 367117491,
+          "uid": 1005
+        },
+        "ticket_sha256": "78bd3c393eee60842e1ef5c77f71068a7af96872f53d122b61861829415947c5"
+      }
+    },
+    "owned_containers.json": {
+      "sha256": "b1ae832980b6d8f15a1850153424ce7c9c8557ed25afcb7713b59f4064fa9d33",
+      "value": {
+        "containers": [
+          {
+            "container_id": "7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4",
+            "pid_identity": {
+              "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+              "cgroup": "12:rdma:/system.slice/docker-7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4.scope\n11:blkio:/system.slice/docker-7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4.scope\n10:net_cls,net_prio:/system.slice/docker-7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4.scope\n9:freezer:/system.slice/docker-7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4.scope\n8:memory:/system.slice/docker-7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4.scope\n7:hugetlb:/system.slice/docker-7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4.scope\n6:perf_event:/system.slice/docker-7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4.scope\n5:pids:/system.slice/docker-7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4.scope\n4:devices:/system.slice/docker-7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4.scope\n3:cpu,cpuacct:/system.slice/docker-7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4.scope\n2:cpuset:/system.slice/docker-7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4.scope\n1:name=systemd:/system.slice/docker-7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4.scope\n",
+              "pid": 2936317,
+              "start_ticks": 367129820,
+              "uid": 1005
+            },
+            "released": true
+          },
+          {
+            "container_id": "21e0cee957c4fa02008a849b8993a0cdb7208be516090b4d6a6895f3ba124b18",
+            "pid_identity": {
+              "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+              "cgroup": "12:rdma:/system.slice/docker-21e0cee957c4fa02008a849b8993a0cdb7208be516090b4d6a6895f3ba124b18.scope\n11:blkio:/system.slice/docker-21e0cee957c4fa02008a849b8993a0cdb7208be516090b4d6a6895f3ba124b18.scope\n10:net_cls,net_prio:/system.slice/docker-21e0cee957c4fa02008a849b8993a0cdb7208be516090b4d6a6895f3ba124b18.scope\n9:freezer:/system.slice/docker-21e0cee957c4fa02008a849b8993a0cdb7208be516090b4d6a6895f3ba124b18.scope\n8:memory:/system.slice/docker-21e0cee957c4fa02008a849b8993a0cdb7208be516090b4d6a6895f3ba124b18.scope\n7:hugetlb:/system.slice/docker-21e0cee957c4fa02008a849b8993a0cdb7208be516090b4d6a6895f3ba124b18.scope\n6:perf_event:/system.slice/docker-21e0cee957c4fa02008a849b8993a0cdb7208be516090b4d6a6895f3ba124b18.scope\n5:pids:/system.slice/docker-21e0cee957c4fa02008a849b8993a0cdb7208be516090b4d6a6895f3ba124b18.scope\n4:devices:/system.slice/docker-21e0cee957c4fa02008a849b8993a0cdb7208be516090b4d6a6895f3ba124b18.scope\n3:cpu,cpuacct:/system.slice/docker-21e0cee957c4fa02008a849b8993a0cdb7208be516090b4d6a6895f3ba124b18.scope\n2:cpuset:/system.slice/docker-21e0cee957c4fa02008a849b8993a0cdb7208be516090b4d6a6895f3ba124b18.scope\n1:name=systemd:/system.slice/docker-21e0cee957c4fa02008a849b8993a0cdb7208be516090b4d6a6895f3ba124b18.scope\n",
+              "pid": 3331999,
+              "start_ticks": 367417981,
+              "uid": 1005
+            },
+            "released": false
+          }
+        ],
+        "request_sha256": "95f7cd1c11aa6361d55cb6aaca4b74343171039717b8f1fc02f3b52524477d6f",
+        "reservation_id": "c32ff63230554280b5a382c397641b0e"
+      }
+    },
+    "state.json": {
+      "sha256": "5f5d0d95ca39f4b28cc85bc5439b87cc4439d218e90e7066de5a8db5bd4970c6",
+      "value": {
+        "arm": "fp8_e4m3",
+        "containers": [
+          "7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4",
+          "21e0cee957c4fa02008a849b8993a0cdb7208be516090b4d6a6895f3ba124b18"
+        ],
+        "request_sha256": "95f7cd1c11aa6361d55cb6aaca4b74343171039717b8f1fc02f3b52524477d6f",
+        "status": "RUNNING"
+      }
+    }
+  },
+  "gpu_snapshot": "0, GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 0, 0\n1, GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 0, 0\n2, GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 0, 0\n3, GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 0, 0\n4, GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 66909, 99\n5, GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 0, 0\n6, GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 0, 0\n7, GPU-47211491-ba0d-78bf-5c84-f968c0648213, 0, 0",
+  "live_owned_containers": [
+    "21e0cee957c4fa02008a849b8993a0cdb7208be516090b4d6a6895f3ba124b18"
+  ],
+  "log_tail": {
+    "events.jsonl": "{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1\":{\"index\":4,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3671175328773201,\"utc\":\"2026-10-27T02:12:13.589599+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1\":{\"index\":4,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3671175328773201,\"utc\":\"2026-10-27T02:12:44.092457+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1\":{\"index\":4,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3671175328773201,\"utc\":\"2026-10-27T02:13:14.419454+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1\":{\"index\":4,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3671175328773201,\"utc\":\"2026-10-27T02:13:44.836453+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1\":{\"index\":4,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3671175328773201,\"utc\":\"2026-10-27T02:14:15.264555+00:00\"}\n{\"action\":\"OWNED_CONTAINER_CREATED\",\"arm\":\"bf16\",\"id\":\"7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4\",\"utc\":\"2026-10-27T02:14:16.340911+00:00\"}\n{\"action\":\"ARM_VERIFIED\",\"arm\":\"bf16\",\"id\":\"7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4\",\"utc\":\"2026-10-27T03:00:14.247928+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1\":{\"index\":4,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3674056361252750,\"utc\":\"2026-10-27T03:00:14.622080+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1\":{\"index\":4,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3674056361252750,\"utc\":\"2026-10-27T03:00:45.444645+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1\":{\"index\":4,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3674056361252750,\"utc\":\"2026-10-27T03:01:15.870966+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1\":{\"index\":4,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3674056361252750,\"utc\":\"2026-10-27T03:01:46.287778+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1\":{\"index\":4,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3674056361252750,\"utc\":\"2026-10-27T03:02:16.817788+00:00\"}\n{\"action\":\"OWNED_CONTAINER_CREATED\",\"arm\":\"fp8_e4m3\",\"id\":\"21e0cee957c4fa02008a849b8993a0cdb7208be516090b4d6a6895f3ba124b18\",\"utc\":\"2026-10-27T03:02:17.949463+00:00\"}\n",
+    "output/bf16/aiperf.log": "      Usage Prompt Tokens (tokens) │      7,054.89 │ 921.00 │ 31,388.00 │ 27,077.68 │ 14,514.50 │ 6,294.50 │ 5,267.10 │\n│ Usage Prompt Cache Read Tokens (tokens) │      3,401.07 │   0.00 │ 19,456.00 │ 12,160.00 │  6,144.00 │ 2,560.00 │ 2,885.71 │\n│      Usage Prompt Audio Tokens (tokens) │          0.00 │   0.00 │      0.00 │      0.00 │      0.00 │     0.00 │     0.00 │\n│        Usage Completion Tokens (tokens) │        177.82 │   1.00 │  2,000.00 │    889.64 │    501.30 │    30.00 │   242.23 │\n│         Usage Reasoning Tokens (tokens) │          0.00 │   0.00 │      0.00 │      0.00 │      0.00 │     0.00 │     0.00 │\n│  Usage Completion Audio Tokens (tokens) │          0.00 │   0.00 │      0.00 │      0.00 │      0.00 │     0.00 │     0.00 │\n│             Usage Total Tokens (tokens) │      7,232.71 │ 945.00 │ 31,720.00 │ 27,578.89 │ 14,848.70 │ 6,337.50 │ 5,330.37 │\n│      Total Usage Prompt Tokens (tokens) │ 14,730,618.00 │    N/A │       N/A │       N/A │       N/A │      N/A │      N/A │\n│    Total Usage Prompt Cache Read Tokens │  7,101,440.00 │    N/A │       N/A │       N/A │       N/A │      N/A │      N/A │\n│                                (tokens) │               │        │           │           │           │          │          │\n│       Overall Usage Prompt Cache Read % │         48.21 │    N/A │       N/A │       N/A │       N/A │      N/A │      N/A │\n│                                     (%) │               │        │           │           │           │          │          │\n│         Total Usage Prompt Audio Tokens │          0.00 │    N/A │       N/A │       N/A │       N/A │      N/A │      N/A │\n│                                (tokens) │               │        │           │           │           │          │          │\n│  Total Usage Completion Tokens (tokens) │    371,279.00 │    N/A │       N/A │       N/A │       N/A │      N/A │      N/A │\n│   Total Usage Reasoning Tokens (tokens) │          0.00 │    N/A │       N/A │       N/A │       N/A │      N/A │      N/A │\n│     Total Usage Completion Audio Tokens │          0.00 │    N/A │       N/A │       N/A │       N/A │      N/A │      N/A │\n│                                (tokens) │               │        │           │           │           │          │          │\n│       Total Usage Total Tokens (tokens) │ 15,101,897.00 │    N/A │       N/A │       N/A │       N/A │      N/A │      N/A │\n└─────────────────────────────────────────┴───────────────┴────────┴───────────┴───────────┴───────────┴──────────┴──────────┘\n                                                   NVIDIA AIPerf | LLM Metrics                                                   \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┓\n┃                                        Metric ┃      avg ┃      min ┃       max ┃       p99 ┃       p90 ┃      p50 ┃      std ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━┩\n│                      Time to First Token (ms) │ 2,262.39 │    26.96 │ 17,927.16 │  8,807.33 │  5,220.52 │ 1,578.62 │ 2,094.87 │\n│                     Time to Second Token (ms) │   495.08 │     0.00 │    764.11 │    736.82 │    647.68 │   549.93 │   192.32 │\n│               Time to First Output Token (ms) │ 2,262.39 │    26.96 │ 17,927.16 │  8,807.33 │  5,220.52 │ 1,578.62 │ 2,094.87 │\n│                          Request Latency (ms) │ 7,748.56 │ 1,022.17 │ 61,278.40 │ 23,166.48 │ 15,176.41 │ 6,270.30 │ 5,714.43 │\n│                          Decode Duration (ms) │ 5,486.16 │     0.00 │ 59,173.56 │ 20,201.16 │ 12,313.92 │ 4,163.66 │ 5,345.26 │\n│                      Inter Token Latency (ms) │   187.28 │     1.36 │    788.04 │    715.73 │    584.62 │    57.33 │   221.79 │\n│              Output Token Throughput Per User │    25.79 │     1.27 │    734.07 │    125.70 │     55.74 │    17.44 │    31.39 │\n│                             (tokens/sec/user) │          │          │           │           │           │          │          │\n│ E2E Output Token Throughput (tokens/sec/user) │    16.87 │     0.18 │    377.04 │     85.70 │     41.89 │     6.63 │    21.02 │\n│               Output Sequence Length (tokens) │   177.82 │     1.00 │  2,000.00 │    889.64 │    501.30 │    30.00 │   242.23 │\n│                Input Sequence Length (tokens) │ 7,054.89 │   921.00 │ 31,388.00 │ 27,077.68 │ 14,514.50 │ 6,294.50 │ 5,267.10 │\n│          Output Token Throughput (tokens/sec) │   155.10 │      N/A │       N/A │       N/A │       N/A │      N/A │      N/A │\n│           Input Token Throughput (tokens/sec) │ 6,153.75 │      N/A │       N/A │       N/A │       N/A │      N/A │      N/A │\n│             Request Throughput (requests/sec) │     0.87 │      N/A │       N/A │       N/A │       N/A │      N/A │      N/A │\n│          Completed Requests (Success + Error) │ 2,088.00 │      N/A │       N/A │       N/A │       N/A │      N/A │      N/A │\n│                                    (requests) │          │          │           │           │           │          │          │\n│                        Request Error Rate (%) │     0.00 │      N/A │       N/A │       N/A │       N/A │      N/A │      N/A │\n│                      Request Count (requests) │ 2,088.00 │      N/A │       N/A │       N/A │       N/A │      N/A │      N/A │\n└───────────────────────────────────────────────┴──────────┴──────────┴───────────┴───────────┴───────────┴──────────┴──────────┘\n\nCLI Command: aiperf profile --model 'Qwen2.5-14B-Instruct' --tokenizer \n'/models/Qwen2.5-14B-Instruct' --url 'http://127.0.0.1:19001' --endpoint-type 'chat' --streaming \n--use-legacy-max-tokens --use-server-token-count --random-seed 20261026 --export-level 'raw' \n--output-artifact-dir '/results/artifacts' --request-count 2088 --concurrency 1024 \n--dataset-sampling-strategy 'sequential' --request-timeout-seconds 1200 --input-file \n'/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/runs/prod-trace-bf16xqa-toolagent-s01\n25-r0-20261027a/input/payload_trace.jsonl' --custom-dataset-type 'mooncake_trace' --fixed-schedule \n--fixed-schedule-auto-offset --workers-max 1 --no-gpu-telemetry --ui None\nBenchmark Duration: 2391.25 sec\nCSV Export: /results/artifacts/profile_export_aiperf.csv\nJSON Export: /results/artifacts/profile_export_aiperf.json\nRaw Records: /results/artifacts/profile_export_raw.jsonl\nLog File: /results/artifacts/logs/aiperf.log\n\n",
+    "output/bf16/container.log": "",
+    "output/bf16/operator_acceptance.log": "I20261027 10:14:22.164927 9 flashinfer.py:168] KV_ALLOCATION {\"layers\": [{\"tensors\": {\"key\": {\"dtype\": \"torch.bfloat16\", \"shape\": [7, 128, 8, 128], \"bytes\": 1835008}, \"value\": {\"dtype\": \"torch.bfloat16\", \"shape\": [7, 128, 8, 128], \"bytes\": 1835008}}, \"key_format\": \"bf16\", \"value_format\": \"bf16\", \"resident_bytes\": 3670016, \"bytes_per_token\": 4096}], \"resident_bytes\": 3670016, \"token_capacity\": 896}\nI20261027 10:17:11.489210 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE prefill {'relative_l2': 0.0022824311163276434, 'max_abs': 0.0005266666412353516}\nI20261027 10:17:21.263706 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE capture_replay {'relative_l2': 0.003906028810888529, 'max_abs': 0.0008789524435997009}\nI20261027 10:17:21.265617 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE changed_context {'relative_l2': 0.0028711154591292143, 'max_abs': 0.0009812712669372559}\nI20261027 10:17:21.298118 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE padded_graph {'relative_l2': 0.0028711154591292143, 'max_abs': 0.0009812712669372559}\nI20261027 10:17:21.299578 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE restored_finite_padding {'relative_l2': 0.0028711154591292143, 'max_abs': 0.0009812712669372559}\nI20261027 10:17:21.300398 9 check_native_fa3_operator.py:219] Native production operator/Graph acceptance passed for bf16; no model/service/quality claim\n",
+    "output/bf16/server.log": "kens: 3, temperature: 0, finish_reason: length, prompt_tokens: 6662, num_prefix_cache_tokens: 6144, generated_tokens: 3, ttft: 796.0ms, total_latency: 2240.4ms, avg tpot: 722.2ms, generation speed: 2.1 tokens/s\nI20261027 10:59:44.723526   643 request.cpp:134] x-request-id: c09514e6-0554-4ea7-afc9-f0bbcce8908e, x-request-time: , request_id: chatcmpl-15933769124469343823-EbXxQMntitFmUtyx8Z8pQV, sequence 0, max_tokens: 3, temperature: 0, finish_reason: length, prompt_tokens: 7133, num_prefix_cache_tokens: 6144, generated_tokens: 3, ttft: 798.0ms, total_latency: 2242.5ms, avg tpot: 722.2ms, generation speed: 2.1 tokens/s\nI20261027 10:59:44.723528   642 request.cpp:134] x-request-id: 048cf5eb-75b8-4ffe-b5b0-1ac96aab972f, x-request-time: , request_id: chatcmpl-15933769124469343823-JBSaxnGxybJ2pz5AbhmtVu, sequence 0, max_tokens: 3, temperature: 0, finish_reason: length, prompt_tokens: 7168, num_prefix_cache_tokens: 6144, generated_tokens: 3, ttft: 821.0ms, total_latency: 2264.6ms, avg tpot: 721.8ms, generation speed: 2.1 tokens/s\nI20261027 10:59:44.723523   641 request.cpp:134] x-request-id: 03a02b53-d75b-429d-bfad-ae84ac02af49, x-request-time: , request_id: chatcmpl-15933769124469343823-ezF2R6oPCTHRNLsPFNpB8k, sequence 0, max_tokens: 3, temperature: 0, finish_reason: length, prompt_tokens: 6387, num_prefix_cache_tokens: 6144, generated_tokens: 3, ttft: 788.0ms, total_latency: 2232.4ms, avg tpot: 722.2ms, generation speed: 2.1 tokens/s\nI20261027 10:59:44.723654   640 request.cpp:134] x-request-id: d17bbf37-7b91-4f14-8f5f-d18418162fc7, x-request-time: , request_id: chatcmpl-15933769124469343823-tkwmKbT7dft7g6owaZPg8x, sequence 0, max_tokens: 3, temperature: 0, finish_reason: length, prompt_tokens: 6246, num_prefix_cache_tokens: 6144, generated_tokens: 3, ttft: 811.0ms, total_latency: 2255.4ms, avg tpot: 722.2ms, generation speed: 2.1 tokens/s\nI20261027 10:59:44.723665   643 request.cpp:134] x-request-id: 26385424-999d-48f4-a04a-903454fc7ae5, x-request-time: , request_id: chatcmpl-15933769124469343823-FnKEKomx6un3GFtKuxuQN4, sequence 0, max_tokens: 3, temperature: 0, finish_reason: length, prompt_tokens: 6207, num_prefix_cache_tokens: 6144, generated_tokens: 3, ttft: 812.0ms, total_latency: 2256.2ms, avg tpot: 722.1ms, generation speed: 2.1 tokens/s\nI20261027 10:59:44.723687   641 request.cpp:134] x-request-id: ec7d1ace-d9a3-4fef-a9a0-78c720a6840c, x-request-time: , request_id: chatcmpl-15933769124469343823-tnMZyUA6EbWj46XEghZRbe, sequence 0, max_tokens: 3, temperature: 0, finish_reason: length, prompt_tokens: 6899, num_prefix_cache_tokens: 6144, generated_tokens: 3, ttft: 808.0ms, total_latency: 2252.2ms, avg tpot: 722.1ms, generation speed: 2.1 tokens/s\nI20261027 10:59:46.955735   643 request.cpp:134] x-request-id: 2020c18b-9470-477c-a04b-c738653d17ae, x-request-time: , request_id: chatcmpl-15933769124469343823-bin7N3zbPcCsU58YpCUaHw, sequence 0, max_tokens: 19, temperature: 0, finish_reason: length, prompt_tokens: 3008, num_prefix_cache_tokens: 2560, generated_tokens: 19, ttft: 287.0ms, total_latency: 4506.4ms, avg tpot: 234.4ms, generation speed: 4.5 tokens/s\nI20261027 10:59:46.979041   641 request.cpp:134] x-request-id: 1d66a24e-691f-41cd-9b3b-0d193a07c6d0, x-request-time: , request_id: chatcmpl-15933769124469343823-FKfywzLMmVJfS83MUQLD5n, sequence 0, max_tokens: 17, temperature: 0, finish_reason: length, prompt_tokens: 4099, num_prefix_cache_tokens: 2560, generated_tokens: 17, ttft: 2225.0ms, total_latency: 4480.6ms, avg tpot: 141.0ms, generation speed: 7.5 tokens/s\nI20261027 10:59:47.143271   643 request.cpp:134] x-request-id: 6319677b-a05d-4c41-a808-a5e89b5766bc, x-request-time: , request_id: chatcmpl-15933769124469343823-PMUtk6uLJWagibpo52ekZA, sequence 0, max_tokens: 26, temperature: 0, finish_reason: length, prompt_tokens: 6196, num_prefix_cache_tokens: 6144, generated_tokens: 26, ttft: 786.0ms, total_latency: 4649.7ms, avg tpot: 154.5ms, generation speed: 6.7 tokens/s\nI20261027 10:59:47.220808   642 request.cpp:134] x-request-id: ce4d3813-8c80-409a-a806-01e06d0087a0, x-request-time: , request_id: chatcmpl-15933769124469343823-tdq9WxTJLEDFdsPjsWgYK6, sequence 0, max_tokens: 30, temperature: 0, finish_reason: length, prompt_tokens: 6249, num_prefix_cache_tokens: 6144, generated_tokens: 30, ttft: 788.0ms, total_latency: 4729.1ms, avg tpot: 135.9ms, generation speed: 7.6 tokens/s\nI20261027 10:59:47.260174   641 request.cpp:134] x-request-id: ee89d60b-7d19-4fdd-bae9-35ffc45bf7bf, x-request-time: , request_id: chatcmpl-15933769124469343823-MJ3BSvcMQuSEqyxXRx6io5, sequence 0, max_tokens: 33, temperature: 0, finish_reason: length, prompt_tokens: 5689, num_prefix_cache_tokens: 512, generated_tokens: 33, ttft: 279.0ms, total_latency: 4803.3ms, avg tpot: 141.4ms, generation speed: 7.3 tokens/s\nI20261027 10:59:47.318491   642 request.cpp:134] x-request-id: 6279e0b6-8235-4126-ad14-bdf59352e504, x-request-time: , request_id: chatcmpl-15933769124469343823-9w2RhEUGpMibNHjXcgVzra, sequence 0, max_tokens: 35, temperature: 0, finish_reason: length, prompt_tokens: 7191, num_prefix_cache_tokens: 6144, generated_tokens: 35, ttft: 799.0ms, total_latency: 4838.4ms, avg tpot: 118.8ms, generation speed: 8.7 tokens/s\nI20261027 10:59:54.826627   640 request.cpp:134] x-request-id: 212bd585-0f13-44a8-9f97-21601bf95fd8, x-request-time: , request_id: chatcmpl-15933769124469343823-tDc8KZmeUSTvHafpmpaopA, sequence 0, max_tokens: 443, temperature: 0, finish_reason: length, prompt_tokens: 23659, num_prefix_cache_tokens: 512, generated_tokens: 443, ttft: 2225.0ms, total_latency: 12328.7ms, avg tpot: 22.9ms, generation speed: 43.8 tokens/s\nI20261027 10:59:56.268710   643 request.cpp:134] x-request-id: b26dda68-3ecb-4c6b-92db-7b79f0625ed9, x-request-time: , request_id: chatcmpl-15933769124469343823-69SXXryPHuqSg98tnxDP7m, sequence 0, max_tokens: 530, temperature: 0, finish_reason: length, prompt_tokens: 7912, num_prefix_cache_tokens: 512, generated_tokens: 530, ttft: 3311.0ms, total_latency: 13737.9ms, avg tpot: 19.7ms, generation speed: 50.8 tokens/s\nI20261027 10:59:56.909963   640 request.cpp:134] x-request-id: 524bfdb0-9af4-43d2-8ec5-9109972035de, x-request-time: , request_id: chatcmpl-15933769124469343823-y6Wy6ofJzjKCRRvA8ftNe5, sequence 0, max_tokens: 569, temperature: 0, finish_reason: length, prompt_tokens: 17468, num_prefix_cache_tokens: 5248, generated_tokens: 569, ttft: 4133.0ms, total_latency: 14346.7ms, avg tpot: 18.0ms, generation speed: 55.7 tokens/s\nI20261027 10:59:57.702616   642 request.cpp:134] x-request-id: 40872e75-6bf0-4947-9bf1-a5eb9539854d, x-request-time: , request_id: chatcmpl-15933769124469343823-7sWVMzyAHxSGZMQfYXmqqY, sequence 0, max_tokens: 1532, temperature: 0, finish_reason: length, prompt_tokens: 17948, num_prefix_cache_tokens: 512, generated_tokens: 1532, ttft: 8690.0ms, total_latency: 39115.1ms, avg tpot: 19.9ms, generation speed: 50.4 tokens/s\nI20261027 11:00:00.202106   642 request.cpp:134] x-request-id: 66dae343-1a39-4dfc-8b09-def10ee3598b, x-request-time: , request_id: chatcmpl-15933769124469343823-5cdDPwhWNPMbzvGaeNFhWp, sequence 0, max_tokens: 820, temperature: 0, finish_reason: length, prompt_tokens: 9898, num_prefix_cache_tokens: 512, generated_tokens: 820, ttft: 2766.0ms, total_latency: 17685.7ms, avg tpot: 18.2ms, generation speed: 55.0 tokens/s\nI20261027 11:00:06.323918   407 xllm_server.cpp:188]      Shutting down\nI20261027 11:00:06.323985   407 xllm_server.cpp:189]      Waiting for application shutdown.\nI20261027 11:00:06.323992   407 server.cpp:1260] Server[xllm::APIService] is going to quit\nI20261027 11:00:06.324162   407 xllm_server.cpp:193]      Application shutdown complete.\nI20261027 11:00:06.324172   407 xllm_server.cpp:194]      Finished server process [407]\nI20261027 11:00:06.324191   407 llm_master.cpp:141] LLMMaster stopping...\nI20261027 11:00:08.768867   407 server.cpp:1260] Server[xllm::CollectiveService] is going to quit\nI20261027 11:00:08.769079   407 xllm_server_registry.cpp:38] Unregister server CollectiveServer0.\nI20261027 11:00:08.769452   407 server.cpp:1260] Server[xllm::WorkerService] is going to quit\nI20261027 11:00:08.769688   407 xllm_server_registry.cpp:38] Unregister server DistributeWorkerServer0.\n",
+    "output/fp8_e4m3/aiperf.log": "11:07:42.541 INFO     Starting AIPerf System (_single_run.py:81)\n11:07:42.887 INFO     GPU telemetry disabled via --no-gpu-telemetry (system_controller.py:506)\n11:07:42.913 INFO     Registered: Worker_Manager ('worker_manager') [0/0] (service_registry.py:196)\n11:07:42.914 INFO     Registered Worker Manager (id: 'worker_manager') (system_controller_dispatch.py:146)\n11:07:42.914 INFO     Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable) (otel_metrics_results_processor.py:127)\n11:07:42.914 INFO     Registered Worker Manager (id: 'worker_manager') (system_controller_dispatch.py:146)\n11:07:42.914 INFO     Record metrics export enabled: /results/artifacts/profile_export.jsonl (record_export_jsonl_writer.py:62)\n11:07:42.934 INFO     Registered: Dataset_Manager ('dataset_manager') [0/0] (service_registry.py:196)\n11:07:42.934 INFO     Registered Dataset Manager (id: 'dataset_manager') (system_controller_dispatch.py:146)\n11:07:42.935 INFO     Registered: Records_Manager ('records_manager') [0/0] (service_registry.py:196)\n11:07:42.935 INFO     Registered Records Manager (id: 'records_manager') (system_controller_dispatch.py:146)\n11:07:42.935 INFO     Registered Records Manager (id: 'records_manager') (system_controller_dispatch.py:146)\n11:07:42.948 INFO     RawRecordWriter initialized: /results/artifacts/raw_records/raw_records_record_processor_e38adc8a.jsonl - FULL request/response data will be exported (files may be large) (raw_record_writer_processor.py:80)\n11:07:42.949 INFO     Server Metrics: Discovered 1 endpoints: ['http://127.0.0.1:19001/metrics'] (manager.py:197)\n11:07:42.955 INFO     Registered: Record_Processor ('record_processor_e38adc8a') [0/0] (service_registry.py:196)\n11:07:42.955 INFO     Registered Record Processor (id: 'record_processor_e38adc8a') (system_controller_dispatch.py:146)\n11:07:42.955 INFO     Registered Record Processor (id: 'record_processor_e38adc8a') (system_controller_dispatch.py:146)\n11:07:42.977 INFO     Registered: Server_Metrics_Manager ('server_metrics_manager') [0/0] (service_registry.py:196)\n11:07:42.977 INFO     Registered Server Metrics Manager (id: 'server_metrics_manager') (system_controller_dispatch.py:146)\n11:07:42.977 INFO     Registered Server Metrics Manager (id: 'server_metrics_manager') (system_controller_dispatch.py:146)\n11:07:43.010 INFO     Registered Dataset Manager (id: 'dataset_manager') (system_controller_dispatch.py:146)\n11:07:43.078 INFO     Registered: Worker ('worker_4c1ead8f') [0/0] (service_registry.py:196)\n11:07:43.078 INFO     Registered Worker (id: 'worker_4c1ead8f') (system_controller_dispatch.py:146)\n11:07:43.078 INFO     Registered Worker (id: 'worker_4c1ead8f') (system_controller_dispatch.py:146)\n11:07:43.079 INFO     Registered: Timing_Manager ('timing_manager') [0/0] (service_registry.py:196)\n11:07:43.079 INFO     Registered Timing Manager (id: 'timing_manager') (system_controller_dispatch.py:146)\n11:07:43.079 INFO     Registered Timing Manager (id: 'timing_manager') (system_controller_dispatch.py:146)\n11:07:43.391 INFO     System state: initializing -> configuring (system_controller.py:700)\n11:07:43.391 INFO     AIPerf System is CONFIGURING (system_controller.py:536)\n11:07:43.391 INFO     Configuring all services to start profiling (system_controller.py:713)\n11:07:43.392 INFO     Tokenization is disabled for this endpoint, skipping tokenizer configuration (inference_result_parser.py:85)\n11:07:43.392 INFO     Waiting for dataset to be configured before configuring timing (manager.py:149)\n11:07:43.396 INFO     Server metrics disabled - no Prometheus endpoints reachable (system_controller.py:1046)\n11:07:43.552 INFO     Configuring tokenizer(s) for dataset manager (dataset_manager.py:271)\n11:07:45.211 INFO     Tokenizer(s) configured in 1.66 seconds (dataset_manager.py:275)\n11:07:45.211 INFO     Configuring dataset for dataset_manager (dataset_manager.py:281)\n11:07:45.592 INFO     Using explicit dataset format: mooncake_trace (custom.py:65)\n11:07:46.353 INFO     Memory-mapped backing store initialized (streaming to /tmp/aiperf_mmap_80fb3e8962c8/dataset.dat) (memory_map_utils.py:160)\n11:07:46.492 INFO     Data file finalized: 2088 conversations, 61.68 MB (memory_map_utils.py:288)\n11:07:46.492 INFO     Index file created: /tmp/aiperf_mmap_80fb3e8962c8/index.dat (memory_map_utils.py:295)\n11:07:46.492 INFO     Backing store finalized: client_type=DatasetClientStoreType.MEMORY_MAP format=MemoryMapFormat.PAYLOAD_BYTES data_file_path=PosixPath('/tmp/aiperf_mmap_80fb3e8962c8/dataset.dat') index_file_path=PosixPath('/tmp/aiperf_mmap_80fb3e8962c8/index.dat') conversation_count=2088 total_size_bytes=64679682 compressed=False compressed_data_file_path=None compressed_index_file_path=None compressed_size_bytes=0 (dataset_manager.py:1009)\n11:07:46.522 INFO     sampling strategy: sequential, unique conversations: 2088, unique turn count: 2088 (dataset_manager.py:1027)\n11:07:46.534 INFO     Skipping inputs.json generation (dataset_manager.py:285)\n11:07:46.554 INFO     Initialized 1 phase(s): ['Profiling'] (phase_orchestrator.py:341)\n11:07:46.673 INFO     Dataset client initialized and freed 2088 conversations from memory (dataset_manager.py:364)\n11:07:46.801 INFO     Populated mmap cache entry /run_cache/aiperf_mmap/79e230dcf8df75bbf48de50bdc038efd (mmap_cache.py:648)\n11:07:46.802 INFO     Dataset configured in 1.59 seconds (dataset_manager.py:294)\n11:07:46.802 INFO     All services configured in 3.41 seconds (system_controller.py:722)\n11:07:46.803 INFO     System state: configuring -> ready (system_controller.py:700)\n11:07:46.803 INFO     AIPerf System is CONFIGURED (system_controller.py:539)\n11:07:46.804 INFO     All services started profiling successfully (system_controller.py:742)\n11:07:46.804 INFO     System state: ready -> profiling (system_controller.py:700)\n11:07:46.804 INFO     AIPerf System is PROFILING (system_controller.py:548)\n11:07:46.804 INFO     Waiting for result domains: profile (system_controller.py:1635)\n11:07:46.811 INFO     Built schedule with 2088 timestamps, zero_ms=0, auto_offset=True (fixed_schedule.py:119)\n11:07:46.811 NOTICE   Phase profiling (profiling) started | phase_index=0 | profiling_index=0 | target: 2,088 requests, 2,088 sessions (runner.py:660)\n11:07:46.812 INFO     Credit phase start: profiling (records_manager.py:1406)\n11:08:12.878 WARNING  Optional service 'server_metrics_manager' (server_metrics_manager) missed heartbeats on 2 consecutive ticks; dropping it and continuing the benchmark without it. (base_service_manager.py:145)\n",
+    "output/fp8_e4m3/container.log": "",
+    "output/fp8_e4m3/operator_acceptance.log": "I20261027 11:02:23.947141 9 flashinfer.py:168] KV_ALLOCATION {\"layers\": [{\"tensors\": {\"key\": {\"dtype\": \"torch.uint8\", \"shape\": [7, 128, 8, 128], \"bytes\": 917504}, \"value\": {\"dtype\": \"torch.uint8\", \"shape\": [7, 128, 8, 128], \"bytes\": 917504}, \"key_scale\": {\"dtype\": \"torch.float32\", \"shape\": [7, 128, 8], \"bytes\": 28672}, \"value_scale\": {\"dtype\": \"torch.float32\", \"shape\": [7, 128, 8], \"bytes\": 28672}}, \"key_format\": \"fp8_e4m3\", \"value_format\": \"fp8_e4m3\", \"resident_bytes\": 1892352, \"bytes_per_token\": 2112}], \"resident_bytes\": 1892352, \"token_capacity\": 896}\nI20261027 11:04:50.616016 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE prefill {'relative_l2': 0.0027969107031822205, 'max_abs': 0.0007567703723907471}\nI20261027 11:04:59.629334 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE capture_replay {'relative_l2': 0.02470334619283676, 'max_abs': 0.0036779604852199554}\nI20261027 11:04:59.631104 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE changed_context {'relative_l2': 0.023303190246224403, 'max_abs': 0.005400955677032471}\nI20261027 11:04:59.633785 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE padded_graph {'relative_l2': 0.023303190246224403, 'max_abs': 0.005400955677032471}\nI20261027 11:04:59.635335 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE restored_finite_padding {'relative_l2': 0.023303190246224403, 'max_abs': 0.005400955677032471}\nI20261027 11:04:59.636152 9 check_native_fa3_operator.py:219] Native production operator/Graph acceptance passed for fp8_e4m3; no model/service/quality claim\n",
+    "output/fp8_e4m3/server.log": "9343823-53sCAjssQHJUBNQneCXrmt, sequence 0, max_tokens: 16, temperature: 0, finish_reason: length, prompt_tokens: 3014, num_prefix_cache_tokens: 2560, generated_tokens: 16, ttft: 129.0ms, total_latency: 4546.3ms, avg tpot: 294.5ms, generation speed: 3.6 tokens/s\nI20261027 11:41:51.423460   936 request.cpp:134] x-request-id: b6d3c894-3abb-42e2-8d5b-351a65b73338, x-request-time: , request_id: chatcmpl-15933769124469343823-xf8HHCb2AUK5uQJkaEBaBC, sequence 0, max_tokens: 14, temperature: 0, finish_reason: length, prompt_tokens: 3219, num_prefix_cache_tokens: 2560, generated_tokens: 14, ttft: 3249.0ms, total_latency: 4556.1ms, avg tpot: 100.5ms, generation speed: 10.7 tokens/s\nI20261027 11:41:51.444274   935 request.cpp:134] x-request-id: 93f28edb-0ca5-4aac-b135-8703ca46528a, x-request-time: , request_id: chatcmpl-15933769124469343823-wi9jMVtRTcwg6UrHcDpVUY, sequence 0, max_tokens: 15, temperature: 0, finish_reason: length, prompt_tokens: 4126, num_prefix_cache_tokens: 2560, generated_tokens: 15, ttft: 3265.0ms, total_latency: 4593.0ms, avg tpot: 94.9ms, generation speed: 11.3 tokens/s\nI20261027 11:41:51.444280   936 request.cpp:134] x-request-id: 2cd072fa-a480-4c4e-9f11-463224f59e0a, x-request-time: , request_id: chatcmpl-15933769124469343823-HB9KDHWoVqj8ErygKfctnx, sequence 0, max_tokens: 13, temperature: 0, finish_reason: length, prompt_tokens: 3842, num_prefix_cache_tokens: 3840, generated_tokens: 13, ttft: 4299.0ms, total_latency: 4551.9ms, avg tpot: 21.1ms, generation speed: 51.4 tokens/s\nI20261027 11:41:51.693590   934 request.cpp:134] x-request-id: 16e405c5-66aa-423b-af54-986987e93bb4, x-request-time: , request_id: chatcmpl-15933769124469343823-VL5XMiuog2fionwYCS873L, sequence 0, max_tokens: 26, temperature: 0, finish_reason: length, prompt_tokens: 6319, num_prefix_cache_tokens: 6144, generated_tokens: 26, ttft: 3866.0ms, total_latency: 4820.1ms, avg tpot: 38.2ms, generation speed: 27.3 tokens/s\nI20261027 11:41:51.900722   937 request.cpp:134] x-request-id: 06c7b16b-2c79-495f-928e-cf7dd6cfd1c8, x-request-time: , request_id: chatcmpl-15933769124469343823-2HRn64RhWe6BQhs6JeWJ7W, sequence 0, max_tokens: 37, temperature: 0, finish_reason: length, prompt_tokens: 7066, num_prefix_cache_tokens: 6144, generated_tokens: 37, ttft: 3268.0ms, total_latency: 5052.1ms, avg tpot: 49.6ms, generation speed: 20.7 tokens/s\nI20261027 11:41:52.169637   934 request.cpp:134] x-request-id: 980830a1-0bc2-422d-b8cf-fa2b6fb3ff98, x-request-time: , request_id: chatcmpl-15933769124469343823-jNcKqphj6pxV3PoGJBnEvk, sequence 0, max_tokens: 50, temperature: 0, finish_reason: length, prompt_tokens: 7011, num_prefix_cache_tokens: 6144, generated_tokens: 50, ttft: 3266.0ms, total_latency: 5319.0ms, avg tpot: 41.9ms, generation speed: 24.4 tokens/s\nI20261027 11:41:52.500267   937 request.cpp:134] x-request-id: b9e8c5c7-54c8-445a-93db-72715881d4e2, x-request-time: , request_id: chatcmpl-15933769124469343823-SjkUaaerdf3z6mpLEGsooH, sequence 0, max_tokens: 65, temperature: 0, finish_reason: length, prompt_tokens: 9701, num_prefix_cache_tokens: 512, generated_tokens: 65, ttft: 3870.0ms, total_latency: 5630.7ms, avg tpot: 27.5ms, generation speed: 36.9 tokens/s\nI20261027 11:41:52.520931   937 request.cpp:134] x-request-id: 505febf0-67a0-4cde-87db-44581c240c74, x-request-time: , request_id: chatcmpl-15933769124469343823-4pwQTksebMzBdnpSnUvLLb, sequence 0, max_tokens: 67, temperature: 0, finish_reason: length, prompt_tokens: 4465, num_prefix_cache_tokens: 512, generated_tokens: 67, ttft: 3257.0ms, total_latency: 5660.7ms, avg tpot: 36.4ms, generation speed: 27.9 tokens/s\nI20261027 11:41:52.935235   935 request.cpp:134] x-request-id: 7f1dd25e-d080-4d81-9d19-dfb4b0f2197d, x-request-time: , request_id: chatcmpl-15933769124469343823-YStGngHQkASLyn95KtfddX, sequence 0, max_tokens: 85, temperature: 0, finish_reason: length, prompt_tokens: 8542, num_prefix_cache_tokens: 512, generated_tokens: 85, ttft: 4306.0ms, total_latency: 6049.9ms, avg tpot: 20.8ms, generation speed: 48.7 tokens/s\nI20261027 11:41:53.700803   936 request.cpp:134] x-request-id: a6b72a73-c812-4d3f-ba47-20d82400aecf, x-request-time: , request_id: chatcmpl-15933769124469343823-XjVHL4JNp3Sd8xK38TvZB8, sequence 0, max_tokens: 127, temperature: 0, finish_reason: length, prompt_tokens: 7341, num_prefix_cache_tokens: 512, generated_tokens: 127, ttft: 1232.0ms, total_latency: 6864.3ms, avg tpot: 44.7ms, generation speed: 22.5 tokens/s\nI20261027 11:41:54.486337   934 request.cpp:134] x-request-id: a99bb6af-dd18-4baf-ad6d-c6e868b63f47, x-request-time: , request_id: chatcmpl-15933769124469343823-ZUKDaddKZRCcDivbxs3ZyK, sequence 0, max_tokens: 162, temperature: 0, finish_reason: length, prompt_tokens: 922, num_prefix_cache_tokens: 512, generated_tokens: 162, ttft: 3255.0ms, total_latency: 7624.5ms, avg tpot: 27.1ms, generation speed: 37.1 tokens/s\nI20261027 11:41:55.250250   934 request.cpp:134] x-request-id: ab66166c-1997-4921-b0aa-0b9283f67f52, x-request-time: , request_id: chatcmpl-15933769124469343823-WhZqJ7MeqjjZH4hrDQUoZq, sequence 0, max_tokens: 213, temperature: 0, finish_reason: length, prompt_tokens: 4312, num_prefix_cache_tokens: 512, generated_tokens: 213, ttft: 653.0ms, total_latency: 8415.5ms, avg tpot: 36.6ms, generation speed: 27.4 tokens/s\nI20261027 11:41:55.315480   937 request.cpp:134] x-request-id: e10e8945-1b28-40f6-b7a7-79896a6a32ef, x-request-time: , request_id: chatcmpl-15933769124469343823-ojRtWfS6KRhLXf7nj9zips, sequence 0, max_tokens: 216, temperature: 0, finish_reason: length, prompt_tokens: 1833, num_prefix_cache_tokens: 512, generated_tokens: 216, ttft: 1230.0ms, total_latency: 8477.4ms, avg tpot: 33.7ms, generation speed: 29.8 tokens/s\nI20261027 11:41:55.736781   936 request.cpp:134] x-request-id: 0222808a-82f1-4d01-9c1e-cbd5bd77c59b, x-request-time: , request_id: chatcmpl-15933769124469343823-6PVJHirJKqWL9cS3oquWXd, sequence 0, max_tokens: 239, temperature: 0, finish_reason: length, prompt_tokens: 1806, num_prefix_cache_tokens: 512, generated_tokens: 239, ttft: 3265.0ms, total_latency: 8884.9ms, avg tpot: 23.6ms, generation speed: 42.5 tokens/s\nI20261027 11:41:55.898650   935 request.cpp:134] x-request-id: 599306ac-62de-4caf-a84d-680c7ceca875, x-request-time: , request_id: chatcmpl-15933769124469343823-peTj9Vzt84QudWJZ9UAo2J, sequence 0, max_tokens: 250, temperature: 0, finish_reason: length, prompt_tokens: 18044, num_prefix_cache_tokens: 896, generated_tokens: 250, ttft: 2703.0ms, total_latency: 9054.8ms, avg tpot: 25.5ms, generation speed: 39.4 tokens/s\nI20261027 11:41:56.462563   934 request.cpp:134] x-request-id: 4cb92070-0ba3-49d0-929b-225493860974, x-request-time: , request_id: chatcmpl-15933769124469343823-vcCu94xhFdyyNR5eUkoxwQ, sequence 0, max_tokens: 295, temperature: 0, finish_reason: length, prompt_tokens: 968, num_prefix_cache_tokens: 512, generated_tokens: 295, ttft: 1230.0ms, total_latency: 9624.3ms, avg tpot: 28.6ms, generation speed: 35.1 tokens/s\nI20261027 11:41:57.053874   937 request.cpp:134] x-request-id: 8f9c74d9-ac02-4a94-920b-9df8142bd147, x-request-time: , request_id: chatcmpl-15933769124469343823-ZFdStcPK7jgcWCqFQbKxb6, sequence 0, max_tokens: 343, temperature: 0, finish_reason: length, prompt_tokens: 926, num_prefix_cache_tokens: 512, generated_tokens: 343, ttft: 25.0ms, total_latency: 10245.9ms, avg tpot: 29.9ms, generation speed: 33.6 tokens/s\nI20261027 11:41:57.452823   935 request.cpp:134] x-request-id: cb23d5be-283a-4398-b866-a83d83ec79e3, x-request-time: , request_id: chatcmpl-15933769124469343823-e7DhWz9Dv2pEx5K3vD8hES, sequence 0, max_tokens: 372, temperature: 0, finish_reason: length, prompt_tokens: 8145, num_prefix_cache_tokens: 512, generated_tokens: 372, ttft: 1232.0ms, total_latency: 10616.4ms, avg tpot: 25.3ms, generation speed: 39.6 tokens/s\nI20261027 11:41:59.183158   936 request.cpp:134] x-request-id: 025e1247-97ab-473e-bab8-dc1b91216cfc, x-request-time: , request_id: chatcmpl-15933769124469343823-Uy7hGWhtHC24wziD5RnRWu, sequence 0, max_tokens: 516, temperature: 0, finish_reason: length, prompt_tokens: 3360, num_prefix_cache_tokens: 512, generated_tokens: 516, ttft: 2702.0ms, total_latency: 12338.9ms, avg tpot: 18.7ms, generation speed: 53.5 tokens/s\n",
+    "supervisor.log": "",
+    "watchdog.log": ""
+  },
+  "ok": true,
+  "operator_acceptance": {
+    "bf16": {
+      "sha256": "4d3c8ea48951d8c1457559c0e57d1bd2f48584ec85c1606f1896a48c49a39d8e",
+      "value": {
+        "arm": "bf16",
+        "backend": {
+          "attention_impl": "flashinfer",
+          "class": "FlashInferBackend",
+          "decode_impl": "xqa",
+          "decode_internal_q_data_type": "torch.bfloat16",
+          "decode_tensor_cores": true,
+          "flashinfer_version": "0.6.18.post1",
+          "kv_cache_dtype": "auto",
+          "kv_data_type": "torch.bfloat16",
+          "paged_prefill": true,
+          "planner_backend": "fa3",
+          "profile_scope": "production_xqa",
+          "q_data_type": "torch.bfloat16",
+          "q_scale": null,
+          "quality_transform": false,
+          "scale_strategy": "none",
+          "xqa_enable_pdl": true,
+          "xqa_graph_padding": "reserved_page0_one_token_discard",
+          "xqa_max_context": 32768,
+          "xqa_unused_kv_policy": "finite_full_initialization"
+        },
+        "classification": "operator_correctness_only",
+        "decode_impl": "xqa",
+        "device": "NVIDIA H800",
+        "fresh_dirty_cache_initialized_to_zero": true,
+        "invalid_nan_padding_diagnostics": {
+          "key": {
+            "finite_outputs": 10240,
+            "total_outputs": 10240
+          },
+          "value": {
+            "finite_outputs": 10240,
+            "total_outputs": 10240
+          }
+        },
+        "model_loaded": false,
+        "model_quality_validated": false,
+        "noncontiguous_q_checked": true,
+        "padded_graph_bucket_checked": true,
+        "partial_page_and_replan": true,
+        "prefill_planner": "fa3",
+        "real_capture_and_replay": true,
+        "reference": "FP32 dense causal attention on the same representable Q/K/V; relative L2 <=.05 plus rtol .08, atol .015",
+        "reference_comparisons": {
+          "capture_replay": {
+            "max_abs": 0.0008789524435997009,
+            "relative_l2": 0.003906028810888529
+          },
+          "changed_context": {
+            "max_abs": 0.0009812712669372559,
+            "relative_l2": 0.0028711154591292143
+          },
+          "padded_graph": {
+            "max_abs": 0.0009812712669372559,
+            "relative_l2": 0.0028711154591292143
+          },
+          "prefill": {
+            "max_abs": 0.0005266666412353516,
+            "relative_l2": 0.0022824311163276434
+          },
+          "restored_finite_padding": {
+            "max_abs": 0.0009812712669372559,
+            "relative_l2": 0.0028711154591292143
+          }
+        },
+        "reserved_page0_not_used_for_live_sequences": true,
+        "schema": "kv-native-fa3-operator-acceptance-v1",
+        "service_performance_measured": false,
+        "unused_padding_reference": "maximum_finite_FP8_or_large_finite_BF16"
+      }
+    },
+    "fp8_e4m3": {
+      "sha256": "8ee7fc29c1c6a99e367e65488049b6046d328a74d915860eef1ca9397c16ea8f",
+      "value": {
+        "arm": "fp8_e4m3",
+        "backend": {
+          "attention_impl": "flashinfer",
+          "class": "FlashInferFP8Backend",
+          "decode_impl": "xqa",
+          "decode_internal_q_data_type": "torch.float8_e4m3fn",
+          "decode_tensor_cores": true,
+          "flashinfer_version": "0.6.18.post1",
+          "fp8_views_alias_resident_pages": true,
+          "k_scale": 0.125,
+          "kv_cache_dtype": "fp8_e4m3",
+          "kv_data_type": "torch.float8_e4m3fn",
+          "paged_prefill": true,
+          "planner_backend": "fa2",
+          "profile_scope": "production_xqa",
+          "q_data_type": "torch.bfloat16",
+          "q_scale": null,
+          "quality_transform": false,
+          "scale_strategy": "immutable_global_scalar_per_K_or_V",
+          "v_scale": 0.0625,
+          "writer": "triton_quantize_scatter_only",
+          "xqa_enable_pdl": true,
+          "xqa_graph_padding": "reserved_page0_one_token_discard",
+          "xqa_max_context": 32768,
+          "xqa_unused_kv_policy": "finite_full_initialization"
+        },
+        "classification": "operator_correctness_only",
+        "decode_impl": "xqa",
+        "device": "NVIDIA H800",
+        "fresh_dirty_cache_initialized_to_zero": true,
+        "invalid_nan_padding_diagnostics": {
+          "key": {
+            "finite_outputs": 10240,
+            "total_outputs": 10240
+          },
+          "value": {
+            "finite_outputs": 0,
+            "total_outputs": 10240
+          }
+        },
+        "model_loaded": false,
+        "model_quality_validated": false,
+        "noncontiguous_q_checked": true,
+        "padded_graph_bucket_checked": true,
+        "partial_page_and_replan": true,
+        "prefill_planner": "fa2",
+        "real_capture_and_replay": true,
+        "reference": "FP32 dense causal attention on the same representable Q/K/V; relative L2 <=.05 plus rtol .08, atol .015",
+        "reference_comparisons": {
+          "capture_replay": {
+            "max_abs": 0.0036779604852199554,
+            "relative_l2": 0.02470334619283676
+          },
+          "changed_context": {
+            "max_abs": 0.005400955677032471,
+            "relative_l2": 0.023303190246224403
+          },
+          "padded_graph": {
+            "max_abs": 0.005400955677032471,
+            "relative_l2": 0.023303190246224403
+          },
+          "prefill": {
+            "max_abs": 0.0007567703723907471,
+            "relative_l2": 0.0027969107031822205
+          },
+          "restored_finite_padding": {
+            "max_abs": 0.005400955677032471,
+            "relative_l2": 0.023303190246224403
+          }
+        },
+        "reserved_page0_not_used_for_live_sequences": true,
+        "schema": "kv-native-fa3-operator-acceptance-v1",
+        "service_performance_measured": false,
+        "unused_padding_reference": "maximum_finite_FP8_or_large_finite_BF16"
+      }
+    }
+  },
+  "owned_containers": [
+    {
+      "created": "2026-10-27T03:02:17.906908863Z",
+      "id": "21e0cee957c4fa02008a849b8993a0cdb7208be516090b4d6a6895f3ba124b18",
+      "running": true
+    },
+    {
+      "created": "2026-10-27T02:14:16.297003162Z",
+      "id": "7873a3c30a41144c53c87d2de36b472f4ed103dd69561aae374ebd41078b1df4",
+      "running": false
+    }
+  ],
+  "quality_progress": {
+    "bf16": {},
+    "fp8_e4m3": {}
+  },
+  "relaunch_allowed": false,
+  "run_id": "prod-trace-bf16xqa-toolagent-s0125-r0-20261027a",
+  "status": "RUNNING",
+  "supervisor_alive": true
+}

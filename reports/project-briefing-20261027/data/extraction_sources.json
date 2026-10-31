@@ -1,0 +1,147 @@
+[
+  {
+    "repo_relative_path": "reports/operations/20261026T075846Z/modern_BF16_ShareGPT_ABBA_comparison_v1.json",
+    "bytes": 10831,
+    "sha256": "8eba54cc42093a88358513817a9af2aef9a1924ba1239849ae45f18c401eca51"
+  },
+  {
+    "repo_relative_path": "reports/experiments/production-bf16-xqa-sharegpt-replicates-20261027/audit_summary.json",
+    "bytes": 10832,
+    "sha256": "309b1acf01a8f3500ccee5b053d649b9928220c1dcfd8a1effe9a7d71318ef58"
+  },
+  {
+    "repo_relative_path": "reports/operations/20261026T075846Z/modern_BF16_ToolAgent_pressure_comparison_v1.json",
+    "bytes": 60308,
+    "sha256": "1d0d466acc341dc9f8df73cc1a6eb6dbf7f5bb5b2bf78b281c82cce235956298"
+  },
+  {
+    "repo_relative_path": "reports/experiments/production-bf16-xqa-toolagent-pressure-20261027/audit_summary.json",
+    "bytes": 60503,
+    "sha256": "07395acbf0438ed368e33659c187e6734d7eb41f70244a2e3b9458d756138c25"
+  },
+  {
+    "repo_relative_path": "reports/experiments/production-xqa-toolagent-original-20261027/audit_summary.json",
+    "bytes": 26670,
+    "sha256": "b722e077556713dd71003314f56d49f63c53270829c2e523b7f3775ce2e05d1c"
+  },
+  {
+    "repo_relative_path": "reports/experiments/production-xqa-burstgpt-original-20261027/audit_summary.json",
+    "bytes": 25347,
+    "sha256": "5277072e43dfe1810e64658a30495be114f46d0f297ab42de6301c473136c851"
+  },
+  {
+    "repo_relative_path": "reports/experiments/production-xqa-conversation-original-20261027/audit_summary.json",
+    "bytes": 26669,
+    "sha256": "8347e5aced4f0eef4164793db64dd3f868ff6615c5453bf611a638c732f9ca9c"
+  },
+  {
+    "repo_relative_path": "reports/experiments/production-xqa-synthetic-original-20261027/audit_summary.json",
+    "bytes": 26723,
+    "sha256": "2dec98c896cad32e89a3b62986c07429c2ba362ca18f9836dcf22c6251dfb5d9"
+  },
+  {
+    "repo_relative_path": "reports/experiments/production-bf16-xqa-quality-c128-20261027/audit_summary.json",
+    "bytes": 7260,
+    "sha256": "bfd182922dcf9d71a2ed797d3deb603bbe5a80e41c3f405dbcb5f91042540b69"
+  },
+  {
+    "repo_relative_path": "reports/experiments/production-bf16-xqa-quality-c128-20261027/task_scores.csv",
+    "bytes": 764,
+    "sha256": "e31c55afa2f43f381da7a7af8c3fefa4c0c990be81bfdac84deae3e8b7a633f8"
+  },
+  {
+    "repo_relative_path": "reports/operations/20261026T075846Z/native_tool_buffered_descriptive_analysis_b1.json",
+    "bytes": 2994,
+    "sha256": "7525e866543cdc0aa99cb37d7bb26deb262075cdb26b1e45f294b2ebfe7e83d1"
+  },
+  {
+    "repo_relative_path": "reports/operations/20261026T075846Z/native_tool_buffered_independent_audit_b1.json",
+    "bytes": 670531,
+    "sha256": "62a9989c74e4a471085f90d97d8067ffa7f4ab753fbfbe40e5d2d09e3f7b1e9d"
+  },
+  {
+    "repo_relative_path": "reports/operations/20261026T075846Z/component_diagnostic_descriptive_summary_c1.json",
+    "bytes": 72186,
+    "sha256": "09cc7c299fb5d391d4b1bafa48c2ea48150ce053a0fb90dd31da8eed97d4c83c"
+  },
+  {
+    "repo_relative_path": "reports/experiments/production-prefill-workspace-20261027/audit_summary.json",
+    "bytes": 2474,
+    "sha256": "be9bb4fdfd4a0c759942355419237c22edc89faf9c2f332796605499ef350686"
+  },
+  {
+    "repo_relative_path": "reports/experiments/production-kv-range-probe-20261027/audit_summary.json",
+    "bytes": 4480,
+    "sha256": "c7e2157fd8aaf885378902bb03fb636514f7176b947668cf7b47df865794f02c"
+  },
+  {
+    "repo_relative_path": "reports/operations/20261026T075846Z/range_probe_c_coverage_and_error_mechanism_v1.json",
+    "bytes": 1355,
+    "sha256": "748ef2b24592a8df3b8ced25700c9e8ea92c13dcc8271cc9f526aa2ae60b52a6"
+  },
+  {
+    "repo_relative_path": "reports/operations/20261026T040426Z/provenance_readonly.json",
+    "bytes": 56760,
+    "sha256": "3a75c56b2316a57e484e0c8858645afbb12e763c625939c31fd0df1fd7e28037"
+  },
+  {
+    "repo_relative_path": "reports/experiments/ceff-takeover-20261026T040426Z-v2/pairs.csv",
+    "bytes": 4787,
+    "sha256": "3dcf965d80ac70ba9bd3e6c8af79d6cd24358b77fa37db80a804ad72010545a5"
+  },
+  {
+    "repo_relative_path": "reports/operations/20261026T075846Z/bf16q_decode_operator_independent_audit_a1.json",
+    "bytes": 3144,
+    "sha256": "96408bfd9afad5b9df6b86d7de0fc23273439525939a88c52195b7f44f7afec8"
+  },
+  {
+    "repo_relative_path": "reports/operations/20261026T075846Z/bf16q_decode_status_a4.json",
+    "bytes": 18305,
+    "sha256": "8dcca8a1fa7b1c97ff330865e75984ead8a21cd51b4b68a69e6266b77bdfc1de"
+  },
+  {
+    "repo_relative_path": "results/mirrors/prod-quality-fa3-pilot80-r0-20261026b-c1/files/support/agent_work/runs/prod-quality-fa3-pilot80-r0-20261026b/input/pilot/pilot_manifest.json",
+    "bytes": 2935,
+    "sha256": "bc012cc149f0bb0de6f1a6e431266d4aac4c9a2166d25038a0d50e8ffc977700"
+  },
+  {
+    "repo_relative_path": "results/mirrors/prod-quality-xqa-pilot80-r0-20261026c-c1/files/support/agent_work/runs/prod-quality-xqa-pilot80-r0-20261026c/input/pilot/pilot_manifest.json",
+    "bytes": 2935,
+    "sha256": "bc012cc149f0bb0de6f1a6e431266d4aac4c9a2166d25038a0d50e8ffc977700"
+  },
+  {
+    "repo_relative_path": "reports/operations/20261026T075846Z/bf16q_quality_a_independent_failure_evidence_v1.json",
+    "bytes": 761,
+    "sha256": "a230bc8bad6ced98a8823fd3e6514006170955b7075fc9d6baa45254fc574770"
+  },
+  {
+    "repo_relative_path": "reports/operations/20261026T075846Z/bf16q_quality_status_a2.json",
+    "bytes": 11534,
+    "sha256": "a9ec60d1907a19424e9e287b5cd32ee40d1192e65b7897dd84d7d9a494ff895e"
+  },
+  {
+    "repo_relative_path": "reports/operations/20261026T075846Z/bf16q_quality_b_full_actual_dry_run_CPU_v1.json",
+    "bytes": 15319,
+    "sha256": "5cd7e9074c8965ccf32c51795797397fb002a684e0a8b783101cf2b58d28bf2d"
+  },
+  {
+    "repo_relative_path": "reports/operations/20261026T075846Z/bf16q_quality_source_CPU_v2.log",
+    "bytes": 179,
+    "sha256": "85b2e42f5a248480b9f9ca36dd886f3fb6f6686f366117b3bd83f0d08f3d29a5"
+  },
+  {
+    "repo_relative_path": "reports/operations/20261026T075846Z/bf16q_quality_controller_CPU_v2.log",
+    "bytes": 307,
+    "sha256": "34874d9bc39dbe20e6b6674b9f5375dff2b2a132d782a54dd9615c1c1a5e4252"
+  },
+  {
+    "repo_relative_path": "results/INDEX.csv",
+    "bytes": 40717,
+    "sha256": "c68e518ce9a184ccb9c72dff2aac66e97f5e60b4cecec13a054c01d952b1dfda"
+  },
+  {
+    "repo_relative_path": "state/STATE.json",
+    "bytes": 42964,
+    "sha256": "2f38642f74871ab628d5287aa1271f021d1a0853decc259e54ee579a87737f77"
+  }
+]

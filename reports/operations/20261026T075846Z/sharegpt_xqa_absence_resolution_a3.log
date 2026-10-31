@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/mingasa/kv-research-agent/scripts/reconcile_absent_dispatch.py", line 146, in <module>
+    main()
+  File "/home/mingasa/kv-research-agent/scripts/reconcile_absent_dispatch.py", line 131, in main
+    evidence = terminal_from_witnesses(ticket, witnesses)
+  File "/home/mingasa/kv-research-agent/scripts/reconcile_absent_dispatch.py", line 77, in terminal_from_witnesses
+    raise ApprovalError('Possible old writer/process/container; keep UNKNOWN')
+scripts.controller.approval.ApprovalError: Possible old writer/process/container; keep UNKNOWN

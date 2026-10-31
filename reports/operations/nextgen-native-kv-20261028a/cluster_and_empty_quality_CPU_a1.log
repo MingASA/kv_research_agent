@@ -1,0 +1,10 @@
+test_all_questions_in_a_cluster_move_together (test_nextgen_cluster_quality.ContextClusterQualityTests.test_all_questions_in_a_cluster_move_together) ... ok
+test_tied_paired_scores_produce_zero_difference_interval (test_nextgen_cluster_quality.ContextClusterQualityTests.test_tied_paired_scores_produce_zero_difference_interval) ... ok
+test_cached_answer_wrong_raw_usage_or_failure_cannot_be_scored_as_valid (test_nextgen_quality_raw_scoring.RawQualityScoringTests.test_cached_answer_wrong_raw_usage_or_failure_cannot_be_scored_as_valid) ... ok
+test_empty_first_stop_output_can_be_retained_as_quality_zero (test_nextgen_quality_raw_scoring.RawQualityScoringTests.test_empty_first_stop_output_can_be_retained_as_quality_zero) ... ok
+test_raw_complete_prediction_verifies (test_nextgen_quality_raw_scoring.RawQualityScoringTests.test_raw_complete_prediction_verifies) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.044s
+
+OK

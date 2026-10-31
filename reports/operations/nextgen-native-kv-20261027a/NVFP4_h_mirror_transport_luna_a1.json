@@ -1,0 +1,55 @@
+{
+  "attempts": [
+    {
+      "archive_bytes": 20480,
+      "archive_present": true,
+      "archive_sha256": "d8e8c4c6c8881b61c7c9f3f8267d2d3e41fe03a2250229f4875182804f8f5613",
+      "directory": "results/mirrors/nextgen-nvfp4-pages-sm90-r0-20261027h-complete-h1",
+      "local_partial_archive_sha256_recomputed": "d8e8c4c6c8881b61c7c9f3f8267d2d3e41fe03a2250229f4875182804f8f5613",
+      "remote_writes": 0,
+      "return_code": 255,
+      "stderr": "Timeout, server h800-41594a.fkpku.cn not responding.\r\n",
+      "timed_out": false,
+      "transport_evidence_present": true,
+      "verified_extracted_files": 0
+    },
+    {
+      "archive_bytes": 20480,
+      "archive_present": true,
+      "archive_sha256": "e4a417a2afa8fff8fa0f6adb1029f2ef799ad9847a68d1efd4c117fc78cdaa43",
+      "directory": "results/mirrors/nextgen-nvfp4-pages-sm90-r0-20261027h-complete-h1-retry-a1",
+      "local_partial_archive_sha256_recomputed": "e4a417a2afa8fff8fa0f6adb1029f2ef799ad9847a68d1efd4c117fc78cdaa43",
+      "remote_writes": 0,
+      "return_code": 255,
+      "stderr": "Timeout, server h800-41594a.fkpku.cn not responding.\r\n",
+      "timed_out": false,
+      "transport_evidence_present": true,
+      "verified_extracted_files": 0
+    },
+    {
+      "batch_bytes_expected": 37740,
+      "batch_files_attempted": 8,
+      "local_destination_created": false,
+      "method": "PinnedSSH.rpc bounded base64 batch",
+      "remote_writes": 0,
+      "result": "failed after PinnedSSH finite read-only recovery",
+      "stderr": "SSH exit 255: kex_exchange_identification: Connection closed by remote host; server 47.94.207.53 port 45291"
+    }
+  ],
+  "final_directory": "results/mirrors/nextgen-nvfp4-pages-sm90-r0-20261027h-complete-h1-rpc-a1",
+  "final_directory_created": false,
+  "inventory_file_count": 60,
+  "inventory_path": "reports/operations/nextgen-native-kv-20261027a/NVFP4_h_mirror_inventory_luna_a1.json",
+  "inventory_total_bytes": 454093,
+  "local_files_sha_verified": 0,
+  "note": "Two failed gzip partial directories preserved. No retries beyond the bounded PinnedSSH recovery window. No individual file body was fully transferred/verified locally.",
+  "outcome": "INCOMPLETE_SSH_READ_ONLY_TRANSFER_EXHAUSTED",
+  "remote_files_sha_attested": 60,
+  "remote_writes": 0,
+  "run_id": "nextgen-nvfp4-pages-sm90-r0-20261027h",
+  "schema": "kv-complete-run-mirror-transport-v1",
+  "selection_path": "reports/operations/nextgen-native-kv-20261027a/NVFP4_h_mirror_selection_luna_a1.json",
+  "terminal_result_sha256": "028c0cfc348f8f417180b485e6259d6d1d4d83ed87b587f04b1a541d423b197a",
+  "terminal_status": "COMPLETE",
+  "whole_run_new_output_bytes": 158901254
+}

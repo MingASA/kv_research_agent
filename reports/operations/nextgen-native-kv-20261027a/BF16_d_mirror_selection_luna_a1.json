@@ -1,0 +1,268 @@
+{
+  "core_policy": "No core or file above 16 MiB found in selected inventory; if a core is discovered later, retain metadata/provenance/SHA only and do not transfer its body.",
+  "excluded_scopes": [
+    "source_repo (including .git and checkout contents)",
+    "cache",
+    "other non-output working directories",
+    "model weights"
+  ],
+  "expected_remote_identity": {
+    "gid": 1005,
+    "hostname": "A03-R40-I18-195-B000010.JD.LOCAL",
+    "uid": 1005
+  },
+  "files": [
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/input/model_assets_full_SHA_a4.json",
+      "size": 8319
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/input/model_assets_readonly_a3.json",
+      "size": 17222
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/input/source.bundle",
+      "size": 38635
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/input/validation.json",
+      "size": 117581
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/input/validation_tokenization_CPU.json",
+      "size": 2896
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/runtime/kv_controller/__init__.py",
+      "size": 70
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/runtime/kv_controller/aiperf_cli_admission.py",
+      "size": 2629
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/runtime/kv_controller/approval.py",
+      "size": 9391
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/runtime/kv_controller/bf16q_operator.py",
+      "size": 4563
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/runtime/kv_controller/cli.py",
+      "size": 12411
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/runtime/kv_controller/component_profile.py",
+      "size": 8059
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/runtime/kv_controller/discovery.py",
+      "size": 3415
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/runtime/kv_controller/dispatch.py",
+      "size": 5674
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/runtime/kv_controller/durable.py",
+      "size": 2198
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/runtime/kv_controller/evidence.py",
+      "size": 260
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/runtime/kv_controller/native_tools.py",
+      "size": 14521
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/runtime/kv_controller/nextgen.py",
+      "size": 19583
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/runtime/kv_controller/policy.py",
+      "size": 30427
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/runtime/kv_controller/prefill_operator.py",
+      "size": 3709
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/runtime/kv_controller/processes.py",
+      "size": 2472
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/runtime/kv_controller/production.py",
+      "size": 39677
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/runtime/kv_controller/protocols.py",
+      "size": 8186
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/runtime/kv_controller/quota.py",
+      "size": 15684
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/runtime/kv_controller/range_probe.py",
+      "size": 10143
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/runtime/kv_controller/remote_rpc.py",
+      "size": 23430
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/runtime/kv_controller/scale_coverage.py",
+      "size": 7085
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/runtime/kv_controller/service_metrics.py",
+      "size": 6699
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/runtime/kv_controller/supervisor.py",
+      "size": 39177
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/runtime/kv_controller/trace_serving.py",
+      "size": 11331
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/runtime/kv_controller/transport.py",
+      "size": 6238
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/runtime/kv_controller/watchdog.py",
+      "size": 3713
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/runtime/kv_controller/worker.py",
+      "size": 17346
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/output/bf16/container.log",
+      "size": 811
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/output/bf16/container_identity.json",
+      "size": 1507
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/output/bf16/docker_command.json",
+      "size": 2584
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/output/bf16/lease.json",
+      "size": 138
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/output/bf16/nextgen_environment.json",
+      "size": 148
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/output/bf16/operator_acceptance.json",
+      "size": 282
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/output/bf16/operator_acceptance.log",
+      "size": 1173
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/output/bf16/runtime_environment.json",
+      "size": 770
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/output/bf16/server.log",
+      "size": 37495
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/output/bf16/server_command.json",
+      "size": 776
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/PREPARED.json",
+      "size": 98
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/START_INTENT.json",
+      "size": 86
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/SUPERVISOR_PROCESS.json",
+      "size": 488
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/SUPERVISOR_STARTED.json",
+      "size": 571
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/WATCHDOG_FINISHED.json",
+      "size": 197
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/WATCHDOG_READY.json",
+      "size": 572
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/dispatch.lock",
+      "size": 0
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/events.jsonl",
+      "size": 1510
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/owned_containers.json",
+      "size": 1630
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/result.json",
+      "size": 588
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/state.json",
+      "size": 588
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/supervisor.lock",
+      "size": 0
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/supervisor.log",
+      "size": 0
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/ticket.json",
+      "size": 10602
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/watchdog.log",
+      "size": 0
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/watchdog_config.json",
+      "size": 178
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d/watchdog_result.json",
+      "size": 128
+    }
+  ],
+  "inventory_file_count": 59,
+  "new_output_bytes_note": "result.json new_output_bytes is a whole-run accounting value (132470358 B), not this mirror scope; selected scope is 555664 B.",
+  "remote_base": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800",
+  "remote_run_root": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/runs/nextgen-bf16-qwen38-validation-r1-20261027d",
+  "run_id": "nextgen-bf16-qwen38-validation-r1-20261027d",
+  "schema": "kv-failure-mirror-selection-v1",
+  "scope": [
+    "entire input/",
+    "entire runtime/",
+    "entire runtime_support/ if present",
+    "entire output/",
+    "all regular root-level terminal/watchdog/events/ticket/state files"
+  ],
+  "selected_total_bytes": 555664,
+  "terminal_result_sha256": "7d104a7761918454aa1dcabdcfb79db44d846c427c037a87335bbe947381d06c",
+  "terminal_status": "FAILED"
+}

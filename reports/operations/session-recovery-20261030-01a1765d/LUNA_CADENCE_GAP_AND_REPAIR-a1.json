@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-31T00:30:42.213844+00:00",
+  "action": "LUNA_MONITOR_CADENCE_GAP_PRESERVED_AND_CLOCK_DRIVER_PREPARED",
+  "last_Luna_S0": "2026-10-31T00:18:06Z",
+  "next_Luna_S0": "2026-10-31T00:28:17Z",
+  "Luna_gap_seconds": 611,
+  "main_readonly_coverage": "mixed-bf16-zc-main-original-readonly-status-a1.json",
+  "GPU_actions_by_monitor": false,
+  "repair": "Root-prepared readonly stdout-only clock driver; Luna polls own session<=45s, actual S0 every300s regardless task messages",
+  "deadline_unchanged": "2026-10-31T02:00:00Z"
+}

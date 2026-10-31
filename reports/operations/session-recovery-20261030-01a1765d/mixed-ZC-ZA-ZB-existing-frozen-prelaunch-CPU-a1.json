@@ -1,0 +1,93 @@
+{
+  "classification": "CPU readiness only; actual model results pending",
+  "runs": [
+    {
+      "run_id": "nextgen-bf16-qwen38-mixed8192-tools32-r0-20261030zc",
+      "package_sha256": "d830b64a97e02063408244f5d65cd0d880ba2c5e3e86b24a52808077dcdf284b",
+      "assets": 83,
+      "unchanged_five_qualified_CPP_tool_protocol_sources": [
+        {
+          "file": "official_tokenization.py",
+          "sha256": "b99f03eacbc514f11b3094c7d38ed32115a897bbc5ac8acb90fa45e749b4c6c4"
+        },
+        {
+          "file": "nextgen_multiturn.py",
+          "sha256": "29971015d567e7fcb3398d085f74fc7fae61a9e0d34911cf2f6b437a95cc3c60"
+        },
+        {
+          "file": "nextgen_tool_child.py",
+          "sha256": "9d7733fe225e67934e71f567d7b5c92ca8d9fb11d2eb8296236b7656cffe6219"
+        },
+        {
+          "file": "nextgen_tools_env.py",
+          "sha256": "f224ee207a230c3252ccef4a52d70e1a63d08d47f11b9c92e5837672ea91ed37"
+        },
+        {
+          "file": "native_tools.py",
+          "sha256": "d1397e99e03b9ee72d6fffb2137499c0b7acae01813c1f83884fff755292fe37"
+        }
+      ],
+      "local_hash_and_current_policy_and_actual_frozen_policy_pass": true,
+      "no_GPU_or_ledger_or_INDEX_entry_created_by_this_check": true
+    },
+    {
+      "run_id": "nextgen-fp8fa2-qwen38-mixed8192-tools32-r0-20261030za",
+      "package_sha256": "f19a9fa9f403344e089ed7042da38db19585cb576ba606ecfd513e73fa628181",
+      "assets": 84,
+      "unchanged_five_qualified_CPP_tool_protocol_sources": [
+        {
+          "file": "official_tokenization.py",
+          "sha256": "b99f03eacbc514f11b3094c7d38ed32115a897bbc5ac8acb90fa45e749b4c6c4"
+        },
+        {
+          "file": "nextgen_multiturn.py",
+          "sha256": "29971015d567e7fcb3398d085f74fc7fae61a9e0d34911cf2f6b437a95cc3c60"
+        },
+        {
+          "file": "nextgen_tool_child.py",
+          "sha256": "9d7733fe225e67934e71f567d7b5c92ca8d9fb11d2eb8296236b7656cffe6219"
+        },
+        {
+          "file": "nextgen_tools_env.py",
+          "sha256": "f224ee207a230c3252ccef4a52d70e1a63d08d47f11b9c92e5837672ea91ed37"
+        },
+        {
+          "file": "native_tools.py",
+          "sha256": "d1397e99e03b9ee72d6fffb2137499c0b7acae01813c1f83884fff755292fe37"
+        }
+      ],
+      "local_hash_and_current_policy_and_actual_frozen_policy_pass": true,
+      "no_GPU_or_ledger_or_INDEX_entry_created_by_this_check": true
+    },
+    {
+      "run_id": "nextgen-nvfp4-qwen38-mixed8192-tools32-r0-20261030zb",
+      "package_sha256": "760d8eb3263b70bf196ffd22107dbc451d64c17560b0023c0f90d4ea20bed6c7",
+      "assets": 84,
+      "unchanged_five_qualified_CPP_tool_protocol_sources": [
+        {
+          "file": "official_tokenization.py",
+          "sha256": "b99f03eacbc514f11b3094c7d38ed32115a897bbc5ac8acb90fa45e749b4c6c4"
+        },
+        {
+          "file": "nextgen_multiturn.py",
+          "sha256": "29971015d567e7fcb3398d085f74fc7fae61a9e0d34911cf2f6b437a95cc3c60"
+        },
+        {
+          "file": "nextgen_tool_child.py",
+          "sha256": "9d7733fe225e67934e71f567d7b5c92ca8d9fb11d2eb8296236b7656cffe6219"
+        },
+        {
+          "file": "nextgen_tools_env.py",
+          "sha256": "f224ee207a230c3252ccef4a52d70e1a63d08d47f11b9c92e5837672ea91ed37"
+        },
+        {
+          "file": "native_tools.py",
+          "sha256": "d1397e99e03b9ee72d6fffb2137499c0b7acae01813c1f83884fff755292fe37"
+        }
+      ],
+      "local_hash_and_current_policy_and_actual_frozen_policy_pass": true,
+      "no_GPU_or_ledger_or_INDEX_entry_created_by_this_check": true
+    }
+  ],
+  "GPU_or_remote_calls": false
+}

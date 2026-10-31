@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-30T22:00:53.122156+00:00",
+  "run_id": "nextgen-fp8fa2-qwen38-mixed8192-tools32-r0-20261030za",
+  "assets": 84,
+  "all_frozen_SHA_verified": true,
+  "actual_frozen_policy_passed": true,
+  "package_sha256": "f19a9fa9f403344e089ed7042da38db19585cb576ba606ecfd513e73fa628181",
+  "new_profile_fresh1720_score_sha256": "0f9b8f38f656d0bd53ac9561800d7cfe36e9795910bee801f58b6b3b519baa35",
+  "remote_asset_reuse": 46,
+  "GPU_launched": false
+}

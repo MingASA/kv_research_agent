@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-30T20:51:35.403852+00:00",
+  "run_id": "nextgen-bf16-qwen38-mixed8192-quality1720-r0-20261030t",
+  "assets": 49,
+  "all_frozen_SHA_verified": true,
+  "actual_frozen_policy_passed": true,
+  "package_sha256": "27e9d62f69004d8427f6f1ed9316570334f811b9110c9ed3e41f2e8e78c698cc",
+  "new_profile_fresh1720": true,
+  "GPU_launched": false
+}

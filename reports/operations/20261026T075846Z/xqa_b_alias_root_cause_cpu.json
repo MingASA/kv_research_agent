@@ -1,0 +1,53 @@
+{
+  "classification": "confirmed_cpu_fixture_alias_bug",
+  "faulty_helper": "tools/benchmark_kv_cache.py::_attention_metadata",
+  "alias_expression": "pages.reshape(-1).to(dtype=torch.int32)",
+  "original_pages": [
+    [
+      2,
+      0,
+      4
+    ],
+    [
+      3,
+      1,
+      5
+    ]
+  ],
+  "after_replan_alias_mutation": [
+    [
+      2,
+      0,
+      3
+    ],
+    [
+      1,
+      1,
+      5
+    ]
+  ],
+  "later_padded_mapping_wrong": [
+    [
+      2,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "expected_padded_mapping": [
+    [
+      2,
+      0
+    ],
+    [
+      3,
+      1
+    ]
+  ],
+  "effect": "second live sequence reads its NaN/max-finite poisoned last page as its full first page",
+  "repair": "Clone planner indices before graph prepare, preserve immutable page reference",
+  "gpu_validation_after_repair": "pending",
+  "not_evidence_of_xqa_padding_kernel_failure": true
+}

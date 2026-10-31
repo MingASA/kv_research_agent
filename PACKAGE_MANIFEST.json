@@ -1,0 +1,176 @@
+{
+  "package_as_of": "2026-10-25",
+  "revision": "v2-paths-and-standing-authorization",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "7585c8669e0d86742cc40e4c3f8c365577445f86f865b75c4942a24eabeea0fc",
+      "bytes": 2896
+    },
+    {
+      "path": "MASTER_PROMPT.md",
+      "sha256": "fb8dc426591e39c1f6ab0459dbbe02f9a6a9f7038e789818a8edbe3f9d3e81dc",
+      "bytes": 7336
+    },
+    {
+      "path": "README.md",
+      "sha256": "19801011f74c85ff6b8acca9b52ca76310c0b2ed52f0c6642156454bb5b353ee",
+      "bytes": 4148
+    },
+    {
+      "path": "knowledge/H800_xLLM_故障速查_完整追加版.md",
+      "sha256": "8c41ebb0d0501da37a10288f1f9f47e88863d13c4a80a200b808deabaeeff5b2",
+      "bytes": 23469
+    },
+    {
+      "path": "ops/APPROVAL_AND_OPERATOR_GUIDE.md",
+      "sha256": "0f5db916585e69d8f2592a3ef1d3547f67a38f606e8533ffba1b233a2836d5dc",
+      "bytes": 6784
+    },
+    {
+      "path": "ops/OPERATIONS_RUNBOOK.md",
+      "sha256": "c5494e60a73a9b35c054adf71d3ecb3e283cb9756e750aad699e8d10990d0d90",
+      "bytes": 5532
+    },
+    {
+      "path": "ops/PATHS_AND_FILE_PLACEMENT.md",
+      "sha256": "0bbb60ab4407ad24a94fb6afb708f2066c5a9c68d913abbb0fc8c1b7b00e9b6b",
+      "bytes": 10777
+    },
+    {
+      "path": "ops/RESULTS_AND_METRICS.md",
+      "sha256": "aff14f918f24141bdf9f078f553ac8cad2f0f48f3009d3e90a1da9a31ff6a992",
+      "bytes": 3191
+    },
+    {
+      "path": "ops/TRANSITION_PLAN.md",
+      "sha256": "af9b71ca8dc16c068b1c358b9022ea7e32f77256db7d6b7b48b48b7a60021f28",
+      "bytes": 2419
+    },
+    {
+      "path": "plans/NEXT_ACTIONS.md",
+      "sha256": "f6df8f3a8d2495eee1feeec3e83da6b59b48ce96f97aa5897329ed6af31bba3a",
+      "bytes": 972
+    },
+    {
+      "path": "plans/RESEARCH_ROADMAP.md",
+      "sha256": "2b1cd72cdae5acc90ccd5741bfde4456c4a7fac8464147a8d745cfcc6ee7ae2c",
+      "bytes": 4714
+    },
+    {
+      "path": "policy/REMOTE_SAFETY.md",
+      "sha256": "3baede51438be2eea0fb2af3b5e5f5cbf785e8dc017357e1e0e161e9c5010411",
+      "bytes": 5764
+    },
+    {
+      "path": "reports/README.md",
+      "sha256": "56fd313168d549b39961601dd7efc934940db7ecccef7f37f3e19b09d76a6626",
+      "bytes": 123
+    },
+    {
+      "path": "results/INDEX.csv",
+      "sha256": "50a6ca84161acb81f769c9da476c9017824a4538264989427254c3a4a913486f",
+      "bytes": 135
+    },
+    {
+      "path": "science/ARCHITECTURE_AND_PROVENANCE.md",
+      "sha256": "2bb76116d36ad190fe2023a52e3d9b49533ca4de887d7137fb1d1cd2cc6f66fe",
+      "bytes": 5293
+    },
+    {
+      "path": "science/RESEARCH_THESIS.md",
+      "sha256": "7e2b34db4af5493abffd943e3fb9a17528820db21a0cb359efafaab110c8d6d5",
+      "bytes": 3124
+    },
+    {
+      "path": "scripts/experiment_worker_stub.py",
+      "sha256": "d60ddd5fe31fbcee9fb8f10af3b31ac613279ae1641278f4b49d1a0fa4fdfada",
+      "bytes": 734
+    },
+    {
+      "path": "scripts/guarded_ssh.py",
+      "sha256": "ba77503378e3434f298bcc36f35c9c26047c52e2a7d97a122430a752fe9141af",
+      "bytes": 1438
+    },
+    {
+      "path": "scripts/readonly_discovery.sh",
+      "sha256": "39a6c62a78b6335fb803272ce4206afaf169b5ef3587996a6a6b758a6295bbd3",
+      "bytes": 655
+    },
+    {
+      "path": "scripts/summarize_state.py",
+      "sha256": "eee9da2603ba59be293a12253608e2f49baf60d2fb7716192d7a1b0ba0ac031f",
+      "bytes": 506
+    },
+    {
+      "path": "state/EVENTS.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "state/REMOTE_DISCOVERY.md",
+      "sha256": "74f28aaa4c5d4d88387df5c51f5e102dab70a8dbb9583ca6f8d71d1a6a9820a3",
+      "bytes": 119
+    },
+    {
+      "path": "state/STATE.json",
+      "sha256": "12e24ee1634a3d292afd5d712b1a7516b8cddefc8167d4b13709df07b3d98c9c",
+      "bytes": 263
+    },
+    {
+      "path": "state/STATUS_AS_OF_20261025.md",
+      "sha256": "f9fcd44a463ec86604ce87435fd014f1a9e0f41ee7f5b6b5320e4534955e73c8",
+      "bytes": 4711
+    },
+    {
+      "path": "state/reconciliation.json",
+      "sha256": "38081dec0deb32e9de48d792beaf187da996191ffa043811f514c92a71752dae",
+      "bytes": 209
+    },
+    {
+      "path": "templates/approval.example.json",
+      "sha256": "686e8c92aba35a5f9b7c3731d8923be112cdada816ca99b2717ffac71c67e50b",
+      "bytes": 501
+    },
+    {
+      "path": "templates/approval.standing_8gpu_EXAMPLE.json",
+      "sha256": "196a888485516326f2f1b91773069f6f227fb754bb1ab5f03118751189c13a35",
+      "bytes": 769
+    },
+    {
+      "path": "templates/experiment.example.json",
+      "sha256": "44667b4a57f643e0d365efa556c85ae63a39adcb29cc7293ff6224564c9f5312",
+      "bytes": 782
+    },
+    {
+      "path": "vendor/AIperf文档.txt",
+      "sha256": "d74d81000e295822e271c4cd54c3f4ed81a403a68f6b92f79f94f4f317294d5b",
+      "bytes": 10460
+    },
+    {
+      "path": "vendor/H800-GPU排队调度脚本说明.md",
+      "sha256": "4eaf1e5c705fdb312e7f45d5837d3861bb11e233be41ae846a71340c9398a4e4",
+      "bytes": 4166
+    },
+    {
+      "path": "vendor/H800_xLLM_故障速查(1).md",
+      "sha256": "070fbaf4b348bb53b6a1b7a824bd807a43b69836bff0267c476cc56410912f86",
+      "bytes": 6608
+    },
+    {
+      "path": "vendor/aiperf_h800_v4_2_native_release.zip",
+      "sha256": "396c58e0965bacbce36156fee60319e4d8feccf0b96282f8b734d809f60ffb24",
+      "bytes": 19789
+    },
+    {
+      "path": "vendor/背景.md",
+      "sha256": "0348fe6c1fd7cf8fc4fc7b5af2e6d443102b51a827d3c40223de016ab78b899d",
+      "bytes": 18022
+    },
+    {
+      "path": "vendor/背景2.md",
+      "sha256": "4d83ee012cd28af2b17eb566fe4beb2e2f51fd5d0ef4f9378d8ef68a7eff779c",
+      "bytes": 15858
+    }
+  ]
+}

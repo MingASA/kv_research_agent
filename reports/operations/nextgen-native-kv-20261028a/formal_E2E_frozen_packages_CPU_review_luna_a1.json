@@ -1,0 +1,218 @@
+{
+  "findings": [],
+  "interpretation": "No statically verifiable immediate package failure or incorrect-statistics defect was found in the requested scope. This does not execute a formal GPU run or certify its measurement outcome.",
+  "overall_review_checks": {
+    "all_CPU_protocol_and_dependency_proofs_pass": true,
+    "all_PERF_KIND_and_runtime_checks_pass": true,
+    "all_current_policy_checks_pass": true,
+    "all_package_asset_hashes_match": true,
+    "all_quality_prerequisites_effectively_satisfied": true,
+    "both_packages_match_current_local_policy": true,
+    "immediate_blocker_found": false,
+    "no_missing_package_relative_import_assets": true
+  },
+  "packages": [
+    {
+      "PERF_KIND_and_runtime_checks": {
+        "PERF_KIND_constant_present": true,
+        "request_validator_routes_PERF_KIND_to_service": true,
+        "run_cache_prepared_before_docker": true,
+        "separate_warmup_and_measured_cli": true,
+        "service_worker_dispatch_present": true,
+        "startup_prerequisite_dispatch_present": true,
+        "telemetry_monitor_called": true
+      },
+      "arm": "nvfp4",
+      "asset_hash_mismatch": [],
+      "asset_missing": [],
+      "asset_sha_matches": 43,
+      "calibration_or_equivalence": {
+        "K_V_producer_hashes_match_current": true,
+        "audit_run_is_distinct": true,
+        "audit_state": "BF16_CALIBRATION_INDEPENDENTLY_VERIFIED",
+        "calibration_python_commit_matches_request": false,
+        "candidate_NVFP4_scales_match": true,
+        "input_sha_matches_request": true,
+        "local_prior_ticket_found": true,
+        "observer_and_native_profile_hashes_match_current": true
+      },
+      "cpu_protocol_proof_checks": {
+        "AIPerf_0_13": true,
+        "all_checks_pass": true,
+        "observed_wire_requests_194": true,
+        "proof_file_sha_matches": true
+      },
+      "current_policy_checks": {
+        "model_path_matches_readonly_path": true,
+        "prepared_approval_hash_matches_current": true,
+        "remote_output_under_approved_workspace": true,
+        "request_GPU_allowlisted": true,
+        "request_GPU_count_within_concurrency": true,
+        "request_output_within_new_output_budget": true,
+        "request_wall_within_per_job_budget": true
+      },
+      "gdn_dependency_checks": {
+        "CPU_only": true,
+        "asset_sha_matches": true,
+        "borrowed_file_hashes_verified_count": 195,
+        "core_file_hashes_verified_count": 208,
+        "imports_ok": true,
+        "probe_gpu_device_nodes_empty": true
+      },
+      "id": "nextgen-nvfp4-qwen38-chat128-c16-r0-20261028w",
+      "operator": {
+        "nvfp4": {
+          "decode": "flashinfer",
+          "planner": "fa2"
+        }
+      },
+      "package_asset_count": 43,
+      "package_sha256": "76d3014f4ecc48ff04fd27cd02d1aba4aa61807d5b8a02209b18572073febc8f",
+      "quality_prerequisite_checks": {
+        "arm_matches": true,
+        "binary_matches": true,
+        "model_id_matches": true,
+        "operators_match": true,
+        "prediction_count_1720": true,
+        "python_source_matches": true,
+        "quality_input_sha_matches_request": true,
+        "raw_API_usage_contracts_verified": true,
+        "scales_match": true,
+        "server_source_matches": true,
+        "service_match": true
+      },
+      "quality_prerequisite_effectively_satisfied": true,
+      "quality_source_mismatch_is_guarded": false,
+      "request": {
+        "case": "chat-c16",
+        "concurrency": 16,
+        "max_output_gib": 4,
+        "max_wall_seconds": 7200,
+        "perf_max_seconds": 3600,
+        "python_source_commit": "03134b72ec904254890300a647c939095f7900e2",
+        "range_observation": false,
+        "server_source_commit": "862c29cade05e47691147b8f50c979a812495470"
+      },
+      "reviewed_runtime_source_asset_sha256": {
+        "runtime/kv_controller/nextgen.py": "b5d83c27dac624b70440c8a2e3c116a45998f20068f145fd0c3b50fa2bec71c6",
+        "runtime/kv_controller/nextgen_performance.py": "430667b344f586b465f7427a3f16bb6ce600535c60faeca544df4973c87886a6",
+        "runtime/kv_controller/nextgen_service.py": "a35f38b7f0330337f65d271ecaa41037b3a955549aa1d973e1995afefef33d9f",
+        "runtime/kv_controller/production.py": "46d7870296a2b4bc5bb36eb270a1c7f204b20f5dc4b327c233481b4e785f3c04",
+        "runtime/kv_controller/worker.py": "49549e826039b3bc429b6f0c17371c4ca619a0b5232608e59d861d3260bc180e"
+      },
+      "runtime_py_assets": 32,
+      "service": {
+        "linear_state_slots": 32,
+        "max_batch": 16,
+        "max_context": 131072,
+        "max_memory_utilization": 0.9,
+        "max_tokens_per_batch": 2048,
+        "page_size": 64
+      },
+      "unpackaged_relative_imports": [],
+      "workload_kind": "native_hybrid_production_aiperf"
+    },
+    {
+      "PERF_KIND_and_runtime_checks": {
+        "PERF_KIND_constant_present": true,
+        "request_validator_routes_PERF_KIND_to_service": true,
+        "run_cache_prepared_before_docker": true,
+        "separate_warmup_and_measured_cli": true,
+        "service_worker_dispatch_present": true,
+        "startup_prerequisite_dispatch_present": true,
+        "telemetry_monitor_called": true
+      },
+      "arm": "bf16",
+      "asset_hash_mismatch": [],
+      "asset_missing": [],
+      "asset_sha_matches": 43,
+      "calibration_or_equivalence": {
+        "equivalence_module_file_hash_matches": true,
+        "equivalence_module_in_asset_table": true,
+        "performance_prerequisite_calls_equivalence_on_mismatch": true,
+        "quality_python_commit_differs_from_performance": true
+      },
+      "cpu_protocol_proof_checks": {
+        "AIPerf_0_13": true,
+        "all_checks_pass": true,
+        "observed_wire_requests_194": true,
+        "proof_file_sha_matches": true
+      },
+      "current_policy_checks": {
+        "model_path_matches_readonly_path": true,
+        "prepared_approval_hash_matches_current": true,
+        "remote_output_under_approved_workspace": true,
+        "request_GPU_allowlisted": true,
+        "request_GPU_count_within_concurrency": true,
+        "request_output_within_new_output_budget": true,
+        "request_wall_within_per_job_budget": true
+      },
+      "gdn_dependency_checks": {
+        "CPU_only": true,
+        "asset_sha_matches": true,
+        "borrowed_file_hashes_verified_count": 195,
+        "core_file_hashes_verified_count": 208,
+        "imports_ok": true,
+        "probe_gpu_device_nodes_empty": true
+      },
+      "id": "nextgen-bf16-qwen38-chat128-c16-r0-20261028aa",
+      "operator": {
+        "bf16": {
+          "decode": "xqa",
+          "planner": "fa3"
+        }
+      },
+      "package_asset_count": 43,
+      "package_sha256": "354eaea1f79a7b1c1c29da56a9019feee592fb2741cd628f57222ec2fcc8e929",
+      "quality_prerequisite_checks": {
+        "arm_matches": true,
+        "binary_matches": true,
+        "model_id_matches": true,
+        "operators_match": true,
+        "prediction_count_1720": true,
+        "python_source_matches": false,
+        "quality_input_sha_matches_request": true,
+        "raw_API_usage_contracts_verified": true,
+        "scales_match": true,
+        "server_source_matches": true,
+        "service_match": true
+      },
+      "quality_prerequisite_effectively_satisfied": true,
+      "quality_source_mismatch_is_guarded": true,
+      "request": {
+        "case": "chat-c16",
+        "concurrency": 16,
+        "max_output_gib": 4,
+        "max_wall_seconds": 7200,
+        "perf_max_seconds": 3600,
+        "python_source_commit": "03134b72ec904254890300a647c939095f7900e2",
+        "range_observation": false,
+        "server_source_commit": "862c29cade05e47691147b8f50c979a812495470"
+      },
+      "reviewed_runtime_source_asset_sha256": {
+        "runtime/kv_controller/nextgen.py": "e523ee281115365cb3f1792a3cfa6fded432b24aa8f5417ef9619a45841e2442",
+        "runtime/kv_controller/nextgen_performance.py": "6c37b30baa6668e4c4aa15d4556f910adaa07ab0aa35c34489ee441a362e99a8",
+        "runtime/kv_controller/nextgen_service.py": "05bf56d05376f419964237fa124585d12218ae53a174816b0ab0dbae8ef9b08e",
+        "runtime/kv_controller/production.py": "46d7870296a2b4bc5bb36eb270a1c7f204b20f5dc4b327c233481b4e785f3c04",
+        "runtime/kv_controller/worker.py": "49549e826039b3bc429b6f0c17371c4ca619a0b5232608e59d861d3260bc180e"
+      },
+      "runtime_py_assets": 33,
+      "service": {
+        "linear_state_slots": 32,
+        "max_batch": 16,
+        "max_context": 131072,
+        "max_memory_utilization": 0.9,
+        "max_tokens_per_batch": 2048,
+        "page_size": 64
+      },
+      "unpackaged_relative_imports": [],
+      "workload_kind": "native_hybrid_production_aiperf"
+    }
+  ],
+  "provenance_notes": [
+    "NVFP4 quality-score prerequisite matches the 03134b72\u2026 package source. Its separate BF16 scale audit records source 849bcbf9\u2026; frozen prerequisite code checks the same binary/server plus K/V producer hashes. The local calibration ticket also shows kv_observation/native_profile hashes match, so no launch-blocking source mismatch was identified."
+  ],
+  "reviewed_at_utc": "2026-10-28T18:51:15.870527+00:00",
+  "schema": "formal-e2e-frozen-package-local-review-luna-v1",
+  "scope": "Pure local static review only; no SSH, Docker, GPU, target-code execution, or package mutations. Private approval was read in memory only; report stores no approval values or digest."
+}

@@ -1,0 +1,76 @@
+{
+  "schema": "nextgen-bounded-actual-serving-stability-evidence-v1",
+  "utc": "2026-10-30T19:05:36.405219+00:00",
+  "rows": [
+    {
+      "run_id": "nextgen-bf16-qwen38-quality-core1720-r0-20261027j",
+      "arm": "bf16",
+      "original_terminal": "FAILED",
+      "predictions": 1720,
+      "actual_model_request_span_seconds": 1366.666474345,
+      "raw_original_contract_valid_count": 1702,
+      "raw_empty_answers": 6,
+      "HTTP200_count": 1720,
+      "original_GPU_release_verified": true,
+      "journal_sha256": "3e41a160b837910c9db3055d25ccdfd88603ffc70648ba2ac53381785bb222f8",
+      "source_manifest_sha256": "bc012bea2db1ed6f3751e62c093ca8e64878c6c89ebe21c17f1fec9955466535",
+      "independent_quality_summary": "reports/experiments/nextgen-quality-20261028/bf16-j-v1/summary.json",
+      "quality_summary_sha256": "ee4dcb4391cc4a745bcedb8572db51803c83566fb89b44dcc114420e92b883c4",
+      "service_performance_or_long_term_failure_rate_claim": false
+    },
+    {
+      "run_id": "nextgen-nvfp4-qwen38-quality-core1720-r0-20261028p",
+      "arm": "nvfp4",
+      "original_terminal": "COMPLETE",
+      "predictions": 1720,
+      "actual_model_request_span_seconds": 2141.280314506,
+      "raw_original_contract_valid_count": 1720,
+      "raw_empty_answers": 7,
+      "HTTP200_count": 1720,
+      "original_GPU_release_verified": true,
+      "journal_sha256": "cd4d322e2b89792d0cc0a9f970eff2a8febfc141008ffd7a6a51d937b42d22ff",
+      "source_manifest_sha256": "e5b4ac2ff3d49272388e24e4daf862f9c7687d4a47973a4fa18e3c15c835607f",
+      "independent_quality_summary": "reports/experiments/nextgen-quality-20261028/nvfp4-p-v1/summary.json",
+      "quality_summary_sha256": "b47de8dc4d1d4d8f809440cc7167528bfae8e137f045994830f400acae5bc3fa",
+      "service_performance_or_long_term_failure_rate_claim": false
+    },
+    {
+      "run_id": "nextgen-fp8fa2-qwen38-quality-core1720-r1-20261028t",
+      "arm": "fp8_e4m3",
+      "original_terminal": "FAILED",
+      "predictions": 918,
+      "actual_model_request_span_seconds": 357.086390409,
+      "raw_original_contract_valid_count": 918,
+      "raw_empty_answers": 0,
+      "HTTP200_count": 918,
+      "original_GPU_release_verified": true,
+      "journal_sha256": "c968405a3164f0af21100646f120455746779b6b3d127cf36f4bc195530b600d",
+      "source_manifest_sha256": "58086afd76ecf6456e826f3fa2d1bcec2d0c2c6654ffaa4399d62d04c45bff30",
+      "independent_quality_summary": "reports/experiments/nextgen-quality-20261030/fp8-fa2-t-ab-v1/summary.json",
+      "quality_summary_sha256": "f7e21614a04dd261aa3deb97e5e2503dad4af5c5ec9694fdb2587f95cbcfbb26",
+      "service_performance_or_long_term_failure_rate_claim": false
+    },
+    {
+      "run_id": "nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab",
+      "arm": "fp8_e4m3",
+      "original_terminal": "COMPLETE",
+      "predictions": 802,
+      "actual_model_request_span_seconds": 1083.020658559,
+      "raw_original_contract_valid_count": 802,
+      "raw_empty_answers": 7,
+      "HTTP200_count": 802,
+      "original_GPU_release_verified": true,
+      "journal_sha256": "f8a93fda25574fb59427de80f34f0780175338b73342ee785eab33f1fb30fdfc",
+      "source_manifest_sha256": "f6f668b2899dc6da5c78887afb4a9059d05cf3d03eac7252333359d0788c55c6",
+      "independent_quality_summary": "reports/experiments/nextgen-quality-20261030/fp8-fa2-t-ab-v1/summary.json",
+      "quality_summary_sha256": "f7e21614a04dd261aa3deb97e5e2503dad4af5c5ec9694fdb2587f95cbcfbb26",
+      "service_performance_or_long_term_failure_rate_claim": false
+    }
+  ],
+  "limitations": [
+    "Request span excludes pre-request cold startup and is not an AIPerf throughput result.",
+    "OriginalFAILED runs remainFAILED; BF16 independenttokenizer recovery corrects metadata counts but retains six empty outputs as zero.",
+    "FP8 t918+ab802 spans are distinct; they are not continuous1720 stability proof.",
+    "No multi-day soak or fleet failure-rate confidence is claimed."
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "checks": [
+    "四个canonical SHA绑定一致；第46原COMPLETE/driver释放、仅新FP8候选1719、quality_accepted=false、无新独立用户；cohort时钟未新跑GPU",
+    "正式第46报告summary三项SHA与原JSON一致、停止额外服务矩阵且quality_accepted=false；复用现有SVG/PNG/数据CSV及其manifest，比较输入与3产物SHA全部一致，不复制或重画",
+    "两run实际weights/metadata/versions/scorer协议及C128服务配置一致；引擎源码仅显式attention两个文件变化，评分逻辑AST证明绑定；不同kernel/run不能归因Q单因子",
+    "原题源索引/ID逐条对齐；1719分数均值、全部任务百分点与逐题上/下/持平从两份已评分audit复核；8任务等权macro及cap计数一致，未重新评分或生成模型预测",
+    "既有5000次/seed20261026 bootstrap口径及单位核对；新vsBF16 LB区间在0下、新vs原FP8跨0；不重做bootstrap或据跨0证明等价",
+    "9任务×3配置共27个有限buffered cohort：N/实际token/均值/length与原质量结果对应；RPS/TPS分母及全部相对变化重算一致，非AIPerf/稳态/TTFT/ITL",
+    "成功gzip镜像123文件/44462952B全部本地SHA再次核对；root原COMPLETE/driver释放与audit终态SHA一致；实际GPU-h按ns核对，ceil微秒结算与累计9.724063727777779一致",
+    "取证xz/SSH rc255与gzip rc0分开保留；均remote_writes=0、keepalive2→6/10s；失败partial不当有效raw，不增加GPU运行或模型失败",
+    "原45行INDEX/STATE/CUTOFF及原16表/CSV共35文件SHA保持不变；第46只做单行独立摘录，原索引若仍pending由更晚完整audit解释"
+  ],
+  "canonical_SHA_bindings": [
+    {
+      "label": "comparison→candidate raw audit",
+      "canonical": "reports/operations/20261026T075846Z/bf16q_full1719_quality_independent_audit_b1.json",
+      "sha256": "5496ad307e815ab2cbe35cc0530e4232f58678c964ae150b1d192a8f7675b433"
+    },
+    {
+      "label": "comparison→retained modern BF16/FP8-XQA audit",
+      "canonical": "reports/operations/20261026T075846Z/production_C128_quality_independent_audit_b1.json",
+      "sha256": "225142374bcffb2a198c4fcc2fc0ec8190a16297598e66e1c7fc02e2cbc5080a"
+    },
+    {
+      "label": "comparison→official scoring AST proof",
+      "canonical": "reports/operations/20261026T075846Z/bf16q_quality_scoring_compatibility_CPU_v1.json",
+      "sha256": "63c3f1ce8b6f1f82c7d8831c63c5d307028a9e03d2d9494816e2567a9c97ead3"
+    },
+    {
+      "label": "quality cohort clocks→quality comparison",
+      "canonical": "reports/operations/20261026T075846Z/bf16q_full1719_quality_comparison_b1.json",
+      "sha256": "e8e89981a58e98c08dc425e7c7cbac101bb66318e4b800c58ee1a03945030f78"
+    },
+    {
+      "label": "formal report summary→raw audit",
+      "canonical": "reports/operations/20261026T075846Z/bf16q_full1719_quality_independent_audit_b1.json",
+      "sha256": "5496ad307e815ab2cbe35cc0530e4232f58678c964ae150b1d192a8f7675b433"
+    },
+    {
+      "label": "formal report summary→comparison",
+      "canonical": "reports/operations/20261026T075846Z/bf16q_full1719_quality_comparison_b1.json",
+      "sha256": "e8e89981a58e98c08dc425e7c7cbac101bb66318e4b800c58ee1a03945030f78"
+    },
+    {
+      "label": "formal report summary→cohort clocks",
+      "canonical": "reports/operations/20261026T075846Z/bf16q_full1719_quality_cohort_latency_b1.json",
+      "sha256": "cc9c0f90ce5fe531bcc935796730800598c8659f0056b3310ea8df19a60a7c99"
+    },
+    {
+      "label": "existing figure manifest→comparison",
+      "canonical": "reports/operations/20261026T075846Z/bf16q_full1719_quality_comparison_b1.json",
+      "sha256": "e8e89981a58e98c08dc425e7c7cbac101bb66318e4b800c58ee1a03945030f78"
+    },
+    {
+      "label": "existing quality figure/data output",
+      "canonical": "reports/experiments/production-bf16q-quality-20261027/figures-v1/quality_delta_data.csv",
+      "sha256": "2932d016f4eea093a7765e33af27717b3ce71f58e6a8285685e01a6fce394ed9"
+    },
+    {
+      "label": "existing quality figure/data output",
+      "canonical": "reports/experiments/production-bf16q-quality-20261027/figures-v1/quality_deltas.png",
+      "sha256": "f9cb1c8942e6b2c4809dab58a200606b437d5958a95600e81a1281c7eb47f763"
+    },
+    {
+      "label": "existing quality figure/data output",
+      "canonical": "reports/experiments/production-bf16q-quality-20261027/figures-v1/quality_deltas.svg",
+      "sha256": "32da2c8f7fb02d389aa865bf966c46c3f41fb1b8c4d99220827c32258863f4e3"
+    },
+    {
+      "label": "raw quality audit→original root terminal",
+      "canonical": "results/mirrors/prod-quality-bf16q-full1719-c128-r1-20261027b-terminal-b2-gzip/files/support/agent_work/runs/prod-quality-bf16q-full1719-c128-r1-20261027b/result.json",
+      "sha256": "e8eea5e9dc794b8ff8f27b2f7d8f4bcd93fa566fe546df0bdd7fb5dec5207084"
+    }
+  ],
+  "original_frozen_files_verified": 35,
+  "new_tables": 4,
+  "new_cohort_metric_rows": 27,
+  "new_GPU_runs_by_briefing_agent": 0,
+  "new_model_predictions_by_briefing_agent": 0,
+  "rescored_model_predictions_by_briefing_agent": false
+}

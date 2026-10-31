@@ -1,0 +1,9 @@
+{
+  "classification": "confirmed_actual_frozen_CPU_policy_acceptance_noGPU",
+  "old_stale_XZ_package_refused": true,
+  "new_package": "/home/mingasa/kv-research-agent/results/prepared/packages/prod-trace-xqa-toolagent-s1-r2-20261027c/package.json",
+  "new_manifest_accepted_by_actual_shipped_policy": true,
+  "frozen_policy_sha256": "8bb5a8393672c8a3a7173c86b94780feb0b714587e941f2379ceda23ad89ded1",
+  "same2088payload_and_scientific_key": true,
+  "GPU_launched": false
+}

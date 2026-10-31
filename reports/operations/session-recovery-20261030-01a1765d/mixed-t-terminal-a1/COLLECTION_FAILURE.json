@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-30T21:32:37.470069+00:00",
+  "collector_original_session": 15379,
+  "observed_exit_code": 1,
+  "error": "ValueError: Read-only master is not available;use bounded recovery after cooldown",
+  "cause": "600s read-only SSH master expired during bounded raw/input collection",
+  "original_experiment_status": "COMPLETE_RELEASED_SETTLED",
+  "old_partial_files_preserved": true,
+  "GPU_restart_or_retry": false,
+  "recovery": "fresh b1 nonce, fresh terminal SHA attestation; reuse only exact frozen input/runtime bytes, raw outputs remain original network-transferred"
+}

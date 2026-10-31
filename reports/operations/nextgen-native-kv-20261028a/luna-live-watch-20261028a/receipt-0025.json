@@ -1,0 +1,54 @@
+{
+  "active_run_id": "nextgen-fp8fa2-qwen38-quality-core1720-r0-20261028q",
+  "automatic_queue": {
+    "current_run_id": "nextgen-fp8-qwen38-quality-core1720-r2-20261028o",
+    "cursor": 0,
+    "directory": "/home/mingasa/kv-research-agent/state/queues/nextgen-core-sequential-20261028b",
+    "not_after_utc": "2026-10-29T08:57:14.407599+00:00",
+    "status": "HALTED_EXPERIMENT_FAILURE_OR_UNKNOWN",
+    "updated_utc": "2026-10-28T14:22:34.920193+00:00"
+  },
+  "observed_utc": "2026-10-28T16:48:11.123335+00:00",
+  "queue": {
+    "current_run_id": "nextgen-fp8-qwen38-quality-core1720-r2-20261028o",
+    "runner_alive_identity_match": false,
+    "runner_expected": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-u",
+        "-m",
+        "scripts.guarded_native_queue",
+        "--queue",
+        "/home/mingasa/kv-research-agent/plans/queues/nextgen-core-sequential-20261028b/manifest.json",
+        "--directory",
+        "/home/mingasa/kv-research-agent/state/queues/nextgen-core-sequential-20261028b"
+      ],
+      "boot_id": "2afb7771-92c9-41af-a06d-1632040687f5",
+      "pid": 236082,
+      "process_state": "R",
+      "start_ticks": 53016705,
+      "uid": 1000
+    },
+    "runner_observed": null,
+    "status": "HALTED_EXPERIMENT_FAILURE_OR_UNKNOWN",
+    "updated_utc": "2026-10-28T14:22:34.920193+00:00"
+  },
+  "remote": {
+    "gpu_compute_apps": [],
+    "gpu_snapshot": null,
+    "live_owned_containers": null,
+    "log_paths": [],
+    "result_status": null,
+    "state_status": null,
+    "status": "ABSENT",
+    "supervisor_alive": null
+  },
+  "root_active_run_ids": [
+    "nextgen-fp8fa2-qwen38-quality-core1720-r0-20261028q"
+  ],
+  "rpc": "single PinnedSSH operation=status; timeout=45s; mutation=False",
+  "schema": "luna-live-watch-receipt-v1",
+  "sequence": 25,
+  "ticket_run_id": "nextgen-fp8fa2-qwen38-quality-core1720-r0-20261028q"
+}

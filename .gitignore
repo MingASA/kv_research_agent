@@ -1,0 +1,26 @@
+# User-issued authority and local machine mapping are never public source.
+/state/approval.json
+/state/CONFIG.local.json
+/state/NEXTGEN_CONFIG*.local.json
+/state/queues/
+/plans/cpu-validation/*/local_payload.json
+/plans/cpu-validation/*/assets/
+# Raw evidence stays local; track manifests/index/derived reports instead.
+/results/mirrors/
+/results/prepared/
+/results/cpu-validation/
+# Raw application HTML is retained locally; track intents, hashes and audits.
+/reports/operations/session-recovery-20261030-01a1765d/*-application-metrics-original-*/application_metrics.jsonl
+/reports/operations/session-recovery-20261030-01a1765d/*-application-metrics-original-*/ORIGINAL_RESPONSE.json
+/state/controller/
+/.deps/
+__pycache__/
+*.py[cod]
+*:Zone.Identifier
+*.tar.gz
+
+# Public snapshot excludes local authority, raw inputs and binary packages.
+/plans/**/local_payload.json
+/plans/**/input/
+*.bundle
+*.zip

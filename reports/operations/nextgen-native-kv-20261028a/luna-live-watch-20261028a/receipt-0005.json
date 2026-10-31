@@ -1,0 +1,222 @@
+{
+  "gpu_by_uuid": {
+    "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a": {
+      "compute_apps": [
+        {
+          "comm": "VLLM::Worker_DP",
+          "gpu_uuid": "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a",
+          "pid": 1728871,
+          "process_name": "VLLM::Worker_DP0_EP0",
+          "uid": 0,
+          "used_memory": "70188"
+        }
+      ],
+      "index": "0",
+      "memory_used_mib": 70197,
+      "util_percent": 15
+    },
+    "GPU-0cb28538-7e9f-1b66-750f-1b53ff309195": {
+      "compute_apps": [
+        {
+          "comm": "VLLM::Worker_DP",
+          "gpu_uuid": "GPU-0cb28538-7e9f-1b66-750f-1b53ff309195",
+          "pid": 1728872,
+          "process_name": "VLLM::Worker_DP3_EP3",
+          "uid": 0,
+          "used_memory": "70188"
+        }
+      ],
+      "index": "3",
+      "memory_used_mib": 70197,
+      "util_percent": 20
+    },
+    "GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1": {
+      "compute_apps": [
+        {
+          "comm": "VLLM::Worker_DP",
+          "gpu_uuid": "GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1",
+          "pid": 1728867,
+          "process_name": "VLLM::Worker_DP4_EP4",
+          "uid": 0,
+          "used_memory": "70188"
+        }
+      ],
+      "index": "4",
+      "memory_used_mib": 70197,
+      "util_percent": 0
+    },
+    "GPU-47211491-ba0d-78bf-5c84-f968c0648213": {
+      "compute_apps": [
+        {
+          "comm": "VLLM::Worker_DP",
+          "gpu_uuid": "GPU-47211491-ba0d-78bf-5c84-f968c0648213",
+          "pid": 1728866,
+          "process_name": "VLLM::Worker_DP7_EP7",
+          "uid": 0,
+          "used_memory": "70188"
+        }
+      ],
+      "index": "7",
+      "memory_used_mib": 70197,
+      "util_percent": 0
+    },
+    "GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7": {
+      "compute_apps": [
+        {
+          "comm": "VLLM::Worker_DP",
+          "gpu_uuid": "GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7",
+          "pid": 1728869,
+          "process_name": "VLLM::Worker_DP1_EP1",
+          "uid": 0,
+          "used_memory": "70188"
+        }
+      ],
+      "index": "1",
+      "memory_used_mib": 70197,
+      "util_percent": 18
+    },
+    "GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348": {
+      "compute_apps": [
+        {
+          "comm": "VLLM::Worker_DP",
+          "gpu_uuid": "GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348",
+          "pid": 1728870,
+          "process_name": "VLLM::Worker_DP5_EP5",
+          "uid": 0,
+          "used_memory": "70188"
+        }
+      ],
+      "index": "5",
+      "memory_used_mib": 70197,
+      "util_percent": 0
+    },
+    "GPU-a6169058-34c8-6edc-e4f5-779bf9a10421": {
+      "compute_apps": [
+        {
+          "comm": "VLLM::Worker_DP",
+          "gpu_uuid": "GPU-a6169058-34c8-6edc-e4f5-779bf9a10421",
+          "pid": 1728873,
+          "process_name": "VLLM::Worker_DP2_EP2",
+          "uid": 0,
+          "used_memory": "70188"
+        }
+      ],
+      "index": "2",
+      "memory_used_mib": 70197,
+      "util_percent": 0
+    },
+    "GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7": {
+      "compute_apps": [
+        {
+          "comm": "VLLM::Worker_DP",
+          "gpu_uuid": "GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7",
+          "pid": 1728868,
+          "process_name": "VLLM::Worker_DP6_EP6",
+          "uid": 0,
+          "used_memory": "70188"
+        }
+      ],
+      "index": "6",
+      "memory_used_mib": 70197,
+      "util_percent": 14
+    }
+  },
+  "observed_utc": "2026-10-28T14:58:09.707722+00:00",
+  "queue": {
+    "current_run_id": "nextgen-fp8-qwen38-quality-core1720-r2-20261028o",
+    "cursor": 0,
+    "runner_alive_identity_match": false,
+    "runner_expected": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-u",
+        "-m",
+        "scripts.guarded_native_queue",
+        "--queue",
+        "/home/mingasa/kv-research-agent/plans/queues/nextgen-core-sequential-20261028b/manifest.json",
+        "--directory",
+        "/home/mingasa/kv-research-agent/state/queues/nextgen-core-sequential-20261028b"
+      ],
+      "boot_id": "2afb7771-92c9-41af-a06d-1632040687f5",
+      "pid": 236082,
+      "process_state": "R",
+      "start_ticks": 53016705,
+      "uid": 1000
+    },
+    "runner_observed": null,
+    "status": "HALTED_EXPERIMENT_FAILURE_OR_UNKNOWN",
+    "updated_utc": "2026-10-28T14:22:34.920193+00:00"
+  },
+  "queue_state_path": "/home/mingasa/kv-research-agent/state/queues/nextgen-core-sequential-20261028b/STATE.json",
+  "root_active_run_ids": [
+    "nextgen-nvfp4-qwen38-quality-core1720-r0-20261028p",
+    "nextgen-fp8-qwen38-quality-core1720-r2-20261028o"
+  ],
+  "root_automatic_queue": {
+    "current_run_id": "nextgen-fp8-qwen38-quality-core1720-r2-20261028o",
+    "cursor": 0,
+    "directory": "/home/mingasa/kv-research-agent/state/queues/nextgen-core-sequential-20261028b",
+    "not_after_utc": "2026-10-29T08:57:14.407599+00:00",
+    "status": "HALTED_EXPERIMENT_FAILURE_OR_UNKNOWN",
+    "updated_utc": "2026-10-28T14:22:34.920193+00:00"
+  },
+  "runs": [
+    {
+      "files": {},
+      "live_owned_containers": [],
+      "log_marker_hits": {},
+      "nextgen_progress": {
+        "nvfp4": {
+          "acceptance_status": {},
+          "durable_rows": {},
+          "files": []
+        }
+      },
+      "remote_status": "RUNNING",
+      "run_id": "nextgen-nvfp4-qwen38-quality-core1720-r0-20261028p",
+      "supervisor_alive": true
+    },
+    {
+      "files": {
+        "result.json": {
+          "sha256": "179817b6147be0280a9cff032b4e6ac15f248065e868cae4362fc9c1d32a7977",
+          "status": "UNKNOWN"
+        },
+        "state.json": {
+          "sha256": "179817b6147be0280a9cff032b4e6ac15f248065e868cae4362fc9c1d32a7977",
+          "status": "UNKNOWN"
+        }
+      },
+      "live_owned_containers": [],
+      "log_marker_hits": {
+        "events.jsonl": [
+          "CONFLICT"
+        ],
+        "output/fp8_e4m3/server.log": [
+          "loading model"
+        ]
+      },
+      "nextgen_progress": {
+        "fp8_e4m3": {
+          "acceptance_status": {
+            "native_pages/acceptance.json": null
+          },
+          "durable_rows": {},
+          "files": [
+            "native_pages/acceptance.json",
+            "native_pages/fp8_e4m3-chunked_prefill.json",
+            "native_pages/fp8_e4m3-decode.json",
+            "native_pages/fp8_e4m3-prefill.json"
+          ]
+        }
+      },
+      "remote_status": "UNKNOWN",
+      "run_id": "nextgen-fp8-qwen38-quality-core1720-r2-20261028o",
+      "supervisor_alive": false
+    }
+  ],
+  "schema": "luna-live-watch-receipt-v1",
+  "sequence": 5,
+  "ticket_validation": "status RPC uses check_ticket(ticket,False) and existing(root,ticket); mutation=False."
+}

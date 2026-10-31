@@ -1,0 +1,1 @@
+{"evidence":"reports/operations/session-recovery-20261030-01a1765d/aa-original-failure-and-isolated-CPU-repair-a1.json","reason":"Same frozen evidence.py control-checkout import dependency as actual aa failure; unused proposal, regenerate from repaired preparer before any dispatch","remote_or_GPU_dispatch":false,"utc":"2026-10-30T15:27:57.813697+00:00"}

@@ -1,0 +1,7 @@
+test_content_free_terminal_tail_is_kept_in_completion_proxy (test_stream_completion_gap.StreamCompletionTests) ... ok
+test_timestamp_mismatch_cannot_be_explained_as_a_terminal_tail (test_stream_completion_gap.StreamCompletionTests) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.012s
+
+OK

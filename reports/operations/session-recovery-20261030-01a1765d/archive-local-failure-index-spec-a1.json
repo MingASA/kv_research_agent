@@ -1,0 +1,31 @@
+{
+  "sha_manifests": [],
+  "include": [
+    "reports/experiments/nextgen-quality-20261028/bf16-j-v1/summary.json",
+    "reports/operations/nextgen-native-kv-20261027a/BF16_GDN_dependency_failure_d1.json",
+    "reports/operations/nextgen-native-kv-20261027a/BF16_startup_failure_analysis_b1.json",
+    "reports/operations/nextgen-native-kv-20261027a/CPU_build_configuration_failure_a1.json",
+    "reports/operations/nextgen-native-kv-20261027a/CPU_build_d_failure_complete_luna_a1/inventory.json",
+    "reports/operations/nextgen-native-kv-20261027a/CPU_build_e_failure_complete_luna_a1/inventory.json",
+    "reports/operations/nextgen-native-kv-20261027a/CPU_build_f_terminal_complete_recovered_luna_a1/inventory.json",
+    "reports/operations/nextgen-native-kv-20261027a/CPU_build_missing_torch_env_failure_c1.json",
+    "reports/operations/nextgen-native-kv-20261027a/NVFP4_g_two_absence_witnesses_a2.json",
+    "reports/operations/nextgen-native-kv-20261028a/FP8_FA2_q_two_absence_witnesses_a1.json",
+    "reports/operations/nextgen-native-kv-20261028a/FP8_FA2_t_main_reconcile_failure_a1.json",
+    "reports/operations/nextgen-native-kv-20261028a/FP8_FA2_v_main_reconcile_conflict_a1.json",
+    "reports/operations/nextgen-native-kv-20261028a/FP8_completion_y_full_mirror_independent_closeout_a2.json",
+    "reports/operations/nextgen-native-kv-20261028a/FP8_k_main_SHA_manifest_a1.json",
+    "reports/operations/nextgen-native-kv-20261028a/FP8_m_independent_conflict_closeout_a1.json",
+    "reports/operations/nextgen-native-kv-20261028a/FP8_o_two_release_witnesses_a1.json",
+    "reports/operations/nextgen-native-kv-20261028a/NVFP4_l_two_absence_witnesses_a2.json",
+    "reports/operations/session-recovery-20261030-01a1765d/CPU-a1-real-pressure-fixture-failure-preserved.json",
+    "reports/operations/session-recovery-20261030-01a1765d/ORIGINAL_SESSION_RECOVERY_ACCEPTANCE-a1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/aa-original-failure-and-isolated-CPU-repair-a1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/archive-tools-spec-a1-local-missing-namespace-init.json",
+    "reports/operations/session-recovery-20261030-01a1765d/bf16-d-two-absence-witnesses-a1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/nextgen-original-and-current-index-evidence-inventory-a1.json",
+    "reports/operations/session-recovery-20261030-01a1765d/pilot-render-a1-unicode-lines-local-failure.json",
+    "reports/operations/session-recovery-20261030-01a1765d/tools-L-local-index-history-refusal-closeout-a1.json",
+    "results/INDEX.csv"
+  ]
+}

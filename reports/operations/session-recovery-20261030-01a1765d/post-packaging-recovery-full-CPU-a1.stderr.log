@@ -1,0 +1,19 @@
+..................................ss........................................................................................................................E......................................................................................................................................................................................................sss.........................................................
+======================================================================
+ERROR: test_nextgen_cluster_quality (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_nextgen_cluster_quality
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/home/mingasa/kv-research-agent/tests/test_nextgen_cluster_quality.py", line 5, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+
+----------------------------------------------------------------------
+Ran 415 tests in 17.638s
+
+FAILED (errors=1, skipped=5)

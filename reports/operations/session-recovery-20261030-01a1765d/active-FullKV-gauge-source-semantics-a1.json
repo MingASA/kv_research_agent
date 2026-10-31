@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-30T21:23:21.020135+00:00",
+  "classification": "confirmed_pinned_source_semantics_not_hardware_profiler",
+  "CXX_binary_source_commit": "862c29cade05e47691147b8f50c979a812495470",
+  "exact_file_SHA": {
+    "xllm/core/framework/block/block_manager_impl.cpp": "82f415c8021fbee0ca2647ffb08aafd25087c35f99731136f78a16d7a4880c15",
+    "xllm/core/framework/block/composite_block_manager.cpp": "047c11338635f3c491e75cbdc30a912d4bc8061136307c0571f0d136c4658e59",
+    "xllm/core/scheduler/scheduler_policy.cpp": "7ae340de0602251a625c8faaaf9ff1647170684d24f3c0c6b470a9ac30f93e84"
+  },
+  "semantics": "Scheduler num_used_blocks uses KV manager effective used blocks. Hybrid capacity_leaf excludes LINEAR from admission and selects FullKV. Allocation marks unique ids used; deallocation clears effective use when no sequence owner remains. Prefix-index count separately sums all leaf types.",
+  "source_locations": [
+    "block_manager_impl.cpp:75-128,161-183,217-228",
+    "composite_block_manager.cpp:156-178,967-1002",
+    "scheduler_policy.cpp:970-983"
+  ],
+  "scope_limit": "Sequential application gauges; not atomic physical HBM traffic or maximum supported admission."
+}

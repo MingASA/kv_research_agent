@@ -1,0 +1,16 @@
+test_complete_grid_aggregate_is_recomputed_from_raw_counts_and_moments (test_range_probe.RangeProbeTests) ... ok
+test_export_before_reset_and_foreign_acknowledgement_are_refused (test_range_probe.RangeProbeTests) ... ok
+test_single_BF16_diagnostic_cannot_escape_into_production_or_larger_budget (test_range_probe.RangeProbeTests) ... ok
+test_stale_epoch_missing_layer_nonfinite_padding_corruption_cannot_be_certified (test_range_probe.RangeProbeTests) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.036s
+
+OK
+test_genuinely_truncated_raw_record_is_rejected_without_concatenation_or_repair (test_jsonl_unicode.JsonlUnicodeTests) ... ok
+test_valid_payload_and_response_unicode_separators_remain_in_the_same_record (test_jsonl_unicode.JsonlUnicodeTests) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.002s
+
+OK

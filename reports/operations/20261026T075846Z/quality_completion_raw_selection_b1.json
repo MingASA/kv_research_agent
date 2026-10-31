@@ -1,0 +1,615 @@
+{
+  "ok": true,
+  "files": [
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/container.log",
+      "size": 0
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/container_identity.json",
+      "size": 1506
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/docker_command.json",
+      "size": 2606
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/gpu_telemetry.csv",
+      "size": 46106
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/lease.json",
+      "size": 138
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/measurement.json",
+      "size": 6389
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/.runner.lock",
+      "size": 0
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/arms/auto/attempt-0001/allocation.json",
+      "size": 26626
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/arms/auto/attempt-0001/bootstrap.json",
+      "size": 364
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/arms/auto/attempt-0001/eval-2wikimqa.log",
+      "size": 985
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/arms/auto/attempt-0001/eval-gsm8k.log",
+      "size": 11323
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/arms/auto/attempt-0001/eval-hotpotqa.log",
+      "size": 985
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/arms/auto/attempt-0001/eval-lcc.log",
+      "size": 975
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/arms/auto/attempt-0001/eval-multifieldqa_en.log",
+      "size": 999
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/arms/auto/attempt-0001/eval-musique.log",
+      "size": 983
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/arms/auto/attempt-0001/eval-narrativeqa.log",
+      "size": 991
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/arms/auto/attempt-0001/eval-qasper.log",
+      "size": 981
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/arms/auto/attempt-0001/eval-repobench-p.log",
+      "size": 991
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/arms/auto/attempt-0001/launch.json",
+      "size": 1114
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/arms/auto/attempt-0001/native_evidence.json",
+      "size": 1755
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/arms/auto/attempt-0001/server.log",
+      "size": 729779
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/arms/auto/attempt-0001/server_manifest.json",
+      "size": 2135
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/arms/auto/integrity.json",
+      "size": 2340
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/complete.json",
+      "size": 198
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/experiment_manifest.json",
+      "size": 68098
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/runs/2wikimqa/auto.config.json",
+      "size": 3603
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/runs/2wikimqa/auto.jsonl",
+      "size": 1575365
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/runs/gsm8k/auto.config.json",
+      "size": 3815
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/runs/gsm8k/auto.jsonl",
+      "size": 3311379
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/runs/hotpotqa/auto.config.json",
+      "size": 3603
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/runs/hotpotqa/auto.jsonl",
+      "size": 2838337
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/runs/lcc/auto.config.json",
+      "size": 3588
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/runs/lcc/auto.jsonl",
+      "size": 677316
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/runs/multifieldqa_en/auto.config.json",
+      "size": 3617
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/runs/multifieldqa_en/auto.jsonl",
+      "size": 1469847
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/runs/musique/auto.config.json",
+      "size": 3601
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/runs/musique/auto.jsonl",
+      "size": 3547357
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/runs/narrativeqa/auto.config.json",
+      "size": 3611
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/runs/narrativeqa/auto.jsonl",
+      "size": 4864561
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/runs/qasper/auto.config.json",
+      "size": 3601
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/runs/qasper/auto.jsonl",
+      "size": 1119535
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/runs/repobench-p/auto.config.json",
+      "size": 3604
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/runs/repobench-p/auto.jsonl",
+      "size": 2293486
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/scores/2wikimqa/auto.json",
+      "size": 8301
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/scores/gsm8k/auto.json",
+      "size": 270401
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/scores/hotpotqa/auto.json",
+      "size": 8322
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/scores/lcc/auto.json",
+      "size": 8305
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/scores/multifieldqa_en/auto.json",
+      "size": 8722
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/scores/musique/auto.json",
+      "size": 8364
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/scores/narrativeqa/auto.json",
+      "size": 8539
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/scores/qasper/auto.json",
+      "size": 8450
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/scores/repobench-p/auto.json",
+      "size": 8318
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/summary.csv",
+      "size": 501
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality/summary.json",
+      "size": 1745
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality.log",
+      "size": 1957
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/quality_command.json",
+      "size": 1975
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/runtime_environment.json",
+      "size": 772
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/bf16/scorer_cpu_preflight.log",
+      "size": 364
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/container.log",
+      "size": 0
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/container_identity.json",
+      "size": 1510
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/docker_command.json",
+      "size": 2626
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/gpu_telemetry.csv",
+      "size": 46372
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/lease.json",
+      "size": 138
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/measurement.json",
+      "size": 6565
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/.runner.lock",
+      "size": 0
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/allocation.json",
+      "size": 44194
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/bootstrap.json",
+      "size": 364
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/eval-2wikimqa.log",
+      "size": 1009
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/eval-gsm8k.log",
+      "size": 11831
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/eval-hotpotqa.log",
+      "size": 1009
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/eval-lcc.log",
+      "size": 999
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/eval-multifieldqa_en.log",
+      "size": 1023
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/eval-musique.log",
+      "size": 1007
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/eval-narrativeqa.log",
+      "size": 1015
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/eval-qasper.log",
+      "size": 1005
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/eval-repobench-p.log",
+      "size": 1015
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/launch.json",
+      "size": 1309
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/native_evidence.json",
+      "size": 2117
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/server.log",
+      "size": 738514
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/attempt-0001/server_manifest.json",
+      "size": 2332
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/arms/fp8_e4m3/integrity.json",
+      "size": 2340
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/complete.json",
+      "size": 198
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/experiment_manifest.json",
+      "size": 68401
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/runs/2wikimqa/fp8-e4m3.config.json",
+      "size": 3816
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/runs/2wikimqa/fp8-e4m3.jsonl",
+      "size": 1575376
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/runs/gsm8k/fp8-e4m3.config.json",
+      "size": 4028
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/runs/gsm8k/fp8-e4m3.jsonl",
+      "size": 3335785
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/runs/hotpotqa/fp8-e4m3.config.json",
+      "size": 3816
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/runs/hotpotqa/fp8-e4m3.jsonl",
+      "size": 2838331
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/runs/lcc/fp8-e4m3.config.json",
+      "size": 3801
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/runs/lcc/fp8-e4m3.jsonl",
+      "size": 676935
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/runs/multifieldqa_en/fp8-e4m3.config.json",
+      "size": 3830
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/runs/multifieldqa_en/fp8-e4m3.jsonl",
+      "size": 1470085
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/runs/musique/fp8-e4m3.config.json",
+      "size": 3814
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/runs/musique/fp8-e4m3.jsonl",
+      "size": 3547443
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/runs/narrativeqa/fp8-e4m3.config.json",
+      "size": 3824
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/runs/narrativeqa/fp8-e4m3.jsonl",
+      "size": 4865771
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/runs/qasper/fp8-e4m3.config.json",
+      "size": 3814
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/runs/qasper/fp8-e4m3.jsonl",
+      "size": 1120667
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/runs/repobench-p/fp8-e4m3.config.json",
+      "size": 3817
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/runs/repobench-p/fp8-e4m3.jsonl",
+      "size": 2293457
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/scores/2wikimqa/fp8_e4m3.json",
+      "size": 8487
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/scores/gsm8k/fp8_e4m3.json",
+      "size": 280453
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/scores/hotpotqa/fp8_e4m3.json",
+      "size": 8523
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/scores/lcc/fp8_e4m3.json",
+      "size": 8515
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/scores/multifieldqa_en/fp8_e4m3.json",
+      "size": 8929
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/scores/musique/fp8_e4m3.json",
+      "size": 8547
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/scores/narrativeqa/fp8_e4m3.json",
+      "size": 8755
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/scores/qasper/fp8_e4m3.json",
+      "size": 8657
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/scores/repobench-p/fp8_e4m3.json",
+      "size": 8507
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/summary.csv",
+      "size": 580
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality/summary.json",
+      "size": 1820
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality.log",
+      "size": 2001
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/quality_command.json",
+      "size": 1979
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/runtime_environment.json",
+      "size": 865
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/output/fp8_e4m3/scorer_cpu_preflight.log",
+      "size": 364
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/input/approved_data_manifest.json",
+      "size": 3486
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/input/cohort/2wikimqa.jsonl",
+      "size": 1519845
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/input/cohort/completion_manifest.json",
+      "size": 8929
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/input/cohort/gsm8k.jsonl",
+      "size": 731673
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/input/cohort/hotpotqa.jsonl",
+      "size": 2782349
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/input/cohort/lcc.jsonl",
+      "size": 610615
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/input/cohort/multifieldqa_en.jsonl",
+      "size": 1405010
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/input/cohort/musique.jsonl",
+      "size": 3490345
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/input/cohort/narrativeqa.jsonl",
+      "size": 4805678
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/input/cohort/qasper.jsonl",
+      "size": 1059881
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/input/cohort/repobench-p.jsonl",
+      "size": 2224421
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/input/five_train_examples.json",
+      "size": 2002
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/input/parent_quality_audit.json",
+      "size": 29124
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/input/scorer/LongBench/config/dataset2maxlen.json",
+      "size": 459
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/input/scorer/LongBench/config/dataset2prompt.json",
+      "size": 5437
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/input/scorer/LongBench/metrics.py",
+      "size": 5190
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/input/source.bundle",
+      "size": 18621
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/runtime/kv_controller/__init__.py",
+      "size": 70
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/runtime/kv_controller/approval.py",
+      "size": 9391
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/runtime/kv_controller/durable.py",
+      "size": 2198
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/runtime/kv_controller/evidence.py",
+      "size": 26375
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/runtime/kv_controller/policy.py",
+      "size": 14098
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/runtime/kv_controller/processes.py",
+      "size": 1907
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/runtime/kv_controller/production.py",
+      "size": 21563
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/runtime/kv_controller/supervisor.py",
+      "size": 32691
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/runtime/kv_controller/watchdog.py",
+      "size": 3713
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/runtime/kv_controller/worker.py",
+      "size": 16519
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/ticket.json",
+      "size": 10711
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/result.json",
+      "size": 797
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/COMPLETE",
+      "size": 85
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/events.jsonl",
+      "size": 2998
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/state.json",
+      "size": 797
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/owned_containers.json",
+      "size": 3105
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/WATCHDOG_FINISHED.json",
+      "size": 197
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/watchdog_result.json",
+      "size": 128
+    },
+    {
+      "base_rel": "agent_work/runs/prod-quality-fa3-completion1639-r0-20261026b/SUPERVISOR_STARTED.json",
+      "size": 570
+    }
+  ],
+  "max_file_bytes": 4865771,
+  "total_bytes": 64886492
+}

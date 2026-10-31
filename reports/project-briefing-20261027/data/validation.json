@@ -1,0 +1,136 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-10-27T14:00:21.813756+00:00",
+  "report_cutoff_run": 46,
+  "index_snapshot_rows": 45,
+  "post45_run_rows": 1,
+  "original_frozen_files_verified": 35,
+  "table_count": 20,
+  "base_numeric_check_groups": 14,
+  "post45_numeric_check_groups": 9,
+  "numeric_check_groups": 23,
+  "local_link_targets": 159,
+  "missing_local_links": [],
+  "source_files_or_directories": 134,
+  "canonical_audit_SHA_checks": [
+    {
+      "summary": "reports/experiments/production-bf16-xqa-quality-c128-20261027/audit_summary.json",
+      "canonical": "reports/operations/20261026T075846Z/production_C128_quality_independent_audit_b1.json",
+      "sha256": "225142374bcffb2a198c4fcc2fc0ec8190a16297598e66e1c7fc02e2cbc5080a"
+    },
+    {
+      "summary": "reports/experiments/production-bf16-xqa-sharegpt-20261027/audit_summary.json",
+      "canonical": "reports/operations/20261026T075846Z/bf16_xqa_reference_b_independent_audit1.json",
+      "sha256": "c3e7a09b7412e8169a34cb416b0369c80f00b46eb9a44461f6ab4e31f4551120"
+    },
+    {
+      "summary": "reports/experiments/production-bf16-xqa-toolagent-pressure-20261027/audit_summary.json",
+      "canonical": "reports/operations/20261026T075846Z/modern_BF16_ToolAgent_pressure_comparison_v1.json",
+      "sha256": "1d0d466acc341dc9f8df73cc1a6eb6dbf7f5bb5b2bf78b281c82cce235956298"
+    },
+    {
+      "summary": "reports/experiments/production-bf16-xqa-toolagent-s0125-20261027/audit_summary.json",
+      "canonical": "reports/operations/20261026T075846Z/toolagent_s0125_independent_audit_v1.json",
+      "sha256": "903c806a0f12573857bea558599c334ce867e175f034239d48da73126a1aa286"
+    },
+    {
+      "summary": "reports/experiments/production-bf16-xqa-toolagent-s025-20261027/audit_summary.json",
+      "canonical": "reports/operations/20261026T075846Z/toolagent_s025_independent_audit_v1.json",
+      "sha256": "4c42db71a841f362b1ea71df8a5b026990c3933de8c9603eab5e8376cf58d96d"
+    },
+    {
+      "summary": "reports/experiments/production-bf16q-quality-20261027/audit_summary.json",
+      "canonical": "reports/operations/20261026T075846Z/bf16q_full1719_quality_independent_audit_b1.json",
+      "sha256": "5496ad307e815ab2cbe35cc0530e4232f58678c964ae150b1d192a8f7675b433"
+    },
+    {
+      "summary": "reports/experiments/production-xqa-burstgpt-original-20261027/audit_summary.json",
+      "canonical": "reports/operations/20261026T075846Z/burstgpt_f_independent_audit1_py312.json",
+      "sha256": "3bf842b9578e1fb66877111d2809ff28ee8c40c9fcc8f2d83f9ce939d4b7a314"
+    },
+    {
+      "summary": "reports/experiments/production-xqa-conversation-original-20261027/audit_summary.json",
+      "canonical": "reports/operations/20261026T075846Z/conversation_f_independent_audit1_py312.json",
+      "sha256": "e73db3e5c0d5d5bacb14a5fce2a667af1a88fbfc3c1d7865aa714c69b4a3ab1a"
+    },
+    {
+      "summary": "reports/experiments/production-xqa-synthetic-original-20261027/audit_summary.json",
+      "canonical": "reports/operations/20261026T075846Z/synthetic_f_independent_audit1_py312.json",
+      "sha256": "5c8737ec81f837220287fc7a5d736e2ff35e63c4b8fa6fefffa6cd9206c530a5"
+    },
+    {
+      "summary": "reports/experiments/production-xqa-toolagent-original-20261027/audit_summary.json",
+      "canonical": "reports/operations/20261026T075846Z/toolagent_trace_independent_audit_c2_py312.json",
+      "sha256": "4c7c44217dccec39425460d9c047336d48e833e3320ebe2f126b2cc4a9d417b3"
+    },
+    {
+      "supplement_check": "comparison→candidate raw audit",
+      "canonical": "reports/operations/20261026T075846Z/bf16q_full1719_quality_independent_audit_b1.json",
+      "sha256": "5496ad307e815ab2cbe35cc0530e4232f58678c964ae150b1d192a8f7675b433"
+    },
+    {
+      "supplement_check": "comparison→retained modern BF16/FP8-XQA audit",
+      "canonical": "reports/operations/20261026T075846Z/production_C128_quality_independent_audit_b1.json",
+      "sha256": "225142374bcffb2a198c4fcc2fc0ec8190a16297598e66e1c7fc02e2cbc5080a"
+    },
+    {
+      "supplement_check": "comparison→official scoring AST proof",
+      "canonical": "reports/operations/20261026T075846Z/bf16q_quality_scoring_compatibility_CPU_v1.json",
+      "sha256": "63c3f1ce8b6f1f82c7d8831c63c5d307028a9e03d2d9494816e2567a9c97ead3"
+    },
+    {
+      "supplement_check": "quality cohort clocks→quality comparison",
+      "canonical": "reports/operations/20261026T075846Z/bf16q_full1719_quality_comparison_b1.json",
+      "sha256": "e8e89981a58e98c08dc425e7c7cbac101bb66318e4b800c58ee1a03945030f78"
+    },
+    {
+      "supplement_check": "formal report summary→raw audit",
+      "canonical": "reports/operations/20261026T075846Z/bf16q_full1719_quality_independent_audit_b1.json",
+      "sha256": "5496ad307e815ab2cbe35cc0530e4232f58678c964ae150b1d192a8f7675b433"
+    },
+    {
+      "supplement_check": "formal report summary→comparison",
+      "canonical": "reports/operations/20261026T075846Z/bf16q_full1719_quality_comparison_b1.json",
+      "sha256": "e8e89981a58e98c08dc425e7c7cbac101bb66318e4b800c58ee1a03945030f78"
+    },
+    {
+      "supplement_check": "formal report summary→cohort clocks",
+      "canonical": "reports/operations/20261026T075846Z/bf16q_full1719_quality_cohort_latency_b1.json",
+      "sha256": "cc9c0f90ce5fe531bcc935796730800598c8659f0056b3310ea8df19a60a7c99"
+    },
+    {
+      "supplement_check": "existing figure manifest→comparison",
+      "canonical": "reports/operations/20261026T075846Z/bf16q_full1719_quality_comparison_b1.json",
+      "sha256": "e8e89981a58e98c08dc425e7c7cbac101bb66318e4b800c58ee1a03945030f78"
+    },
+    {
+      "supplement_check": "existing quality figure/data output",
+      "canonical": "reports/experiments/production-bf16q-quality-20261027/figures-v1/quality_delta_data.csv",
+      "sha256": "2932d016f4eea093a7765e33af27717b3ce71f58e6a8285685e01a6fce394ed9"
+    },
+    {
+      "supplement_check": "existing quality figure/data output",
+      "canonical": "reports/experiments/production-bf16q-quality-20261027/figures-v1/quality_deltas.png",
+      "sha256": "f9cb1c8942e6b2c4809dab58a200606b437d5958a95600e81a1281c7eb47f763"
+    },
+    {
+      "supplement_check": "existing quality figure/data output",
+      "canonical": "reports/experiments/production-bf16q-quality-20261027/figures-v1/quality_deltas.svg",
+      "sha256": "32da2c8f7fb02d389aa865bf966c46c3f41fb1b8c4d99220827c32258863f4e3"
+    },
+    {
+      "supplement_check": "raw quality audit→original root terminal",
+      "canonical": "results/mirrors/prod-quality-bf16q-full1719-c128-r1-20261027b-terminal-b2-gzip/files/support/agent_work/runs/prod-quality-bf16q-full1719-c128-r1-20261027b/result.json",
+      "sha256": "e8eea5e9dc794b8ff8f27b2f7d8f4bcd93fa566fe546df0bdd7fb5dec5207084"
+    }
+  ],
+  "extracted_sources_changed_at_finalize": [
+    "results/INDEX.csv",
+    "state/STATE.json"
+  ],
+  "post45_extracted_sources_changed_at_finalize": [],
+  "note_on_mutable_sources": "原45行INDEX/STATE快照不扩展；第46单独补充，更晚源状态不代表扩展截止；静态独立审计保持SHA。",
+  "new_GPU_runs": 0,
+  "new_model_predictions": 0,
+  "package_writer_outputs_scoped_to_this_directory": true
+}

@@ -1,0 +1,11 @@
+test_live_cgroup_change_reused_pid_or_unresolved_zombie_stays_blocked (tests.test_gpu_exit_visibility.GPUExitVisibilityTests) ... ok
+test_only_previously_proven_owned_exit_gets_one_fresh_read (tests.test_gpu_exit_visibility.GPUExitVisibilityTests) ... ok
+test_only_same_previously_owned_zombie_can_wait_for_actual_driver_release (tests.test_gpu_exit_visibility.GPUExitVisibilityTests) ... ok
+test_pid_still_reported_or_second_unknown_race_stays_blocked (tests.test_gpu_exit_visibility.GPUExitVisibilityTests) ... ok
+test_reappearing_or_new_foreign_process_is_never_ignored (tests.test_gpu_exit_visibility.GPUExitVisibilityTests) ... ok
+test_unknown_exited_pid_or_prelaunch_race_still_blocks (tests.test_gpu_exit_visibility.GPUExitVisibilityTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.011s
+
+OK

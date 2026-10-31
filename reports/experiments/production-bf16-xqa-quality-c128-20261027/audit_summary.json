@@ -1,0 +1,255 @@
+{
+  "schema": "kv-production-C128-quality-analysis-v1",
+  "classification": "confirmed_C128_quality_tradeoff_and_C8_descriptive_sensitivity",
+  "run_id": "prod-quality-bf16xqa-full1719-c128-r0-20261027b",
+  "source_commit": "11e7cddbfe33eb21d209c7f48f5e461ac56545eb",
+  "batch_audit_sha256": "225142374bcffb2a198c4fcc2fc0ec8190a16297598e66e1c7fc02e2cbc5080a",
+  "c8_reference_audit_sha256": "5a40a904937d538b10bcba74e48f3ac8512818f1fbcbf833886696e3b3928898",
+  "c8_comparison_sha256": "29e0d1efccd2c7ce5e94cf380457d4a4e2a60ac76a90f8e9778c51dc452e7114",
+  "script_sha256": "e04b3c1a7f2447d466e00620cffc732e7cef04cbb33474ced35edc5bbfb0fe3e",
+  "samples_per_arm": 1719,
+  "task_scores": {
+    "gsm8k": {
+      "bf16_strict_em": 0.6853677028051555,
+      "bf16_flexible_em": 0.8931008339651251,
+      "fp8_e4m3_strict_em": 0.7134192570128886,
+      "fp8_e4m3_flexible_em": 0.8984078847611827
+    },
+    "narrativeqa": {
+      "bf16": 0.3254480768836753,
+      "fp8_e4m3": 0.34529694194694194
+    },
+    "qasper": {
+      "bf16": 0.42991208719614876,
+      "fp8_e4m3": 0.4174244553053956
+    },
+    "multifieldqa_en": {
+      "bf16": 0.48632723965772734,
+      "fp8_e4m3": 0.44632684815505236
+    },
+    "2wikimqa": {
+      "bf16": 0.5871148459383754,
+      "fp8_e4m3": 0.5817316017316017
+    },
+    "hotpotqa": {
+      "bf16": 0.6473218390804598,
+      "fp8_e4m3": 0.6339885057471265
+    },
+    "musique": {
+      "bf16": 0.3761548081548082,
+      "fp8_e4m3": 0.33126890458469405
+    },
+    "lcc": {
+      "bf16": 0.6714,
+      "fp8_e4m3": 0.6322
+    },
+    "repobench-p": {
+      "bf16": 0.4914,
+      "fp8_e4m3": 0.4852
+    }
+  },
+  "task_deltas": {
+    "gsm8k": {
+      "strict_em": 0.028051554207733087,
+      "flexible_em": 0.005307050796057644
+    },
+    "narrativeqa": 0.019848865063266663,
+    "qasper": -0.012487631890753137,
+    "multifieldqa_en": -0.04000039150267498,
+    "2wikimqa": -0.0053832442067737185,
+    "hotpotqa": -0.013333333333333308,
+    "musique": -0.04488590357011413,
+    "lcc": -0.03920000000000001,
+    "repobench-p": -0.006199999999999983
+  },
+  "longbench_8_task_macro": {
+    "bf16": 0.5018848621138994,
+    "fp8_e4m3": 0.48417965718385153
+  },
+  "longbench_macro_delta": -0.017705204930047846,
+  "paired_flips": {
+    "gsm8k": {
+      "tie": 1244,
+      "up": 41,
+      "down": 34
+    },
+    "narrativeqa": {
+      "tie": 39,
+      "down": 6,
+      "up": 5
+    },
+    "qasper": {
+      "tie": 43,
+      "up": 2,
+      "down": 5
+    },
+    "multifieldqa_en": {
+      "tie": 33,
+      "down": 12,
+      "up": 5
+    },
+    "2wikimqa": {
+      "tie": 46,
+      "up": 2,
+      "down": 2
+    },
+    "hotpotqa": {
+      "tie": 49,
+      "down": 1
+    },
+    "musique": {
+      "tie": 44,
+      "down": 5,
+      "up": 1
+    },
+    "lcc": {
+      "tie": 37,
+      "up": 6,
+      "down": 7
+    },
+    "repobench-p": {
+      "tie": 36,
+      "down": 7,
+      "up": 7
+    }
+  },
+  "length_finish_counts": {
+    "bf16": {
+      "gsm8k": 3,
+      "narrativeqa": 0,
+      "qasper": 0,
+      "multifieldqa_en": 7,
+      "2wikimqa": 1,
+      "hotpotqa": 1,
+      "musique": 3,
+      "lcc": 50,
+      "repobench-p": 50
+    },
+    "fp8_e4m3": {
+      "gsm8k": 1,
+      "narrativeqa": 0,
+      "qasper": 1,
+      "multifieldqa_en": 7,
+      "2wikimqa": 0,
+      "hotpotqa": 2,
+      "musique": 3,
+      "lcc": 50,
+      "repobench-p": 50
+    }
+  },
+  "C128_minus_C8_macro": {
+    "bf16": 0.0006324705167747302,
+    "fp8_e4m3": -0.0033468009096987994
+  },
+  "C128_minus_C8_task_scores": {
+    "gsm8k": {
+      "bf16_strict_em": -0.012130401819560266,
+      "bf16_flexible_em": 0.0007581501137224889,
+      "fp8_e4m3_strict_em": 0.013646702047005355,
+      "fp8_e4m3_flexible_em": 0.0015163002274450887
+    },
+    "narrativeqa": {
+      "bf16": 0.0007529411764706229,
+      "fp8_e4m3": 0.02206275946275943
+    },
+    "qasper": {
+      "bf16": 0.003172381451239048,
+      "fp8_e4m3": 0.009398750126075273
+    },
+    "multifieldqa_en": {
+      "bf16": 0.002850697664123214,
+      "fp8_e4m3": -0.018918434348942914
+    },
+    "2wikimqa": {
+      "bf16": 0.0,
+      "fp8_e4m3": -0.004696969696969755
+    },
+    "hotpotqa": {
+      "bf16": 0.0010837438423645374,
+      "fp8_e4m3": 0.0
+    },
+    "musique": {
+      "bf16": 0.0,
+      "fp8_e4m3": -0.01982051282051278
+    },
+    "lcc": {
+      "bf16": -0.0028000000000000247,
+      "fp8_e4m3": 0.011800000000000033
+    },
+    "repobench-p": {
+      "bf16": 0.0,
+      "fp8_e4m3": -0.026600000000000013
+    }
+  },
+  "paired_bootstrap_95ci": {
+    "gsm8k_flexible_delta": [
+      -0.0075815011372251705,
+      0.01819560272934041
+    ],
+    "longbench_macro_delta": [
+      -0.03489277297360682,
+      -0.0016670958913565482
+    ]
+  },
+  "bootstrap_draws": 5000,
+  "bootstrap_seed": 20261026,
+  "production_configuration": {
+    "binary_sha256": "277bd8f391fbef978c86d77a976d488d567b0781bf19c0cc8a9c6763fccb21f3",
+    "model_config_sha256": "0f2085dbbe2ee251bd6a6a0797d84a6ce34436044d629aa3cba793b43d311a9e",
+    "image_id": "sha256:a77472b8bcd25797bad288712f7abd676beae6264b353de301ec43a08bd39dc2",
+    "operators": {
+      "bf16": {
+        "decode": "xqa",
+        "decode_internal_q": "bf16",
+        "enable_pdl": true,
+        "kv_padding_policy": "finite_full_initialization",
+        "max_context": 32768,
+        "planner": "fa3",
+        "q": "bf16"
+      },
+      "fp8_e4m3": {
+        "decode": "xqa",
+        "decode_internal_q": "fp8_e4m3",
+        "enable_pdl": true,
+        "kv_padding_policy": "finite_full_initialization",
+        "max_context": 32768,
+        "planner": "fa2",
+        "q": "bf16"
+      }
+    },
+    "service": {
+      "max_concurrent_requests": 200,
+      "max_seqs_per_batch": 128,
+      "max_tokens_per_batch": 10240,
+      "memory_utilization": 0.8
+    },
+    "graph_mode": "cudagraphs",
+    "fp8_scales": {
+      "key": 0.125,
+      "value": 0.0625
+    },
+    "concurrency": 128
+  },
+  "model_weights_sha256": "cf67b8e03cf159dd6017e36da84c28e143e59ce766261db2f6c97aabca7aae73",
+  "actual_gpu_hours": 0.47063659012055553,
+  "quality_accepted": false,
+  "user_has_accepted_margin": false,
+  "limitations": [
+    "C128 client limit is not a fixed actual GPU batch128",
+    "C8 used a separate BF16 reference and retained FP8 80+1639 fragments; C128 is one full ordered pair",
+    "Same source questions are reused under a changed batching control, not more independent questions",
+    "Cross-run/GPU/cache/scheduling changes are not isolated batch-size causal effects",
+    "Per-item bootstrap describes task sampling, not GPU-run repeatability or equivalence",
+    "Code string similarity is not execution or agent/tool success",
+    "No user quality/SLO margin has been accepted; throughput cannot erase measured quality loss"
+  ],
+  "canonical_audit": "reports/operations/20261026T075846Z/production_C128_quality_independent_audit_b1.json",
+  "analysis": "reports/operations/20261026T075846Z/production_C128_quality_analysis_b1.json",
+  "audit_sha256": "225142374bcffb2a198c4fcc2fc0ec8190a16297598e66e1c7fc02e2cbc5080a",
+  "analysis_sha256": "222836530894dd80791d2e70a1ceaffe5af5ce3395dc531724e1df549325f1c5",
+  "mirror_files": 168,
+  "mirror_source_bytes": 67729166,
+  "root_complete": true,
+  "gpu_release_verified": true,
+  "paired_items_in_canonical_audit": true
+}

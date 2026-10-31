@@ -1,0 +1,55 @@
+{
+  "schema": "session-source-recovery-v1",
+  "observed_utc": "2026-10-30T15:03:22.831109+00:00",
+  "session_id": "01a1765d-9953-7760-a9fa-102c05c766d7",
+  "source": "/home/mingasa/.codex/sessions/2026/10/25/rollout-2026-10-25T21-00-08-01a1765d-9953-7760-a9fa-102c05c766d7.jsonl",
+  "source_bytes": 129515448,
+  "source_sha256": "3c38100d41de4af38ccfd4f67fe9383e7c52af763307c126a0d38cc9ebe587d8",
+  "records_read": 35205,
+  "type_counts": {
+    "session_meta": 1,
+    "event_msg": 16746,
+    "response_item": 14665,
+    "world_state": 34,
+    "turn_context": 34,
+    "token_usage_record": 3433,
+    "compacted": 20,
+    "inter_agent_communication_metadata": 272
+  },
+  "user_messages": 37,
+  "full_user_text_preserved": true,
+  "last_user_message": {
+    "ordinal": 36,
+    "line": 35175,
+    "utc": "2026-10-29T03:04:00.992Z",
+    "text": "什么情况，这个会话达到输出上限了吗，那就帮我凝固成报告和提示词转接给下一个会话，输出文档"
+  },
+  "last_custom_tool_call": {
+    "line": 34487,
+    "utc": "2026-10-28T23:24:40.198Z",
+    "name": "exec",
+    "call_id": "call_fe0e51f7161b40738ad4f6decac22b82",
+    "input": "text(await tools.exec_command({cmd:\"python3 - <<'PY'\\nfrom pathlib import Path\\nimport json,hashlib\\nfrom scripts.controller.cli import _local_package,validate_frozen_policy\\nfrom scripts.controller.approval import TRUSTED_APPROVAL,load_approval_snapshot\\nfrom scripts.controller.policy import validate_request\\nfrom scripts.controller.durable import write_new_json\\nroot=Path.cwd();approval,_=load_approval_snapshot(TRUSTED_APPROVAL);records=[]\\nfor name in ('nextgen-bf16-qwen38-native-tools32-r0-20261028ae','nextgen-nvfp4-qwen38-native-tools32-r0-20261028af'):\\n p=root/'plans/experiments'/name/'package.json';doc=json.loads(p.read_text());r,hashes,_=_local_package(p)\\n validate_request(r,approval);validate_frozen_policy(p,r,approval)\\n for asset,item in doc['assets'].items():assert hashlib.sha256(Path(item['local_path']).read_bytes()).hexdigest()==item['sha256']==hashes[asset]\\n assert not (root/'state/controller/tickets'/(name+'.json')).exists()\\n records.append({'run_id':name,'arm':r['arms'][0],'local_and_frozen_policy_pass':True,'asset_count':len(hashes),'tasks':r['tool_evaluation']['tasks'],'CPU_image_evidence_sha256':r['tool_evaluation']['CPU_image_evidence_sha256'],'GPU_ticket_created':False})\\nout=root/'reports/operations/nextgen-native-kv-20261028a/native_tools_AE_AF_frozen_package_CPU_acceptance_a1.json';write_new_json(out,{'classification':'LOCAL_FROZEN_PROPOSALS_NOT_MODEL_RUNS','records':records});print(records)\\nPY\",yield_time_ms:1000,max_output_tokens:2300}));\n"
+  },
+  "local_initial_commit": "de7d77115048a831ee466c69eafaad226f335265",
+  "remote_initial_readonly_identity": {
+    "uid": 1005,
+    "gid": 1005,
+    "hostname": "A03-R40-I18-195-B000010.JD.LOCAL",
+    "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+    "observed_utc": "2026-10-30T15:02:08Z",
+    "gpu_memory_used_MiB": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "compute_apps": [],
+    "old_supervisor_1496122_present": false
+  },
+  "no_GPU_launch_or_remote_mutation_in_recovery": true
+}

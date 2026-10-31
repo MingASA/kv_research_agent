@@ -1,0 +1,7 @@
+test_nanosecond_rate_window_survives_microsecond_datetime_export (test_rate_clock_quantization.RateClockQuantizationTests) ... ok
+test_real_rate_or_window_changes_still_fail (test_rate_clock_quantization.RateClockQuantizationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK

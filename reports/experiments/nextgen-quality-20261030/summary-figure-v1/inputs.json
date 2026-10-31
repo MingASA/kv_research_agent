@@ -1,0 +1,35 @@
+{
+  "reference_summary_sha256": "ee4dcb4391cc4a745bcedb8572db51803c83566fb89b44dcc114420e92b883c4",
+  "rows": [
+    {
+      "format": "FP8 FA2",
+      "source": "/home/mingasa/kv-research-agent/reports/experiments/nextgen-quality-20261030/fp8-fa2-t-ab-vs-bf16-j-a1.json",
+      "source_sha256": "8a19a44e62ef8c73ac4f86c6eb6df6506492b135bb0f1c915e04d44de50efe21",
+      "GSM8K_flexible_EM_delta_pp": 0.0758150113722517,
+      "GSM8K_paired_CI_pp": [
+        -0.3032600454890068,
+        0.45489006823351025
+      ],
+      "LongBench_macro_delta_pp": -0.4920178521420695,
+      "LongBench_paired_CI_pp": [
+        -1.4262691590781662,
+        0.2678772504389322
+      ]
+    },
+    {
+      "format": "NVFP4",
+      "source": "/home/mingasa/kv-research-agent/reports/experiments/nextgen-quality-20261028/nvfp4-p-vs-bf16-j-a1.json",
+      "source_sha256": "cbf0480a42e4e746c4eba5af9b29dc7e86fdc277d9fad3d35510d6c50aae5371",
+      "GSM8K_flexible_EM_delta_pp": -0.6065200909780136,
+      "GSM8K_paired_CI_pp": [
+        -1.1372251705837757,
+        -0.1516300227445034
+      ],
+      "LongBench_macro_delta_pp": -0.9829585800440057,
+      "LongBench_paired_CI_pp": [
+        -2.238605370476616,
+        0.2101661619666463
+      ]
+    }
+  ]
+}

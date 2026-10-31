@@ -1,0 +1,36 @@
+{
+  "schema": "native-tools-cpu-d-acceptance-copy-receipt-v1",
+  "run_id": "nextgen-native-tools-cpu-20261028d",
+  "observed_utc": "2026-10-28T23:15:56.026642+00:00",
+  "remote_status_call": "status",
+  "container_id": "61dcb64d49a16536b2fef8e0abb7379e43708db04e682f0583886185751d89d6",
+  "container": {
+    "Status": "exited",
+    "Pid": 0,
+    "Running": false,
+    "ExitCode": 0,
+    "OOMKilled": false
+  },
+  "host_config": {
+    "Runtime": "runc",
+    "NetworkMode": "none",
+    "IpcMode": "private",
+    "DeviceRequests": null,
+    "Devices": [],
+    "Privileged": false,
+    "ReadonlyRootfs": true,
+    "NanoCpus": 2000000000,
+    "Memory": 8589934592
+  },
+  "host_config_violations": [],
+  "acceptance_remote_sha256": "0bbe70279ec91d9cfd33ef58880b0c05c8b02d2789dcb58b02a1896fd0b8669b",
+  "acceptance_state": "COMPLETE_CPU_TOOL_IMAGE_VALIDATION",
+  "CPU_only": true,
+  "GPU_requested": false,
+  "model_weights_loaded": false,
+  "actual_HTTP_or_model_predictions": false,
+  "acceptance_snapshot_path": "/home/mingasa/kv-research-agent/reports/operations/nextgen-native-kv-20261028a/native_tools_CPU_d_acceptance_original_a1.json",
+  "acceptance_snapshot": "already_present_sha_verified",
+  "serialized_sha256": "0bbe70279ec91d9cfd33ef58880b0c05c8b02d2789dcb58b02a1896fd0b8669b",
+  "serialized_matches_remote_sha256": true
+}

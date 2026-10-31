@@ -1,0 +1,13 @@
+test_container_has_only_verified_readonly_model_and_existing_isolation (test_nextgen_contract.NextgenContractTests) ... ok
+test_existing_quota_unknown_and_busy_gpu_gates_apply_to_new_model (test_nextgen_contract.NextgenContractTests) ... ok
+test_initial_contract_rejects_unverified_formats_and_configuration (test_nextgen_contract.NextgenContractTests) ... ok
+test_invalid_SSE_is_preserved_and_not_accepted (test_nextgen_contract.NextgenContractTests) ... ok
+test_legacy_model_mount_cannot_be_changed_by_extra_model_id (test_nextgen_contract.NextgenContractTests) ... ok
+test_longer_startup_is_one_audited_retry_and_preserves_runtime (test_nextgen_contract.NextgenContractTests) ... ok
+test_model_scope_update_preserves_cumulative_budget_identity (test_nextgen_contract.NextgenContractTests) ... ok
+test_new_model_native_BF16_contract_is_admitted (test_nextgen_contract.NextgenContractTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.006s
+
+OK

@@ -1,0 +1,9 @@
+test_forced_lengths_stop_overrides_other_model_or_template_are_rejected (test_nextgen_performance_inputs.NextgenPerformanceInputTests) ... ok
+test_invalid_demand_or_relative_paths_rejected (test_nextgen_performance_inputs.NextgenPerformanceInputTests) ... ok
+test_no_implicit_warmup_or_synthetic_timing_in_measured_command (test_nextgen_performance_inputs.NextgenPerformanceInputTests) ... ok
+test_original_two_turn_session_counts_two_requests (test_nextgen_performance_inputs.NextgenPerformanceInputTests) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK

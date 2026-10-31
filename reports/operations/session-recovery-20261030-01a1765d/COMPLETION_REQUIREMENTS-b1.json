@@ -1,0 +1,242 @@
+{
+  "schema": "nextgen-explicit-requirement-evidence-map-v1",
+  "utc": "2026-10-30T23:24:17.995861+00:00",
+  "classification": "updated scope-preserving audit while WC active; not completion acceptance",
+  "objective_complete": false,
+  "requirements": [
+    {
+      "requirement": "restore_original_session",
+      "status": "confirmed",
+      "evidence_relative_to_this_directory": [
+        "ORIGINAL_SESSION_RECOVERY_ACCEPTANCE-a1.json",
+        "USER_INSTRUCTIONS_FULL.md",
+        "LAST_ACTIONS.json"
+      ],
+      "verification_boundary": "Full source SHA, all37 user messages,20 compactions, actual cutoff and unfinished report recovered."
+    },
+    {
+      "requirement": "read_inherited_mandatory_rules",
+      "status": "confirmed",
+      "evidence_relative_to_this_directory": [
+        "ORIGINAL_SESSION_RECOVERY_ACCEPTANCE-a1.json"
+      ],
+      "verification_boundary": "AGENTS/MASTER/production/newgen/safety/path/authorization read; latest user overrides retained."
+    },
+    {
+      "requirement": "readonly_remote_recovery_before_new_work",
+      "status": "confirmed",
+      "evidence_relative_to_this_directory": [
+        "ab-original-reconcile-a1.stdout.json",
+        "RECOVERY_REPORT.md"
+      ],
+      "verification_boundary": "Original ab already COMPLETE recovered without rerun, actual host UID/boot/UUID/ownership checked."
+    },
+    {
+      "requirement": "continue_original_27B_goal",
+      "status": "active",
+      "evidence_relative_to_this_directory": [
+        "../../synthesis/NEXTGEN_NATIVE_KV_20261030.md",
+        "../../../plans/MIXED_PREFILL_PILOT_20261030.md"
+      ],
+      "verification_boundary": "Original objective intact; new matched profile finite phase underway."
+    },
+    {
+      "requirement": "Qwen38_first_existing_readonly_model",
+      "status": "confirmed",
+      "evidence_relative_to_this_directory": [
+        "../../../state/NEXTGEN_CONFIG.local.json"
+      ],
+      "verification_boundary": "Actual existing Qwen3.8-27B text/hybrid model; no large weight download."
+    },
+    {
+      "requirement": "BF16_hybrid_lifecycle_Graph",
+      "status": "confirmed",
+      "evidence_relative_to_this_directory": [
+        "mixed-bf16-s-independent-calibration-a1.json"
+      ],
+      "verification_boundary": "Actual20known/A-B-A/modelGraph, separateFullKV/GDN storage/address evidence."
+    },
+    {
+      "requirement": "native_FP8_not_fullcache_QDQ",
+      "status": "confirmed",
+      "evidence_relative_to_this_directory": [
+        "FP8-C-independent-AIPerf-audit-a1.json"
+      ],
+      "verification_boundary": "Native compressed resident pages with typedFA2, actual model and Graph; FP8XQA remains unqualified."
+    },
+    {
+      "requirement": "native_NVFP4_SM90_not_Blackwell_MMA",
+      "status": "confirmed",
+      "evidence_relative_to_this_directory": [
+        "NVFP4-B-independent-AIPerf-audit-a1.json"
+      ],
+      "verification_boundary": "Packednativepayload/blockscales/directpagedbackend, actualSM90 modelGraph; compression not FP4MMA."
+    },
+    {
+      "requirement": "original_matched_core1720_quality",
+      "status": "confirmed",
+      "evidence_relative_to_this_directory": [
+        "../../experiments/nextgen-quality-20261028/bf16-j-v1/summary.json",
+        "../../experiments/nextgen-quality-20261030/fp8-fa2-t-ab-v1/summary.json",
+        "../../experiments/nextgen-quality-20261028/nvfp4-p-v1/summary.json"
+      ],
+      "verification_boundary": "All1720 denominator retained, originalFAILED and disjointFP8 recovery preserved, no automatic quality acceptance."
+    },
+    {
+      "requirement": "original_real_AIPerf_3cases_3formats",
+      "status": "confirmed",
+      "evidence_relative_to_this_directory": [
+        "../../experiments/nextgen-service-20261030/registry-original-nine-a1.json"
+      ],
+      "verification_boundary": "9independentraw observations/528formal+60externalwarm+180known; naturalEOS/caps."
+    },
+    {
+      "requirement": "end_to_end_tails_cost_and_output_lengths",
+      "status": "confirmed",
+      "evidence_relative_to_this_directory": [
+        "../../experiments/nextgen-service-20261030/tabular-original-nine-v2"
+      ],
+      "verification_boundary": "p50/p95/p99TTFT/ITL/E2E, naturaloutput lengths, measured andwholeleaseGPUsec distinct; no inventedprice/SLO."
+    },
+    {
+      "requirement": "resident_capacity_measured_not_slots_only",
+      "status": "partly_confirmed_new_formal_pending",
+      "evidence_relative_to_this_directory": [
+        "mixed-bf16-s-independent-residency-pilot-a1.json"
+      ],
+      "verification_boundary": "Originalphysicalslotratio1/1.969/3.556 plus realS4running2265activepages>829 single; newformalpressureW/X/Y pending."
+    },
+    {
+      "requirement": "real_tools32_112turns_all_formats",
+      "status": "confirmed",
+      "evidence_relative_to_this_directory": [
+        "../../experiments/nextgen-tools-20261030/bf16-r-v1/actual_model_audit.json",
+        "../../experiments/nextgen-tools-20261030/fp8-n-v1/actual_model_audit.json",
+        "../../experiments/nextgen-tools-20261030/nvfp4-m-v1/actual_model_audit.json"
+      ],
+      "verification_boundary": "ActualnativeAPI, independentstate/response26/26/24of32, oneincompleteFP8counted0; notfullBFCL or finalNLquality."
+    },
+    {
+      "requirement": "bounded_stability_and_failures_retained",
+      "status": "confirmed_bounded_only",
+      "evidence_relative_to_this_directory": [
+        "bounded-original-quality-serving-spans-a1.json",
+        "mixed-bf16-t-uninterrupted-quality-serving-span-a1.json",
+        "mixed-fp8-u-uninterrupted-quality-serving-span-a1.json",
+        "mixed-nvfp4-v-uninterrupted-quality-serving-span-a1.json"
+      ],
+      "verification_boundary": "Originalboundedspans plusnewT/U/Vsinglecomplete1073/1104/1791sec; allfailuresretained inclW. No longsoakclaim."
+    },
+    {
+      "requirement": "counter_semantics_and_instrumentation_limits",
+      "status": "confirmed",
+      "evidence_relative_to_this_directory": [
+        "native-API-cached-counter-semantics-correction-a1.json",
+        "prefix-P-application-counter-display-precision-a1.json"
+      ],
+      "verification_boundary": "cached_tokens notcrossrequesthit; scientificdisplaydiff4 andpartial/missingobservations explicit, CPUreaderoverheadunquantified."
+    },
+    {
+      "requirement": "candidate_pilot_before_formal",
+      "status": "confirmed",
+      "evidence_relative_to_this_directory": [
+        "mixed-bf16-s-independent-residency-pilot-a1.json",
+        "mixed-bf16-s-independent-calibration-a1.json"
+      ],
+      "verification_boundary": "One8192/2048 candidate verified real136 andsame-sampleoverlap; actualCXXresolved flagsverified."
+    },
+    {
+      "requirement": "fresh_profile_full1720_all3",
+      "status": "confirmed",
+      "evidence_relative_to_this_directory": [
+        "../../experiments/nextgen-mixed-prefill-20261030/bf16-t-v1/summary.json",
+        "../../experiments/nextgen-mixed-prefill-20261030/fp8-u-v1/summary.json",
+        "../../experiments/nextgen-mixed-prefill-20261030/nvfp4-v-v1/summary.json",
+        "../../../results/archive/nextgen-native-kv-20261030/mixed-quality-a1/ARCHIVE_ACCEPTANCE.json"
+      ],
+      "verification_boundary": "All3singleoriginalCOMPLETE/released/SETTLED, all5160raw/qualityscored; newTmatchedbaseline and paired CIs; not automatic quality acceptance."
+    },
+    {
+      "requirement": "fresh_profile_formal_pressure_all3",
+      "status": "active_WC_original_XC_YC_pending",
+      "evidence_relative_to_this_directory": [
+        "mixed-bf16-w-independent-failure-audit-a1.json",
+        "session-stop-full-CLI-independent-CPU-proof-a1.json",
+        "SESSION_PROTOCOL_REPAIR_NOTES.md",
+        "../../../state/STATE.json"
+      ],
+      "verification_boundary": "W FAILED invalid27unique/32 preserved; CPU negativecontrol reproduced and fixed194 fullCLI; WCoriginalACK/RUNNING typedrepair; XC/YC frozen only."
+    },
+    {
+      "requirement": "fresh_profile_same_tools_all3",
+      "status": "pending",
+      "evidence_relative_to_this_directory": [
+        "../../../plans/MIXED_PREFILL_PILOT_20261030.md"
+      ],
+      "verification_boundary": "ZC/ZA/ZB same32source112turns CPU frozen only; allnewqualityprereqs now met. No actual new-profile model tools or scores yet."
+    },
+    {
+      "requirement": "maintainable_optin_source_and_capability_matrix",
+      "status": "confirmed_pinned_base_only",
+      "evidence_relative_to_this_directory": [
+        "../../mainline/nextgen-native-kv-20261030/SOURCE_PROVENANCE.json"
+      ],
+      "verification_boundary": "Typedformats/scales/layout/capabilityguards,40filepatch+bundleverified; no official PR/push/currentupstreamCI claim."
+    },
+    {
+      "requirement": "CPU_and_GPU_evidence_separate",
+      "status": "confirmed",
+      "evidence_relative_to_this_directory": [
+        "session-recovery-final-full-CPU-d1.json",
+        "session-stop-full-CLI-independent-CPU-proof-a1.json"
+      ],
+      "verification_boundary": "442CPUfull+194actualCPUwire/session/negativecontrol are not physical GPU performance; actualmodel/source86+checkpoint1 andoriginalH800 evidence remain separate."
+    },
+    {
+      "requirement": "all_required_plots_generated_and_checked",
+      "status": "partly_confirmed_new_phase_pending",
+      "evidence_relative_to_this_directory": [
+        "../../experiments/nextgen-service-20261030/figures-original-nine-v5",
+        "../../experiments/nextgen-quality-20261030/summary-figure-v1",
+        "../../experiments/nextgen-mixed-prefill-20261030/pilot-figure-v2",
+        "../../experiments/nextgen-mixed-prefill-20261030/quality-figure-v2"
+      ],
+      "verification_boundary": "Originalquality/service/pilot/newTUVquality figures generatedandviewed; newvalidpressure/tools figures pending."
+    },
+    {
+      "requirement": "local_evidence_archive_SHA",
+      "status": "partly_confirmed_new_phase_pending",
+      "evidence_relative_to_this_directory": [
+        "../../../results/archive/nextgen-native-kv-20261030"
+      ],
+      "verification_boundary": "Originalquality/service/tools/pilot plusnewTUVquality andWfailed/sessionrepair allmembersSHAverified; newpressure/tools/finalcatalog/controllerbundle pending."
+    },
+    {
+      "requirement": "ongoing_safety_once_dispatch_and_monitor",
+      "status": "active",
+      "evidence_relative_to_this_directory": [
+        "../../../state/STATE.json",
+        "../../../state/EVENTS.jsonl"
+      ],
+      "verification_boundary": "OwnidleGPU7 onceguard/immutabletickets/budget/sharedresources; mainactive,Luna300sreadonlyuntil2026-10-31T01Z. Unknown/failed attempts neverrelaunched."
+    },
+    {
+      "requirement": "final_resource_ledger_and_monitor_closeout",
+      "status": "pending",
+      "evidence_relative_to_this_directory": [
+        "../../../state/STATE.json"
+      ],
+      "verification_boundary": "WCactive; finalallSETTLED/currentreserved0/noUNKNOWN/liveCIDabsence/GPUreleased/freshreadonly/monitorstopreceipt pending."
+    },
+    {
+      "requirement": "concentrated_report_handoff_final_scope_audit",
+      "status": "active",
+      "evidence_relative_to_this_directory": [
+        "RECOVERY_REPORT.md",
+        "NEXT_SESSION_PROMPT.md",
+        "../../synthesis/NEXTGEN_NATIVE_KV_20261030.md"
+      ],
+      "verification_boundary": "Recoveryreport/handoff delivered; finalnewprofiledecision andfullobjectivecompletionaudit pending. No premature complete."
+    }
+  ]
+}

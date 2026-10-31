@@ -1,0 +1,16 @@
+{
+  "schema": "kv-agent-approval-v1",
+  "enabled": false,
+  "ssh_target": null,
+  "approved_host_fingerprint": null,
+  "approved_workspace": null,
+  "allow_remote_user_workspace_writes": false,
+  "allow_gpu_jobs": false,
+  "allowed_gpu_uuids": [],
+  "max_concurrent_gpus": 0,
+  "max_gpu_hours_per_job": 0,
+  "max_gpu_hours_total": 0,
+  "max_disk_gib_new_outputs": 0,
+  "valid_until_utc": null,
+  "notes": "由用户填写并签署/确认；Agent 不能自行扩大范围；空值意味着不授权"
+}

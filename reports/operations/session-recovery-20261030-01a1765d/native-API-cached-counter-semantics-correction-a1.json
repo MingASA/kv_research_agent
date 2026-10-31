@@ -1,0 +1,29 @@
+{
+  "utc": "2026-10-30T18:47:38.244892+00:00",
+  "classification": "confirmed_API_counter_differs_from_initial_admission_prefix_hit_counter",
+  "API_prefix_O": {
+    "cached_input_fraction": 0.9292344065233605,
+    "cached_tokens": 1224704,
+    "prompt_tokens": 1317971,
+    "requests": 32,
+    "requests_with_nonzero_cached_tokens": 32
+  },
+  "API_unique_F": {
+    "cached_input_fraction": 0.9292055004051556,
+    "cached_tokens": 612352,
+    "prompt_tokens": 659006,
+    "requests": 16,
+    "requests_with_nonzero_cached_tokens": 16
+  },
+  "original_unique_F_application_counter_delta": {
+    "prefix_cache_hit_tokens_total": 0.0,
+    "prefix_cache_prompt_tokens_total": 659006.0
+  },
+  "restriction": "API cached_tokens must not be used as proof of cross-request prefix reuse; full cohort unique F reports93percent API cached but application admission prefix hits0. Source investigation confirms perchunk rematch can observe own published prefixes. Original a1 raw counts preserved; interpretation superseded.",
+  "not_claimed": [
+    "measured HBM traffic",
+    "max capacity",
+    "API cache hit equals independently reused work"
+  ],
+  "new_GPU_rerun_for_this_correction": false
+}

@@ -1,0 +1,20 @@
+{
+  "CXX_tests_passed": {
+    "cuda_kv_cache_admission_test": 8,
+    "kv_cache_estimation_test": 26,
+    "kv_cache_test": 2
+  },
+  "GPU_requested": false,
+  "accepted_verification": "verify-v2/verification.json",
+  "binary": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/builds/nextgen-native-kv-862c29ca-20261027g/artifacts/xllm",
+  "binary_bytes": 568639344,
+  "binary_sha256": "dbc1c53a6d711ad883d2227c55429c1977347acd9e1bfa50b1fb479a0cc25f09",
+  "documented_seccomp_profile": true,
+  "ldd_no_missing_libraries": true,
+  "original_F_failure_and_G_first_verification_preserved": true,
+  "source_commit": "862c29cade05e47691147b8f50c979a812495470",
+  "source_repo": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/builds/nextgen-native-kv-862c29ca-20261027f/source_repo",
+  "state": "BINARY_CPU_VERIFIED_FROZEN_NOT_MODEL_OR_GPU_VALIDATED",
+  "typed_KV_flags_in_actual_binary_help": true,
+  "verification_container_id": "fa0132404c6a3fe7850c16c2c0d34d91eb694da50dce84cf9dbacbba50b2cd5d"
+}

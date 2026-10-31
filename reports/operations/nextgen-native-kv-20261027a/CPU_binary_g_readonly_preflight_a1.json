@@ -1,0 +1,1 @@
+{"CXX_tests_passed":{"cuda_kv_cache_admission_test":8,"kv_cache_estimation_test":26,"kv_cache_test":2},"binary_sha256":"dbc1c53a6d711ad883d2227c55429c1977347acd9e1bfa50b1fb479a0cc25f09","can_finalize":true,"new_GPU":false,"ok":true,"read_only":true,"remote_writes":false}

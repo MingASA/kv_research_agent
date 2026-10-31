@@ -1,0 +1,81 @@
+{
+  "automatic_queue": {
+    "current_run_id": "nextgen-fp8-qwen38-quality-core1720-r2-20261028o",
+    "cursor": 0,
+    "directory": "/home/mingasa/kv-research-agent/state/queues/nextgen-core-sequential-20261028b",
+    "not_after_utc": "2026-10-29T08:57:14.407599+00:00",
+    "status": "HALTED_EXPERIMENT_FAILURE_OR_UNKNOWN",
+    "updated_utc": "2026-10-28T14:22:34.920193+00:00"
+  },
+  "observed_utc": "2026-10-28T16:14:34.633068+00:00",
+  "queue": {
+    "current_run_id": "nextgen-fp8-qwen38-quality-core1720-r2-20261028o",
+    "runner_alive_identity_match": false,
+    "runner_expected": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-u",
+        "-m",
+        "scripts.guarded_native_queue",
+        "--queue",
+        "/home/mingasa/kv-research-agent/plans/queues/nextgen-core-sequential-20261028b/manifest.json",
+        "--directory",
+        "/home/mingasa/kv-research-agent/state/queues/nextgen-core-sequential-20261028b"
+      ],
+      "boot_id": "2afb7771-92c9-41af-a06d-1632040687f5",
+      "pid": 236082,
+      "process_state": "R",
+      "start_ticks": 53016705,
+      "uid": 1000
+    },
+    "runner_observed": null,
+    "status": "HALTED_EXPERIMENT_FAILURE_OR_UNKNOWN",
+    "updated_utc": "2026-10-28T14:22:34.920193+00:00"
+  },
+  "remote": {
+    "complete_file_present": true,
+    "gpu_compute_apps": [
+      {
+        "comm": "VLLM::EngineCor",
+        "gpu_uuid": "GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7",
+        "pid": 1972769,
+        "process_name": "VLLM::EngineCore",
+        "uid": 0,
+        "used_memory": "69990"
+      }
+    ],
+    "gpu_release_verified": true,
+    "gpu_snapshot": "0, GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 0, 0\n1, GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 70001, 0\n2, GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 0, 0\n3, GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 0, 0\n4, GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 0, 0\n5, GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 0, 0\n6, GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 0, 0\n7, GPU-47211491-ba0d-78bf-5c84-f968c0648213, 0, 0",
+    "live_owned_containers": [],
+    "quality_progress": {
+      "accuracy_scored": false,
+      "active_client_requests": 0,
+      "capped_responses": 82,
+      "contract_failures": 0,
+      "durable_responses": 1720,
+      "empty_stop_outputs": 7,
+      "submitted": 1720
+    },
+    "result_status": "COMPLETE",
+    "state_status": "COMPLETE",
+    "status": "COMPLETE",
+    "supervisor_alive": false,
+    "validation": {
+      "actual_model_Graph_replay_logged": true,
+      "known_answers_checked": 20,
+      "model_loaded": true,
+      "model_quality_validated": false,
+      "official_aiperf_complete": false,
+      "service_performance_measured": false
+    }
+  },
+  "root_active_run_id": "nextgen-nvfp4-qwen38-quality-core1720-r0-20261028p",
+  "root_active_run_ids": [
+    "nextgen-nvfp4-qwen38-quality-core1720-r0-20261028p"
+  ],
+  "rpc": "one PinnedSSH operation=status; per-attempt timeout=45s; mutation=False",
+  "schema": "luna-live-watch-receipt-v1",
+  "sequence": 19,
+  "ticket_run_id": "nextgen-nvfp4-qwen38-quality-core1720-r0-20261028p"
+}

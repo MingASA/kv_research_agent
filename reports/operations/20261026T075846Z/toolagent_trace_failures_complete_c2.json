@@ -1,0 +1,46 @@
+{
+  "classification": "confirmed_descriptive_trace_failure_analysis",
+  "run_id": "prod-trace-xqa-toolagent-s1-r2-20261027c",
+  "independent_audit_sha256": "4c7c44217dccec39425460d9c047336d48e833e3320ebe2f126b2cc4a9d417b3",
+  "script_sha256": "861d2f9a831fc1f3cee70655b59ce1d18bd304f3fc9422f9484ef961cf52c754",
+  "arms": {
+    "bf16": {
+      "all_failed_attempts": 1524,
+      "classifications": {
+        "HTTP200_plain_text_admission_limit_notice": 1524
+      },
+      "logical_phases": {
+        "warm_cache": {
+          "HTTP200_plain_text_admission_limit_notice": 106
+        },
+        "measurement": {
+          "HTTP200_plain_text_admission_limit_notice": 1418
+        }
+      },
+      "raw_export_sha256": "10dbe5da13ca1445c6ca9799b371a846580136faf0b0fe3543dd0b2e3f1a0689"
+    },
+    "fp8_e4m3": {
+      "all_failed_attempts": 1236,
+      "classifications": {
+        "HTTP200_plain_text_admission_limit_notice": 1236
+      },
+      "logical_phases": {
+        "warm_cache": {
+          "HTTP200_plain_text_admission_limit_notice": 75
+        },
+        "measurement": {
+          "HTTP200_plain_text_admission_limit_notice": 1161
+        }
+      },
+      "raw_export_sha256": "b8c8b8ea7b961ddfe700ecda7ec02794b02cb1033ab183c186c8e960ab069c71"
+    }
+  },
+  "measurement_success_pairing": {
+    "both_success": 219,
+    "BF16_only": 52,
+    "FP8_only": 309
+  },
+  "interpretation": "HTTP200 does not establish success; admission-limit notices here are plain text parsed as packet names, not JSON SSE error objects. Success-conditional latency compares different completed subsets.",
+  "GPU_used": false,
+  "raw_or_official_measurements_modified": false
+}

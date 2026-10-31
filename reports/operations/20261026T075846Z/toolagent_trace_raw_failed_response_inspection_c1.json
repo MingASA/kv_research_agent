@@ -1,0 +1,190 @@
+{
+  "bf16": {
+    "counts": {
+      "failed": 1524,
+      "has_responses": 1524
+    },
+    "failed_examples": [
+      {
+        "session_id": "toolagent-source-13705",
+        "target_OSL": 211,
+        "error": {
+          "metric": {
+            "cause_chain": [
+              "InvalidInferenceResultError"
+            ],
+            "message": "InvalidInferenceResultError('Invalid inference result: No responses with actual content were received from the server (only usage/metadata, null/empty data, or [DONE] markers)')",
+            "type": "InvalidInferenceResultError"
+          },
+          "sse_error": false,
+          "wire": {
+            "cause_chain": [
+              "InvalidInferenceResultError"
+            ],
+            "message": "InvalidInferenceResultError('Invalid inference result: No responses with actual content were received from the server (only usage/metadata, null/empty data, or [DONE] markers)')",
+            "type": "InvalidInferenceResultError"
+          }
+        },
+        "wire_error": {
+          "type": "InvalidInferenceResultError",
+          "message": "InvalidInferenceResultError('Invalid inference result: No responses with actual content were received from the server (only usage/metadata, null/empty data, or [DONE] markers)')",
+          "cause_chain": [
+            "InvalidInferenceResultError"
+          ]
+        },
+        "response_excerpt": "[{\"perf_ns\": 3667472562475359, \"packets\": [{\"name\": \"The number of concurrent requests has reached the limit.\", \"value\": null}]}]",
+        "raw_keys": [
+          "metadata",
+          "start_perf_ns",
+          "request_headers",
+          "status",
+          "responses",
+          "error",
+          "payload"
+        ],
+        "metric_latency": {
+          "client_start_lag_ms": 4.999948,
+          "credit_issue_lag_ms": 1.143998,
+          "credit_to_start_ms": 3.85595
+        }
+      },
+      {
+        "session_id": "toolagent-source-13706",
+        "target_OSL": 85,
+        "error": {
+          "metric": {
+            "cause_chain": [
+              "InvalidInferenceResultError"
+            ],
+            "message": "InvalidInferenceResultError('Invalid inference result: No responses with actual content were received from the server (only usage/metadata, null/empty data, or [DONE] markers)')",
+            "type": "InvalidInferenceResultError"
+          },
+          "sse_error": false,
+          "wire": {
+            "cause_chain": [
+              "InvalidInferenceResultError"
+            ],
+            "message": "InvalidInferenceResultError('Invalid inference result: No responses with actual content were received from the server (only usage/metadata, null/empty data, or [DONE] markers)')",
+            "type": "InvalidInferenceResultError"
+          }
+        },
+        "wire_error": {
+          "type": "InvalidInferenceResultError",
+          "message": "InvalidInferenceResultError('Invalid inference result: No responses with actual content were received from the server (only usage/metadata, null/empty data, or [DONE] markers)')",
+          "cause_chain": [
+            "InvalidInferenceResultError"
+          ]
+        },
+        "response_excerpt": "[{\"perf_ns\": 3667472562797693, \"packets\": [{\"name\": \"The number of concurrent requests has reached the limit.\", \"value\": null}]}]",
+        "raw_keys": [
+          "metadata",
+          "start_perf_ns",
+          "request_headers",
+          "status",
+          "responses",
+          "error",
+          "payload"
+        ],
+        "metric_latency": {
+          "client_start_lag_ms": 5.316788,
+          "credit_issue_lag_ms": 1.174805,
+          "credit_to_start_ms": 4.141983
+        }
+      }
+    ]
+  },
+  "fp8_e4m3": {
+    "counts": {
+      "failed": 1236,
+      "has_responses": 1236
+    },
+    "failed_examples": [
+      {
+        "session_id": "toolagent-source-13737",
+        "target_OSL": 3,
+        "error": {
+          "metric": {
+            "cause_chain": [
+              "InvalidInferenceResultError"
+            ],
+            "message": "InvalidInferenceResultError('Invalid inference result: No responses with actual content were received from the server (only usage/metadata, null/empty data, or [DONE] markers)')",
+            "type": "InvalidInferenceResultError"
+          },
+          "sse_error": false,
+          "wire": {
+            "cause_chain": [
+              "InvalidInferenceResultError"
+            ],
+            "message": "InvalidInferenceResultError('Invalid inference result: No responses with actual content were received from the server (only usage/metadata, null/empty data, or [DONE] markers)')",
+            "type": "InvalidInferenceResultError"
+          }
+        },
+        "wire_error": {
+          "type": "InvalidInferenceResultError",
+          "message": "InvalidInferenceResultError('Invalid inference result: No responses with actual content were received from the server (only usage/metadata, null/empty data, or [DONE] markers)')",
+          "cause_chain": [
+            "InvalidInferenceResultError"
+          ]
+        },
+        "response_excerpt": "[{\"perf_ns\": 3668371040777650, \"packets\": [{\"name\": \"The number of concurrent requests has reached the limit.\", \"value\": null}]}]",
+        "raw_keys": [
+          "metadata",
+          "start_perf_ns",
+          "request_headers",
+          "status",
+          "responses",
+          "error",
+          "payload"
+        ],
+        "metric_latency": {
+          "client_start_lag_ms": 0.397963,
+          "credit_issue_lag_ms": -0.836972,
+          "credit_to_start_ms": 1.234935
+        }
+      },
+      {
+        "session_id": "toolagent-source-13738",
+        "target_OSL": 32,
+        "error": {
+          "metric": {
+            "cause_chain": [
+              "InvalidInferenceResultError"
+            ],
+            "message": "InvalidInferenceResultError('Invalid inference result: No responses with actual content were received from the server (only usage/metadata, null/empty data, or [DONE] markers)')",
+            "type": "InvalidInferenceResultError"
+          },
+          "sse_error": false,
+          "wire": {
+            "cause_chain": [
+              "InvalidInferenceResultError"
+            ],
+            "message": "InvalidInferenceResultError('Invalid inference result: No responses with actual content were received from the server (only usage/metadata, null/empty data, or [DONE] markers)')",
+            "type": "InvalidInferenceResultError"
+          }
+        },
+        "wire_error": {
+          "type": "InvalidInferenceResultError",
+          "message": "InvalidInferenceResultError('Invalid inference result: No responses with actual content were received from the server (only usage/metadata, null/empty data, or [DONE] markers)')",
+          "cause_chain": [
+            "InvalidInferenceResultError"
+          ]
+        },
+        "response_excerpt": "[{\"perf_ns\": 3668371041173932, \"packets\": [{\"name\": \"The number of concurrent requests has reached the limit.\", \"value\": null}]}]",
+        "raw_keys": [
+          "metadata",
+          "start_perf_ns",
+          "request_headers",
+          "status",
+          "responses",
+          "error",
+          "payload"
+        ],
+        "metric_latency": {
+          "client_start_lag_ms": 0.946526,
+          "credit_issue_lag_ms": -0.796162,
+          "credit_to_start_ms": 1.742688
+        }
+      }
+    ]
+  }
+}

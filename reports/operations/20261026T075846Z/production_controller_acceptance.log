@@ -1,0 +1,18 @@
+======================================================================
+ERROR: test_natural_one_token_answer_is_valid_and_has_no_invented_itl (test_production_serving.ProductionRawAuditTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/mingasa/kv-research-agent/tests/test_production_serving.py", line 79, in test_natural_one_token_answer_is_valid_and_has_no_invented_itl
+    result = self.run_audit()
+  File "/home/mingasa/kv-research-agent/tests/test_production_serving.py", line 76, in run_audit
+    return audit_requests(self.artifacts, self.source, 2, 1)
+  File "/home/mingasa/kv-research-agent/scripts/controller/production.py", line 138, in audit_requests
+    result.update(evidence.telemetry_output(artifacts.parent / "gpu_telemetry.csv", rows))
+  File "/home/mingasa/kv-research-agent/scripts/audit_native_results.py", line 209, in telemetry_output
+    timestamp = datetime.datetime.fromisoformat(row["utc"])
+ValueError: Invalid isoformat string: '2026-10-26T00:00:00.15+00:00'
+
+----------------------------------------------------------------------
+Ran 90 tests in 2.359s
+
+FAILED (errors=1)

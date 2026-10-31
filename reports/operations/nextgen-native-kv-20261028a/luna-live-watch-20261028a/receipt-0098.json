@@ -1,0 +1,145 @@
+{
+  "dispatcher_alive_identity_match": true,
+  "dispatcher_expected": {
+    "boot_id": "2afb7771-92c9-41af-a06d-1632040687f5",
+    "pid": 263331,
+    "process_state": "R",
+    "start_ticks": 56667445,
+    "uid": 1000
+  },
+  "dispatcher_observed": {
+    "pid": 263331,
+    "start_ticks": 56667445,
+    "state": "S",
+    "uid": 1000
+  },
+  "dispatcher_state": {
+    "latest_snapshot": "/home/mingasa/kv-research-agent/state/queues/nextgen-ab-idle-admission-20261028a/GPU-S0-000004.json",
+    "manifest": "/home/mingasa/kv-research-agent/plans/queues/nextgen-ab-idle-admission-20261028a/manifest.json",
+    "reason": "FOREIGN_ROOT_VLLM_ALLOCATION_STILL_PRESENT",
+    "run_id": "nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab",
+    "sample_index": 4,
+    "status": "WAIT_FOREIGN_GPU_OR_RESERVATION",
+    "updated_utc": "2026-10-28T23:17:59.917350+00:00"
+  },
+  "dispatcher_state_dir": "/home/mingasa/kv-research-agent/state/queues/nextgen-ab-idle-admission-20261028a",
+  "last_events": [
+    {
+      "status": "READONLY_WAIT_NO_GPU_RESERVATION",
+      "utc": "2026-10-28T23:02:43.539423+00:00"
+    },
+    {
+      "status": "WAIT_FOREIGN_GPU_OR_RESERVATION",
+      "utc": "2026-10-28T23:02:59.819960+00:00"
+    },
+    {
+      "status": "WAIT_FOREIGN_GPU_OR_RESERVATION",
+      "utc": "2026-10-28T23:07:59.962070+00:00"
+    },
+    {
+      "status": "WAIT_FOREIGN_GPU_OR_RESERVATION",
+      "utc": "2026-10-28T23:12:59.823493+00:00"
+    },
+    {
+      "status": "WAIT_FOREIGN_GPU_OR_RESERVATION",
+      "utc": "2026-10-28T23:17:59.917350+00:00"
+    }
+  ],
+  "latest_S0": {
+    "apps": [
+      {
+        "comm": "VLLM::Worker_DP",
+        "gpu_uuid": "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a",
+        "pid": 2970108,
+        "uid": 0
+      },
+      {
+        "comm": "VLLM::EngineCor",
+        "gpu_uuid": "GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7",
+        "pid": 1972769,
+        "uid": 0
+      },
+      {
+        "comm": "VLLM::Worker_DP",
+        "gpu_uuid": "GPU-a6169058-34c8-6edc-e4f5-779bf9a10421",
+        "pid": 2970114,
+        "uid": 0
+      },
+      {
+        "comm": "VLLM::Worker_DP",
+        "gpu_uuid": "GPU-0cb28538-7e9f-1b66-750f-1b53ff309195",
+        "pid": 2970111,
+        "uid": 0
+      },
+      {
+        "comm": "VLLM::Worker_DP",
+        "gpu_uuid": "GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1",
+        "pid": 2970113,
+        "uid": 0
+      },
+      {
+        "comm": "VLLM::Worker_DP",
+        "gpu_uuid": "GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348",
+        "pid": 2970110,
+        "uid": 0
+      },
+      {
+        "comm": "VLLM::Worker_DP",
+        "gpu_uuid": "GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7",
+        "pid": 2970112,
+        "uid": 0
+      },
+      {
+        "comm": "VLLM::Worker_DP",
+        "gpu_uuid": "GPU-47211491-ba0d-78bf-5c84-f968c0648213",
+        "pid": 2970109,
+        "uid": 0
+      }
+    ],
+    "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+    "gpus": {
+      "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a": {
+        "memory_mib": 71409,
+        "util_pct": 0
+      },
+      "GPU-0cb28538-7e9f-1b66-750f-1b53ff309195": {
+        "memory_mib": 71207,
+        "util_pct": 0
+      },
+      "GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1": {
+        "memory_mib": 71165,
+        "util_pct": 0
+      },
+      "GPU-47211491-ba0d-78bf-5c84-f968c0648213": {
+        "memory_mib": 71259,
+        "util_pct": 0
+      },
+      "GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7": {
+        "memory_mib": 70001,
+        "util_pct": 0
+      },
+      "GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348": {
+        "memory_mib": 72093,
+        "util_pct": 0
+      },
+      "GPU-a6169058-34c8-6edc-e4f5-779bf9a10421": {
+        "memory_mib": 71289,
+        "util_pct": 0
+      },
+      "GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7": {
+        "memory_mib": 71255,
+        "util_pct": 0
+      }
+    },
+    "ok": true,
+    "remote_writes": false
+  },
+  "latest_S0_age_seconds": 92.185953,
+  "latest_S0_file_mtime_utc": "2026-10-28T23:17:59.909184+00:00",
+  "latest_S0_path": "/home/mingasa/kv-research-agent/state/queues/nextgen-ab-idle-admission-20261028a/GPU-S0-000004.json",
+  "observed_utc": "2026-10-28T23:19:32.095212+00:00",
+  "remote_status": "skipped for fresh S0 and WAIT state",
+  "root_active_run_ids": [],
+  "schema": "luna-live-watch-receipt-v1",
+  "sequence": 98
+}

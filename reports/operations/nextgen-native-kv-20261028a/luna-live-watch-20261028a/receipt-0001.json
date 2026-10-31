@@ -1,0 +1,110 @@
+{
+  "notes": [
+    "Remote GPU app PID/UID/comm not separately queried because ticket has no GPU_SOURCE.",
+    "RPC was scripts/controller/remote_rpc.py operation=status via PinnedSSH, mutation=False."
+  ],
+  "observed_utc": "2026-10-28T14:40:27.953743+00:00",
+  "queue": {
+    "current_run_id": "nextgen-fp8-qwen38-quality-core1720-r2-20261028o",
+    "cursor": 0,
+    "directory": "None",
+    "not_after_utc": "2026-10-29T08:57:14.407599+00:00",
+    "runner_alive_identity_match": false,
+    "runner_expected": {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-u",
+        "-m",
+        "scripts.guarded_native_queue",
+        "--queue",
+        "/home/mingasa/kv-research-agent/plans/queues/nextgen-core-sequential-20261028b/manifest.json",
+        "--directory",
+        "/home/mingasa/kv-research-agent/state/queues/nextgen-core-sequential-20261028b"
+      ],
+      "boot_id": "2afb7771-92c9-41af-a06d-1632040687f5",
+      "pid": 236082,
+      "process_state": "R",
+      "start_ticks": 53016705,
+      "uid": 1000
+    },
+    "runner_observed": null,
+    "status": "HALTED_EXPERIMENT_FAILURE_OR_UNKNOWN",
+    "updated_utc": "2026-10-28T14:22:34.920193+00:00"
+  },
+  "remote": {
+    "files": {
+      "START_INTENT.json": {
+        "keys": [],
+        "sha256": "5107e48e208a42af0956317176874e296263b33a88c0eb2c8239c0074a7f7145",
+        "status": null
+      },
+      "SUPERVISOR_PROCESS.json": {
+        "keys": [],
+        "sha256": "cdd123bf942b27e50410179f198dc78a10fd27bc4fc5ae6abbc6e516028012f5",
+        "status": null
+      },
+      "SUPERVISOR_STARTED.json": {
+        "keys": [],
+        "sha256": "ade13a7d155e98664845ba2479e18b6442f511d7739a12c2548a2d19b8e32036",
+        "status": null
+      },
+      "owned_containers.json": {
+        "keys": [],
+        "sha256": "f0601b8d7a2d6e5d191a10e07a11d6d9c87ee93f888256ca8da13bfbf38b2bb7",
+        "status": null
+      },
+      "result.json": {
+        "keys": [
+          "allocation_ended_monotonic_ns",
+          "allocation_intervals_ns",
+          "allocation_started_monotonic_ns",
+          "arm_results",
+          "error",
+          "gpu_release_verified",
+          "live_owned_containers",
+          "new_output_bytes",
+          "request_sha256",
+          "reservation_id",
+          "run_id",
+          "status"
+        ],
+        "sha256": "179817b6147be0280a9cff032b4e6ac15f248065e868cae4362fc9c1d32a7977",
+        "status": "UNKNOWN"
+      },
+      "state.json": {
+        "keys": [
+          "allocation_ended_monotonic_ns",
+          "allocation_intervals_ns",
+          "allocation_started_monotonic_ns",
+          "arm_results",
+          "error",
+          "gpu_release_verified",
+          "live_owned_containers",
+          "new_output_bytes",
+          "request_sha256",
+          "reservation_id",
+          "run_id",
+          "status"
+        ],
+        "sha256": "179817b6147be0280a9cff032b4e6ac15f248065e868cae4362fc9c1d32a7977",
+        "status": "UNKNOWN"
+      }
+    },
+    "gpu_snapshot": "0, GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 0, 0\n1, GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 0, 0\n2, GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 0, 0\n3, GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 0, 0\n4, GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 0, 0\n5, GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 0, 0\n6, GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 0, 0\n7, GPU-47211491-ba0d-78bf-5c84-f968c0648213, 0, 0",
+    "live_owned_containers": [],
+    "log_marker_hits": {
+      "events.jsonl": [
+        "CONFLICT"
+      ]
+    },
+    "remote_status": "UNKNOWN",
+    "run_id": "nextgen-fp8-qwen38-quality-core1720-r2-20261028o",
+    "supervisor_alive": false
+  },
+  "remote_ticket_check": "passed check_ticket(ticket, mutation=False); existing(root,ticket) was checked by status RPC",
+  "schema": "luna-live-watch-receipt-v1",
+  "sequence": 1,
+  "ticket_path": "/home/mingasa/kv-research-agent/state/controller/tickets/nextgen-fp8-qwen38-quality-core1720-r2-20261028o.json",
+  "ticket_run_id": "nextgen-fp8-qwen38-quality-core1720-r2-20261028o"
+}

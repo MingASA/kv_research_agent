@@ -1,0 +1,16 @@
+test_256mib_profile_requires_exact_sealed_raw_and_preserves_old_default_bound (test_mirror_readonly.MirrorArchiveTests) ... ok
+test_accepts_hash_verified_regular_files (test_mirror_readonly.MirrorArchiveTests) ... ok
+test_large_real_raw_exports_require_an_explicit_bounded_opt_in (test_mirror_readonly.MirrorArchiveTests) ... ok
+test_rejects_hash_mismatch_before_creating_destination (test_mirror_readonly.MirrorArchiveTests) ... ok
+test_rejects_symlink_members (test_mirror_readonly.MirrorArchiveTests) ... ok
+test_rejects_traversal_before_creating_destination (test_mirror_readonly.MirrorArchiveTests) ... ok
+test_remote_collector_streams_without_filesystem_output (test_mirror_readonly.MirrorArchiveTests) ... ok
+test_timeout_retains_partial_and_writes_failure_journal_without_extracting (test_mirror_readonly.MirrorArchiveTests) ... ok
+test_xz_expansion_and_decoder_memory_limits_are_enforced_before_extraction (test_mirror_readonly.MirrorArchiveTests) ... ok
+test_xz_readonly_stream_and_bounded_local_extraction_preserve_hashes (test_mirror_readonly.MirrorArchiveTests) ... ok
+test_xz_truncation_trailing_bytes_and_concatenation_never_extract (test_mirror_readonly.MirrorArchiveTests) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 4.177s
+
+OK

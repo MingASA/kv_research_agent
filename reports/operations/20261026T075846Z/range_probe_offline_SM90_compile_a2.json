@@ -1,0 +1,14 @@
+{
+  "classification": "CPU_offline_SM90_codegen_only_not_H800_runtime",
+  "triton_version": "3.7.1",
+  "GPU_used": false,
+  "kernel": "_reduce_kv",
+  "function_source_sha256": "5b6284f46bfebd48a18316e456ee3a43a2c19887b08912c2c4bbe2d47a497eff",
+  "ptx_sha256": "ed7cbbe9197c4bbc9ebda627e6f8992f185e3f5a7e7b325af4a3109d835f0c9a",
+  "cubin_sha256": "9871d46856aa46db10ae4fa74a93431c8327b2340eebfee4bc230dfdb1effdb6",
+  "source_sha256": {
+    "xllm/python/attention/kv_range_probe.py": "fb3f9d21c1ce075ba7a83050d5463456a02cd27412531ab5fbe5afe1048d78a2",
+    "xllm/python/attention/flashinfer.py": "214fb4c1618d1c71676b98ac3b9c7ee395ecd6a66ed438f497d380385d90d087",
+    "tools/check_kv_range_probe.py": "6aae575ca2f795dad7a79c465b65ca6bf246e496412616d95998d271d164c2a6"
+  }
+}

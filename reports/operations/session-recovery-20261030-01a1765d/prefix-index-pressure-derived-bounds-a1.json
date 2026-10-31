@@ -1,0 +1,50 @@
+{
+  "schema": "nextgen-prefix-index-pressure-bounds-v1",
+  "utc": "2026-10-30T19:03:54.881888+00:00",
+  "classification": "source_based_inference_from_actual_sampled_gauges_and_GPU_allocation",
+  "source_commit": "03134b72ec904254890300a647c939095f7900e2",
+  "source_sha256": {
+    "xllm/core/framework/block/composite_block_manager.cpp": "047c11338635f3c491e75cbdc30a912d4bc8061136307c0571f0d136c4658e59",
+    "xllm/core/framework/block/linear_state_block_manager.cpp": "45f7ebca96aeeceb78f44441f65b7cf0dfcdcd1134a8e25cb00a7a5e77f4b3cb",
+    "xllm/core/framework/prefix_cache/prefix_cache.h": "e51bcf2cc0d39e73f5867f30bebbd3497e9f84e99263b862f265ced86455c2ee"
+  },
+  "derivation": "Qwen flat hybrid has KV and LINEAR leaves; composite prefix gauge sums both. LINEAR cached entries cannot exceed allocated state rows. Thus FullKV index entries >= composite entries minus allocated GDN rows. This conservative bound does not divide the composite gauge directly by FullKV pages.",
+  "rows": [
+    {
+      "run_id": "nextgen-bf16-qwen38-long16-c8-r0-20261030f",
+      "arm": "bf16",
+      "FullKV_physical_pages": 3868,
+      "page_tokens": 64,
+      "observed_composite_prefix_index_entries_max": 3898.0,
+      "allocated_GDN_state_rows_upper_bound": 34,
+      "FullKV_prefix_index_entries_inferred_lower_bound_at_that_observation": 3864.0,
+      "inferred_entries_to_pool_pages_ratio_lower_bound": 0.9989658738366081,
+      "max_sampled_active_FullKV_pages": 1024.0,
+      "not_simultaneous_active_pool_exhaustion": true,
+      "performance_audit_sha256": "3c6e9f48971c02ca17da28550ac4d7b8305a561907bf613062e28c84af020fad",
+      "application_audit_sha256": "604ddd1d8a42146b2528f50ea4c2dd153dc9c06f7f9449a1dcb06557be8064a9"
+    },
+    {
+      "run_id": "nextgen-fp8fa2-qwen38-long16-c8-r0-20261030h",
+      "arm": "fp8_e4m3",
+      "FullKV_physical_pages": 7618,
+      "page_tokens": 64,
+      "observed_composite_prefix_index_entries_max": 7648.0,
+      "allocated_GDN_state_rows_upper_bound": 34,
+      "FullKV_prefix_index_entries_inferred_lower_bound_at_that_observation": 7614.0,
+      "inferred_entries_to_pool_pages_ratio_lower_bound": 0.9994749278025729,
+      "max_sampled_active_FullKV_pages": 1032.0,
+      "not_simultaneous_active_pool_exhaustion": true,
+      "performance_audit_sha256": "925051e6b24ce88c146d5a2cd81a4f2330de70dc1e6e75878ee6b0e63e243c3e",
+      "application_audit_sha256": "d373b2134bda6984313e55fb28f47420d3194dadf5bea052b4e68127312fa386"
+    }
+  ],
+  "claims_not_proven": [
+    "maximum successful concurrent admission",
+    "simultaneous active FullKV exhaustion",
+    "causal throughput bottleneck",
+    "prefix reuse benefit",
+    "hardware HBM traffic"
+  ],
+  "atomicity_limit": "Different application gauges are sampled sequentially. Bound uses the composite prefix-index reading alone plus fixed allocation; active maxima are separate observations."
+}

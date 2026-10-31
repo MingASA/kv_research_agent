@@ -1,0 +1,1 @@
+{"run_id": "prod-sharegpt-xqa-c128-r1-20261026b", "local_state": "SETTLED", "classification": "confirmed_never_prepared_not_launched", "actual_gpu_us": 0, "remote_writes": 0, "relaunch_same_id": false, "evidence": "reports/operations/20261026T075846Z/sharegpt_xqa_absence_resolved_b6.json"}

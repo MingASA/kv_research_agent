@@ -1,0 +1,36 @@
+{
+  "reference_summary_sha256": "bd7f1ef18e6ef7152df8e29875138ab829ddb69a248d2c795bd69f5a94f84314",
+  "scheduling_label": "Batch 8192; chunk 2048; new BF16 reference; 1720 requests per format",
+  "rows": [
+    {
+      "format": "FP8 FA2",
+      "source": "/home/mingasa/kv-research-agent/reports/experiments/nextgen-mixed-prefill-20261030/fp8-u-vs-bf16-t-a1.json",
+      "source_sha256": "a15ad8be53df1a92268a4acf7f59859d8cfc80c472fb14dd4a1dadaf42f40192",
+      "GSM8K_flexible_EM_delta_pp": 0.3032600454890068,
+      "GSM8K_paired_CI_pp": [
+        -0.1516300227445034,
+        0.7581501137225171
+      ],
+      "LongBench_macro_delta_pp": -0.44174420679876647,
+      "LongBench_paired_CI_pp": [
+        -1.4101298285048285,
+        0.4239358226967421
+      ]
+    },
+    {
+      "format": "NVFP4",
+      "source": "/home/mingasa/kv-research-agent/reports/experiments/nextgen-mixed-prefill-20261030/nvfp4-v-vs-bf16-t-a1.json",
+      "source_sha256": "9b6d2422dab942e161a532830f6646fe824aa34f94277d2f3addfc6116be6f54",
+      "GSM8K_flexible_EM_delta_pp": -0.1516300227445034,
+      "GSM8K_paired_CI_pp": [
+        -0.6823351023502654,
+        0.37907505686125853
+      ],
+      "LongBench_macro_delta_pp": -0.27229158574797907,
+      "LongBench_paired_CI_pp": [
+        -1.7388453660264984,
+        1.226024734776918
+      ]
+    }
+  ]
+}

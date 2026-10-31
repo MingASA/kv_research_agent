@@ -1,0 +1,1 @@
+{"package": "results/prepared/packages/prod-quality-bf16xqa-full1719-r0-20261027a/package.json", "arms": ["bf16"], "samples_per_arm": 1719, "gpu_job_launched": false}

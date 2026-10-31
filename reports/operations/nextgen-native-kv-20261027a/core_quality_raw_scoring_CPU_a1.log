@@ -1,0 +1,7 @@
+test_cached_answer_wrong_raw_usage_or_failure_cannot_be_scored_as_valid (test_nextgen_quality_raw_scoring.RawQualityScoringTests.test_cached_answer_wrong_raw_usage_or_failure_cannot_be_scored_as_valid) ... ok
+test_raw_complete_prediction_verifies (test_nextgen_quality_raw_scoring.RawQualityScoringTests.test_raw_complete_prediction_verifies) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK

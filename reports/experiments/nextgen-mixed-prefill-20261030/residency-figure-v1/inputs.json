@@ -1,0 +1,45 @@
+{
+  "sources": [
+    {
+      "path": "reports/operations/session-recovery-20261030-01a1765d/mixed-BF16-WC-independent-residency-a1.json",
+      "sha256": "0451705330d8d0a38677574dfda985b4f38ae3a44b4b1b6e933dba254c4b4415"
+    },
+    {
+      "path": "reports/operations/session-recovery-20261030-01a1765d/mixed-FP8-XC-independent-residency-a1.json",
+      "sha256": "2ba7fdb74a597eb44b12cd3ebf5b4e827e13b474f8b86a20d1d4d33ce9c39d69"
+    }
+  ],
+  "renderer_source_sha256": "51c0637eb2d2721225d043504420fdf37ad0947336824ddbd11dd22dbbed5530",
+  "summary": [
+    {
+      "arm": "bf16",
+      "physical_FullKV_pages": 3868,
+      "max_effective_used_FullKV_pages": 3217.0,
+      "max_running_requests_independent_sample_peak": 6.0,
+      "same_sample_running": 5.0,
+      "same_sample_used_pages": 3217.0,
+      "observed_more_used_pages_than_BF16_physical_pool": false,
+      "exact_counter_span": false
+    },
+    {
+      "arm": "fp8_e4m3",
+      "physical_FullKV_pages": 7618,
+      "max_effective_used_FullKV_pages": 5600.0,
+      "max_running_requests_independent_sample_peak": 10.0,
+      "same_sample_running": 9.0,
+      "same_sample_used_pages": 5600.0,
+      "observed_more_used_pages_than_BF16_physical_pool": true,
+      "exact_counter_span": false
+    }
+  ],
+  "all_observed_frames_kept_missing_values_are_plot_gaps": true,
+  "missing_arms_are_unknown_not_zero": [
+    "nvfp4"
+  ],
+  "GPU_or_remote_calls": false,
+  "max_admission_or_HBM_bandwidth_or_SLO_claim": false,
+  "figures": {
+    "resident_pressure.png": "8678775cb34116ed8666ac686969a821ce127d4e55dcb02ac3dc8dcf83efba37",
+    "resident_pressure.svg": "58eb850075d1a6d98d47565ba6a1afb9c2d48ba98f1aaf26a51cd51be62d86c5"
+  }
+}

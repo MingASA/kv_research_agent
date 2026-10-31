@@ -1,0 +1,7 @@
+{
+  "classification": "confirmed_source_AST_CPU_only",
+  "old_evaluator_SHA": "9029a273121c764665d4cb6e03afbb28a2342561050b3a89341eae1b8fa7f5c7",
+  "new_evaluator_SHA": "a42e92303a8e836389ae9f3599a0afad8914a737caf9dcc3e5fb4e1b88a9495d",
+  "all_AST_equal_after_removing_only_new_manifest_profile_tuple_entry": true,
+  "new_model_predictions": false
+}

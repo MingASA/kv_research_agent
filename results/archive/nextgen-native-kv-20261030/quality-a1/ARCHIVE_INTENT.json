@@ -1,0 +1,1 @@
+{"local_only":true,"original_runs":["nextgen-bf16-qwen38-quality-core1720-r0-20261027j","nextgen-nvfp4-qwen38-quality-core1720-r0-20261028p","nextgen-fp8fa2-qwen38-quality-core1720-r1-20261028t","nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab"],"spec_sha256":"2fc21c943a570e261a08d36385197637ec647bac65bb3c7bff703a75edbee285"}

@@ -1,0 +1,29 @@
+{
+  "classification": "confirmed_CPU_fixture_only_no_new_quality_predictions",
+  "fixture_is_actual_C128_GPU_evidence": false,
+  "same_sample_scores_reproduce_existing_bootstrap": true,
+  "negative_checks": [
+    {
+      "case": "partial",
+      "rejected": true,
+      "reason": "Incomplete original task"
+    },
+    {
+      "case": "wrong_item",
+      "rejected": true,
+      "reason": "Original item ID/order differs across C128 and C8"
+    },
+    {
+      "case": "wrong_model",
+      "rejected": true,
+      "reason": "C128/C8 reference provenance differs: model_weights_sha256"
+    },
+    {
+      "case": "wrong_concurrency",
+      "rejected": true,
+      "reason": "Require independently verified complete paired C1281719, not pilot or partial"
+    }
+  ],
+  "script_sha256": "e04b3c1a7f2447d466e00620cffc732e7cef04cbb33474ced35edc5bbfb0fe3e",
+  "GPU_work": false
+}

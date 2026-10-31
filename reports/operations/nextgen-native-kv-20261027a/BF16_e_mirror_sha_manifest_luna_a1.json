@@ -1,0 +1,551 @@
+{
+  "all_files_match_remote_sha": true,
+  "bytes_verified": 816831,
+  "core_candidates_in_selected_scope": [],
+  "excluded_scopes": [
+    "source_repo (including .git and checkout contents)",
+    "cache",
+    "other non-output working directories",
+    "model weights"
+  ],
+  "files": [
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/COMPLETE",
+      "local_sha256": "a0b65996a7e48cd777ce4c814a97707c0a4537e8c1551b4f6ce81d366f58a237",
+      "match": true,
+      "remote_sha256": "a0b65996a7e48cd777ce4c814a97707c0a4537e8c1551b4f6ce81d366f58a237",
+      "size": 85,
+      "snapshot_sha256": "a0b65996a7e48cd777ce4c814a97707c0a4537e8c1551b4f6ce81d366f58a237"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/PREPARED.json",
+      "local_sha256": "3db55752b6d020ce7a2fb49569adb38d9dab6a79556a52385f023d0fdc805359",
+      "match": true,
+      "remote_sha256": "3db55752b6d020ce7a2fb49569adb38d9dab6a79556a52385f023d0fdc805359",
+      "size": 98,
+      "snapshot_sha256": "3db55752b6d020ce7a2fb49569adb38d9dab6a79556a52385f023d0fdc805359"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/START_INTENT.json",
+      "local_sha256": "b0fb206f79c3d50626a7bf52f3531bf8f96bd71ac2ba63472cd76c9b56f00407",
+      "match": true,
+      "remote_sha256": "b0fb206f79c3d50626a7bf52f3531bf8f96bd71ac2ba63472cd76c9b56f00407",
+      "size": 86,
+      "snapshot_sha256": "b0fb206f79c3d50626a7bf52f3531bf8f96bd71ac2ba63472cd76c9b56f00407"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/SUPERVISOR_PROCESS.json",
+      "local_sha256": "b77c6199fd0752f2fd776a57e43000403537e75be1332f26d587d54ad9ff4faf",
+      "match": true,
+      "remote_sha256": "b77c6199fd0752f2fd776a57e43000403537e75be1332f26d587d54ad9ff4faf",
+      "size": 488,
+      "snapshot_sha256": "b77c6199fd0752f2fd776a57e43000403537e75be1332f26d587d54ad9ff4faf"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/SUPERVISOR_STARTED.json",
+      "local_sha256": "e0de0e495dcd910c942aebd721d2f7cdb89e7d94a0c0cb196c2d2b7fc00281fb",
+      "match": true,
+      "remote_sha256": "e0de0e495dcd910c942aebd721d2f7cdb89e7d94a0c0cb196c2d2b7fc00281fb",
+      "size": 571,
+      "snapshot_sha256": "e0de0e495dcd910c942aebd721d2f7cdb89e7d94a0c0cb196c2d2b7fc00281fb"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/WATCHDOG_FINISHED.json",
+      "local_sha256": "2b594512abafdfe247278dae412e2cdcf7f416861be9130264d75e8bc5a14752",
+      "match": true,
+      "remote_sha256": "2b594512abafdfe247278dae412e2cdcf7f416861be9130264d75e8bc5a14752",
+      "size": 197,
+      "snapshot_sha256": "2b594512abafdfe247278dae412e2cdcf7f416861be9130264d75e8bc5a14752"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/WATCHDOG_READY.json",
+      "local_sha256": "d8f7cd61ad54d21c9168e9932627471285242c6c70941cf49eab4467d100ed2f",
+      "match": true,
+      "remote_sha256": "d8f7cd61ad54d21c9168e9932627471285242c6c70941cf49eab4467d100ed2f",
+      "size": 572,
+      "snapshot_sha256": "d8f7cd61ad54d21c9168e9932627471285242c6c70941cf49eab4467d100ed2f"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/dispatch.lock",
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "match": true,
+      "remote_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/events.jsonl",
+      "local_sha256": "f66053efb54dcb12e2e95f6e7068df03e9b385491242368c04a71841672e5189",
+      "match": true,
+      "remote_sha256": "f66053efb54dcb12e2e95f6e7068df03e9b385491242368c04a71841672e5189",
+      "size": 5096,
+      "snapshot_sha256": "f66053efb54dcb12e2e95f6e7068df03e9b385491242368c04a71841672e5189"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/input/gdn_dependency_CPU_import.json",
+      "local_sha256": "f9211af75285968d17a8a6f8bc5ab1d2af85ec5e956f5780cef2a7aa8c7a57c6",
+      "match": true,
+      "remote_sha256": "f9211af75285968d17a8a6f8bc5ab1d2af85ec5e956f5780cef2a7aa8c7a57c6",
+      "size": 1075,
+      "snapshot_sha256": "f9211af75285968d17a8a6f8bc5ab1d2af85ec5e956f5780cef2a7aa8c7a57c6"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/input/model_assets_full_SHA_a4.json",
+      "local_sha256": "2d8ac862741ebaf9aeeb16e140bec9b49d3dca8f5f930c9698cfeab370966246",
+      "match": true,
+      "remote_sha256": "2d8ac862741ebaf9aeeb16e140bec9b49d3dca8f5f930c9698cfeab370966246",
+      "size": 8319,
+      "snapshot_sha256": "2d8ac862741ebaf9aeeb16e140bec9b49d3dca8f5f930c9698cfeab370966246"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/input/model_assets_full_SHA_a6.json",
+      "local_sha256": "780530faf3460ed0c69fee943c8350be7b43e6a0c93577d64a2bbbb8e40ca163",
+      "match": true,
+      "remote_sha256": "780530faf3460ed0c69fee943c8350be7b43e6a0c93577d64a2bbbb8e40ca163",
+      "size": 16098,
+      "snapshot_sha256": "780530faf3460ed0c69fee943c8350be7b43e6a0c93577d64a2bbbb8e40ca163"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/input/model_assets_readonly_a3.json",
+      "local_sha256": "ffc8fed0929c059871a08c33ea2f1c9e82edd7e06bdaf7f32ec2df3a67173b22",
+      "match": true,
+      "remote_sha256": "ffc8fed0929c059871a08c33ea2f1c9e82edd7e06bdaf7f32ec2df3a67173b22",
+      "size": 17222,
+      "snapshot_sha256": "ffc8fed0929c059871a08c33ea2f1c9e82edd7e06bdaf7f32ec2df3a67173b22"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/input/source.bundle",
+      "local_sha256": "d646a59e8eeb7352bfb26111b4140109e43e50e8ca0770dce863c20197ffd8be",
+      "match": true,
+      "remote_sha256": "d646a59e8eeb7352bfb26111b4140109e43e50e8ca0770dce863c20197ffd8be",
+      "size": 38635,
+      "snapshot_sha256": "d646a59e8eeb7352bfb26111b4140109e43e50e8ca0770dce863c20197ffd8be"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/input/validation.json",
+      "local_sha256": "ff1a7a935d75671f0c26091949d562812074081dd1cd357702978ccaf06ded2f",
+      "match": true,
+      "remote_sha256": "ff1a7a935d75671f0c26091949d562812074081dd1cd357702978ccaf06ded2f",
+      "size": 117581,
+      "snapshot_sha256": "ff1a7a935d75671f0c26091949d562812074081dd1cd357702978ccaf06ded2f"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/input/validation_tokenization_CPU.json",
+      "local_sha256": "19de043be4801e955d31e71512349632f82750e3efc6563c8d21b99199d6791a",
+      "match": true,
+      "remote_sha256": "19de043be4801e955d31e71512349632f82750e3efc6563c8d21b99199d6791a",
+      "size": 2896,
+      "snapshot_sha256": "19de043be4801e955d31e71512349632f82750e3efc6563c8d21b99199d6791a"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/output/bf16/container.log",
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "match": true,
+      "remote_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/output/bf16/container_identity.json",
+      "local_sha256": "9262c0c8823b622e768180a61f176c25cc87f0cbcaebd8e3cd56e1ce3a79f31c",
+      "match": true,
+      "remote_sha256": "9262c0c8823b622e768180a61f176c25cc87f0cbcaebd8e3cd56e1ce3a79f31c",
+      "size": 1507,
+      "snapshot_sha256": "9262c0c8823b622e768180a61f176c25cc87f0cbcaebd8e3cd56e1ce3a79f31c"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/output/bf16/docker_command.json",
+      "local_sha256": "7f66706d09438f2b0945e75e5e754fd55663699f766e9951e45615024b39a7ec",
+      "match": true,
+      "remote_sha256": "7f66706d09438f2b0945e75e5e754fd55663699f766e9951e45615024b39a7ec",
+      "size": 2584,
+      "snapshot_sha256": "7f66706d09438f2b0945e75e5e754fd55663699f766e9951e45615024b39a7ec"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/output/bf16/lease.json",
+      "local_sha256": "17e646e17c69722471b0611642e4c8bf1d0f4641cad746f14776da15926ef313",
+      "match": true,
+      "remote_sha256": "17e646e17c69722471b0611642e4c8bf1d0f4641cad746f14776da15926ef313",
+      "size": 138,
+      "snapshot_sha256": "17e646e17c69722471b0611642e4c8bf1d0f4641cad746f14776da15926ef313"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/output/bf16/measurement.json",
+      "local_sha256": "b2a80f884eea1119cfc48a4a33bcc2bf8aac52a4325382fdcbfab4caba3680f1",
+      "match": true,
+      "remote_sha256": "b2a80f884eea1119cfc48a4a33bcc2bf8aac52a4325382fdcbfab4caba3680f1",
+      "size": 16659,
+      "snapshot_sha256": "b2a80f884eea1119cfc48a4a33bcc2bf8aac52a4325382fdcbfab4caba3680f1"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/output/bf16/nextgen_environment.json",
+      "local_sha256": "5d3a35bb5c470430f17a957767f8b4546754f95cdb783286cf53a3ac035bf4bb",
+      "match": true,
+      "remote_sha256": "5d3a35bb5c470430f17a957767f8b4546754f95cdb783286cf53a3ac035bf4bb",
+      "size": 148,
+      "snapshot_sha256": "5d3a35bb5c470430f17a957767f8b4546754f95cdb783286cf53a3ac035bf4bb"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/output/bf16/operator_acceptance.json",
+      "local_sha256": "6f0d534acf3ce6c47b7bd06d3630c5ed89cb38bd8e88e690807a348d8d7b25b7",
+      "match": true,
+      "remote_sha256": "6f0d534acf3ce6c47b7bd06d3630c5ed89cb38bd8e88e690807a348d8d7b25b7",
+      "size": 282,
+      "snapshot_sha256": "6f0d534acf3ce6c47b7bd06d3630c5ed89cb38bd8e88e690807a348d8d7b25b7"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/output/bf16/operator_acceptance.log",
+      "local_sha256": "3fe7d5edbad6c07c9fecad37c31f87fd964839c70b6ea78318b4582f32769bfd",
+      "match": true,
+      "remote_sha256": "3fe7d5edbad6c07c9fecad37c31f87fd964839c70b6ea78318b4582f32769bfd",
+      "size": 1173,
+      "snapshot_sha256": "3fe7d5edbad6c07c9fecad37c31f87fd964839c70b6ea78318b4582f32769bfd"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/output/bf16/runtime_environment.json",
+      "local_sha256": "46f4cd01c78a56f2e2ea8d4dc3a2b07ead9b686f1e1149fa9108db46c813e3a6",
+      "match": true,
+      "remote_sha256": "46f4cd01c78a56f2e2ea8d4dc3a2b07ead9b686f1e1149fa9108db46c813e3a6",
+      "size": 770,
+      "snapshot_sha256": "46f4cd01c78a56f2e2ea8d4dc3a2b07ead9b686f1e1149fa9108db46c813e3a6"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/output/bf16/server.log",
+      "local_sha256": "61db7c12b9865e725736727400dd907e00e33cd1d1eb430933f62f9a5281e6b7",
+      "match": true,
+      "remote_sha256": "61db7c12b9865e725736727400dd907e00e33cd1d1eb430933f62f9a5281e6b7",
+      "size": 46323,
+      "snapshot_sha256": "61db7c12b9865e725736727400dd907e00e33cd1d1eb430933f62f9a5281e6b7"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/output/bf16/server_command.json",
+      "local_sha256": "1b1d9bd1f263dac5e41b71e57d18b953e3f1b0129060336c6a429f4368766025",
+      "match": true,
+      "remote_sha256": "1b1d9bd1f263dac5e41b71e57d18b953e3f1b0129060336c6a429f4368766025",
+      "size": 776,
+      "snapshot_sha256": "1b1d9bd1f263dac5e41b71e57d18b953e3f1b0129060336c6a429f4368766025"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/output/bf16/validation_raw.jsonl",
+      "local_sha256": "4bb21ad5210cafc01f1f539f2b367f307d7c3368c00095319ff4a805bedbc3a8",
+      "match": true,
+      "remote_sha256": "4bb21ad5210cafc01f1f539f2b367f307d7c3368c00095319ff4a805bedbc3a8",
+      "size": 192716,
+      "snapshot_sha256": "4bb21ad5210cafc01f1f539f2b367f307d7c3368c00095319ff4a805bedbc3a8"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/output/bf16/validation_result.json",
+      "local_sha256": "2d021ecc1a351ad44f6709c0cb45ee49ec253eeac037fdce865ea0e29bee1662",
+      "match": true,
+      "remote_sha256": "2d021ecc1a351ad44f6709c0cb45ee49ec253eeac037fdce865ea0e29bee1662",
+      "size": 15444,
+      "snapshot_sha256": "2d021ecc1a351ad44f6709c0cb45ee49ec253eeac037fdce865ea0e29bee1662"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/owned_containers.json",
+      "local_sha256": "9a636a35c9e399ac93e59b83e06bfc660da21245f32614d93c8041aa1ed1e0b0",
+      "match": true,
+      "remote_sha256": "9a636a35c9e399ac93e59b83e06bfc660da21245f32614d93c8041aa1ed1e0b0",
+      "size": 1630,
+      "snapshot_sha256": "9a636a35c9e399ac93e59b83e06bfc660da21245f32614d93c8041aa1ed1e0b0"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/result.json",
+      "local_sha256": "0a2f832180ccda1f5180250bc90e0580a2c74be4f84314fba4fd104005b2aa9c",
+      "match": true,
+      "remote_sha256": "0a2f832180ccda1f5180250bc90e0580a2c74be4f84314fba4fd104005b2aa9c",
+      "size": 621,
+      "snapshot_sha256": "0a2f832180ccda1f5180250bc90e0580a2c74be4f84314fba4fd104005b2aa9c"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/runtime/kv_controller/__init__.py",
+      "local_sha256": "062f8f358d836a3b082ee9926504c1fe619a172bb1f303c1b33feb5d857b971f",
+      "match": true,
+      "remote_sha256": "062f8f358d836a3b082ee9926504c1fe619a172bb1f303c1b33feb5d857b971f",
+      "size": 70,
+      "snapshot_sha256": "062f8f358d836a3b082ee9926504c1fe619a172bb1f303c1b33feb5d857b971f"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/runtime/kv_controller/aiperf_cli_admission.py",
+      "local_sha256": "4b17178e471bef7438647e4a8692c3f94b58b10a436531076e432eaed8262c50",
+      "match": true,
+      "remote_sha256": "4b17178e471bef7438647e4a8692c3f94b58b10a436531076e432eaed8262c50",
+      "size": 2629,
+      "snapshot_sha256": "4b17178e471bef7438647e4a8692c3f94b58b10a436531076e432eaed8262c50"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/runtime/kv_controller/approval.py",
+      "local_sha256": "b08378450b41cc62447a5a9ab45ecfcf42290e3e82114b670d9f66e709a119fc",
+      "match": true,
+      "remote_sha256": "b08378450b41cc62447a5a9ab45ecfcf42290e3e82114b670d9f66e709a119fc",
+      "size": 9391,
+      "snapshot_sha256": "b08378450b41cc62447a5a9ab45ecfcf42290e3e82114b670d9f66e709a119fc"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/runtime/kv_controller/bf16q_operator.py",
+      "local_sha256": "0f87ca7e3cebd4bbcdba6432a4979c049a75bebaf86d73fe61588eb0958209c1",
+      "match": true,
+      "remote_sha256": "0f87ca7e3cebd4bbcdba6432a4979c049a75bebaf86d73fe61588eb0958209c1",
+      "size": 4563,
+      "snapshot_sha256": "0f87ca7e3cebd4bbcdba6432a4979c049a75bebaf86d73fe61588eb0958209c1"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/runtime/kv_controller/cli.py",
+      "local_sha256": "94ee02cbbcf9c673bc1c95e4c9da9eed4798f762c794b9cd3bc418dfc2aab31e",
+      "match": true,
+      "remote_sha256": "94ee02cbbcf9c673bc1c95e4c9da9eed4798f762c794b9cd3bc418dfc2aab31e",
+      "size": 12411,
+      "snapshot_sha256": "94ee02cbbcf9c673bc1c95e4c9da9eed4798f762c794b9cd3bc418dfc2aab31e"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/runtime/kv_controller/component_profile.py",
+      "local_sha256": "5bc119832ea4e7ffaa4b9f859439da29bc9f28b125d9896c2097654613ad4712",
+      "match": true,
+      "remote_sha256": "5bc119832ea4e7ffaa4b9f859439da29bc9f28b125d9896c2097654613ad4712",
+      "size": 8059,
+      "snapshot_sha256": "5bc119832ea4e7ffaa4b9f859439da29bc9f28b125d9896c2097654613ad4712"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/runtime/kv_controller/discovery.py",
+      "local_sha256": "e3778713d67c87ccacc82c565bfc7958f1bddda75f07249e0c2dc5aebdfee891",
+      "match": true,
+      "remote_sha256": "e3778713d67c87ccacc82c565bfc7958f1bddda75f07249e0c2dc5aebdfee891",
+      "size": 3415,
+      "snapshot_sha256": "e3778713d67c87ccacc82c565bfc7958f1bddda75f07249e0c2dc5aebdfee891"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/runtime/kv_controller/dispatch.py",
+      "local_sha256": "ee683195cbfb634baaddd269db354b1c81df36a8dec559b17f09ea7460940791",
+      "match": true,
+      "remote_sha256": "ee683195cbfb634baaddd269db354b1c81df36a8dec559b17f09ea7460940791",
+      "size": 5674,
+      "snapshot_sha256": "ee683195cbfb634baaddd269db354b1c81df36a8dec559b17f09ea7460940791"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/runtime/kv_controller/durable.py",
+      "local_sha256": "e8cae733035f451503cb577d818bc4cea34b1b1f7d246b1da5ff0e13d6b4a74c",
+      "match": true,
+      "remote_sha256": "e8cae733035f451503cb577d818bc4cea34b1b1f7d246b1da5ff0e13d6b4a74c",
+      "size": 2198,
+      "snapshot_sha256": "e8cae733035f451503cb577d818bc4cea34b1b1f7d246b1da5ff0e13d6b4a74c"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/runtime/kv_controller/evidence.py",
+      "local_sha256": "e7e0eb86e863601a25835076107e44b781b9da99ec02aedc39d82db5f6656816",
+      "match": true,
+      "remote_sha256": "e7e0eb86e863601a25835076107e44b781b9da99ec02aedc39d82db5f6656816",
+      "size": 260,
+      "snapshot_sha256": "e7e0eb86e863601a25835076107e44b781b9da99ec02aedc39d82db5f6656816"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/runtime/kv_controller/native_tools.py",
+      "local_sha256": "530b45510e7e623730ce9bc6bb5989b371ef8a791a653f599c2d983f26884b0e",
+      "match": true,
+      "remote_sha256": "530b45510e7e623730ce9bc6bb5989b371ef8a791a653f599c2d983f26884b0e",
+      "size": 14521,
+      "snapshot_sha256": "530b45510e7e623730ce9bc6bb5989b371ef8a791a653f599c2d983f26884b0e"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/runtime/kv_controller/nextgen.py",
+      "local_sha256": "83ab5b4f1b96d860d99dc26c39d6b7d8bb3060f89140072720228645d4fef7c9",
+      "match": true,
+      "remote_sha256": "83ab5b4f1b96d860d99dc26c39d6b7d8bb3060f89140072720228645d4fef7c9",
+      "size": 26330,
+      "snapshot_sha256": "83ab5b4f1b96d860d99dc26c39d6b7d8bb3060f89140072720228645d4fef7c9"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/runtime/kv_controller/policy.py",
+      "local_sha256": "69523d244e940a84076651605810b620648a4ca41dffb28c32c978684ed90ef9",
+      "match": true,
+      "remote_sha256": "69523d244e940a84076651605810b620648a4ca41dffb28c32c978684ed90ef9",
+      "size": 30427,
+      "snapshot_sha256": "69523d244e940a84076651605810b620648a4ca41dffb28c32c978684ed90ef9"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/runtime/kv_controller/prefill_operator.py",
+      "local_sha256": "439d9105b6f2d59ce05843987f980dc8c63bc4eb7c684eee8ed2faf8c3f36fb8",
+      "match": true,
+      "remote_sha256": "439d9105b6f2d59ce05843987f980dc8c63bc4eb7c684eee8ed2faf8c3f36fb8",
+      "size": 3709,
+      "snapshot_sha256": "439d9105b6f2d59ce05843987f980dc8c63bc4eb7c684eee8ed2faf8c3f36fb8"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/runtime/kv_controller/processes.py",
+      "local_sha256": "2231d2c629949723ee67d4e4d7ba8cff76cea9b6f8d09a407bc44c37410cc83e",
+      "match": true,
+      "remote_sha256": "2231d2c629949723ee67d4e4d7ba8cff76cea9b6f8d09a407bc44c37410cc83e",
+      "size": 2472,
+      "snapshot_sha256": "2231d2c629949723ee67d4e4d7ba8cff76cea9b6f8d09a407bc44c37410cc83e"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/runtime/kv_controller/production.py",
+      "local_sha256": "2933c79d113a4955e1fe313cedf0febba007d8716ae31d357b45c0a9c779bcc1",
+      "match": true,
+      "remote_sha256": "2933c79d113a4955e1fe313cedf0febba007d8716ae31d357b45c0a9c779bcc1",
+      "size": 39677,
+      "snapshot_sha256": "2933c79d113a4955e1fe313cedf0febba007d8716ae31d357b45c0a9c779bcc1"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/runtime/kv_controller/protocols.py",
+      "local_sha256": "3980b604ffbe5bf7f48d79df5f6ebc8f4596fdee9c7c9096e0b45dbdb2096c37",
+      "match": true,
+      "remote_sha256": "3980b604ffbe5bf7f48d79df5f6ebc8f4596fdee9c7c9096e0b45dbdb2096c37",
+      "size": 8186,
+      "snapshot_sha256": "3980b604ffbe5bf7f48d79df5f6ebc8f4596fdee9c7c9096e0b45dbdb2096c37"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/runtime/kv_controller/quota.py",
+      "local_sha256": "059ac6277ca208d2826bfd6f8ea218e90df8de80920534bd1b5b5836273ea425",
+      "match": true,
+      "remote_sha256": "059ac6277ca208d2826bfd6f8ea218e90df8de80920534bd1b5b5836273ea425",
+      "size": 15684,
+      "snapshot_sha256": "059ac6277ca208d2826bfd6f8ea218e90df8de80920534bd1b5b5836273ea425"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/runtime/kv_controller/range_probe.py",
+      "local_sha256": "c6623b1f050e0cbf32cbee66c0d5972491ba88f0a724bba6d62fe0e06b1ccf72",
+      "match": true,
+      "remote_sha256": "c6623b1f050e0cbf32cbee66c0d5972491ba88f0a724bba6d62fe0e06b1ccf72",
+      "size": 10143,
+      "snapshot_sha256": "c6623b1f050e0cbf32cbee66c0d5972491ba88f0a724bba6d62fe0e06b1ccf72"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/runtime/kv_controller/remote_rpc.py",
+      "local_sha256": "7040d1ae303836c5782f4557de6677e0406c21ed5cb71165469ca38fdfa13773",
+      "match": true,
+      "remote_sha256": "7040d1ae303836c5782f4557de6677e0406c21ed5cb71165469ca38fdfa13773",
+      "size": 23430,
+      "snapshot_sha256": "7040d1ae303836c5782f4557de6677e0406c21ed5cb71165469ca38fdfa13773"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/runtime/kv_controller/scale_coverage.py",
+      "local_sha256": "0fd77386cc92fb1f654fce5ed9e881a88345e871edec2d88b2258a87e1a4dc02",
+      "match": true,
+      "remote_sha256": "0fd77386cc92fb1f654fce5ed9e881a88345e871edec2d88b2258a87e1a4dc02",
+      "size": 7085,
+      "snapshot_sha256": "0fd77386cc92fb1f654fce5ed9e881a88345e871edec2d88b2258a87e1a4dc02"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/runtime/kv_controller/service_metrics.py",
+      "local_sha256": "3eb51c2d265bd1bd46b48a865c5dfcba3022920437932522f714f48e32e7f4a3",
+      "match": true,
+      "remote_sha256": "3eb51c2d265bd1bd46b48a865c5dfcba3022920437932522f714f48e32e7f4a3",
+      "size": 6699,
+      "snapshot_sha256": "3eb51c2d265bd1bd46b48a865c5dfcba3022920437932522f714f48e32e7f4a3"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/runtime/kv_controller/supervisor.py",
+      "local_sha256": "54ae343f8f26b33d5caccdbfb67434d792715fe8897f39374ea7f1459b2ac8b1",
+      "match": true,
+      "remote_sha256": "54ae343f8f26b33d5caccdbfb67434d792715fe8897f39374ea7f1459b2ac8b1",
+      "size": 39177,
+      "snapshot_sha256": "54ae343f8f26b33d5caccdbfb67434d792715fe8897f39374ea7f1459b2ac8b1"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/runtime/kv_controller/trace_serving.py",
+      "local_sha256": "d8958d2bf6c2791eba0ea5a8b170aca4e55d4cc67d7fb77a6441d3c0261d3aa2",
+      "match": true,
+      "remote_sha256": "d8958d2bf6c2791eba0ea5a8b170aca4e55d4cc67d7fb77a6441d3c0261d3aa2",
+      "size": 11331,
+      "snapshot_sha256": "d8958d2bf6c2791eba0ea5a8b170aca4e55d4cc67d7fb77a6441d3c0261d3aa2"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/runtime/kv_controller/transport.py",
+      "local_sha256": "6b1d18264eb1f5aaa84bf266d9f7139eb4029ae3faa1cb36eb49d4d8cea04543",
+      "match": true,
+      "remote_sha256": "6b1d18264eb1f5aaa84bf266d9f7139eb4029ae3faa1cb36eb49d4d8cea04543",
+      "size": 6238,
+      "snapshot_sha256": "6b1d18264eb1f5aaa84bf266d9f7139eb4029ae3faa1cb36eb49d4d8cea04543"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/runtime/kv_controller/watchdog.py",
+      "local_sha256": "5ad71c687b3206b18964a69e656c8f5326f0c1221fc6edbe3a1161c97b3e8979",
+      "match": true,
+      "remote_sha256": "5ad71c687b3206b18964a69e656c8f5326f0c1221fc6edbe3a1161c97b3e8979",
+      "size": 3713,
+      "snapshot_sha256": "5ad71c687b3206b18964a69e656c8f5326f0c1221fc6edbe3a1161c97b3e8979"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/runtime/kv_controller/worker.py",
+      "local_sha256": "45c0a9d369a702cde7d89473f082bb18fb87843765bcfc4d238bb01894e5a019",
+      "match": true,
+      "remote_sha256": "45c0a9d369a702cde7d89473f082bb18fb87843765bcfc4d238bb01894e5a019",
+      "size": 17346,
+      "snapshot_sha256": "45c0a9d369a702cde7d89473f082bb18fb87843765bcfc4d238bb01894e5a019"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/state.json",
+      "local_sha256": "0a2f832180ccda1f5180250bc90e0580a2c74be4f84314fba4fd104005b2aa9c",
+      "match": true,
+      "remote_sha256": "0a2f832180ccda1f5180250bc90e0580a2c74be4f84314fba4fd104005b2aa9c",
+      "size": 621,
+      "snapshot_sha256": "0a2f832180ccda1f5180250bc90e0580a2c74be4f84314fba4fd104005b2aa9c"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/supervisor.lock",
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "match": true,
+      "remote_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/supervisor.log",
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "match": true,
+      "remote_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/ticket.json",
+      "local_sha256": "cb95b6c1ec59ffca52c2b4e07efb956b0048bd4d0cd820f094fcf0068494a49e",
+      "match": true,
+      "remote_sha256": "cb95b6c1ec59ffca52c2b4e07efb956b0048bd4d0cd820f094fcf0068494a49e",
+      "size": 11276,
+      "snapshot_sha256": "cb95b6c1ec59ffca52c2b4e07efb956b0048bd4d0cd820f094fcf0068494a49e"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/watchdog.log",
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "match": true,
+      "remote_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/watchdog_config.json",
+      "local_sha256": "1769c2714abd59879149c80cf9934dc3968449f6e6182c6de08c4a4af4ea9aaa",
+      "match": true,
+      "remote_sha256": "1769c2714abd59879149c80cf9934dc3968449f6e6182c6de08c4a4af4ea9aaa",
+      "size": 178,
+      "snapshot_sha256": "1769c2714abd59879149c80cf9934dc3968449f6e6182c6de08c4a4af4ea9aaa"
+    },
+    {
+      "base_rel": "agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e/watchdog_result.json",
+      "local_sha256": "0eafce7a53cca6b01ee1fe6cd16beb6052ef24c0af5583d2637f90c50e77a699",
+      "match": true,
+      "remote_sha256": "0eafce7a53cca6b01ee1fe6cd16beb6052ef24c0af5583d2637f90c50e77a699",
+      "size": 128,
+      "snapshot_sha256": "0eafce7a53cca6b01ee1fe6cd16beb6052ef24c0af5583d2637f90c50e77a699"
+    }
+  ],
+  "files_verified": 65,
+  "inventory_path": "reports/operations/nextgen-native-kv-20261027a/BF16_e_mirror_inventory_luna_a1.json",
+  "mirror_directory": "results/mirrors/nextgen-bf16-qwen38-validation-r2-20261027e-complete-e1",
+  "remote_identity": {
+    "base": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800",
+    "gid": 1005,
+    "hostname": "A03-R40-I18-195-B000010.JD.LOCAL",
+    "run_root": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/runs/nextgen-bf16-qwen38-validation-r2-20261027e",
+    "uid": 1005
+  },
+  "remote_writes": 0,
+  "run_id": "nextgen-bf16-qwen38-validation-r2-20261027e",
+  "schema": "kv-complete-run-mirror-sha-verification-v1",
+  "selected_minus_whole_run_bytes": -133385695,
+  "selection_path": "reports/operations/nextgen-native-kv-20261027a/BF16_e_mirror_selection_luna_a1.json",
+  "terminal_result_sha256": "0a2f832180ccda1f5180250bc90e0580a2c74be4f84314fba4fd104005b2aa9c",
+  "terminal_status": "COMPLETE",
+  "whole_run_new_output_bytes": 134202526
+}

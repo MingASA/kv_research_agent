@@ -1,0 +1,18 @@
+{
+  "sha_manifests": [
+    "reports/operations/nextgen-native-kv-20261028a/BF16_j_main_SHA_manifest_a1.json",
+    "results/mirrors/nextgen-nvfp4-qwen38-quality-core1720-r0-20261028p-complete-a1/SHA_MANIFEST.json",
+    "results/mirrors/nextgen-fp8fa2-qwen38-quality-core1720-r1-20261028t-failed-a1/SHA_MANIFEST.json",
+    "results/mirrors/nextgen-fp8fa2-qwen38-quality-completion802-r1-20261028ab-complete-20261030a2/SHA_MANIFEST.json"
+  ],
+  "include": [
+    "results/prepared/nextgen-quality-real-text-20261027a",
+    "results/prepared/nextgen-quality-real-text-native-json-v2-20261028a",
+    "reports/experiments/nextgen-quality-20261028/bf16-j-v1",
+    "reports/experiments/nextgen-quality-20261028/nvfp4-p-v1",
+    "reports/experiments/nextgen-quality-20261028/nvfp4-p-vs-bf16-j-a1.json",
+    "reports/experiments/nextgen-quality-20261030/fp8-fa2-t-ab-v1",
+    "reports/experiments/nextgen-quality-20261030/fp8-fa2-t-ab-vs-bf16-j-a1.json",
+    "reports/experiments/nextgen-quality-20261030/summary-figure-v1"
+  ]
+}

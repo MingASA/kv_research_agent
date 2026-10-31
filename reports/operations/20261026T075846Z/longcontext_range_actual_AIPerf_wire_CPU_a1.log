@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/home/mingasa/kv-research-agent/scripts/validate_aiperf_wire_cpu.py", line 197, in <module>
+    main()
+  File "/home/mingasa/kv-research-agent/scripts/validate_aiperf_wire_cpu.py", line 190, in main
+    report = asyncio.run(validate(args.input, args.protocol))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mingasa/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/mingasa/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mingasa/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/mingasa/kv-research-agent/scripts/validate_aiperf_wire_cpu.py", line 25, in validate
+    from aiperf.common.models import ModelEndpointInfo, RequestInfo
+  File "/home/mingasa/kv-research-agent/.deps/aiperf-runtime-20261026/aiperf/common/models/__init__.py", line 4, in <module>
+    from aiperf.common.models.auto_routed_model import AutoRoutedModel
+  File "/home/mingasa/kv-research-agent/.deps/aiperf-runtime-20261026/aiperf/common/models/auto_routed_model.py", line 45, in <module>
+    from aiperf.common.utils import load_json_str
+  File "/home/mingasa/kv-research-agent/.deps/aiperf-runtime-20261026/aiperf/common/utils.py", line 14, in <module>
+    import orjson
+ModuleNotFoundError: No module named 'orjson'

@@ -1,0 +1,16 @@
+{
+  "classification": "reported bounded independent Luna local readonly archive and arithmetic review",
+  "archive": "mixed-pressure-a1",
+  "sha256": "15f0032a7ce31524855d64354c8f8e7ec72b0ff45005ec464f5ef88723b44e02",
+  "bytes": 25008811,
+  "members": 406,
+  "all_members_sha_size_and_manifest_plus1_match": true,
+  "no_missing_extra_duplicate_or_unsafe_paths": true,
+  "JSON_CSV_three_audits_numeric_values_match": true,
+  "NVFP4_original_FAILED_31of32_retained": true,
+  "full_window_31_completions_4611_tokens_over641_248253sec": true,
+  "full_cohort_NVFP4_tails_null_conditional_success_only_separate": true,
+  "NVFP4_app_samples_unavailable_not_zero": true,
+  "PNG_not_in_Luna_scope_main_visual_check_separate": true,
+  "no_GPU_model_remote_writes_or_calls": true
+}

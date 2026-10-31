@@ -1,0 +1,227 @@
+{
+  "proof": "reports/operations/session-recovery-20261030-01a1765d/mixed-bf16-s-independent-residency-pilot-a1.json",
+  "proof_sha256": "71d8cb7b2f052e65c4a8fb7eda6c481a63d1ef8d461b5f664b2f9fc8acc91233",
+  "manifest_sha256": "65869495ec0e6d9eb3870cf2cb16c759439efdc46d48f30f2e42546055227f50",
+  "application_raw_sha256": "3828f30f7e55db703e3fdfec313ce55be87a8fd63e46a62efdeb62b35b20a2b1",
+  "plot_points": [
+    {
+      "seconds": 0.042824409,
+      "running": 3.0,
+      "pages": 47.0,
+      "long_client_inflight": 1
+    },
+    {
+      "seconds": 2.042899905,
+      "running": 4.0,
+      "pages": 336.0,
+      "long_client_inflight": 1
+    },
+    {
+      "seconds": 4.042940907,
+      "running": 4.0,
+      "pages": 528.0,
+      "long_client_inflight": 1
+    },
+    {
+      "seconds": 6.043029861,
+      "running": 4.0,
+      "pages": 816.0,
+      "long_client_inflight": 1
+    },
+    {
+      "seconds": 8.043081094,
+      "running": 4.0,
+      "pages": 868.0,
+      "long_client_inflight": 1
+    },
+    {
+      "seconds": 10.043135891,
+      "running": 4.0,
+      "pages": 872.0,
+      "long_client_inflight": 1
+    },
+    {
+      "seconds": 12.043194757,
+      "running": 4.0,
+      "pages": 876.0,
+      "long_client_inflight": 1
+    },
+    {
+      "seconds": 14.043311744,
+      "running": 4.0,
+      "pages": 880.0,
+      "long_client_inflight": 1
+    },
+    {
+      "seconds": 16.043373668,
+      "running": 4.0,
+      "pages": 962.0,
+      "long_client_inflight": 2
+    },
+    {
+      "seconds": 18.043437486,
+      "running": 4.0,
+      "pages": 1250.0,
+      "long_client_inflight": 2
+    },
+    {
+      "seconds": 20.043499818,
+      "running": 4.0,
+      "pages": 1442.0,
+      "long_client_inflight": 2
+    },
+    {
+      "seconds": 22.043599999,
+      "running": 4.0,
+      "pages": 1585.0,
+      "long_client_inflight": 2
+    },
+    {
+      "seconds": 24.043654299,
+      "running": 4.0,
+      "pages": 1589.0,
+      "long_client_inflight": 2
+    },
+    {
+      "seconds": 26.043714683,
+      "running": 4.0,
+      "pages": 1593.0,
+      "long_client_inflight": 2
+    },
+    {
+      "seconds": 28.043771116,
+      "running": 4.0,
+      "pages": 1597.0,
+      "long_client_inflight": 2
+    },
+    {
+      "seconds": 30.043831694,
+      "running": 4.0,
+      "pages": 1853.0,
+      "long_client_inflight": 3
+    },
+    {
+      "seconds": 32.043899187,
+      "running": 4.0,
+      "pages": 2045.0,
+      "long_client_inflight": 3
+    },
+    {
+      "seconds": 34.043949756,
+      "running": 4.0,
+      "pages": 2206.0,
+      "long_client_inflight": 3
+    },
+    {
+      "seconds": 36.044042326,
+      "running": 4.0,
+      "pages": 1487.0,
+      "long_client_inflight": 3
+    },
+    {
+      "seconds": 38.044096606,
+      "running": 4.0,
+      "pages": 1775.0,
+      "long_client_inflight": 3
+    },
+    {
+      "seconds": 40.044173607,
+      "running": 4.0,
+      "pages": 1825.0,
+      "long_client_inflight": 3
+    },
+    {
+      "seconds": 42.044240929,
+      "running": 4.0,
+      "pages": 1829.0,
+      "long_client_inflight": 3
+    },
+    {
+      "seconds": 44.044321815,
+      "running": 4.0,
+      "pages": 1834.0,
+      "long_client_inflight": 3
+    },
+    {
+      "seconds": 46.044390157,
+      "running": 4.0,
+      "pages": 1838.0,
+      "long_client_inflight": 3
+    },
+    {
+      "seconds": 48.044473991,
+      "running": 4.0,
+      "pages": 2009.0,
+      "long_client_inflight": 4
+    },
+    {
+      "seconds": 50.044546452,
+      "running": 4.0,
+      "pages": 2265.0,
+      "long_client_inflight": 4
+    },
+    {
+      "seconds": 52.04461941,
+      "running": 4.0,
+      "pages": 1668.0,
+      "long_client_inflight": 4
+    },
+    {
+      "seconds": 54.044670767,
+      "running": 4.0,
+      "pages": 1956.0,
+      "long_client_inflight": 4
+    },
+    {
+      "seconds": 56.044736963,
+      "running": 4.0,
+      "pages": 1978.0,
+      "long_client_inflight": 4
+    },
+    {
+      "seconds": 58.044797449,
+      "running": 3.0,
+      "pages": 1500.0,
+      "long_client_inflight": 4
+    },
+    {
+      "seconds": 60.044856066,
+      "running": 4.0,
+      "pages": 1788.0,
+      "long_client_inflight": 4
+    },
+    {
+      "seconds": 62.044924919,
+      "running": 4.0,
+      "pages": 1980.0,
+      "long_client_inflight": 4
+    },
+    {
+      "seconds": 64.044943405,
+      "running": 4.0,
+      "pages": 1780.0,
+      "long_client_inflight": 4
+    },
+    {
+      "seconds": 66.045060032,
+      "running": 4.0,
+      "pages": 2004.0,
+      "long_client_inflight": 4
+    },
+    {
+      "seconds": 68.045152486,
+      "running": 4.0,
+      "pages": 2013.0,
+      "long_client_inflight": 4
+    },
+    {
+      "seconds": 70.045218402,
+      "running": 1.0,
+      "pages": 439.0,
+      "long_client_inflight": 1
+    }
+  ],
+  "single_request_page_upper_bound": 829,
+  "qualifying_time_seconds": 50.044546452,
+  "formal_quality_or_performance_or_maximum_capacity_certified": false
+}

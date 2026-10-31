@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-30T23:59:15.288665+00:00",
+  "classification": "reported monitor assignment acknowledged",
+  "agent": "/root/recovery_watch_luna",
+  "until_utc": "2026-10-31T02:00:00Z",
+  "interval_seconds": 300,
+  "last_actual_S0_anchor": "2026-10-30T23:57:04Z",
+  "scope": "Original YC plus remaining finite3 native-tool runs/resources read-only, no remote writes/reconcile/GPU operations",
+  "main_remains_active": true
+}

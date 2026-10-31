@@ -1,0 +1,48 @@
+{
+  "utc": "2026-10-30T22:12:04.931551+00:00",
+  "classification": "confirmed_actual_CXX_logs_and_model_allocation",
+  "entries": [
+    {
+      "run_id": "nextgen-bf16-qwen38-mixed8192-quality1720-r0-20261030t",
+      "actual_CXX_resolved": {
+        "resolved": {
+          "max_tokens_per_batch": 8192,
+          "max_tokens_per_chunk_for_prefill": 2048,
+          "max_seqs_per_batch": 16,
+          "max_linear_state_cache_slots": 32,
+          "max_memory_utilization": 0.9,
+          "cp_size": 1,
+          "num_speculative_tokens": 0
+        },
+        "record_sha256": "e3f32d4801e0b9eaba41f298bacc0fb4c34c90f84683628ceda941f69c7e7643"
+      },
+      "actual_native_allocation": {
+        "token_capacity": 247552,
+        "full_attention_resident_bytes": 16223567872,
+        "linear_state_resident_bytes": 5234098176,
+        "total_resident_bytes": 21457666048
+      }
+    },
+    {
+      "run_id": "nextgen-fp8fa2-qwen38-mixed8192-quality1720-r0-20261030u",
+      "actual_CXX_resolved": {
+        "resolved": {
+          "max_tokens_per_batch": 8192,
+          "max_tokens_per_chunk_for_prefill": 2048,
+          "max_seqs_per_batch": 16,
+          "max_linear_state_cache_slots": 32,
+          "max_memory_utilization": 0.9,
+          "cp_size": 1,
+          "num_speculative_tokens": 0
+        },
+        "record_sha256": "ed2952877733e7b6127c0904231dd3d91e5e3bea40ba30c2203f93f25c26266a"
+      },
+      "actual_native_allocation": {
+        "token_capacity": 487552,
+        "full_attention_resident_bytes": 16225730560,
+        "linear_state_resident_bytes": 5234098176,
+        "total_resident_bytes": 21459828736
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "classification": "confirmed_CPU_only",
+  "script_sha256": "4f37cd7749626bbcabaaa012b351f06180279c5201439b3ad4db2bff4d825ab7",
+  "valid_real_inputs_passed": true,
+  "mutation_checks": [
+    {
+      "changed": "payload",
+      "rejected": true,
+      "reason": "Source records/payload SHA/prefix/window/cohort changed"
+    },
+    {
+      "changed": "runtime",
+      "rejected": true,
+      "reason": "Frozen runtime or source bundle changed"
+    },
+    {
+      "changed": "backend",
+      "rejected": true,
+      "reason": "Inference/model/service conditions changed"
+    },
+    {
+      "changed": "duplicate_scale",
+      "rejected": true,
+      "reason": "Repeated pressure is not a distinct load point"
+    }
+  ],
+  "GPU_work": false
+}

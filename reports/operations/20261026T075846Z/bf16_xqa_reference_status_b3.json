@@ -1,0 +1,172 @@
+{
+  "files": {
+    "START_INTENT.json": {
+      "sha256": "bed2d14261800d542d5854ffb04192d0f626d5f76733f215dcf93a7f3a8a8235",
+      "value": {
+        "request_sha256": "95ccdf9380cd265bf52efe9db3b5062f4fe5d01f842baf3a8b6cf2af3b4b0dad"
+      }
+    },
+    "SUPERVISOR_PROCESS.json": {
+      "sha256": "0339856bf71f340a63cf750cbe37bb77aea8094c1de7181ad5b8f96285a5f383",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-517757.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-517757.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-517757.scope\n",
+          "pid": 2764086,
+          "start_ticks": 366997444,
+          "uid": 1005
+        }
+      }
+    },
+    "SUPERVISOR_STARTED.json": {
+      "sha256": "6d5a6e703c3daeb7a6c710e18eae5be27d2616f16cceef9263edafe5c795d729",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-517757.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-517757.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-517757.scope\n",
+          "pid": 2764086,
+          "start_ticks": 366997444,
+          "uid": 1005
+        },
+        "ticket_sha256": "6e9fbd1d2f6dcd0f61f7cc27f2658bcff3d29bda65c18609c1ef2b39ea40a1e9"
+      }
+    },
+    "owned_containers.json": {
+      "sha256": "5f7f9c8c350ad5456abdb58964468f58a73000955473db92ecd2ba34da257b5c",
+      "value": {
+        "containers": [
+          {
+            "container_id": "cd03a07576243d151eb47ba7cece94a24c01a9d2d57b6c5b4ea12eecce6b4636",
+            "pid_identity": {
+              "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+              "cgroup": "12:rdma:/system.slice/docker-cd03a07576243d151eb47ba7cece94a24c01a9d2d57b6c5b4ea12eecce6b4636.scope\n11:blkio:/system.slice/docker-cd03a07576243d151eb47ba7cece94a24c01a9d2d57b6c5b4ea12eecce6b4636.scope\n10:net_cls,net_prio:/system.slice/docker-cd03a07576243d151eb47ba7cece94a24c01a9d2d57b6c5b4ea12eecce6b4636.scope\n9:freezer:/system.slice/docker-cd03a07576243d151eb47ba7cece94a24c01a9d2d57b6c5b4ea12eecce6b4636.scope\n8:memory:/system.slice/docker-cd03a07576243d151eb47ba7cece94a24c01a9d2d57b6c5b4ea12eecce6b4636.scope\n7:hugetlb:/system.slice/docker-cd03a07576243d151eb47ba7cece94a24c01a9d2d57b6c5b4ea12eecce6b4636.scope\n6:perf_event:/system.slice/docker-cd03a07576243d151eb47ba7cece94a24c01a9d2d57b6c5b4ea12eecce6b4636.scope\n5:pids:/system.slice/docker-cd03a07576243d151eb47ba7cece94a24c01a9d2d57b6c5b4ea12eecce6b4636.scope\n4:devices:/system.slice/docker-cd03a07576243d151eb47ba7cece94a24c01a9d2d57b6c5b4ea12eecce6b4636.scope\n3:cpu,cpuacct:/system.slice/docker-cd03a07576243d151eb47ba7cece94a24c01a9d2d57b6c5b4ea12eecce6b4636.scope\n2:cpuset:/system.slice/docker-cd03a07576243d151eb47ba7cece94a24c01a9d2d57b6c5b4ea12eecce6b4636.scope\n1:name=systemd:/system.slice/docker-cd03a07576243d151eb47ba7cece94a24c01a9d2d57b6c5b4ea12eecce6b4636.scope\n",
+              "pid": 2781750,
+              "start_ticks": 367009853,
+              "uid": 1005
+            },
+            "released": false
+          }
+        ],
+        "request_sha256": "95ccdf9380cd265bf52efe9db3b5062f4fe5d01f842baf3a8b6cf2af3b4b0dad",
+        "reservation_id": "47a22a125a7445448c3f7b04beba533f"
+      }
+    },
+    "state.json": {
+      "sha256": "0f72a41c2f0f42d5529623d0bf84ba96b993b2fde234b5395e5a7ba230a08eb7",
+      "value": {
+        "arm": "bf16",
+        "containers": [
+          "cd03a07576243d151eb47ba7cece94a24c01a9d2d57b6c5b4ea12eecce6b4636"
+        ],
+        "request_sha256": "95ccdf9380cd265bf52efe9db3b5062f4fe5d01f842baf3a8b6cf2af3b4b0dad",
+        "status": "RUNNING"
+      }
+    }
+  },
+  "gpu_snapshot": "0, GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 0, 0\n1, GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 66727, 93\n2, GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 0, 0\n3, GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 0, 0\n4, GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 0, 0\n5, GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 0, 0\n6, GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 0, 0\n7, GPU-47211491-ba0d-78bf-5c84-f968c0648213, 0, 0",
+  "live_owned_containers": [
+    "cd03a07576243d151eb47ba7cece94a24c01a9d2d57b6c5b4ea12eecce6b4636"
+  ],
+  "log_tail": {
+    "events.jsonl": "{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7\":{\"index\":1,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3669974978310686,\"utc\":\"2026-10-27T01:52:13.239177+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7\":{\"index\":1,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3669974978310686,\"utc\":\"2026-10-27T01:52:43.579868+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7\":{\"index\":1,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3669974978310686,\"utc\":\"2026-10-27T01:53:14.074732+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7\":{\"index\":1,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3669974978310686,\"utc\":\"2026-10-27T01:53:44.545802+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7\":{\"index\":1,\"memory_mib\":0,\"pids\":[],\"util_pct\":0}},\"stable_since_ns\":3669974978310686,\"utc\":\"2026-10-27T01:54:15.082178+00:00\"}\n{\"action\":\"OWNED_CONTAINER_CREATED\",\"arm\":\"bf16\",\"id\":\"cd03a07576243d151eb47ba7cece94a24c01a9d2d57b6c5b4ea12eecce6b4636\",\"utc\":\"2026-10-27T01:54:16.681598+00:00\"}\n",
+    "output/bf16/aiperf.log": "ARNING  OSL mismatch: got 834 tokens (requested 1024, diff -18.6%) (osl_mismatch_metrics.py:193)\n10:01:22.348 WARNING  OSL mismatch: got 748 tokens (requested 1024, diff -27.0%) (osl_mismatch_metrics.py:193)\n10:01:22.585 WARNING  OSL mismatch: got 619 tokens (requested 1024, diff -39.6%) (osl_mismatch_metrics.py:193)\n10:01:22.786 WARNING  OSL mismatch: got 946 tokens (requested 1024, diff -7.6%) (osl_mismatch_metrics.py:193)\n10:01:23.263 WARNING  OSL mismatch: got 583 tokens (requested 1024, diff -43.1%) (osl_mismatch_metrics.py:193)\n10:01:23.269 WARNING  OSL mismatch: got 766 tokens (requested 1024, diff -25.2%) (osl_mismatch_metrics.py:193)\n10:01:23.422 WARNING  OSL mismatch: got 637 tokens (requested 1024, diff -37.8%) (osl_mismatch_metrics.py:193)\n10:01:23.591 WARNING  OSL mismatch: got 641 tokens (requested 1024, diff -37.4%) (osl_mismatch_metrics.py:193)\n10:01:23.900 WARNING  OSL mismatch: got 469 tokens (requested 1024, diff -54.2%) (osl_mismatch_metrics.py:193)\n10:01:23.907 WARNING  OSL mismatch: got 964 tokens (requested 1024, diff -5.9%) (osl_mismatch_metrics.py:193)\n10:01:24.198 WARNING  OSL mismatch: got 647 tokens (requested 1024, diff -36.8%) (osl_mismatch_metrics.py:193)\n10:01:24.367 WARNING  OSL mismatch: got 726 tokens (requested 1024, diff -29.1%) (osl_mismatch_metrics.py:193)\n10:01:24.602 WARNING  OSL mismatch: got 253 tokens (requested 1024, diff -75.3%) (osl_mismatch_metrics.py:193)\n10:01:24.808 WARNING  OSL mismatch: got 840 tokens (requested 1024, diff -18.0%) (osl_mismatch_metrics.py:193)\n10:01:25.041 WARNING  OSL mismatch: got 54 tokens (requested 1024, diff -94.7%) (osl_mismatch_metrics.py:193)\n10:01:25.195 WARNING  OSL mismatch: got 395 tokens (requested 1024, diff -61.4%) (osl_mismatch_metrics.py:193)\n10:01:25.291 WARNING  OSL mismatch: got 141 tokens (requested 1024, diff -86.2%) (osl_mismatch_metrics.py:193)\n10:01:25.307 WARNING  OSL mismatch: got 474 tokens (requested 1024, diff -53.7%) (osl_mismatch_metrics.py:193)\n10:01:25.706 WARNING  OSL mismatch: got 682 tokens (requested 1024, diff -33.4%) (osl_mismatch_metrics.py:193)\n10:01:25.969 WARNING  OSL mismatch: got 533 tokens (requested 1024, diff -47.9%) (osl_mismatch_metrics.py:193)\n10:01:26.180 WARNING  OSL mismatch: got 700 tokens (requested 1024, diff -31.6%) (osl_mismatch_metrics.py:193)\n10:01:26.399 WARNING  OSL mismatch: got 508 tokens (requested 1024, diff -50.4%) (osl_mismatch_metrics.py:193)\n10:01:26.565 WARNING  OSL mismatch: got 527 tokens (requested 1024, diff -48.5%) (osl_mismatch_metrics.py:193)\n10:01:26.814 WARNING  OSL mismatch: got 597 tokens (requested 1024, diff -41.7%) (osl_mismatch_metrics.py:193)\n10:01:27.021 WARNING  OSL mismatch: got 667 tokens (requested 1024, diff -34.9%) (osl_mismatch_metrics.py:193)\n10:01:27.075 WARNING  OSL mismatch: got 935 tokens (requested 1024, diff -8.7%) (osl_mismatch_metrics.py:193)\n10:01:27.933 WARNING  OSL mismatch: got 323 tokens (requested 1024, diff -68.5%) (osl_mismatch_metrics.py:193)\n10:01:27.982 WARNING  OSL mismatch: got 264 tokens (requested 1024, diff -74.2%) (osl_mismatch_metrics.py:193)\n10:01:28.013 WARNING  OSL mismatch: got 738 tokens (requested 1024, diff -27.9%) (osl_mismatch_metrics.py:193)\n10:01:28.078 WARNING  OSL mismatch: got 105 tokens (requested 1024, diff -89.7%) (osl_mismatch_metrics.py:193)\n10:01:28.154 WARNING  OSL mismatch: got 198 tokens (requested 1024, diff -80.7%) (osl_mismatch_metrics.py:193)\n10:01:28.334 WARNING  OSL mismatch: got 748 tokens (requested 1024, diff -27.0%) (osl_mismatch_metrics.py:193)\n10:01:28.640 WARNING  OSL mismatch: got 139 tokens (requested 1024, diff -86.4%) (osl_mismatch_metrics.py:193)\n10:01:28.691 WARNING  OSL mismatch: got 288 tokens (requested 1024, diff -71.9%) (osl_mismatch_metrics.py:193)\n10:01:28.740 WARNING  OSL mismatch: got 197 tokens (requested 1024, diff -80.8%) (osl_mismatch_metrics.py:193)\n10:01:29.069 WARNING  OSL mismatch: got 846 tokens (requested 1024, diff -17.4%) (osl_mismatch_metrics.py:193)\n10:01:29.115 WARNING  OSL mismatch: got 598 tokens (requested 1024, diff -41.6%) (osl_mismatch_metrics.py:193)\n10:01:29.490 WARNING  OSL mismatch: got 169 tokens (requested 1024, diff -83.5%) (osl_mismatch_metrics.py:193)\n10:01:29.673 WARNING  OSL mismatch: got 780 tokens (requested 1024, diff -23.8%) (osl_mismatch_metrics.py:193)\n10:01:29.717 WARNING  OSL mismatch: got 355 tokens (requested 1024, diff -65.3%) (osl_mismatch_metrics.py:193)\n10:01:29.823 WARNING  OSL mismatch: got 786 tokens (requested 1024, diff -23.2%) (osl_mismatch_metrics.py:193)\n10:01:30.066 WARNING  OSL mismatch: got 802 tokens (requested 1024, diff -21.7%) (osl_mismatch_metrics.py:193)\n10:01:30.266 WARNING  OSL mismatch: got 969 tokens (requested 1024, diff -5.4%) (osl_mismatch_metrics.py:193)\n10:01:30.645 WARNING  OSL mismatch: got 661 tokens (requested 1024, diff -35.4%) (osl_mismatch_metrics.py:193)\n10:01:30.819 WARNING  OSL mismatch: got 746 tokens (requested 1024, diff -27.1%) (osl_mismatch_metrics.py:193)\n10:01:31.131 WARNING  OSL mismatch: got 553 tokens (requested 1024, diff -46.0%) (osl_mismatch_metrics.py:193)\n10:01:31.354 WARNING  OSL mismatch: got 511 tokens (requested 1024, diff -50.1%) (osl_mismatch_metrics.py:193)\n10:01:31.583 WARNING  OSL mismatch: got 610 tokens (requested 1024, diff -40.4%) (osl_mismatch_metrics.py:193)\n10:01:31.864 WARNING  OSL mismatch: got 497 tokens (requested 1024, diff -51.5%) (osl_mismatch_metrics.py:193)\n10:01:32.020 WARNING  OSL mismatch: got 805 tokens (requested 1024, diff -21.4%) (osl_mismatch_metrics.py:193)\n10:01:32.700 WARNING  OSL mismatch: got 178 tokens (requested 1024, diff -82.6%) (osl_mismatch_metrics.py:193)\n10:01:32.930 WARNING  OSL mismatch: got 455 tokens (requested 1024, diff -55.6%) (osl_mismatch_metrics.py:193)\n10:01:33.399 WARNING  OSL mismatch: got 223 tokens (requested 1024, diff -78.2%) (osl_mismatch_metrics.py:193)\n10:01:33.705 WARNING  OSL mismatch: got 529 tokens (requested 1024, diff -48.3%) (osl_mismatch_metrics.py:193)\n10:01:33.802 WARNING  OSL mismatch: got 283 tokens (requested 1024, diff -72.4%) (osl_mismatch_metrics.py:193)\n10:01:33.902 WARNING  OSL mismatch: got 274 tokens (requested 1024, diff -73.2%) (osl_mismatch_metrics.py:193)\n10:01:34.051 WARNING  OSL mismatch: got 542 tokens (requested 1024, diff -47.1%) (osl_mismatch_metrics.py:193)\n10:01:34.056 WARNING  OSL mismatch: got 573 tokens (requested 1024, diff -44.0%) (osl_mismatch_metrics.py:193)\n10:01:34.341 WARNING  OSL mismatch: got 290 tokens (requested 1024, diff -71.7%) (osl_mismatch_metrics.py:193)\n10:01:34.497 WARNING  OSL mismatch: got 516 tokens (requested 1024, diff -49.6%) (osl_mismatch_metrics.py:193)\n10:01:34.732 WARNING  OSL mismatch: got 940 tokens (requested 1024, diff -8.2%) (osl_mismatch_metrics.py:193)\n10:01:34.984 WARNING  OSL mismatch: got 268 tokens (requested 1024, diff -73.8%) (osl_mismatch_metrics.py:193)\n10:01:35.650 WARNING  OSL mismatch: got 261 tokens (requested 1024, diff -74.5%) (osl_mismatch_metrics.py:193)\n10:01:35.729 WARNING  OSL mismatch: got 468 tokens (requested 1024, diff -54.3%) (osl_mismatch_metrics.py:193)\n10:01:35.964 WARNING  OSL mismatch: got 427 tokens (requested 1024, diff -58.3%) (osl_mismatch_metrics.py:193)\n10:01:36.174 WARNING  OSL mismatch: got 431 tokens (requested 1024, diff -57.9%) (osl_mismatch_metrics.py:193)\n10:01:36.283 WARNING  OSL mismatch: got 928 tokens (requested 1024, diff -9.4%) (osl_mismatch_metrics.py:193)\n10:01:36.723 WARNING  OSL mismatch: got 578 tokens (requested 1024, diff -43.6%) (osl_mismatch_metrics.py:193)\n10:01:37.316 WARNING  OSL mismatch: got 364 tokens (requested 1024, diff -64.5%) (osl_mismatch_metrics.py:193)\n10:01:37.417 WARNING  OSL mismatch: got 382 tokens (requested 1024, diff -62.7%) (osl_mismatch_metrics.py:193)\n10:01:37.527 WARNING  OSL mismatch: got 961 tokens (requested 1024, diff -6.2%) (osl_mismatch_metrics.py:193)\n10:01:37.737 WARNING  OSL mismatch: got 643 tokens (requested 1024, diff -37.2%) (osl_mismatch_metrics.py:193)\n10:01:37.881 WARNING  OSL mismatch: got 196 tokens (requested 1024, diff -80.9%) (osl_mismatch_metrics.py:193)\n10:01:37.908 WARNING  OSL mismatch: got 338 tokens (requested 1024, diff -67.0%) (osl_mismatch_metrics.py:193)\n",
+    "output/bf16/container.log": "",
+    "output/bf16/operator_acceptance.log": "I20261027 09:54:21.859995 9 flashinfer.py:168] KV_ALLOCATION {\"layers\": [{\"tensors\": {\"key\": {\"dtype\": \"torch.bfloat16\", \"shape\": [7, 128, 8, 128], \"bytes\": 1835008}, \"value\": {\"dtype\": \"torch.bfloat16\", \"shape\": [7, 128, 8, 128], \"bytes\": 1835008}}, \"key_format\": \"bf16\", \"value_format\": \"bf16\", \"resident_bytes\": 3670016, \"bytes_per_token\": 4096}], \"resident_bytes\": 3670016, \"token_capacity\": 896}\nI20261027 09:57:08.808145 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE prefill {'relative_l2': 0.0022824311163276434, 'max_abs': 0.0005266666412353516}\nI20261027 09:57:18.774003 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE capture_replay {'relative_l2': 0.003906028810888529, 'max_abs': 0.0008789524435997009}\nI20261027 09:57:18.776733 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE changed_context {'relative_l2': 0.0028711154591292143, 'max_abs': 0.0009812712669372559}\nI20261027 09:57:18.788385 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE padded_graph {'relative_l2': 0.0028711154591292143, 'max_abs': 0.0009812712669372559}\nI20261027 09:57:18.790028 9 check_native_fa3_operator.py:118] OPERATOR_REFERENCE restored_finite_padding {'relative_l2': 0.0028711154591292143, 'max_abs': 0.0009812712669372559}\nI20261027 09:57:18.791014 9 check_native_fa3_operator.py:219] Native production operator/Graph acceptance passed for bf16; no model/service/quality claim\n",
+    "output/bf16/server.log": ", request_id: chatcmpl-15933769124469343823-uHACGvq23QWjdUei3H2dn7, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 930, num_prefix_cache_tokens: 0, generated_tokens: 542, ttft: 7242.0ms, total_latency: 27471.1ms, avg tpot: 37.4ms, generation speed: 26.8 tokens/s\nI20261027 10:01:34.043406   641 request.cpp:134] x-request-id: e51a87da-4f01-4d85-a9c0-38b7b6f98178, x-request-time: , request_id: chatcmpl-15933769124469343823-ht9TdDygcE5GgVcpmfR62L, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 1938, num_prefix_cache_tokens: 0, generated_tokens: 573, ttft: 6850.0ms, total_latency: 28170.7ms, avg tpot: 37.3ms, generation speed: 26.9 tokens/s\nI20261027 10:01:34.336599   640 request.cpp:134] x-request-id: a9c9e385-16a9-4f02-b4da-f8f2cec3063a, x-request-time: , request_id: chatcmpl-15933769124469343823-Tz8sUTVPognthj7kMW3vU7, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 198, num_prefix_cache_tokens: 0, generated_tokens: 290, ttft: 4976.0ms, total_latency: 15577.4ms, avg tpot: 36.7ms, generation speed: 27.4 tokens/s\nI20261027 10:01:34.489423   642 request.cpp:134] x-request-id: d91de68c-3b79-4f1a-8d6f-60fb52f29c98, x-request-time: , request_id: chatcmpl-15933769124469343823-PSXQTL8q8RqZRMb6JuMJvS, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 668, num_prefix_cache_tokens: 0, generated_tokens: 516, ttft: 7245.0ms, total_latency: 26474.1ms, avg tpot: 37.3ms, generation speed: 26.8 tokens/s\nI20261027 10:01:34.717643   640 request.cpp:134] x-request-id: 7869cd4e-628e-400a-b0fd-9fba19fc9512, x-request-time: , request_id: chatcmpl-15933769124469343823-V8z6e7qu2BoCEq7eKxxsKG, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 1710, num_prefix_cache_tokens: 0, generated_tokens: 940, ttft: 4056.0ms, total_latency: 39368.2ms, avg tpot: 37.6ms, generation speed: 26.6 tokens/s\nI20261027 10:01:34.979355   640 request.cpp:134] x-request-id: 8927bd47-4f3d-486e-bde7-ac1ef23214fe, x-request-time: , request_id: chatcmpl-15933769124469343823-Wd2dYgGSCrB4s5AWKRhg6F, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 1757, num_prefix_cache_tokens: 0, generated_tokens: 268, ttft: 3680.0ms, total_latency: 13086.4ms, avg tpot: 35.2ms, generation speed: 28.5 tokens/s\nI20261027 10:01:35.645264   642 request.cpp:134] x-request-id: f8d9f79e-dc07-4da6-b330-a8604fe498c9, x-request-time: , request_id: chatcmpl-15933769124469343823-vERfCkugmqjEUJSjGE3t7n, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 214, num_prefix_cache_tokens: 0, generated_tokens: 261, ttft: 2473.0ms, total_latency: 10840.6ms, avg tpot: 32.2ms, generation speed: 31.2 tokens/s\nI20261027 10:01:35.721436   640 request.cpp:134] x-request-id: 0b15c507-d0f3-4c17-94e8-243fedfb654e, x-request-time: , request_id: chatcmpl-15933769124469343823-YuHbqnyfvRQdjxw2QQjVLR, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 2149, num_prefix_cache_tokens: 0, generated_tokens: 468, ttft: 6872.0ms, total_latency: 24014.6ms, avg tpot: 36.7ms, generation speed: 27.3 tokens/s\nI20261027 10:01:35.913769   642 request.cpp:134] x-request-id: 9099b36f-a4ad-4bbd-ab59-5e827167551e, x-request-time: , request_id: chatcmpl-15933769124469343823-5V7v7YFWr7bywEySQEwW6m, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 1229, num_prefix_cache_tokens: 0, generated_tokens: 427, ttft: 6407.0ms, total_latency: 22012.1ms, avg tpot: 36.6ms, generation speed: 27.4 tokens/s\nI20261027 10:01:36.167510   640 request.cpp:134] x-request-id: 77b4890f-0ed3-4b1b-a8b7-a25ce460f0c7, x-request-time: , request_id: chatcmpl-15933769124469343823-3R3LTY7jQvdxcCYZgF3Mcs, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 38, num_prefix_cache_tokens: 0, generated_tokens: 431, ttft: 6017.0ms, total_latency: 21606.7ms, avg tpot: 36.3ms, generation speed: 27.6 tokens/s\nI20261027 10:01:36.269097   642 request.cpp:134] x-request-id: 00ebd1e7-4f93-4bb8-b3d2-8efc91a5799c, x-request-time: , request_id: chatcmpl-15933769124469343823-Ty36zVbAjwNbdfpTkXo2XC, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 1801, num_prefix_cache_tokens: 0, generated_tokens: 928, ttft: 3091.0ms, total_latency: 36387.7ms, avg tpot: 35.9ms, generation speed: 27.9 tokens/s\nI20261027 10:01:36.712984   643 request.cpp:134] x-request-id: 9cc8e03d-70c9-49ba-9432-79bff4f5318b, x-request-time: , request_id: chatcmpl-15933769124469343823-KapKQYBeH8M3oaf6xLNoEg, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 2059, num_prefix_cache_tokens: 0, generated_tokens: 578, ttft: 7343.0ms, total_latency: 28465.7ms, avg tpot: 36.6ms, generation speed: 27.4 tokens/s\nI20261027 10:01:37.057061   640 request.cpp:134] x-request-id: 415f1143-8870-4f19-87de-d6652f1f1193, x-request-time: , request_id: chatcmpl-15933769124469343823-dSgrgUPxX3HmjPeCwUxqMW, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 1410, num_prefix_cache_tokens: 0, generated_tokens: 1000, ttft: 2285.0ms, total_latency: 38619.1ms, avg tpot: 36.4ms, generation speed: 27.5 tokens/s\nI20261027 10:01:37.309739   640 request.cpp:134] x-request-id: 8b890290-20fb-42bc-928d-7cec5681a449, x-request-time: , request_id: chatcmpl-15933769124469343823-Pf3yacutEUFzZbAepNKwkx, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 34, num_prefix_cache_tokens: 0, generated_tokens: 364, ttft: 3658.0ms, total_latency: 16446.8ms, avg tpot: 35.2ms, generation speed: 28.5 tokens/s\nI20261027 10:01:37.411091   642 request.cpp:134] x-request-id: 8fd49bdf-9f06-4b97-a4ef-0d83e7b6f932, x-request-time: , request_id: chatcmpl-15933769124469343823-WgrznJN7Wbs5CtfwR2Cmtk, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 37, num_prefix_cache_tokens: 0, generated_tokens: 382, ttft: 5430.0ms, total_latency: 19105.5ms, avg tpot: 35.9ms, generation speed: 27.9 tokens/s\nI20261027 10:01:37.512167   641 request.cpp:134] x-request-id: c8079674-ff24-4cc8-8cfc-3214c6735258, x-request-time: , request_id: chatcmpl-15933769124469343823-jCa949MncmD5gme2tN69pe, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: length, prompt_tokens: 1052, num_prefix_cache_tokens: 0, generated_tokens: 1024, ttft: 4448.0ms, total_latency: 42691.2ms, avg tpot: 37.4ms, generation speed: 26.8 tokens/s\nI20261027 10:01:37.512216   643 request.cpp:134] x-request-id: 5b781283-0856-490e-be2a-92694c0ab250, x-request-time: , request_id: chatcmpl-15933769124469343823-bMPA3ARamqMYXqYEYbkT2z, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 846, num_prefix_cache_tokens: 0, generated_tokens: 961, ttft: 2776.0ms, total_latency: 37316.8ms, avg tpot: 36.0ms, generation speed: 27.8 tokens/s\nI20261027 10:01:37.727118   642 request.cpp:134] x-request-id: 54c29ebd-13e0-430c-a88a-50174be978a8, x-request-time: , request_id: chatcmpl-15933769124469343823-WULzpM8Lv3y7RwhvGo3Sqv, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 37, num_prefix_cache_tokens: 0, generated_tokens: 643, ttft: 7045.0ms, total_latency: 30957.7ms, avg tpot: 37.2ms, generation speed: 26.9 tokens/s\nI20261027 10:01:37.877507   640 request.cpp:134] x-request-id: 848a0162-81b2-42a8-b333-86faaeb7fc09, x-request-time: , request_id: chatcmpl-15933769124469343823-wnsBf7VskGqKvtmEeoQdPQ, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 518, num_prefix_cache_tokens: 0, generated_tokens: 196, ttft: 4050.0ms, total_latency: 10806.0ms, avg tpot: 34.6ms, generation speed: 29.0 tokens/s\nI20261027 10:01:37.902740   641 request.cpp:134] x-request-id: 1af7e79f-d5ad-421e-8175-0a3ff5ee0af6, x-request-time: , request_id: chatcmpl-15933769124469343823-TADyvRB7im3t6U99K768g3, sequence 0, max_tokens: 1024, temperature: 0, finish_reason: stop, prompt_tokens: 338, num_prefix_cache_tokens: 0, generated_tokens: 338, ttft: 2783.0ms, total_latency: 14641.8ms, avg tpot: 35.2ms, generation speed: 28.5 tokens/s\n",
+    "supervisor.log": "",
+    "watchdog.log": ""
+  },
+  "ok": true,
+  "operator_acceptance": {
+    "bf16": {
+      "sha256": "4d3c8ea48951d8c1457559c0e57d1bd2f48584ec85c1606f1896a48c49a39d8e",
+      "value": {
+        "arm": "bf16",
+        "backend": {
+          "attention_impl": "flashinfer",
+          "class": "FlashInferBackend",
+          "decode_impl": "xqa",
+          "decode_internal_q_data_type": "torch.bfloat16",
+          "decode_tensor_cores": true,
+          "flashinfer_version": "0.6.18.post1",
+          "kv_cache_dtype": "auto",
+          "kv_data_type": "torch.bfloat16",
+          "paged_prefill": true,
+          "planner_backend": "fa3",
+          "profile_scope": "production_xqa",
+          "q_data_type": "torch.bfloat16",
+          "q_scale": null,
+          "quality_transform": false,
+          "scale_strategy": "none",
+          "xqa_enable_pdl": true,
+          "xqa_graph_padding": "reserved_page0_one_token_discard",
+          "xqa_max_context": 32768,
+          "xqa_unused_kv_policy": "finite_full_initialization"
+        },
+        "classification": "operator_correctness_only",
+        "decode_impl": "xqa",
+        "device": "NVIDIA H800",
+        "fresh_dirty_cache_initialized_to_zero": true,
+        "invalid_nan_padding_diagnostics": {
+          "key": {
+            "finite_outputs": 10240,
+            "total_outputs": 10240
+          },
+          "value": {
+            "finite_outputs": 10240,
+            "total_outputs": 10240
+          }
+        },
+        "model_loaded": false,
+        "model_quality_validated": false,
+        "noncontiguous_q_checked": true,
+        "padded_graph_bucket_checked": true,
+        "partial_page_and_replan": true,
+        "prefill_planner": "fa3",
+        "real_capture_and_replay": true,
+        "reference": "FP32 dense causal attention on the same representable Q/K/V; relative L2 <=.05 plus rtol .08, atol .015",
+        "reference_comparisons": {
+          "capture_replay": {
+            "max_abs": 0.0008789524435997009,
+            "relative_l2": 0.003906028810888529
+          },
+          "changed_context": {
+            "max_abs": 0.0009812712669372559,
+            "relative_l2": 0.0028711154591292143
+          },
+          "padded_graph": {
+            "max_abs": 0.0009812712669372559,
+            "relative_l2": 0.0028711154591292143
+          },
+          "prefill": {
+            "max_abs": 0.0005266666412353516,
+            "relative_l2": 0.0022824311163276434
+          },
+          "restored_finite_padding": {
+            "max_abs": 0.0009812712669372559,
+            "relative_l2": 0.0028711154591292143
+          }
+        },
+        "reserved_page0_not_used_for_live_sequences": true,
+        "schema": "kv-native-fa3-operator-acceptance-v1",
+        "service_performance_measured": false,
+        "unused_padding_reference": "maximum_finite_FP8_or_large_finite_BF16"
+      }
+    }
+  },
+  "owned_containers": [
+    {
+      "created": "2026-10-27T01:54:16.636671613Z",
+      "id": "cd03a07576243d151eb47ba7cece94a24c01a9d2d57b6c5b4ea12eecce6b4636",
+      "running": true
+    }
+  ],
+  "quality_progress": {
+    "bf16": {},
+    "fp8_e4m3": {}
+  },
+  "relaunch_allowed": false,
+  "run_id": "prod-sharegpt-bf16xqa-c128-r1-20261027b",
+  "status": "RUNNING",
+  "supervisor_alive": true
+}

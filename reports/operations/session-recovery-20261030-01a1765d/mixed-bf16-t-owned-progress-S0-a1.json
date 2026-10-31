@@ -1,0 +1,25 @@
+{
+  "classification": "reported_by_bounded_readonly_monitor",
+  "utc": "2026-10-30T21:02:19.020615Z",
+  "response_sha256": "f83d8af274a9d11f4f5fad434e457963aa180f8236b4362085d219097ab03f02",
+  "run_id": "nextgen-bf16-qwen38-mixed8192-quality1720-r0-20261030t",
+  "status": "RUNNING",
+  "supervisor_alive": true,
+  "own_CID": "6a49dba870357205f74e7db837399e2aa1f2f86ca77581af578485fbc801e1d2",
+  "selected_GPU_MiB": 75137,
+  "selected_GPU_util_percent": 98,
+  "other_GPU_MiB": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "quality_complete_LF_rows": 72,
+  "quality_partial_line": false,
+  "last_record_id": "core-gsm8k-62",
+  "last_record_error": null,
+  "quality_accepted": false
+}

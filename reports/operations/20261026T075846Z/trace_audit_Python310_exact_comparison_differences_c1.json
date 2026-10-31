@@ -1,0 +1,201 @@
+{
+  "classification": "independent_audit_failed_not_passed",
+  "differences": [
+    {
+      "arm": "bf16",
+      "differences": [
+        {
+          "path": "/phases/measurement/client_start_lag_ms/mean",
+          "remote": 5.5266991474245115,
+          "local": 5.526699147424513,
+          "absolute_delta": 1.7763568394002505e-15
+        },
+        {
+          "path": "/phases/measurement/credit_issue_lag_ms/mean",
+          "remote": 0.9231874221432801,
+          "local": 0.9231874221432799,
+          "absolute_delta": 2.220446049250313e-16
+        },
+        {
+          "path": "/phases/measurement/credit_to_start_ms/mean",
+          "remote": 4.603511725281232,
+          "local": 4.6035117252812325,
+          "absolute_delta": 8.881784197001252e-16
+        },
+        {
+          "path": "/phases/measurement/e2e_ms/mean",
+          "remote": 156643.76669246494,
+          "local": 156643.7666924648,
+          "absolute_delta": 1.4551915228366852e-10
+        },
+        {
+          "path": "/phases/measurement/itl_ms/mean",
+          "remote": 94.8482652435163,
+          "local": 94.84826524351638,
+          "absolute_delta": 8.526512829121202e-14
+        },
+        {
+          "path": "/phases/measurement/offered_e2e_ms/mean",
+          "remote": 158416.06697253138,
+          "local": 158416.06697253144,
+          "absolute_delta": 5.820766091346741e-11
+        },
+        {
+          "path": "/phases/measurement/offered_ttft_ms/mean",
+          "remote": 144395.18524084502,
+          "local": 144395.185240845,
+          "absolute_delta": 2.9103830456733704e-11
+        },
+        {
+          "path": "/phases/measurement/ttft_ms/mean",
+          "remote": 144393.22700094464,
+          "local": 144393.22700094455,
+          "absolute_delta": 8.731149137020111e-11
+        },
+        {
+          "path": "/phases/warm_cache/credit_issue_lag_ms/mean",
+          "remote": 1.4077516090225564,
+          "local": 1.4077516090225568,
+          "absolute_delta": 4.440892098500626e-16
+        },
+        {
+          "path": "/phases/warm_cache/credit_to_start_ms/mean",
+          "remote": 5.704872300751879,
+          "local": 5.704872300751877,
+          "absolute_delta": 2.6645352591003757e-15
+        },
+        {
+          "path": "/phases/warm_cache/e2e_ms/mean",
+          "remote": 84520.0077067645,
+          "local": 84520.00770676447,
+          "absolute_delta": 2.9103830456733704e-11
+        },
+        {
+          "path": "/phases/warm_cache/itl_ms/mean",
+          "remote": 130.20218653005463,
+          "local": 130.20218653005472,
+          "absolute_delta": 8.526512829121202e-14
+        },
+        {
+          "path": "/phases/warm_cache/offered_e2e_ms/mean",
+          "remote": 87256.29982957339,
+          "local": 87256.29982957343,
+          "absolute_delta": 4.3655745685100555e-11
+        },
+        {
+          "path": "/phases/warm_cache/offered_ttft_ms/mean",
+          "remote": 71369.96208923208,
+          "local": 71369.9620892321,
+          "absolute_delta": 1.4551915228366852e-11
+        },
+        {
+          "path": "/phases/warm_cache/ttft_ms/mean",
+          "remote": 71362.47028325255,
+          "local": 71362.47028325257,
+          "absolute_delta": 1.4551915228366852e-11
+        }
+      ]
+    },
+    {
+      "arm": "fp8_e4m3",
+      "differences": [
+        {
+          "path": "/phases/measurement/client_start_lag_ms/mean",
+          "remote": 4.666981066903493,
+          "local": 4.666981066903491,
+          "absolute_delta": 2.6645352591003757e-15
+        },
+        {
+          "path": "/phases/measurement/credit_issue_lag_ms/mean",
+          "remote": 0.059512052101835404,
+          "local": 0.05951205210183567,
+          "absolute_delta": 2.636779683484747e-16
+        },
+        {
+          "path": "/phases/measurement/credit_to_start_ms/mean",
+          "remote": 4.607469014801658,
+          "local": 4.607469014801656,
+          "absolute_delta": 1.7763568394002505e-15
+        },
+        {
+          "path": "/phases/measurement/e2e_ms/mean",
+          "remote": 87493.23914592613,
+          "local": 87493.23914592611,
+          "absolute_delta": 1.4551915228366852e-11
+        },
+        {
+          "path": "/phases/measurement/itl_ms/mean",
+          "remote": 115.2248118100797,
+          "local": 115.22481181007973,
+          "absolute_delta": 2.842170943040401e-14
+        },
+        {
+          "path": "/phases/measurement/offered_e2e_ms/mean",
+          "remote": 88853.7335718769,
+          "local": 88853.733571877,
+          "absolute_delta": 1.0186340659856796e-10
+        },
+        {
+          "path": "/phases/measurement/offered_ttft_ms/mean",
+          "remote": 72464.50023256819,
+          "local": 72464.50023256817,
+          "absolute_delta": 1.4551915228366852e-11
+        },
+        {
+          "path": "/phases/measurement/ttft_ms/mean",
+          "remote": 72462.50564407387,
+          "local": 72462.5056440739,
+          "absolute_delta": 2.9103830456733704e-11
+        },
+        {
+          "path": "/phases/warm_cache/client_start_lag_ms/mean",
+          "remote": 5.566132533834586,
+          "local": 5.566132533834584,
+          "absolute_delta": 1.7763568394002505e-15
+        },
+        {
+          "path": "/phases/warm_cache/credit_issue_lag_ms/mean",
+          "remote": 0.422495686716792,
+          "local": 0.4224956867167929,
+          "absolute_delta": 8.881784197001252e-16
+        },
+        {
+          "path": "/phases/warm_cache/credit_to_start_ms/mean",
+          "remote": 5.1436368471177945,
+          "local": 5.143636847117794,
+          "absolute_delta": 8.881784197001252e-16
+        },
+        {
+          "path": "/phases/warm_cache/e2e_ms/mean",
+          "remote": 49986.601723382715,
+          "local": 49986.60172338271,
+          "absolute_delta": 7.275957614183426e-12
+        },
+        {
+          "path": "/phases/warm_cache/itl_ms/mean",
+          "remote": 207.29974161507718,
+          "local": 207.29974161507724,
+          "absolute_delta": 5.684341886080802e-14
+        },
+        {
+          "path": "/phases/warm_cache/offered_e2e_ms/mean",
+          "remote": 51410.57745300926,
+          "local": 51410.57745300927,
+          "absolute_delta": 7.275957614183426e-12
+        },
+        {
+          "path": "/phases/warm_cache/offered_ttft_ms/mean",
+          "remote": 33871.16435636111,
+          "local": 33871.164356361114,
+          "absolute_delta": 7.275957614183426e-12
+        },
+        {
+          "path": "/phases/warm_cache/ttft_ms/mean",
+          "remote": 33865.331311691356,
+          "local": 33865.33131169138,
+          "absolute_delta": 2.1827872842550278e-11
+        }
+      ]
+    }
+  ]
+}

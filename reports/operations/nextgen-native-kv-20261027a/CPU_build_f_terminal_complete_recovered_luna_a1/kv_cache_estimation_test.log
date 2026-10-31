@@ -1,0 +1,67 @@
+Running main() from /workspace/deps/vcpkg/buildtrees/gtest/src/v1.14.0-bcf93537a8.clean/googletest/src/gtest_main.cc
+[==========] Running 26 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 26 tests from KVCacheEstimationTest
+[ RUN      ] KVCacheEstimationTest.EstimatesStandardAttentionBlocks
+[       OK ] KVCacheEstimationTest.EstimatesStandardAttentionBlocks (0 ms)
+[ RUN      ] KVCacheEstimationTest.CountsEightBitPayloadAndPerHeadScales
+[       OK ] KVCacheEstimationTest.CountsEightBitPayloadAndPerHeadScales (0 ms)
+[ RUN      ] KVCacheEstimationTest.CountsNvfp4PayloadAndBlockScaleBytes
+[       OK ] KVCacheEstimationTest.CountsNvfp4PayloadAndBlockScaleBytes (0 ms)
+[ RUN      ] KVCacheEstimationTest.CountsPackedInt4PaddingAndScales
+[       OK ] KVCacheEstimationTest.CountsPackedInt4PaddingAndScales (0 ms)
+[ RUN      ] KVCacheEstimationTest.CountsMixedPayloadWithOnlyValueScale
+[       OK ] KVCacheEstimationTest.CountsMixedPayloadWithOnlyValueScale (0 ms)
+[ RUN      ] KVCacheEstimationTest.RejectsUnknownDtypeInsteadOfUsingModelBytes
+
+[WARNING] /workspace/deps/vcpkg/buildtrees/gtest/src/v1.14.0-bcf93537a8.clean/googletest/src/gtest-death-test.cc:1102:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test detected 2 threads. See https://github.com/google/googletest/blob/main/docs/advanced.md#death-tests-and-threads for more explanation and suggested solutions, especially if this is the last message you see before your test times out.
+[       OK ] KVCacheEstimationTest.RejectsUnknownDtypeInsteadOfUsingModelBytes (11 ms)
+[ RUN      ] KVCacheEstimationTest.IgnoresLinearStateSlotsWithoutLinearAttention
+[       OK ] KVCacheEstimationTest.IgnoresLinearStateSlotsWithoutLinearAttention (0 ms)
+[ RUN      ] KVCacheEstimationTest.UserIndexerCacheDtypeDirectlyControlsQuantization
+[       OK ] KVCacheEstimationTest.UserIndexerCacheDtypeDirectlyControlsQuantization (0 ms)
+[ RUN      ] KVCacheEstimationTest.IndexerScaleUsesLogicalCacheCapacity
+[       OK ] KVCacheEstimationTest.IndexerScaleUsesLogicalCacheCapacity (0 ms)
+[ RUN      ] KVCacheEstimationTest.ReservesLinearAttentionState
+[       OK ] KVCacheEstimationTest.ReservesLinearAttentionState (0 ms)
+[ RUN      ] KVCacheEstimationTest.LinearStateCapacityVariants
+[       OK ] KVCacheEstimationTest.LinearStateCapacityVariants (0 ms)
+[ RUN      ] KVCacheEstimationTest.Qwen35MtpExpandsConvStateLen
+[       OK ] KVCacheEstimationTest.Qwen35MtpExpandsConvStateLen (0 ms)
+[ RUN      ] KVCacheEstimationTest.Qwen35TextMtpUsesSsmCheckpointStride
+[       OK ] KVCacheEstimationTest.Qwen35TextMtpUsesSsmCheckpointStride (0 ms)
+[ RUN      ] KVCacheEstimationTest.EstimatesDeepSeekV4Pools
+[       OK ] KVCacheEstimationTest.EstimatesDeepSeekV4Pools (0 ms)
+[ RUN      ] KVCacheEstimationTest.DeepSeekV4RejectsBudgetWithoutCompressedCacheUnit
+
+[WARNING] /workspace/deps/vcpkg/buildtrees/gtest/src/v1.14.0-bcf93537a8.clean/googletest/src/gtest-death-test.cc:1102:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test detected 2 threads. See https://github.com/google/googletest/blob/main/docs/advanced.md#death-tests-and-threads for more explanation and suggested solutions, especially if this is the last message you see before your test times out.
+[       OK ] KVCacheEstimationTest.DeepSeekV4RejectsBudgetWithoutCompressedCacheUnit (6 ms)
+[ RUN      ] KVCacheEstimationTest.DeepSeekV4PdPrefillUsesBatchTokenCapacity
+[       OK ] KVCacheEstimationTest.DeepSeekV4PdPrefillUsesBatchTokenCapacity (0 ms)
+[ RUN      ] KVCacheEstimationTest.DeepSeekV4MixUsesBatchTokenCapacity
+[       OK ] KVCacheEstimationTest.DeepSeekV4MixUsesBatchTokenCapacity (0 ms)
+[ RUN      ] KVCacheEstimationTest.DeepSeekV4PdPrefillWithoutChunkingUsesBatchCapacity
+[       OK ] KVCacheEstimationTest.DeepSeekV4PdPrefillWithoutChunkingUsesBatchCapacity (0 ms)
+[ RUN      ] KVCacheEstimationTest.DeepSeekV4PdDecodeUsesBatchTokenCapacity
+[       OK ] KVCacheEstimationTest.DeepSeekV4PdDecodeUsesBatchTokenCapacity (0 ms)
+[ RUN      ] KVCacheEstimationTest.DeepSeekV4PdDecodeSwaCapacityIgnoresScheduleOverlap
+[       OK ] KVCacheEstimationTest.DeepSeekV4PdDecodeSwaCapacityIgnoresScheduleOverlap (0 ms)
+[ RUN      ] KVCacheEstimationTest.DeepSeekV4PrefixCacheKeepsOperationalSwaPool
+[       OK ] KVCacheEstimationTest.DeepSeekV4PrefixCacheKeepsOperationalSwaPool (0 ms)
+[ RUN      ] KVCacheEstimationTest.DeepSeekV4RealisticMixBudgetRetainsCompressedPools
+[       OK ] KVCacheEstimationTest.DeepSeekV4RealisticMixBudgetRetainsCompressedPools (0 ms)
+[ RUN      ] KVCacheEstimationTest.DeepSeekV4DecodeKeepsOperationalSwaPool
+[       OK ] KVCacheEstimationTest.DeepSeekV4DecodeKeepsOperationalSwaPool (0 ms)
+[ RUN      ] KVCacheEstimationTest.DeepSeekV4SwaOnlyPrefixKeepsOperationalSwaPool
+[       OK ] KVCacheEstimationTest.DeepSeekV4SwaOnlyPrefixKeepsOperationalSwaPool (0 ms)
+[ RUN      ] KVCacheEstimationTest.EstimatesDeepSeekV4DSparkSwaPool
+[       OK ] KVCacheEstimationTest.EstimatesDeepSeekV4DSparkSwaPool (0 ms)
+[ RUN      ] KVCacheEstimationTest.DeepSeekV4SpeculativeBudgetIncludesDSparkDraftSwaPool
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20261028 05:09:27.443058  1090 kv_cache_estimation.cpp:502] speculative kv cache capacity adjusted from 4.44 MB to 3.60 MB, target_constant_bytes=3153920, draft_constant_bytes=860160, target_common_unit_bytes=311296, draft_common_unit_bytes=0, common_blocks_per_unit=128, token_unit_count=2
+[       OK ] KVCacheEstimationTest.DeepSeekV4SpeculativeBudgetIncludesDSparkDraftSwaPool (0 ms)
+[----------] 26 tests from KVCacheEstimationTest (18 ms total)
+
+[----------] Global test environment tear-down
+[==========] 26 tests from 1 test suite ran. (18 ms total)
+[  PASSED  ] 26 tests.

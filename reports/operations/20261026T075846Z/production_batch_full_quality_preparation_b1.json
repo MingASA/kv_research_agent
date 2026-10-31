@@ -1,0 +1,1 @@
+{"package": "results/prepared/packages/prod-quality-bf16xqa-full1719-c128-r0-20261027b/package.json", "arms": ["bf16", "fp8_e4m3"], "client_concurrency": 128, "original_records_per_arm": 1719, "GPU_started": false}

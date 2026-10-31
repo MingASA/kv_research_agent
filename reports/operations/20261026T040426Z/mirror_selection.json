@@ -1,0 +1,1494 @@
+{
+  "observed_utc": "2026-10-26T04:07:46.087667+00:00",
+  "files": [
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/COMPLETE",
+      "size": 26
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/comparative_summary.csv",
+      "size": 599
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/manifest.json",
+      "size": 5112
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/verification.json",
+      "size": 311
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w0-g2-14b-native-bf16/COMPLETE",
+      "size": 26
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w0-g2-14b-native-bf16/allocation.json",
+      "size": 26674
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w0-g2-14b-native-bf16/docker.log",
+      "size": 178
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w0-g2-14b-native-bf16/docker_command.json",
+      "size": 1495
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w0-g2-14b-native-bf16/native_backend.json",
+      "size": 480
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w0-g2-14b-native-bf16/server.log",
+      "size": 90668
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w0-g2-14b-native-bf16/server_command.json",
+      "size": 661
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w0-g2-14b-native-bf16/sse_probe.json",
+      "size": 57
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w0-g2-14b-native-bf16/state.json",
+      "size": 2978
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/aiperf.log",
+      "size": 44970
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/gpu_telemetry.csv",
+      "size": 9001
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/protocol.json",
+      "size": 1014
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/request_audit.json",
+      "size": 2285
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/artifacts/.aiperf_results_ready.json",
+      "size": 52
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/artifacts/profile_export.jsonl",
+      "size": 749013
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/artifacts/profile_export_aiperf.csv",
+      "size": 7231
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/artifacts/profile_export_aiperf.json",
+      "size": 45836
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/artifacts/logs/aiperf.log",
+      "size": 30795
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/artifacts/phases/warmup/profile_export_aiperf.csv",
+      "size": 7069
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/artifacts/phases/warmup/profile_export_aiperf.json",
+      "size": 23199
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/artifacts/phases/profiling/profile_export_aiperf.csv",
+      "size": 7119
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/artifacts/phases/profiling/profile_export_aiperf.json",
+      "size": 23189
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/COMPLETE",
+      "size": 26
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/allocation.json",
+      "size": 44242
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/docker.log",
+      "size": 186
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/docker_command.json",
+      "size": 1495
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/native_backend.json",
+      "size": 649
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/server.log",
+      "size": 99376
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/server_command.json",
+      "size": 665
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/sse_probe.json",
+      "size": 57
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/state.json",
+      "size": 2980
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/aiperf.log",
+      "size": 44995
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/gpu_telemetry.csv",
+      "size": 9006
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/protocol.json",
+      "size": 1018
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/request_audit.json",
+      "size": 2287
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/artifacts/.aiperf_results_ready.json",
+      "size": 52
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/artifacts/profile_export.jsonl",
+      "size": 719383
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/artifacts/profile_export_aiperf.csv",
+      "size": 7230
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/artifacts/profile_export_aiperf.json",
+      "size": 45786
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/artifacts/logs/aiperf.log",
+      "size": 30804
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/artifacts/phases/warmup/profile_export_aiperf.csv",
+      "size": 7069
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/artifacts/phases/warmup/profile_export_aiperf.json",
+      "size": 23116
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/artifacts/phases/profiling/profile_export_aiperf.csv",
+      "size": 7118
+    },
+    {
+      "rel": "native_ceff00bb_16k512_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/artifacts/phases/profiling/profile_export_aiperf.json",
+      "size": 23230
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/COMPLETE",
+      "size": 26
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/comparative_summary.csv",
+      "size": 1004
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/manifest.json",
+      "size": 5118
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/verification.json",
+      "size": 311
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/COMPLETE",
+      "size": 26
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/allocation.json",
+      "size": 26674
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/docker.log",
+      "size": 356
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/docker_command.json",
+      "size": 1498
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/native_backend.json",
+      "size": 480
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/server.log",
+      "size": 147126
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/server_command.json",
+      "size": 661
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/sse_probe.json",
+      "size": 57
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/state.json",
+      "size": 5911
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/case-2/attempt-001/aiperf.log",
+      "size": 43178
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/case-2/attempt-001/gpu_telemetry.csv",
+      "size": 19726
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/case-2/attempt-001/protocol.json",
+      "size": 1014
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/case-2/attempt-001/request_audit.json",
+      "size": 2289
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/case-2/attempt-001/artifacts/.aiperf_results_ready.json",
+      "size": 52
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/case-2/attempt-001/artifacts/profile_export.jsonl",
+      "size": 800212
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/case-2/attempt-001/artifacts/profile_export_aiperf.csv",
+      "size": 7200
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/case-2/attempt-001/artifacts/profile_export_aiperf.json",
+      "size": 45794
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/case-2/attempt-001/artifacts/logs/aiperf.log",
+      "size": 29131
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/case-2/attempt-001/artifacts/phases/warmup/profile_export_aiperf.csv",
+      "size": 7038
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/case-2/attempt-001/artifacts/phases/warmup/profile_export_aiperf.json",
+      "size": 23113
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/case-2/attempt-001/artifacts/phases/profiling/profile_export_aiperf.csv",
+      "size": 7088
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/case-2/attempt-001/artifacts/phases/profiling/profile_export_aiperf.json",
+      "size": 23233
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/aiperf.log",
+      "size": 42940
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/gpu_telemetry.csv",
+      "size": 16139
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/protocol.json",
+      "size": 1014
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/request_audit.json",
+      "size": 2280
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/.aiperf_results_ready.json",
+      "size": 52
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/profile_export.jsonl",
+      "size": 774449
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/profile_export_aiperf.csv",
+      "size": 7220
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/profile_export_aiperf.json",
+      "size": 45626
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/logs/aiperf.log",
+      "size": 28865
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/phases/warmup/profile_export_aiperf.csv",
+      "size": 7059
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/phases/warmup/profile_export_aiperf.json",
+      "size": 23050
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/phases/profiling/profile_export_aiperf.csv",
+      "size": 7108
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/phases/profiling/profile_export_aiperf.json",
+      "size": 23128
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/COMPLETE",
+      "size": 26
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/allocation.json",
+      "size": 44242
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/docker.log",
+      "size": 372
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/docker_command.json",
+      "size": 1498
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/native_backend.json",
+      "size": 649
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/server.log",
+      "size": 155881
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/server_command.json",
+      "size": 665
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/sse_probe.json",
+      "size": 57
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/state.json",
+      "size": 5893
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-2/attempt-001/aiperf.log",
+      "size": 41170
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-2/attempt-001/gpu_telemetry.csv",
+      "size": 21546
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-2/attempt-001/protocol.json",
+      "size": 1018
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-2/attempt-001/request_audit.json",
+      "size": 2275
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-2/attempt-001/artifacts/.aiperf_results_ready.json",
+      "size": 52
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-2/attempt-001/artifacts/profile_export.jsonl",
+      "size": 862236
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-2/attempt-001/artifacts/profile_export_aiperf.csv",
+      "size": 7202
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-2/attempt-001/artifacts/profile_export_aiperf.json",
+      "size": 45785
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-2/attempt-001/artifacts/logs/aiperf.log",
+      "size": 26783
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-2/attempt-001/artifacts/phases/warmup/profile_export_aiperf.csv",
+      "size": 7008
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-2/attempt-001/artifacts/phases/warmup/profile_export_aiperf.json",
+      "size": 23156
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-2/attempt-001/artifacts/phases/profiling/profile_export_aiperf.csv",
+      "size": 7090
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-2/attempt-001/artifacts/phases/profiling/profile_export_aiperf.json",
+      "size": 23189
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/aiperf.log",
+      "size": 42313
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/gpu_telemetry.csv",
+      "size": 17282
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/protocol.json",
+      "size": 1018
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/request_audit.json",
+      "size": 2276
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/.aiperf_results_ready.json",
+      "size": 52
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/profile_export.jsonl",
+      "size": 823215
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/profile_export_aiperf.csv",
+      "size": 7223
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/profile_export_aiperf.json",
+      "size": 45828
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/logs/aiperf.log",
+      "size": 28054
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/phases/warmup/profile_export_aiperf.csv",
+      "size": 7047
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/phases/warmup/profile_export_aiperf.json",
+      "size": 23241
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/phases/profiling/profile_export_aiperf.csv",
+      "size": 7111
+    },
+    {
+      "rel": "native_ceff00bb_24k512_C2_C4_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/phases/profiling/profile_export_aiperf.json",
+      "size": 23147
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/COMPLETE",
+      "size": 26
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/comparative_summary.csv",
+      "size": 1017
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/manifest.json",
+      "size": 5119
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/verification.json",
+      "size": 311
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/COMPLETE",
+      "size": 26
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/allocation.json",
+      "size": 26674
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/docker.log",
+      "size": 356
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/docker_command.json",
+      "size": 1498
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/native_backend.json",
+      "size": 480
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/server.log",
+      "size": 146817
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/server_command.json",
+      "size": 661
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/sse_probe.json",
+      "size": 57
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/state.json",
+      "size": 5921
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/aiperf.log",
+      "size": 44756
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/gpu_telemetry.csv",
+      "size": 7824
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/protocol.json",
+      "size": 1014
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/request_audit.json",
+      "size": 2299
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/.aiperf_results_ready.json",
+      "size": 52
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/profile_export.jsonl",
+      "size": 886011
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/profile_export_aiperf.csv",
+      "size": 7121
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/profile_export_aiperf.json",
+      "size": 45607
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/logs/aiperf.log",
+      "size": 31242
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/phases/warmup/profile_export_aiperf.csv",
+      "size": 6948
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/phases/warmup/profile_export_aiperf.json",
+      "size": 23009
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/phases/profiling/profile_export_aiperf.csv",
+      "size": 7009
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/phases/profiling/profile_export_aiperf.json",
+      "size": 23150
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/aiperf.log",
+      "size": 45291
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/gpu_telemetry.csv",
+      "size": 5575
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/protocol.json",
+      "size": 1014
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/request_audit.json",
+      "size": 2280
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/artifacts/.aiperf_results_ready.json",
+      "size": 52
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/artifacts/profile_export.jsonl",
+      "size": 827012
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/artifacts/profile_export_aiperf.csv",
+      "size": 7138
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/artifacts/profile_export_aiperf.json",
+      "size": 45615
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/artifacts/logs/aiperf.log",
+      "size": 31631
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/artifacts/phases/warmup/profile_export_aiperf.csv",
+      "size": 6988
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/artifacts/phases/warmup/profile_export_aiperf.json",
+      "size": 23138
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/artifacts/phases/profiling/profile_export_aiperf.csv",
+      "size": 7026
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/artifacts/phases/profiling/profile_export_aiperf.json",
+      "size": 23029
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/COMPLETE",
+      "size": 26
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/allocation.json",
+      "size": 44242
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/docker.log",
+      "size": 372
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/docker_command.json",
+      "size": 1498
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/native_backend.json",
+      "size": 649
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/server.log",
+      "size": 155543
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/server_command.json",
+      "size": 665
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/sse_probe.json",
+      "size": 57
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/state.json",
+      "size": 5915
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/aiperf.log",
+      "size": 43760
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/gpu_telemetry.csv",
+      "size": 7455
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/protocol.json",
+      "size": 1018
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/request_audit.json",
+      "size": 2288
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/.aiperf_results_ready.json",
+      "size": 52
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/profile_export.jsonl",
+      "size": 849540
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/profile_export_aiperf.csv",
+      "size": 7117
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/profile_export_aiperf.json",
+      "size": 45673
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/logs/aiperf.log",
+      "size": 30138
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/phases/warmup/profile_export_aiperf.csv",
+      "size": 6963
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/phases/warmup/profile_export_aiperf.json",
+      "size": 23092
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/phases/profiling/profile_export_aiperf.csv",
+      "size": 7005
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/phases/profiling/profile_export_aiperf.json",
+      "size": 23141
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/aiperf.log",
+      "size": 45449
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/gpu_telemetry.csv",
+      "size": 5654
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/protocol.json",
+      "size": 1018
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/request_audit.json",
+      "size": 2285
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/artifacts/.aiperf_results_ready.json",
+      "size": 52
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/artifacts/profile_export.jsonl",
+      "size": 900649
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/artifacts/profile_export_aiperf.csv",
+      "size": 7157
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/artifacts/profile_export_aiperf.json",
+      "size": 45735
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/artifacts/logs/aiperf.log",
+      "size": 31780
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/artifacts/phases/warmup/profile_export_aiperf.csv",
+      "size": 6995
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/artifacts/phases/warmup/profile_export_aiperf.json",
+      "size": 23113
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/artifacts/phases/profiling/profile_export_aiperf.csv",
+      "size": 7045
+    },
+    {
+      "rel": "native_ceff00bb_8k1024_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/artifacts/phases/profiling/profile_export_aiperf.json",
+      "size": 23182
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/COMPLETE",
+      "size": 26
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/comparative_summary.csv",
+      "size": 597
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/manifest.json",
+      "size": 5109
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/verification.json",
+      "size": 311
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w0-g2-14b-native-bf16/COMPLETE",
+      "size": 26
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w0-g2-14b-native-bf16/allocation.json",
+      "size": 26674
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w0-g2-14b-native-bf16/docker.log",
+      "size": 180
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w0-g2-14b-native-bf16/docker_command.json",
+      "size": 1495
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w0-g2-14b-native-bf16/native_backend.json",
+      "size": 488
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w0-g2-14b-native-bf16/server.log",
+      "size": 90622
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w0-g2-14b-native-bf16/server_command.json",
+      "size": 662
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w0-g2-14b-native-bf16/sse_probe.json",
+      "size": 57
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w0-g2-14b-native-bf16/state.json",
+      "size": 2986
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w0-g2-14b-native-bf16/case-16/attempt-001/aiperf.log",
+      "size": 47673
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w0-g2-14b-native-bf16/case-16/attempt-001/gpu_telemetry.csv",
+      "size": 4604
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w0-g2-14b-native-bf16/case-16/attempt-001/protocol.json",
+      "size": 1015
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w0-g2-14b-native-bf16/case-16/attempt-001/request_audit.json",
+      "size": 2292
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w0-g2-14b-native-bf16/case-16/attempt-001/artifacts/.aiperf_results_ready.json",
+      "size": 52
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w0-g2-14b-native-bf16/case-16/attempt-001/artifacts/profile_export.jsonl",
+      "size": 845699
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w0-g2-14b-native-bf16/case-16/attempt-001/artifacts/profile_export_aiperf.csv",
+      "size": 7204
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w0-g2-14b-native-bf16/case-16/attempt-001/artifacts/profile_export_aiperf.json",
+      "size": 46004
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w0-g2-14b-native-bf16/case-16/attempt-001/artifacts/logs/aiperf.log",
+      "size": 33525
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w0-g2-14b-native-bf16/case-16/attempt-001/artifacts/phases/warmup/profile_export_aiperf.csv",
+      "size": 6981
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w0-g2-14b-native-bf16/case-16/attempt-001/artifacts/phases/warmup/profile_export_aiperf.json",
+      "size": 23093
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w0-g2-14b-native-bf16/case-16/attempt-001/artifacts/phases/profiling/profile_export_aiperf.csv",
+      "size": 7092
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w0-g2-14b-native-bf16/case-16/attempt-001/artifacts/phases/profiling/profile_export_aiperf.json",
+      "size": 23466
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/COMPLETE",
+      "size": 26
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/allocation.json",
+      "size": 44242
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/docker.log",
+      "size": 188
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/docker_command.json",
+      "size": 1495
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/native_backend.json",
+      "size": 657
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/server.log",
+      "size": 99343
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/server_command.json",
+      "size": 666
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/sse_probe.json",
+      "size": 57
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/state.json",
+      "size": 2981
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-16/attempt-001/aiperf.log",
+      "size": 47814
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-16/attempt-001/gpu_telemetry.csv",
+      "size": 4476
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-16/attempt-001/protocol.json",
+      "size": 1019
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-16/attempt-001/request_audit.json",
+      "size": 2287
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-16/attempt-001/artifacts/.aiperf_results_ready.json",
+      "size": 52
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-16/attempt-001/artifacts/profile_export.jsonl",
+      "size": 831318
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-16/attempt-001/artifacts/profile_export_aiperf.csv",
+      "size": 7212
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-16/attempt-001/artifacts/profile_export_aiperf.json",
+      "size": 45821
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-16/attempt-001/artifacts/logs/aiperf.log",
+      "size": 33678
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-16/attempt-001/artifacts/phases/warmup/profile_export_aiperf.csv",
+      "size": 6985
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-16/attempt-001/artifacts/phases/warmup/profile_export_aiperf.json",
+      "size": 23014
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-16/attempt-001/artifacts/phases/profiling/profile_export_aiperf.csv",
+      "size": 7100
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C16_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-16/attempt-001/artifacts/phases/profiling/profile_export_aiperf.json",
+      "size": 23370
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/COMPLETE",
+      "size": 26
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/comparative_summary.csv",
+      "size": 1022
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/manifest.json",
+      "size": 5115
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/verification.json",
+      "size": 311
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/COMPLETE",
+      "size": 26
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/allocation.json",
+      "size": 26674
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/docker.log",
+      "size": 356
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/docker_command.json",
+      "size": 1497
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/native_backend.json",
+      "size": 480
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/server.log",
+      "size": 146388
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/server_command.json",
+      "size": 661
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/sse_probe.json",
+      "size": 57
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/state.json",
+      "size": 5902
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/aiperf.log",
+      "size": 43056
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/gpu_telemetry.csv",
+      "size": 7817
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/protocol.json",
+      "size": 1013
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/request_audit.json",
+      "size": 2287
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/.aiperf_results_ready.json",
+      "size": 52
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/profile_export.jsonl",
+      "size": 884210
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/profile_export_aiperf.csv",
+      "size": 7110
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/profile_export_aiperf.json",
+      "size": 45574
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/logs/aiperf.log",
+      "size": 29172
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/phases/warmup/profile_export_aiperf.csv",
+      "size": 6943
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/phases/warmup/profile_export_aiperf.json",
+      "size": 22945
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/phases/profiling/profile_export_aiperf.csv",
+      "size": 6998
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/phases/profiling/profile_export_aiperf.json",
+      "size": 23179
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/aiperf.log",
+      "size": 44157
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/gpu_telemetry.csv",
+      "size": 5541
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/protocol.json",
+      "size": 1013
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/request_audit.json",
+      "size": 2273
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/artifacts/.aiperf_results_ready.json",
+      "size": 52
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/artifacts/profile_export.jsonl",
+      "size": 824257
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/artifacts/profile_export_aiperf.csv",
+      "size": 7136
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/artifacts/profile_export_aiperf.json",
+      "size": 45485
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/artifacts/logs/aiperf.log",
+      "size": 30246
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/artifacts/phases/warmup/profile_export_aiperf.csv",
+      "size": 6984
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/artifacts/phases/warmup/profile_export_aiperf.json",
+      "size": 23062
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/artifacts/phases/profiling/profile_export_aiperf.csv",
+      "size": 7024
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w0-g2-14b-native-bf16/case-8/attempt-001/artifacts/phases/profiling/profile_export_aiperf.json",
+      "size": 22973
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/COMPLETE",
+      "size": 26
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/allocation.json",
+      "size": 44242
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/docker.log",
+      "size": 372
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/docker_command.json",
+      "size": 1497
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/native_backend.json",
+      "size": 649
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/server.log",
+      "size": 155317
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/server_command.json",
+      "size": 665
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/sse_probe.json",
+      "size": 57
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/state.json",
+      "size": 5895
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/aiperf.log",
+      "size": 42388
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/gpu_telemetry.csv",
+      "size": 7400
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/protocol.json",
+      "size": 1017
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/request_audit.json",
+      "size": 2268
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/.aiperf_results_ready.json",
+      "size": 52
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/profile_export.jsonl",
+      "size": 845863
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/profile_export_aiperf.csv",
+      "size": 7114
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/profile_export_aiperf.json",
+      "size": 45459
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/logs/aiperf.log",
+      "size": 28480
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/phases/warmup/profile_export_aiperf.csv",
+      "size": 6938
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/phases/warmup/profile_export_aiperf.json",
+      "size": 23044
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/phases/profiling/profile_export_aiperf.csv",
+      "size": 7002
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/phases/profiling/profile_export_aiperf.json",
+      "size": 22973
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/aiperf.log",
+      "size": 43965
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/gpu_telemetry.csv",
+      "size": 5504
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/protocol.json",
+      "size": 1017
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/request_audit.json",
+      "size": 2285
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/artifacts/.aiperf_results_ready.json",
+      "size": 52
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/artifacts/profile_export.jsonl",
+      "size": 878701
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/artifacts/profile_export_aiperf.csv",
+      "size": 7148
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/artifacts/profile_export_aiperf.json",
+      "size": 45724
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/artifacts/logs/aiperf.log",
+      "size": 29982
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/artifacts/phases/warmup/profile_export_aiperf.csv",
+      "size": 6991
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/artifacts/phases/warmup/profile_export_aiperf.json",
+      "size": 23055
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/artifacts/phases/profiling/profile_export_aiperf.csv",
+      "size": 7036
+    },
+    {
+      "rel": "native_ceff00bb_8k512_C4_C8_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-8/attempt-001/artifacts/phases/profiling/profile_export_aiperf.json",
+      "size": 23227
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/COMPLETE",
+      "size": 26
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/comparative_summary.csv",
+      "size": 596
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/manifest.json",
+      "size": 5112
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/verification.json",
+      "size": 311
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w0-g2-14b-native-bf16/COMPLETE",
+      "size": 26
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w0-g2-14b-native-bf16/allocation.json",
+      "size": 26674
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w0-g2-14b-native-bf16/docker.log",
+      "size": 178
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w0-g2-14b-native-bf16/docker_command.json",
+      "size": 1516
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w0-g2-14b-native-bf16/native_backend.json",
+      "size": 480
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w0-g2-14b-native-bf16/server.log",
+      "size": 90613
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w0-g2-14b-native-bf16/server_command.json",
+      "size": 661
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w0-g2-14b-native-bf16/sse_probe.json",
+      "size": 57
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w0-g2-14b-native-bf16/state.json",
+      "size": 2981
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/aiperf.log",
+      "size": 43400
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/gpu_telemetry.csv",
+      "size": 10343
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/protocol.json",
+      "size": 1014
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/request_audit.json",
+      "size": 2288
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/.aiperf_results_ready.json",
+      "size": 52
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/profile_export.jsonl",
+      "size": 721994
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/profile_export_aiperf.csv",
+      "size": 7206
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/profile_export_aiperf.json",
+      "size": 45601
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/logs/aiperf.log",
+      "size": 29437
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/phases/warmup/profile_export_aiperf.csv",
+      "size": 7027
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/phases/warmup/profile_export_aiperf.json",
+      "size": 22990
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/phases/profiling/profile_export_aiperf.csv",
+      "size": 7094
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w0-g2-14b-native-bf16/case-4/attempt-001/artifacts/phases/profiling/profile_export_aiperf.json",
+      "size": 23163
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/COMPLETE",
+      "size": 26
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/allocation.json",
+      "size": 44242
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/docker.log",
+      "size": 186
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/docker_command.json",
+      "size": 1516
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/native_backend.json",
+      "size": 649
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/server.log",
+      "size": 99183
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/server_command.json",
+      "size": 665
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/sse_probe.json",
+      "size": 57
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/state.json",
+      "size": 2966
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/aiperf.log",
+      "size": 42428
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/gpu_telemetry.csv",
+      "size": 11004
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/protocol.json",
+      "size": 1018
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/request_audit.json",
+      "size": 2273
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/.aiperf_results_ready.json",
+      "size": 52
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/profile_export.jsonl",
+      "size": 804088
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/profile_export_aiperf.csv",
+      "size": 7205
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/profile_export_aiperf.json",
+      "size": 45681
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/logs/aiperf.log",
+      "size": 28197
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/phases/warmup/profile_export_aiperf.csv",
+      "size": 7039
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/phases/warmup/profile_export_aiperf.json",
+      "size": 23201
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/phases/profiling/profile_export_aiperf.csv",
+      "size": 7093
+    },
+    {
+      "rel": "native_flashinfer_14b_16k512_C4_graph_ceff00bb_g2_001/jobs/w1-g2-14b-native-fp8_e4m3/case-4/attempt-001/artifacts/phases/profiling/profile_export_aiperf.json",
+      "size": 23040
+    },
+    {
+      "base_rel": "inputs/aiperf/aiperf_h800_v4_2_native.py",
+      "size": 42514
+    },
+    {
+      "base_rel": "inputs/aiperf/aiperf_h800_v2_1.py",
+      "size": 45106
+    },
+    {
+      "base_rel": "inputs/aiperf/workload_prepare_v3.py",
+      "size": 15185
+    },
+    {
+      "base_rel": "inputs/aiperf/aiperf_v3_tokenizer_compat/sitecustomize.py",
+      "size": 1247
+    },
+    {
+      "base_rel": "inputs/aiperf/run_native_overnight_ceff00bb.sh",
+      "size": 2284
+    },
+    {
+      "base_rel": "experiments/aiperf/native_ceff00bb_overnight.log",
+      "size": 6037
+    }
+  ],
+  "total_bytes": 20580006
+}

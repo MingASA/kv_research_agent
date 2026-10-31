@@ -1,0 +1,80 @@
+{
+  "endpoint": {
+    "fingerprint": "SHA256:QZwhu4BzgiOmHYABTUK1kXdAYHPun3iNioo69CKCgEI",
+    "host": "h800-41594a.fkpku.cn",
+    "port": 45291,
+    "user": "yinjinrun"
+  },
+  "expected_container_id": "132b9fbdaa944574e74e83383b2892315ffc9640ab4ef4b2103e41f18f879f8d",
+  "manifest_sha256": "4302b22ddc3938f685bdae02490da7b8f2caf5ba1e634154e1d8fa2c3e10fe66",
+  "observed_at_utc": "2026-10-28T15:14:32.949572+00:00",
+  "operation": "exact_container_identity_then_bounded_case_metadata_and_log_tails",
+  "remote_root": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/scratch/nextgen-aiperf-wire-20261028c",
+  "remote_script_sha256": "bd7fc3a3f2cc49f2f047aed49aad261da7a50afef3f8fe0737de7d328c39dc78",
+  "remote_writes": false,
+  "response": {
+    "container": {
+      "DeviceRequests": null,
+      "Devices": [],
+      "OOMKilled": false,
+      "Privileged": false,
+      "exit_code": 1,
+      "id": "132b9fbdaa944574e74e83383b2892315ffc9640ab4ef4b2103e41f18f879f8d",
+      "label": "nextgen-aiperf-wire-20261028c",
+      "running": false,
+      "state": "exited",
+      "uid": "1005:1005"
+    },
+    "full_cli_cases_stat_only": [
+      {
+        "bytes": 10565,
+        "listing": "stat_only",
+        "path": "full_cli_cases/warmup_chat16/aiperf.log"
+      },
+      {
+        "bytes": 1388,
+        "listing": "stat_only",
+        "path": "full_cli_cases/warmup_chat16/proof.json"
+      }
+    ],
+    "listing_skipped": [
+      {
+        "path": "full_cli_cases/warmup_chat16/artifacts",
+        "reason": "excluded_artifacts_assets_or_request_payload"
+      }
+    ],
+    "log_evidence": [
+      {
+        "path": "wire.log",
+        "sha256": "b0392c3a21f75f00647dd87eff66a7a0a21c379ff23948921e01de45ee82d230",
+        "size_bytes": 1280,
+        "tail": "Traceback (most recent call last):\n  File \"/workspace/agent_work/scratch/nextgen-aiperf-wire-20261028c/wire.py\", line 113, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/workspace/agent_work/scratch/nextgen-aiperf-wire-20261028c/wire.py\", line 109, in main\n    result=asyncio.run(validate(args.input,args.out))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/runners.py\", line 194, in run\n    return runner.run(main)\n           ^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/base_events.py\", line 687, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/workspace/agent_work/scratch/nextgen-aiperf-wire-20261028c/wire.py\", line 85, in validate\n    if code!=0:raise ValueError('Actual AIPerf CLI returned'+str(code)+'; '+str(directory/'aiperf.log'))\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Actual AIPerf CLI returned1; /workspace/agent_work/scratch/nextgen-aiperf-wire-20261028c/full_cli_cases/warmup_chat16/aiperf.log\n",
+        "tail_bytes": 1280,
+        "tail_sha256": "b0392c3a21f75f00647dd87eff66a7a0a21c379ff23948921e01de45ee82d230"
+      },
+      {
+        "path": "full_cli_cases/warmup_chat16/aiperf.log",
+        "sha256": "f569ea607c3eeb87415c5fb5533700ab7cf384a83739ae7b2dc20971d812b88e",
+        "size_bytes": 10565,
+        "tail": "146)\n23:08:37.362 INFO     Registered Records Manager (id: 'records_manager') (system_controller_dispatch.py:146)\n23:08:37.447 INFO     Registered Server Metrics Manager (id: 'server_metrics_manager') (system_controller_dispatch.py:146)\n23:08:37.453 INFO     Registered: Timing_Manager ('timing_manager') [0/0] (service_registry.py:196)\n23:08:37.453 INFO     Registered Timing Manager (id: 'timing_manager') (system_controller_dispatch.py:146)\n23:08:37.453 INFO     Registered Timing Manager (id: 'timing_manager') (system_controller_dispatch.py:146)\n23:08:37.465 INFO     Registered: Worker ('worker_9bbf339f') [0/0] (service_registry.py:196)\n23:08:37.465 INFO     Registered Worker (id: 'worker_9bbf339f') (system_controller_dispatch.py:146)\n23:08:37.465 INFO     Registered Worker (id: 'worker_9bbf339f') (system_controller_dispatch.py:146)\n23:08:37.710 INFO     System state: initializing -> configuring (system_controller.py:700)\n23:08:37.710 INFO     AIPerf System is CONFIGURING (system_controller.py:536)\n23:08:37.710 INFO     Configuring all services to start profiling (system_controller.py:713)\n23:08:37.711 INFO     Tokenization is disabled for this endpoint, skipping tokenizer configuration (inference_result_parser.py:85)\n23:08:37.711 INFO     Waiting for dataset to be configured before configuring timing (manager.py:149)\n23:08:37.716 INFO     Server metrics disabled - no Prometheus endpoints reachable (system_controller.py:1046)\n23:08:37.889 INFO     Configuring tokenizer(s) for dataset manager (dataset_manager.py:271)\n23:08:39.457 ERROR    Dataset configuration failed: TokenizerError(\"Failed to load tokenizer '/models/Qwen3.8-27B': HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/models/Qwen3.8-27B'. Use `repo_type` argument if needed.\") (dataset_manager.py:193)\nTraceback (most recent call last):\n  File \"/workspace/.venv-aiperf/lib/python3.12/site-packages/aiperf/common/tokenizer.py\", line 528, in from_pretrained\n    return cls._load_from_hub(\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/.venv-aiperf/lib/python3.12/site-packages/aiperf/common/tokenizer.py\", line 560, in _load_from_hub\n    tokenizer_instance = cls._from_pretrained_local(\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/.venv-aiperf/lib/python3.12/site-packages/aiperf/common/tokenizer.py\", line 655, in _from_pretrained_local\n    local_path = cls._resolve_local_snapshot(name, revision)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/.venv-aiperf/lib/python3.12/site-packages/aiperf/common/tokenizer.py\", line 686, in _resolve_local_snapshot\n    return snapshot_download(\n           ^^^^^^^^^^^^^^^^^^\n  File \"/workspace/.venv-aiperf/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py\", line 85, in _inner_fn\n    validate_repo_id(arg_value)\n  File \"/workspace/.venv-aiperf/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py\", line 133, in validate_repo_id\n    raise HFValidationError(\nhuggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/models/Qwen3.8-27B'. Use `repo_type` argument if needed.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/workspace/.venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/dataset_manager.py\", line 191, in _profile_configure_command\n    await self._do_profile_configure(message)\n  File \"/workspace/.venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/dataset_manager.py\", line 244, in _do_profile_configure\n    await self._configure_dataset_locked()\n  File \"/workspace/.venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/dataset_manager.py\", line 273, in _configure_dataset_locked\n    await self._configure_tokenizer()\n  File \"/workspace/.venv-aiperf/lib/python3.12/site-packages/aiperf/dataset/dataset_manager.py\", line 376, in _configure_tokenizer\n    self.tokenizer = await asyncio.to_thread(\n                     ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/threads.py\", line 25, in to_thread\n    return await loop.run_in_executor(None, func_call)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/thread.py\", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/.venv-aiperf/lib/python3.12/site-packages/aiperf/common/tokenizer.py\", line 541, in from_pretrained\n    raise TokenizerError(\naiperf.common.exceptions.TokenizerError: Failed to load tokenizer '/models/Qwen3.8-27B': HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/models/Qwen3.8-27B'. Use `repo_type` argument if needed.\n23:08:39.459 ERROR    Failed to handle command profile_configure: Failed to load tokenizer '/models/Qwen3.8-27B': HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/models/Qwen3.8-27B'. Use `repo_type` argument if needed. (base_component_service.py:522)\n23:08:39.460 ERROR    Received dataset configuration failed notification from dataset_manager: TokenizerError: Failed to load tokenizer '/models/Qwen3.8-27B': HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/models/Qwen3.8-27B'. Use `repo_type` argument if needed. (manager.py:139)\n23:08:39.460 ERROR    Failed to handle command profile_configure: Dataset configuration failed: TokenizerError: Failed to load tokenizer '/models/Qwen3.8-27B': HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/models/Qwen3.8-27B'. Use `repo_type` argument if needed. (base_component_service.py:522)\n23:08:39.461 ERROR    Error running Hook(func=<bound method SystemController._start_services of <SystemController system_controller (state=starting)>>, params=None) hook for SystemController: Failed to perform operation 'Configure Profiling' (aiperf_lifecycle_mixin.py:153)\n23:08:39.461 ERROR    Failed for SystemController (id=system_controller): SystemController._start_services: Failed to perform operation 'Configure Profiling' (aiperf_lifecycle_mixin.py:354)\n23:08:39.461 INFO     System state: configuring -> shutdown (system_controller.py:700)\n\n\u256d\u2500 AIPerf System Exit Errors \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u256e\n\u2502 \u2022 Service: dataset_manager                                                   \u2502\n\u2502    Operation: Configure Profiling                                            \u2502\n\u2502    Error: CommandError                                                       \u2502\n\u2502    Reason: Failed to load tokenizer '/models/Qwen3.8-27B':                   \u2502\n\u2502            HFValidationError: Repo id must be in the form                    \u2502\n\u2502            'repo_name' or 'namespace/repo_name':                             \u2502\n\u2502            '/models/Qwen3.8-27B'. Use `repo_type` argument if                \u2502\n\u2502            needed.                                                           \u2502\n\u2502                                                                              \u2502\n\u2502 \u2022 Service: system_controller                                                 \u2502\n\u2502    Operation: Starting                                                       \u2502\n\u2502    Error: HookError                                                          \u2502\n\u2502    Reason: HookError(\"SystemController._start_services: Failed to perform    \u2502\n\u2502            operation 'Configure Profiling'\")                                 \u2502\n\u2502    Cause: LifecycleOperationError(\"Failed to perform operation 'Configure    \u2502\n\u2502            Profiling'\")                                                      \u2502\n\u2570\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u256f\nLog File: \n/workspace/agent_work/scratch/nextgen-aiperf-wire-20261028c/full_cli_cases/warmu\np_chat16/artifacts/logs/aiperf.log\n\n",
+        "tail_bytes": 8192,
+        "tail_sha256": "e9d390e7f097a269624d3e41d581351ae38b76fb276067e2c97e88d0e068efa2"
+      },
+      {
+        "path": "full_cli_cases/warmup_chat16/proof.json",
+        "sha256": "812c66a1cdd3272b3b3e9d56057bcbae25a1b9b882324e16b349c06a6a948c4a",
+        "size_bytes": 1388,
+        "tail": "{\n  \"input\": \"/workspace/agent_work/scratch/nextgen-aiperf-wire-20261028c/warmup_chat16.json\",\n  \"input_sha256\": \"9214eed030ef60799a50508b51e8d3034189e0852189e57356ef2fd7e87c2381\",\n  \"command\": [\n    \"/workspace/.venv-aiperf/bin/python\",\n    \"-B\",\n    \"-m\",\n    \"aiperf\",\n    \"profile\",\n    \"--model\",\n    \"Qwen3.8-27B\",\n    \"--tokenizer\",\n    \"/models/Qwen3.8-27B\",\n    \"--url\",\n    \"http://127.0.0.1:37207\",\n    \"--endpoint-type\",\n    \"chat\",\n    \"--streaming\",\n    \"--use-server-token-count\",\n    \"--use-legacy-max-tokens\",\n    \"--input-file\",\n    \"/workspace/agent_work/scratch/nextgen-aiperf-wire-20261028c/warmup_chat16.json\",\n    \"--custom-dataset-type\",\n    \"inputs_json\",\n    \"--dataset-sampling-strategy\",\n    \"sequential\",\n    \"--request-count\",\n    \"16\",\n    \"--concurrency\",\n    \"4\",\n    \"--workers-max\",\n    \"1\",\n    \"--no-gpu-telemetry\",\n    \"--random-seed\",\n    \"20261027\",\n    \"--request-timeout-seconds\",\n    \"30\",\n    \"--ui\",\n    \"none\",\n    \"--export-level\",\n    \"raw\",\n    \"--output-artifact-dir\",\n    \"/workspace/agent_work/scratch/nextgen-aiperf-wire-20261028c/full_cli_cases/warmup_chat16/artifacts\"\n  ],\n  \"process_return_code\": 1,\n  \"sessions\": 16,\n  \"expected_turns\": 16,\n  \"actual_HTTP_requests\": 0,\n  \"all_actual_payload_counts_match\": false,\n  \"wire_observations\": [],\n  \"warmup_scope\": \"Separate frozen dataset/CLI; no embedded warmup cursor consumption\"\n}\n",
+        "tail_bytes": 1388,
+        "tail_sha256": "812c66a1cdd3272b3b3e9d56057bcbae25a1b9b882324e16b349c06a6a948c4a"
+      }
+    ],
+    "ok": true,
+    "root": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/scratch/nextgen-aiperf-wire-20261028c",
+    "run_id": "nextgen-aiperf-wire-20261028c",
+    "uid": 1005
+  },
+  "run_id": "nextgen-aiperf-wire-20261028c",
+  "schema": "nextgen-aiperf-wire-c-error-readonly-luna-v1",
+  "tail_limit_bytes_per_file": 8192
+}

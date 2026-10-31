@@ -1,0 +1,68 @@
+{
+  "schema": "kv-failed-run-mirror-receipt-v1",
+  "classification": "confirmed_readonly_failed_run_mirror",
+  "run_id": "nextgen-fp8fa2-qwen38-quality-core1720-r1-20261028t",
+  "reservation_id": "7e578bda49004d30b2190ab2cb51ea0b",
+  "remote_status_expected": "FAILED",
+  "remote_result_sha256": "cc015f1b26a81ec7970277edcdeb46c38af980b76071f531062d62a222798eb1",
+  "manifest_path": "/home/mingasa/kv-research-agent/results/mirrors/nextgen-fp8fa2-qwen38-quality-core1720-r1-20261028t-failed-a1/SHA_MANIFEST.json",
+  "mirror_directory": "/home/mingasa/kv-research-agent/results/mirrors/nextgen-fp8fa2-qwen38-quality-core1720-r1-20261028t-failed-a1",
+  "status": "complete_failure_mirror",
+  "files": 80,
+  "bytes": 33942437,
+  "sha_all_verified": true,
+  "errors": [],
+  "remote_terminal": "FAILED",
+  "inventory_file_count": 80,
+  "inventory_bytes": 33942437,
+  "seeded_asset_count": 41,
+  "seeded_asset_bytes": 24023139,
+  "not_seeded_asset_count": 0,
+  "complete_result_sha256": "cc015f1b26a81ec7970277edcdeb46c38af980b76071f531062d62a222798eb1",
+  "result_summary": {
+    "status": "FAILED",
+    "gpu_release_verified": true,
+    "live_owned_containers": [],
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: '/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/runs/nextgen-fp8fa2-qwen38-quality-core1720-r1-20261028t/output/fp8_e4m3/.quality_progress.json.e1ajjczg'"
+  },
+  "raw_journals_physical_lf": [
+    {
+      "path": "output/fp8_e4m3/validation_raw.jsonl",
+      "size_bytes": 192716,
+      "sha256": "2bfc8a521b7cfafe8f238aa96bc2e725d4b50d9ac755407f34fedd85df1906d9",
+      "physical_lf_count": 20,
+      "ends_with_lf": true,
+      "complete_lf_rows": 20,
+      "trailing_unterminated_bytes": 0
+    },
+    {
+      "path": "output/fp8_e4m3/quality_predictions.jsonl",
+      "size_bytes": 4683215,
+      "sha256": "c968405a3164f0af21100646f120455746779b6b3d127cf36f4bc195530b600d",
+      "physical_lf_count": 918,
+      "ends_with_lf": true,
+      "complete_lf_rows": 918,
+      "trailing_unterminated_bytes": 0
+    }
+  ],
+  "other_files_downloaded_and_verified": 39,
+  "model_quality_scored": false,
+  "quality_accepted": false,
+  "network_recovery_attempts": 0,
+  "local_full_tree_recheck": {
+    "files": 80,
+    "bytes": 33942437,
+    "all_local_hashes_equal_remote_sha256": true,
+    "remaining_partials": 0,
+    "checked_utc": "2026-10-28T17:46:50.952075+00:00"
+  },
+  "asset_reuse_receipt": "/home/mingasa/kv-research-agent/results/mirrors/nextgen-fp8fa2-qwen38-quality-core1720-r1-20261028t-failed-a1/ASSET_REUSE_RECEIPT.json",
+  "quality_predictions_partial_coverage": {
+    "durable_physical_lf_rows": 918,
+    "requested_rows": 1720,
+    "ends_with_lf": true,
+    "quality_scored": false,
+    "quality_accepted": false
+  },
+  "no_model_quality_or_performance_conclusion": true
+}

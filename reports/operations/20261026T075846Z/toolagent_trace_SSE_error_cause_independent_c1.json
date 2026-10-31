@@ -1,0 +1,12 @@
+{
+  "bf16": {
+    "sse_error_counts": {},
+    "examples": [],
+    "failed_outcomes_sse_error_true": 0
+  },
+  "fp8_e4m3": {
+    "sse_error_counts": {},
+    "examples": [],
+    "failed_outcomes_sse_error_true": 0
+  }
+}

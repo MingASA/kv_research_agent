@@ -1,0 +1,97 @@
+{
+  "poll": 1,
+  "observed_utc": "2026-10-28T22:12:46.929866+00:00",
+  "operation": "status",
+  "remote_writes": false,
+  "GPU_requested": false,
+  "root_exists": true,
+  "files": {
+    "manifest.json": {
+      "sha256": "6b4528e60c1c4c42dba3538c93ca9f74369041df67e5b9f9668728cd55c1ce73",
+      "keys": [
+        "CPU",
+        "GPU_requested",
+        "approval_sha256_at_preparation",
+        "asset_sha256",
+        "id",
+        "image_id",
+        "local_only_at_preparation",
+        "max_seconds",
+        "memory_GiB",
+        "model_files_sha256",
+        "schema",
+        "state"
+      ]
+    },
+    "PREPARED.json": {
+      "sha256": "bb1e6999b58cc00b1276d874cbb9fd1f90644c31403ccf97b7a2f417ee744f59",
+      "keys": [
+        "GPU_requested",
+        "container_id"
+      ]
+    },
+    "START_INTENT.json": {
+      "sha256": "9d28c73ef920aea0a7b0da7836f9652b8834732ed2055e2702d484f8bc29a9f6",
+      "keys": [
+        "GPU_requested",
+        "operation"
+      ]
+    },
+    "CPU_ADMISSION.json": {
+      "sha256": "529a3b7887b9afd2b85b22675649e9a7810f9e3e9aa124f197ced3f5ec279735",
+      "keys": [
+        "GPU_requested",
+        "UID",
+        "max_seconds",
+        "python",
+        "python_version",
+        "state",
+        "utc"
+      ]
+    },
+    "CPU_ERROR.json": {
+      "sha256": "75e7914a949ef05d064e1ac54b322b10317dba0a9430d56b499beee17e324262",
+      "keys": [
+        "GPU_requested",
+        "error",
+        "model_or_quality_success"
+      ]
+    }
+  },
+  "container": {
+    "Status": "exited",
+    "Pid": 0,
+    "Running": false,
+    "ExitCode": 1,
+    "OOMKilled": false
+  },
+  "host_config": {
+    "Runtime": "runc",
+    "NetworkMode": "none",
+    "IpcMode": "private",
+    "DeviceRequests": null,
+    "Devices": [],
+    "Privileged": false,
+    "ReadonlyRootfs": true,
+    "NanoCpus": 2000000000,
+    "Memory": 8589934592
+  },
+  "logs_tail_24": [
+    "Traceback (most recent call last):",
+    "  File \"/cpu_work/driver.py\", line 85, in <module>",
+    "    try:main(root)",
+    "        ^^^^^^^^^^",
+    "  File \"/cpu_work/driver.py\", line 51, in main",
+    "    if result.returncode:raise ValueError('Actual image tool/tokenizer loop failed; retain CPU log')",
+    "                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+    "ValueError: Actual image tool/tokenizer loop failed; retain CPU log"
+  ],
+  "transport_error": null,
+  "CPU_ERROR": {
+    "GPU_requested": false,
+    "error": "ValueError: Actual image tool/tokenizer loop failed; retain CPU log",
+    "model_or_quality_success": false
+  },
+  "host_config_violations": [],
+  "monitor_status": "FAILED"
+}

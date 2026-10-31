@@ -1,0 +1,11 @@
+{
+  "classification": "derived_verified_fixed_cohort_quality_figure_no_new_GPU",
+  "comparison_sha256": "e8e89981a58e98c08dc425e7c7cbac101bb66318e4b800c58ee1a03945030f78",
+  "generator_sha256": "04f593246db5eb54d7e481ad73aa5e5a9939664fc61cd78cab94ed276dd59958",
+  "matplotlib_version": "3.11.2",
+  "files": {
+    "quality_delta_data.csv": "2932d016f4eea093a7765e33af27717b3ce71f58e6a8285685e01a6fce394ed9",
+    "quality_deltas.png": "f9cb1c8942e6b2c4809dab58a200606b437d5958a95600e81a1281c7eb47f763",
+    "quality_deltas.svg": "32da2c8f7fb02d389aa865bf966c46c3f41fb1b8c4d99220827c32258863f4e3"
+  }
+}

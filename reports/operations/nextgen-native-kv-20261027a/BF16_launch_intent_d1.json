@@ -1,0 +1,1 @@
+{"GPU_started":false,"new_GPU_request_requires_full_remaining_gates":true,"package":"plans/experiments/nextgen-bf16-qwen38-validation-r1-20261027d/package.json","preflight":"reports/operations/nextgen-native-kv-20261027a/BF16_retry_readonly_preflight_d1.json","run_id":"nextgen-bf16-qwen38-validation-r1-20261027d","utc":"2026-10-27T19:01:45.228838+00:00"}

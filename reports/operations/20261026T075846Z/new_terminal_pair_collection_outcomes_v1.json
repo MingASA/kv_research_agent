@@ -1,0 +1,12 @@
+[
+  {
+    "kind": "reverse_sharegpt",
+    "failed_stage": "audit",
+    "rc": 2
+  },
+  {
+    "kind": "toolagent_s025",
+    "all_stages_passed": true,
+    "audit": "reports/operations/20261026T075846Z/toolagent_s025_independent_audit_v1.json"
+  }
+]

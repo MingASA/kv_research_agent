@@ -1,0 +1,34 @@
+{
+  "classification": "confirmed_descriptive_trace_failure_analysis",
+  "run_id": "prod-trace-xqa-burstgpt-s1-r0-20261027f",
+  "independent_audit_sha256": "3bf842b9578e1fb66877111d2809ff28ee8c40c9fcc8f2d83f9ce939d4b7a314",
+  "script_sha256": "12c91b915147a981ab9dfaa7b0490ffaf13b687fc84fa8b3f07a0fc3ecdce1be",
+  "arms": {
+    "bf16": {
+      "all_failed_attempts": 0,
+      "classifications": {},
+      "logical_phases": {
+        "warm_cache": {},
+        "measurement": {}
+      },
+      "raw_export_sha256": "2558ea844f0bfc786c82e2c55bf79151b3b97050cc069d2c3c06d439e0043542"
+    },
+    "fp8_e4m3": {
+      "all_failed_attempts": 0,
+      "classifications": {},
+      "logical_phases": {
+        "warm_cache": {},
+        "measurement": {}
+      },
+      "raw_export_sha256": "4125ba006befaae1ffa452c4170e6210fcf163fd386e889a38a0b83c21f6c163"
+    }
+  },
+  "measurement_success_pairing": {
+    "both_success": 6221,
+    "BF16_only": 0,
+    "FP8_only": 0
+  },
+  "interpretation": "HTTP200 does not establish success; admission-limit notices here are plain text parsed as packet names, not JSON SSE error objects. Success-conditional latency compares different completed subsets.",
+  "GPU_used": false,
+  "raw_or_official_measurements_modified": false
+}

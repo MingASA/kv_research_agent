@@ -1,0 +1,1 @@
+{"evidence": "reports/operations/20261026T075846Z/trace_loader_cpu_v2.json", "cases": 4, "gpu_used": false, "exact_length_cases": ["conversation_trace.jsonl", "synthetic_trace.jsonl", "toolagent_trace.jsonl", "burstgpt_peak10m.csv"], "prefix_preserved_cases": ["conversation_trace.jsonl", "synthetic_trace.jsonl", "toolagent_trace.jsonl", "burstgpt_peak10m.csv"]}

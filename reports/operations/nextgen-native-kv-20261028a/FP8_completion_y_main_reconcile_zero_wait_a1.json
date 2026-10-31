@@ -1,0 +1,98 @@
+{
+  "files": {
+    "START_INTENT.json": {
+      "sha256": "aa3e8e039aac58089935f85440d9a766114b346d88f63507e0189c0e6e27b386",
+      "value": {
+        "request_sha256": "609070a03a06d12022027b32feff725cf65aeefc3a6d25f04179162c5103ec59"
+      }
+    },
+    "SUPERVISOR_PROCESS.json": {
+      "sha256": "4afd380324097bcff5b4aacfbc7842e687cca62ce1d827d4173ca2057fd7e19d",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-544837.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-544837.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-544837.scope\n",
+          "pid": 3053746,
+          "start_ticks": 381584285,
+          "uid": 1005
+        }
+      }
+    },
+    "SUPERVISOR_STARTED.json": {
+      "sha256": "8c737fa1a2657e733945a3b6395002ba767400ab8252d21681fb4eda40136107",
+      "value": {
+        "identity": {
+          "boot_id": "5afaf1c0-ecf6-4bda-a039-5341ef954efb",
+          "cgroup": "12:rdma:/\n11:blkio:/user.slice\n10:net_cls,net_prio:/\n9:freezer:/user.slice\n8:memory:/user.slice/user-1005.slice/session-544837.scope\n7:hugetlb:/\n6:perf_event:/\n5:pids:/user.slice/user-1005.slice/session-544837.scope\n4:devices:/user.slice\n3:cpu,cpuacct:/user.slice\n2:cpuset:/system.slice\n1:name=systemd:/user.slice/user-1005.slice/session-544837.scope\n",
+          "pid": 3053746,
+          "start_ticks": 381584285,
+          "uid": 1005
+        },
+        "ticket_sha256": "cd9ab1820791a1db5043af753fc0f760cd8921f48456bde89292324322f58fb7"
+      }
+    },
+    "result.json": {
+      "sha256": "7854e2602dc5430b5e5cc4682504e1516dc319c1183f71bf719501d4c1c8e60b",
+      "value": {
+        "allocation_ended_monotonic_ns": null,
+        "allocation_intervals_ns": [],
+        "allocation_started_monotonic_ns": null,
+        "arm_results": [],
+        "error": "TimeoutError: Budget expired while waiting for 120s genuinely idle GPUs",
+        "gpu_release_verified": true,
+        "live_owned_containers": [],
+        "new_output_bytes": 147545211,
+        "request_sha256": "609070a03a06d12022027b32feff725cf65aeefc3a6d25f04179162c5103ec59",
+        "reservation_id": "d135a75ce60a4bdbb74fa567163ec3e5",
+        "run_id": "nextgen-fp8fa2-qwen38-quality-completion802-r0-20261028y",
+        "status": "NOT_LAUNCHED"
+      }
+    },
+    "state.json": {
+      "sha256": "7854e2602dc5430b5e5cc4682504e1516dc319c1183f71bf719501d4c1c8e60b",
+      "value": {
+        "allocation_ended_monotonic_ns": null,
+        "allocation_intervals_ns": [],
+        "allocation_started_monotonic_ns": null,
+        "arm_results": [],
+        "error": "TimeoutError: Budget expired while waiting for 120s genuinely idle GPUs",
+        "gpu_release_verified": true,
+        "live_owned_containers": [],
+        "new_output_bytes": 147545211,
+        "request_sha256": "609070a03a06d12022027b32feff725cf65aeefc3a6d25f04179162c5103ec59",
+        "reservation_id": "d135a75ce60a4bdbb74fa567163ec3e5",
+        "run_id": "nextgen-fp8fa2-qwen38-quality-completion802-r0-20261028y",
+        "status": "NOT_LAUNCHED"
+      }
+    },
+    "watchdog_result.json": {
+      "sha256": "b93f4f018215f4311b40ad56d9b9efc96464495994decebfb1c4be3a22919093",
+      "value": {
+        "actions": [],
+        "request_sha256": "609070a03a06d12022027b32feff725cf65aeefc3a6d25f04179162c5103ec59",
+        "status": "RELEASE_CONFIRMED"
+      }
+    }
+  },
+  "gpu_snapshot": "0, GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 71409, 100\n1, GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 70001, 0\n2, GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 71289, 100\n3, GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 71207, 100\n4, GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 71165, 100\n5, GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 72093, 100\n6, GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 71255, 0\n7, GPU-47211491-ba0d-78bf-5c84-f968c0648213, 71259, 100",
+  "live_owned_containers": [],
+  "log_tail": {
+    "events.jsonl": "s\":[2970109],\"util_pct\":100}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:05:21.559041+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":79}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:05:51.964562+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":85}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:06:22.247976+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":14}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:06:52.541350+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":66}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:07:22.895962+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":14}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:07:53.180499+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":54}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:08:23.463001+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":86}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:08:53.785119+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":14}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:09:24.120343+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":87}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:09:54.398143+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":92}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:10:24.681246+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":91}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:10:55.068987+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":94}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:11:25.355834+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":89}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:11:55.643249+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":87}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:12:26.041819+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":94}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:12:56.316782+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":93}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:13:26.595434+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":0}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:13:56.950468+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":0}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:14:27.212673+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":0}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:14:57.467859+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":0}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:15:27.764987+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":0}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:15:58.079355+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":0}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:16:28.337025+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":0}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:16:58.602294+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":0}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:17:28.951497+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":0}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:17:59.219040+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":0}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:18:29.478764+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":0}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:18:59.774184+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":0}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:19:30.075744+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":0}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:20:00.345867+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":0}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:20:30.635793+00:00\"}\n{\"action\":\"WAIT_GPU\",\"reservation_policy_clear\":true,\"selected\":{\"GPU-47211491-ba0d-78bf-5c84-f968c0648213\":{\"index\":7,\"memory_mib\":71259,\"pids\":[2970109],\"util_pct\":100}},\"stable_since_ns\":null,\"utc\":\"2026-10-28T20:21:00.998254+00:00\"}\n{\"action\":\"STOP_OR_FAILURE\",\"error\":\"TimeoutError: Budget expired while waiting for 120s genuinely idle GPUs\",\"status\":\"NOT_LAUNCHED\",\"traceback\":\"Traceback (most recent call last):\\n  File \\\"/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r0-20261028y/runtime/kv_controller/supervisor.py\\\", line 531, in run\\n    self._idle(stop_at)\\n  File \\\"/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r0-20261028y/runtime/kv_controller/supervisor.py\\\", line 519, in _idle\\n    raise TimeoutError(\\\"Budget expired while waiting for 120s genuinely idle GPUs\\\")\\nTimeoutError: Budget expired while waiting for 120s genuinely idle GPUs\\n\",\"utc\":\"2026-10-28T20:21:31.138196+00:00\"}\n",
+    "supervisor.log": "",
+    "watchdog.log": ""
+  },
+  "nextgen_progress": {
+    "fp8_e4m3": {}
+  },
+  "ok": true,
+  "operator_acceptance": {},
+  "owned_containers": [],
+  "quality_progress": {
+    "bf16": {},
+    "fp8_e4m3": {}
+  },
+  "relaunch_allowed": false,
+  "run_id": "nextgen-fp8fa2-qwen38-quality-completion802-r0-20261028y",
+  "status": "NOT_LAUNCHED",
+  "supervisor_alive": false
+}

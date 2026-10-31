@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "checks": [
+    "ShareGPT: 4臂各512测量+16warm、输出sum/均值/finish、observation吞吐、两run时长汇总与所有列示变化一致",
+    "ToolAgent现代两点: 四臂1689测量/399warm完整、304758实际输出、含drain吞吐重算一致；完成/token与官方ITL分列",
+    "resident: 128token/page、48层总字节、page0扣除、48.4375%压缩均按整数核对",
+    "原四trace: 全部测量分母=成功+拒绝，完成/实际token吞吐以各自含drain时间复算一致",
+    "C128质量: 全表百分比/百分点换算一致；1719为1319+8×50，每题配对，不把bootstrap视为GPU重复",
+    "原生工具: 258分母与175/69/7/7配对一致，182匹配正确req/s与整批服务/token吞吐分母一致",
+    "组件诊断: writer份额使用各臂全部kernel累计时间，17/18prefill与query总量分开保留",
+    "prefill工作区: 两种中位降幅与1613758468B拆分一致；无模型/AIPerf声明保留",
+    "K/V范围: 214986=143037−2048+74125−128，1536分组摘要；原FAILED/无worker seal保持",
+    "历史ceff九条件: 所有表内变化从各自BF16/FP8原始数值重算一致；不拼接现代基线",
+    "BF16 Q备选: 55文件/369269B的算子完整性、4个动态Graph128行数与<.01门槛；无模型/质量/服务收益；GPU-h按原interval核对",
+    "两个原pilot manifest一致: 每臂GSM64+八LongBench任务各2=80；每任务最短和最长各1条，不是各2条",
+    "第45独立失败审计: 72文件/20427910B、零预测/无measurement seal，实际.001074001823888889GPU-h与原interval一致；已结算累计9.494151518055556，旧第44舍入尾差保留",
+    "本地b准备: source acc0ed6b、85源码/207控制器检查及实际完整1719 dry-run通过，GPU_started=false；不增加第46条或任何模型结果"
+  ],
+  "new_GPU_runs": 0,
+  "new_model_predictions": 0,
+  "rescored_existing_predictions": false
+}

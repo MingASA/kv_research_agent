@@ -1,0 +1,12 @@
+{
+  "classification": "main visually checked actual generated PNGs",
+  "paths": [
+    "reports/experiments/nextgen-mixed-prefill-20261030/pressure-outcomes-v1/pressure_outcomes.png",
+    "reports/experiments/nextgen-mixed-prefill-20261030/residency-figure-v1/resident_pressure.png"
+  ],
+  "labels_not_cropped": true,
+  "NVFP4_failed31of32_hatched_and_fulltailsNA": true,
+  "NVFP4_application_samples_missing_explicitly_not_zero": true,
+  "data_tables_source_SHA_in_figure_inputs": true,
+  "GPU_or_remote_calls": false
+}

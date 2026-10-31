@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-30T20:55:17.389221+00:00",
+  "error": "JSONDecodeError: Unterminated string starting at line1 column1317",
+  "reason": "str.splitlines separates Unicode line characters inside actual JSON strings; JSONL boundaries are bytes LF",
+  "repair": "read_bytes().splitlines matches independent raw auditor",
+  "GPU_or_remote_effect": false,
+  "output_directory_created": false
+}

@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/mingasa/kv-research-agent/scripts/audit_nextgen_calibration.py", line 141, in <module>
+    main()
+  File "/home/mingasa/kv-research-agent/scripts/audit_nextgen_calibration.py", line 137, in main
+    write_new_json(args.out, audit_calibration(args.sha_manifest, args.tokenizer))
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mingasa/kv-research-agent/scripts/audit_nextgen_calibration.py", line 75, in audit_calibration
+    rows = [json.loads(line) for line in (output/'calibration_raw.jsonl').read_text().splitlines()]
+            ^^^^^^^^^^^^^^^^
+  File "/home/mingasa/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mingasa/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/json/decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mingasa/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/json/decoder.py", line 354, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 1317 (char 1316)

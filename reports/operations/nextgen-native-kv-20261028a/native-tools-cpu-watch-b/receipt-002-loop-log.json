@@ -1,0 +1,13 @@
+{
+  "schema": "native-tools-cpu-b-loop-log-readonly-v1",
+  "run_id": "nextgen-native-tools-cpu-20261028b",
+  "operation": "exact owned CPU_loop.log tail and full SHA only",
+  "root": "/export/home/yinjinrun/.borrow/chenjunyu/xllm-h800/agent_work/runs/nextgen-fp8fa2-qwen38-quality-completion802-r0-20261028y",
+  "exists": false,
+  "size_bytes": null,
+  "sha256": null,
+  "tail_bytes": 0,
+  "tail_text": "",
+  "remote_writes": false,
+  "status_receipt": "reports/operations/nextgen-native-kv-20261028a/native-tools-cpu-watch-b/receipt-001.json"
+}

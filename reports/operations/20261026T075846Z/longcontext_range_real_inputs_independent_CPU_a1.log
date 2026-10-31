@@ -1,0 +1,1 @@
+{"classification": "confirmed_CPU_real_prompt_source_tokenizer_and_exact_context_independence_only", "requests_verified": 128, "prompt_tokens": {"min": 4103, "max": 20227, "total": 1458582}, "GPU_used": false}

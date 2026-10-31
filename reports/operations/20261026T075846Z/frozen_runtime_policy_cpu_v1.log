@@ -1,0 +1,34 @@
+test_matching_shipped_policy_actually_executes_without_GPU (tests.test_frozen_policy.FrozenPolicyTests) ... ok
+test_old_shipped_policy_rejects_new_xz_before_any_remote_call (tests.test_frozen_policy.FrozenPolicyTests) ... ok
+test_absent_remote_after_lost_reply_keeps_unknown_reservation (tests.test_execution.DispatchTests) ... ok
+test_changed_or_revoked_authority_never_dispatches (tests.test_execution.DispatchTests) ... ok
+test_lost_prepare_reply_becomes_unknown_and_cannot_relaunch (tests.test_execution.DispatchTests) ... ok
+test_lost_start_reply_recovers_readonly_without_second_start (tests.test_execution.DispatchTests) ... ok
+test_concrete_authority_and_protocol_are_accepted (tests.test_execution.PolicyTests) ... ok
+test_docker_has_only_new_run_writable_and_exact_gpu (tests.test_execution.PolicyTests) ... ok
+test_eager_and_natural_stopping_cannot_masquerade_as_fixed_decode (tests.test_execution.PolicyTests) ... ok
+test_missing_graph_source_and_mount_encoding_are_rejected (tests.test_execution.PolicyTests) ... ok
+test_standing_grant_preserves_shared_server_conditions (tests.test_execution.PolicyTests) ... ok
+test_worker_env_strips_inherited_backend_and_preserves_cuda_compat (tests.test_execution.PolicyTests) ... ok
+test_worker_rejects_early_eos_even_if_average_looks_good (tests.test_execution.PolicyTests) ... ok
+test_corrupt_assets_do_not_create_remote_subtree (tests.test_execution.RemotePreparationTests) ... ok
+test_ownership_and_ancestry_change_are_refused (tests.test_execution.RemotePreparationTests) ... ok
+test_preparation_is_exclusive_and_preserves_existing_result (tests.test_execution.RemotePreparationTests) ... ok
+test_start_intent_prevents_second_launch_even_with_lost_reply (tests.test_execution.RemotePreparationTests) ... ok
+test_status_absent_never_creates_or_launches_anything (tests.test_execution.RemotePreparationTests) ... ok
+test_symlinked_existing_subtree_is_refused_without_touching_target (tests.test_execution.RemotePreparationTests) ... ok
+test_lost_reply_records_actual_stderr_without_dumping_rpc_source (tests.test_execution.TransportTests) ... ok
+test_mutations_are_attempted_exactly_once (tests.test_execution.TransportTests) ... ok
+test_only_existing_exact_approved_key_is_selected (tests.test_execution.TransportTests) ... ok
+test_readonly_ssh_has_three_bounded_retries (tests.test_execution.TransportTests) ... ok
+test_exact_payload_is_recovered_without_mutating_any_files (tests.test_trace_transfer.TraceTransferTests) ... ok
+test_missing_archive_or_ambiguous_raw_target_is_rejected (tests.test_trace_transfer.TraceTransferTests) ... ok
+test_size_sha_and_destination_changes_are_rejected (tests.test_trace_transfer.TraceTransferTests) ... ok
+test_unknown_codec_rejected_before_any_execution (tests.test_trace_transfer.TraceTransferTests) ... ok
+test_xz_recovers_identical_payload_with_explicit_codec (tests.test_trace_transfer.TraceTransferTests) ... ok
+test_xz_truncation_trailing_stream_and_output_overflow_rejected (tests.test_trace_transfer.TraceTransferTests) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 0.376s
+
+OK

@@ -1,0 +1,31 @@
+
+==================================== ERRORS ====================================
+___________ ERROR collecting tests/python/test_deepseek_v4_model.py ____________
+ImportError while importing test module '/home/mingasa/projects/xllm_quant_kvcache-agent-nextgen-native-kv-20261027/tests/python/test_deepseek_v4_model.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+../../.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/python/test_deepseek_v4_model.py:28: in <module>
+    from xllm.python.models import deepseek_v4, deepseek_v32
+xllm/python/models/deepseek_v4.py:42: in <module>
+    import torch_npu
+E   ModuleNotFoundError: No module named 'torch_npu'
+___________ ERROR collecting tests/python/test_glm5_2_indexer_cp.py ____________
+ImportError while importing test module '/home/mingasa/projects/xllm_quant_kvcache-agent-nextgen-native-kv-20261027/tests/python/test_glm5_2_indexer_cp.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+../../.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/python/test_glm5_2_indexer_cp.py:27: in <module>
+    from xllm.python.attention.npu_paged_attention import NpuPagedAttentionBackend
+xllm/python/attention/npu_paged_attention.py:27: in <module>
+    import torch_npu
+E   ModuleNotFoundError: No module named 'torch_npu'
+=========================== short test summary info ============================
+ERROR tests/python/test_deepseek_v4_model.py
+ERROR tests/python/test_glm5_2_indexer_cp.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 2 errors during collection !!!!!!!!!!!!!!!!!!!!
+8 skipped, 4 deselected, 2 errors in 5.06s

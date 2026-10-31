@@ -1,0 +1,52 @@
+{
+  "sources": [
+    {
+      "path": "reports/experiments/nextgen-mixed-prefill-20261030/bf16-zc-tools-v1/actual_model_audit.json",
+      "sha256": "bd8f79ce2650949429e2f79e7b916445475763df8e57d7f7679868ab52019359",
+      "sha_manifest": "results/mirrors/nextgen-bf16-qwen38-mixed8192-tools32-r0-20261030zc-complete-a1/SHA_MANIFEST.json",
+      "manifest_sha256": "455bd72c9149420e829f4f340efcdea83dc3f7e58acc520b45f05749e8e1ffde"
+    },
+    {
+      "path": "reports/experiments/nextgen-mixed-prefill-20261030/fp8-za-tools-v1/actual_model_audit.json",
+      "sha256": "b390ba7f956b09f1c5205deef71fe8773d1ddef128392c12fe028c510c5c559a",
+      "sha_manifest": "results/mirrors/nextgen-fp8fa2-qwen38-mixed8192-tools32-r0-20261030za-complete-a1/SHA_MANIFEST.json",
+      "manifest_sha256": "fbac1cf311d84b5c4ab99d4757db6e40415cb9d15bae90fd2e33915db6cd422e"
+    },
+    {
+      "path": "reports/experiments/nextgen-mixed-prefill-20261030/nvfp4-zb-tools-v1/actual_model_audit.json",
+      "sha256": "226d514313ebc3d08d17dd31b948a4f076ab22693dabff17dec563e337db8855",
+      "sha_manifest": "results/mirrors/nextgen-nvfp4-qwen38-mixed8192-tools32-r0-20261030zb-complete-a1/SHA_MANIFEST.json",
+      "manifest_sha256": "9638ca72f0e0cb2ed4a9fb25d6207e212fdc6a7cf9a58f3dfb82d9b8250acedb"
+    }
+  ],
+  "renderer_sha256": "4e7c1b112f5615ace5d0465932d1b47cc88758d404985506775ae40a41426679",
+  "plotted": [
+    {
+      "arm": "bf16",
+      "correct": 26,
+      "failed_complete": 6,
+      "incomplete_or_budget_failed": 0,
+      "completed_user_turns": 112,
+      "expected_user_turns": 112
+    },
+    {
+      "arm": "fp8_e4m3",
+      "correct": 27,
+      "failed_complete": 4,
+      "incomplete_or_budget_failed": 1,
+      "completed_user_turns": 110,
+      "expected_user_turns": 112
+    },
+    {
+      "arm": "nvfp4",
+      "correct": 25,
+      "failed_complete": 7,
+      "incomplete_or_budget_failed": 0,
+      "completed_user_turns": 112,
+      "expected_user_turns": 112
+    }
+  ],
+  "not_full_BFCL_or_final_natural_language_quality_or_performance": true,
+  "all32_original_tasks_kept_in_denominator": true,
+  "GPU_or_remote_calls": false
+}

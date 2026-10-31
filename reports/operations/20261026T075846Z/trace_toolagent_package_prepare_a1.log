@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/mingasa/kv-research-agent/scripts/prepare_trace_package.py", line 16, in <module>
+    from controller.trace_serving import validate_inputs
+  File "/home/mingasa/kv-research-agent/scripts/controller/trace_serving.py", line 13, in <module>
+    from . import evidence
+  File "/home/mingasa/kv-research-agent/scripts/controller/evidence.py", line 3, in <module>
+    from scripts.audit_native_results import (
+ModuleNotFoundError: No module named 'scripts'

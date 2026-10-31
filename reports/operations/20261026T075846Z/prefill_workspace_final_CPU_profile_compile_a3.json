@@ -1,0 +1,26 @@
+{
+  "classification": "confirmed_CPU_admission_equivalence_and_offline_codegen_not_H800_runtime",
+  "unchanged_legacy_profile_cases": 576,
+  "kernels": [
+    {
+      "function": "_collect_unique_pages",
+      "function_source_sha256": "c12adaa54172352cfd691e68222298ea9c92052b3b41097f76b6da9045c1900f",
+      "cubin_sha256": "f36721c7b000aa3d602db7a4e88cf816cbcb4844ed69cc70fd1eb4e1655bdd63",
+      "ptx_sha256": "dbb05fc78168b2c196271ebf2aea089a25d1e9586a1274c0efe4d32cda842c1a"
+    },
+    {
+      "function": "_dequantize_active_pages",
+      "function_source_sha256": "6741242b8dd1a322259b66db3f319d8782b0ccd753c6fd140fa6a295625488e7",
+      "cubin_sha256": "d89d53c6b2dc173857e7d64f3415e30a19f2a3331b4e44815a612e44c3ca012f",
+      "ptx_sha256": "5078f203eda399aaa58ffec916e35886cb0025837818d10ae6447a556fd37ccb"
+    }
+  ],
+  "triton_version": "3.7.1",
+  "GPU_used": false,
+  "current_source_sha256": {
+    "xllm/python/attention/fp8_prefill_workspace.py": "7ecfcaea82516f67204dd3e8fc6e326fa0f807f5580df4866484be3e7ee9f708",
+    "xllm/python/attention/native_profile.py": "49d67ef079f5ca156ad7f6853f00f42638e04f98a095c59bb7c5c85e3ed44559",
+    "tools/check_fp8_prefill_workspace.py": "9a995aad53b0737f5ecca0227f1f28f0824cd47ee15aa2d47d48ff6ae04dab73"
+  },
+  "H800_operator_passed": false
+}

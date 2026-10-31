@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/mingasa/kv-research-agent/scripts/audit_trace_run.py", line 135, in <module>
+    main()
+  File "/home/mingasa/kv-research-agent/scripts/audit_trace_run.py", line 128, in main
+    result = audit(args.mirror, args.run_id, args.source_repo)
+  File "/home/mingasa/kv-research-agent/scripts/audit_trace_run.py", line 99, in audit
+    raise ValueError('Independent replay outcome/clock/usage audit differs')
+ValueError: Independent replay outcome/clock/usage audit differs

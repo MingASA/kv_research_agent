@@ -1,0 +1,23 @@
+{
+  "classification": "reported independent bounded Luna local readonly all-member audit",
+  "GPU_or_remote_calls": false,
+  "no_disk_extraction_or_writes_by_Luna": true,
+  "archives": [
+    {
+      "name": "mixed-quality-a1",
+      "sha256": "d96c90e28ed815421bd40b6cecc7a177c5b9b4096d63642fa5087220d54e4f7b",
+      "members": 289,
+      "bytes": 53890603,
+      "pass": true
+    },
+    {
+      "name": "session-protocol-failure-and-repair-a1",
+      "sha256": "46322019721ec078a728012a0c38a80d0819f42caae669edac3a666009fc4253",
+      "members": 205,
+      "bytes": 10649504,
+      "pass": true
+    }
+  ],
+  "embedded_manifest_adds_one_member": true,
+  "failed_W_is_not_relabelled": true
+}

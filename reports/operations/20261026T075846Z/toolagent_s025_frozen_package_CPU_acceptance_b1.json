@@ -1,0 +1,12 @@
+{
+  "classification": "CPU_proposal_no_GPU_result",
+  "run_id": "prod-trace-bf16xqa-toolagent-s025-r0-20261027b",
+  "actual_shipped_policy_valid": true,
+  "all2088_payloads_sessions_prefix_unchanged": true,
+  "arrival_scaling": 0.25,
+  "per_arm_offered_seconds": 1200,
+  "measurement_offered_rps": 1.759375,
+  "source_commit": "1c2be15976b7fbb1d8b79e469659b2c8e52cff00",
+  "previous_BF16_reference_complete_audit": "bf16_xqa_reference_b_independent_audit1.json",
+  "purpose": "One intermediate pressure point selected from observed overload, not a blind matrix or rerun"
+}

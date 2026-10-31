@@ -1,0 +1,401 @@
+{
+  "all_rendered_prompts_include_qwen3coder_XML_markers": true,
+  "all_structural_checks_pass": true,
+  "all_tool_names_rendered": true,
+  "audited_at_utc": "2026-10-28T19:39:14.217313+00:00",
+  "chat_template_manifest_match": true,
+  "chat_template_sha256": "c3cf9e34abf4f9e36c2d72165aa9c132d3e2a725b6c2586aaa3a8af9d7a81041",
+  "conclusion": "CPU frozen-input/schema/template preparation audit only; no BFCL model/task-score or tool-execution claim.",
+  "domain_first8_checks": {
+    "GorillaFileSystem": {
+      "first8_source_candidates_match": true,
+      "selected_source_lines": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "TradingBot": {
+      "first8_source_candidates_match": true,
+      "selected_source_lines": [
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107
+      ]
+    },
+    "TravelAPI": {
+      "first8_source_candidates_match": true,
+      "selected_source_lines": [
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157
+      ]
+    },
+    "VehicleControlAPI": {
+      "first8_source_candidates_match": true,
+      "selected_source_lines": [
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57
+      ]
+    }
+  },
+  "domain_task_counts_actual": {
+    "GorillaFileSystem": 8,
+    "TradingBot": 8,
+    "TravelAPI": 8,
+    "VehicleControlAPI": 8
+  },
+  "excluded_filter_correct_count": 32,
+  "excluded_filter_count": 5,
+  "excluded_functions_total": 5,
+  "initial_config_recursive_order_match_count": 32,
+  "initial_payload_first_turn_exact_match_count": 32,
+  "initial_payload_leak_free_count": 32,
+  "input_manifest_sha256": "b9510183fe7edacf9480addfe837291ff5954b463bf4b0acaf2729e825a0f409",
+  "manifest_flags": {
+    "benchmark_overall_BFCL_score_claim": false,
+    "ground_truth_used_for_selection_or_prompt": false,
+    "no_tool_or_model_executed": true,
+    "original_user_messages_preserved": true,
+    "upstream_initial_state_dictionary_order_preserved": true
+  },
+  "max_initial_prompt_tokens": 7619,
+  "multi_turn_tasks": 31,
+  "official_tool_schema_classes": 8,
+  "openai_tools_official_schema_conversion_exact_count": 32,
+  "original_user_turns_exact_match_count": 32,
+  "per_task_token_summary": [
+    {
+      "id": "multi_turn_base_0",
+      "manifest_tokens": 6036,
+      "match": true,
+      "tokens": 6036,
+      "tool_count": 31,
+      "tool_names_present": 31,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_1",
+      "manifest_tokens": 3366,
+      "match": true,
+      "tokens": 3366,
+      "tool_count": 17,
+      "tool_names_present": 17,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_2",
+      "manifest_tokens": 5167,
+      "match": true,
+      "tokens": 5167,
+      "tool_count": 26,
+      "tool_names_present": 26,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_3",
+      "manifest_tokens": 3394,
+      "match": true,
+      "tokens": 3394,
+      "tool_count": 17,
+      "tool_names_present": 17,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_4",
+      "manifest_tokens": 6279,
+      "match": true,
+      "tokens": 6279,
+      "tool_count": 32,
+      "tool_names_present": 32,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_5",
+      "manifest_tokens": 6043,
+      "match": true,
+      "tokens": 6043,
+      "tool_count": 31,
+      "tool_names_present": 31,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_6",
+      "manifest_tokens": 3623,
+      "match": true,
+      "tokens": 3623,
+      "tool_count": 18,
+      "tool_names_present": 18,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_7",
+      "manifest_tokens": 6298,
+      "match": true,
+      "tokens": 6298,
+      "tool_count": 32,
+      "tool_names_present": 32,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_50",
+      "manifest_tokens": 4969,
+      "match": true,
+      "tokens": 4969,
+      "tool_count": 22,
+      "tool_names_present": 22,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_51",
+      "manifest_tokens": 6482,
+      "match": true,
+      "tokens": 6482,
+      "tool_count": 32,
+      "tool_names_present": 32,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_52",
+      "manifest_tokens": 7607,
+      "match": true,
+      "tokens": 7607,
+      "tool_count": 36,
+      "tool_names_present": 36,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_53",
+      "manifest_tokens": 7611,
+      "match": true,
+      "tokens": 7611,
+      "tool_count": 36,
+      "tool_names_present": 36,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_54",
+      "manifest_tokens": 7600,
+      "match": true,
+      "tokens": 7600,
+      "tool_count": 36,
+      "tool_names_present": 36,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_55",
+      "manifest_tokens": 6644,
+      "match": true,
+      "tokens": 6644,
+      "tool_count": 31,
+      "tool_names_present": 31,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_56",
+      "manifest_tokens": 4929,
+      "match": true,
+      "tokens": 4929,
+      "tool_count": 22,
+      "tool_names_present": 22,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_57",
+      "manifest_tokens": 7619,
+      "match": true,
+      "tokens": 7619,
+      "tool_count": 39,
+      "tool_names_present": 39,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_100",
+      "manifest_tokens": 3615,
+      "match": true,
+      "tokens": 3615,
+      "tool_count": 20,
+      "tool_names_present": 20,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_101",
+      "manifest_tokens": 5167,
+      "match": true,
+      "tokens": 5167,
+      "tool_count": 30,
+      "tool_names_present": 30,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_102",
+      "manifest_tokens": 5319,
+      "match": true,
+      "tokens": 5319,
+      "tool_count": 29,
+      "tool_names_present": 29,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_103",
+      "manifest_tokens": 5137,
+      "match": true,
+      "tokens": 5137,
+      "tool_count": 30,
+      "tool_names_present": 30,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_104",
+      "manifest_tokens": 3663,
+      "match": true,
+      "tokens": 3663,
+      "tool_count": 20,
+      "tool_names_present": 20,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_105",
+      "manifest_tokens": 3583,
+      "match": true,
+      "tokens": 3583,
+      "tool_count": 20,
+      "tool_names_present": 20,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_106",
+      "manifest_tokens": 5324,
+      "match": true,
+      "tokens": 5324,
+      "tool_count": 29,
+      "tool_names_present": 29,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_107",
+      "manifest_tokens": 3600,
+      "match": true,
+      "tokens": 3600,
+      "tool_count": 20,
+      "tool_names_present": 20,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_150",
+      "manifest_tokens": 4569,
+      "match": true,
+      "tokens": 4569,
+      "tool_count": 18,
+      "tool_names_present": 18,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_151",
+      "manifest_tokens": 7303,
+      "match": true,
+      "tokens": 7303,
+      "tool_count": 32,
+      "tool_names_present": 32,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_152",
+      "manifest_tokens": 6324,
+      "match": true,
+      "tokens": 6324,
+      "tool_count": 27,
+      "tool_names_present": 27,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_153",
+      "manifest_tokens": 4597,
+      "match": true,
+      "tokens": 4597,
+      "tool_count": 18,
+      "tool_names_present": 18,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_154",
+      "manifest_tokens": 6130,
+      "match": true,
+      "tokens": 6130,
+      "tool_count": 28,
+      "tool_names_present": 28,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_155",
+      "manifest_tokens": 4579,
+      "match": true,
+      "tokens": 4579,
+      "tool_count": 18,
+      "tool_names_present": 18,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_156",
+      "manifest_tokens": 6305,
+      "match": true,
+      "tokens": 6305,
+      "tool_count": 27,
+      "tool_names_present": 27,
+      "xml_markers": true
+    },
+    {
+      "id": "multi_turn_base_157",
+      "manifest_tokens": 7194,
+      "match": true,
+      "tokens": 7194,
+      "tool_count": 35,
+      "tool_names_present": 35,
+      "xml_markers": true
+    }
+  ],
+  "schema": "bfcl-native32-independent-local-audit-luna-v1",
+  "schema_functions_exact_original_count": 32,
+  "scope": "Local-only frozen-input/source/tokenizer review. No SSH, Docker, GPU, model weights, gold/answers, prediction, or tool simulation was accessed/executed.",
+  "selected_tasks": 32,
+  "single_turn_controls": 1,
+  "source_commit": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+  "source_data_manifest_match": true,
+  "source_data_sha256": "1a21a995d06fd6f20ba55de7bced30ef953ec35e998f502ec2ecf4d66ef1c43a",
+  "source_line_sha_match_count": 32,
+  "source_record_original_bytes_match_count": 32,
+  "source_records": 200,
+  "tasks_jsonl_sha256": "781a21b09438a2e766d26df1e0de9089a7f29662dd43e9ae7e16bb80966120e4",
+  "tasks_sha256_manifest_match": true,
+  "token_counts_match_manifest": 32,
+  "tokenized_tasks": 32,
+  "tokenizer_class": "Qwen2Tokenizer",
+  "tokenizer_json_manifest_match": true,
+  "tokenizer_json_sha256": "0997f410c57a1f4e53b09e4be8f4a172d90edd9564368fb0847030937229b9f3",
+  "tool_source_file_count": 30,
+  "tool_source_git_blob_hashes_all_valid": true,
+  "tool_source_manifest_match": true,
+  "tool_source_manifest_sha256": "d4d1dcf35b77f02bfb657219bc9aa1189c2d2acdacaf1bf283737ec32fd03200",
+  "user_turns": 112
+}

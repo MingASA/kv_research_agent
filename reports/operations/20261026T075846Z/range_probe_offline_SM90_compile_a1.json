@@ -1,0 +1,9 @@
+{
+  "classification": "CPU_offline_SM90_codegen_only_not_H800_runtime",
+  "triton_version": "3.7.1",
+  "GPU_used": false,
+  "kernel": "_reduce_kv",
+  "function_source_sha256": "122d38b157f5e2ab602519b2915d4807baf81979f14be622894360bb060d834e",
+  "ptx_sha256": "903e528d41ae5271e9128eb36231151988a470cf20f5cc7a7701bbb4cb3cce85",
+  "cubin_sha256": "1876cb234d32aeee2ca73c3cc8673f2f9354c72bd7c341a2bb27029593ec9157"
+}

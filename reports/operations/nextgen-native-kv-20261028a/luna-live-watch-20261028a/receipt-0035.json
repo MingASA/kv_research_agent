@@ -1,0 +1,105 @@
+{
+  "automatic_queue": {
+    "current_run_id": "nextgen-fp8-qwen38-quality-core1720-r2-20261028o",
+    "cursor": 0,
+    "directory": "/home/mingasa/kv-research-agent/state/queues/nextgen-core-sequential-20261028b",
+    "not_after_utc": "2026-10-29T08:57:14.407599+00:00",
+    "status": "HALTED_EXPERIMENT_FAILURE_OR_UNKNOWN",
+    "updated_utc": "2026-10-28T14:22:34.920193+00:00"
+  },
+  "observed_utc": "2026-10-28T17:39:37.762460+00:00",
+  "queue": {
+    "current_run_id": "nextgen-fp8-qwen38-quality-core1720-r2-20261028o",
+    "status": "HALTED_EXPERIMENT_FAILURE_OR_UNKNOWN",
+    "updated_utc": "2026-10-28T14:22:34.920193+00:00"
+  },
+  "remote": {
+    "gpu_compute_apps": [
+      {
+        "comm": "VLLM::EngineCor",
+        "gpu_uuid": "GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7",
+        "pid": 1972769,
+        "process_name": "VLLM::EngineCore",
+        "uid": 0,
+        "used_memory": "69990"
+      },
+      {
+        "comm": "VLLM::Worker",
+        "gpu_uuid": "GPU-a6169058-34c8-6edc-e4f5-779bf9a10421",
+        "pid": 2703928,
+        "process_name": "VLLM::Worker",
+        "uid": 0,
+        "used_memory": "520"
+      },
+      {
+        "comm": "VLLM::Worker",
+        "gpu_uuid": "GPU-0cb28538-7e9f-1b66-750f-1b53ff309195",
+        "pid": 2703927,
+        "process_name": "VLLM::Worker",
+        "uid": 0,
+        "used_memory": "520"
+      },
+      {
+        "comm": "VLLM::Worker",
+        "gpu_uuid": "GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1",
+        "pid": 2703932,
+        "process_name": "VLLM::Worker",
+        "uid": 0,
+        "used_memory": "520"
+      },
+      {
+        "comm": "VLLM::Worker",
+        "gpu_uuid": "GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348",
+        "pid": 2703929,
+        "process_name": "VLLM::Worker",
+        "uid": 0,
+        "used_memory": "520"
+      },
+      {
+        "comm": "VLLM::Worker",
+        "gpu_uuid": "GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7",
+        "pid": 2703930,
+        "process_name": "VLLM::Worker",
+        "uid": 0,
+        "used_memory": "520"
+      },
+      {
+        "comm": "VLLM::Worker",
+        "gpu_uuid": "GPU-47211491-ba0d-78bf-5c84-f968c0648213",
+        "pid": 2703931,
+        "process_name": "VLLM::Worker",
+        "uid": 0,
+        "used_memory": "520"
+      }
+    ],
+    "gpu_snapshot": "0, GPU-0c628a64-5f31-3501-fa3c-723f5b69254a, 3, 0\n1, GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7, 70001, 0\n2, GPU-a6169058-34c8-6edc-e4f5-779bf9a10421, 529, 0\n3, GPU-0cb28538-7e9f-1b66-750f-1b53ff309195, 529, 0\n4, GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1, 529, 0\n5, GPU-7da6f763-4e39-dbf0-2b98-a5f7fa2c7348, 529, 0\n6, GPU-b6136eb1-9dd4-93d3-40fe-7594e5c996c7, 529, 0\n7, GPU-47211491-ba0d-78bf-5c84-f968c0648213, 529, 0",
+    "live_owned_containers": [],
+    "log_paths": [
+      "events.jsonl",
+      "output/fp8_e4m3/container.log",
+      "output/fp8_e4m3/native_operator.log",
+      "output/fp8_e4m3/server.log",
+      "supervisor.log",
+      "watchdog.log"
+    ],
+    "quality_progress": {
+      "accuracy_scored": false,
+      "active_client_requests": 15,
+      "capped_responses": 2,
+      "contract_failures": 0,
+      "durable_responses": 918,
+      "submitted": 933
+    },
+    "result_status": "FAILED",
+    "state_status": "FAILED",
+    "status": "FAILED",
+    "supervisor_alive": false
+  },
+  "root_active_run_ids": [
+    "nextgen-fp8fa2-qwen38-quality-core1720-r1-20261028t"
+  ],
+  "rpc": "one PinnedSSH operation=status; timeout=45s; mutation=False",
+  "schema": "luna-live-watch-receipt-v1",
+  "sequence": 35,
+  "ticket_run_id": "nextgen-fp8fa2-qwen38-quality-core1720-r1-20261028t"
+}

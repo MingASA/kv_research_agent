@@ -1,0 +1,1713 @@
+{
+  "canonical_comparison": "reports/operations/20261026T075846Z/modern_BF16_ToolAgent_pressure_comparison_v1.json",
+  "sha256": "1d0d466acc341dc9f8df73cc1a6eb6dbf7f5bb5b2bf78b281c82cce235956298",
+  "schema": "kv-production-trace-pressure-comparison-v1",
+  "classification": "confirmed_same_payload_runtime_two_pressure_observations",
+  "script_sha256": "4f37cd7749626bbcabaaa012b351f06180279c5201439b3ad4db2bff4d825ab7",
+  "source_commit": "1c2be15976b7fbb1d8b79e469659b2c8e52cff00",
+  "same_frozen_runtime_and_bundle": true,
+  "identical_source_requests": 2088,
+  "points": [
+    {
+      "run_id": "prod-trace-bf16xqa-toolagent-s0125-r0-20261027a",
+      "gpu_uuids": [
+        "GPU-31f08a96-1b44-a19f-2e1c-7b82ef5866e1"
+      ],
+      "arrival_scaling": 0.125,
+      "offered_rps": 0.8796875,
+      "arms": {
+        "bf16": {
+          "measurement": {
+            "attempts": 1689,
+            "successes": 1689,
+            "errors": 0,
+            "offered_rps": 0.8796875,
+            "completion_rps_including_drain": 0.8796875,
+            "actual_output_tokens": 304758,
+            "elapsed_including_drain_seconds": 1920.0,
+            "client_start_lag_ms": {
+              "count": 1689,
+              "mean": 5.564828516281824,
+              "min": -0.480451,
+              "max": 14.701386,
+              "p50": 5.409493,
+              "p95": 10.037403,
+              "p99": 11.352445839999989
+            },
+            "credit_issue_lag_ms": {
+              "count": 1689,
+              "mean": 1.1197355411486085,
+              "min": -1.027936,
+              "max": 2.829686,
+              "p50": 1.111667,
+              "p95": 2.3429961999999995,
+              "p99": 2.556946999999998
+            },
+            "credit_to_start_ms": {
+              "count": 1689,
+              "mean": 4.445092975133215,
+              "min": 0.355708,
+              "max": 11.8717,
+              "p50": 4.380542,
+              "p95": 8.302167799999998,
+              "p99": 9.978218479999983
+            },
+            "ttft_ms": {
+              "count": 1689,
+              "mean": 2313.5377691823564,
+              "min": 26.962359,
+              "max": 17927.160766,
+              "p50": 1604.48063,
+              "p95": 6181.087153199999,
+              "p99": 8916.344613719995
+            },
+            "offered_ttft_ms": {
+              "count": 1689,
+              "mean": 2319.1025976986384,
+              "min": 28.542936,
+              "max": 17936.255239000002,
+              "p50": 1611.483495,
+              "p95": 6186.088540999999,
+              "p99": 8925.124621559995
+            },
+            "itl_ms": {
+              "count": 1686,
+              "mean": 188.51215801682778,
+              "min": 3.8176011016949154,
+              "max": 788.0395095,
+              "p50": 61.300472423076926,
+              "p95": 628.591788,
+              "p99": 721.754964125
+            },
+            "e2e_ms": {
+              "count": 1689,
+              "mean": 7960.059304083481,
+              "min": 1044.401098,
+              "max": 61278.395846,
+              "p50": 6413.379478,
+              "p95": 17948.5118424,
+              "p99": 23561.444363239985
+            },
+            "offered_e2e_ms": {
+              "count": 1689,
+              "mean": 8379.87008603138,
+              "min": 1047.626461,
+              "max": 61283.939137,
+              "p50": 6649.727962,
+              "p95": 18808.843364199998,
+              "p99": 24275.702846919623
+            },
+            "candidate_slo_not_user_accepted": {
+              "1": 0.09010416666666667,
+              "5": 0.396875,
+              "10": 0.4817708333333333
+            }
+          },
+          "warm_cache": {
+            "attempts": 399,
+            "successes": 399,
+            "errors": 0,
+            "offered_rps": 0.83125,
+            "completion_rps_including_drain": 0.83125,
+            "actual_output_tokens": 66521,
+            "elapsed_including_drain_seconds": 480.0,
+            "client_start_lag_ms": {
+              "count": 399,
+              "mean": 6.03790372180451,
+              "min": 0.549301,
+              "max": 13.864242,
+              "p50": 5.895486,
+              "p95": 10.974910999999997,
+              "p99": 12.892796359999995
+            },
+            "credit_issue_lag_ms": {
+              "count": 399,
+              "mean": 1.5563261754385966,
+              "min": -0.172606,
+              "max": 6.288133,
+              "p50": 1.401378,
+              "p95": 2.519634999999999,
+              "p99": 6.17687514
+            },
+            "credit_to_start_ms": {
+              "count": 399,
+              "mean": 4.481577546365915,
+              "min": 0.600515,
+              "max": 10.431018,
+              "p50": 4.444346,
+              "p95": 8.510781999999999,
+              "p99": 9.577389519999999
+            },
+            "ttft_ms": {
+              "count": 399,
+              "mean": 2045.8927544210524,
+              "min": 28.522033999999998,
+              "max": 8449.918678,
+              "p50": 1259.022058,
+              "p95": 5782.601034199999,
+              "p99": 7007.836412119999
+            },
+            "offered_ttft_ms": {
+              "count": 399,
+              "mean": 2051.930658142857,
+              "min": 30.544055999999998,
+              "max": 8456.612308,
+              "p50": 1267.021643,
+              "p95": 5789.505038999999,
+              "p99": 7016.41150418
+            },
+            "itl_ms": {
+              "count": 399,
+              "mean": 182.06933463074878,
+              "min": 1.3622607036104113,
+              "max": 733.9959739999999,
+              "p50": 54.194286,
+              "p95": 634.4076010499998,
+              "p99": 709.7583844699999
+            },
+            "e2e_ms": {
+              "count": 399,
+              "mean": 6853.241606548872,
+              "min": 1022.1691589999999,
+              "max": 29714.882942,
+              "p50": 5784.9691729999995,
+              "p95": 16040.928394199997,
+              "p99": 18124.666638659994
+            },
+            "offered_e2e_ms": {
+              "count": 399,
+              "mean": 7327.418458348371,
+              "min": 1026.507532,
+              "max": 37053.271753,
+              "p50": 6070.873821,
+              "p95": 17197.521125599997,
+              "p99": 19071.88555957999
+            },
+            "candidate_slo_not_user_accepted": {
+              "1": 0.10416666666666667,
+              "5": 0.425,
+              "10": 0.4895833333333333
+            }
+          },
+          "drain_seconds": 0,
+          "allocation": {
+            "token_capacity": 189056,
+            "pages_per_layer": 1477,
+            "bytes_per_token_per_layer": 4096,
+            "resident_bytes": 37169922048
+          },
+          "backend": {
+            "class": "FlashInferBackend",
+            "kv_cache_dtype": "auto",
+            "attention_impl": "flashinfer",
+            "planner_backend": "fa3",
+            "decode_impl": "xqa",
+            "xqa_max_context": 32768,
+            "xqa_enable_pdl": true,
+            "xqa_unused_kv_policy": "finite_full_initialization",
+            "xqa_graph_padding": "reserved_page0_one_token_discard",
+            "decode_internal_q_data_type": "torch.bfloat16",
+            "paged_prefill": true,
+            "decode_tensor_cores": true,
+            "flashinfer_version": "0.6.18.post1",
+            "q_data_type": "torch.bfloat16",
+            "profile_scope": "production_xqa",
+            "q_scale": null,
+            "kv_data_type": "torch.bfloat16",
+            "scale_strategy": "none",
+            "quality_transform": false,
+            "graph_enabled": true,
+            "graph_captured_batches": [
+              1,
+              2,
+              4,
+              8,
+              16,
+              32,
+              48,
+              64,
+              80,
+              96,
+              112,
+              128
+            ],
+            "graph_runner": "DecodeCudaGraphRunner"
+          },
+          "application_observations": {
+            "measurement_and_drain_samples": 1913,
+            "total_samples": 2402,
+            "metric_error_counts": {},
+            "gauges": {
+              "num_pending_requests": {
+                "count": 1913,
+                "mean": 0.0,
+                "min": 0.0,
+                "max": 0.0,
+                "p50": 0.0,
+                "p95": 0.0,
+                "p99": 0.0
+              },
+              "num_running_requests": {
+                "count": 1913,
+                "mean": 5.960271824359644,
+                "min": 0.0,
+                "max": 29.0,
+                "p50": 4.0,
+                "p95": 18.0,
+                "p99": 22.0
+              },
+              "num_waiting_requests": {
+                "count": 1913,
+                "mean": 1.2138003136434918,
+                "min": 0.0,
+                "max": 22.0,
+                "p50": 0.0,
+                "p95": 9.0,
+                "p99": 15.879999999999882
+              },
+              "num_preempted_requests": {
+                "count": 1913,
+                "mean": 0.0,
+                "min": 0.0,
+                "max": 0.0,
+                "p50": 0.0,
+                "p95": 0.0,
+                "p99": 0.0
+              },
+              "num_running_sequences": {
+                "count": 1913,
+                "mean": 5.960271824359644,
+                "min": 0.0,
+                "max": 29.0,
+                "p50": 4.0,
+                "p95": 18.0,
+                "p99": 22.0
+              },
+              "num_free_blocks": {
+                "count": 1913,
+                "mean": 1.5525352848928384,
+                "min": 0.0,
+                "max": 22.0,
+                "p50": 1.0,
+                "p95": 6.0,
+                "p99": 9.0
+              },
+              "num_used_blocks": {
+                "count": 1913,
+                "mean": 324.5065342394145,
+                "min": 0.0,
+                "max": 1333.0,
+                "p50": 242.0,
+                "p95": 937.3999999999999,
+                "p99": 1221.039999999999
+              },
+              "num_blocks_in_prefix_cache": {
+                "count": 1913,
+                "mean": 1452.8139048614742,
+                "min": 1356.0,
+                "max": 1476.0,
+                "p50": 1470.0,
+                "p95": 1475.0,
+                "p99": 1475.0
+              },
+              "kv_cache_utilization_perc": {
+                "count": 1913,
+                "mean": 0.2198259945060115,
+                "min": 0.0,
+                "max": 0.903117,
+                "p50": 0.163957,
+                "p95": 0.6350948,
+                "p99": 0.8272625999999994
+              },
+              "prefix_cache_token_hit_rate_perc": {
+                "count": 1913,
+                "mean": 43.27974046001046,
+                "min": 41.237,
+                "max": 45.9024,
+                "p50": 43.0952,
+                "p95": 45.3069,
+                "p99": 45.5368
+              }
+            },
+            "sample_bounded_counter_changes": {
+              "prefix_cache_prompt_tokens_total": {
+                "samples": 1913,
+                "monotonic": true,
+                "delta": 11867650.0
+              },
+              "prefix_cache_hit_tokens_total": {
+                "samples": 1913,
+                "monotonic": true,
+                "delta": 5024770.0
+              }
+            },
+            "sample_bounded_prefix_hit_token_fraction": 0.42340058899613653,
+            "physical_pages": 1477,
+            "usable_physical_pages_after_reserved0": 1476,
+            "used_blocks_include_reserved_page0": true,
+            "limitation": "Sequential1s application samples, not atomic snapshots/exact event counters; prefix pool can be reclaimable; no HBM counters"
+          },
+          "completion_timing": {
+            "raw_sha256": "cbd7f6c6c131a3c0fc2bfbe13d2d8b327ad8280ece1fd723f29797012a95b702",
+            "successful_measurement_records": 1689,
+            "terminal_minus_content_ms": {
+              "count": 1689,
+              "mean": 414.24595343161633,
+              "min": 0.0,
+              "max": 14309.753494,
+              "p50": 0.130782,
+              "p95": 3603.670614399998,
+              "p99": 7291.646914039995
+            },
+            "OSL_le4_terminal_minus_content_ms": {
+              "count": 405,
+              "mean": 0.3094175111111111,
+              "min": 0.0,
+              "max": 1.947815,
+              "p50": 0.174968,
+              "p95": 1.0040309999999983,
+              "p99": 1.622693239999999
+            },
+            "OSL_gt4_terminal_minus_content_ms": {
+              "count": 1284,
+              "mean": 544.8100477056074,
+              "min": 0.0,
+              "max": 14309.753494,
+              "p50": 0.11999499999999999,
+              "p95": 4410.8523209499945,
+              "p99": 7468.400615400008
+            },
+            "final_SSE_inclusive_per_server_output_token_ms": {
+              "count": 1686,
+              "mean": 189.53235534081767,
+              "min": 13.400864656565656,
+              "max": 788.0906050000001,
+              "p50": 61.65082721904763,
+              "p95": 628.651335375,
+              "p99": 722.1406201
+            },
+            "illustrative_TTFT_and_final_SSE_inclusive_mean100ms_qualified_RPS": {
+              "1": 0.09010416666666667,
+              "5": 0.396875,
+              "10": 0.4817708333333333
+            },
+            "largest_terminal_tails": [
+              {
+                "session_id": "toolagent-source-14234",
+                "server_output_tokens": 1129,
+                "terminal_minus_content_ms": 14309.753494,
+                "official_request_mean_ITL_ms": 6.5723298794326235,
+                "final_SSE_inclusive_per_server_output_token_ms": 19.25828155851064
+              },
+              {
+                "session_id": "toolagent-source-14996",
+                "server_output_tokens": 984,
+                "terminal_minus_content_ms": 11551.942345,
+                "official_request_mean_ITL_ms": 13.484117232960324,
+                "final_SSE_inclusive_per_server_output_token_ms": 25.235838845371312
+              },
+              {
+                "session_id": "toolagent-source-15569",
+                "server_output_tokens": 820,
+                "terminal_minus_content_ms": 10758.618314,
+                "official_request_mean_ITL_ms": 5.080396262515262,
+                "final_SSE_inclusive_per_server_output_token_ms": 18.21668236019536
+              },
+              {
+                "session_id": "toolagent-source-15429",
+                "server_output_tokens": 654,
+                "terminal_minus_content_ms": 10008.571674,
+                "official_request_mean_ITL_ms": 13.104701898928024,
+                "final_SSE_inclusive_per_server_output_token_ms": 28.431764186830016
+              },
+              {
+                "session_id": "toolagent-source-14110",
+                "server_output_tokens": 790,
+                "terminal_minus_content_ms": 8545.939448,
+                "official_request_mean_ITL_ms": 15.98240365145754,
+                "final_SSE_inclusive_per_server_output_token_ms": 26.813759098859315
+              }
+            ]
+          }
+        },
+        "fp8_e4m3": {
+          "measurement": {
+            "attempts": 1689,
+            "successes": 1689,
+            "errors": 0,
+            "offered_rps": 0.8796875,
+            "completion_rps_including_drain": 0.8796875,
+            "actual_output_tokens": 304758,
+            "elapsed_including_drain_seconds": 1920.0,
+            "client_start_lag_ms": {
+              "count": 1689,
+              "mean": 5.5764427140319714,
+              "min": 0.023149,
+              "max": 14.74329,
+              "p50": 5.493389,
+              "p95": 10.349749399999999,
+              "p99": 12.25965824
+            },
+            "credit_issue_lag_ms": {
+              "count": 1689,
+              "mean": 1.0710707199526348,
+              "min": -0.737998,
+              "max": 3.097007,
+              "p50": 1.052944,
+              "p95": 2.4194968,
+              "p99": 2.8228017199999997
+            },
+            "credit_to_start_ms": {
+              "count": 1689,
+              "mean": 4.505371994079337,
+              "min": 0.549589,
+              "max": 12.043111,
+              "p50": 4.441156,
+              "p95": 8.421174999999998,
+              "p99": 10.252472039999997
+            },
+            "ttft_ms": {
+              "count": 1689,
+              "mean": 2684.2382601243335,
+              "min": 27.94813,
+              "max": 13700.402123,
+              "p50": 1818.009552,
+              "p95": 7380.232108599993,
+              "p99": 10596.5947626
+            },
+            "offered_ttft_ms": {
+              "count": 1689,
+              "mean": 2689.814702838366,
+              "min": 29.3193,
+              "max": 13709.78843,
+              "p50": 1822.58977,
+              "p95": 7387.651165799993,
+              "p99": 10604.816072239999
+            },
+            "itl_ms": {
+              "count": 1686,
+              "mean": 221.67174601750915,
+              "min": 3.3325924563820015,
+              "max": 1081.5667615,
+              "p50": 70.84776626485507,
+              "p95": 743.88092775,
+              "p99": 937.316786975
+            },
+            "e2e_ms": {
+              "count": 1689,
+              "mean": 8774.008179783896,
+              "min": 1155.072426,
+              "max": 64931.405061,
+              "p50": 7299.523555,
+              "p95": 19140.6075056,
+              "p99": 31677.511324039962
+            },
+            "offered_e2e_ms": {
+              "count": 1689,
+              "mean": 9166.26944967318,
+              "min": 1156.881359,
+              "max": 64939.043804,
+              "p50": 7534.500457,
+              "p95": 19883.776419399997,
+              "p99": 34099.01331183998
+            },
+            "candidate_slo_not_user_accepted": {
+              "1": 0.08802083333333334,
+              "5": 0.340625,
+              "10": 0.4583333333333333
+            }
+          },
+          "warm_cache": {
+            "attempts": 399,
+            "successes": 399,
+            "errors": 0,
+            "offered_rps": 0.83125,
+            "completion_rps_including_drain": 0.83125,
+            "actual_output_tokens": 66521,
+            "elapsed_including_drain_seconds": 480.0,
+            "client_start_lag_ms": {
+              "count": 399,
+              "mean": 5.729439493734336,
+              "min": 0.258278,
+              "max": 13.985879,
+              "p50": 5.656986,
+              "p95": 10.564899499999997,
+              "p99": 13.008988599999995
+            },
+            "credit_issue_lag_ms": {
+              "count": 399,
+              "mean": 1.4297415689223059,
+              "min": -0.507183,
+              "max": 6.287365,
+              "p50": 1.306697,
+              "p95": 2.8174500999999994,
+              "p99": 6.175329539999999
+            },
+            "credit_to_start_ms": {
+              "count": 399,
+              "mean": 4.29969792481203,
+              "min": 0.64975,
+              "max": 9.878233,
+              "p50": 4.275619,
+              "p95": 7.9513888999999995,
+              "p99": 9.182734459999999
+            },
+            "ttft_ms": {
+              "count": 399,
+              "mean": 2394.0785405137844,
+              "min": 29.700329,
+              "max": 10299.252075999999,
+              "p50": 1727.7283949999999,
+              "p95": 6822.2710767,
+              "p99": 8358.4097998
+            },
+            "offered_ttft_ms": {
+              "count": 399,
+              "mean": 2399.8079800075184,
+              "min": 31.540072999999996,
+              "max": 10305.899784,
+              "p50": 1732.3924479999998,
+              "p95": 6829.110312099999,
+              "p99": 8365.046874979998
+            },
+            "itl_ms": {
+              "count": 399,
+              "mean": 214.5225016592611,
+              "min": 2.2249306998689384,
+              "max": 1056.390738,
+              "p50": 56.786193125,
+              "p95": 777.7823827,
+              "p99": 837.655316859999
+            },
+            "e2e_ms": {
+              "count": 399,
+              "mean": 7723.116342057644,
+              "min": 1119.794923,
+              "max": 39026.653972,
+              "p50": 6916.042866,
+              "p95": 17283.284614299995,
+              "p99": 19498.04382122
+            },
+            "offered_e2e_ms": {
+              "count": 399,
+              "mean": 8037.980559401003,
+              "min": 1127.067478,
+              "max": 39028.790675,
+              "p50": 7038.026426,
+              "p95": 18083.7529238,
+              "p99": 19945.49982947998
+            },
+            "candidate_slo_not_user_accepted": {
+              "1": 0.09583333333333334,
+              "5": 0.3645833333333333,
+              "10": 0.46875
+            }
+          },
+          "drain_seconds": 0,
+          "allocation": {
+            "token_capacity": 366720,
+            "pages_per_layer": 2865,
+            "bytes_per_token_per_layer": 2112,
+            "resident_bytes": 37176606720
+          },
+          "backend": {
+            "class": "FlashInferFP8Backend",
+            "kv_cache_dtype": "fp8_e4m3",
+            "attention_impl": "flashinfer",
+            "planner_backend": "fa2",
+            "decode_impl": "xqa",
+            "xqa_max_context": 32768,
+            "xqa_enable_pdl": true,
+            "xqa_unused_kv_policy": "finite_full_initialization",
+            "xqa_graph_padding": "reserved_page0_one_token_discard",
+            "decode_internal_q_data_type": "torch.float8_e4m3fn",
+            "paged_prefill": true,
+            "decode_tensor_cores": true,
+            "flashinfer_version": "0.6.18.post1",
+            "q_data_type": "torch.bfloat16",
+            "profile_scope": "production_xqa",
+            "q_scale": null,
+            "kv_data_type": "torch.float8_e4m3fn",
+            "scale_strategy": "immutable_global_scalar_per_K_or_V",
+            "quality_transform": false,
+            "k_scale": 0.125,
+            "v_scale": 0.0625,
+            "writer": "triton_quantize_scatter_only",
+            "fp8_views_alias_resident_pages": true,
+            "graph_enabled": true,
+            "graph_captured_batches": [
+              1,
+              2,
+              4,
+              8,
+              16,
+              32,
+              48,
+              64,
+              80,
+              96,
+              112,
+              128
+            ],
+            "graph_runner": "DecodeCudaGraphRunner"
+          },
+          "application_observations": {
+            "measurement_and_drain_samples": 1914,
+            "total_samples": 2401,
+            "metric_error_counts": {},
+            "gauges": {
+              "num_pending_requests": {
+                "count": 1914,
+                "mean": 0.0,
+                "min": 0.0,
+                "max": 0.0,
+                "p50": 0.0,
+                "p95": 0.0,
+                "p99": 0.0
+              },
+              "num_running_requests": {
+                "count": 1914,
+                "mean": 6.431034482758621,
+                "min": 0.0,
+                "max": 29.0,
+                "p50": 5.0,
+                "p95": 19.0,
+                "p99": 23.86999999999989
+              },
+              "num_waiting_requests": {
+                "count": 1914,
+                "mean": 1.4284221525600835,
+                "min": 0.0,
+                "max": 23.0,
+                "p50": 0.0,
+                "p95": 10.0,
+                "p99": 17.0
+              },
+              "num_preempted_requests": {
+                "count": 1914,
+                "mean": 0.0,
+                "min": 0.0,
+                "max": 0.0,
+                "p50": 0.0,
+                "p95": 0.0,
+                "p99": 0.0
+              },
+              "num_running_sequences": {
+                "count": 1914,
+                "mean": 6.432079414838036,
+                "min": 0.0,
+                "max": 29.0,
+                "p50": 5.0,
+                "p95": 19.0,
+                "p99": 23.86999999999989
+              },
+              "num_free_blocks": {
+                "count": 1914,
+                "mean": 1.412748171368861,
+                "min": 0.0,
+                "max": 16.0,
+                "p50": 1.0,
+                "p95": 5.0,
+                "p99": 9.0
+              },
+              "num_used_blocks": {
+                "count": 1914,
+                "mean": 341.78474399164054,
+                "min": 0.0,
+                "max": 1797.0,
+                "p50": 264.0,
+                "p95": 965.3999999999996,
+                "p99": 1324.7399999999998
+              },
+              "num_blocks_in_prefix_cache": {
+                "count": 1914,
+                "mean": 2837.4205851619645,
+                "min": 2757.0,
+                "max": 2864.0,
+                "p50": 2858.0,
+                "p95": 2863.0,
+                "p99": 2863.0
+              },
+              "kv_cache_utilization_perc": {
+                "count": 1914,
+                "mean": 0.11936779513061652,
+                "min": 0.0,
+                "max": 0.627444,
+                "p50": 0.0921788,
+                "p95": 0.3370809499999999,
+                "p99": 0.4625491299999999
+              },
+              "prefix_cache_token_hit_rate_perc": {
+                "count": 1914,
+                "mean": 43.671212434691746,
+                "min": 41.7574,
+                "max": 45.9459,
+                "p50": 43.4543,
+                "p95": 45.3953,
+                "p99": 45.7275
+              }
+            },
+            "sample_bounded_counter_changes": {
+              "prefix_cache_prompt_tokens_total": {
+                "samples": 1914,
+                "monotonic": true,
+                "delta": 11919100.0
+              },
+              "prefix_cache_hit_tokens_total": {
+                "samples": 1914,
+                "monotonic": true,
+                "delta": 5113600.0
+              }
+            },
+            "sample_bounded_prefix_hit_token_fraction": 0.4290256814692385,
+            "physical_pages": 2865,
+            "usable_physical_pages_after_reserved0": 2864,
+            "used_blocks_include_reserved_page0": true,
+            "limitation": "Sequential1s application samples, not atomic snapshots/exact event counters; prefix pool can be reclaimable; no HBM counters"
+          },
+          "completion_timing": {
+            "raw_sha256": "e29b267e889608266982e7c859d6b3b26b15a05913f18bd1d2ad762b7cd7742f",
+            "successful_measurement_records": 1689,
+            "terminal_minus_content_ms": {
+              "count": 1689,
+              "mean": 386.68482717525166,
+              "min": 0.0,
+              "max": 22647.043953,
+              "p50": 0.133813,
+              "p95": 2851.149523799998,
+              "p99": 7265.196865839982
+            },
+            "OSL_le4_terminal_minus_content_ms": {
+              "count": 405,
+              "mean": 0.33465589629629633,
+              "min": 0.0,
+              "max": 1.742136,
+              "p50": 0.215398,
+              "p95": 0.9199345999999998,
+              "p99": 1.46932716
+            },
+            "OSL_gt4_terminal_minus_content_ms": {
+              "count": 1284,
+              "mean": 508.5476148450156,
+              "min": 0.0,
+              "max": 22647.043953,
+              "p50": 0.119721,
+              "p95": 3861.4210927999993,
+              "p99": 7706.247421350007
+            },
+            "final_SSE_inclusive_per_server_output_token_ms": {
+              "count": 1686,
+              "mean": 222.59232300423437,
+              "min": 13.03500321671258,
+              "max": 1081.5667615000002,
+              "p50": 71.09089926372997,
+              "p95": 743.96365875,
+              "p99": 937.5638202000001
+            },
+            "illustrative_TTFT_and_final_SSE_inclusive_mean100ms_qualified_RPS": {
+              "1": 0.08802083333333334,
+              "5": 0.340625,
+              "10": 0.4583333333333333
+            },
+            "largest_terminal_tails": [
+              {
+                "session_id": "toolagent-source-14799",
+                "server_output_tokens": 678,
+                "terminal_minus_content_ms": 22647.043953,
+                "official_request_mean_ITL_ms": 26.626898398818316,
+                "final_SSE_inclusive_per_server_output_token_ms": 60.07895741358936
+              },
+              {
+                "session_id": "toolagent-source-14812",
+                "server_output_tokens": 454,
+                "terminal_minus_content_ms": 20104.745077,
+                "official_request_mean_ITL_ms": 19.233339922737308,
+                "final_SSE_inclusive_per_server_output_token_ms": 63.61467563355409
+              },
+              {
+                "session_id": "toolagent-source-14807",
+                "server_output_tokens": 471,
+                "terminal_minus_content_ms": 17386.628207,
+                "official_request_mean_ITL_ms": 35.993095517021274,
+                "final_SSE_inclusive_per_server_output_token_ms": 72.9859214893617
+              },
+              {
+                "session_id": "toolagent-source-14996",
+                "server_output_tokens": 984,
+                "terminal_minus_content_ms": 15252.447205,
+                "official_request_mean_ITL_ms": 10.822910378433367,
+                "final_SSE_inclusive_per_server_output_token_ms": 26.339133374364195
+              },
+              {
+                "session_id": "toolagent-source-15208",
+                "server_output_tokens": 1090,
+                "terminal_minus_content_ms": 10565.925318,
+                "official_request_mean_ITL_ms": 3.3325924563820015,
+                "final_SSE_inclusive_per_server_output_token_ms": 13.03500321671258
+              }
+            ]
+          }
+        }
+      },
+      "completion_rps_delta_pct": 0.0,
+      "audit_sha256": "903c806a0f12573857bea558599c334ce867e175f034239d48da73126a1aa286",
+      "tail_audit_sha256": "d4b28c518e2ab7792a78ce5890afa5aaf74b1808cd49e82dfd007a2e6406ad72",
+      "actual_gpu_hours": 1.5254130447175
+    },
+    {
+      "run_id": "prod-trace-bf16xqa-toolagent-s025-r0-20261027b",
+      "gpu_uuids": [
+        "GPU-a6169058-34c8-6edc-e4f5-779bf9a10421"
+      ],
+      "arrival_scaling": 0.25,
+      "offered_rps": 1.759375,
+      "arms": {
+        "bf16": {
+          "measurement": {
+            "attempts": 1689,
+            "successes": 1689,
+            "errors": 0,
+            "offered_rps": 1.759375,
+            "completion_rps_including_drain": 1.7143489821622044,
+            "actual_output_tokens": 304758,
+            "elapsed_including_drain_seconds": 985.2136394480001,
+            "client_start_lag_ms": {
+              "count": 1689,
+              "mean": 4.853592057430432,
+              "min": -0.716516,
+              "max": 13.58659,
+              "p50": 4.724037,
+              "p95": 9.7592416,
+              "p99": 11.970234719999995
+            },
+            "credit_issue_lag_ms": {
+              "count": 1689,
+              "mean": 0.1191230153937241,
+              "min": -1.303607,
+              "max": 1.738675,
+              "p50": 0.08969,
+              "p95": 1.1728553999999998,
+              "p99": 1.3940030799999992
+            },
+            "credit_to_start_ms": {
+              "count": 1689,
+              "mean": 4.734469042036708,
+              "min": 0.527169,
+              "max": 12.716387,
+              "p50": 4.604825,
+              "p95": 9.185434399999995,
+              "p99": 11.523535399999995
+            },
+            "ttft_ms": {
+              "count": 1689,
+              "mean": 7919.845539004737,
+              "min": 33.515411,
+              "max": 39736.859334,
+              "p50": 3862.8883619999997,
+              "p95": 28794.615837399997,
+              "p99": 33313.57550175999
+            },
+            "offered_ttft_ms": {
+              "count": 1689,
+              "mean": 7924.699131062166,
+              "min": 34.396461,
+              "max": 39745.606563,
+              "p50": 3867.8116,
+              "p95": 28805.496459399998,
+              "p99": 33324.11999083999
+            },
+            "itl_ms": {
+              "count": 1686,
+              "mean": 127.73952447522191,
+              "min": 4.208277706214689,
+              "max": 774.7377345,
+              "p50": 52.41501808383234,
+              "p95": 573.34750975,
+              "p99": 688.4567331249999
+            },
+            "e2e_ms": {
+              "count": 1689,
+              "mean": 15536.086354192421,
+              "min": 165.15731499999998,
+              "max": 115743.187423,
+              "p50": 10258.332715999999,
+              "p95": 43123.9290822,
+              "p99": 59357.16371979997
+            },
+            "offered_e2e_ms": {
+              "count": 1689,
+              "mean": 16502.258463227354,
+              "min": 165.278889,
+              "max": 116749.250098,
+              "p50": 10997.176519,
+              "p95": 47125.853086399984,
+              "p99": 62240.0795124
+            },
+            "candidate_slo_not_user_accepted": {
+              "1": 0.1492062169199787,
+              "5": 0.5795697269476724,
+              "10": 0.7998265233533552
+            }
+          },
+          "warm_cache": {
+            "attempts": 399,
+            "successes": 399,
+            "errors": 0,
+            "offered_rps": 1.6625,
+            "completion_rps_including_drain": 1.5993775382318447,
+            "actual_output_tokens": 66521,
+            "elapsed_including_drain_seconds": 249.47205426,
+            "client_start_lag_ms": {
+              "count": 399,
+              "mean": 5.101421220551378,
+              "min": -0.495533,
+              "max": 14.079292,
+              "p50": 4.969959,
+              "p95": 10.200604599999998,
+              "p99": 13.115444859999995
+            },
+            "credit_issue_lag_ms": {
+              "count": 399,
+              "mean": 0.43536906516290724,
+              "min": -1.175844,
+              "max": 6.36425,
+              "p50": 0.141319,
+              "p95": 1.1820856999999994,
+              "p99": 6.25296632
+            },
+            "credit_to_start_ms": {
+              "count": 399,
+              "mean": 4.666052155388471,
+              "min": 0.661159,
+              "max": 10.291242,
+              "p50": 4.683744,
+              "p95": 8.643133999999998,
+              "p99": 9.637385139999997
+            },
+            "ttft_ms": {
+              "count": 399,
+              "mean": 2446.591481027569,
+              "min": 35.768133,
+              "max": 12230.731468,
+              "p50": 1623.946764,
+              "p95": 7511.083414199997,
+              "p99": 10927.311647359997
+            },
+            "offered_ttft_ms": {
+              "count": 399,
+              "mean": 2451.6929022481204,
+              "min": 37.382238,
+              "max": 12240.557126,
+              "p50": 1628.897069,
+              "p95": 7520.4844504999965,
+              "p99": 10934.729839419997
+            },
+            "itl_ms": {
+              "count": 399,
+              "mean": 172.32468726847367,
+              "min": 2.207840308984047,
+              "max": 714.3360624999999,
+              "p50": 57.00495222929936,
+              "p95": 639.3473700999999,
+              "p99": 693.5716913199996
+            },
+            "e2e_ms": {
+              "count": 399,
+              "mean": 8639.619442641602,
+              "min": 808.362229,
+              "max": 39301.302504,
+              "p50": 6243.237485,
+              "p95": 23091.90338399997,
+              "p99": 31192.604590259976
+            },
+            "offered_e2e_ms": {
+              "count": 399,
+              "mean": 9476.058424002505,
+              "min": 809.87088,
+              "max": 52252.839432,
+              "p50": 6375.283135,
+              "p95": 27489.678951599988,
+              "p99": 32595.132193999983
+            },
+            "candidate_slo_not_user_accepted": {
+              "1": 0.21645711043739252,
+              "5": 0.8177268616523717,
+              "10": 0.9660400669520667
+            }
+          },
+          "drain_seconds": 25.213639448000094,
+          "allocation": {
+            "token_capacity": 189056,
+            "pages_per_layer": 1477,
+            "bytes_per_token_per_layer": 4096,
+            "resident_bytes": 37169922048
+          },
+          "backend": {
+            "class": "FlashInferBackend",
+            "kv_cache_dtype": "auto",
+            "attention_impl": "flashinfer",
+            "planner_backend": "fa3",
+            "decode_impl": "xqa",
+            "xqa_max_context": 32768,
+            "xqa_enable_pdl": true,
+            "xqa_unused_kv_policy": "finite_full_initialization",
+            "xqa_graph_padding": "reserved_page0_one_token_discard",
+            "decode_internal_q_data_type": "torch.bfloat16",
+            "paged_prefill": true,
+            "decode_tensor_cores": true,
+            "flashinfer_version": "0.6.18.post1",
+            "q_data_type": "torch.bfloat16",
+            "profile_scope": "production_xqa",
+            "q_scale": null,
+            "kv_data_type": "torch.bfloat16",
+            "scale_strategy": "none",
+            "quality_transform": false,
+            "graph_enabled": true,
+            "graph_captured_batches": [
+              1,
+              2,
+              4,
+              8,
+              16,
+              32,
+              48,
+              64,
+              80,
+              96,
+              112,
+              128
+            ],
+            "graph_runner": "DecodeCudaGraphRunner"
+          },
+          "application_observations": {
+            "measurement_and_drain_samples": 985,
+            "total_samples": 1233,
+            "metric_error_counts": {},
+            "gauges": {
+              "num_pending_requests": {
+                "count": 985,
+                "mean": 0.0,
+                "min": 0.0,
+                "max": 0.0,
+                "p50": 0.0,
+                "p95": 0.0,
+                "p99": 0.0
+              },
+              "num_running_requests": {
+                "count": 985,
+                "mean": 15.677157360406092,
+                "min": 0.0,
+                "max": 30.0,
+                "p50": 16.0,
+                "p95": 25.0,
+                "p99": 28.159999999999968
+              },
+              "num_waiting_requests": {
+                "count": 985,
+                "mean": 12.319796954314722,
+                "min": 0.0,
+                "max": 84.0,
+                "p50": 6.0,
+                "p95": 45.0,
+                "p99": 72.0
+              },
+              "num_preempted_requests": {
+                "count": 985,
+                "mean": 0.0,
+                "min": 0.0,
+                "max": 0.0,
+                "p50": 0.0,
+                "p95": 0.0,
+                "p99": 0.0
+              },
+              "num_running_sequences": {
+                "count": 985,
+                "mean": 15.677157360406092,
+                "min": 0.0,
+                "max": 30.0,
+                "p50": 16.0,
+                "p95": 25.0,
+                "p99": 28.159999999999968
+              },
+              "num_free_blocks": {
+                "count": 985,
+                "mean": 0.515736040609137,
+                "min": 0.0,
+                "max": 10.0,
+                "p50": 0.0,
+                "p95": 3.0,
+                "p99": 7.0
+              },
+              "num_used_blocks": {
+                "count": 985,
+                "mean": 994.5076142131979,
+                "min": 0.0,
+                "max": 1359.0,
+                "p50": 1176.0,
+                "p95": 1340.0,
+                "p99": 1353.0
+              },
+              "num_blocks_in_prefix_cache": {
+                "count": 985,
+                "mean": 1430.2670050761421,
+                "min": 1353.0,
+                "max": 1475.0,
+                "p50": 1455.0,
+                "p95": 1471.0,
+                "p99": 1475.0
+              },
+              "kv_cache_utilization_perc": {
+                "count": 985,
+                "mean": 0.6737849734416245,
+                "min": 0.0,
+                "max": 0.920732,
+                "p50": 0.796748,
+                "p95": 0.907859,
+                "p99": 0.916667
+              },
+              "prefix_cache_token_hit_rate_perc": {
+                "count": 985,
+                "mean": 43.071002335025376,
+                "min": 41.1542,
+                "max": 45.5164,
+                "p50": 42.8053,
+                "p95": 45.1746,
+                "p99": 45.3702
+              }
+            },
+            "sample_bounded_counter_changes": {
+              "prefix_cache_prompt_tokens_total": {
+                "samples": 985,
+                "monotonic": true,
+                "delta": 11881600.0
+              },
+              "prefix_cache_hit_tokens_total": {
+                "samples": 985,
+                "monotonic": true,
+                "delta": 4994810.0
+              }
+            },
+            "sample_bounded_prefix_hit_token_fraction": 0.42038193509291677,
+            "physical_pages": 1477,
+            "usable_physical_pages_after_reserved0": 1476,
+            "used_blocks_include_reserved_page0": true,
+            "limitation": "Sequential1s application samples, not atomic snapshots/exact event counters; prefix pool can be reclaimable; no HBM counters"
+          },
+          "completion_timing": {
+            "raw_sha256": "a1aeed9f168f3398d2cf36f31acddcef375fc5abb794d8fcbff2eacbf487d69e",
+            "successful_measurement_records": 1689,
+            "terminal_minus_content_ms": {
+              "count": 1689,
+              "mean": 961.3185169775015,
+              "min": 0.0,
+              "max": 43671.751051,
+              "p50": 0.135885,
+              "p95": 7378.189426999992,
+              "p99": 18769.54854215995
+            },
+            "OSL_le4_terminal_minus_content_ms": {
+              "count": 405,
+              "mean": 0.24317089876543208,
+              "min": 0.0,
+              "max": 4.531152,
+              "p50": 0.096246,
+              "p95": 0.8429867999999995,
+              "p99": 1.7027541999999956
+            },
+            "OSL_gt4_terminal_minus_content_ms": {
+              "count": 1284,
+              "mean": 1264.4614415584113,
+              "min": 0.0,
+              "max": 43671.751051,
+              "p50": 0.142839,
+              "p95": 9983.365910499979,
+              "p99": 20970.487399530004
+            },
+            "final_SSE_inclusive_per_server_output_token_ms": {
+              "count": 1686,
+              "mean": 129.93140773798032,
+              "min": 14.776163088461537,
+              "max": 774.7377345,
+              "p50": 54.43948411545725,
+              "p95": 573.79990575,
+              "p99": 688.7506610750002
+            },
+            "illustrative_TTFT_and_final_SSE_inclusive_mean100ms_qualified_RPS": {
+              "1": 0.1492062169199787,
+              "5": 0.5795697269476724,
+              "10": 0.7998265233533552
+            },
+            "largest_terminal_tails": [
+              {
+                "session_id": "toolagent-source-14996",
+                "server_output_tokens": 984,
+                "terminal_minus_content_ms": 43671.751051,
+                "official_request_mean_ITL_ms": 6.601027185147508,
+                "final_SSE_inclusive_per_server_output_token_ms": 51.028037409969485
+              },
+              {
+                "session_id": "toolagent-source-14156",
+                "server_output_tokens": 842,
+                "terminal_minus_content_ms": 32433.596697,
+                "official_request_mean_ITL_ms": 5.285656712247324,
+                "final_SSE_inclusive_per_server_output_token_ms": 43.85117002615933
+              },
+              {
+                "session_id": "toolagent-source-14852",
+                "server_output_tokens": 658,
+                "terminal_minus_content_ms": 30519.891492,
+                "official_request_mean_ITL_ms": 10.991032764079147,
+                "final_SSE_inclusive_per_server_output_token_ms": 57.444444471841706
+              },
+              {
+                "session_id": "toolagent-source-15473",
+                "server_output_tokens": 581,
+                "terminal_minus_content_ms": 27335.100247,
+                "official_request_mean_ITL_ms": 10.840397172413791,
+                "final_SSE_inclusive_per_server_output_token_ms": 57.96988035689655
+              },
+              {
+                "session_id": "toolagent-source-14407",
+                "server_output_tokens": 614,
+                "terminal_minus_content_ms": 26624.879283,
+                "official_request_mean_ITL_ms": 9.16374685807504,
+                "final_SSE_inclusive_per_server_output_token_ms": 52.59748141435563
+              }
+            ]
+          }
+        },
+        "fp8_e4m3": {
+          "measurement": {
+            "attempts": 1689,
+            "successes": 1689,
+            "errors": 0,
+            "offered_rps": 1.759375,
+            "completion_rps_including_drain": 1.7278781304036823,
+            "actual_output_tokens": 304758,
+            "elapsed_including_drain_seconds": 977.499495063,
+            "client_start_lag_ms": {
+              "count": 1689,
+              "mean": 5.486307925399645,
+              "min": -0.116287,
+              "max": 15.675611,
+              "p50": 5.336281,
+              "p95": 10.205742799999998,
+              "p99": 12.41107611999999
+            },
+            "credit_issue_lag_ms": {
+              "count": 1689,
+              "mean": 1.0141888656009472,
+              "min": -0.780962,
+              "max": 2.923118,
+              "p50": 1.064345,
+              "p95": 2.2756931999999996,
+              "p99": 2.6351361599999987
+            },
+            "credit_to_start_ms": {
+              "count": 1689,
+              "mean": 4.472119059798698,
+              "min": 0.329264,
+              "max": 13.644944,
+              "p50": 4.302626,
+              "p95": 8.4262996,
+              "p99": 10.83713644
+            },
+            "ttft_ms": {
+              "count": 1689,
+              "mean": 3407.1449897844877,
+              "min": 28.333848,
+              "max": 21688.154424,
+              "p50": 2258.283905,
+              "p95": 10404.298996799998,
+              "p99": 15405.310194039967
+            },
+            "offered_ttft_ms": {
+              "count": 1689,
+              "mean": 3412.6312977098873,
+              "min": 30.010188,
+              "max": 21701.66103,
+              "p50": 2267.015441,
+              "p95": 10409.5352612,
+              "p99": 15413.517761359966
+            },
+            "itl_ms": {
+              "count": 1686,
+              "mean": 214.38413758657828,
+              "min": 6.96731178805395,
+              "max": 1014.9173539999999,
+              "p50": 83.14009976577532,
+              "p95": 735.3361297499999,
+              "p99": 905.9677121750004
+            },
+            "e2e_ms": {
+              "count": 1689,
+              "mean": 13538.722091687388,
+              "min": 990.876399,
+              "max": 143142.406849,
+              "p50": 8454.710353999999,
+              "p95": 41974.39261159999,
+              "p99": 61881.33524231972
+            },
+            "offered_e2e_ms": {
+              "count": 1689,
+              "mean": 14337.686691820603,
+              "min": 991.764915,
+              "max": 143147.901524,
+              "p50": 8661.60095,
+              "p95": 43698.68767099998,
+              "p99": 63796.48937279996
+            },
+            "candidate_slo_not_user_accepted": {
+              "1": 0.16675200429591486,
+              "5": 0.6240412430706017,
+              "10": 0.879795850886422
+            }
+          },
+          "warm_cache": {
+            "attempts": 399,
+            "successes": 399,
+            "errors": 0,
+            "offered_rps": 1.6625,
+            "completion_rps_including_drain": 1.5837094871494894,
+            "actual_output_tokens": 66521,
+            "elapsed_including_drain_seconds": 251.94014637,
+            "client_start_lag_ms": {
+              "count": 399,
+              "mean": 5.578902102756891,
+              "min": 0.494433,
+              "max": 14.25294,
+              "p50": 5.342662,
+              "p95": 10.558726299999996,
+              "p99": 13.254277479999995
+            },
+            "credit_issue_lag_ms": {
+              "count": 399,
+              "mean": 1.4302511278195489,
+              "min": -0.248178,
+              "max": 6.457725,
+              "p50": 1.095092,
+              "p95": 2.697404299999999,
+              "p99": 6.3452247999999996
+            },
+            "credit_to_start_ms": {
+              "count": 399,
+              "mean": 4.148650974937343,
+              "min": 0.365025,
+              "max": 9.760251,
+              "p50": 4.121312,
+              "p95": 7.7991937999999985,
+              "p99": 9.022980839999999
+            },
+            "ttft_ms": {
+              "count": 399,
+              "mean": 2467.630076634085,
+              "min": 40.735532,
+              "max": 10411.502584,
+              "p50": 1468.422539,
+              "p95": 6866.8776984,
+              "p99": 8636.094122499999
+            },
+            "offered_ttft_ms": {
+              "count": 399,
+              "mean": 2473.208978736842,
+              "min": 44.50692,
+              "max": 10418.816673,
+              "p50": 1473.2151809999998,
+              "p95": 6874.367597099999,
+              "p99": 8643.15456552
+            },
+            "itl_ms": {
+              "count": 399,
+              "mean": 218.60300541803394,
+              "min": 4.31692463853211,
+              "max": 1098.2739804999999,
+              "p50": 68.45072061678833,
+              "p95": 741.0645434999999,
+              "p99": 895.9678545399984
+            },
+            "e2e_ms": {
+              "count": 399,
+              "mean": 9789.223177,
+              "min": 1214.726657,
+              "max": 53976.530625,
+              "p50": 7057.913597,
+              "p95": 30306.06190369999,
+              "p99": 35628.68669909999
+            },
+            "offered_e2e_ms": {
+              "count": 399,
+              "mean": 10598.54435523559,
+              "min": 1217.447649,
+              "max": 53979.290603,
+              "p50": 7194.813887,
+              "p95": 31623.5301151,
+              "p99": 39447.696897339985
+            },
+            "candidate_slo_not_user_accepted": {
+              "1": 0.19845983548239216,
+              "5": 0.6866710307690769,
+              "10": 0.9010076530900604
+            }
+          },
+          "drain_seconds": 17.49949506300004,
+          "allocation": {
+            "token_capacity": 366720,
+            "pages_per_layer": 2865,
+            "bytes_per_token_per_layer": 2112,
+            "resident_bytes": 37176606720
+          },
+          "backend": {
+            "class": "FlashInferFP8Backend",
+            "kv_cache_dtype": "fp8_e4m3",
+            "attention_impl": "flashinfer",
+            "planner_backend": "fa2",
+            "decode_impl": "xqa",
+            "xqa_max_context": 32768,
+            "xqa_enable_pdl": true,
+            "xqa_unused_kv_policy": "finite_full_initialization",
+            "xqa_graph_padding": "reserved_page0_one_token_discard",
+            "decode_internal_q_data_type": "torch.float8_e4m3fn",
+            "paged_prefill": true,
+            "decode_tensor_cores": true,
+            "flashinfer_version": "0.6.18.post1",
+            "q_data_type": "torch.bfloat16",
+            "profile_scope": "production_xqa",
+            "q_scale": null,
+            "kv_data_type": "torch.float8_e4m3fn",
+            "scale_strategy": "immutable_global_scalar_per_K_or_V",
+            "quality_transform": false,
+            "k_scale": 0.125,
+            "v_scale": 0.0625,
+            "writer": "triton_quantize_scatter_only",
+            "fp8_views_alias_resident_pages": true,
+            "graph_enabled": true,
+            "graph_captured_batches": [
+              1,
+              2,
+              4,
+              8,
+              16,
+              32,
+              48,
+              64,
+              80,
+              96,
+              112,
+              128
+            ],
+            "graph_runner": "DecodeCudaGraphRunner"
+          },
+          "application_observations": {
+            "measurement_and_drain_samples": 977,
+            "total_samples": 1225,
+            "metric_error_counts": {},
+            "gauges": {
+              "num_pending_requests": {
+                "count": 977,
+                "mean": 0.0,
+                "min": 0.0,
+                "max": 0.0,
+                "p50": 0.0,
+                "p95": 0.0,
+                "p99": 0.0
+              },
+              "num_running_requests": {
+                "count": 977,
+                "mean": 20.308085977482087,
+                "min": 0.0,
+                "max": 57.0,
+                "p50": 20.0,
+                "p95": 38.19999999999993,
+                "p99": 42.0
+              },
+              "num_waiting_requests": {
+                "count": 977,
+                "mean": 4.1248720573183215,
+                "min": 0.0,
+                "max": 42.0,
+                "p50": 0.0,
+                "p95": 18.0,
+                "p99": 26.0
+              },
+              "num_preempted_requests": {
+                "count": 977,
+                "mean": 0.0,
+                "min": 0.0,
+                "max": 0.0,
+                "p50": 0.0,
+                "p95": 0.0,
+                "p99": 0.0
+              },
+              "num_running_sequences": {
+                "count": 977,
+                "mean": 20.310133060388946,
+                "min": 0.0,
+                "max": 57.0,
+                "p50": 20.0,
+                "p95": 38.19999999999993,
+                "p99": 42.0
+              },
+              "num_free_blocks": {
+                "count": 977,
+                "mean": 0.8638689866939611,
+                "min": 0.0,
+                "max": 12.0,
+                "p50": 0.0,
+                "p95": 5.0,
+                "p99": 9.0
+              },
+              "num_used_blocks": {
+                "count": 977,
+                "mean": 1246.2620266120778,
+                "min": 0.0,
+                "max": 2621.0,
+                "p50": 1140.0,
+                "p95": 2560.0,
+                "p99": 2600.7200000000003
+              },
+              "num_blocks_in_prefix_cache": {
+                "count": 977,
+                "mean": 2806.1821903787104,
+                "min": 2730.0,
+                "max": 2863.0,
+                "p50": 2825.0,
+                "p95": 2860.2,
+                "p99": 2863.0
+              },
+              "kv_cache_utilization_perc": {
+                "count": 977,
+                "mean": 0.43514590580348006,
+                "min": 0.0,
+                "max": 0.915154,
+                "p50": 0.398045,
+                "p95": 0.893855,
+                "p99": 0.90833776
+              },
+              "prefix_cache_token_hit_rate_perc": {
+                "count": 977,
+                "mean": 43.61844227226202,
+                "min": 41.7098,
+                "max": 45.8092,
+                "p50": 43.3925,
+                "p95": 45.47244,
+                "p99": 45.7275
+              }
+            },
+            "sample_bounded_counter_changes": {
+              "prefix_cache_prompt_tokens_total": {
+                "samples": 977,
+                "monotonic": true,
+                "delta": 11893510.0
+              },
+              "prefix_cache_hit_tokens_total": {
+                "samples": 977,
+                "monotonic": true,
+                "delta": 5092600.0
+              }
+            },
+            "sample_bounded_prefix_hit_token_fraction": 0.4281831015402518,
+            "physical_pages": 2865,
+            "usable_physical_pages_after_reserved0": 2864,
+            "used_blocks_include_reserved_page0": true,
+            "limitation": "Sequential1s application samples, not atomic snapshots/exact event counters; prefix pool can be reclaimable; no HBM counters"
+          },
+          "completion_timing": {
+            "raw_sha256": "6b28b83ed6f52c4f4bc2f53b1f0c906ad0718ba137f9c439f266ce7f0284e163",
+            "successful_measurement_records": 1689,
+            "terminal_minus_content_ms": {
+              "count": 1689,
+              "mean": 793.4782922078153,
+              "min": 0.0,
+              "max": 38796.471716,
+              "p50": 0.141389,
+              "p95": 5272.8537537999855,
+              "p99": 20141.11854703996
+            },
+            "OSL_le4_terminal_minus_content_ms": {
+              "count": 405,
+              "mean": 0.2499487160493827,
+              "min": 0.0,
+              "max": 1.733248,
+              "p50": 0.147572,
+              "p95": 0.8799799999999998,
+              "p99": 1.4356391999999945
+            },
+            "OSL_gt4_terminal_minus_content_ms": {
+              "count": 1284,
+              "mean": 1043.6788211129283,
+              "min": 0.0,
+              "max": 38796.471716,
+              "p50": 0.1382985,
+              "p95": 7356.634470949997,
+              "p99": 21784.809579470006
+            },
+            "final_SSE_inclusive_per_server_output_token_ms": {
+              "count": 1686,
+              "mean": 216.3744830713285,
+              "min": 13.761960762550881,
+              "max": 1015.03718,
+              "p50": 85.9785980427987,
+              "p95": 735.3361297499998,
+              "p99": 906.1567798250005
+            },
+            "illustrative_TTFT_and_final_SSE_inclusive_mean100ms_qualified_RPS": {
+              "1": 0.16675200429591486,
+              "5": 0.6209721877768118,
+              "10": 0.8746807587301056
+            },
+            "largest_terminal_tails": [
+              {
+                "session_id": "toolagent-source-14785",
+                "server_output_tokens": 422,
+                "terminal_minus_content_ms": 38796.471716,
+                "official_request_mean_ITL_ms": 12.534433847980997,
+                "final_SSE_inclusive_per_server_output_token_ms": 104.68757331591449
+              },
+              {
+                "session_id": "toolagent-source-15261",
+                "server_output_tokens": 886,
+                "terminal_minus_content_ms": 36574.384347,
+                "official_request_mean_ITL_ms": 9.41749187118644,
+                "final_SSE_inclusive_per_server_output_token_ms": 50.7444798338983
+              },
+              {
+                "session_id": "toolagent-source-14783",
+                "server_output_tokens": 384,
+                "terminal_minus_content_ms": 32624.865262,
+                "official_request_mean_ITL_ms": 15.93463540992167,
+                "final_SSE_inclusive_per_server_output_token_ms": 101.11705123759792
+              },
+              {
+                "session_id": "toolagent-source-14765",
+                "server_output_tokens": 449,
+                "terminal_minus_content_ms": 30301.094477,
+                "official_request_mean_ITL_ms": 16.20184361607143,
+                "final_SSE_inclusive_per_server_output_token_ms": 83.83821521651785
+              },
+              {
+                "session_id": "toolagent-source-14106",
+                "server_output_tokens": 437,
+                "terminal_minus_content_ms": 28772.879353,
+                "official_request_mean_ITL_ms": 20.96967982798165,
+                "final_SSE_inclusive_per_server_output_token_ms": 86.96252238073394
+              }
+            ]
+          }
+        }
+      },
+      "completion_rps_delta_pct": 0.7891711887281216,
+      "audit_sha256": "4c42db71a841f362b1ea71df8a5b026990c3933de8c9603eab5e8376cf58d96d",
+      "tail_audit_sha256": "44456bcadf608de8b7a27a9e453392271066ef7b446217b12356bfe9c16bda66",
+      "actual_gpu_hours": 0.8744012310841667
+    }
+  ],
+  "quality_accepted": false,
+  "limitations": [
+    "One paired run per load; points used different GPUs/times, each arm pair same GPU",
+    "Two observed loads do not locate an exact SLO capacity or provide run-level CIs",
+    "Anonymous source lengths/prefixes/arrivals are not semantic quality or natural EOS",
+    "BF16/FP8 prefill/internal-Q/writer differ; no isolated KV-dtype causal effect",
+    "SSE-inclusive per-token mean is not hardware decode-step or token-stall timing",
+    "Old FA3-decode BF16 overload point is a different baseline and is excluded"
+  ]
+}

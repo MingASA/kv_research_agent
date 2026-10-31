@@ -1,0 +1,9 @@
+test_changed_failure_proof_or_dirty_source_is_rejected (tests.test_native_cpu_incremental.IncrementalCPUAdmissionTest) ... ok
+test_only_exact_failed_exited_cpu_build_is_admitted (tests.test_native_cpu_incremental.IncrementalCPUAdmissionTest) ... ok
+test_running_foreign_or_oom_parent_is_rejected (tests.test_native_cpu_incremental.IncrementalCPUAdmissionTest) ... ok
+test_successful_build_or_already_linked_binary_is_preserved (tests.test_native_cpu_incremental.IncrementalCPUAdmissionTest) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.017s
+
+OK
