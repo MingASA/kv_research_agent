@@ -66,9 +66,29 @@ def validate_request(request: dict, approval: dict) -> None:
     from .policy import _path
 
     _require(request.get("schema") == SCHEMA, "Unknown next-generation contract")
+    if request.get('workload', {}).get('kind') == 'upstream_AC_real_native_tools32':
+        from .upstream_tools import validate_request as validate_upstream_tools
+        validate_upstream_tools(request, approval)
+        return
+    if request.get('workload', {}).get('kind') == 'upstream_AC_fixed_production_service':
+        from .upstream_service import validate_request as validate_upstream_service
+        validate_upstream_service(request, approval)
+        return
+    if request.get('workload', {}).get('kind') == 'upstream_AC_frozen_core_quality1720':
+        from .upstream_quality import validate_request as validate_upstream_quality
+        validate_upstream_quality(request, approval)
+        return
+    if request.get('workload', {}).get('kind') == 'upstream_official_A_model_qualification':
+        from .upstream_qualification import validate_request as validate_upstream
+        validate_upstream(request, approval)
+        return
     if request.get('workload', {}).get('kind') in (SERVICE_KIND, QUALITY_KIND, PERF_KIND, TOOLS_KIND):
         from .nextgen_service import validate_service_request
         validate_service_request(request, approval)
+        return
+    if request.get('workload', {}).get('kind') in ('upstream_native_C_operator_qualification', 'upstream_native_C_model_qualification', 'upstream_common_path_BF16_regression', 'upstream_FP8_direct_library_attribution', 'upstream_native_VMM_compatibility'):
+        from .upstream_native import validate_request as validate_native_upstream
+        validate_native_upstream(request, approval)
         return
     pages_operator = request.get('workload', {}).get('kind') == PAGES_KIND
     _require(request.get("model_id") == MODEL, "Model must match the verified cached model")
@@ -233,6 +253,9 @@ def native_python_environment(request: dict, env: dict) -> dict:
 
 
 def verify_startup_recovery(request: dict, base: Path, uid: int) -> None:
+    if request.get('workload', {}).get('kind') == 'upstream_AC_real_native_tools32':
+        from .nextgen_tools_service import verify_tools_prerequisites
+        verify_tools_prerequisites(request, Path(request['remote_output']), base, uid)
     if request.get('workload', {}).get('kind') in (SERVICE_KIND, QUALITY_KIND, PERF_KIND, TOOLS_KIND):
         from .nextgen_service import verify_orchestration_recovery, verify_quality_completion, verify_resource_recovery, verify_scale_prerequisites, verify_transport_recovery
         verify_quality_completion(request, base, uid)
@@ -394,9 +417,24 @@ def _operator_gate(output: Path, native_config: object | None = None) -> dict:
 
 
 def run_validation(ticket: dict, root: Path, output: Path, arm: str, env: dict) -> dict:
+    if ticket['request']['workload']['kind'] == 'upstream_AC_real_native_tools32':
+        from .upstream_tools import run as run_upstream_tools
+        return run_upstream_tools(ticket, root, output, arm, env)
+    if ticket['request']['workload']['kind'] == 'upstream_AC_frozen_core_quality1720':
+        from .upstream_quality import run as run_upstream_quality
+        return run_upstream_quality(ticket, root, output, arm, env)
+    if ticket['request']['workload']['kind'] == 'upstream_AC_fixed_production_service':
+        from .upstream_service import run as run_upstream_service
+        return run_upstream_service(ticket, root, output, arm, env)
     from .worker import stop_child
 
     request = ticket["request"]
+    if request['workload']['kind'] in ('upstream_native_C_operator_qualification', 'upstream_native_C_model_qualification', 'upstream_common_path_BF16_regression', 'upstream_FP8_direct_library_attribution', 'upstream_native_VMM_compatibility'):
+        from .upstream_native import run as run_native_upstream
+        return run_native_upstream(ticket, root, output, arm, env)
+    if request['workload']['kind'] == 'upstream_official_A_model_qualification':
+        from .upstream_qualification import run as run_upstream
+        return run_upstream(ticket, root, output, arm, env)
     if request['workload']['kind'] in (SERVICE_KIND, QUALITY_KIND, PERF_KIND, TOOLS_KIND):
         from .nextgen_service import run_native_service
         return run_native_service(ticket, root, output, arm, env)

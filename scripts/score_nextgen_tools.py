@@ -124,11 +124,17 @@ def score_sessions(prepared: Path,source: Path,references: Path,conversations: P
     write_new_json(output/'summary.json',summary);return summary
 
 
-def audit(manifest_path: Path,references: Path,tokenizer: Path,output: Path) -> dict:
-    lifecycle=audit_service(manifest_path);manifest=json.loads(manifest_path.read_text());base,root=_mirror_paths(manifest)
+def audit(manifest_path: Path,references: Path,tokenizer: Path,output: Path,*,upstream: bool=False) -> dict:
+    if upstream:
+        from scripts.audit_upstream_run import audit as audit_upstream
+        lifecycle=audit_upstream(manifest_path)
+    else:
+        lifecycle=audit_service(manifest_path)
+    manifest=json.loads(manifest_path.read_text());base,root=_mirror_paths(manifest)
     ticket=json.loads((root/'ticket.json').read_text());request=ticket['request'];arm=request['arms'][0]
-    _check(request['workload']['kind']==TOOLS_KIND,'This is not a real native-tool model run')
-    verified={(base/row['base_rel']).resolve(strict=True) for row in manifest['files']}
+    _check(request['workload']['kind']==('upstream_AC_real_native_tools32' if upstream else TOOLS_KIND),
+           'This is not a real native-tool model run')
+    verified={((root if upstream else base)/row['base_rel']).resolve(strict=True) for row in manifest['files']}
     for name,sha in ticket['assets_sha256'].items():
         path=root/name
         _check(path.resolve(strict=True) in verified and hashlib.sha256(path.read_bytes()).hexdigest()==sha,
@@ -152,6 +158,7 @@ def audit(manifest_path: Path,references: Path,tokenizer: Path,output: Path) -> 
 
 def main() -> None:
     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--worker',action='store_true')
+    parser.add_argument('--upstream',action='store_true')
     for name in ('source','input','out','sha-manifest','references','tokenizer'):parser.add_argument('--'+name,type=Path)
     args=parser.parse_args()
     if args.worker:
@@ -161,7 +168,7 @@ def main() -> None:
     else:
         if not all((args.sha_manifest,args.references,args.tokenizer,args.out)):
             parser.error('Actual model scoring requires --sha-manifest/--references/--tokenizer/--out')
-        result=audit(args.sha_manifest,args.references,args.tokenizer,args.out)
+        result=audit(args.sha_manifest,args.references,args.tokenizer,args.out,upstream=args.upstream)
         print(json.dumps({'run_id':result['run_id'],'quality':result['quality']['task_success_percent']}))
 
 

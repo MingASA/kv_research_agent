@@ -1,0 +1,17 @@
+{
+  "utc": "2026-11-02T21:23:41.247036+00:00",
+  "classification": "confirmed_source_only_not_formal_trace_fraction",
+  "source_commit": "da7c6446ff4361c8060633b04d6bfb77e6f737ff",
+  "shared_planning": "Eager runner prepares shared attention backend once per model step, rather than per full-attention layer; decode graph wrappers/plans reused by bucket. Native execute does not plan attention.",
+  "whole_mixed_chunked_batch": "Official BF16 and native Full Attention dispatch flagged batch to prefill; GDN also takes flagged prefill; DecodeCudaGraphRunner rejects such whole batches. FP8 query rows use FP8 FA3 for that batch, not XQA decode.",
+  "formal_mixed_batch_or_Graph_coverage_fraction": "unmeasured",
+  "common_scheduler_or_Graph_rewrite": false,
+  "source_sha256": {
+    "xllm/python/model_executor/runners/eager.py": "5cda15c6f6136669bcb80fe4d3437a3e5c978cc2c77e852fe9df7c1ee1b4eaab",
+    "xllm/python/model_executor/runners/decode_cuda_graph.py": "18a93a01df930873fad8fed8ed72e87550fa6bee0052d170a88a4cd8262f7d6e",
+    "xllm/python/attention/flashinfer.py": "8709e288bbd31d9d44d437abcb510015120780f493074a8e4bf99bd63837bb92",
+    "xllm/python/attention/flashinfer_native_kv.py": "75c4626ee62fd6f14db71f391c61d57da4aa9c35b930059064b728d12ca73ae7",
+    "xllm/python/layers/cuda/qwen3_5/gated_delta_net.py": "d7d56a8b41733a6944cb39bbc577e444df0e420ae56763881706754bd8d3248a"
+  },
+  "primary_vLLM_phase_split_reference": "https://github.com/vllm-project/vllm/blob/f451c6254fe526a8108c291c6e6839f37f70dd1f/vllm/v1/attention/backends/flashinfer.py"
+}

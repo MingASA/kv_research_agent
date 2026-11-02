@@ -23,11 +23,43 @@ def _cluster_bootstrap(differences: np.ndarray, groups: list[str], rng: np.rando
     return totals[sampled].sum(axis=1)/counts[sampled].sum(axis=1)
 
 
-def compare(reference: Path, candidate: Path, *, repeats: int = 4000) -> dict:
+def compare(reference: Path, candidate: Path, *, repeats: int = 4000, upstream: bool = False,
+            reference_manifest: Path | None = None, candidate_manifest: Path | None = None) -> dict:
     baseline=json.loads((reference/'summary.json').read_text())
     low=json.loads((candidate/'summary.json').read_text())
-    for field in ('model_id','canonical_API_payloads_sha256','labels_sha256','scoring_protocol_sha256',
-                  'binary_sha256','server_source_commit','service'):
+    common = ('model_id','canonical_API_payloads_sha256','labels_sha256','scoring_protocol_sha256','service')
+    deployments = None
+    if upstream:
+        from scripts.audit_upstream_run import audit as audit_upstream
+        from scripts.controller.upstream_qualification import OFFICIAL_COMMIT, BASELINE_COMMIT
+        if reference_manifest is None or candidate_manifest is None:
+            raise ValueError('Upstream A/C quality comparison requires both original SHA mirrors')
+        requests = []
+        for summary, path in ((baseline, reference_manifest), (low, candidate_manifest)):
+            lifecycle = audit_upstream(path)
+            manifest = json.loads(path.read_bytes())
+            request = json.loads((Path(manifest['mirror_directory'])/'files/ticket.json').read_bytes())['request']
+            if (lifecycle['run_id'] != summary['run_id'] or summary.get('same_version_upstream_A_C') is not True
+                    or request['workload']['kind'] != 'upstream_AC_frozen_core_quality1720'
+                    or request['server_source_commit'] != summary['server_source_commit']
+                    or request['binary_sha256'] != summary['binary_sha256']
+                    or request.get('native_configuration') != summary.get('native_configuration')):
+                raise ValueError('Quality summary differs from its original actual upstream run')
+            requests.append(request)
+        a, c = requests
+        for field in ('model_id','model_config_sha256','image_id','gpu_uuids','service','upstream_commit'):
+            if a[field] != c[field]:
+                raise ValueError('Paired upstream model/image/GPU/service differs: '+field)
+        if (a['upstream_commit'] != OFFICIAL_COMMIT or a['server_source_commit'] != BASELINE_COMMIT
+                or a['arms'] != ['bf16'] or a.get('native_configuration') is not None
+                or c.get('native_base_commit') != BASELINE_COMMIT or c['arms'] not in (['fp8_e4m3'], ['nvfp4'])):
+            raise ValueError('Require official A and quantized C from the same frozen official/buildfix base')
+        deployments = {'reference_source': a['server_source_commit'], 'candidate_source': c['server_source_commit'],
+                       'official_base': a['upstream_commit'], 'common_buildfix_base': BASELINE_COMMIT,
+                       'same_physical_GPU': a['gpu_uuids'], 'same_image': a['image_id']}
+    else:
+        common += ('binary_sha256','server_source_commit')
+    for field in common:
         if baseline[field]!=low[field]:
             raise ValueError('Paired quality configurations/input identities differ: '+field)
     left_rows=_jsonl(reference/'per_record_scores.jsonl');right_rows=_jsonl(candidate/'per_record_scores.jsonl')
@@ -54,6 +86,7 @@ def compare(reference: Path, candidate: Path, *, repeats: int = 4000) -> dict:
                      'candidate_capped':sum(right[identifier]['finish_reason']=='length' for identifier in ids)}
     macro=np.stack(longbench_boot).mean(axis=0)*100
     return {'schema':'nextgen_paired_core_quality_comparison_v1','reference_run':baseline['run_id'],
+            'same_frozen_official_base_A_C':upstream,'upstream_deployments':deployments,
             'candidate_run':low['run_id'],'reference_arm':baseline['arm'],'candidate_arm':low['arm'],
             'reference_summary_sha256':hashlib.sha256((reference/'summary.json').read_bytes()).hexdigest(),
             'candidate_summary_sha256':hashlib.sha256((candidate/'summary.json').read_bytes()).hexdigest(),
@@ -72,7 +105,11 @@ def main() -> None:
     parser.add_argument('--reference',type=Path,required=True)
     parser.add_argument('--candidate',type=Path,required=True)
     parser.add_argument('--out',type=Path,required=True)
-    args=parser.parse_args();write_new_json(args.out,compare(args.reference,args.candidate))
+    parser.add_argument('--upstream',action='store_true')
+    parser.add_argument('--reference-sha-manifest',type=Path)
+    parser.add_argument('--candidate-sha-manifest',type=Path)
+    args=parser.parse_args();write_new_json(args.out,compare(args.reference,args.candidate,upstream=args.upstream,
+        reference_manifest=args.reference_sha_manifest,candidate_manifest=args.candidate_sha_manifest))
 
 
 if __name__=='__main__':main()

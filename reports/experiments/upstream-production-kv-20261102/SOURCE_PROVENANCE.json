@@ -1,0 +1,34 @@
+{
+  "utc": "2026-11-02T21:22:15.331516+00:00",
+  "official_base": "261274e5f45449e98d7740144c3a958a29f1fd3e",
+  "measured_C_source": "da7c6446ff4361c8060633b04d6bfb77e6f737ff",
+  "worktree_clean": true,
+  "commits_selected_from_fresh_official_worktree": [
+    "721afdabc1de1af8e594b4da3e6fa926def50821 fix(runtime): guard NPU-only MTP graph reset on CUDA builds",
+    "a8c8f0d4cee638b0cde4eaf28726d0c01ce73de5 fix(kv-cache): align odd-width cache groups to hardware pages",
+    "c36d84c5a04dd23203f956139c2477f3b6d3152b feat(kv-cache): integrate SM90 native FP8 and NVFP4 on upstream executor",
+    "c3cfd16b46f9b4028c44d00ec930395a03cab215 fix(kv-cache): distinguish virtual capacity from resident byte reporting",
+    "554571792c240c6c544a6bd4768c664cd8d98cdf refactor(attention): defer BF16 native-op import until execution",
+    "10b109455e34c62d8a09fc599d7b939f3508e4e5 test(kv-cache): check native layouts against physical VMM budgets",
+    "da7c6446ff4361c8060633b04d6bfb77e6f737ff perf(attention): keep native cache validation out of each XQA layer"
+  ],
+  "merge_commits_after_official_base": [],
+  "actual_diff_stat": "NATIVE_KV_SM90.md                                  |  39 ++++\n .../kv_cache/layout/kv_cache_estimation_test.cpp   |  21 ++\n .../layout/virtual_kv_cache_page_layout_test.cpp   |  21 +-\n .../kv_cache/layout/vmm_kv_cache_layout_test.cpp   |  19 ++\n tests/core/kv_cache/storage/kv_cache_test.cpp      |  63 ++++++\n tests/python/test_native_kv_layout.py              |  45 +++++\n xllm/core/framework/config/kv_cache_config.cpp     |  60 +++++-\n xllm/core/framework/config/kv_cache_config.h       |   8 +\n xllm/core/kv_cache/layout/kv_cache_capacity.h      |   2 +\n xllm/core/kv_cache/layout/kv_cache_estimation.cpp  |  22 +-\n xllm/core/kv_cache/layout/kv_cache_shape.cpp       |   9 +-\n xllm/core/kv_cache/layout/native_kv_cache_format.h |  41 ++++\n .../kv_cache/layout/virtual_kv_cache_page_layout.h |   6 +-\n xllm/core/kv_cache/layout/vmm_kv_cache_layout.cpp  |   6 +-\n xllm/core/kv_cache/storage/kv_cache_utils.cpp      |   9 +-\n xllm/core/kv_cache/storage/kv_cache_utils.h        |   1 +\n xllm/core/runtime/mtp_worker_impl.cpp              |   2 +\n xllm/core/runtime/py_executor_impl.cpp             |   9 +\n xllm/core/runtime/worker_impl.cpp                  |  17 ++\n xllm/python/attention/flashinfer.py                |   5 +-\n xllm/python/attention/flashinfer_native_kv.py      | 221 +++++++++++++++++++++\n xllm/python/attention/native_kv_layout.py          |  35 ++++\n xllm/python/attention/native_kv_writer.py          |  58 ++++++\n xllm/python/attention/query_quantization.py        |  41 ++++\n xllm/python/attention/xqa_decode.py                | 104 ++++++++++\n xllm/python/model_executor/executor.py             |  15 ++\n 26 files changed, 862 insertions(+), 17 deletions(-)",
+  "runtime_frozen_until_all_original_GPU_jobs_complete": true,
+  "old_D_branch_preserved": "03134b72ec904254890300a647c939095f7900e2",
+  "documentation_delivery": {
+    "measured_runtime_commit": "da7c6446ff4361c8060633b04d6bfb77e6f737ff",
+    "delivery_commit": "a5ce9684367051b9718a70af842cebc42d7c851a",
+    "changed_files_after_measurement": [
+      "NATIVE_KV_SM90.md",
+      "docs/src/content/docs/en/cli_reference.md",
+      "docs/src/content/docs/zh/cli_reference.md"
+    ],
+    "all_non_Markdown_runtime_files_bitwise_identical_to_measured_commit": true,
+    "primary_worktree_clean": true,
+    "source_resource_closeout_before_fast_forward": true,
+    "published_to_user_fork": true,
+    "GitHub_author": "MingASA",
+    "remote_commit_verified": "a5ce9684367051b9718a70af842cebc42d7c851a"
+  }
+}

@@ -61,13 +61,21 @@ def _verify_prediction(
 
 
 def score(manifest_path: Path, cohort: Path, output: Path, recovery_path: Path | None = None,
-          completion_anchor_manifest: Path | None = None) -> dict:
+          completion_anchor_manifest: Path | None = None, *, upstream: bool = False) -> dict:
     recovery=json.loads(recovery_path.read_text()) if recovery_path is not None else None
-    lifecycle=audit(manifest_path,failed_quality_recovery=recovery)
+    if upstream:
+        from scripts.audit_upstream_run import audit as audit_upstream
+        _check(recovery is None and completion_anchor_manifest is None,
+               'Upstream full-cohort scoring cannot hide a legacy recovery or partial aggregation')
+        lifecycle=audit_upstream(manifest_path)
+    else:
+        lifecycle=audit(manifest_path,failed_quality_recovery=recovery)
     mirror_manifest=json.loads(manifest_path.read_text())
     _,root=_mirror_paths(mirror_manifest)
     ticket=json.loads((root/'ticket.json').read_text());request=ticket['request'];arm=request['arms'][0]
-    _check(request['workload']['kind']==QUALITY_KIND and request['range_observation'] is False,
+    expected_kind = 'upstream_AC_frozen_core_quality1720' if upstream else QUALITY_KIND
+    _check(request['workload']['kind']==expected_kind and request['range_observation'] is False
+           and (not upstream or request.get('graph_observer') is None),
            'Formal core scoring requires the observer-free quality workload')
     _check(request['model_id']==MODEL,'Quality source model differs')
     evaluation=request['quality_evaluation']
@@ -185,6 +193,9 @@ def score(manifest_path: Path, cohort: Path, output: Path, recovery_path: Path |
                       recovered_CPU_token_count_corrections=len(recovery['official_token_count_corrections']),
                       empty_stop_outputs_scored_zero=len(recovery['empty_stop_response_ids']),
                       original_runtime_result_overwritten=False)
+    if upstream:
+        result.update(upstream_commit=request['upstream_commit'], native_configuration=request.get('native_configuration'),
+                      same_version_upstream_A_C=True)
     output.mkdir(mode=0o700,parents=True,exist_ok=False)
     write_new_bytes(output/'per_record_scores.jsonl',b''.join(canonical_bytes(row) for row in records))
     write_new_json(output/'summary.json',result)
@@ -198,7 +209,8 @@ def main() -> None:
     parser.add_argument('--out',type=Path,required=True)
     parser.add_argument('--recovery-audit',type=Path)
     parser.add_argument('--completion-anchor-sha-manifest',type=Path)
-    args=parser.parse_args();score(args.sha_manifest,args.cohort,args.out,args.recovery_audit,args.completion_anchor_sha_manifest)
+    parser.add_argument('--upstream',action='store_true')
+    args=parser.parse_args();score(args.sha_manifest,args.cohort,args.out,args.recovery_audit,args.completion_anchor_sha_manifest,upstream=args.upstream)
 
 
 if __name__=='__main__':main()

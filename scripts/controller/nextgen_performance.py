@@ -144,9 +144,9 @@ def verify_performance_prerequisites(request: dict, root: Path, uid: int) -> Non
         raise ValueError('Existing installed AIPerf CLI changed; no automatic dependency replacement')
 
 
-def validate_payloads(raw: bytes, *, model_id: str) -> dict:
+def validate_payloads(raw: bytes, *, model_id: str, latest_upstream: bool = False) -> dict:
     document=json.loads(raw);sessions=document.get('data',[])
-    if not isinstance(sessions,list) or not sessions or len(sessions)>128:
+    if not isinstance(sessions,list) or not sessions or len(sessions)>(512 if latest_upstream else 128):
         raise ValueError('Production text cohort must contain1-128 actual sessions')
     identifiers=set();requests=0;hashes=[]
     for session in sessions:
@@ -194,9 +194,10 @@ def verify_frozen_case(directory: Path, case: str, *, model_id: str) -> dict:
 
 
 def aiperf_command(model_id: str, source: Path, artifacts: Path, *, requests: int, concurrency: int,
-                   timeout_seconds: int = 600, sessions: int | None=None) -> list[str]:
-    if (type(requests) is not int or not 1<=requests<=128
-            or type(concurrency) is not int or not 1<=concurrency<=16
+                   timeout_seconds: int = 600, sessions: int | None=None,
+                   latest_upstream: bool = False) -> list[str]:
+    if (type(requests) is not int or not 1<=requests<=(512 if latest_upstream else 128)
+            or type(concurrency) is not int or not 1<=concurrency<=(64 if latest_upstream else 16)
             or timeout_seconds!=600 or not source.is_absolute() or not artifacts.is_absolute()):
         raise ValueError('Unreviewed/unbounded AIPerf production demand/path')
     if sessions is not None and (type(sessions) is not int or not 1<=sessions<=requests<=sessions*2):

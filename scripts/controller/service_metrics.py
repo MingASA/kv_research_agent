@@ -83,11 +83,15 @@ class ServiceMetricCollector:
     """Sample explicit bvars; failures remain visible in the immutable JSONL."""
 
     def __init__(self, output: Path, run_id: str, request_sha256: str, physical_pages: int,
-                 on_sample: Callable[[dict], None] | None = None) -> None:
+                 on_sample: Callable[[dict], None] | None = None,
+                 accounting_version: str = 'legacy_padding_in_used') -> None:
         if type(physical_pages) is not int or physical_pages < 2:
             raise ValueError("Observed allocator physical page capacity is required")
         self._output, self._run_id, self._request_sha = output, run_id, request_sha256
         self._physical_pages = physical_pages
+        if accounting_version not in ('legacy_padding_in_used', 'upstream261_effective_usage_excludes_padding'):
+            raise ValueError('Unknown block accounting source version')
+        self._accounting_version = accounting_version
         self._on_sample = on_sample
         self._stop = threading.Event()
         self._thread: threading.Thread | None = None
@@ -96,8 +100,13 @@ class ServiceMetricCollector:
     def _run(self) -> None:
         try:
             with self._output.open("x", buffering=1) as stream:
+                units = dict(METRICS)
+                if self._accounting_version == 'upstream261_effective_usage_excludes_padding':
+                    units['kv_cache_utilization_perc'] = 'effective_used_excluding_padding_over_physical_pages_minus_one'
+                    units['num_blocks_in_prefix_cache'] = 'prefix_cached_blocks_may_overlap_effective_active_usage'
                 stream.write(json.dumps({"schema": "kv-owned-service-metrics-v1", "run_id": self._run_id,
-                    "request_sha256": self._request_sha, "worker_pid": os.getpid(), "units": METRICS,
+                    "request_sha256": self._request_sha, "worker_pid": os.getpid(), "units": units,
+                    "accounting_source": self._accounting_version,
                     "scope": "private_owned_container_loopback_only", "sample_interval_seconds": 1,
                     "physical_pages": self._physical_pages, "reserved_padding_pages": 1,
                     "limitation": "Sequential application observations, not atomic snapshots or HBM hardware counters"}) + "\n")

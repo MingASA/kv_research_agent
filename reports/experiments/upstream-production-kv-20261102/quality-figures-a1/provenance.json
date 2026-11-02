@@ -1,0 +1,17 @@
+{
+  "source_SHA256": {
+    "reports/experiments/upstream-production-kv-20261102/quality-pair-A-FP8-a1.json": "c9aafeceeb1954a65b83d43a52fc96879457be5b500f8ce4394f78906496af26",
+    "reports/experiments/upstream-production-kv-20261102/quality-pair-A-NVFP4-a1.json": "860dea96af8cff085d960fc4d70a6b0edabf3b4254273cbd664bc2dd93055e64",
+    "reports/experiments/upstream-production-kv-20261102/tools-pair-A-FP8-c1.json": "1136af6e6efb12e69ddc5343e5a77a773e9e57f5bbdfc0a478743bd63900234a",
+    "reports/experiments/upstream-production-kv-20261102/tools-pair-A-NVFP4-b1.json": "5bee388ba5aae220b5e072f91f9730f5c6c160136bc90d78650395f03b35e49f"
+  },
+  "GSM_unit": "paired questions",
+  "LongBench_unit": "complete same-context question clusters within task",
+  "LongBench_task_macro_weights": "equal eight fixed core tasks; one supplement excluded",
+  "tool_counts": {
+    "BF16": 26,
+    "FP8": 26,
+    "NVFP4": 27
+  },
+  "noninferiority_or_production_quality_accepted": false
+}

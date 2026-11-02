@@ -1,0 +1,32 @@
+{
+  "schema": "latest-upstream-production-delivery-checks-v1",
+  "utc": "2026-11-02T22:45:53.221473+00:00",
+  "deliverables": {
+    "1_fixed_latest_official_source_selective_port_published": {
+      "official": "261274e5f45449e98d7740144c3a958a29f1fd3e",
+      "A": "721afdabc1de1af8e594b4da3e6fa926def50821",
+      "C_measured": "da7c6446ff4361c8060633b04d6bfb77e6f737ff",
+      "C_delivery": "a5ce9684367051b9718a70af842cebc42d7c851a",
+      "post_measurement_runtime_diff": false
+    },
+    "2_actual_A_C_and_minimal_B_evidence": {
+      "service_cases": 9,
+      "measured_requests_per_format": 1088,
+      "warmup_per_format": 36,
+      "core_quality_per_format": 1720,
+      "original_tool_tasks_per_format": 32,
+      "B_minimal_actual_model_prefix_GDN_graph_regression": true
+    },
+    "3_actual_native_paths_capacity_hardware_direct_operator_evidence": true,
+    "4_mixed_prefix_graph_VMM_compatibility_and_limits_explicit": true,
+    "5_central_report_figures_numeric_sources_complete": true,
+    "6_explicit_merge_recommendations_no_official_PR": true
+  },
+  "all_report_relative_links_resolve": true,
+  "all19_original_GPU_runs_and_global102_SETTLED": true,
+  "all6_archives_builder_reread_and_separate_Luna_inventory_pass": true,
+  "archive_bytes": 147236844,
+  "source_fork_SHA_and_MingASA_author_verified": true,
+  "automatic_quality_or_business_SLO_acceptance": false,
+  "public_controller_publication_verification": "Recorded in a separate post-push receipt; not asserted by this scientific-artifact check."
+}

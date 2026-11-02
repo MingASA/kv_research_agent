@@ -135,7 +135,12 @@ def main() -> None:
         request, hashes, assets = _local_package(args.package)
         validate_request(request, approval)
         validate_frozen_policy(args.package,request,approval)
-        config_name = "NEXTGEN_CONFIG.local.json" if request["schema"] == "kv-nextgen-run-v1" else "CONFIG.local.json"
+        upstream_kind = request.get('workload', {}).get('kind')
+        upstream = upstream_kind in ('upstream_official_A_model_qualification', 'upstream_native_C_operator_qualification', 'upstream_native_C_model_qualification', 'upstream_common_path_BF16_regression', 'upstream_FP8_direct_library_attribution', 'upstream_AC_fixed_production_service', 'upstream_AC_frozen_core_quality1720', 'upstream_AC_real_native_tools32', 'upstream_native_VMM_compatibility')
+        upstream_A = upstream_kind == 'upstream_official_A_model_qualification' or (upstream_kind in ('upstream_AC_fixed_production_service','upstream_AC_frozen_core_quality1720','upstream_AC_real_native_tools32') and request['arms'] == ['bf16'])
+        config_name = ('UPSTREAM_AC_A.local.json' if upstream_A else
+                       'UPSTREAM_AC_C.local.json' if upstream else
+                       'NEXTGEN_CONFIG.local.json' if request['schema'] == 'kv-nextgen-run-v1' else 'CONFIG.local.json')
         config = json.loads((ROOT / "state" / config_name).read_text())
         for field, expected in (("ssh_target", config["ssh_target"]), ("approved_host_fingerprint", config["known_host_ed25519_fingerprint"]),
                                 ("approved_workspace", config["remote_base"]), ("server_binary", config["remote_new_binary_path"]),
@@ -146,7 +151,10 @@ def main() -> None:
         transport = PinnedSSH(approval, LEDGER_DIRECTORY / "pins" / "preflight")
         binary_cpp_sources = [name for name in request['backend_source_sha256'] if name.endswith(('.cpp', '.cc', '.cu'))]
         observed = transport.rpc(_source("discovery.py"), {**config, "image_id": request["image_id"],
-                                 "hash_paths": [request["server_binary"]] + [request["source_repo"] + "/" + name for name in sorted(set(SOURCE_FILES) | set(binary_cpp_sources))]})
+                                 "hash_paths": [request["server_binary"]] + [request["source_repo"] + "/" + name for name in sorted(set(request['backend_source_sha256'] if upstream else SOURCE_FILES) | set(binary_cpp_sources))]
+                                 + ([request['runtime_library_directory'] + '/libzmq.so.5.2.5'] if upstream else [])})
+        if upstream and observed['source_sha256'][request['runtime_library_directory'] + '/libzmq.so.5.2.5'] != request['zeromq_library_sha256']:
+            raise ApprovalError('Private official build runtime library provenance differs')
         if observed["source_sha256"][request["server_binary"]] != request["binary_sha256"] or observed["model_config_sha256"] != request["model_config_sha256"]:
             raise ApprovalError("Live binary/model provenance differs")
         from .nextgen import PAGES_KIND

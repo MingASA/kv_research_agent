@@ -54,17 +54,29 @@ def bound(audit_path: Path,manifest_path: Path) -> tuple[dict,dict]:
     return audit,request
 
 
-def compare(reference_path: Path,reference_manifest: Path,candidate_path: Path,candidate_manifest: Path) -> dict:
+def compare(reference_path: Path,reference_manifest: Path,candidate_path: Path,candidate_manifest: Path,
+            *,upstream: bool=False) -> dict:
     left,lreq=bound(reference_path,reference_manifest);right,rreq=bound(candidate_path,candidate_manifest)
     _check(left['arm']=='bf16' and right['arm'] in ('fp8_e4m3','nvfp4'),'Pair explicit BF16 and native low precision')
-    for name in ('model_id','model_config_sha256','image_id','binary_sha256','server_source_commit',
-                 'python_source_commit','service','gpu_uuids','prefix_cache','graph_mode'):
+    common=('model_id','model_config_sha256','image_id','service','gpu_uuids','prefix_cache','graph_mode')
+    if upstream:
+        from scripts.controller.upstream_qualification import OFFICIAL_COMMIT,BASELINE_COMMIT
+        _check(lreq['workload']['kind']==rreq['workload']['kind']=='upstream_AC_real_native_tools32'
+               and lreq['upstream_commit']==rreq['upstream_commit']==OFFICIAL_COMMIT
+               and lreq['server_source_commit']==BASELINE_COMMIT and lreq.get('native_configuration') is None
+               and rreq.get('native_base_commit')==BASELINE_COMMIT,
+               'Tool A/C must share the frozen latest official/buildfix base')
+    else:
+        common+=('binary_sha256','server_source_commit','python_source_commit')
+    for name in common:
         _check(lreq[name]==rreq[name],'Different tool deployment: '+name)
     for name in ('tasks','user_turns','client_concurrency','max_steps_per_turn','max_new_tokens','max_seconds','tool_parser',
                  'manifest_sha256','tasks_sha256','tool_source_manifest_sha256','CPU_protocol_rollup_sha256','CPU_image_evidence_sha256'):
         _check(lreq['tool_evaluation'][name]==rreq['tool_evaluation'][name],'Different original tool demand/protocol: '+name)
     result=paired_scores(left['quality'],right['quality'])
     result.update(schema='nextgen-actual-native-tools32-pair-v1',reference_run_id=left['run_id'],candidate_run_id=right['run_id'],
+        same_frozen_official_base_A_C=upstream,
+        source_commits={'A':lreq['server_source_commit'],'C':rreq['server_source_commit']},
         candidate_arm=right['arm'],service=lreq['service'],gpu_uuids=lreq['gpu_uuids'],
         operators={'BF16':lreq['operators'],right['arm']:rreq['operators']},
         reference_audit_sha256=hashlib.sha256(reference_path.read_bytes()).hexdigest(),
@@ -80,5 +92,7 @@ if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)
     for name in ('reference','reference-manifest','candidate','candidate-manifest','out'):
         parser.add_argument('--'+name,type=Path,required=True)
-    args=parser.parse_args();result=compare(args.reference,args.reference_manifest,args.candidate,args.candidate_manifest)
+    parser.add_argument('--upstream',action='store_true')
+    args=parser.parse_args();result=compare(args.reference,args.reference_manifest,args.candidate,args.candidate_manifest,
+                                        upstream=args.upstream)
     write_new_json(args.out,result);print(json.dumps(result))

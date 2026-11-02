@@ -1,0 +1,166 @@
+{
+  "schema": "upstream-actual-quality-tool-execution-binding-v1",
+  "runs": [
+    {
+      "run_id": "upstream-A-quality1720-r0-20261102a",
+      "arm": "bf16",
+      "kind": "upstream_AC_frozen_core_quality1720",
+      "source_commit": "721afdabc1de1af8e594b4da3e6fa926def50821",
+      "binary_sha256": "b774ace2fd7341bc70477be0cd7a44d930330a15311a42c1af216287c021721a",
+      "complete_original_SHA_and_lifecycle_verified": true,
+      "actual_command_matches_frozen_request": true,
+      "actual_native_bindings": [],
+      "source_manifest_sha256": "7d32d3064338324a423a69907e83c3b457974b9d4359255d3e3ad6a22c1438b2",
+      "actual_server_command_sha256": "d99449e0fafeace087b49f2542308ac8db9a8753152256ba577d830213d9824e",
+      "actual_server_log_sha256": "1db6ed9eb33803b7ca1467813850f5a3156a8c383811cf8e9de5b7eac4d29c9c"
+    },
+    {
+      "run_id": "upstream-C-fp8-quality1720-r0-20261102a",
+      "arm": "fp8_e4m3",
+      "kind": "upstream_AC_frozen_core_quality1720",
+      "source_commit": "da7c6446ff4361c8060633b04d6bfb77e6f737ff",
+      "binary_sha256": "74668d5e5d73a0dc23f70679350851b10c11c99e42c6961f511dee33ab7f60e9",
+      "complete_original_SHA_and_lifecycle_verified": true,
+      "actual_command_matches_frozen_request": true,
+      "actual_native_bindings": [
+        {
+          "KV_tensor_address_bytes": 11295260672,
+          "SM90_FP4_tensor_core_compute": false,
+          "VMM_virtual_address_capacity_not_residency": false,
+          "decode_backend": "xqa",
+          "decode_query_dtype": "torch.bfloat16",
+          "full_BF16_KV_shadow": false,
+          "k_scale": 0.125,
+          "kv_cache_dtype": "fp8_e4m3",
+          "max_context_tokens": 262144,
+          "prefill_backend": "fa3",
+          "prefill_query_dtype": "torch.float8_e4m3fn",
+          "query_dtype": "torch.bfloat16",
+          "resident_KV_bytes": 11295260672,
+          "resident_global_scale_bytes": 0,
+          "resident_layout": "NHD",
+          "v_scale": 0.0625,
+          "writer": "fused_triton_quantize_scatter"
+        }
+      ],
+      "source_manifest_sha256": "0706ac49e2872603c3ba50cd754aa34a6adc49c75444e0ae4c6465baebc0394e",
+      "actual_server_command_sha256": "0eb827a2aad6d5a8adf9f9663ff034dd31924e86ecfec0b7176556f1b61ddd07",
+      "actual_server_log_sha256": "7034e732e8ff7d275eee030a587418c37ed8f965c08af07d746b5de1d22e903a"
+    },
+    {
+      "run_id": "upstream-C-nvfp4-quality1720-r0-20261102a",
+      "arm": "nvfp4",
+      "kind": "upstream_AC_frozen_core_quality1720",
+      "source_commit": "da7c6446ff4361c8060633b04d6bfb77e6f737ff",
+      "binary_sha256": "74668d5e5d73a0dc23f70679350851b10c11c99e42c6961f511dee33ab7f60e9",
+      "complete_original_SHA_and_lifecycle_verified": true,
+      "actual_command_matches_frozen_request": true,
+      "actual_native_bindings": [
+        {
+          "KV_tensor_address_bytes": 11293949952,
+          "SM90_FP4_tensor_core_compute": false,
+          "VMM_virtual_address_capacity_not_residency": false,
+          "decode_backend": "flashinfer",
+          "decode_query_dtype": "torch.bfloat16",
+          "full_BF16_KV_shadow": false,
+          "k_scale": 1.0,
+          "kv_cache_dtype": "nvfp4",
+          "max_context_tokens": 262144,
+          "prefill_backend": "fa2",
+          "prefill_query_dtype": "torch.bfloat16",
+          "query_dtype": "torch.bfloat16",
+          "resident_KV_bytes": 11293949952,
+          "resident_global_scale_bytes": 8,
+          "resident_layout": "NHD_page_packed_E2M1_then_E4M3_block16",
+          "v_scale": 1.0,
+          "writer": "flashinfer_native_nvfp4_slot_writer"
+        }
+      ],
+      "source_manifest_sha256": "79ccb9a0617e34a6a0ecf315dfba8cc67ddfe23fc923662094fe04d4bd618891",
+      "actual_server_command_sha256": "3a01e47b18165bbc0f347a8f692938023cd33d7a8ecc1e09f99aa587bec4269d",
+      "actual_server_log_sha256": "3e6d78b0f4405e3bbd983eb04a06e33f8f1ad71c88b4f75eff5b16b43d23fd94"
+    },
+    {
+      "run_id": "upstream-A-tools32-r0-20261102b",
+      "arm": "bf16",
+      "kind": "upstream_AC_real_native_tools32",
+      "source_commit": "721afdabc1de1af8e594b4da3e6fa926def50821",
+      "binary_sha256": "b774ace2fd7341bc70477be0cd7a44d930330a15311a42c1af216287c021721a",
+      "complete_original_SHA_and_lifecycle_verified": true,
+      "actual_command_matches_frozen_request": true,
+      "actual_native_bindings": [],
+      "source_manifest_sha256": "f1c9be28ee616f0a9f4785c6852d966feb6700fc0d88fb3e0757b142869c11f2",
+      "actual_server_command_sha256": "0edfa86d0eba360844302fd537d62bcbf6764e68d365e02d50990cdb2f12cbd5",
+      "actual_server_log_sha256": "c30fd33c84debfa5f7e883dca82815e61674bcdf33513eb33b4b3959716f8d5d"
+    },
+    {
+      "run_id": "upstream-C-fp8-tools32-r0-20261102c",
+      "arm": "fp8_e4m3",
+      "kind": "upstream_AC_real_native_tools32",
+      "source_commit": "da7c6446ff4361c8060633b04d6bfb77e6f737ff",
+      "binary_sha256": "74668d5e5d73a0dc23f70679350851b10c11c99e42c6961f511dee33ab7f60e9",
+      "complete_original_SHA_and_lifecycle_verified": true,
+      "actual_command_matches_frozen_request": true,
+      "actual_native_bindings": [
+        {
+          "KV_tensor_address_bytes": 11295260672,
+          "SM90_FP4_tensor_core_compute": false,
+          "VMM_virtual_address_capacity_not_residency": false,
+          "decode_backend": "xqa",
+          "decode_query_dtype": "torch.bfloat16",
+          "full_BF16_KV_shadow": false,
+          "k_scale": 0.125,
+          "kv_cache_dtype": "fp8_e4m3",
+          "max_context_tokens": 262144,
+          "prefill_backend": "fa3",
+          "prefill_query_dtype": "torch.float8_e4m3fn",
+          "query_dtype": "torch.bfloat16",
+          "resident_KV_bytes": 11295260672,
+          "resident_global_scale_bytes": 0,
+          "resident_layout": "NHD",
+          "v_scale": 0.0625,
+          "writer": "fused_triton_quantize_scatter"
+        }
+      ],
+      "source_manifest_sha256": "f94620cc11fde4618323ec4713d6991f2f19710a2d11f7c4870500a2c816a201",
+      "actual_server_command_sha256": "58f5f5533bec1a4b9dc10c025fc4d682f1109416deebf1c009fec7b148319ebb",
+      "actual_server_log_sha256": "8f55dc52cd55a5580d3d9b7bdfd44db7656d5b2e25c00afcbc2d4174f019efed"
+    },
+    {
+      "run_id": "upstream-C-nvfp4-tools32-r0-20261102b",
+      "arm": "nvfp4",
+      "kind": "upstream_AC_real_native_tools32",
+      "source_commit": "da7c6446ff4361c8060633b04d6bfb77e6f737ff",
+      "binary_sha256": "74668d5e5d73a0dc23f70679350851b10c11c99e42c6961f511dee33ab7f60e9",
+      "complete_original_SHA_and_lifecycle_verified": true,
+      "actual_command_matches_frozen_request": true,
+      "actual_native_bindings": [
+        {
+          "KV_tensor_address_bytes": 11293949952,
+          "SM90_FP4_tensor_core_compute": false,
+          "VMM_virtual_address_capacity_not_residency": false,
+          "decode_backend": "flashinfer",
+          "decode_query_dtype": "torch.bfloat16",
+          "full_BF16_KV_shadow": false,
+          "k_scale": 1.0,
+          "kv_cache_dtype": "nvfp4",
+          "max_context_tokens": 262144,
+          "prefill_backend": "fa2",
+          "prefill_query_dtype": "torch.bfloat16",
+          "query_dtype": "torch.bfloat16",
+          "resident_KV_bytes": 11293949952,
+          "resident_global_scale_bytes": 8,
+          "resident_layout": "NHD_page_packed_E2M1_then_E4M3_block16",
+          "v_scale": 1.0,
+          "writer": "flashinfer_native_nvfp4_slot_writer"
+        }
+      ],
+      "source_manifest_sha256": "dcfbbb46fb8c39e320c66f1cf2b26bd89452f97935f7e4036a41f7342dfca706",
+      "actual_server_command_sha256": "67b023b6059574320d23e3837f102922b2dbd083e582c723ce64c9d085d524be",
+      "actual_server_log_sha256": "e106f36f5533fd6719c4aa027973e854cce9b21aa3b2390760a6c5083c3a289b"
+    }
+  ],
+  "remote_access_or_writes": false,
+  "new_model_requests_or_GPU_work": false,
+  "quality_or_performance_acceptance": false
+}

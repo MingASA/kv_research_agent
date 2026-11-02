@@ -13,7 +13,11 @@ from scripts.controller.transport import PinnedSSH
 
 ALLOWED=('nextgen-bf16-qwen38-native-tools32-r0-20261030r',
          'nextgen-nvfp4-qwen38-native-tools32-r0-20261030m',
-         'nextgen-fp8fa2-qwen38-native-tools32-r0-20261030n')
+         'nextgen-fp8fa2-qwen38-native-tools32-r0-20261030n',
+         'upstream-A-tools32-r0-20261102b',
+         'upstream-C-fp8-tools32-r0-20261102b',
+         'upstream-C-fp8-tools32-r0-20261102c',
+         'upstream-C-nvfp4-tools32-r0-20261102b')
 
 SOURCE=r'''
 import datetime,hashlib,json,sys
@@ -44,6 +48,7 @@ for identifier in ids:
 print(json.dumps({'ok':True,'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
  'run_id':t['request']['run_id'],'request_sha256':t['request_sha256'],'status':s['status'],
  'supervisor_alive':s['supervisor_alive'],'live_owned_containers':s.get('live_owned_containers'),
+ 'terminal_result':s.get('files',{}).get('result.json'),
  'files':files,'generation_results':tasks,'GPU_snapshot':s.get('gpu_snapshot'),
  'model_task_correctness_scored':False,'remote_writes':False}))
 '''
@@ -55,6 +60,9 @@ if __name__=='__main__':
     parser.add_argument('--out',type=Path,required=True)
     args=parser.parse_args()
     if args.out.exists():raise FileExistsError('Preserve the original read-only observation')
+    if args.run_id.startswith('upstream-'):
+        from scripts.observe_nextgen_long_metrics import require_original_ack
+        require_original_ack(args.run_id)
     ticket=_ticket(args.run_id)
     transport=PinnedSSH(ticket['approval'],args.out.parent/'tools-progress-pins'/ticket['reservation_id'])
     result=transport.rpc(SOURCE,{'ticket':ticket,'rpc_source':Path('scripts/controller/remote_rpc.py').read_text(),

@@ -1,0 +1,21 @@
+{
+  "source_sha256": {
+    "A-service-c1.json": "ff61bb7747a7ae4e1fe57bd4ad4b1fc45daf2e0eca4c6102a72f8507f81a128f",
+    "C-fp8-service-a1.json": "339f066369ab99bedfc9e2282c64f8ba47141477c88a8ac4dad0f91318c759ed",
+    "C-nvfp4-service-a1.json": "c5aea2028da225f3ba69caf9ff9886b110b2b23ac622f9463dc28d0365350aff",
+    "service-pair-A-FP8-a1.json": "485c00dd180ff82a49ad03e9dd94cf9dfb90062e990fe8ae5bdff55f2db81583",
+    "service-pair-A-NVFP4-a1.json": "80924eb2c6bcdbb21f2393f0c731bf446db6dadf08804ca33b940b546f029a13"
+  },
+  "all_service_cases": 9,
+  "actual_requests_per_format": 1088,
+  "independent_warmup_per_format": 36,
+  "generator_sha256": "c75e0960c22f116122bc9b607fe876a85d62a40bef8e5901e2d490e601b9bbbd",
+  "no_GPU_or_model_calls": true,
+  "post_render_editorial_changes": {
+    "service_figure_version": "a2",
+    "TTFT_plot_display_unit": "seconds; source numeric ms unchanged",
+    "reason": "avoid overlapping long labels; initial a1 figure retained privately",
+    "NVFP4_some_Goodput_threshold_gains_explicitly_retained": true
+  },
+  "final_report_sha256": "f0897b3d0c51dc81e425cb34283887a09afe93ddc12986a3eb304af11e14b595"
+}

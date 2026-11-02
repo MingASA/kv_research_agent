@@ -1,0 +1,15 @@
+{
+  "classification": "actual_GPU_operator_measurements_not_service_performance",
+  "iterations": 50,
+  "planning_excluded_from_device_timings": true,
+  "same_original_dense_FA3_failure_preserved": true,
+  "source_SHA256": {
+    "results/mirrors/upstream-C-fp8-direct-b1/files/output/fp8_e4m3/diagnosis/diagnosis.json": "4d20ee90d9b80fe1525d0f3eab365c33fd9afbc25b7cdb2bcf75dabefaad5c9f",
+    "results/mirrors/upstream-C-operators-a1/files/output/fp8_e4m3/operators/fp8_e4m3-fa2-flashinfer/prefill_timings.json": "615c70529ca5bc8a2b9de9717c12894942578c22654bf61a52e7482dab796bc6",
+    "results/mirrors/upstream-C-operators-a1/files/output/fp8_e4m3/operators/fp8_e4m3-fa2-flashinfer/timings.json": "39d5a0c9ed793da6290881f873e5d0b29e2df972c596862ec6b1026ee3b281b3",
+    "results/mirrors/upstream-C-operators-a1/files/output/fp8_e4m3/operators/nvfp4-fa2-flashinfer/prefill_timings.json": "75ed8cba395a58e8ff13971ffc6b6f69afca864cabdb8200116183b800af76b9",
+    "results/mirrors/upstream-C-operators-a1/files/output/fp8_e4m3/operators/nvfp4-fa2-flashinfer/timings.json": "eb6607be0af06b3fbd3373571d5a5b9b5f1e9d994fb5f368f7f796670c1ebbe5"
+  },
+  "prefill_production_Graph_coverage_claim": false,
+  "source_commit": "da7c6446ff4361c8060633b04d6bfb77e6f737ff"
+}
