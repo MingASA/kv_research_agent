@@ -1,0 +1,38 @@
+{
+  "schema": "next-stage-resource-block-v1",
+  "updated_utc": "2026-11-06T06:33:18.706479+00:00",
+  "final_monitor_exit_utc": "2026-11-06T06:30:20.877708+00:00",
+  "full_task_complete": false,
+  "block_reason": "All8sharedH800occupied; new C++build actual shared CPU admission refused",
+  "GPU_memory_used_MiB": [
+    49225,
+    48933,
+    49225,
+    48931,
+    47307,
+    49225,
+    48933,
+    47307
+  ],
+  "GPU_final_status_sha256": "0a014df9fe4e7af14889603d752017717542e435f86c82abc9f13142d9bf2352",
+  "monitor_exit_receipt_sha256": "2b90fc5c27e49bbaf6c4250f13723507a3a8c7322337b5785cc8b3ca4ff5d89f",
+  "latest_CPU_idle_fraction": 0.05435745168515914,
+  "latest_CPU_sample_window_UTC": "06:24-06:25",
+  "final_CPU_not_resampled_after_cutoff": true,
+  "CPU_build_admission_idle_fraction": 0.10384896594944641,
+  "CPU_build_required_idle_fraction": 0.25,
+  "new_H800_CPU_build_started": false,
+  "ledger_counts": {
+    "SETTLED": 105
+  },
+  "GPU_hours_charged_including_conservative_conflict": 25.766052161944444,
+  "GPU_hours_reserved": 0,
+  "active_GPU_jobs": 0,
+  "local_UNKNOWN_runs": 0,
+  "remote_MX_r0_original_UNKNOWN_unchanged": true,
+  "background_resource_monitor_running": false,
+  "MXFP4_1720_tools32_service3": "not_executed",
+  "optimized_FP8_quality_service": "not_executed",
+  "new_formats_production_merge_recommendation": "hold_pending_real_GPU_qualification_and_frozen_benchmarks",
+  "no_official_upstream_PR": true
+}

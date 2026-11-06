@@ -1,6 +1,6 @@
 # MXFP4 与 FP8 优化：阶段记录
 
-记录时间：2026-11-06 UTC。**研究尚未完成；下表不能作为生产验收结果。**
+截至：2026-11-06 06:30 UTC。**本阶段受共享资源阻塞，任务尚未完成；下表不能作为生产验收结果。**
 
 沿用官方 `261274e5`、实际 BF16 A `721afdabc` 和历史量化实测 `da7c6446`，未升级运行依赖，未重跑既有 A。完整历史结果见[上一轮报告](../upstream-production-kv-20261102/REPORT.md)。
 
@@ -18,7 +18,7 @@ MXFP4 使用[OCP MX v1.0](https://www.opencompute.org/documents/ocp-microscaling
 
 Attention 适配复用已安装 FlashInfer 的 FA2 Paged 加载器、规划器和 BF16 计算，仅将 block32/E8M0 Scale 在片上展开到加载器需要的位置；不创建全历史 BF16 KV 或全局展开 Scale。目标限定 SM90、BF16 Query、Q24/KV4、D256、page128；Elastic VMM 当前显式拒绝。正常生产默认分配器、Chunked Prefill、Prefix Cache 和 GDN 管理未被关闭；兼容性需要模型资格实测。
 
-私有模块由本地 CUDA 13.2.86 编译，SO 为 7,025,360 字节，SHA256 `9508ae4716801261f3c77352738b33edb683d692a542aa50f7a6bceba80ab6dc`。H800 使用 CUDA 13.0.88；本地编译成功不替代其 ABI、运行及性能检查。实际升级依赖仍为零。
+私有模块由本地 CUDA 13.2.86 编译，SO 为 7,025,360 字节，SHA256 `9508ae4716801261f3c77352738b33edb683d692a542aa50f7a6bceba80ab6dc`。本地 Torch 2.13/cu132 下 CPU 加载并查询到 4 个导出，CUDA 未初始化；H800 仍为 Torch 2.10/cu130、NVCC 13.0.88。本地编译和加载不替代 H800 的 ABI、运行及性能检查，H800 依赖没有升级。
 
 ## 数值风险与冻结判据
 
@@ -47,3 +47,13 @@ Attention 适配复用已安装 FlashInfer 的 FA2 Paged 加载器、规划器�
 本地原始记录位于 `reports/operations/mxfp4-fp8-20261105a/`；CPU 图表及精确 CSV 在 `cpu-figures-b1/`。`MXFP4_CONFLICT_RELEASE-a1.json` 保留首轮冲突释放证明；`MXFP4_OPERATOR_RECONCILE-r1-f1.json` 保留未启动终态；`local-sm90-compile-b1/` 保存原编译源码、日志和产物 SHA；`writer-sm90-compile-b1/` 保存次正规数修复的 PTX/Cubin 与 SHA。私有机器票据和原始服务文本不随此阶段摘要公开。
 
 **当前合入意见：三个新分支均保持研究级，暂不作为生产支持合入。** MXFP4 尚未完成 Attention/模型/完整 Benchmark 验收；FP8 尚无新版本质量和服务收益证据。1720 核心生成、32 项工具及三组服务矩阵仍是未完成交付，原 BF16/FP8/NVFP4 成绩只作冻结对照，不填充新候选成绩。
+
+## 本阶段资源结账
+
+最终只读快照仍显示 8 卡各占用 47,307–49,225 MiB（约 46.2–48.1 GiB），无空闲卡。独立校准的原等待票据在未创建容器、未分配 GPU 时结束；实际资源准入中的 CPU 空闲比例为 10.384896594944641%，低于原 25% 门槛，新 C++ 构建没有启动。一次短暂的 27.091% CPU 观测没有持续到准入，未据此放宽限制。最后 CPU 轮询为 06:24–06:25 UTC、idle=5.436%，最终 GPU 快照没有附加新的 CPU 样本。
+
+105 条账本记录均已 SETTLED，当前预留、活动 GPU 与本地 UNKNOWN 均为零；累计计费 25.766052161944444 GPUh，包含首轮冲突直到释放见证的保守计费。MX r0 远端原始 UNKNOWN 结果 SHA 未改写，由独立释放证书解释；其余两个等待作业均为 NOT_LAUNCHED。两个等待作业已分别镜像 71/78 个文件。只读监控已退出，没有留待无人接管的启动脚本。
+
+最终 GPU 快照 SHA256：`0a014df9fe4e7af14889603d752017717542e435f86c82abc9f13142d9bf2352`；本地监控退出回执 SHA256：`2b90fc5c27e49bbaf6c4250f13723507a3a8c7322337b5785cc8b3ca4ff5d89f`。原始地址在 `reports/operations/mxfp4-fp8-20261105a/FP8-independent-calibration-resource-watch-luna-a1/`，资源结账见同目录上级的 `RESOURCE_WAIT_CHECKPOINT-a1.json`。
+
+因此，MXFP4 的完整 1720/32/三服务及优化后 FP8 的正式质量与服务比较均为**未执行**，不记为零分或负吞吐。原 FP8/NVFP4 只沿用上一轮受限资格及其质量、性能负结果，本轮不提升支持级别。当前明确建议暂缓将 MXFP4 和两项 FP8 性能改动合入生产路径；没有向官方上游提交 PR。
