@@ -6,11 +6,13 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
+import re
 import shutil
 import subprocess
 
 from scripts.controller.cli import validate_frozen_policy
 from scripts.controller.durable import digest
+from scripts.controller.idle_admission import FAST_ADMISSION
 from scripts.controller.native_next_stage import KIND, FP8_KIND, CALIB_KIND, EXTRA_SOURCES
 from scripts.controller.upstream_native import SOURCE_FILES
 from scripts.controller.policy import validate_request
@@ -20,13 +22,15 @@ from scripts.upstream_package_runtime import freeze_runtime, attach_graph_observ
 ROOT=Path(__file__).resolve().parents[1]
 
 
-def prepare(mode: str) -> dict:
+def prepare(mode: str, run_id: str | None = None, fast_idle: bool = False) -> dict:
     mx=mode=='mxfp4'
     operator=mode in ('operator','mxfp4')
     repo=Path('/home/mingasa/projects/xllm-mxfp4-kv-20261105a' if mx else
               '/home/mingasa/projects/xllm-fp8-'+('opt' if operator else 'diagnostics')+'-20261105a')
-    run=('upstream-mxfp4-operator-r2-20261105c' if mx else
+    run=run_id or ('upstream-mxfp4-operator-r2-20261105c' if mx else
          'upstream-fp8-'+('opt-operator' if operator else 'independent-calibration')+'-r0-20261105a')
+    if re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_-]{0,127}',run) is None:
+        raise ValueError('Invalid fresh prerequisite run ID')
     plan=ROOT/'plans/experiments'/run;plan.mkdir();(plan/'input').mkdir()
     previous=json.loads((ROOT/'plans/experiments/upstream-C-operators-qualification-r0-20261102a/package.json').read_bytes())
     request=dict(previous['request'])
@@ -55,6 +59,8 @@ def prepare(mode: str) -> dict:
                   {'bf16':{'planner':'official_auto','decode':'official_auto'}},
         research_reason='Finite same-base FP8 optimization prerequisites: independent calibration and real operator conformance before scored quality or service claims',
         experiment_key=digest({'mode':mode,'source':sha,'frozen_protocol':'20261105-prerequisites-v1'}))
+    if fast_idle:
+        request['resource_admission']=dict(FAST_ADMISSION)
     if mx:
         request['compiled_backend_source_sha256']={name:sha for name,sha in previous['request']['backend_source_sha256'].items() if not name.endswith('.py')}
     elif operator:
@@ -82,4 +88,7 @@ def prepare(mode: str) -> dict:
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--mode',choices=['operator','calibration','mxfp4'],required=True)
-    print(json.dumps(prepare(parser.parse_args().mode)))
+    parser.add_argument('--run-id',help='Fresh run identity; existing plans are preserved')
+    parser.add_argument('--fast-idle',action='store_true',help='Apply the user-authorized 5s idle admission policy')
+    args=parser.parse_args()
+    print(json.dumps(prepare(args.mode,args.run_id,args.fast_idle)))

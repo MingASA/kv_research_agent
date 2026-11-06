@@ -66,6 +66,8 @@ def validate_request(request: dict, approval: dict) -> None:
     from .policy import _path
 
     _require(request.get("schema") == SCHEMA, "Unknown next-generation contract")
+    from .idle_admission import idle_parameters
+    idle_parameters(request)
     if request.get('workload') == {'kind':'upstream_next_stage_model_qualification',
                                   'scope':'source_matched_native_model_prefix_Graph_qualification'}:
         from .next_stage_deployment import validate_deployment

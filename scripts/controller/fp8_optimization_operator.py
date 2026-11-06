@@ -77,12 +77,22 @@ def run(output: Path, baseline_query: Path):
     v=torch.cat([value[0,-1:],value[1,-33:],value[2,-1:]])
     layer=SimpleNamespace(layer_id=1)
     state_before=state.conv.clone(),state.ssm.clone()
+    semaphore_nonzero=torch.count_nonzero(backend._decode_workspace[:8*1024*1024]).item()
+    if semaphore_nonzero:
+        raise ValueError('XQA completion counters must be zero before first use')
+    mixed_plan=backend._mixed_attention[2] if backend._mixed_attention is not None else None
+    write_new_json(output/'mixed_before.json',{'mixed_split_selected':mixed_plan is not None,
+        'initial_XQA_semaphore_nonzero_bytes':semaphore_nonzero,
+        'decode_page_table_first2':mixed_plan._table[:,:2].cpu().tolist() if mixed_plan else None,
+        'decode_context_lengths':mixed_plan._lengths.cpu().tolist() if mixed_plan else None,
+        'runtime_info':backend.native_kv_runtime_info(),'timing_measurement':False})
     actual=backend.execute(q,k,v,layer)
     pages=backend._pages[1]
     direct_table=torch.zeros((2,2048),dtype=torch.int32,device='cuda')
     direct_table[:,:2].copy_(table[[0,2]])
     direct_lengths=torch.full((2,),129,dtype=torch.uint32,device='cuda')
-    workspace=torch.empty(128*2**20,dtype=torch.uint8,device='cuda')
+    # The direct FlashInfer oracle has the same documented first-use contract.
+    workspace=torch.zeros(128*2**20,dtype=torch.uint8,device='cuda')
     direct_decode=xqa_batch_decode_with_kv_cache(q[[0,34]].contiguous(),pages,workspace,
         direct_table,direct_lengths,262144,bmm1_scale=256**-.5*.125,bmm2_scale=.0625,
         kv_layout='NHD',enable_pdl=True)
@@ -93,6 +103,13 @@ def run(output: Path, baseline_query: Path):
     independent_query=q[1:34].contiguous().float().clamp(-448,448).to(torch.float8_e4m3fn)
     expected_prefill=direct_prefill.run(independent_query,pages,q_scale=1.,k_scale=.125,v_scale=.0625)
     expected=torch.cat((direct_decode[:1],expected_prefill,direct_decode[1:])).reshape_as(actual)
+    mismatch=~torch.isclose(actual,expected,atol=.001,rtol=.001)
+    error=(actual.float()-expected.float()).abs()
+    write_new_json(output/'mixed_conformance_attempt.json',{
+        'atol':.001,'rtol':.001,'max_abs_error':error.max().item(),
+        'per_query_max_abs_error':error.reshape(35,-1).amax(1).cpu().tolist(),
+        'per_query_mismatch_elements':mismatch.reshape(35,-1).sum(1).cpu().tolist(),
+        'decode_query_rows':[0,34],'initial_XQA_semaphore_nonzero_bytes':semaphore_nonzero})
     torch.testing.assert_close(actual,expected,atol=.001,rtol=.001)
     if not torch.equal(state.conv,state_before[0]) or not torch.equal(state.ssm,state_before[1]):
         raise ValueError('Quantized attention modified GDN state')

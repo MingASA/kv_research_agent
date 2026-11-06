@@ -56,12 +56,18 @@ def audit(manifest_path: Path):
         relative = 'output/'+arm+'/'+name
         if relative not in covered or hashlib.sha256((root/relative).read_bytes()).hexdigest() != expected:
             raise ValueError('Measured raw evidence missing or changed: '+relative)
+    classification=measurement.get('classification')
+    if classification is None:
+        if (request['workload']['kind']!='upstream_FP8_independent_numeric_calibration'
+                or measurement.get('schema')!='FP8_independent_same_base_BF16_calibration_v1'):
+            raise ValueError('Unrecognized measurement classification')
+        classification='independent_BF16_numeric_observer_untimed_no_quality_acceptance'
     return {'schema':'upstream-complete-raw-lifecycle-audit-v1','run_id':request['run_id'],
             'kind':request['workload']['kind'],'arm':arm,'source_commit':request['server_source_commit'],
             'binary_sha256':request['binary_sha256'],'all_mirror_SHA_verified':True,
             'all_frozen_assets_and_worker_evidence_verified':True,'files':len(covered),
             'GPU_release_verified':True,'original_status':'COMPLETE',
-            'classification':measurement['classification'],
+            'classification':classification,
             'all_operator_candidates_pass':measurement.get('all_candidates_pass'),
             'quality_or_performance_acceptance_inferred':False}
 

@@ -1,0 +1,41 @@
+{
+  "schema": "FP8_independent_calibration_plot_data_v1",
+  "requests": 136,
+  "run_id": "upstream-fast-20261106a-fp8-numeric-0003",
+  "model": "Qwen3.8-27B",
+  "python_source_commit": "260b5fab204436af5a6f5f6a4897f3076c72df19",
+  "compiled_source_commit": "da7c6446ff4361c8060633b04d6bfb77e6f737ff",
+  "source_acceptance_sha256": "03918e14de502f91a80a94e6a2658d525d1a422e7257240f3de43a89ba2063b8",
+  "rows": [
+    {
+      "absmax": 149.0,
+      "clipped": 749348,
+      "finite": 8681488384,
+      "nonfinite": 0,
+      "rounded_to_zero": 581418,
+      "squared_error": 189913166.93309316,
+      "squared_signal": 29901620402.862915,
+      "recipe": "value_current",
+      "MSE": 0.021875646033588377,
+      "clipped_percent": 0.008631561396557874,
+      "normalized_MSE": 0.0063512667331871425
+    },
+    {
+      "absmax": 149.0,
+      "clipped": 0,
+      "finite": 8681488384,
+      "nonfinite": 0,
+      "rounded_to_zero": 4657459,
+      "squared_error": 21040160.484847777,
+      "squared_signal": 29901620402.862915,
+      "recipe": "value_candidate",
+      "MSE": 0.0024235660469954477,
+      "clipped_percent": 0.0,
+      "normalized_MSE": 0.0007036461636986502
+    }
+  ],
+  "MSE_reduction_percent": 88.92116811876436,
+  "source_lifecycle_audit": "104 files SHA verified; original COMPLETE/released",
+  "quality_acceptance": false,
+  "performance_acceptance": false
+}

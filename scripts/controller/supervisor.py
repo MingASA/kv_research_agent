@@ -498,7 +498,11 @@ class Supervisor:
             os.fsync(stream.fileno())
 
     def _idle(self, stop_at: int) -> dict:
+        from .idle_admission import idle_parameters
+        stable_seconds,poll_seconds=idle_parameters(self.ticket['request'])
         since = None
+        previous=None
+        last_event=None
         selected = self.ticket["request"]["gpu_uuids"]
         while self.clock_ns() < stop_at:
             if self.stop_requested or (self.root / "STOP_REQUESTED.json").exists():
@@ -511,12 +515,18 @@ class Supervisor:
                                  and snapshot[uuid]["util_pct"] <= 5 and not snapshot[uuid]["pids"] for uuid in selected)
             now = self.clock_ns()
             since = (now if since is None else since) if idle else None
-            self._event("WAIT_GPU", {"selected": {uuid: snapshot.get(uuid) for uuid in selected},
-                                      "reservation_policy_clear": clear, "stable_since_ns": since})
-            if since is not None and now - since >= 120 * 1000000000:
+            signature=(clear,tuple((uuid,snapshot.get(uuid,{}).get('memory_mib',-1)==0,
+                                    tuple(snapshot.get(uuid,{}).get('pids',[])),
+                                    snapshot.get(uuid,{}).get('util_pct',100)<=5) for uuid in selected))
+            if stable_seconds or signature!=previous or last_event is None or now-last_event>=1200*1000000000:
+                self._event("WAIT_GPU", {"selected": {uuid: snapshot.get(uuid) for uuid in selected},
+                                          "reservation_policy_clear": clear, "stable_since_ns": since,
+                                          "stable_idle_seconds":stable_seconds,"poll_seconds":poll_seconds})
+                previous,last_event=signature,now
+            if since is not None and now - since >= stable_seconds * 1000000000:
                 return snapshot
-            self.sleep(30)
-        raise TimeoutError("Budget expired while waiting for 120s genuinely idle GPUs")
+            self.sleep(poll_seconds)
+        raise TimeoutError("Budget expired while waiting for "+str(stable_seconds)+"s genuinely idle GPUs")
 
     def run(self) -> dict:
         request = self.ticket["request"]

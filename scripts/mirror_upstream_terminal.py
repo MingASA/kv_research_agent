@@ -128,8 +128,13 @@ def mirror(run: str, destination: Path, *, omit_large_core_dumps: bool = False,
             if target.exists():
                 continue
             source = Path(asset['local_path'])
-            if source.is_symlink() or not source.resolve().is_relative_to(plan.resolve()):
-                raise ValueError('Local reuse must stay inside the original frozen proposal')
+            # Fast idle attempts intentionally reference immutable assets from
+            # an earlier template. The exact request, ticket and fresh remote
+            # inventory already bind their SHA; keep reuse inside owned plans.
+            plans_root=Path('plans').resolve(strict=True)
+            if (source.is_symlink() or source.resolve(strict=True)!=source
+                    or not source.is_relative_to(plans_root) or source.stat().st_uid!=os.getuid()):
+                raise ValueError('Local reuse must stay inside owned canonical frozen plans')
             raw = source.read_bytes()
             if len(raw) != item['size'] or hashlib.sha256(raw).hexdigest() != item['sha256']:
                 raise ValueError('Original local frozen input changed')
