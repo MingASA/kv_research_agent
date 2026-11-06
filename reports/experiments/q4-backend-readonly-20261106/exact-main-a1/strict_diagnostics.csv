@@ -1,0 +1,8 @@
+case,comparison,atol,interpretation,max_abs,pass,relative_l2,required_for_component_admission,rmse,rtol
+prefill_b1_s8192,mx_prefill_wrapper__vs__matched_nv_prefill_wrapper,0.001,same fused implementation and same decoded KV,0.0,True,0.0,True,0.0,0.001
+decode_b32_s2048,matched_nv_prefill_wrapper__vs__matched_nv_native_decode,0.001,distinct prefill/native-decode routes; strict equivalence diagnostic,0.0009765625,True,0.0029700614977627993,False,0.00010500752250663936,0.001
+decode_b32_s2048,mx_prefill_wrapper__vs__matched_nv_prefill_wrapper,0.001,same fused implementation and same decoded KV,0.0,True,0.0,True,0.0,0.001
+decode_b32_s2048,nv_prefill_wrapper__vs__nv_native_decode,0.001,distinct prefill/native-decode routes; strict equivalence diagnostic,0.0009765625,True,0.0029680319130420685,False,0.00010781198216136545,0.001
+decode_b32_s16384,matched_nv_prefill_wrapper__vs__matched_nv_native_decode,0.001,distinct prefill/native-decode routes; strict equivalence diagnostic,0.000244140625,True,0.0030255266465246677,False,3.804746665991843e-05,0.001
+decode_b32_s16384,mx_prefill_wrapper__vs__matched_nv_prefill_wrapper,0.001,same fused implementation and same decoded KV,0.0,True,0.0,True,0.0,0.001
+decode_b32_s16384,nv_prefill_wrapper__vs__nv_native_decode,0.001,distinct prefill/native-decode routes; strict equivalence diagnostic,0.000244140625,True,0.0030423959251493216,False,3.926061253878288e-05,0.001

@@ -1,0 +1,128 @@
+{
+  "schema": "q4_backend_source_provenance_v1",
+  "as_of_UTC": "2026-11-06",
+  "measured_pinned_implementation": {
+    "custom_MX_source_commit": "ba5eaec0a1b5b941da4b8ded0343d43f2c2b4158",
+    "driver_sha256": "71bf6439d29f0558c0a261d514019e65116a8af876afc2c0a5fd384c4ef38965",
+    "FlashInfer_version": "0.6.18.post1",
+    "FlashInfer_commit": "8bc3b578027791336c6ae87db5c9d76f82cef8bc",
+    "pinned_upstream_prefill_header_sha256": "f93cbea96e3a723254c15f5a52d6dd4c13e3892e88eb9b9fed1c0c0048c7d710",
+    "custom_adapted_header_sha256": "b06c014c4f9393935ba1eaad0734d7f7402eaad1c198fc03cb6382f7467f489f",
+    "Torch": "2.10.0+cu130",
+    "CUDA": "13.0",
+    "hardware": "NVIDIA H800 SM90, 132 SM, admitted physical GPU7",
+    "model_loaded": false,
+    "Cplusplus_model_server_executed": false,
+    "scope": "bounded library components; not latest FlashInfer or complete vLLM",
+    "custom_adapter_url": "https://github.com/MingASA/xllm_quant_kvcache/blob/ba5eaec0a1b5b941da4b8ded0343d43f2c2b4158/xllm/python/attention/mxfp4_flashinfer.py"
+  },
+  "current_upstream_source_only": {
+    "vllm_commit": "b2094acc88a7f76b49332ebc91a34887272e36c8",
+    "vllm_backend_url": "https://github.com/vllm-project/vllm/blob/b2094acc88a7f76b49332ebc91a34887272e36c8/vllm/v1/attention/backends/flashinfer.py",
+    "FlashInfer_commit": "4c2b8a7ed4af902df94e83260c8c12e8d3f71872",
+    "current_prefill_header_sha256": "30b27d0b237ee155e25990b11893d5a5b026c86e7f02cf476d6ab5c621d22f72",
+    "header_url": "https://github.com/flashinfer-ai/flashinfer/blob/4c2b8a7ed4af902df94e83260c8c12e8d3f71872/include/flashinfer/attention/prefill.cuh",
+    "Graph_mask_fix_sources": [
+      {
+        "path": "include/flashinfer/attention/scheduler.cuh",
+        "git_blob_sha1": "4c46f9a78e0d7b5caa9e9ea26e32d196a1a6a2cc",
+        "lines": "909-924",
+        "url": "https://github.com/flashinfer-ai/flashinfer/blob/4c2b8a7ed4af902df94e83260c8c12e8d3f71872/include/flashinfer/attention/scheduler.cuh#L909-L924"
+      },
+      {
+        "path": "csrc/batch_prefill_paged.cuh",
+        "git_blob_sha1": "b2bf86658e2f0ac38376b6b92dee4f9b90cf4b26",
+        "lines": "131-143",
+        "url": "https://github.com/flashinfer-ai/flashinfer/blob/4c2b8a7ed4af902df94e83260c8c12e8d3f71872/csrc/batch_prefill_paged.cuh#L131-L143"
+      }
+    ],
+    "fix": "mask initialization and pointer binding guarded by Graph enable independently of split",
+    "FP4_repack_SM90_eligible": "conditional on launcher capability; byte KV, D_QK<=256, D_V<=256 and !=64, CTA_Q>16",
+    "short_CTA_Q16_repack": false,
+    "SM90_software_FP8_fallback_benefit_claim": false,
+    "BF16_D256_shared_buffer_term_bytes": "512 * CTA_TILE_KV, K/V time-shared; complete resource/occupancy/speed unmeasured",
+    "upgraded_ported_or_GPU_measured": false
+  },
+  "SGLang_archived_source_audit": {
+    "state_scope": "recorded 2026-11-06 owner audit; not a fresh publication-time query",
+    "PRs": [
+      {
+        "number": 32741,
+        "url": "https://github.com/sgl-project/sglang/pull/32741",
+        "state": "closed",
+        "merged": false,
+        "merged_at": null,
+        "head_sha": "bee207a0fcbd3b1797c16bdf15da3ad1e6b8e7e8",
+        "base_sha": "63d783bbe0955237ec41f9ddabf7235ddf04673c",
+        "merge_commit_sha": null
+      },
+      {
+        "number": 37136,
+        "url": "https://github.com/sgl-project/sglang/pull/37136",
+        "state": "closed",
+        "merged": false,
+        "merged_at": null,
+        "head_sha": "0ffcabd0073f6deea35d530da9083cd238e9a84f",
+        "base_sha": "fe694986a296787cb0ada3b8cd7b6dccd21de72a",
+        "merge_commit_sha": "9bfcbb1cd4d8364ad229e2e97351f61a9435523e"
+      },
+      {
+        "number": 37137,
+        "url": "https://github.com/sgl-project/sglang/pull/37137",
+        "state": "closed",
+        "merged": false,
+        "merged_at": null,
+        "head_sha": "d08d0c95c86928c372bfd7e19c4f53f30d177ab8",
+        "base_sha": "6a9366f036df9a5275b21a95cb994f3b1cd174c0",
+        "merge_commit_sha": "34effbd88c186fa2a4c905ed9c7096e893502aa4"
+      }
+    ],
+    "SM90_WGMMA": true,
+    "target_Q24_KV4_D256_unchanged_supported": false,
+    "layout": "shared D512 latent, Q64/128, KVlatent1; 448 block32/E8M0 MX +64 BF16 RoPE",
+    "whole_row_bytes": 368,
+    "whole_row_bits_per_value": 5.75,
+    "special_code": "Triton E8M0=255 -> Inf; CUDA -> NaN; ordinary finite writer scale codes0..254",
+    "prefill": "active-history gather/dequant BF16 workspace then sparse FlashMLA",
+    "decode": "fused scaled BF16 LUT/PRMT and producer overlap; no measured target performance",
+    "target_timing": "N/A",
+    "GPU_run": false
+  },
+  "previous_immutable_research_commit": "3ef170357e84d48bdc424406ec7a7300d2cad3ce",
+  "production_graph_qualification": false,
+  "all_requested_graph_paths_supported": false,
+  "isolated_main_JIT_presence_inventory": {
+    "catalog_sha256": "62af8164b0155be10f78456c298b040d614a52fd449aaf585d2ec8a840c590e8",
+    "records": 37,
+    "presence_inventory_only": true,
+    "every_listed_artifact_loaded_proven": false,
+    "binary_payload_copied_or_published": false,
+    "artifacts": [
+      {
+        "kind": "MX attention SO",
+        "sha256": "38f2608976830075d64de1819d4966009f2087718c20e429970013bcafa06580"
+      },
+      {
+        "kind": "NV attention SO from actual main",
+        "sha256": "b56ac6d6fe385c895030ede76f0e1de7e3ad98e83668f1c9da32731759912dd9"
+      },
+      {
+        "kind": "native writer page.so",
+        "sha256": "cc2de46baa1b3f87f7cf3324ef68e7cec5a19d93beb47996dbe4b947c8d3c379"
+      },
+      {
+        "kind": "Writer cubin presence 1",
+        "sha256": "cfadc930a5ddd0d383b3c2e49da94a9dd0687ba5fdc5aea085090c17c5ff08eb"
+      },
+      {
+        "kind": "Writer cubin presence 2",
+        "sha256": "9e45e3612c2d911d2de572ec8bdd62f46924e7cb585975488893aa130a8a2960"
+      },
+      {
+        "kind": "Writer cubin presence 3",
+        "sha256": "972c59f32c38e07c34e6098f5668ca3c401edbbd576caebedc4ece640701d2e1"
+      }
+    ],
+    "native_NV_SO_is_this_main_not_earlier_failed_Pilot": true
+  }
+}

@@ -1,0 +1,13 @@
+# 审计更正：生产Graph仍为BLOCKED
+
+本说明补充已发布的[2026-11-05研究报告](https://github.com/MingASA/kv_research_agent/blob/3ef170357e84d48bdc424406ec7a7300d2cad3ce/reports/experiments/mxfp4-fp8-20261105/REPORT.md)。该immutable快照、原raw、1720核心质量、32工具及服务分数保持历史观测原貌；原工程门槛未通过的结果继续保留。
+
+后续固定输入Pilot暴露pinned FlashInfer8bc的持久Graph-ready non-split pagedPrefill planner/run缺陷：padding work索引超出真实工作条目，scheduler未初始化validmask，run也未传mask。实际66个work entries中只有2个真实条目；按4个KV heads展开为264个CTA、8个有效CTA。旧217成员中的算子capture使用普通wrapper，模型的新鲜窗口仅观察到6次Graph launch；这些有效历史观测不能证明持久planner对所有batch、workspace内容或请求都安全。
+
+因此当前MX生产Graph资格为**BLOCKED**。旧正式质量/服务测量存在执行安全混杂，不能仅据这些分数把退化独立归因于OCP MX格式数值；每个旧正式请求是否触发该缺陷覆盖未知，也不能断言全部旧请求均受影响。codec与有限Eager独立数值参考通过、生产Graph安全资格，是分别记录的证据层。
+
+current FI4c2已有mask allocation/init和paged-run指针传递的对应源码修复。本轮不升级、移植或执行该新版runtime，也不修改原shape、容差或uint8 split-KV guard。其SM90长Prefill FP4 tile-repack改进同样只具源码证据，旧8bc参考不能代表latest FI最优性能或完整vLLM。
+
+两次原资格Pilot分别因严格跨route比较和CUDA illegal address失败，原状态及raw均保留。后续v3a仅审查合法Eager组件、独立Writer Graph和另行资格的nativeDecode split Graph；三个unsafe pagedPrefill Graph路线明确BLOCKED/N/A。即使受限组件测量完成，`production_graph_qualification`与`all_requested_graph_paths_supported`仍为false。
+
+受限组件使用真实CUPTI kernel活动与明确的Eager/Graph事件span分别报告。它不重判旧生产资格，不测新模型质量，也不将融合Scale/Unpack分解成虚构独立百分比。

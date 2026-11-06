@@ -1,0 +1,212 @@
+{
+  "schema": "q4_backend_public_scientific_evidence_catalog_v1",
+  "classification": "restricted_component_only_production_Graph_BLOCKED",
+  "production_graph_qualification": false,
+  "all_requested_graph_paths_supported": false,
+  "files": [
+    {
+      "path": "REPORT.md",
+      "bytes": 10329,
+      "sha256": "1e58f04956de973e33a8d6aeffedbe787a245c712eb0cf4563c6fe461b968d69"
+    },
+    {
+      "path": "MEASUREMENT_METHODS.md",
+      "bytes": 3218,
+      "sha256": "0765e846300a7f1fc90ed5ed590a7e95e7a0fedce95335c963cccf5b7390ccb5"
+    },
+    {
+      "path": "GRAPH_AUDIT_FOLLOWUP.md",
+      "bytes": 2202,
+      "sha256": "13fc605cb14a6b024457d5eae5e179b1cdea1357953ed5cb01f613731870e560"
+    },
+    {
+      "path": "SOURCE_PROVENANCE.json",
+      "bytes": 6058,
+      "sha256": "3d2e9bd81c1fc1c9116b669a1ec9947636be357928dfa7e68d759c9bddbeb01d"
+    },
+    {
+      "path": "SUPPORT_EVIDENCE.json",
+      "bytes": 5177,
+      "sha256": "42034144cdff75a873cf609e8977039acd494750712780c84455c047ad30f821"
+    },
+    {
+      "path": "plot_components.py",
+      "bytes": 8793,
+      "sha256": "ad264b11071cbb0bd99af2a0caa433bc7140865f452ea398510f74c45b4b158d"
+    },
+    {
+      "path": "exact-main-a1/component_proxy.csv",
+      "bytes": 1835,
+      "sha256": "18aeabd792b80acaf163c07e378bd3384a805a6c5edae0f133d41cd8a6167f62"
+    },
+    {
+      "path": "exact-main-a1/copies.csv",
+      "bytes": 1922,
+      "sha256": "bfad551dafeac947216ea879319375ce691c76c882e6f2f200d072875daa99bb"
+    },
+    {
+      "path": "exact-main-a1/event_samples.csv",
+      "bytes": 82499,
+      "sha256": "3ba6d690ec669e4008da0d5db34d97957cd1d4dcf84de7bdf2c167bf5a9d9ead"
+    },
+    {
+      "path": "exact-main-a1/event_spans.csv",
+      "bytes": 6807,
+      "sha256": "8cfbc0ee9abd6c373c0980a20c0118eed10b2684b62ad9eb956bd2b3e3fed39f"
+    },
+    {
+      "path": "exact-main-a1/gpu_active.csv",
+      "bytes": 3829,
+      "sha256": "7a8c9391aa171c3616c14e1181ea2806ccf4a2311fde34cca388b08bd78d245a"
+    },
+    {
+      "path": "exact-main-a1/host.csv",
+      "bytes": 7190,
+      "sha256": "fb2cee8ddad192525c4286bbbe079e9597f8a6de7ba200f487ba91c85bc43370"
+    },
+    {
+      "path": "exact-main-a1/host_samples.csv",
+      "bytes": 93226,
+      "sha256": "57c663ddb517ab54081b470bc7962957b125c7e00eebabdef9aebac93ad75482"
+    },
+    {
+      "path": "exact-main-a1/kernels.csv",
+      "bytes": 39384,
+      "sha256": "7305e69f0408a013d961de968f01bb1c4ed91ab9a16e6b1a4fccd6251061140d"
+    },
+    {
+      "path": "exact-main-a1/strict_diagnostics.csv",
+      "bytes": 1417,
+      "sha256": "13c9c703928c9c251750edfc0ec2bf2cbd11f2028696a1faf2272eda0f1e7301"
+    },
+    {
+      "path": "exact-main-a1/writer_nv_breakdown.csv",
+      "bytes": 880,
+      "sha256": "d2b55d52e958a5ab1574f0205f4909b4e7204219f7b3db17552ed46978a9c88e"
+    },
+    {
+      "path": "exact-main-a1/READOUT_PROVENANCE.json",
+      "bytes": 27213,
+      "sha256": "ff8136b1c5ec9c8a230738071609ff4678b1598f042a0f55983cf0599f7bb6f5"
+    },
+    {
+      "path": "figures-a1/FIGURE_PROVENANCE.json",
+      "bytes": 865,
+      "sha256": "3a49f0824be5f7d46d08eb2cfad4ef5106a7584aada21cb5b31131b95fa2adca"
+    },
+    {
+      "path": "figures-a1/component_gpu_active.png",
+      "bytes": 332854,
+      "sha256": "24b932032bceca7d4890a843a3e0ea4b8ec6bfe85bb7f36c522bc349621520db"
+    },
+    {
+      "path": "figures-a1/component_gpu_active.svg",
+      "bytes": 44026,
+      "sha256": "c7d300581d7289faedde418101bbff3fe7102a5e44e30e1c930322268da98374"
+    },
+    {
+      "path": "figures-a1/timing_boundaries.png",
+      "bytes": 256689,
+      "sha256": "1702efcd8dbb2ff6476b42a16367c94ea7082e8cfe48625fde2a9c7f8c85895e"
+    },
+    {
+      "path": "figures-a1/timing_boundaries.svg",
+      "bytes": 59799,
+      "sha256": "94a9c6f4ad1db4b89b5bb1a9bf246209d825426cafb185d7e7490b848b630681"
+    }
+  ],
+  "original_private_evidence_identity": {
+    "main_mirror_files": 376,
+    "main_mirror_bytes": 15460172,
+    "main_manifest_sha256": "c2843db4225f01fe1d5036a1cfee523c2bddd378d142a5c2e5496e13cf824020",
+    "measurement_sha256": "307d1dff46c16b7ca1b652b29d827f42d65296e3a7830dee55d63900cf3e0293",
+    "profile_result_sha256": "737da7278407b6d0db3407fd0614b64bbf077cab496939bf570c0d86cf0c4ff2",
+    "profile_acceptance_sha256": "8268468b415ed08936175a22f68d62ab22ef64fe0264fe06f8f3a2f9c171666e",
+    "independent_main_audit_sha256": "bb88de45a40687bffc16275593983533c69c370a7bb721f1c654e777fde5f24f",
+    "root_lifecycle_audit_sha256": "6fa1193aec8eab75c1ea590f9098eeaf2cdb84017769019e58c5c6acad208008",
+    "frozen_assets_bound": 63,
+    "measurement_evidence_SHA_bound": 294,
+    "saved_sample_tensor_archives_CPU_decoded": 45,
+    "main_tensor_scope": "fixed lossless samples and full producer SHA; not a CPU rerun of every large tensor",
+    "independent_core_attribution_audit_sha256": "6615b73e31c3dc721c9001a8ec9d05d0662385e7f24e19fcc6459f38bb28850f",
+    "core_audit_DATA_sha256": "9bc230e5c71feb7c09f4c80fae9552a8192886ad1a6c47ab62fb3edb10ca20a8",
+    "core_audit_DETAILS_sha256": "7b35863fb6ed1bea40b1da5423ad3e3d553b450476c4f4783c5c4f1814e79462",
+    "core_audit_retained_bodies_or_samples": 63,
+    "complete_value_sets_full_SHA_recomputed": 26,
+    "independent_report_and_core_all_19_means_equal": true
+  },
+  "preserved_attempts": [
+    {
+      "scope": "original full-Graph qualification v1",
+      "status": "FAILED",
+      "result_sha256": "ff7cb56b5df3f08f68a71eb8299712244dc4055e0fe289b7db5b39f8199fdeca",
+      "reason": "strict cross-native-route .001/.001 rejection"
+    },
+    {
+      "scope": "original full-Graph qualification v2",
+      "status": "FAILED",
+      "result_sha256": "0f19e9e2bc0991b8e13585558b97a9c25386a66f3a638ed6774b1f8872b613f0",
+      "reason": "CUDA illegal address; pinned non-split Graph padding-mask contract defect"
+    },
+    {
+      "scope": "first supported-component Pilot",
+      "original_status": "UNKNOWN",
+      "result_sha256": "6ea4f815e384e35a023afa6581c32114a7626284fcc778d9de0730f3c3862db2",
+      "resolution": "independent resource CONFLICT release; not algorithm failure or accepted measurement",
+      "release_audit_sha256": "b3238578a2bbf937b27ec5a9b957141a83355562e3c8c29777bbd45822880952"
+    },
+    {
+      "scope": "fresh-ID supported-component Pilot",
+      "status": "COMPLETE_instrument_scope_only",
+      "audit_sha256": "de092572079f84ae407a7cb4e6db6cdf90b2c3b5a3019b31c5dc559873947292",
+      "latencies_in_main_figures": false
+    },
+    {
+      "scope": "three-case supported-component main",
+      "status": "COMPLETE_released",
+      "production_graph_qualification": false
+    }
+  ],
+  "writer_NV_breakdown": {
+    "path": "exact-main-a1/writer_nv_breakdown.csv",
+    "source_kernel_csv_sha256": "7305e69f0408a013d961de968f01bb1c4ed91ab9a16e6b1a4fccd6251061140d",
+    "method": "exact slot-mapping kernel name / Torch CatArray stack kernel name / all other work retained, per raw invocation"
+  },
+  "not_exported": [
+    "raw traces/tensors",
+    "model weights",
+    "tickets or requests",
+    "approvals or credentials",
+    "runtime bundles",
+    "private operational receipts",
+    "private archives",
+    "private Git history"
+  ],
+  "previous_immutable_snapshot": "3ef170357e84d48bdc424406ec7a7300d2cad3ce",
+  "previous_report_or_scores_modified": false,
+  "private_raw_archive_identity": {
+    "sha256": "f93e3e7dde01aa8f32cc26695b79f7819067614a20b86cbdb7f0a4e93f935e35",
+    "compressed_bytes": 44915819,
+    "payload_bytes": 63787129,
+    "raw_archive_exported": false,
+    "catalog_sha256": "a9d0ed615029176f02586f0f07844abaeb5ad34ebbd90d821f24bcf3f222d824",
+    "independent_audit_sha256": "61b54875cf2ad5c7bb52b45f3ed72494d88a823be394581436661dc1a3e5b36c",
+    "independent_audit_status": "PASS_PRIVATE_RAW_ARCHIVE_FULL_MEMBER_AND_PROVENANCE_AUDIT",
+    "regular_members": 1344,
+    "full_tar_stream_with_headers_padding_bytes": 65597440,
+    "gzip_full_CRC_EOF_and_member_SHA_verified": true,
+    "compiled_JIT_binary_payload_member_count": 0,
+    "JIT_catalogs_are_presence_metadata_only": true,
+    "complete_binary_archive_claim": false
+  },
+  "campaign_resource_closeout": {
+    "own_runs": 5,
+    "all_effectively_SETTLED": true,
+    "active_or_UNKNOWN_reservations": 0,
+    "owned_live_containers": 0,
+    "GPU_seconds": 1045.721904,
+    "GPU_hours": 0.2904783066666667,
+    "scope": "this bounded campaign only; not cumulative global ledger usage",
+    "final_remote_readonly_UTC": "2026-11-06T16:05:54Z"
+  }
+}

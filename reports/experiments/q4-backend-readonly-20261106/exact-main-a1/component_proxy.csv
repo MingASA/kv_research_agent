@@ -1,0 +1,9 @@
+case,route,Writer_API_GPU_active_us,Attention_API_GPU_active_us,component_API_GPU_active_proxy_us,Writer_API_active_fraction,Attention_API_active_fraction,Writer_new_tokens,denominator,independent_scale_unpack_percent
+prefill_b1_s8192,mx_prefill_wrapper,59.1195,39886.9985,39946.118,0.0014799811085522752,0.9985200188914477,8192,sum of two-call means of actual eager API kernel durations; not interval union or elapsed,
+prefill_b1_s8192,nv_prefill_wrapper,54.08,36048.602,36102.682,0.0014979496537127074,0.9985020503462873,8192,sum of two-call means of actual eager API kernel durations; not interval union or elapsed,
+decode_b32_s2048,mx_prefill_wrapper,3.2485,238.14249999999998,241.391,0.013457419704960004,0.9865425802950399,32,sum of two-call means of actual eager API kernel durations; not interval union or elapsed,
+decode_b32_s2048,nv_native_decode,6.4315,237.359,243.7905,0.026381257678211412,0.9736187423217886,32,sum of two-call means of actual eager API kernel durations; not interval union or elapsed,
+decode_b32_s2048,nv_prefill_wrapper,6.4315,250.091,256.52250000000004,0.025071874786812068,0.9749281252131878,32,sum of two-call means of actual eager API kernel durations; not interval union or elapsed,
+decode_b32_s16384,mx_prefill_wrapper,3.312,1702.8654999999999,1706.1774999999998,0.001941181383531315,0.9980588186164687,32,sum of two-call means of actual eager API kernel durations; not interval union or elapsed,
+decode_b32_s16384,nv_native_decode,6.464,1719.911,1726.375,0.0037442618202881764,0.9962557381797118,32,sum of two-call means of actual eager API kernel durations; not interval union or elapsed,
+decode_b32_s16384,nv_prefill_wrapper,6.464,1908.3935,1914.8574999999998,0.0033757081140502626,0.9966242918859498,32,sum of two-call means of actual eager API kernel durations; not interval union or elapsed,

@@ -1,0 +1,26 @@
+{
+  "schema": "q4_component_figures_v1",
+  "production_graph_qualification": false,
+  "all_requested_graph_paths_supported": false,
+  "proxy_rows": 8,
+  "component_rows": 19,
+  "source_readout": "ff8136b1c5ec9c8a230738071609ff4678b1598f042a0f55983cf0599f7bb6f5",
+  "artifacts": {
+    "component_gpu_active.png": {
+      "bytes": 332854,
+      "sha256": "24b932032bceca7d4890a843a3e0ea4b8ec6bfe85bb7f36c522bc349621520db"
+    },
+    "component_gpu_active.svg": {
+      "bytes": 44026,
+      "sha256": "c7d300581d7289faedde418101bbff3fe7102a5e44e30e1c930322268da98374"
+    },
+    "timing_boundaries.png": {
+      "bytes": 256689,
+      "sha256": "1702efcd8dbb2ff6476b42a16367c94ea7082e8cfe48625fde2a9c7f8c85895e"
+    },
+    "timing_boundaries.svg": {
+      "bytes": 59799,
+      "sha256": "94a9c6f4ad1db4b89b5bb1a9bf246209d825426cafb185d7e7490b848b630681"
+    }
+  }
+}

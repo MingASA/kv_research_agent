@@ -1,0 +1,141 @@
+{
+  "schema": "q4_backend_support_evidence_final_v1",
+  "classification": "restricted_component_completion_with_production_Graph_BLOCKED",
+  "production_graph_qualification": false,
+  "all_requested_graph_paths_supported": false,
+  "blocked_graph_routes": [
+    "mx_prefill_wrapper",
+    "nv_prefill_wrapper",
+    "matched_nv_prefill_wrapper"
+  ],
+  "blocked_graph_reason": "pinned_FA2_graph_ready_non_split_padding_mask_defect",
+  "target": {
+    "hardware": "H800 SM90",
+    "dtype": "BF16",
+    "Q": 24,
+    "KV": 4,
+    "D": 256,
+    "page": 128
+  },
+  "evidence_tiers": [
+    "source/API guards",
+    "historical limited GPU observations",
+    "new independent eager references",
+    "Writer Graph",
+    "native split Decode Graph",
+    "CUPTI API kernel activity",
+    "production Graph BLOCKED"
+  ],
+  "candidates": [
+    {
+      "name": "custom OCP MX ba5",
+      "source_target_supported": true,
+      "limited_eager_reference_passed": true,
+      "new_main_cases": 3,
+      "Writer_Graph_checks": 3,
+      "native_decode_Graph_claim_for_MX": false,
+      "persistent_Graph_admission": "BLOCKED",
+      "historical_operator_model_members": 217,
+      "historical_operator_wrapper_use_cuda_graph": false,
+      "historical_model_Graph_launches_in_window": 6,
+      "historical_observations_prove_all_batch_safety": false,
+      "historical_capacity_only": {
+        "pooled_FullKV_slots": 648832,
+        "usable_FullKV_slots": 648704,
+        "FullKV_bytes": 11294867456,
+        "unchanged_GDN_bytes": 10160308224,
+        "new_capacity_measurement": false
+      }
+    },
+    {
+      "name": "SGLang DSV4 MX heads",
+      "SM90_source_supported": true,
+      "unchanged_target_supported": false,
+      "timing": "N/A",
+      "source_hardware_presence_is_target_shape_support": false,
+      "new_GPU_measurement": false
+    },
+    {
+      "name": "vLLM current source / deployed FI8bc NV reference",
+      "Hopper_route": "native FA2, not XQA",
+      "D256_source_supported": true,
+      "vllm_Hopper_framework_page_max": 64,
+      "FI_core_page128_component_only": true,
+      "complete_vllm_engine_measured": false,
+      "native_split_Decode_Graph_routes_qualified": 4,
+      "non_split_pagedPrefill_Graph": "BLOCKED",
+      "latest_FI_runtime_measured": false
+    }
+  ],
+  "main_hard_gates": {
+    "Eager_independent_decoded_references": 13,
+    "atol": 0.02,
+    "rtol": 0.02,
+    "full_prefill_executed_query_rows": 8192,
+    "full_prefill_independently_referenced_query_rows": 16,
+    "Writer_changed_input_Graph_checks": 6,
+    "native_Decode_Graph_routes": 4,
+    "native_actual_plan_guards": 8,
+    "same_fused_MX_matched_NV_maxabs": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "strict_diagnostics_all_main_pass": true,
+    "strict_diagnostics_count": 7,
+    "strict_atol": 0.001,
+    "strict_rtol": 0.001
+  },
+  "CUPTI": {
+    "separate_invocations": 38,
+    "components": 19,
+    "kernel_events": 58,
+    "copy_events": 6,
+    "per_component_invocations": 2,
+    "raw_SHA_event_rechecked_before_mean": true,
+    "common_denominator": "same-case Writer API kernel-active mean + Attention API kernel-active mean; not elapsed/union",
+    "Writer_API_includes_validation_stack_kernels": true,
+    "native_Attention_includes_compute_and_merge": true,
+    "independent_fused_scale_unpack_time": null,
+    "independent_fused_scale_unpack_percentage": null,
+    "two_calls_establish_significance": false
+  },
+  "other_timing_boundaries": {
+    "event_rows_including_blocked_NA": 38,
+    "actual_event_samples": 1160,
+    "host_rows": 50,
+    "host_samples": 1000,
+    "Writer_Graph_burst": 32,
+    "native_Attention_Graph_burst": 8,
+    "host_per_model_step": 1,
+    "host_multiply_by_layers": false,
+    "Eager_event_spans_may_include_host_gaps": true,
+    "Graph_spans_mixed_into_CUPTI_proxy": false
+  },
+  "old_result_causal_boundary": {
+    "old_quality_tools_service_scores_or_raw_rewritten": false,
+    "Graph_safety_is_execution_confound": true,
+    "format_numeric_causality_established_by_old_scores_alone": false,
+    "coverage_of_defect_across_old_formal_requests": "unknown"
+  },
+  "false_positive_limits": {
+    "no_new_model_quality": true,
+    "no_service_benchmark": true,
+    "no_production_Graph_requalification": true,
+    "no_current_FI_speedup_evidence": true,
+    "no_kernel_or_dependency_upgrade": true
+  },
+  "readout_provenance_sha256": "ff8136b1c5ec9c8a230738071609ff4678b1598f042a0f55983cf0599f7bb6f5",
+  "native_Graph_scope_limit": "fixed query/context geometry and same-geometry fast replan; dynamic sequence lengths not qualified",
+  "hardware_compute": "H800 has no native FP4 Tensor Core; resident packed formats reconstruct BF16 fragments for BF16 MMA/FP32 accumulation",
+  "format_storage_bytes_per_element": {
+    "MX_E2M1_block32_E8M0": 0.53125,
+    "NV_E2M1_block16_E4M3": 0.5625,
+    "capacity_or_throughput_inferred": false
+  },
+  "integration_recommendation": {
+    "MX": "do not merge for production; Graph blocked; codec/writer/layout experimental review only",
+    "NV": "bounded deployed FI8bc component evidence; not latestFI/fullvLLM",
+    "SG": "unchanged target unsupported; do not transplant D512 semantics"
+  }
+}
