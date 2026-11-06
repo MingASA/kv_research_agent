@@ -15,6 +15,38 @@ MODEL_KIND = 'upstream_next_stage_model_qualification'
 PROFILES = ('ocp_mxfp4_20261105', 'fp8_optimization_20261105')
 MX_CONFIGURATION = {'dtype':'mxfp4', 'key_scale':1., 'value_scale':1.,
                     'prefill':'fa2', 'decode':'flashinfer'}
+LEGACY_C_COMMIT = 'da7c6446ff4361c8060633b04d6bfb77e6f737ff'
+LEGACY_C_BINARY = '74668d5e5d73a0dc23f70679350851b10c11c99e42c6961f511dee33ab7f60e9'
+
+
+def validate_pair_sources(reference: dict, candidate: dict, native_reference: str | None = None) -> None:
+    """Keep official A comparisons distinct from frozen previous-format pairs."""
+    from .upstream_qualification import OFFICIAL_COMMIT, BASELINE_COMMIT
+
+    if (reference.get('upstream_commit') != OFFICIAL_COMMIT
+            or candidate.get('upstream_commit') != OFFICIAL_COMMIT
+            or candidate.get('native_base_commit') != BASELINE_COMMIT
+            or not (candidate.get('arms') in (['fp8_e4m3'],['nvfp4'])
+                    or candidate.get('arms') == ['mxfp4'] and candidate.get('next_stage_profile') == PROFILES[0])):
+        raise ValueError('Comparison requires the same frozen official/build-fix base')
+    if candidate.get('next_stage_profile') in PROFILES:
+        expected = 'mxfp4' if candidate['next_stage_profile'] == PROFILES[0] else 'fp8_e4m3'
+        if candidate['arms'] != [expected]:
+            raise ValueError('Candidate profile and actual format disagree')
+    if native_reference is None:
+        if (reference.get('arms') != ['bf16'] or reference.get('native_configuration') is not None
+                or reference.get('server_source_commit') != BASELINE_COMMIT
+                or reference.get('python_source_commit') != BASELINE_COMMIT):
+            raise ValueError('Default comparison requires the actual official BF16 A')
+    elif (native_reference not in CONFIGURATIONS
+            or reference.get('arms') != [native_reference]
+            or reference.get('native_configuration') != CONFIGURATIONS[native_reference]
+            or reference.get('native_base_commit') != BASELINE_COMMIT
+            or reference.get('server_source_commit') != LEGACY_C_COMMIT
+            or reference.get('python_source_commit') != LEGACY_C_COMMIT
+            or reference.get('binary_sha256') != LEGACY_C_BINARY
+            or candidate.get('next_stage_profile') not in PROFILES):
+        raise ValueError('Native reference must be the original measured format and binary, with a new-stage candidate')
 
 
 def validate_deployment(request: dict, approval: dict) -> None:

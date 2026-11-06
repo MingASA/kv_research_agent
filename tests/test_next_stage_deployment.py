@@ -4,7 +4,10 @@ import copy
 import unittest
 
 from scripts.controller.approval import ApprovalError
-from scripts.controller.next_stage_deployment import validate_deployment, MX_CONFIGURATION, operator_acceptance_passed
+from scripts.controller.next_stage_deployment import (
+    validate_deployment, MX_CONFIGURATION, operator_acceptance_passed,
+    validate_pair_sources, LEGACY_C_COMMIT, LEGACY_C_BINARY,
+)
 from scripts.controller.native_next_stage import EXTRA_SOURCES
 from scripts.controller.upstream_native import SOURCE_FILES, CONFIGURATIONS
 from scripts.controller.policy import validate_request
@@ -69,6 +72,35 @@ class NextStageAdmissionTest(unittest.TestCase):
         result['mixed_gate']=True
         self.assertTrue(operator_acceptance_passed(result,'fp8_e4m3'))
         self.assertFalse(operator_acceptance_passed(result,'mxfp4'))
+
+    def test_previous_fp8_reference_cannot_be_relabelled_official_A(self):
+        reference=copy.deepcopy(self.request)
+        reference.update(server_source_commit=LEGACY_C_COMMIT,python_source_commit=LEGACY_C_COMMIT,
+                         binary_sha256=LEGACY_C_BINARY)
+        reference.pop('next_stage_profile')
+        validate_pair_sources(reference,self.request,'fp8_e4m3')
+        with self.assertRaises(ValueError):
+            validate_pair_sources(reference,self.request)
+        reference['python_source_commit']='8'*40
+        with self.assertRaises(ValueError):
+            validate_pair_sources(reference,self.request,'fp8_e4m3')
+
+    def test_tool_pairs_keep_failed_tasks_and_label_native_reference(self):
+        from scripts.compare_nextgen_tools import paired_scores
+
+        scores=[{'task_id':str(i),'task_correct':True,'budget_or_incomplete_conversation':False,
+                 'official_checker_AST_sha256':'a'*64,'original_user_turns':1} for i in range(32)]
+        reference={'all_actual_histories_SSE_usage_and_tool_replays_verified':True,
+                   'all_original_tasks_retained_in_denominator':True,'tasks':32,'scores':scores,
+                   'correct':32,'task_success_percent':100.,'source_tasks_sha256':'b'*64,'reference_sha256':'c'*64}
+        candidate=copy.deepcopy(reference)
+        candidate['scores'][0].update(task_correct=False,budget_or_incomplete_conversation=True)
+        candidate.update(correct=31,task_success_percent=100*31/32)
+        pair=paired_scores(reference,candidate,reference_label='reference')
+        self.assertNotIn('BF16_correct',pair)
+        self.assertEqual(pair['reference_correct'],32)
+        self.assertEqual(pair['tasks_per_arm'],32)
+        self.assertEqual(pair['paired_outcome_ids']['reference_correct_candidate_failed'],['0'])
 
 
 if __name__=='__main__':

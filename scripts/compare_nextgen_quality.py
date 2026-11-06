@@ -24,14 +24,17 @@ def _cluster_bootstrap(differences: np.ndarray, groups: list[str], rng: np.rando
 
 
 def compare(reference: Path, candidate: Path, *, repeats: int = 4000, upstream: bool = False,
-            reference_manifest: Path | None = None, candidate_manifest: Path | None = None) -> dict:
+            reference_manifest: Path | None = None, candidate_manifest: Path | None = None,
+            native_reference: str | None = None) -> dict:
+    if native_reference is not None and not upstream:
+        raise ValueError('A previous-format reference needs original upstream raw manifests')
     baseline=json.loads((reference/'summary.json').read_text())
     low=json.loads((candidate/'summary.json').read_text())
     common = ('model_id','canonical_API_payloads_sha256','labels_sha256','scoring_protocol_sha256','service')
     deployments = None
     if upstream:
         from scripts.audit_upstream_run import audit as audit_upstream
-        from scripts.controller.upstream_qualification import OFFICIAL_COMMIT, BASELINE_COMMIT
+        from scripts.controller.upstream_qualification import BASELINE_COMMIT
         if reference_manifest is None or candidate_manifest is None:
             raise ValueError('Upstream A/C quality comparison requires both original SHA mirrors')
         requests = []
@@ -50,13 +53,11 @@ def compare(reference: Path, candidate: Path, *, repeats: int = 4000, upstream: 
         for field in ('model_id','model_config_sha256','image_id','gpu_uuids','service','upstream_commit'):
             if a[field] != c[field]:
                 raise ValueError('Paired upstream model/image/GPU/service differs: '+field)
-        if (a['upstream_commit'] != OFFICIAL_COMMIT or a['server_source_commit'] != BASELINE_COMMIT
-                or a['arms'] != ['bf16'] or a.get('native_configuration') is not None
-                or c.get('native_base_commit') != BASELINE_COMMIT
-                or not (c['arms'] in (['fp8_e4m3'], ['nvfp4'])
-                        or c['arms'] == ['mxfp4'] and c.get('next_stage_profile') == 'ocp_mxfp4_20261105')):
-            raise ValueError('Require official A and quantized C from the same frozen official/buildfix base')
+        from scripts.controller.next_stage_deployment import validate_pair_sources
+        validate_pair_sources(a,c,native_reference)
         deployments = {'reference_source': a['server_source_commit'], 'candidate_source': c['server_source_commit'],
+                       'reference_python_source':a['python_source_commit'],'candidate_python_source':c['python_source_commit'],
+                       'reference_format':a['arms'][0],'candidate_format':c['arms'][0],
                        'official_base': a['upstream_commit'], 'common_buildfix_base': BASELINE_COMMIT,
                        'same_physical_GPU': a['gpu_uuids'], 'same_image': a['image_id']}
     else:
@@ -88,7 +89,8 @@ def compare(reference: Path, candidate: Path, *, repeats: int = 4000, upstream: 
                      'candidate_capped':sum(right[identifier]['finish_reason']=='length' for identifier in ids)}
     macro=np.stack(longbench_boot).mean(axis=0)*100
     return {'schema':'nextgen_paired_core_quality_comparison_v1','reference_run':baseline['run_id'],
-            'same_frozen_official_base_A_C':upstream,'upstream_deployments':deployments,
+            'same_frozen_official_base_A_C':upstream and native_reference is None,
+            'same_frozen_official_base':upstream,'upstream_deployments':deployments,
             'candidate_run':low['run_id'],'reference_arm':baseline['arm'],'candidate_arm':low['arm'],
             'reference_summary_sha256':hashlib.sha256((reference/'summary.json').read_bytes()).hexdigest(),
             'candidate_summary_sha256':hashlib.sha256((candidate/'summary.json').read_bytes()).hexdigest(),
@@ -110,8 +112,10 @@ def main() -> None:
     parser.add_argument('--upstream',action='store_true')
     parser.add_argument('--reference-sha-manifest',type=Path)
     parser.add_argument('--candidate-sha-manifest',type=Path)
+    parser.add_argument('--native-reference',choices=['fp8_e4m3','nvfp4'])
     args=parser.parse_args();write_new_json(args.out,compare(args.reference,args.candidate,upstream=args.upstream,
-        reference_manifest=args.reference_sha_manifest,candidate_manifest=args.candidate_sha_manifest))
+        reference_manifest=args.reference_sha_manifest,candidate_manifest=args.candidate_sha_manifest,
+        native_reference=args.native_reference))
 
 
 if __name__=='__main__':main()

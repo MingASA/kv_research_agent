@@ -8,7 +8,7 @@ from pathlib import Path
 
 from scripts.audit_upstream_service import audit
 from scripts.controller.durable import write_new_json
-from scripts.controller.upstream_qualification import BASELINE_COMMIT, OFFICIAL_COMMIT
+from scripts.controller.upstream_qualification import OFFICIAL_COMMIT
 from scripts.controller.upstream_service import CASES
 
 
@@ -22,18 +22,17 @@ def bound(audit_path, manifest_path):
     return recorded, request
 
 
-def compare(reference_path, reference_manifest, candidate_path, candidate_manifest):
+def compare(reference_path, reference_manifest, candidate_path, candidate_manifest, *, native_reference=None):
     left, a = bound(reference_path, reference_manifest)
     right, c = bound(candidate_path, candidate_manifest)
     for name in ('model_id', 'model_path', 'model_config_sha256', 'image_id', 'gpu_uuids',
                  'service', 'graph_mode', 'prefix_cache', 'upstream_commit', 'benchmark_cases'):
         if a[name] != c[name]:
             raise ValueError('Service hardware/model/mechanism differs: '+name)
-    if (a['arms'] != ['bf16'] or c['arms'] not in (['fp8_e4m3'], ['nvfp4'])
-            or a['server_source_commit'] != BASELINE_COMMIT or c.get('native_base_commit') != BASELINE_COMMIT
-            or a['upstream_commit'] != OFFICIAL_COMMIT or a.get('native_configuration') is not None
-            or left['input_files_sha256'] != right['input_files_sha256']):
-        raise ValueError('Require frozen official A and native C with identical original inputs')
+    from scripts.controller.next_stage_deployment import validate_pair_sources
+    validate_pair_sources(a,c,native_reference)
+    if left['input_files_sha256'] != right['input_files_sha256']:
+        raise ValueError('Frozen service input identities differ')
     comparisons = {}
     rows = []
     for name, _, _, _, concurrency in CASES:
@@ -64,13 +63,23 @@ def compare(reference_path, reference_manifest, candidate_path, candidate_manife
                 raise ValueError('Predeclared Goodput thresholds differ')
             curves.append({'TTFT_limit_ms': al['TTFT_limit_ms'], 'request_mean_ITL_limit_ms': al['request_mean_ITL_limit_ms'],
                            'A_goodput_RPS': al['goodput_rps'], 'C_goodput_RPS': cl['goodput_rps']})
+        if native_reference is not None:
+            def label(key):
+                return 'reference_'+key[2:] if key.startswith('A_') else 'candidate_'+key[2:] if key.startswith('C_') else key
+            row={label(k):v for k,v in row.items()}
+            curves=[{label(k):v for k,v in point.items()} for point in curves]
         comparisons[name] = {'rates_and_tails': row, 'Goodput_curve': curves,
-                             'A_application': av['application'], 'C_application': cv['application']}
+                             ('reference_application' if native_reference else 'A_application'): av['application'],
+                             ('candidate_application' if native_reference else 'C_application'): cv['application']}
         rows.append(row)
-    result = {'schema': 'latest-upstream-real-service-pair-v1', 'reference_run': a['run_id'],
+    result = {'schema': 'same-base-native-service-pair-v1' if native_reference else 'latest-upstream-real-service-pair-v1',
+        'reference_run': a['run_id'],'reference_arm':left['arm'],
         'candidate_run': c['run_id'], 'candidate_arm': right['arm'], 'same_frozen_official_base': OFFICIAL_COMMIT,
         'same_physical_GPU': a['gpu_uuids'], 'same_weights_model_path': a['model_path'], 'same_image': a['image_id'],
         'service': a['service'], 'native_configuration': c['native_configuration'], 'cases': comparisons,
+        'reference_native_configuration':a.get('native_configuration'),
+        'compiled_sources':{'reference':a['server_source_commit'],'candidate':c['server_source_commit']},
+        'python_sources':{'reference':a['python_source_commit'],'candidate':c['python_source_commit']},
         'source_audit_SHA256': {str(p): hashlib.sha256(p.read_bytes()).hexdigest() for p in (reference_path, candidate_path)},
         'all_original_requests_and_complete_measured_windows_used': True,
         'ITL_tail_is_request_mean_not_individual_token_interval': True,
@@ -83,8 +92,10 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     for name in ('reference', 'reference-manifest', 'candidate', 'candidate-manifest', 'out', 'csv'):
         parser.add_argument('--'+name, type=Path, required=True)
+    parser.add_argument('--native-reference',choices=['fp8_e4m3','nvfp4'])
     args = parser.parse_args()
-    result, rows = compare(args.reference, args.reference_manifest, args.candidate, args.candidate_manifest)
+    result, rows = compare(args.reference, args.reference_manifest, args.candidate, args.candidate_manifest,
+                           native_reference=args.native_reference)
     write_new_json(args.out, result)
     with args.csv.open('x', newline='') as stream:
         writer = csv.DictWriter(stream, fieldnames=list(rows[0]), lineterminator='\n')

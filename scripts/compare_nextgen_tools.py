@@ -11,7 +11,7 @@ from scripts.audit_nextgen_validation import _check,_mirror_paths
 from scripts.controller.durable import write_new_json
 
 
-def paired_scores(reference: dict,candidate: dict) -> dict:
+def paired_scores(reference: dict,candidate: dict, *, reference_label: str='BF16') -> dict:
     for score in (reference,candidate):
         _check(score.get('all_actual_histories_SSE_usage_and_tool_replays_verified') is True
                and score.get('all_original_tasks_retained_in_denominator') is True
@@ -26,16 +26,18 @@ def paired_scores(reference: dict,candidate: dict) -> dict:
         _check(reference[name]==candidate[name],'Tool task/reference cohort changed')
     left={row['task_id']:row for row in reference['scores']};right={row['task_id']:row for row in candidate['scores']}
     _check(len(left)==len(right)==32 and left.keys()==right.keys(),'Duplicated or different original tasks')
-    groups={name:[] for name in ('both_correct','both_failed','BF16_correct_candidate_failed','BF16_failed_candidate_correct')}
+    ref_failed=reference_label+'_failed_candidate_correct'
+    ref_correct=reference_label+'_correct_candidate_failed'
+    groups={name:[] for name in ('both_correct','both_failed',ref_correct,ref_failed)}
     for identifier,l in left.items():
         r=right[identifier]
         _check(l['official_checker_AST_sha256']==r['official_checker_AST_sha256']
                and l['original_user_turns']==r['original_user_turns'],'Official checker or source turns differ')
-        key=('both_correct' if l['task_correct'] else 'BF16_failed_candidate_correct') if r['task_correct'] else (
-             'BF16_correct_candidate_failed' if l['task_correct'] else 'both_failed')
+        key=('both_correct' if l['task_correct'] else ref_failed) if r['task_correct'] else (
+             ref_correct if l['task_correct'] else 'both_failed')
         groups[key].append(identifier)
-    return {'BF16_correct':reference['correct'],'candidate_correct':candidate['correct'],'tasks_per_arm':32,
-        'BF16_percent':reference['task_success_percent'],'candidate_percent':candidate['task_success_percent'],
+    return {reference_label+'_correct':reference['correct'],'candidate_correct':candidate['correct'],'tasks_per_arm':32,
+        reference_label+'_percent':reference['task_success_percent'],'candidate_percent':candidate['task_success_percent'],
         'change_percentage_points':candidate['task_success_percent']-reference['task_success_percent'],
         'paired_outcome_ids':groups,'all_original_tasks_in_denominator':True}
 
@@ -55,30 +57,33 @@ def bound(audit_path: Path,manifest_path: Path) -> tuple[dict,dict]:
 
 
 def compare(reference_path: Path,reference_manifest: Path,candidate_path: Path,candidate_manifest: Path,
-            *,upstream: bool=False) -> dict:
+            *,upstream: bool=False,native_reference: str | None=None) -> dict:
+    if native_reference is not None and not upstream:
+        raise ValueError('Previous-format tool comparison needs original upstream evidence')
     left,lreq=bound(reference_path,reference_manifest);right,rreq=bound(candidate_path,candidate_manifest)
-    _check(left['arm']=='bf16' and right['arm'] in ('fp8_e4m3','nvfp4'),'Pair explicit BF16 and native low precision')
     common=('model_id','model_config_sha256','image_id','service','gpu_uuids','prefix_cache','graph_mode')
     if upstream:
-        from scripts.controller.upstream_qualification import OFFICIAL_COMMIT,BASELINE_COMMIT
-        _check(lreq['workload']['kind']==rreq['workload']['kind']=='upstream_AC_real_native_tools32'
-               and lreq['upstream_commit']==rreq['upstream_commit']==OFFICIAL_COMMIT
-               and lreq['server_source_commit']==BASELINE_COMMIT and lreq.get('native_configuration') is None
-               and rreq.get('native_base_commit')==BASELINE_COMMIT,
-               'Tool A/C must share the frozen latest official/buildfix base')
+        from scripts.controller.next_stage_deployment import validate_pair_sources
+        _check(lreq['workload']['kind']==rreq['workload']['kind']=='upstream_AC_real_native_tools32',
+               'Tool comparison requires original fixed upstream tasks')
+        validate_pair_sources(lreq,rreq,native_reference)
     else:
+        _check(left['arm']=='bf16' and right['arm'] in ('fp8_e4m3','nvfp4'),'Pair explicit BF16 and native low precision')
         common+=('binary_sha256','server_source_commit','python_source_commit')
     for name in common:
         _check(lreq[name]==rreq[name],'Different tool deployment: '+name)
     for name in ('tasks','user_turns','client_concurrency','max_steps_per_turn','max_new_tokens','max_seconds','tool_parser',
                  'manifest_sha256','tasks_sha256','tool_source_manifest_sha256','CPU_protocol_rollup_sha256','CPU_image_evidence_sha256'):
         _check(lreq['tool_evaluation'][name]==rreq['tool_evaluation'][name],'Different original tool demand/protocol: '+name)
-    result=paired_scores(left['quality'],right['quality'])
+    result=paired_scores(left['quality'],right['quality'],reference_label='reference' if native_reference else 'BF16')
     result.update(schema='nextgen-actual-native-tools32-pair-v1',reference_run_id=left['run_id'],candidate_run_id=right['run_id'],
-        same_frozen_official_base_A_C=upstream,
-        source_commits={'A':lreq['server_source_commit'],'C':rreq['server_source_commit']},
-        candidate_arm=right['arm'],service=lreq['service'],gpu_uuids=lreq['gpu_uuids'],
-        operators={'BF16':lreq['operators'],right['arm']:rreq['operators']},
+        same_frozen_official_base_A_C=upstream and native_reference is None,same_frozen_official_base=upstream,
+        source_commits={('reference' if native_reference else 'A'):lreq['server_source_commit'],
+                        ('candidate' if native_reference else 'C'):rreq['server_source_commit']},
+        python_sources={'reference':lreq['python_source_commit'],'candidate':rreq['python_source_commit']},
+        reference_arm=left['arm'],candidate_arm=right['arm'],service=lreq['service'],gpu_uuids=lreq['gpu_uuids'],
+        operators={('reference' if native_reference else 'BF16'):lreq['operators'],
+                   ('candidate' if native_reference else right['arm']):rreq['operators']},
         reference_audit_sha256=hashlib.sha256(reference_path.read_bytes()).hexdigest(),
         candidate_audit_sha256=hashlib.sha256(candidate_path.read_bytes()).hexdigest(),
         reference_manifest_sha256=hashlib.sha256(reference_manifest.read_bytes()).hexdigest(),
@@ -93,6 +98,7 @@ if __name__=='__main__':
     for name in ('reference','reference-manifest','candidate','candidate-manifest','out'):
         parser.add_argument('--'+name,type=Path,required=True)
     parser.add_argument('--upstream',action='store_true')
+    parser.add_argument('--native-reference',choices=['fp8_e4m3','nvfp4'])
     args=parser.parse_args();result=compare(args.reference,args.reference_manifest,args.candidate,args.candidate_manifest,
-                                        upstream=args.upstream)
+                                        upstream=args.upstream,native_reference=args.native_reference)
     write_new_json(args.out,result);print(json.dumps(result))
