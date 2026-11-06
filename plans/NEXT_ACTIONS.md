@@ -1,3 +1,3 @@
-# Latest official xLLM native KV evaluation
+# Fixed MXFP4/FP8 campaign
 
-The fixed A/C campaign is complete. See [the report](../reports/experiments/upstream-production-kv-20261102/REPORT.md) for measured outcomes, failures, limitations, and merge recommendations. All original jobs are settled; no GPU job or automatic experiment queue remains active. Further experiments require a new scoped task; the negative results have not been retuned.
+The frozen campaign is complete; see the final report for all results, preserved failures, limitations and merge recommendations. No GPU job or automatic dispatch queue remains active. The user has separately requested a read-only three-backend audit and bounded component profiling; that follow-up is not evidence from this completed campaign.

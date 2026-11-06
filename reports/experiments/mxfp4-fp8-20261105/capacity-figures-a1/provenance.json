@@ -1,0 +1,15 @@
+{
+  "classification": "actual_model_allocator_geometry_and_native_resident_byte_owners",
+  "throughput_or_max_admission_capacity_claim": false,
+  "GDN_bytes_from_actual_slot_size_and_layer_count": true,
+  "source_SHA256": {
+    "results/model_tokenizers/Qwen3.8-27B-20261102a/config.json": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab",
+    "reports/experiments/mxfp4-fp8-20261105/raw/mxfp4-qualified-model-0001/SHA_MANIFEST.json": "14d046644fc9563bc604b54fa8e90d93e7c360817cee7042721bd737d99dacb2",
+    "results/mirrors/upstream-A-graph-e1/files/output/bf16/server.log": "c78c8f444ff2169374c6f898be1591c864c816f15a9b0e3a6af98dbc03ed020b",
+    "results/mirrors/upstream-C-fp8-model-a1/files/output/fp8_e4m3/server.log": "15b72fedf9cf0b0f45f4fce692e82048bbcaf11f1fab48047f50b00aace6c7a1",
+    "reports/operations/upstream-ac-20261102a/C_FP8_MODEL_INDEPENDENT-a1.json": "d20d1c345bdc7dbf15330a584aeff54ff9f993d7a09fe344ea48f35f1a742ff4",
+    "results/mirrors/upstream-C-nvfp4-model-a1/files/output/nvfp4/server.log": "d45f1ac7108fa9c20787ea4af4559e34c2430e78e9169ec1ee138199b22bdec4",
+    "reports/operations/upstream-ac-20261102a/C_NVFP4_MODEL_INDEPENDENT-a1.json": "4aea348a432fd610ee5ffe0c2e6e469b2d1a09635cc165097d1c20d8d3d67344",
+    "/home/mingasa/kv-research-agent/reports/experiments/mxfp4-fp8-20261105/raw/mxfp4-qualified-model-0001/files/output/mxfp4/server.log": "5d664e453bad59e0d15c2d048f7e4bf98a89ec8217e34832c4544cb9a36d78b4"
+  }
+}

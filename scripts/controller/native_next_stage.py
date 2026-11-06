@@ -14,6 +14,7 @@ from .upstream_native import SOURCE_FILES, OPERATOR_KIND
 
 KIND = 'upstream_next_stage_native_operator'
 FP8_KIND = 'upstream_FP8_optimization_operator'
+RETAINED_KIND = 'upstream_FP8_retained_candidate_operator'
 CALIB_KIND = 'upstream_FP8_independent_numeric_calibration'
 EXTRA_SOURCES = ('xllm/python/attention/mxfp4_reference.py',
                  'xllm/python/attention/mxfp4_writer.py',
@@ -22,15 +23,20 @@ EXTRA_SOURCES = ('xllm/python/attention/mxfp4_reference.py',
 
 def validate_request(request: dict, approval: dict) -> None:
     from .upstream_native import validate_request as validate_base
+    from .native_jit_reuse import validate as validate_jit
+    validate_jit(request)
     if request.get('workload',{}).get('kind') == CALIB_KIND:
         _validate_calibration(request, approval)
         return
-    fp8 = request.get('workload',{}).get('kind') == FP8_KIND
-    expected = set(SOURCE_FILES) | set(('xllm/python/attention/mixed_native_kv.py',) if fp8 else EXTRA_SOURCES)
+    retained=request.get('workload',{}).get('kind') == RETAINED_KIND
+    fp8 = request.get('workload',{}).get('kind') in (FP8_KIND,RETAINED_KIND)
+    expected = set(SOURCE_FILES) | set(() if retained else ('xllm/python/attention/mixed_native_kv.py',) if fp8 else EXTRA_SOURCES)
     arm = 'fp8_e4m3' if fp8 else 'mxfp4'
-    workload = ({'kind':FP8_KIND,'scope':'strided_query_and_mixed_XQA_finite_operator_gate'} if fp8 else
+    workload = ({'kind':RETAINED_KIND,'scope':'retained_query_original_FA3_mixed_and_pure_XQA_two_V_scales'} if retained else
+                {'kind':FP8_KIND,'scope':'strided_query_and_mixed_XQA_finite_operator_gate'} if fp8 else
                 {'kind':KIND,'scope':'OCP_MXFP4_SM90_D256_bitwise_paged_Graph_gate'})
-    operators = ({arm:{'planner':'FA3_query_fusion_and_mixed_split','decode':'XQA'}} if fp8 else
+    operators = ({arm:{'planner':'FA3_original_mixed_retained_query','decode':'XQA'}} if retained else
+                 {arm:{'planner':'FA3_query_fusion_and_mixed_split','decode':'XQA'}} if fp8 else
                  {arm:{'planner':'private_pinned_FA2_E8M0','decode':'private_pinned_FA2_E8M0'}})
     hashes = request.get('backend_source_sha256', {})
     compiled = request.get('compiled_backend_source_sha256')
@@ -44,6 +50,11 @@ def validate_request(request: dict, approval: dict) -> None:
             or re.fullmatch('[0-9a-f]{40}', request.get('python_source_commit','')) is None
             or request.get('operators') != operators):
         raise ApprovalError('Next-stage operator requires the exact source/format/geometry contract')
+    if retained:
+        reference=request.get('query_component_reference',{})
+        if (re.fullmatch('[A-Za-z0-9_-]{1,128}',reference.get('run_id','')) is None
+                or re.fullmatch('[0-9a-f]{64}',reference.get('result_sha256','')) is None):
+            raise ApprovalError('Retained FP8 requires its exact successful query component')
     # Apply the established baseline/assets/runtime constraints. The binary is
     # explicitly unused; the new Python commit is separately pinned above and
     # verified from its bundle at deployment, not relabeled as compiled code.
@@ -83,7 +94,11 @@ def run(ticket: dict, root: Path, output: Path, arm: str, env: dict) -> dict:
     request = ticket['request']
     env = native_python_environment(request, {k:v for k,v in env.items() if not k.startswith('XLLM_')})
     env['PYTHONPATH'] = request['python_source_repo'] + ':' + env.get('PYTHONPATH', '')
-    module = '.fp8_optimization_operator' if request['workload']['kind'] == FP8_KIND else '.mxfp4_operator'
+    if request['workload']['kind']==RETAINED_KIND:
+        from .fp8_retained_operator import reuse_query_component
+        reuse_query_component(request,output/'query_component_reuse.json')
+    module = ('.fp8_retained_operator' if request['workload']['kind']==RETAINED_KIND else
+              '.fp8_optimization_operator' if request['workload']['kind'] == FP8_KIND else '.mxfp4_operator')
     command = [sys.executable, '-B', '-m', __package__+module, '--output', str(output/'operators')]
     if request['workload']['kind'] == FP8_KIND:
         command += ['--baseline-query',str(root/'input/query_reference_20261102.py')]

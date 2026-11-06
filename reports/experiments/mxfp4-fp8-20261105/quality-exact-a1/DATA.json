@@ -1,0 +1,118 @@
+{
+  "schema": "five-format-frozen-quality-exact-data-v1",
+  "all_core_generations_per_arm": 1720,
+  "all_native_tasks_per_arm": 32,
+  "all_original_caps_EOS_and_denominators_retained": true,
+  "headline": [
+    {
+      "format": "BF16",
+      "core_run": "upstream-A-quality1720-r0-20261102a",
+      "GSM8K_flexible_EM_percent": 96.73995451099317,
+      "LongBench_core_macro": 53.898444013479164,
+      "RepoBenchP": 43.92,
+      "supplement": {
+        "actual_completion_tokens": 3,
+        "capped_responses": 0,
+        "count": 1,
+        "independent_context_clusters": 1,
+        "official_rounded_percent": 50.0,
+        "score_percent_unrounded": 50.0
+      },
+      "native_tools_correct": 26,
+      "native_tools_total": 32,
+      "core_python_source": "721afdabc1de1af8e594b4da3e6fa926def50821",
+      "core_compiled_source": "721afdabc1de1af8e594b4da3e6fa926def50821"
+    },
+    {
+      "format": "FP8",
+      "core_run": "upstream-C-fp8-quality1720-r0-20261102a",
+      "GSM8K_flexible_EM_percent": 96.58832448824867,
+      "LongBench_core_macro": 53.264214441734495,
+      "RepoBenchP": 39.74,
+      "supplement": {
+        "actual_completion_tokens": 3,
+        "capped_responses": 0,
+        "count": 1,
+        "independent_context_clusters": 1,
+        "official_rounded_percent": 50.0,
+        "score_percent_unrounded": 50.0
+      },
+      "native_tools_correct": 26,
+      "native_tools_total": 32,
+      "core_python_source": "da7c6446ff4361c8060633b04d6bfb77e6f737ff",
+      "core_compiled_source": "da7c6446ff4361c8060633b04d6bfb77e6f737ff"
+    },
+    {
+      "format": "NVFP4",
+      "core_run": "upstream-C-nvfp4-quality1720-r0-20261102a",
+      "GSM8K_flexible_EM_percent": 96.58832448824867,
+      "LongBench_core_macro": 53.829656388243365,
+      "RepoBenchP": 39.68,
+      "supplement": {
+        "actual_completion_tokens": 3,
+        "capped_responses": 0,
+        "count": 1,
+        "independent_context_clusters": 1,
+        "official_rounded_percent": 50.0,
+        "score_percent_unrounded": 50.0
+      },
+      "native_tools_correct": 27,
+      "native_tools_total": 32,
+      "core_python_source": "da7c6446ff4361c8060633b04d6bfb77e6f737ff",
+      "core_compiled_source": "da7c6446ff4361c8060633b04d6bfb77e6f737ff"
+    },
+    {
+      "format": "FP8 retained",
+      "core_run": "upstream-fast-20261106g-fp8-retained-quality-0001",
+      "GSM8K_flexible_EM_percent": 96.96739954510993,
+      "LongBench_core_macro": 53.90334247013884,
+      "RepoBenchP": 42.84,
+      "supplement": {
+        "actual_completion_tokens": 3,
+        "capped_responses": 0,
+        "count": 1,
+        "independent_context_clusters": 1,
+        "official_rounded_percent": 50.0,
+        "score_percent_unrounded": 50.0
+      },
+      "native_tools_correct": 26,
+      "native_tools_total": 32,
+      "core_python_source": "d163d5de48b201e5f767f1bf21a9437cbf1aeb42",
+      "core_compiled_source": "da7c6446ff4361c8060633b04d6bfb77e6f737ff"
+    },
+    {
+      "format": "MXFP4",
+      "core_run": "upstream-fast-20261106f-mxfp4-quality-0001",
+      "GSM8K_flexible_EM_percent": 95.98180439727066,
+      "LongBench_core_macro": 52.91470227877436,
+      "RepoBenchP": 36.48,
+      "supplement": {
+        "actual_completion_tokens": 3,
+        "capped_responses": 0,
+        "count": 1,
+        "independent_context_clusters": 1,
+        "official_rounded_percent": 50.0,
+        "score_percent_unrounded": 50.0
+      },
+      "native_tools_correct": 23,
+      "native_tools_total": 32,
+      "core_python_source": "ba5eaec0a1b5b941da4b8ded0343d43f2c2b4158",
+      "core_compiled_source": "ba5eaec0a1b5b941da4b8ded0343d43f2c2b4158"
+    }
+  ],
+  "source_SHA256": {
+    "reports/experiments/upstream-production-kv-20261102/A-quality-a1/summary.json": "f41e29b2338911951d4bcaf67837f2ba0bd8d1af5fd519072ccc3b1e123a23eb",
+    "reports/experiments/upstream-production-kv-20261102/A-tools-b1/actual_model_audit.json": "ec193dcb9bfa7364f3d78ab52d150c2c18673ad0e52a7215e7d10c418e749ac9",
+    "reports/experiments/upstream-production-kv-20261102/C-fp8-quality-a1/summary.json": "daae6511cd2f1bdfae0b1cd733cda1c46cbcc041685e9abf51cdbf2f7e03b436",
+    "reports/experiments/upstream-production-kv-20261102/C-fp8-tools-c1/actual_model_audit.json": "ea0641ce7d4ebc465b72b529a668b18351de36f2daf7e0c7acaedf2e24f530ce",
+    "reports/experiments/upstream-production-kv-20261102/C-nvfp4-quality-a1/summary.json": "59ce81ec7b89113347aadea220e385f0355dd96300a763a97ef628cca5955c3b",
+    "reports/experiments/upstream-production-kv-20261102/C-nvfp4-tools-b1/actual_model_audit.json": "e32a9ceefa48de9e438fcd2c67ccc59bd137dabb4e8ea3a266e9b4ab9e5af074",
+    "reports/experiments/mxfp4-fp8-20261105/FP8-retained-quality-a1/summary.json": "f72531eee4304e4a83468664506d68165dc0ce83a9b6d9c50704e03edf001f5f",
+    "reports/experiments/mxfp4-fp8-20261105/FP8-retained-tools-a1/actual_model_audit.json": "f7500b71c918996f7ab5ab2d503d9da48e569d533042f22bfba21d6e7b8cf525",
+    "reports/experiments/mxfp4-fp8-20261105/MXFP4-quality-a1/summary.json": "297d2ed3d1df82fe61c4db478d49bdcf1f62d5bd5a47af4f3fcf46717ed25ffc",
+    "reports/experiments/mxfp4-fp8-20261105/MXFP4-tools-a1/actual_model_audit.json": "f029b43881abfc6e255c9d05330f845300be7301bc554878a2d0df87f756f827"
+  },
+  "RepoBenchP_is_execution_success": false,
+  "supplement_in_core_LongBench_macro": false,
+  "noninferiority_or_production_acceptance": false
+}

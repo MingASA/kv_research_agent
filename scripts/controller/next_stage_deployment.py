@@ -52,11 +52,16 @@ def validate_pair_sources(reference: dict, candidate: dict, native_reference: st
 def validate_deployment(request: dict, approval: dict) -> None:
     """Validate new storage separately; retain every original resource constraint."""
     from .upstream_native import validate_request as validate_original
+    from .native_jit_reuse import validate as validate_jit
+    validate_jit(request)
 
     profile = request.get('next_stage_profile')
     mxfp4 = profile == PROFILES[0]
+    retained=request.get('fp8_component_selection')=='retained_query_and_range_original_mixed'
+    if request.get('fp8_component_selection') is not None and (not retained or mxfp4):
+        raise ApprovalError('Unknown retained FP8 component selection')
     extras = (('mxfp4_reference.py','mxfp4_writer.py','mxfp4_flashinfer.py') if mxfp4
-              else ('mixed_native_kv.py',))
+              else () if retained else ('mixed_native_kv.py',))
     expected = set(SOURCE_FILES) | {'xllm/python/attention/'+name for name in extras}
     configuration = request.get('native_configuration')
     valid_configurations = ([MX_CONFIGURATION] if mxfp4 else
@@ -105,6 +110,18 @@ def _completed_reference(request: dict, reference: dict) -> tuple[Path, dict]:
 
 
 def operator_acceptance_passed(acceptance: dict, arm: str) -> bool:
+    if arm=='fp8_e4m3' and acceptance.get('schema')=='FP8_retained_candidate_operator_v1':
+        rows=acceptance.get('scale_rows',[])
+        return (acceptance.get('query_gate') is True and acceptance.get('query_component_reused') is True
+                and acceptance.get('writer_two_scales_bitwise') is True
+                and acceptance.get('independent_snapshot_oracle') is True and acceptance.get('finite_outputs') is True
+                and acceptance.get('normal_mixed_all_FA3') is True and acceptance.get('pure_XQA') is True
+                and acceptance.get('rejected_mixed_split_present') is False
+                and len(rows)==2 and [r.get('value_scale') for r in rows]==[.0625,.5]
+                and all(r.get('writer_Torch_bitwise') is True and r.get('mixed_all_FA3_direct_pass') is True
+                        and r.get('pure_XQA_direct_pass') is True and r.get('GDN_unchanged') is True
+                        and r.get('direct_uses_independent_verified_snapshot') is True
+                        and r.get('finite_outputs') is True for r in rows))
     mxfp4 = arm == 'mxfp4'
     return (acceptance.get('schema') == 'MXFP4_SM90_operator_gate_v1'
               and acceptance.get('writer_CPU_bitwise') is True

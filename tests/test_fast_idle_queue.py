@@ -48,6 +48,19 @@ class QueueTests(unittest.TestCase):
         for raw in (b'{"seq":1}',b'x'*16385+b'\n',b'[]\n'):
             self.assertIn('Error',self.reader(raw).error)
 
+    def test_controller_edit_requires_fresh_process_before_accepting_handoff(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder);runtime=root/'scripts/controller';runtime.mkdir(parents=True)
+            source=runtime/'policy.py';source.write_text('version=1')
+            with patch.object(queue,'ROOT',root):
+                manifest={'coordinator_runtime_sha256':queue.coordinator_epoch()}
+                queue.require_coordinator_epoch(manifest)
+                source.write_text('version=2')
+                with self.assertRaisesRegex(RuntimeError,'fresh queue handoff'):
+                    queue.require_coordinator_epoch(manifest)
+                manifest['coordinator_runtime_sha256']=queue.coordinator_epoch()
+                queue.require_coordinator_epoch(manifest)
+
     def test_index_update_preserves_all_historical_bytes(self):
         with tempfile.TemporaryDirectory() as folder:
             root=Path(folder);(root/'results').mkdir();p=root/'results/INDEX.csv'

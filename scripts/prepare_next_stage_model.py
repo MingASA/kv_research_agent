@@ -22,21 +22,26 @@ ROOT=Path(__file__).resolve().parents[1]
 
 
 def prepare(operator_manifest: Path, metadata_path: Path, run: str,
-            profile: str, candidate_scale: bool, calibration_manifest: Path | None) -> dict:
+            profile: str, candidate_scale: bool, calibration_manifest: Path | None,
+            jit_receipt: Path | None = None) -> dict:
     lifecycle=audit(operator_manifest)
     manifest=json.loads(operator_manifest.read_bytes())
     files_root=Path(manifest['mirror_directory'])/'files'
     prior=json.loads((files_root/'ticket.json').read_bytes())['request']
     request=dict(prior)
     request.pop('compiled_backend_source_sha256',None)
+    request.pop('cpu_native_jit_artifact',None)
     mx=profile==PROFILES[0]
-    if prior['workload']['kind'] != ('upstream_next_stage_native_operator' if mx else 'upstream_FP8_optimization_operator'):
+    retained=prior['workload']['kind']=='upstream_FP8_retained_candidate_operator'
+    if prior['workload']['kind'] not in (('upstream_next_stage_native_operator',) if mx else
+            ('upstream_FP8_optimization_operator','upstream_FP8_retained_candidate_operator')):
         raise ValueError('Operator proof does not belong to the selected format')
     acceptance=json.loads((files_root/'output'/prior['arms'][0]/'operators/acceptance.json').read_bytes())
     if not operator_acceptance_passed(acceptance,prior['arms'][0]):
         raise ValueError('An operator candidate failed its frozen prerequisite gate')
     metadata=json.loads(metadata_path.read_bytes());result=metadata['build_result']
-    repo=Path('/home/mingasa/projects/xllm-'+('mxfp4-kv' if mx else 'fp8-opt')+'-20261105a')
+    repo=Path('/home/mingasa/projects/xllm-fp8-astra-20261106a' if retained else
+              '/home/mingasa/projects/xllm-'+('mxfp4-kv' if mx else 'fp8-opt')+'-20261105a')
     head=subprocess.check_output(['git','-C',str(repo),'rev-parse','HEAD'],text=True).strip()
     if subprocess.check_output(['git','-C',str(repo),'status','--porcelain'],text=True).strip() or head!=prior['python_source_commit']:
         raise ValueError('Qualified operator source must still be the exact clean candidate')
@@ -84,6 +89,9 @@ def prepare(operator_manifest: Path, metadata_path: Path, run: str,
                                'operator_reference':reference,'configuration':configuration}))
     for name in ('runtime_library_directory','runtime_dependency_build_id','zeromq_library_sha256'):
         request[name]=metadata[name]
+    if retained:request['fp8_component_selection']='retained_query_and_range_original_mixed'
+    if jit_receipt is not None:
+        request['native_jit_artifact']=json.loads(jit_receipt.read_bytes())
     assets.update(attach_graph_observer(plan,request));assets.update(freeze_runtime(plan))
     approval=json.loads((Path.home()/'.config/kv-research/approval.json').read_bytes())
     validate_request(request,approval)
@@ -112,6 +120,7 @@ if __name__=='__main__':
     p.add_argument('--build-metadata',type=Path,required=True)
     p.add_argument('--run-id',required=True);p.add_argument('--profile',choices=PROFILES,required=True)
     p.add_argument('--candidate-scale',action='store_true');p.add_argument('--calibration-sha-manifest',type=Path)
+    p.add_argument('--jit-receipt',type=Path,help='Exact qualified MXFP4 module metadata for isolated-cache reuse')
     a=p.parse_args()
     print(json.dumps(prepare(a.operator_sha_manifest,a.build_metadata,a.run_id,a.profile,
-                             a.candidate_scale,a.calibration_sha_manifest)))
+                             a.candidate_scale,a.calibration_sha_manifest,a.jit_receipt)))

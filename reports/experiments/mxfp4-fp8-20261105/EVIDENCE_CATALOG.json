@@ -1,0 +1,175 @@
+{
+  "schema": "mxfp4-retained-fp8-evidence-catalog-v1",
+  "utc": "2026-11-06T13:23:40.050237+00:00",
+  "partitions": [
+    {
+      "partition": "earlier-failures-and-builds-a1",
+      "archive_bytes": 14146556,
+      "archive_sha256": "c62a40b2457e04356758ce66552d498bd10f5acdf88c697ff38e5d3a6cf64f50",
+      "file_manifest_sha256": "78469ec4a65a77771d0dc7baed7be3c9bfbe5d9853bea4a42e12ad2a186a93c5",
+      "members": 408,
+      "uncompressed_bytes": 22454325,
+      "original_runs": [
+        "upstream-mxfp4-operator-r0-20261105a",
+        "upstream-mxfp4-operator-r1-20261105b",
+        "upstream-fp8-independent-calibration-r0-20261105a"
+      ],
+      "private_local_address": "results/archive/mxfp4-fp8-20261105/earlier-failures-and-builds-a1",
+      "all_members_independently_reread_by_builder": true
+    },
+    {
+      "partition": "qualifications-a1",
+      "archive_bytes": 5651357,
+      "archive_sha256": "90832baa7ec50adde597e4c22310a309ba74c01f79cffbcf7ec84cd53357d7cb",
+      "file_manifest_sha256": "c166fa73db3660e719f569713a68b9562c12d8f929788e57b9eab7286efcd2ae",
+      "members": 1002,
+      "uncompressed_bytes": 20976835,
+      "original_runs": [
+        "upstream-fast-20261106c-fp8-opt-operator-0001",
+        "upstream-fast-20261106a-fp8-numeric-0003",
+        "upstream-fast-20261106a-fp8-numeric-0001",
+        "upstream-fast-20261106a-fp8-numeric-0002",
+        "upstream-fp8-opt-operator-r0-20261106a",
+        "upstream-fast-20261106f-fp8-model-0001",
+        "upstream-fast-20261106e-fp8-retained-0001",
+        "upstream-fast-20261106b-mxfp4-operator-0001",
+        "upstream-fast-20261106f-mxfp4-model-0001",
+        "upstream-fast-20261106d-mxfp4-operator-0001"
+      ],
+      "private_local_address": "results/archive/mxfp4-fp8-20261105/qualifications-a1",
+      "all_members_independently_reread_by_builder": true
+    },
+    {
+      "partition": "core-quality-a1",
+      "archive_bytes": 44419879,
+      "archive_sha256": "3ebeb30cd7794e568d13b9b0fff1dc8eb4a3c33daf4ada62b30f342f70fe29c5",
+      "file_manifest_sha256": "58834d000affc940f935a5427dc6cd94f4a90b3332c3e43198593fd57e2e6006",
+      "members": 220,
+      "uncompressed_bytes": 153820783,
+      "original_runs": [
+        "upstream-fast-20261106f-mxfp4-quality-0001",
+        "upstream-fast-20261106g-fp8-retained-quality-0001"
+      ],
+      "private_local_address": "results/archive/mxfp4-fp8-20261105/core-quality-a1",
+      "all_members_independently_reread_by_builder": true
+    },
+    {
+      "partition": "tools-a1",
+      "archive_bytes": 6135195,
+      "archive_sha256": "114b8c9ce499191495e3c46ca1de67b4a0ca80a3f0937baa1c1d62ad8dc952a6",
+      "file_manifest_sha256": "1b776354993763f1c8e32fa60d332161af5523afb27792b72a448323ab7d41ea",
+      "members": 798,
+      "uncompressed_bytes": 70644374,
+      "original_runs": [
+        "upstream-fast-20261106g-mxfp4-tools-0001",
+        "upstream-fast-20261106g-fp8-retained-tools-0001"
+      ],
+      "private_local_address": "results/archive/mxfp4-fp8-20261105/tools-a1",
+      "all_members_independently_reread_by_builder": true
+    },
+    {
+      "partition": "services-a1",
+      "archive_bytes": 40936764,
+      "archive_sha256": "3b114a29751ec4dc2f184e4a11b6639b1022a5eec6133f7eeab79e2de38a2fc5",
+      "file_manifest_sha256": "8475ed120ee27a42cf653446d3a19baf02aaea949ba9724bd0f9c565f895d0ee",
+      "members": 419,
+      "uncompressed_bytes": 637210427,
+      "original_runs": [
+        "upstream-fast-20261106g-mxfp4-service-0001",
+        "upstream-fast-20261106g-fp8-retained-service-0001"
+      ],
+      "private_local_address": "results/archive/mxfp4-fp8-20261105/services-a1",
+      "all_members_independently_reread_by_builder": true
+    },
+    {
+      "partition": "analysis-and-controller-a1",
+      "archive_bytes": 4073695,
+      "archive_sha256": "d2e3e55547332026a3a976e2868f4359d3706ce034f2807248fc7893b32b46e9",
+      "file_manifest_sha256": "046a53da3a1b8582ecd15654724991229ccd9aca209587454bd3b94d62743c2a",
+      "members": 1058,
+      "uncompressed_bytes": 26011834,
+      "original_runs": [],
+      "private_local_address": "results/archive/mxfp4-fp8-20261105/analysis-and-controller-a1",
+      "all_members_independently_reread_by_builder": true
+    }
+  ],
+  "campaign_original_tickets": 19,
+  "campaign_allocated_GPU_jobs": 17,
+  "campaign_terminal_status": {
+    "upstream-mxfp4-operator-r0-20261105a": "CONFLICT",
+    "upstream-mxfp4-operator-r1-20261105b": "NOT_LAUNCHED",
+    "upstream-fp8-independent-calibration-r0-20261105a": "NOT_LAUNCHED",
+    "upstream-fp8-opt-operator-r0-20261106a": "FAILED",
+    "upstream-fast-20261106a-fp8-numeric-0001": "CONFLICT",
+    "upstream-fast-20261106a-fp8-numeric-0002": "CONFLICT",
+    "upstream-fast-20261106a-fp8-numeric-0003": "COMPLETE",
+    "upstream-fast-20261106b-mxfp4-operator-0001": "FAILED",
+    "upstream-fast-20261106c-fp8-opt-operator-0001": "COMPLETE",
+    "upstream-fast-20261106d-mxfp4-operator-0001": "COMPLETE",
+    "upstream-fast-20261106e-fp8-retained-0001": "COMPLETE",
+    "upstream-fast-20261106f-mxfp4-model-0001": "COMPLETE",
+    "upstream-fast-20261106f-fp8-model-0001": "COMPLETE",
+    "upstream-fast-20261106f-mxfp4-quality-0001": "COMPLETE",
+    "upstream-fast-20261106g-fp8-retained-quality-0001": "COMPLETE",
+    "upstream-fast-20261106g-mxfp4-tools-0001": "COMPLETE",
+    "upstream-fast-20261106g-fp8-retained-tools-0001": "COMPLETE",
+    "upstream-fast-20261106g-mxfp4-service-0001": "COMPLETE",
+    "upstream-fast-20261106g-fp8-retained-service-0001": "COMPLETE"
+  },
+  "all_current_campaign_GPU_jobs_complete_or_preserved_failure_and_SETTLED": true,
+  "new_formal_service_independently_audited_cases": 6,
+  "core_generations_per_new_format": 1720,
+  "native_tools_per_new_format": 32,
+  "original_UNKNOWN_conflict_record_preserved": {
+    "run_id": "upstream-mxfp4-operator-r0-20261105a",
+    "original_status": "UNKNOWN",
+    "original_result_sha256": "4f3eed37aadf3522cb67132aa881569c09bbbb256d5b6da5f77d8d800e652fdf",
+    "separate_release_certificate_effective_accounting_status": "CONFLICT",
+    "original_result_overwritten": false
+  },
+  "at_campaign_closeout_utc": "2026-11-06T12:35:36.279256+00:00",
+  "global_UNKNOWN_runs_at_closeout": 0,
+  "current_reserved_gpu_us_at_closeout": 0,
+  "all_owned_GPU_jobs_released_at_closeout": true,
+  "cumulative_actual_gpu_hours_at_closeout": 29.465601052777778,
+  "new_downloaded_model_bytes": 0,
+  "weight_identity_final_check": {
+    "GPU_requested": false,
+    "classification": "file_identity_matches_prior_full_SHA_manifest_without_rehash",
+    "files_verified": 18,
+    "index_bytes_read": 112216,
+    "index_sha256": "77042094076611b69791a610065f28b7013b8c621795fa86ddccc8bac7d1b9df",
+    "remote_writes": 0,
+    "source_manifest_sha256": "943247dc4d3192c3d5dd95625c7737b55450a5d930f9d93ea8e56aa2edf0bfa6",
+    "weight_payload_bytes_read": 0
+  },
+  "remote_source_binary_SHA_final_match": true,
+  "independent_archive_receipts": [
+    {
+      "private_path": "reports/operations/fast-idle-20261106g/supervisor-queue-solmax/ARCHIVE_ANALYSIS_INDEPENDENT-a1.json",
+      "sha256": "399af2766e5d52a0456794faba7cec08ac42717867cd63759299160bb89fd90c"
+    },
+    {
+      "private_path": "reports/operations/fast-idle-20261106g/supervisor-queue-solmax/ARCHIVE_CORE_TOOLS_INDEPENDENT-a1.json",
+      "sha256": "4789c2f5b4e8020ec3ebe7f348d7cca13e527bdf7fdcd6def4212683db8f2fbf"
+    },
+    {
+      "private_path": "reports/operations/fast-idle-20261106g/supervisor-queue-solmax/ARCHIVE_EARLIER_FAILURES_INDEPENDENT-a1.json",
+      "sha256": "766f218de55b3d2d1689af4087c9ad2f22a533eaa9ac13899518800e2587d982"
+    },
+    {
+      "private_path": "reports/operations/fast-idle-20261106g/supervisor-queue-solmax/ARCHIVE_QUALIFICATIONS_INDEPENDENT-a1.json",
+      "sha256": "26874540407aa6fe282cc4f49685c34c9f587cd3997fd0f894fbb00d8bf07e09"
+    },
+    {
+      "private_path": "reports/operations/fast-idle-20261106g/supervisor-queue-solmax/ARCHIVE_SERVICES_INDEPENDENT-a1.json",
+      "sha256": "4e7de510ac2dae5ab4da2343e681f796791716db26706971a5a0f800d7b164d9"
+    }
+  ],
+  "baseline_reused_without_new_GPU_runs": "upstream-production-kv-20261102 / bc4f217",
+  "private_authority_and_raw_payloads_not_in_public_git": true,
+  "source_snapshot_scope": "Original per-run immutable source/input/runtime bundles plus current Controller files; publication/catalog epilogues occur after those snapshots.",
+  "not_included": "No weight payloads, installed environments, entire shared caches or reusable 580MB xLLM binaries; exact source/binary identities and qualified JIT seed provenance remain in evidence.",
+  "quality_or_business_SLO_automatically_accepted": false,
+  "new_user_requested_readonly_backend_audit_included_in_these_measurements": false
+}

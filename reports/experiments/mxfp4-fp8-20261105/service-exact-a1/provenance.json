@@ -1,0 +1,439 @@
+{
+  "schema": "service_full_precision_15_case_export_v1",
+  "utc": "2026-11-06T13:12:57.058322+00:00",
+  "python": "/home/mingasa/venvs/vllm/bin/python",
+  "CUDA_VISIBLE_DEVICES": "",
+  "source_SHA256": {
+    "reports/experiments/upstream-production-kv-20261102/A-service-c1.json": "ff61bb7747a7ae4e1fe57bd4ad4b1fc45daf2e0eca4c6102a72f8507f81a128f",
+    "reports/experiments/upstream-production-kv-20261102/C-fp8-service-a1.json": "339f066369ab99bedfc9e2282c64f8ba47141477c88a8ac4dad0f91318c759ed",
+    "reports/experiments/upstream-production-kv-20261102/C-nvfp4-service-a1.json": "c5aea2028da225f3ba69caf9ff9886b110b2b23ac622f9463dc28d0365350aff",
+    "reports/experiments/mxfp4-fp8-20261105/FP8-retained-service-a1.json": "c19c570cff63fdec67c88ee1f3e65631a0bc0f549e1b354e89d77eb7f7876e99",
+    "reports/experiments/mxfp4-fp8-20261105/MXFP4-service-a1.json": "f1798a7177c70674bd724d56713618f30cfea332c703452f162af391be93807c"
+  },
+  "source_identity": {
+    "BF16": {
+      "run_id": "upstream-A-production-service-r0-20261102c",
+      "source_identity": {
+        "binary_sha256": "b774ace2fd7341bc70477be0cd7a44d930330a15311a42c1af216287c021721a",
+        "gpu_uuids": [
+          "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+        ],
+        "image_id": "sha256:a77472b8bcd25797bad288712f7abd676beae6264b353de301ec43a08bd39dc2",
+        "model_config_sha256": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab",
+        "model_id": "Qwen3.8-27B",
+        "operators": {
+          "bf16": {
+            "decode": "official_auto",
+            "planner": "official_auto"
+          }
+        },
+        "server_source_commit": "721afdabc1de1af8e594b4da3e6fa926def50821",
+        "service": {
+          "block_size": 128,
+          "max_batch": 32,
+          "max_memory_utilization": 0.9,
+          "max_tokens_per_batch": 8192
+        },
+        "upstream_commit": "261274e5f45449e98d7740144c3a958a29f1fd3e"
+      },
+      "native_configuration": null,
+      "raw_SHA_manifest_sha256": "1b079bb6d1e9c0f81764b51bb5f5af3ff63d7c2acb53c9915a965dd915631eb1"
+    },
+    "FP8": {
+      "run_id": "upstream-C-fp8-production-service-r0-20261102a",
+      "source_identity": {
+        "binary_sha256": "74668d5e5d73a0dc23f70679350851b10c11c99e42c6961f511dee33ab7f60e9",
+        "gpu_uuids": [
+          "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+        ],
+        "image_id": "sha256:a77472b8bcd25797bad288712f7abd676beae6264b353de301ec43a08bd39dc2",
+        "model_config_sha256": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab",
+        "model_id": "Qwen3.8-27B",
+        "operators": {
+          "fp8_e4m3": {
+            "decode": "xqa",
+            "planner": "fa3"
+          }
+        },
+        "server_source_commit": "da7c6446ff4361c8060633b04d6bfb77e6f737ff",
+        "service": {
+          "block_size": 128,
+          "max_batch": 32,
+          "max_memory_utilization": 0.9,
+          "max_tokens_per_batch": 8192
+        },
+        "upstream_commit": "261274e5f45449e98d7740144c3a958a29f1fd3e"
+      },
+      "native_configuration": {
+        "decode": "xqa",
+        "dtype": "fp8_e4m3",
+        "key_scale": 0.125,
+        "prefill": "fa3",
+        "value_scale": 0.0625
+      },
+      "raw_SHA_manifest_sha256": "7ed66bc93847dc852ff6922a0e43f65317bae6072e56c2192d6b6a1bceb0b7fd"
+    },
+    "NVFP4": {
+      "run_id": "upstream-C-nvfp4-production-service-r0-20261102a",
+      "source_identity": {
+        "binary_sha256": "74668d5e5d73a0dc23f70679350851b10c11c99e42c6961f511dee33ab7f60e9",
+        "gpu_uuids": [
+          "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+        ],
+        "image_id": "sha256:a77472b8bcd25797bad288712f7abd676beae6264b353de301ec43a08bd39dc2",
+        "model_config_sha256": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab",
+        "model_id": "Qwen3.8-27B",
+        "operators": {
+          "nvfp4": {
+            "decode": "flashinfer",
+            "planner": "fa2"
+          }
+        },
+        "server_source_commit": "da7c6446ff4361c8060633b04d6bfb77e6f737ff",
+        "service": {
+          "block_size": 128,
+          "max_batch": 32,
+          "max_memory_utilization": 0.9,
+          "max_tokens_per_batch": 8192
+        },
+        "upstream_commit": "261274e5f45449e98d7740144c3a958a29f1fd3e"
+      },
+      "native_configuration": {
+        "decode": "flashinfer",
+        "dtype": "nvfp4",
+        "key_scale": 1.0,
+        "prefill": "fa2",
+        "value_scale": 1.0
+      },
+      "raw_SHA_manifest_sha256": "d61e6739d8eb3a300d0dc33be9c709a92be073d24344c1b3915ea4950305a58c"
+    },
+    "FP8 retained": {
+      "run_id": "upstream-fast-20261106g-fp8-retained-service-0001",
+      "source_identity": {
+        "binary_sha256": "74668d5e5d73a0dc23f70679350851b10c11c99e42c6961f511dee33ab7f60e9",
+        "gpu_uuids": [
+          "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+        ],
+        "image_id": "sha256:a77472b8bcd25797bad288712f7abd676beae6264b353de301ec43a08bd39dc2",
+        "model_config_sha256": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab",
+        "model_id": "Qwen3.8-27B",
+        "operators": {
+          "fp8_e4m3": {
+            "decode": "xqa",
+            "planner": "fa3"
+          }
+        },
+        "server_source_commit": "da7c6446ff4361c8060633b04d6bfb77e6f737ff",
+        "service": {
+          "block_size": 128,
+          "max_batch": 32,
+          "max_memory_utilization": 0.9,
+          "max_tokens_per_batch": 8192
+        },
+        "upstream_commit": "261274e5f45449e98d7740144c3a958a29f1fd3e"
+      },
+      "native_configuration": {
+        "decode": "xqa",
+        "dtype": "fp8_e4m3",
+        "key_scale": 0.125,
+        "prefill": "fa3",
+        "value_scale": 0.5
+      },
+      "raw_SHA_manifest_sha256": "ece31543893de70e09f05d9ceade61a45b0ddd1f1f3adf4a53d196c6eff957af"
+    },
+    "MXFP4": {
+      "run_id": "upstream-fast-20261106g-mxfp4-service-0001",
+      "source_identity": {
+        "binary_sha256": "f5ee7ebf79c377779e145c838fe0880483fe953c60728201d50dca9b2413f734",
+        "gpu_uuids": [
+          "GPU-0c628a64-5f31-3501-fa3c-723f5b69254a"
+        ],
+        "image_id": "sha256:a77472b8bcd25797bad288712f7abd676beae6264b353de301ec43a08bd39dc2",
+        "model_config_sha256": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab",
+        "model_id": "Qwen3.8-27B",
+        "operators": {
+          "mxfp4": {
+            "decode": "flashinfer",
+            "planner": "fa2"
+          }
+        },
+        "server_source_commit": "ba5eaec0a1b5b941da4b8ded0343d43f2c2b4158",
+        "service": {
+          "block_size": 128,
+          "max_batch": 32,
+          "max_memory_utilization": 0.9,
+          "max_tokens_per_batch": 8192
+        },
+        "upstream_commit": "261274e5f45449e98d7740144c3a958a29f1fd3e"
+      },
+      "native_configuration": {
+        "decode": "flashinfer",
+        "dtype": "mxfp4",
+        "key_scale": 1.0,
+        "prefill": "fa2",
+        "value_scale": 1.0
+      },
+      "raw_SHA_manifest_sha256": "43df46dde98b817ac5dc8362cf41dc9e3211eccb11b81f435437c78a4e09b1fc"
+    }
+  },
+  "input_files_sha256": {
+    "govreport/manifest.json": "c1da60804557d3d7ee8fef49bcd1bcac8ef13c0c05ba8b419e360eee179e5fd7",
+    "govreport/measured64.json": "eb9cf0ab103ee8d87b38520fe6640724063047efaf9c507e60628b4388f62b52",
+    "govreport/warmup4.json": "5e3dabd9cef8175c8c98863fe1aa36817c3f90d3889e56bb9ae2b506160e6f37",
+    "sharegpt/manifest.json": "78c5912f12f4d8569208efd05ca2062a882315d722c21eba4d4989899d032d46",
+    "sharegpt/measured512.json": "1656ae9cbbc3396cf194a9e6a06fe22ae08d6584b9c5e45a772623744dd80570",
+    "sharegpt/retokenized_Qwen38_CPU-a1.json": "d8826fc7d86c3bc54ad35414d37556af51cb3664995d668abf62b003e7269011",
+    "sharegpt/warmup16.json": "7e5accf28a8aab0fdf3fa11ff24998d563811badd653cbe3dabb9e4bad6b70ca"
+  },
+  "plot_helper_sha256": "e3911b0a698fd51d2476e63e60062049683765eaf46dc744a190a551879a836f",
+  "ordered_formats": [
+    "BF16",
+    "FP8",
+    "NVFP4",
+    "FP8 retained",
+    "MXFP4"
+  ],
+  "ordered_cases": [
+    "sharegpt-c32",
+    "sharegpt-c64",
+    "govreport-c32"
+  ],
+  "CSV_rows": 15,
+  "CSV_columns": 98,
+  "precision": "Original parsed JSON scalar values written without formatting or rounding; float.hex roundtrip checked for every float; LF CSV.",
+  "columns": {
+    "profile_fields": "Original cases[case].profile key names; finish_reason_counts stored as compact JSON",
+    "application_fields": "application_ prefix refers to original application scalar keys",
+    "sampled_fields": "sampled_<original gauge>_<min|mean|max> from application.ranges",
+    "successful_HTTP_responses": "profile.profiling_records after original HTTP/SSE audit; not semantic correctness",
+    "intended_response_denominator": "Goodput.all_intended_requests_remain_denominator",
+    "nonempty_answers": "denominator minus empty_or_whitespace_answers"
+  },
+  "independent_completed_samples_per_case": 1,
+  "statistical_significance_claim": false,
+  "ITL_definition": "Across-request quantiles of per-request mean intervals; not individual-token interval tails; original one-token handling retained.",
+  "Goodput_definition": "16 predeclared latency sensitivity points, not business SLO or semantic quality.",
+  "Goodput_threshold_pairs_ms": [
+    [
+      1000,
+      25
+    ],
+    [
+      1000,
+      50
+    ],
+    [
+      1000,
+      100
+    ],
+    [
+      1000,
+      200
+    ],
+    [
+      5000,
+      25
+    ],
+    [
+      5000,
+      50
+    ],
+    [
+      5000,
+      100
+    ],
+    [
+      5000,
+      200
+    ],
+    [
+      10000,
+      25
+    ],
+    [
+      10000,
+      50
+    ],
+    [
+      10000,
+      100
+    ],
+    [
+      10000,
+      200
+    ],
+    [
+      30000,
+      25
+    ],
+    [
+      30000,
+      50
+    ],
+    [
+      30000,
+      100
+    ],
+    [
+      30000,
+      200
+    ]
+  ],
+  "Goodput_points": 240,
+  "sampling_limitations": [
+    "One-second sequential samples can miss peaks.",
+    "Prefix blocks can overlap active usage and include GDN checkpoints; do not sum these gauges.",
+    "Gauge values are bound to the frozen collector and SHA; original HTML is not retained."
+  ],
+  "Gov_sampled_running_max": {
+    "BF16": 13.0,
+    "FP8": 24.0,
+    "NVFP4": 32.0,
+    "FP8 retained": 24.0,
+    "MXFP4": 32.0
+  },
+  "new_FP8_output_means": {
+    "sharegpt-c32": 740.6640625,
+    "sharegpt-c64": 747.345703125,
+    "govreport-c32": 511.875
+  },
+  "comparison_percent_changes_from_exact_profiles": {
+    "FP8 retained vs BF16": {
+      "sharegpt-c32": {
+        "request_rps": -3.261201483751286,
+        "output_tps": -2.1871742530932936,
+        "osl_mean": 1.1102342050253844,
+        "observation_seconds": 3.371141190267646,
+        "ttft_p95_ms": -6.156384532638947,
+        "itl_p95_ms": 3.165474403910795,
+        "e2e_p95_ms": 2.232265124474231
+      },
+      "sharegpt-c64": {
+        "request_rps": -0.98641570125656,
+        "output_tps": 0.7843649669754704,
+        "osl_mean": 1.7884219430833292,
+        "observation_seconds": 0.9962427966251131,
+        "ttft_p95_ms": 0.5966775769981725,
+        "itl_p95_ms": 0.3429239566713038,
+        "e2e_p95_ms": -0.26168870580274284
+      },
+      "govreport-c32": {
+        "request_rps": 28.42528220985021,
+        "output_tps": 28.63338873007899,
+        "osl_mean": 0.16204482220931737,
+        "observation_seconds": -22.133712085913558,
+        "ttft_p95_ms": -17.980871202278117,
+        "itl_p95_ms": 54.59308004463577,
+        "e2e_p95_ms": 5.694039493417691
+      }
+    },
+    "FP8 retained vs FP8": {
+      "sharegpt-c32": {
+        "request_rps": -1.5710101405888244,
+        "output_tps": -1.4025296786716823,
+        "osl_mean": 0.17116955295162217,
+        "observation_seconds": 1.5960847945638346,
+        "ttft_p95_ms": -4.810561347214303,
+        "itl_p95_ms": 2.359757133862961,
+        "e2e_p95_ms": 0.5131452990903895
+      },
+      "sharegpt-c64": {
+        "request_rps": -1.1790487819358209,
+        "output_tps": -0.19440225559618218,
+        "osl_mean": 0.9963945035975863,
+        "observation_seconds": 1.1931162040062393,
+        "ttft_p95_ms": 0.25897110256580813,
+        "itl_p95_ms": 0.12100006320669987,
+        "e2e_p95_ms": 0.4005260070929495
+      },
+      "govreport-c32": {
+        "request_rps": 0.1355724276614012,
+        "output_tps": 0.2579875528786024,
+        "osl_mean": 0.12224938875304847,
+        "observation_seconds": -0.13538887767315932,
+        "ttft_p95_ms": 1.0744936083751044,
+        "itl_p95_ms": -1.557544678563949,
+        "e2e_p95_ms": -0.011348594346716201
+      }
+    },
+    "MXFP4 vs BF16": {
+      "sharegpt-c32": {
+        "request_rps": -16.483611622000673,
+        "output_tps": -14.313177773401087,
+        "osl_mean": 2.5988119107546614,
+        "observation_seconds": 19.736978504619973,
+        "ttft_p95_ms": 10.667859370128907,
+        "itl_p95_ms": 14.558142161362998,
+        "e2e_p95_ms": 16.250957101783612
+      },
+      "sharegpt-c64": {
+        "request_rps": -18.146867020793255,
+        "output_tps": -16.452181121269515,
+        "osl_mean": 2.0703983315510266,
+        "observation_seconds": 22.170033522605827,
+        "ttft_p95_ms": 23.519243086404785,
+        "itl_p95_ms": 20.472326521475303,
+        "e2e_p95_ms": 21.612561356889472
+      },
+      "govreport-c32": {
+        "request_rps": -28.930404861473935,
+        "output_tps": -28.94344236325739,
+        "osl_mean": -0.018344696853889175,
+        "observation_seconds": 40.70714741667507,
+        "ttft_p95_ms": 22.10073671410249,
+        "itl_p95_ms": 299.6827520225467,
+        "e2e_p95_ms": 102.88255738318135
+      }
+    },
+    "MXFP4 vs FP8": {
+      "sharegpt-c32": {
+        "request_rps": -15.024438272592377,
+        "output_tps": -13.625806770200555,
+        "osl_mean": 1.6459220438912459,
+        "observation_seconds": 17.68089314994956,
+        "ttft_p95_ms": 12.254961170074319,
+        "itl_p95_ms": 13.66344871767633,
+        "e2e_p95_ms": 14.296101412826756
+      },
+      "sharegpt-c64": {
+        "request_rps": -18.306114070384538,
+        "output_tps": -17.263555650073158,
+        "osl_mean": 1.2761768012965025,
+        "observation_seconds": 22.40818130031963,
+        "ttft_p95_ms": 23.1045847784767,
+        "itl_p95_ms": 20.20588334140685,
+        "e2e_p95_ms": 22.420010634488662
+      },
+      "govreport-c32": {
+        "request_rps": -44.5857196578338,
+        "output_tps": -44.617897876858905,
+        "osl_mean": -0.0580684596577008,
+        "observation_seconds": 80.4588986494648,
+        "ttft_p95_ms": 50.468193377472524,
+        "itl_p95_ms": 154.51172489329946,
+        "e2e_p95_ms": 91.9309111819661
+      }
+    }
+  },
+  "checks": {
+    "five_complete_reports_three_cases_each": true,
+    "all_15_threshold_orders_identical": true,
+    "15_unique_exact_rows": true,
+    "every_exact_cell_roundtrips_original_float_precision": true,
+    "helper_service_15_rows": true,
+    "helper_240_Goodput_rows": true,
+    "helper_service_values_match_source": true,
+    "all_240_Goodput_cells_and_threshold_identity_match": true,
+    "all_15_real_prefix_hit_deltas_zero": true,
+    "all_15_empty_answer_counts_zero": true,
+    "required_Running_Waiting_UsedBlocks_min_mean_max_present": true,
+    "prefix_counter_deltas_match_successful_prompt_totals": true,
+    "Gov_sampled_running_A13_oldFP8_24_newFP8_24_MX32": true,
+    "new_FP8_natural_output_mean_values_exact": true,
+    "CSV_LF_only": true
+  },
+  "raw_audit_reexecuted": false,
+  "SSH_calls": 0,
+  "GPU_actions": 0,
+  "Git_actions": 0
+}

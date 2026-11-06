@@ -1,0 +1,23 @@
+{
+  "source_SHA256": {
+    "reports/experiments/upstream-production-kv-20261102/quality-pair-A-FP8-a1.json": "c9aafeceeb1954a65b83d43a52fc96879457be5b500f8ce4394f78906496af26",
+    "reports/experiments/upstream-production-kv-20261102/quality-pair-A-NVFP4-a1.json": "860dea96af8cff085d960fc4d70a6b0edabf3b4254273cbd664bc2dd93055e64",
+    "reports/experiments/upstream-production-kv-20261102/tools-pair-A-FP8-c1.json": "1136af6e6efb12e69ddc5343e5a77a773e9e57f5bbdfc0a478743bd63900234a",
+    "reports/experiments/upstream-production-kv-20261102/tools-pair-A-NVFP4-b1.json": "5bee388ba5aae220b5e072f91f9730f5c6c160136bc90d78650395f03b35e49f",
+    "reports/experiments/mxfp4-fp8-20261105/quality-pair-A-FP8-retained-a1.json": "b7a03e762c35d9ba9485bd10bb9dea3242d1afb110a25ac0caaeff7a87b17326",
+    "reports/experiments/mxfp4-fp8-20261105/tools-pair-A-FP8-retained-a1.json": "a700aef62d2ccbc33ebdca939e08de39d6f0227cf98c837d4d9ff2994e5f3844",
+    "reports/experiments/mxfp4-fp8-20261105/quality-pair-A-MXFP4-a1.json": "5ea2b77e27c1d202e529342e34620b4a8a8922b18c491bc97ddb1fc03e5beae8",
+    "reports/experiments/mxfp4-fp8-20261105/tools-pair-A-MXFP4-a1.json": "fa123fd4069bc4b4cf4863630ae99a976e659122141ab340b6a0ebeaee491ca6"
+  },
+  "GSM_unit": "paired questions",
+  "LongBench_unit": "complete same-context question clusters within task",
+  "LongBench_task_macro_weights": "equal eight fixed core tasks; one supplement excluded",
+  "tool_counts": {
+    "BF16": 26,
+    "FP8": 26,
+    "NVFP4": 27,
+    "FP8 retained": 26,
+    "MXFP4": 23
+  },
+  "noninferiority_or_production_quality_accepted": false
+}

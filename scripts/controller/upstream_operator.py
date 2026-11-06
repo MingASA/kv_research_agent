@@ -97,7 +97,8 @@ def _writer(backend: object, key: object, value: object, slots: object) -> None:
             key, value, slots, backend._pages[1], backend._block_scales[1], *backend._global_scales, kv_layout='NHD')
 
 
-def _fixture(candidate: tuple[str, str, str], batch: int, context: int) -> tuple:
+def _fixture(candidate: tuple[str, str, str], batch: int, context: int,
+             fp8_value_scale: float=.0625) -> tuple:
     import torch
     from xllm.python.attention.backend import LayerCache
     from xllm.python.attention.flashinfer_native_kv import FlashInferNativeKVBackend
@@ -110,7 +111,7 @@ def _fixture(candidate: tuple[str, str, str], batch: int, context: int) -> tuple
     owners = tuple(torch.zeros((2 + batch * pages, page, 4, physical), dtype=torch.uint8, device='cuda') for _ in range(2))
     state = LayerCache(None, None, conv=torch.arange(12, device='cuda', dtype=torch.bfloat16),
                        ssm=torch.arange(16, device='cuda', dtype=torch.float32))
-    scales = (.125, .0625) if fmt == 'fp8_e4m3' else (1., 1.)
+    scales = (.125, fp8_value_scale) if fmt == 'fp8_e4m3' else (1., 1.)
     backend = FlashInferNativeKVBackend(24, 4, 256, 256**-.5, 0, torch.device('cuda', 0),
                                        torch.bfloat16, fmt, *scales, prefill_backend=prefill,
                                        decode_backend=decode, max_context_tokens=262144)

@@ -11,6 +11,7 @@ FAST_ADMISSION = {
     'foreign_gpu_action':'stop_owned_then_reobserve',
 }
 _KINDS = {'upstream_next_stage_native_operator','upstream_FP8_optimization_operator',
+          'upstream_FP8_retained_candidate_operator',
           'upstream_FP8_independent_numeric_calibration','upstream_next_stage_model_qualification'}
 _FORMAL = {'upstream_AC_fixed_production_service','upstream_AC_frozen_core_quality1720',
            'upstream_AC_real_native_tools32'}

@@ -1,0 +1,59 @@
+{
+  "utc": "2026-11-06T04:47:03.493786+00:00",
+  "runtime_upgrade_performed": false,
+  "OCP": {
+    "url": "https://www.opencompute.org/documents/ocp-microscaling-formats-mx-v1-0-spec-final-pdf",
+    "version": "1.0",
+    "read_via_web": true,
+    "page_count": 16,
+    "local_PDF_download": "HTTP403; no raw PDF archive or PDF SHA claimed"
+  },
+  "research_refs": [
+    {
+      "project": "FlashInfer research only",
+      "ref": "cc71fa8a5458689bb85756bf2b733231eec5810f",
+      "files": [
+        "flashinfer-prefill-current.txt"
+      ],
+      "sha256": {
+        "flashinfer-prefill-current.txt": "fc251b94df83b8d99d621675df0fa1ef7eb34d86789ecefb591a21b5f40a5420"
+      }
+    },
+    {
+      "project": "SGLang",
+      "ref": "c843608d390ac416791e49e0252d2f17fafdc489",
+      "files": [
+        "sglang-fp4-kv-current.txt"
+      ],
+      "sha256": {
+        "sglang-fp4-kv-current.txt": "4c9b6d89a369d2f5b9a5b607b5eb2ae68c13a458458af904a156583fbcd313b5"
+      }
+    },
+    {
+      "project": "vLLM",
+      "ref": "e336407a3ddb204edf6cfdfdd002cb28b9715438",
+      "files": [
+        "vllm-cache-current.txt",
+        "vllm-flashinfer-current.txt",
+        "vllm-quantized-kv-current.txt"
+      ],
+      "sha256": {
+        "vllm-cache-current.txt": "ac13de82a914dabee66eec1e5050d849db3382033f333682a9cb2e33cfb62793",
+        "vllm-flashinfer-current.txt": "dc57a2b623cef626e1cd764ffd0d45621c5995f82086f8455437f32c4e56af5d",
+        "vllm-quantized-kv-current.txt": "80d6470b5b36ef547eb420cc5dae991f6f07c262ec60066524529ceaa06d1334"
+      }
+    },
+    {
+      "project": "TensorRT-LLM",
+      "ref": "0a96c515336c2a2bd2594ace92ad5365ca94c6e4",
+      "files": [
+        "tensorrt-quantization-current.txt"
+      ],
+      "sha256": {
+        "tensorrt-quantization-current.txt": "d65e5eff2a82cf463539722e8fef9c8e2fb1a24eb3c22bf2056985442d172171"
+      }
+    }
+  ],
+  "installed_FlashInfer": "0.6.18.post1@8bc3b578027791336c6ae87db5c9d76f82cef8bc",
+  "AIPerf_actual": "0.13.0"
+}

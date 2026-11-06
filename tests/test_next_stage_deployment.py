@@ -73,6 +73,28 @@ class NextStageAdmissionTest(unittest.TestCase):
         self.assertTrue(operator_acceptance_passed(result,'fp8_e4m3'))
         self.assertFalse(operator_acceptance_passed(result,'mxfp4'))
 
+    def test_retained_candidate_does_not_relabel_failed_mixed_optimization(self):
+        result={'schema':'FP8_retained_candidate_operator_v1','query_gate':True,'query_component_reused':True,
+            'writer_two_scales_bitwise':True,'normal_mixed_all_FA3':True,'pure_XQA':True,
+            'independent_snapshot_oracle':True,'finite_outputs':True,
+            'rejected_mixed_split_present':False,'previous_mixed_performance_gate_passed':False,
+            'scale_rows':[{'value_scale':s,'writer_Torch_bitwise':True,'mixed_all_FA3_direct_pass':True,
+                           'pure_XQA_direct_pass':True,'GDN_unchanged':True,
+                           'direct_uses_independent_verified_snapshot':True,'finite_outputs':True} for s in (.0625,.5)]}
+        self.assertTrue(operator_acceptance_passed(result,'fp8_e4m3'))
+        for update in ({'rejected_mixed_split_present':True},{'query_component_reused':False},{'scale_rows':[]}):
+            self.assertFalse(operator_acceptance_passed(dict(result,**update),'fp8_e4m3'))
+        self.assertFalse(operator_acceptance_passed({'schema':'FP8_finite_optimization_operator_v1',
+            'query_gate':True,'mixed_gate':False},'fp8_e4m3'))
+
+    def test_retained_source_manifest_excludes_removed_mixed_module(self):
+        request=copy.deepcopy(self.request)
+        request['fp8_component_selection']='retained_query_and_range_original_mixed'
+        request['backend_source_sha256'].pop('xllm/python/attention/mixed_native_kv.py')
+        validate_deployment(request,self.approval)
+        request['backend_source_sha256']['xllm/python/attention/mixed_native_kv.py']='3'*64
+        with self.assertRaises(ApprovalError):validate_deployment(request,self.approval)
+
     def test_previous_fp8_reference_cannot_be_relabelled_official_A(self):
         reference=copy.deepcopy(self.request)
         reference.update(server_source_commit=LEGACY_C_COMMIT,python_source_commit=LEGACY_C_COMMIT,

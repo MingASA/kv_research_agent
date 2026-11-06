@@ -1,0 +1,50 @@
+{
+  "schema": "CPU_service_plot_execution_v1",
+  "started_utc": "2026-11-06T13:04:57.576624+00:00",
+  "finished_utc": "2026-11-06T13:05:02.976938+00:00",
+  "elapsed_seconds": 5.400316283805296,
+  "python": "/home/mingasa/venvs/vllm/bin/python",
+  "python_version": "3.12.13 (main, Jul 18 2026, 17:02:19) [Clang 22.1.3 ]",
+  "argv": [
+    "/home/mingasa/venvs/vllm/bin/python",
+    "-B",
+    "/home/mingasa/kv-research-agent/scripts/plot_upstream_service.py",
+    "--bf16",
+    "/home/mingasa/kv-research-agent/reports/experiments/upstream-production-kv-20261102/A-service-c1.json",
+    "--fp8",
+    "/home/mingasa/kv-research-agent/reports/experiments/upstream-production-kv-20261102/C-fp8-service-a1.json",
+    "--nvfp4",
+    "/home/mingasa/kv-research-agent/reports/experiments/upstream-production-kv-20261102/C-nvfp4-service-a1.json",
+    "--optimized-fp8",
+    "/home/mingasa/kv-research-agent/reports/experiments/mxfp4-fp8-20261105/FP8-retained-service-a1.json",
+    "--mxfp4",
+    "/home/mingasa/kv-research-agent/reports/experiments/mxfp4-fp8-20261105/MXFP4-service-a1.json",
+    "--out",
+    "/home/mingasa/kv-research-agent/reports/experiments/mxfp4-fp8-20261105/service-figures-a1"
+  ],
+  "CUDA_VISIBLE_DEVICES": "",
+  "MPLBACKEND": "Agg",
+  "plot_helper_sha256": "e3911b0a698fd51d2476e63e60062049683765eaf46dc744a190a551879a836f",
+  "input_SHA_before": {
+    "/home/mingasa/kv-research-agent/reports/experiments/upstream-production-kv-20261102/A-service-c1.json": "ff61bb7747a7ae4e1fe57bd4ad4b1fc45daf2e0eca4c6102a72f8507f81a128f",
+    "/home/mingasa/kv-research-agent/reports/experiments/upstream-production-kv-20261102/C-fp8-service-a1.json": "339f066369ab99bedfc9e2282c64f8ba47141477c88a8ac4dad0f91318c759ed",
+    "/home/mingasa/kv-research-agent/reports/experiments/upstream-production-kv-20261102/C-nvfp4-service-a1.json": "c5aea2028da225f3ba69caf9ff9886b110b2b23ac622f9463dc28d0365350aff",
+    "/home/mingasa/kv-research-agent/reports/experiments/mxfp4-fp8-20261105/FP8-retained-service-a1.json": "c19c570cff63fdec67c88ee1f3e65631a0bc0f549e1b354e89d77eb7f7876e99",
+    "/home/mingasa/kv-research-agent/reports/experiments/mxfp4-fp8-20261105/MXFP4-service-a1.json": "f1798a7177c70674bd724d56713618f30cfea332c703452f162af391be93807c"
+  },
+  "input_SHA_after": {
+    "/home/mingasa/kv-research-agent/reports/experiments/upstream-production-kv-20261102/A-service-c1.json": "ff61bb7747a7ae4e1fe57bd4ad4b1fc45daf2e0eca4c6102a72f8507f81a128f",
+    "/home/mingasa/kv-research-agent/reports/experiments/upstream-production-kv-20261102/C-fp8-service-a1.json": "339f066369ab99bedfc9e2282c64f8ba47141477c88a8ac4dad0f91318c759ed",
+    "/home/mingasa/kv-research-agent/reports/experiments/upstream-production-kv-20261102/C-nvfp4-service-a1.json": "c5aea2028da225f3ba69caf9ff9886b110b2b23ac622f9463dc28d0365350aff",
+    "/home/mingasa/kv-research-agent/reports/experiments/mxfp4-fp8-20261105/FP8-retained-service-a1.json": "c19c570cff63fdec67c88ee1f3e65631a0bc0f549e1b354e89d77eb7f7876e99",
+    "/home/mingasa/kv-research-agent/reports/experiments/mxfp4-fp8-20261105/MXFP4-service-a1.json": "f1798a7177c70674bd724d56713618f30cfea332c703452f162af391be93807c"
+  },
+  "inputs_stable": true,
+  "helper_unchanged": true,
+  "exit_code": 0,
+  "stdout": "{\"figure\": \"/home/mingasa/kv-research-agent/reports/experiments/mxfp4-fp8-20261105/service-figures-a1/service.png\", \"service_rows\": 15, \"Goodput_points_exported\": 240}\n",
+  "stderr": "",
+  "GPU_actions": 0,
+  "SSH_calls": 0,
+  "Git_actions": 0
+}

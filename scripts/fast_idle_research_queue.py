@@ -79,6 +79,15 @@ def now() -> dt.datetime:return dt.datetime.now(dt.timezone.utc)
 def sha(path: Path) -> str:return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def coordinator_epoch() -> dict:
+    return {p.name:sha(p) for p in sorted((ROOT/'scripts/controller').glob('*.py'))}
+
+
+def require_coordinator_epoch(manifest: dict) -> None:
+    if manifest.get('coordinator_runtime_sha256')!=coordinator_epoch():
+        raise RuntimeError('Controller runtime changed; create a fresh queue handoff before new admission')
+
+
 def idle_candidates(sample: dict,allowed: list[str],boot: str,at: dt.datetime) -> list[str]:
     if sample.get('ok') is not True or sample.get('remote_writes') is not False or sample.get('boot_id')!=boot:
         return []
@@ -229,6 +238,7 @@ class Runner:
         wall=json.loads(Path(stage['package']).read_bytes())['request']['max_wall_seconds']
         if (dt.datetime.fromisoformat(self.manifest['not_after_utc'])-now()).total_seconds()<wall+180:
             self.event('WATCH_ONLY_INSUFFICIENT_COMPLETE_JOB_WINDOW');return
+        require_coordinator_epoch(self.manifest)
         attempt=self.state.get('attempt',0)+1;self.state['attempt']=attempt
         path=prepare_attempt(self.manifest,stage,uuid,attempt)
         package=json.loads(path.read_bytes());request=package['request']
@@ -294,6 +304,7 @@ class Runner:
         generation=len(self.state.get('accepted_stage_batches',[]))+1
         path=self.directory/f'NEXT_STAGES-{generation:04}.json'
         if not path.exists():return
+        require_coordinator_epoch(self.manifest)
         batch=json.loads(path.read_bytes())
         if batch.get('parent_manifest_sha256')!=self.state['manifest_sha256']:
             raise ValueError('Next-stage handoff belongs to another queue')
@@ -387,6 +398,7 @@ def main():
             or re.fullmatch('[a-z0-9-]{1,32}',manifest.get('campaign','')) is None):raise ValueError('Invalid finite user queue')
     if manifest.get('runner_sha256')!=sha(Path(__file__)):
         raise ValueError('Reviewed queue runner changed')
+    require_coordinator_epoch(manifest)
     runtime_contract={'runtime/kv_controller/'+name:sha(ROOT/'scripts/controller'/name)
                       for name in ('idle_admission.py','supervisor.py','nextgen.py')}
     if manifest.get('runtime_contract')!=runtime_contract:

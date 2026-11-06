@@ -270,6 +270,20 @@ def main() -> None:
         if file_sha(Path(name)) != expected:
             raise ValueError("Binary/input/model config identity drift")
     env = environment(args.arm)
+    if args.arm=='mxfp4':env['FLASHINFER_CUDA_ARCH_LIST']='9.0a'
+    if request.get('native_jit_artifact') is not None or request.get('cpu_native_jit_artifact') is not None:
+        from .native_jit_reuse import install
+        install(request,output)
+    if request.get('native_jit_artifact',{}).get('cache_tree'):
+        # Verify FI's real dependency scan without a GPU context, then let the
+        # model use the unchanged official build_and_load path in this cache.
+        check_env=dict(env,CUDA_VISIBLE_DEVICES='',
+            PYTHONPATH=request['python_source_repo']+':'+env.get('PYTHONPATH',''))
+        with (output/'native_JIT_cache_check.log').open('x') as log:
+            subprocess.run([sys.executable,'-B','-m',__package__+'.native_jit_reuse',
+                '--receipt',str(output/'native_JIT_reuse.json'),
+                '--out',str(output/'native_JIT_cache_check.json')],env=check_env,
+                stdout=log,stderr=subprocess.STDOUT,check=True,timeout=180)
     write_new_json(output / "runtime_environment.json", {key: value for key, value in env.items()
                    if key.startswith(("XLLM_", "FLASHINFER_")) or key in ("LD_LIBRARY_PATH", "PYTHONPATH")})
     if request["schema"] == "kv-nextgen-run-v1":

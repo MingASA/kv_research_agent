@@ -17,7 +17,7 @@ p=json.load(sys.stdin);lib={'__name__':'bounded_upstream_readonly_mirror'};exec(
 t=p['ticket'];root=lib['check_ticket'](t,False);lib['existing'](root,t)
 lib['require'](t['request']['workload']['kind'].startswith('upstream_'),'Only frozen upstream runs may use this export')
 r=json.loads(lib['regular'](root/'result.json'))
-lib['require'](r['status'] in ('COMPLETE','FAILED','NOT_LAUNCHED','TIMED_OUT') and r['gpu_release_verified'] and not r['live_owned_containers'],'Original run not terminal/released')
+lib['require'](r['status'] in ('COMPLETE','FAILED','NOT_LAUNCHED','TIMED_OUT','CONFLICT') and r['gpu_release_verified'] and not r['live_owned_containers'],'Original run not terminal/released')
 def digest(path):
  h=hashlib.sha256()
  with path.open('rb') as f:
@@ -85,7 +85,9 @@ def decode_evidence(value: dict, expected_size: int) -> bytes:
 
 
 def mirror(run: str, destination: Path, *, omit_large_core_dumps: bool = False,
-           reuse_local_frozen_assets: bool = False):
+           reuse_local_frozen_assets: bool = False, chunk_mib: int = 16):
+    if type(chunk_mib) is not int or chunk_mib not in (1, 2, 4, 8, 16):
+        raise ValueError('Evidence chunks must use one of the bounded MiB sizes')
     secure_directory(destination)
     ticket = json.loads((Path('state/controller/tickets')/(run+'.json')).read_bytes())
     transport = PinnedSSH(ticket['approval'], destination/'pin')
@@ -189,7 +191,7 @@ def mirror(run: str, destination: Path, *, omit_large_core_dumps: bool = False,
         with partial.open('ab') as stream:
             partial.chmod(0o600)
             while offset < item['size']:
-                length = min(16*2**20, item['size']-offset)
+                length = min(chunk_mib*2**20, item['size']-offset)
                 value = fetch([dict(item, offset=offset, length=length)])[0]
                 raw = decode_evidence(value, length)
                 if (value['relative'] != item['relative'] or value['offset'] != offset
@@ -215,7 +217,7 @@ def mirror(run: str, destination: Path, *, omit_large_core_dumps: bool = False,
     else:
         write_new_json(output, manifest)
     print(json.dumps({'run_id': run, 'manifest': str(output), 'files': len(inventory['files']),
-                      'bytes': inventory['bytes'], 'remote_writes': 0}))
+                      'bytes': inventory['bytes'], 'remote_writes': 0, 'chunk_mib': chunk_mib}))
 
 
 if __name__ == '__main__':
@@ -224,6 +226,7 @@ if __name__ == '__main__':
     parser.add_argument('--out', type=Path, required=True)
     parser.add_argument('--omit-large-core-dumps', action='store_true')
     parser.add_argument('--reuse-local-frozen-assets', action='store_true')
+    parser.add_argument('--chunk-mib', type=int, choices=(1, 2, 4, 8, 16), default=16)
     args = parser.parse_args()
     mirror(args.run_id, args.out, omit_large_core_dumps=args.omit_large_core_dumps,
-           reuse_local_frozen_assets=args.reuse_local_frozen_assets)
+           reuse_local_frozen_assets=args.reuse_local_frozen_assets, chunk_mib=args.chunk_mib)

@@ -1,0 +1,49 @@
+{
+  "schema": "mxfp4-fp8-frozen-scope-v1",
+  "created_utc": "2026-11-06T03:57:49.340837+00:00",
+  "official_base": "261274e5f45449e98d7740144c3a958a29f1fd3e",
+  "actual_A": "721afdabc1de1af8e594b4da3e6fa926def50821",
+  "C_measured": "da7c6446ff4361c8060633b04d6bfb77e6f737ff",
+  "C_start": "a5ce9684367051b9718a70af842cebc42d7c851a",
+  "baseline_reuse": true,
+  "auto_rebase": false,
+  "reverse_order_retests": false,
+  "GPU_serial": true,
+  "FP8_candidates": [
+    {
+      "id": "numerical-range",
+      "mechanism": "Independent held-out BF16 calibration: clipping counts, error at fixed original scales; only calibration chooses one candidate scale recipe. No formal-label feedback."
+    },
+    {
+      "id": "mixed-phase",
+      "mechanism": "Split single-query decode rows from mixed paged prefill to supported XQA; retain official scheduling and GDN semantics; benchmark operator overhead before service."
+    },
+    {
+      "id": "query-writer",
+      "mechanism": "If profile identifies material query/writer cost, bounded fusion using mature kernel; no independent attention rewrite."
+    }
+  ],
+  "candidate_limit": 3,
+  "stop": "Reject unsupported or incorrect kernels before large workloads; at most one frozen final candidate per direction; retain all failures; no post-quality-answer retuning. MXFP4 service only after real supported attention qualification.",
+  "quality_gate": {
+    "classification": "Agent engineering thresholds, not user-approved SLO or statistical noninferiority claim",
+    "primary_point_loss_pp_max_vs_both_A_and_original_FP8": {
+      "gsm8k_flexible": 0.5,
+      "longbench_macro": 1.0,
+      "repobench_p": 2.0
+    },
+    "tools_tasks_loss_max_vs_both": 1,
+    "intervals": "Report paired bootstrap confidence intervals and discordant task counts; uncertain intervals stay inconclusive; no declaration of statistical noninferiority from point thresholds.",
+    "contract_errors_max": 0,
+    "formal_answers_for_tuning": false
+  },
+  "frozen_core": 1720,
+  "frozen_tools": 32,
+  "frozen_service": [
+    "ShareGPT512 C32",
+    "ShareGPT512 C64",
+    "GovReport64 C32"
+  ],
+  "goodput_thresholds_unchanged": true,
+  "agentic": "CPU screen one useful trace; skip GPU if no meaningful KV capacity pressure; distinguish trace replay and live tools."
+}

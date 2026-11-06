@@ -136,7 +136,7 @@ def main() -> None:
         validate_request(request, approval)
         validate_frozen_policy(args.package,request,approval)
         upstream_kind = request.get('workload', {}).get('kind')
-        upstream = upstream_kind in ('upstream_official_A_model_qualification', 'upstream_native_C_operator_qualification', 'upstream_native_C_model_qualification', 'upstream_common_path_BF16_regression', 'upstream_FP8_direct_library_attribution', 'upstream_AC_fixed_production_service', 'upstream_AC_frozen_core_quality1720', 'upstream_AC_real_native_tools32', 'upstream_native_VMM_compatibility', 'upstream_next_stage_native_operator', 'upstream_FP8_optimization_operator', 'upstream_FP8_independent_numeric_calibration', 'upstream_next_stage_model_qualification')
+        upstream = upstream_kind in ('upstream_official_A_model_qualification', 'upstream_native_C_operator_qualification', 'upstream_native_C_model_qualification', 'upstream_common_path_BF16_regression', 'upstream_FP8_direct_library_attribution', 'upstream_AC_fixed_production_service', 'upstream_AC_frozen_core_quality1720', 'upstream_AC_real_native_tools32', 'upstream_native_VMM_compatibility', 'upstream_next_stage_native_operator', 'upstream_FP8_optimization_operator', 'upstream_FP8_retained_candidate_operator', 'upstream_FP8_independent_numeric_calibration', 'upstream_next_stage_model_qualification')
         upstream_A = upstream_kind == 'upstream_official_A_model_qualification' or (upstream_kind in ('upstream_AC_fixed_production_service','upstream_AC_frozen_core_quality1720','upstream_AC_real_native_tools32') and request['arms'] == ['bf16'])
         config_name = ('UPSTREAM_MXFP4.local.json' if request.get('next_stage_profile') == 'ocp_mxfp4_20261105' else
                        'UPSTREAM_AC_A.local.json' if upstream_A else
@@ -158,7 +158,7 @@ def main() -> None:
                 raise ApprovalError('A separate compiled baseline is only valid when the binary is unused')
             compiled_hashes = request['compiled_backend_source_sha256']
             baseline_hash_names = set(compiled_hashes)
-        if request.get('next_stage_profile') is not None or upstream_kind in ('upstream_next_stage_native_operator','upstream_FP8_optimization_operator','upstream_FP8_independent_numeric_calibration'):
+        if request.get('next_stage_profile') is not None or upstream_kind in ('upstream_next_stage_native_operator','upstream_FP8_optimization_operator','upstream_FP8_retained_candidate_operator','upstream_FP8_independent_numeric_calibration'):
             # The binary retains its compiled identity independently of Python.
             # Newly added Python modules arrive in the SHA-bound source bundle;
             # their complete source hashes are checked by the worker afterwards.
@@ -202,9 +202,11 @@ def main() -> None:
             from .approval import validate_scope
             static = validate_scope(approval, request, ledger.usage(approval), now)
             if args.operation == "preflight":
+                from .idle_admission import idle_parameters
+                stable_seconds,_=idle_parameters(request)
                 print(json.dumps({"can_launch": False, "static_scope_valid": True, "remote_writes": 0,
                                   "os_resource_sandbox": False, "observations": observed,
-                                  "remaining_gates": ["durable reservation and unique preparation", "120s stable idle/reservations",
+                                  "remaining_gates": ["durable reservation and unique preparation", str(stable_seconds)+"s stable idle/reservations",
                                                       "container/driver visibility and independent watchdog admission"]}, ensure_ascii=False, indent=2))
                 return
             row = ledger.reserve(approval, request, approval_sha, now)

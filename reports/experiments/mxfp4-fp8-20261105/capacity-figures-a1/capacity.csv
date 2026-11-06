@@ -1,0 +1,5 @@
+format,physical_Full_KV_pages,page_tokens,reserved_padding_pages,usable_Full_KV_tokens,resident_Full_KV_bytes,physical_GDN_state_slots,resident_GDN_state_bytes
+BF16,1346,128,1,172160,11291066368,66,10160308224
+FP8,2693,128,1,344576,11295260672,66,10160308224
+NVFP4,4787,128,1,612608,11293949952,66,10160308224
+MXFP4,5069,128,1,648704,11294867456,66,10160308224

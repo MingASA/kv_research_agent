@@ -1,0 +1,202 @@
+{
+  "schema": "complete-frozen-core-and-native-tool-quality-decision-v1",
+  "utc": "2026-11-06T12:13:16.342661+00:00",
+  "classification": "predeclared_agent_engineering_margins_not_user_business_SLO",
+  "results": [
+    {
+      "format": "MXFP4",
+      "core_generations": 1720,
+      "native_tasks": 32,
+      "native_correct": 23,
+      "all_raw_HTTP_SSE_usage_and_history_replay_contracts_verified": true,
+      "model_semantic_errors_and_budget_exhaustion_retained_in_quality_score": true,
+      "rows": [
+        {
+          "reference": "bf16",
+          "metric": "gsm8k_flexible",
+          "paired_delta": -0.7581501137225171,
+          "point_loss_margin": 0.5,
+          "point_gate_pass": false,
+          "CI95": [
+            -1.4404852160727823,
+            -0.0758150113722517
+          ]
+        },
+        {
+          "reference": "bf16",
+          "metric": "longbench_macro",
+          "paired_delta": -0.9837417347048074,
+          "point_loss_margin": 1.0,
+          "point_gate_pass": true,
+          "CI95": [
+            -2.691893746908593,
+            0.5402208186266941
+          ]
+        },
+        {
+          "reference": "bf16",
+          "metric": "repobench_p",
+          "paired_delta": -7.4399999999999995,
+          "point_loss_margin": 2.0,
+          "point_gate_pass": false,
+          "CI95": [
+            -14.821000000000002,
+            -0.72
+          ]
+        },
+        {
+          "reference": "fp8_e4m3",
+          "metric": "gsm8k_flexible",
+          "paired_delta": -0.6065200909780136,
+          "point_loss_margin": 0.5,
+          "point_gate_pass": false,
+          "CI95": [
+            -1.4404852160727823,
+            0.1516300227445034
+          ]
+        },
+        {
+          "reference": "fp8_e4m3",
+          "metric": "longbench_macro",
+          "paired_delta": -0.34951216296013854,
+          "point_loss_margin": 1.0,
+          "point_gate_pass": true,
+          "CI95": [
+            -2.1164538232328134,
+            1.2786406207455057
+          ]
+        },
+        {
+          "reference": "fp8_e4m3",
+          "metric": "repobench_p",
+          "paired_delta": -3.2600000000000002,
+          "point_loss_margin": 2.0,
+          "point_gate_pass": false,
+          "CI95": [
+            -10.440500000000002,
+            3.801000000000003
+          ]
+        },
+        {
+          "reference": "bf16",
+          "metric": "native_tool_tasks",
+          "paired_delta": -3,
+          "point_loss_margin": 1,
+          "point_gate_pass": false,
+          "CI95": null
+        },
+        {
+          "reference": "fp8_e4m3",
+          "metric": "native_tool_tasks",
+          "paired_delta": -3,
+          "point_loss_margin": 1,
+          "point_gate_pass": false,
+          "CI95": null
+        }
+      ],
+      "engineering_point_gate_pass": false,
+      "statistical_noninferiority_established": false,
+      "production_performance_or_universal_quality_accepted": false,
+      "source_python_commit": "ba5eaec0a1b5b941da4b8ded0343d43f2c2b4158"
+    },
+    {
+      "format": "FP8 retained",
+      "core_generations": 1720,
+      "native_tasks": 32,
+      "native_correct": 26,
+      "all_raw_HTTP_SSE_usage_and_history_replay_contracts_verified": true,
+      "model_semantic_errors_and_budget_exhaustion_retained_in_quality_score": true,
+      "rows": [
+        {
+          "reference": "bf16",
+          "metric": "gsm8k_flexible",
+          "paired_delta": 0.22744503411675512,
+          "point_loss_margin": 0.5,
+          "point_gate_pass": true,
+          "CI95": [
+            -0.22744503411675512,
+            0.6823351023502654
+          ]
+        },
+        {
+          "reference": "bf16",
+          "metric": "longbench_macro",
+          "paired_delta": 0.004898456659674366,
+          "point_loss_margin": 1.0,
+          "point_gate_pass": true,
+          "CI95": [
+            -0.7852085826965869,
+            0.7169879102945852
+          ]
+        },
+        {
+          "reference": "bf16",
+          "metric": "repobench_p",
+          "paired_delta": -1.0799999999999996,
+          "point_loss_margin": 2.0,
+          "point_gate_pass": true,
+          "CI95": [
+            -6.060499999999999,
+            2.8010000000000046
+          ]
+        },
+        {
+          "reference": "fp8_e4m3",
+          "metric": "gsm8k_flexible",
+          "paired_delta": 0.37907505686125853,
+          "point_loss_margin": 0.5,
+          "point_gate_pass": true,
+          "CI95": [
+            -0.0758150113722517,
+            0.8339651250947688
+          ]
+        },
+        {
+          "reference": "fp8_e4m3",
+          "metric": "longbench_macro",
+          "paired_delta": 0.6391280284043432,
+          "point_loss_margin": 1.0,
+          "point_gate_pass": true,
+          "CI95": [
+            -0.1058502685430897,
+            1.4781964909083936
+          ]
+        },
+        {
+          "reference": "fp8_e4m3",
+          "metric": "repobench_p",
+          "paired_delta": 3.0999999999999996,
+          "point_loss_margin": 2.0,
+          "point_gate_pass": true,
+          "CI95": [
+            0.2199999999999999,
+            7.281500000000007
+          ]
+        },
+        {
+          "reference": "bf16",
+          "metric": "native_tool_tasks",
+          "paired_delta": 0,
+          "point_loss_margin": 1,
+          "point_gate_pass": true,
+          "CI95": null
+        },
+        {
+          "reference": "fp8_e4m3",
+          "metric": "native_tool_tasks",
+          "paired_delta": 0,
+          "point_loss_margin": 1,
+          "point_gate_pass": true,
+          "CI95": null
+        }
+      ],
+      "engineering_point_gate_pass": true,
+      "statistical_noninferiority_established": false,
+      "production_performance_or_universal_quality_accepted": false,
+      "source_python_commit": "d163d5de48b201e5f767f1bf21a9437cbf1aeb42"
+    }
+  ],
+  "FP8_remaining_uncertainty": "RepoBench-P versus A paired CI extends below -2pp despite passing point estimate; tools are descriptive32-task outcomes",
+  "frozen_scope_sha256": "90a2850ffc581d5ee08c409b0f9da22ee4388688c7d406ffb743a2f3e0652521",
+  "no_formal_answers_for_retuning": true
+}

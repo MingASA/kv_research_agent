@@ -1,0 +1,66 @@
+format,metric,count,score_percent_unrounded,capped_responses,actual_completion_tokens,independent_context_clusters,source
+BF16,core::2wikimqa,50,62.12380952380952,0,282,50,reports/experiments/upstream-production-kv-20261102/A-quality-a1/summary.json
+BF16,core::gsm8k,1319,96.73995451099317,3,186528,1319,reports/experiments/upstream-production-kv-20261102/A-quality-a1/summary.json
+BF16,core::gsm8k_strict,1319,96.81576952236543,3,186528,1319,reports/experiments/upstream-production-kv-20261102/A-quality-a1/summary.json
+BF16,core::hotpotqa,50,69.26593406593406,0,245,50,reports/experiments/upstream-production-kv-20261102/A-quality-a1/summary.json
+BF16,core::lcc,50,56.64,45,2943,50,reports/experiments/upstream-production-kv-20261102/A-quality-a1/summary.json
+BF16,core::multifieldqa_en,50,61.438392020253886,1,819,44,reports/experiments/upstream-production-kv-20261102/A-quality-a1/summary.json
+BF16,core::musique,50,56.67777777777778,1,281,50,reports/experiments/upstream-production-kv-20261102/A-quality-a1/summary.json
+BF16,core::narrativeqa,50,31.93054664633612,0,392,19,reports/experiments/upstream-production-kv-20261102/A-quality-a1/summary.json
+BF16,core::qasper,50,49.191092073721975,0,595,49,reports/experiments/upstream-production-kv-20261102/A-quality-a1/summary.json
+BF16,core::repobench-p,50,43.92,39,2555,50,reports/experiments/upstream-production-kv-20261102/A-quality-a1/summary.json
+BF16,long_unique_document::narrativeqa,1,50.0,0,3,1,reports/experiments/upstream-production-kv-20261102/A-quality-a1/summary.json
+BF16,LongBench_core_macro,400,53.898444013479164,,,,reports/experiments/upstream-production-kv-20261102/A-quality-a1/summary.json
+BF16,Native_Tool_Agent,32,81.25,,,,reports/experiments/upstream-production-kv-20261102/A-tools-b1/actual_model_audit.json
+FP8,core::2wikimqa,50,61.93333333333334,0,282,50,reports/experiments/upstream-production-kv-20261102/C-fp8-quality-a1/summary.json
+FP8,core::gsm8k,1319,96.58832448824867,7,187715,1319,reports/experiments/upstream-production-kv-20261102/C-fp8-quality-a1/summary.json
+FP8,core::gsm8k_strict,1319,96.66413949962093,7,187715,1319,reports/experiments/upstream-production-kv-20261102/C-fp8-quality-a1/summary.json
+FP8,core::hotpotqa,50,69.26593406593406,0,247,50,reports/experiments/upstream-production-kv-20261102/C-fp8-quality-a1/summary.json
+FP8,core::lcc,50,58.02,42,2775,50,reports/experiments/upstream-production-kv-20261102/C-fp8-quality-a1/summary.json
+FP8,core::multifieldqa_en,50,62.09373492296521,1,812,44,reports/experiments/upstream-production-kv-20261102/C-fp8-quality-a1/summary.json
+FP8,core::musique,50,55.67777777777778,1,283,50,reports/experiments/upstream-production-kv-20261102/C-fp8-quality-a1/summary.json
+FP8,core::narrativeqa,50,30.8083244241139,0,375,19,reports/experiments/upstream-production-kv-20261102/C-fp8-quality-a1/summary.json
+FP8,core::qasper,50,48.57461100975168,0,593,49,reports/experiments/upstream-production-kv-20261102/C-fp8-quality-a1/summary.json
+FP8,core::repobench-p,50,39.74,36,2427,50,reports/experiments/upstream-production-kv-20261102/C-fp8-quality-a1/summary.json
+FP8,long_unique_document::narrativeqa,1,50.0,0,3,1,reports/experiments/upstream-production-kv-20261102/C-fp8-quality-a1/summary.json
+FP8,LongBench_core_macro,400,53.264214441734495,,,,reports/experiments/upstream-production-kv-20261102/C-fp8-quality-a1/summary.json
+FP8,Native_Tool_Agent,32,81.25,,,,reports/experiments/upstream-production-kv-20261102/C-fp8-tools-c1/actual_model_audit.json
+NVFP4,core::2wikimqa,50,61.93333333333334,0,282,50,reports/experiments/upstream-production-kv-20261102/C-nvfp4-quality-a1/summary.json
+NVFP4,core::gsm8k,1319,96.58832448824867,5,187506,1319,reports/experiments/upstream-production-kv-20261102/C-nvfp4-quality-a1/summary.json
+NVFP4,core::gsm8k_strict,1319,96.66413949962093,5,187506,1319,reports/experiments/upstream-production-kv-20261102/C-nvfp4-quality-a1/summary.json
+NVFP4,core::hotpotqa,50,69.96158623984711,0,266,50,reports/experiments/upstream-production-kv-20261102/C-nvfp4-quality-a1/summary.json
+NVFP4,core::lcc,50,57.14,42,2800,50,reports/experiments/upstream-production-kv-20261102/C-nvfp4-quality-a1/summary.json
+NVFP4,core::multifieldqa_en,50,62.367752133824524,1,815,44,reports/experiments/upstream-production-kv-20261102/C-nvfp4-quality-a1/summary.json
+NVFP4,core::musique,50,57.56565656565656,0,282,50,reports/experiments/upstream-production-kv-20261102/C-nvfp4-quality-a1/summary.json
+NVFP4,core::narrativeqa,50,31.564962230751703,0,382,19,reports/experiments/upstream-production-kv-20261102/C-nvfp4-quality-a1/summary.json
+NVFP4,core::qasper,50,50.423960602533704,0,635,49,reports/experiments/upstream-production-kv-20261102/C-nvfp4-quality-a1/summary.json
+NVFP4,core::repobench-p,50,39.68,37,2477,50,reports/experiments/upstream-production-kv-20261102/C-nvfp4-quality-a1/summary.json
+NVFP4,long_unique_document::narrativeqa,1,50.0,0,3,1,reports/experiments/upstream-production-kv-20261102/C-nvfp4-quality-a1/summary.json
+NVFP4,LongBench_core_macro,400,53.829656388243365,,,,reports/experiments/upstream-production-kv-20261102/C-nvfp4-quality-a1/summary.json
+NVFP4,Native_Tool_Agent,32,84.375,,,,reports/experiments/upstream-production-kv-20261102/C-nvfp4-tools-b1/actual_model_audit.json
+FP8 retained,core::2wikimqa,50,61.93333333333334,0,282,50,reports/experiments/mxfp4-fp8-20261105/FP8-retained-quality-a1/summary.json
+FP8 retained,core::gsm8k,1319,96.96739954510993,4,187068,1319,reports/experiments/mxfp4-fp8-20261105/FP8-retained-quality-a1/summary.json
+FP8 retained,core::gsm8k_strict,1319,96.96739954510993,4,187068,1319,reports/experiments/mxfp4-fp8-20261105/FP8-retained-quality-a1/summary.json
+FP8 retained,core::hotpotqa,50,69.26593406593406,0,247,50,reports/experiments/mxfp4-fp8-20261105/FP8-retained-quality-a1/summary.json
+FP8 retained,core::lcc,50,58.44,41,2759,50,reports/experiments/mxfp4-fp8-20261105/FP8-retained-quality-a1/summary.json
+FP8 retained,core::multifieldqa_en,50,62.12882264226345,1,808,44,reports/experiments/mxfp4-fp8-20261105/FP8-retained-quality-a1/summary.json
+FP8 retained,core::musique,50,56.67777777777778,1,280,50,reports/experiments/mxfp4-fp8-20261105/FP8-retained-quality-a1/summary.json
+FP8 retained,core::narrativeqa,50,30.8083244241139,0,384,19,reports/experiments/mxfp4-fp8-20261105/FP8-retained-quality-a1/summary.json
+FP8 retained,core::qasper,50,49.13254751768818,0,623,49,reports/experiments/mxfp4-fp8-20261105/FP8-retained-quality-a1/summary.json
+FP8 retained,core::repobench-p,50,42.84,38,2486,50,reports/experiments/mxfp4-fp8-20261105/FP8-retained-quality-a1/summary.json
+FP8 retained,long_unique_document::narrativeqa,1,50.0,0,3,1,reports/experiments/mxfp4-fp8-20261105/FP8-retained-quality-a1/summary.json
+FP8 retained,LongBench_core_macro,400,53.90334247013884,,,,reports/experiments/mxfp4-fp8-20261105/FP8-retained-quality-a1/summary.json
+FP8 retained,Native_Tool_Agent,32,81.25,,,,reports/experiments/mxfp4-fp8-20261105/FP8-retained-tools-a1/actual_model_audit.json
+MXFP4,core::2wikimqa,50,63.93333333333334,0,285,50,reports/experiments/mxfp4-fp8-20261105/MXFP4-quality-a1/summary.json
+MXFP4,core::gsm8k,1319,95.98180439727066,11,190187,1319,reports/experiments/mxfp4-fp8-20261105/MXFP4-quality-a1/summary.json
+MXFP4,core::gsm8k_strict,1319,95.90598938589841,11,190187,1319,reports/experiments/mxfp4-fp8-20261105/MXFP4-quality-a1/summary.json
+MXFP4,core::hotpotqa,50,67.90225563909775,0,259,50,reports/experiments/mxfp4-fp8-20261105/MXFP4-quality-a1/summary.json
+MXFP4,core::lcc,50,54.8,37,2537,50,reports/experiments/mxfp4-fp8-20261105/MXFP4-quality-a1/summary.json
+MXFP4,core::multifieldqa_en,50,62.119583761635724,2,827,44,reports/experiments/mxfp4-fp8-20261105/MXFP4-quality-a1/summary.json
+MXFP4,core::musique,50,56.648989898989896,1,302,50,reports/experiments/mxfp4-fp8-20261105/MXFP4-quality-a1/summary.json
+MXFP4,core::narrativeqa,50,32.98926512084407,0,434,19,reports/experiments/mxfp4-fp8-20261105/MXFP4-quality-a1/summary.json
+MXFP4,core::qasper,50,48.44419047629407,0,633,49,reports/experiments/mxfp4-fp8-20261105/MXFP4-quality-a1/summary.json
+MXFP4,core::repobench-p,50,36.48,30,2120,50,reports/experiments/mxfp4-fp8-20261105/MXFP4-quality-a1/summary.json
+MXFP4,long_unique_document::narrativeqa,1,50.0,0,3,1,reports/experiments/mxfp4-fp8-20261105/MXFP4-quality-a1/summary.json
+MXFP4,LongBench_core_macro,400,52.91470227877436,,,,reports/experiments/mxfp4-fp8-20261105/MXFP4-quality-a1/summary.json
+MXFP4,Native_Tool_Agent,32,71.875,,,,reports/experiments/mxfp4-fp8-20261105/MXFP4-tools-a1/actual_model_audit.json
