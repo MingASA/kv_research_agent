@@ -35,7 +35,7 @@ def _incremental_parent(base: Path, manifest: dict) -> Path | None:
     if specification is None:return None
     _require(isinstance(specification,dict),'Invalid incremental build specification')
     previous_id=specification['build_id']
-    _require(re.fullmatch(r'upstream-ac-[0-9a-f]{8}-20261102[a-z]',previous_id) is not None
+    _require(re.fullmatch(r'upstream-ac-[0-9a-f]{8}-202611(?:02|05)[a-z]',previous_id) is not None
              and previous_id!=manifest['build_id'],'Invalid incremental parent ID')
     previous=base/'agent_work/builds'/previous_id
     for path in (previous,previous/'source_repo',previous/'build'):_owned(path)
@@ -96,7 +96,7 @@ def _snapshot_parent(base: Path, manifest: dict) -> dict | None:
         return None
     _require(manifest.get('incremental_reuse') is None, 'Snapshot cannot mutate a parent build')
     for key in ('build_id', 'object_build_id'):
-        _require(re.fullmatch(r'upstream-ac-[0-9a-f]{8}-20261102[a-z]', specification[key]) is not None,
+        _require(re.fullmatch(r'upstream-ac-[0-9a-f]{8}-202611(?:02|05)[a-z]', specification[key]) is not None,
                  'Invalid snapshot parent identity')
     parent = base/'agent_work/builds'/specification['build_id']
     objects = base/'agent_work/builds'/specification['object_build_id']
@@ -158,7 +158,7 @@ def run(payload: dict) -> dict:
              'Remote identity differs')
     base=Path(approval['approved_workspace']);_owned(base)
     build_id=manifest['build_id']
-    _require(re.fullmatch(r'upstream-ac-[0-9a-f]{8}-20261102[a-z]',build_id) is not None,'Invalid build ID')
+    _require(re.fullmatch(r'upstream-ac-[0-9a-f]{8}-202611(?:02|05)[a-z]',build_id) is not None,'Invalid build ID')
     root=base/'agent_work/builds'/build_id
     _require(manifest['host_root']==str(root) and manifest['uid']==os.getuid(),'Build root/UID mismatch')
     _require(manifest['image_id']==approval['approved_image_id'],'Unpinned build image')

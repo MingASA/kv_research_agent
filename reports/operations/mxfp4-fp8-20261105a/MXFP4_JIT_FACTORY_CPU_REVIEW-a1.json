@@ -1,0 +1,8 @@
+{
+  "utc": "2026-11-06T05:31:49.943691+00:00",
+  "source": "/home/mingasa/projects/xllm-mxfp4-kv-20261105a/xllm/python/attention/mxfp4_flashinfer.py",
+  "sha256": "282c76bac87b6256e4c98e5f0102a406517df843e3df803fd5c21a92d69a1d36",
+  "AST_pass": true,
+  "purpose": "Separate CPU offline JIT spec creation from cached runtime module load; no numeric/header/kernel change",
+  "GPU_qualification": false
+}

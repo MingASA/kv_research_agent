@@ -23,16 +23,23 @@ def native_runtime(log: str, native: dict | None) -> list[dict]:
     if not values:
         raise ValueError('No actual native resident backend binding')
     fp8 = native['dtype'] == 'fp8_e4m3'
+    mxfp4 = native['dtype'] == 'mxfp4'
+    if native['dtype'] not in ('fp8_e4m3','nvfp4','mxfp4'):
+        raise ValueError('Unknown audited resident format')
     expected = {'kv_cache_dtype': native['dtype'], 'prefill_backend': native['prefill'],
                 'decode_backend': native['decode'], 'k_scale': native['key_scale'],
                 'v_scale': native['value_scale'], 'full_BF16_KV_shadow': False,
                 'VMM_virtual_address_capacity_not_residency': False,
                 'decode_query_dtype': 'torch.bfloat16',
                 'prefill_query_dtype': 'torch.float8_e4m3fn' if fp8 and native['prefill'] == 'fa3' else 'torch.bfloat16',
-                'resident_global_scale_bytes': 0 if fp8 else 8,
-                'resident_layout': 'NHD' if fp8 else 'NHD_page_packed_E2M1_then_E4M3_block16',
+                'resident_global_scale_bytes': 0 if fp8 or mxfp4 else 8,
+                'resident_layout': ('NHD' if fp8 else 'NHD_page_packed_E2M1_then_E8M0_block32' if mxfp4
+                                    else 'NHD_page_packed_E2M1_then_E4M3_block16'),
                 'SM90_FP4_tensor_core_compute': False,
-                'writer': 'fused_triton_quantize_scatter' if fp8 else 'flashinfer_native_nvfp4_slot_writer'}
+                'writer': ('fused_triton_quantize_scatter' if fp8 else 'triton_OCP_MXFP4_block32_E8M0_slot_writer' if mxfp4
+                           else 'flashinfer_native_nvfp4_slot_writer')}
+    if mxfp4:
+        expected.update(mxfp4_attention_adapter=True,global_BF16_history_workspace_bytes=0)
     for info in values:
         if (any(info.get(key) != value for key, value in expected.items())
                 or not isinstance(info.get('resident_KV_bytes'), int) or info['resident_KV_bytes'] <= 0

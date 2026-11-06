@@ -26,7 +26,7 @@ def collect(payload: dict) -> dict:
     if (os.getuid(), os.getgid(), socket.gethostname()) != (identity['uid'], identity['gid'], identity['hostname']):
         raise ValueError('Remote artifact identity changed')
     build_id = payload['build_id']
-    if re.fullmatch(r'upstream-ac-[0-9a-f]{8}-20261102[a-z]', build_id) is None:
+    if re.fullmatch(r'upstream-ac-[0-9a-f]{8}-202611(?:02|05)[a-z]', build_id) is None:
         raise ValueError('Unknown build identity')
     base = Path(approval['approved_workspace'])
     root = base / 'agent_work/builds' / build_id

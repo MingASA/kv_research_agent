@@ -188,7 +188,7 @@ def run(ticket: dict, root: Path, output: Path, arm: str, env: dict) -> dict:
     verify_packaging_recovery(request, root)
     from .upstream_graph_observer import configure, snapshot, reuse_model_proof
     reused_proof = reuse_model_proof(request, root)
-    if arm not in ('bf16', 'fp8_e4m3', 'nvfp4'):
+    if arm not in ('bf16', 'fp8_e4m3', 'nvfp4', 'mxfp4'):
         raise ValueError('Unknown frozen qualification format')
     # The legacy worker sets experimental variables; the official process must
     # receive none of them. Preserve the image's CUDA compatibility libraries.

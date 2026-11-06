@@ -1,0 +1,40 @@
+{
+  "verified_utc": "2026-11-06T05:33:00Z",
+  "source": "GitHub commit collection API",
+  "branches": [
+    {
+      "branch": "research/ocp-mxfp4-kv-20261105",
+      "sha": "b06882711e7cc09ce15e36c7631372aa8c004186",
+      "author": {
+        "name": "mingasa",
+        "email": "203962259+MingASA@users.noreply.github.com",
+        "date": "2026-11-06T05:31:55Z"
+      },
+      "github_login": "MingASA",
+      "url": "https://github.com/MingASA/xllm_quant_kvcache/commit/b06882711e7cc09ce15e36c7631372aa8c004186"
+    },
+    {
+      "branch": "research/fp8-service-opt-20261105",
+      "sha": "90ce9e829fc28b348461483f8c063b4e92cc903f",
+      "author": {
+        "name": "mingasa",
+        "email": "203962259+MingASA@users.noreply.github.com",
+        "date": "2026-11-06T05:10:09Z"
+      },
+      "github_login": "MingASA",
+      "url": "https://github.com/MingASA/xllm_quant_kvcache/commit/90ce9e829fc28b348461483f8c063b4e92cc903f"
+    },
+    {
+      "branch": "research/fp8-numerical-diagnostics-20261105",
+      "sha": "260b5fab204436af5a6f5f6a4897f3076c72df19",
+      "author": {
+        "name": "mingasa",
+        "email": "203962259+MingASA@users.noreply.github.com",
+        "date": "2026-11-06T05:10:10Z"
+      },
+      "github_login": "MingASA",
+      "url": "https://github.com/MingASA/xllm_quant_kvcache/commit/260b5fab204436af5a6f5f6a4897f3076c72df19"
+    }
+  ],
+  "production_acceptance_claim": false
+}

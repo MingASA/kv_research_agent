@@ -1,0 +1,396 @@
+{
+  "classification": "confirmed_historical_independent_BF16_ranges_not_current_clipping_rate",
+  "source": "results/mirrors/nextgen-bf16-qwen38-calibration-r0-20261027i-complete-i1/files/output/bf16/kv_observer_snapshot.json",
+  "source_sha256": "3c9d96181a7b7640e4c9040045db4418e7e7ac15db6b97ed5407e01aedd90cbd",
+  "max_value": 149.0,
+  "current_V_scale": 0.0625,
+  "current_V_max_restored": 28,
+  "candidate_V_scale_from_original_independent_rule": 0.5,
+  "candidate_V_max_restored": 224,
+  "same_model_config_SHA": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab",
+  "observed_head_phase_rows_above_28": 54,
+  "total_V_head_phase_rows": 128,
+  "rows_above_28": [
+    {
+      "layer_id": 31,
+      "phase": "prefill",
+      "head": 0,
+      "absmax": 42.75,
+      "finite_values": 109817344
+    },
+    {
+      "layer_id": 31,
+      "phase": "prefill",
+      "head": 1,
+      "absmax": 32.0,
+      "finite_values": 109817344
+    },
+    {
+      "layer_id": 31,
+      "phase": "prefill",
+      "head": 2,
+      "absmax": 30.875,
+      "finite_values": 109817344
+    },
+    {
+      "layer_id": 35,
+      "phase": "prefill",
+      "head": 2,
+      "absmax": 38.25,
+      "finite_values": 109817344
+    },
+    {
+      "layer_id": 35,
+      "phase": "prefill",
+      "head": 3,
+      "absmax": 32.75,
+      "finite_values": 109817344
+    },
+    {
+      "layer_id": 39,
+      "phase": "prefill",
+      "head": 3,
+      "absmax": 32.0,
+      "finite_values": 109817344
+    },
+    {
+      "layer_id": 43,
+      "phase": "prefill",
+      "head": 0,
+      "absmax": 52.25,
+      "finite_values": 109817344
+    },
+    {
+      "layer_id": 43,
+      "phase": "prefill",
+      "head": 1,
+      "absmax": 63.75,
+      "finite_values": 109817344
+    },
+    {
+      "layer_id": 43,
+      "phase": "prefill",
+      "head": 2,
+      "absmax": 51.25,
+      "finite_values": 109817344
+    },
+    {
+      "layer_id": 43,
+      "phase": "prefill",
+      "head": 3,
+      "absmax": 49.5,
+      "finite_values": 109817344
+    },
+    {
+      "layer_id": 43,
+      "phase": "decode",
+      "head": 0,
+      "absmax": 52.0,
+      "finite_values": 25872128
+    },
+    {
+      "layer_id": 43,
+      "phase": "decode",
+      "head": 1,
+      "absmax": 62.5,
+      "finite_values": 25872128
+    },
+    {
+      "layer_id": 43,
+      "phase": "decode",
+      "head": 2,
+      "absmax": 51.25,
+      "finite_values": 25872128
+    },
+    {
+      "layer_id": 43,
+      "phase": "decode",
+      "head": 3,
+      "absmax": 48.5,
+      "finite_values": 25872128
+    },
+    {
+      "layer_id": 47,
+      "phase": "prefill",
+      "head": 0,
+      "absmax": 63.0,
+      "finite_values": 109817344
+    },
+    {
+      "layer_id": 47,
+      "phase": "prefill",
+      "head": 1,
+      "absmax": 44.75,
+      "finite_values": 109817344
+    },
+    {
+      "layer_id": 47,
+      "phase": "prefill",
+      "head": 2,
+      "absmax": 56.0,
+      "finite_values": 109817344
+    },
+    {
+      "layer_id": 47,
+      "phase": "prefill",
+      "head": 3,
+      "absmax": 42.5,
+      "finite_values": 109817344
+    },
+    {
+      "layer_id": 47,
+      "phase": "decode",
+      "head": 0,
+      "absmax": 62.25,
+      "finite_values": 25872128
+    },
+    {
+      "layer_id": 47,
+      "phase": "decode",
+      "head": 1,
+      "absmax": 44.5,
+      "finite_values": 25872128
+    },
+    {
+      "layer_id": 47,
+      "phase": "decode",
+      "head": 2,
+      "absmax": 55.5,
+      "finite_values": 25872128
+    },
+    {
+      "layer_id": 47,
+      "phase": "decode",
+      "head": 3,
+      "absmax": 42.75,
+      "finite_values": 25872128
+    },
+    {
+      "layer_id": 51,
+      "phase": "prefill",
+      "head": 0,
+      "absmax": 60.75,
+      "finite_values": 109817344
+    },
+    {
+      "layer_id": 51,
+      "phase": "prefill",
+      "head": 1,
+      "absmax": 60.25,
+      "finite_values": 109817344
+    },
+    {
+      "layer_id": 51,
+      "phase": "prefill",
+      "head": 2,
+      "absmax": 71.0,
+      "finite_values": 109817344
+    },
+    {
+      "layer_id": 51,
+      "phase": "prefill",
+      "head": 3,
+      "absmax": 35.0,
+      "finite_values": 109817344
+    },
+    {
+      "layer_id": 51,
+      "phase": "decode",
+      "head": 0,
+      "absmax": 57.0,
+      "finite_values": 25872128
+    },
+    {
+      "layer_id": 51,
+      "phase": "decode",
+      "head": 1,
+      "absmax": 57.75,
+      "finite_values": 25872128
+    },
+    {
+      "layer_id": 51,
+      "phase": "decode",
+      "head": 2,
+      "absmax": 65.0,
+      "finite_values": 25872128
+    },
+    {
+      "layer_id": 51,
+      "phase": "decode",
+      "head": 3,
+      "absmax": 28.75,
+      "finite_values": 25872128
+    },
+    {
+      "layer_id": 55,
+      "phase": "prefill",
+      "head": 0,
+      "absmax": 44.25,
+      "finite_values": 109817344
+    },
+    {
+      "layer_id": 55,
+      "phase": "prefill",
+      "head": 1,
+      "absmax": 40.75,
+      "finite_values": 109817344
+    },
+    {
+      "layer_id": 55,
+      "phase": "prefill",
+      "head": 2,
+      "absmax": 37.5,
+      "finite_values": 109817344
+    },
+    {
+      "layer_id": 55,
+      "phase": "prefill",
+      "head": 3,
+      "absmax": 44.0,
+      "finite_values": 109817344
+    },
+    {
+      "layer_id": 55,
+      "phase": "decode",
+      "head": 0,
+      "absmax": 44.0,
+      "finite_values": 25872128
+    },
+    {
+      "layer_id": 55,
+      "phase": "decode",
+      "head": 1,
+      "absmax": 44.5,
+      "finite_values": 25872128
+    },
+    {
+      "layer_id": 55,
+      "phase": "decode",
+      "head": 2,
+      "absmax": 33.0,
+      "finite_values": 25872128
+    },
+    {
+      "layer_id": 55,
+      "phase": "decode",
+      "head": 3,
+      "absmax": 41.5,
+      "finite_values": 25872128
+    },
+    {
+      "layer_id": 59,
+      "phase": "prefill",
+      "head": 0,
+      "absmax": 51.75,
+      "finite_values": 109817344
+    },
+    {
+      "layer_id": 59,
+      "phase": "prefill",
+      "head": 1,
+      "absmax": 93.0,
+      "finite_values": 109817344
+    },
+    {
+      "layer_id": 59,
+      "phase": "prefill",
+      "head": 2,
+      "absmax": 71.5,
+      "finite_values": 109817344
+    },
+    {
+      "layer_id": 59,
+      "phase": "prefill",
+      "head": 3,
+      "absmax": 50.0,
+      "finite_values": 109817344
+    },
+    {
+      "layer_id": 59,
+      "phase": "decode",
+      "head": 0,
+      "absmax": 43.0,
+      "finite_values": 25872128
+    },
+    {
+      "layer_id": 59,
+      "phase": "decode",
+      "head": 1,
+      "absmax": 80.5,
+      "finite_values": 25872128
+    },
+    {
+      "layer_id": 59,
+      "phase": "decode",
+      "head": 2,
+      "absmax": 66.5,
+      "finite_values": 25872128
+    },
+    {
+      "layer_id": 59,
+      "phase": "decode",
+      "head": 3,
+      "absmax": 47.25,
+      "finite_values": 25872128
+    },
+    {
+      "layer_id": 63,
+      "phase": "prefill",
+      "head": 0,
+      "absmax": 75.0,
+      "finite_values": 109817344
+    },
+    {
+      "layer_id": 63,
+      "phase": "prefill",
+      "head": 1,
+      "absmax": 149.0,
+      "finite_values": 109817344
+    },
+    {
+      "layer_id": 63,
+      "phase": "prefill",
+      "head": 2,
+      "absmax": 55.0,
+      "finite_values": 109817344
+    },
+    {
+      "layer_id": 63,
+      "phase": "prefill",
+      "head": 3,
+      "absmax": 65.0,
+      "finite_values": 109817344
+    },
+    {
+      "layer_id": 63,
+      "phase": "decode",
+      "head": 0,
+      "absmax": 71.5,
+      "finite_values": 25872128
+    },
+    {
+      "layer_id": 63,
+      "phase": "decode",
+      "head": 1,
+      "absmax": 126.5,
+      "finite_values": 25872128
+    },
+    {
+      "layer_id": 63,
+      "phase": "decode",
+      "head": 2,
+      "absmax": 49.5,
+      "finite_values": 25872128
+    },
+    {
+      "layer_id": 63,
+      "phase": "decode",
+      "head": 3,
+      "absmax": 58.0,
+      "finite_values": 25872128
+    }
+  ],
+  "actual_element_clipping_rate": "unmeasured: original observer stored maxima/counts, not threshold counts",
+  "formal_labels_used": false,
+  "candidate_selection_frozen": "V=.5, K=.125; no quality-answer tuning; verify new same-version independent clipping and Q error before full quality"
+}

@@ -45,7 +45,7 @@ def environment(arm: str) -> dict:
     env["LD_LIBRARY_PATH"] = prefix + (":" + env["LD_LIBRARY_PATH"] if env.get("LD_LIBRARY_PATH") else "")
     if arm == "fp8_e4m3":
         env.update(XLLM_QUANTIZED_BACKEND="flashinfer", XLLM_FP8_K_SCALE="0.125", XLLM_FP8_V_SCALE="0.0625")
-    elif arm not in ("bf16", "nvfp4"):
+    elif arm not in ("bf16", "nvfp4", "mxfp4"):
         raise ValueError("Unknown paired arm")
     return env
 

@@ -195,7 +195,7 @@ def status(root: Path, ticket: dict) -> dict:
     if ticket['request'].get('schema') == 'kv-nextgen-run-v1':
         result['nextgen_progress'] = {}
         for arm in ticket['request']['arms']:
-            require(arm in ('bf16','fp8_e4m3','nvfp4'), 'Unknown native progress arm')
+            require(arm in ('bf16','fp8_e4m3','nvfp4','mxfp4'), 'Unknown native progress arm')
             progress = {}
             for filename in ('container.log','server.log','operator.log','native_operator.log','observer_Graph.log'):
                 path = root/'output'/arm/filename

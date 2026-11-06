@@ -1,0 +1,13 @@
+{
+  "utc": "2026-11-06T05:39:08.854160+00:00",
+  "classification": "confirmed_CPU_NVCC_SM90a_compile_only",
+  "GPU_execution": false,
+  "module_loaded": false,
+  "library": "/home/mingasa/kv-research-agent/reports/operations/mxfp4-fp8-20261105a/local-sm90-compile-b1/workspace/.cache/flashinfer/0.6.18.post1/90a/cached_ops/xllm_mxfp4_bf16_d256_b06c014c4f939393/xllm_mxfp4_bf16_d256_b06c014c4f939393.so",
+  "library_bytes": 7025360,
+  "library_sha256": "9508ae4716801261f3c77352738b33edb683d692a542aa50f7a6bceba80ab6dc",
+  "compile_log_sha256": "f922b1dc9cf6821966146cd983507fb7d40b27b9867af18825447e40ca1ac9d0",
+  "compiler": "CUDA13.2.86_local_not_H800_CUDA13.0.88",
+  "pinned_header_adaptation_sha256": "b06c014c4f9393935ba1eaad0734d7f7402eaad1c198fc03cb6382f7467f489f",
+  "H800_FlashInfer_critical7file_sources_match": true
+}

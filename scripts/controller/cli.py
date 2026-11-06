@@ -136,9 +136,10 @@ def main() -> None:
         validate_request(request, approval)
         validate_frozen_policy(args.package,request,approval)
         upstream_kind = request.get('workload', {}).get('kind')
-        upstream = upstream_kind in ('upstream_official_A_model_qualification', 'upstream_native_C_operator_qualification', 'upstream_native_C_model_qualification', 'upstream_common_path_BF16_regression', 'upstream_FP8_direct_library_attribution', 'upstream_AC_fixed_production_service', 'upstream_AC_frozen_core_quality1720', 'upstream_AC_real_native_tools32', 'upstream_native_VMM_compatibility')
+        upstream = upstream_kind in ('upstream_official_A_model_qualification', 'upstream_native_C_operator_qualification', 'upstream_native_C_model_qualification', 'upstream_common_path_BF16_regression', 'upstream_FP8_direct_library_attribution', 'upstream_AC_fixed_production_service', 'upstream_AC_frozen_core_quality1720', 'upstream_AC_real_native_tools32', 'upstream_native_VMM_compatibility', 'upstream_next_stage_native_operator', 'upstream_FP8_optimization_operator', 'upstream_FP8_independent_numeric_calibration', 'upstream_next_stage_model_qualification')
         upstream_A = upstream_kind == 'upstream_official_A_model_qualification' or (upstream_kind in ('upstream_AC_fixed_production_service','upstream_AC_frozen_core_quality1720','upstream_AC_real_native_tools32') and request['arms'] == ['bf16'])
-        config_name = ('UPSTREAM_AC_A.local.json' if upstream_A else
+        config_name = ('UPSTREAM_MXFP4.local.json' if request.get('next_stage_profile') == 'ocp_mxfp4_20261105' else
+                       'UPSTREAM_AC_A.local.json' if upstream_A else
                        'UPSTREAM_AC_C.local.json' if upstream else
                        'NEXTGEN_CONFIG.local.json' if request['schema'] == 'kv-nextgen-run-v1' else 'CONFIG.local.json')
         config = json.loads((ROOT / "state" / config_name).read_text())
@@ -150,8 +151,20 @@ def main() -> None:
         # Preflight may create only local pin evidence and quota files; it never dispatches remote mutations.
         transport = PinnedSSH(approval, LEDGER_DIRECTORY / "pins" / "preflight")
         binary_cpp_sources = [name for name in request['backend_source_sha256'] if name.endswith(('.cpp', '.cc', '.cu'))]
+        baseline_hash_names = set(request['backend_source_sha256'] if upstream else SOURCE_FILES) | set(binary_cpp_sources)
+        compiled_hashes = request['backend_source_sha256']
+        if request.get('compiled_backend_source_sha256') is not None:
+            if upstream_kind != 'upstream_next_stage_native_operator' or request.get('server_binary_execution') != 'none':
+                raise ApprovalError('A separate compiled baseline is only valid when the binary is unused')
+            compiled_hashes = request['compiled_backend_source_sha256']
+            baseline_hash_names = set(compiled_hashes)
+        if request.get('next_stage_profile') is not None or upstream_kind in ('upstream_next_stage_native_operator','upstream_FP8_optimization_operator','upstream_FP8_independent_numeric_calibration'):
+            # The binary retains its compiled identity independently of Python.
+            # Newly added Python modules arrive in the SHA-bound source bundle;
+            # their complete source hashes are checked by the worker afterwards.
+            baseline_hash_names = {n for n in baseline_hash_names if not n.endswith('.py')}
         observed = transport.rpc(_source("discovery.py"), {**config, "image_id": request["image_id"],
-                                 "hash_paths": [request["server_binary"]] + [request["source_repo"] + "/" + name for name in sorted(set(request['backend_source_sha256'] if upstream else SOURCE_FILES) | set(binary_cpp_sources))]
+                                 "hash_paths": [request["server_binary"]] + [request["source_repo"] + "/" + name for name in sorted(baseline_hash_names)]
                                  + ([request['runtime_library_directory'] + '/libzmq.so.5.2.5'] if upstream else [])})
         if upstream and observed['source_sha256'][request['runtime_library_directory'] + '/libzmq.so.5.2.5'] != request['zeromq_library_sha256']:
             raise ApprovalError('Private official build runtime library provenance differs')
@@ -164,7 +177,7 @@ def main() -> None:
         if (not standalone_pages and observed["source_sha256"][request["source_repo"] + "/xllm/core/runtime/worker_impl.cpp"]
                 != request["backend_source_sha256"]["xllm/core/runtime/worker_impl.cpp"]):
             raise ApprovalError("Python-only runtime update changed C++ source; a separately built binary would be required")
-        if any(observed['source_sha256'][request['source_repo'] + '/' + name] != request['backend_source_sha256'][name]
+        if any(observed['source_sha256'][request['source_repo'] + '/' + name] != compiled_hashes[name]
                for name in binary_cpp_sources):
             raise ApprovalError('Pinned API/attention C++ source differs from the existing binary source checkout')
         if observed["free_bytes"] < int(request["max_output_gib"] * 2**30) + 5 * 2**30:

@@ -1,0 +1,7 @@
+{
+  "range_source": "results/mirrors/nextgen-bf16-qwen38-calibration-r0-20261027i-complete-i1/files/output/bf16/kv_observer_snapshot.json",
+  "range_source_sha256": "3c9d96181a7b7640e4c9040045db4418e7e7ac15db6b97ed5407e01aedd90cbd",
+  "screen_source": "reports/operations/mxfp4-fp8-20261105a/AGENTIC_REAL_TOOLS_CPU_SCREEN-a1.json",
+  "historical_ranges_are_not_current_clipping_rate": true,
+  "new_GPU_service_results_present": false
+}

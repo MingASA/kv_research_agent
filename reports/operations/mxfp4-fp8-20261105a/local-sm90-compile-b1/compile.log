@@ -1,0 +1,2 @@
+{"module": "xllm_mxfp4_bf16_d256_b06c014c4f939393", "CUDA_VISIBLE_DEVICES": "", "target": "9.0a", "source_count": 10, "stage": "CPU_NVCC_only_no_module_load"}
+{"CPU_NVCC_build_success": true, "GPU_used": false, "module_loaded": false, "library": "/home/mingasa/kv-research-agent/reports/operations/mxfp4-fp8-20261105a/local-sm90-compile-b1/workspace/.cache/flashinfer/0.6.18.post1/90a/cached_ops/xllm_mxfp4_bf16_d256_b06c014c4f939393/xllm_mxfp4_bf16_d256_b06c014c4f939393.so"}

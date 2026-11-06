@@ -28,7 +28,11 @@ def validate_request(request: dict, approval: dict):
     q['workload'] = {'kind': A_KIND if official else C_KIND,
         'scope': 'official_model_prefix_graph_qualification' if official else 'native_model_prefix_graph_qualification'}
     q['max_wall_seconds'] = 3600
-    (validate_A if official else validate_C)(q, approval)
+    if request.get('next_stage_profile') is not None:
+        from .next_stage_deployment import validate_deployment
+        validate_deployment(q, approval)
+    else:
+        (validate_A if official else validate_C)(q, approval)
     validate_tools_contract(request)
 
 

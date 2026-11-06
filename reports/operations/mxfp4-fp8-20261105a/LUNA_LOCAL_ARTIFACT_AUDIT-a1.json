@@ -1,0 +1,15 @@
+{
+  "utc": "2026-11-06T05:52:58.407921+00:00",
+  "auditor": "archive_readonly_audit_luna",
+  "scope": "local exact paths only; no GPU/SSH/writes by auditor",
+  "SO_bytes": 7025360,
+  "SO_sha256": "9508ae4716801261f3c77352738b33edb683d692a542aa50f7a6bceba80ab6dc",
+  "PTX_sha256": "bd795e50af2de63ab5f6ffc2eaabfdb39839c22d27ad5fb291a4475a6268c36b",
+  "cubin_sha256": "842fa54ca114588a1401f5d0136c20b8be7a116869784e7c4d101d268fc5c137",
+  "actual_hashes_match_receipts": true,
+  "r2_python_commit_matches_clean_worktree_HEAD": "ba5eaec0a1b5b941da4b8ded0343d43f2c2b4158",
+  "CPU_dlopen_after_compile_passed": true,
+  "CUDA_initialized": false,
+  "GPU_execution": false,
+  "PROGRESS_explicitly_marks_1720_tools32_service3_unfinished": true
+}

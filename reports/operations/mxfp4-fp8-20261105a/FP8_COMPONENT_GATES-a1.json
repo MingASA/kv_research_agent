@@ -1,0 +1,99 @@
+{
+  "created_utc": "2026-11-06T04:48:48.383184+00:00",
+  "classification": "frozen_before_new_FP8_GPU_operator_outcomes",
+  "query_shapes_tokens": [
+    1,
+    256,
+    8192
+  ],
+  "query_layouts": [
+    "contiguous",
+    "strided_projection_24_of_32_heads"
+  ],
+  "query_bitwise_reference": "Frozen original da7c6446 query module plus independent Torch cast",
+  "query_gate": "All bytewise equal and each after/before device graph latency ratio <=1.05",
+  "mixed_shapes": [
+    {
+      "context": 1024,
+      "query_lengths": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        512,
+        512,
+        512,
+        512
+      ]
+    },
+    {
+      "context": 8192,
+      "query_lengths": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1024
+      ]
+    },
+    {
+      "context": 32768,
+      "query_lengths": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        4096,
+        4096
+      ]
+    }
+  ],
+  "mixed_correctness": "Non-leading decode rows compared to independent direct XQA BF16-query and direct FA3 FP8-query prefill; atol=.001 rtol=.001; GDN unchanged",
+  "mixed_gate": "Geomean after/before <=.97 with no case >1.15; includes prepare wall cost amortized across16 Full Attention layers",
+  "control": "Same optimized Query kernel, all-FA3 mixed dispatch; isolates split effect",
+  "timing": "Existing helper: warmup3; CUDA Graph50 replays device timing; planning outside separately wall-timed10 times. Not service graph coverage.",
+  "failure_action": "Do not promote rejected component to formal serving; retain all outcomes, no new shape/config search"
+}

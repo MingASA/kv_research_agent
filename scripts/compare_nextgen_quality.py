@@ -52,7 +52,9 @@ def compare(reference: Path, candidate: Path, *, repeats: int = 4000, upstream: 
                 raise ValueError('Paired upstream model/image/GPU/service differs: '+field)
         if (a['upstream_commit'] != OFFICIAL_COMMIT or a['server_source_commit'] != BASELINE_COMMIT
                 or a['arms'] != ['bf16'] or a.get('native_configuration') is not None
-                or c.get('native_base_commit') != BASELINE_COMMIT or c['arms'] not in (['fp8_e4m3'], ['nvfp4'])):
+                or c.get('native_base_commit') != BASELINE_COMMIT
+                or not (c['arms'] in (['fp8_e4m3'], ['nvfp4'])
+                        or c['arms'] == ['mxfp4'] and c.get('next_stage_profile') == 'ocp_mxfp4_20261105')):
             raise ValueError('Require official A and quantized C from the same frozen official/buildfix base')
         deployments = {'reference_source': a['server_source_commit'], 'candidate_source': c['server_source_commit'],
                        'official_base': a['upstream_commit'], 'common_buildfix_base': BASELINE_COMMIT,

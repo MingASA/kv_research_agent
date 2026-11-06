@@ -1,0 +1,13 @@
+{
+  "verified_utc": "2026-11-06 05:49:04 UTC",
+  "branch": "research/ocp-mxfp4-kv-20261105",
+  "sha": "ba5eaec0a1b5b941da4b8ded0343d43f2c2b4158",
+  "author": {
+    "name": "mingasa",
+    "email": "203962259+MingASA@users.noreply.github.com",
+    "date": "2026-11-06T05:39:36Z"
+  },
+  "github_login": "MingASA",
+  "url": "https://github.com/MingASA/xllm_quant_kvcache/commit/ba5eaec0a1b5b941da4b8ded0343d43f2c2b4158",
+  "production_acceptance_claim": false
+}

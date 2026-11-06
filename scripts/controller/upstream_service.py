@@ -34,7 +34,11 @@ def validate_request(request: dict, approval: dict):
     qualification['workload'] = {'kind': A_KIND if official else C_KIND,
         'scope': 'official_model_prefix_graph_qualification' if official else 'native_model_prefix_graph_qualification'}
     qualification['max_wall_seconds'] = 3600
-    (validate_A if official else validate_C)(qualification, approval)
+    if request.get('next_stage_profile') is not None:
+        from .next_stage_deployment import validate_deployment
+        validate_deployment(qualification, approval)
+    else:
+        (validate_A if official else validate_C)(qualification, approval)
     config = request.get('service_benchmark', {})
     if (set(config) != {'input_files_sha256', 'aiperf_cli_config_sha256', 'qualification_run_id',
                         'qualification_result_sha256', 'full_CLI_protocol_CPU_audit_sha256'}

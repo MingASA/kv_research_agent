@@ -18,7 +18,7 @@ def freeze_runtime(plan: Path) -> dict:
     program = '''import importlib,json,sys
 from pathlib import Path
 sys.path.insert(0,sys.argv[1])
-for name in ('worker','nextgen_multiturn','native_tools','upstream_qualification','upstream_native','upstream_operator','upstream_service','upstream_quality','upstream_tools','upstream_vmm','upstream_fp8_diagnosis','upstream_graph_observer','production'):
+for name in ('worker','nextgen_multiturn','native_tools','upstream_qualification','upstream_native','upstream_operator','upstream_service','upstream_quality','upstream_tools','upstream_vmm','upstream_fp8_diagnosis','upstream_graph_observer','production','native_next_stage','fp8_optimization_operator','fp8_numeric_model','next_stage_deployment'):
  module=importlib.import_module('kv_controller.'+name)
  assert Path(module.__file__).resolve().is_relative_to(Path(sys.argv[1]))
 assert not any(n=='scripts' or n.startswith('scripts.') for n in sys.modules)
