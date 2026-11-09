@@ -1,0 +1,74 @@
+{
+  "schema": "xllm_mxfp4_graph_sources_v1",
+  "pinned_flashinfer_commit": "8bc3b578027791336c6ae87db5c9d76f82cef8bc",
+  "upstream_graph_fix_commit": "4c2b8a7ed4af902df94e83260c8c12e8d3f71872",
+  "inputs": {
+    "include/flashinfer/attention/prefill.cuh": "f93cbea96e3a723254c15f5a52d6dd4c13e3892e88eb9b9fed1c0c0048c7d710",
+    "include/flashinfer/attention/scheduler.cuh": "a11a39aea393cdb380ad9439aac9170cd96849d7426ebbb920c5c8cdadfcc575",
+    "csrc/batch_prefill.cu": "6bed87bda87519440d2cc31ba7c349b6068f3458ad8a16d4187829930f83df82",
+    "csrc/batch_prefill_jit_binding.cu": "dad0d81c55b92f71a634cb8240dcb0d150aa6ffd391ef3ef5d87b6207eeca4fc",
+    "csrc/batch_prefill_customize_config.jinja": "c60626df3c30122721eae44530c18db25f63f934dd695e4803be342855b73ad7",
+    "csrc/batch_prefill_paged_kernel_inst.jinja": "0bbe91ae1972c4cbc2f12d1b0e2fddcf1e24050be9ea6b59231ad65a8163c5af",
+    "csrc/batch_prefill_ragged_kernel_inst.jinja": "4e177455f914c3665cf38728883d74c076f368c1bea3736c0033675de342f687",
+    "csrc/tvm_ffi_utils.h": "4fe41227dc3bd833b492f6b04bb94eb497b78be85847598eb19bd08c016de787",
+    "jit/core.py": "454316d67f22ebe3035cf17a13e9d01ffe5eed392d4e96adb952f3955bcb132b",
+    "jit/attention/modules.py": "23a8fb1fa8f45db3b527645d15a65c874dba6d3bc7d7df6599d9d7c3a6ddea30"
+  },
+  "parameters": {
+    "backend": "fa2",
+    "dtype_q": "torch.bfloat16",
+    "dtype_kv": "torch.uint8",
+    "dtype_o": "torch.bfloat16",
+    "idtype": "torch.int32",
+    "head_dim_qk": 256,
+    "head_dim_vo": 256,
+    "additional_tensor_names": [
+      "maybe_custom_mask",
+      "maybe_mask_indptr",
+      "maybe_alibi_slopes",
+      "maybe_prefix_len_ptr",
+      "maybe_token_pos_in_items_ptr",
+      "maybe_max_item_len_ptr",
+      "maybe_k_cache_sf",
+      "maybe_v_cache_sf"
+    ],
+    "additional_tensor_dtypes": [
+      "uint8_t",
+      "int32_t",
+      "float",
+      "uint32_t",
+      "uint16_t",
+      "uint16_t",
+      "uint8_t",
+      "uint8_t"
+    ],
+    "additional_scalar_names": [
+      "logits_soft_cap",
+      "sm_scale",
+      "rope_rcp_scale",
+      "rope_rcp_theta",
+      "token_pos_in_items_len"
+    ],
+    "additional_scalar_dtypes": [
+      "double",
+      "double",
+      "double",
+      "double",
+      "int64_t"
+    ],
+    "variant_name": "DefaultAttention<use_custom_mask, false, false, false>",
+    "variant_decl": "#include<flashinfer/attention/variants.cuh>",
+    "pos_encoding_mode": 0,
+    "use_sliding_window": false,
+    "use_logits_soft_cap": false,
+    "use_fp16_qk_reduction": false,
+    "fp8_enabled": false
+  },
+  "patched_sources": {
+    "mxfp4_prefill.cuh": "b06c014c4f9393935ba1eaad0734d7f7402eaad1c198fc03cb6382f7467f489f",
+    "mxfp4_scheduler.cuh": "2ef4898b9989a1a8e7aa98d52ecf58e81d0e8661776f07cbbf088c647bba6caf",
+    "mxfp4_batch_prefill.cu": "3bff54e7a9722dfd474a93173eab8e2a1a02e7f43d219f16987af820a1cbfaba"
+  },
+  "fingerprint": "10c08491f737046dfe440fd4d255656b4880f45a0a1496a427845bbf306b47b3",
+  "module_name": "xllm_mxfp4_bf16_d256_graph_10c08491f737046dfe440fd4d255656b4880f45a0a1496a427845bbf306b47b3"
+}

@@ -270,11 +270,15 @@ def main() -> None:
         if file_sha(Path(name)) != expected:
             raise ValueError("Binary/input/model config identity drift")
     env = environment(args.arm)
+    if request.get('python_overlay_binary_compatibility') is not None:
+        from .python_overlay_compatibility import validate_overlay_request
+        validate_overlay_request(request, Path(request['python_source_repo']))
     if args.arm=='mxfp4':env['FLASHINFER_CUDA_ARCH_LIST']='9.0a'
     if request.get('native_jit_artifact') is not None or request.get('cpu_native_jit_artifact') is not None:
         from .native_jit_reuse import install
         install(request,output)
-    if request.get('native_jit_artifact',{}).get('cache_tree'):
+    if (request.get('native_jit_artifact',{}).get('cache_tree')
+            or request.get('cpu_native_jit_artifact',{}).get('cache_tree')):
         # Verify FI's real dependency scan without a GPU context, then let the
         # model use the unchanged official build_and_load path in this cache.
         check_env=dict(env,CUDA_VISIBLE_DEVICES='',

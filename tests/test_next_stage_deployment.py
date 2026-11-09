@@ -107,6 +107,35 @@ class NextStageAdmissionTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             validate_pair_sources(reference,self.request,'fp8_e4m3')
 
+    def test_p1_model_profiles_keep_exact_operator_sources_and_explicit_overlay(self):
+        import json
+        from pathlib import Path
+        from tests import test_python_overlay_compatibility as git_fixtures
+        from scripts.controller.kv_p1_operator import source_files
+        from scripts.controller.next_stage_deployment import P1_EXTENSION, PROFILES
+        fixture=git_fixtures.OverlayGitTest();fixture.setUp()
+        try:
+            overlay=fixture.request()
+            overlay['image_id']=self.request['image_id']
+            overlay['python_overlay_binary_compatibility']['binary_identity']['image_id']=self.request['image_id']
+            manifest=json.loads((Path(__file__).parent/'fixtures/kv_p1_mxfp4_graph_manifest.json').read_bytes())
+            for arm,profile,config in (('mxfp4',PROFILES[0],MX_CONFIGURATION),
+                    ('fp8_e4m3',PROFILES[1],CONFIGURATIONS['fp8_e4m3']),
+                    ('nvfp4',PROFILES[2],CONFIGURATIONS['nvfp4'])):
+                request=copy.deepcopy(self.request)
+                hashes={name:'4'*64 for name in source_files('mxfp4' if arm=='mxfp4' else 'nvfp4')}
+                request.update({k:v for k,v in overlay.items() if k not in ('backend_source_sha256','compiled_backend_source_sha256')})
+                request.update(arms=[arm],next_stage_profile=profile,p1_extension=P1_EXTENSION,
+                    native_configuration=config,operators={arm:{'planner':config['prefill'],'decode':config['decode']}},
+                    backend_source_sha256=hashes,
+                    compiled_backend_source_sha256={p:h for p,h in hashes.items() if not p.endswith('.py')})
+                if arm=='mxfp4':request['native_jit_source_manifest']=manifest
+                with self.subTest(arm=arm):validate_deployment(request,self.approval)
+                bad=copy.deepcopy(request);bad.pop('python_overlay_binary_compatibility')
+                with self.assertRaises(ApprovalError):validate_deployment(bad,self.approval)
+        finally:
+            fixture.tearDown()
+
     def test_tool_pairs_keep_failed_tasks_and_label_native_reference(self):
         from scripts.compare_nextgen_tools import paired_scores
 

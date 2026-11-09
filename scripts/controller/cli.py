@@ -135,10 +135,14 @@ def main() -> None:
         request, hashes, assets = _local_package(args.package)
         validate_request(request, approval)
         validate_frozen_policy(args.package,request,approval)
+        from .python_overlay_compatibility import validate_overlay_request
+        validate_overlay_request(request)
         upstream_kind = request.get('workload', {}).get('kind')
-        upstream = upstream_kind in ('upstream_official_A_model_qualification', 'upstream_native_C_operator_qualification', 'upstream_native_C_model_qualification', 'upstream_common_path_BF16_regression', 'upstream_FP8_direct_library_attribution', 'upstream_AC_fixed_production_service', 'upstream_AC_frozen_core_quality1720', 'upstream_AC_real_native_tools32', 'upstream_native_VMM_compatibility', 'upstream_next_stage_native_operator', 'upstream_FP8_optimization_operator', 'upstream_FP8_retained_candidate_operator', 'upstream_FP8_independent_numeric_calibration', 'upstream_next_stage_model_qualification')
+        upstream = upstream_kind in ('upstream_official_A_model_qualification', 'upstream_native_C_operator_qualification', 'upstream_native_C_model_qualification', 'upstream_common_path_BF16_regression', 'upstream_FP8_direct_library_attribution', 'upstream_AC_fixed_production_service', 'upstream_AC_frozen_core_quality1720', 'upstream_AC_real_native_tools32', 'upstream_native_VMM_compatibility', 'upstream_next_stage_native_operator', 'upstream_FP8_optimization_operator', 'upstream_FP8_retained_candidate_operator', 'upstream_FP8_independent_numeric_calibration', 'upstream_next_stage_model_qualification', 'upstream_readonly_Q4_component_profile')
         upstream_A = upstream_kind == 'upstream_official_A_model_qualification' or (upstream_kind in ('upstream_AC_fixed_production_service','upstream_AC_frozen_core_quality1720','upstream_AC_real_native_tools32') and request['arms'] == ['bf16'])
-        config_name = ('UPSTREAM_MXFP4.local.json' if request.get('next_stage_profile') == 'ocp_mxfp4_20261105' else
+        upstream = upstream or upstream_kind == 'upstream_KV_P0_P1_operator'
+        config_name = ('UPSTREAM_MXFP4.local.json' if request.get('next_stage_profile') == 'ocp_mxfp4_20261105'
+                       or (upstream_kind == 'upstream_KV_P0_P1_operator' and request.get('arms') == ['mxfp4']) else
                        'UPSTREAM_AC_A.local.json' if upstream_A else
                        'UPSTREAM_AC_C.local.json' if upstream else
                        'NEXTGEN_CONFIG.local.json' if request['schema'] == 'kv-nextgen-run-v1' else 'CONFIG.local.json')
@@ -154,11 +158,13 @@ def main() -> None:
         baseline_hash_names = set(request['backend_source_sha256'] if upstream else SOURCE_FILES) | set(binary_cpp_sources)
         compiled_hashes = request['backend_source_sha256']
         if request.get('compiled_backend_source_sha256') is not None:
-            if upstream_kind != 'upstream_next_stage_native_operator' or request.get('server_binary_execution') != 'none':
-                raise ApprovalError('A separate compiled baseline is only valid when the binary is unused')
+            unused_binary = (upstream_kind in ('upstream_next_stage_native_operator', 'upstream_readonly_Q4_component_profile', 'upstream_KV_P0_P1_operator')
+                             and request.get('server_binary_execution') == 'none')
+            if not unused_binary and request.get('python_overlay_binary_compatibility') is None:
+                raise ApprovalError('Separate compiled identity requires an unused binary or reviewed full-tree Python overlay')
             compiled_hashes = request['compiled_backend_source_sha256']
             baseline_hash_names = set(compiled_hashes)
-        if request.get('next_stage_profile') is not None or upstream_kind in ('upstream_next_stage_native_operator','upstream_FP8_optimization_operator','upstream_FP8_retained_candidate_operator','upstream_FP8_independent_numeric_calibration'):
+        if request.get('next_stage_profile') is not None or upstream_kind in ('upstream_next_stage_native_operator','upstream_FP8_optimization_operator','upstream_FP8_retained_candidate_operator','upstream_FP8_independent_numeric_calibration','upstream_readonly_Q4_component_profile','upstream_KV_P0_P1_operator'):
             # The binary retains its compiled identity independently of Python.
             # Newly added Python modules arrive in the SHA-bound source bundle;
             # their complete source hashes are checked by the worker afterwards.
@@ -177,8 +183,10 @@ def main() -> None:
         if (not standalone_pages and observed["source_sha256"][request["source_repo"] + "/xllm/core/runtime/worker_impl.cpp"]
                 != request["backend_source_sha256"]["xllm/core/runtime/worker_impl.cpp"]):
             raise ApprovalError("Python-only runtime update changed C++ source; a separately built binary would be required")
+        checked_compiled_sources = (compiled_hashes if request.get('python_overlay_binary_compatibility') is not None
+                                    else binary_cpp_sources)
         if any(observed['source_sha256'][request['source_repo'] + '/' + name] != compiled_hashes[name]
-               for name in binary_cpp_sources):
+               for name in checked_compiled_sources):
             raise ApprovalError('Pinned API/attention C++ source differs from the existing binary source checkout')
         if observed["free_bytes"] < int(request["max_output_gib"] * 2**30) + 5 * 2**30:
             raise ApprovalError("Insufficient live shared disk headroom")

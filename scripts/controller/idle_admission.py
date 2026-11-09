@@ -12,7 +12,8 @@ FAST_ADMISSION = {
 }
 _KINDS = {'upstream_next_stage_native_operator','upstream_FP8_optimization_operator',
           'upstream_FP8_retained_candidate_operator',
-          'upstream_FP8_independent_numeric_calibration','upstream_next_stage_model_qualification'}
+          'upstream_FP8_independent_numeric_calibration','upstream_next_stage_model_qualification',
+          'upstream_readonly_Q4_component_profile', 'upstream_KV_P0_P1_operator'}
 _FORMAL = {'upstream_AC_fixed_production_service','upstream_AC_frozen_core_quality1720',
            'upstream_AC_real_native_tools32'}
 
@@ -23,7 +24,7 @@ def idle_parameters(request: dict) -> tuple[int,int]:
         return 120,30
     kind=request.get('workload',{}).get('kind')
     stage=(kind in _KINDS or kind in _FORMAL and request.get('next_stage_profile') in
-           ('ocp_mxfp4_20261105','fp8_optimization_20261105'))
+           ('ocp_mxfp4_20261105','fp8_optimization_20261105','native_nvfp4_p1_20261109'))
     if value != FAST_ADMISSION or not stage or len(request.get('gpu_uuids',[])) != 1:
         raise ApprovalError('Fast admission requires the explicit single-GPU next-stage user policy')
     return 0,5

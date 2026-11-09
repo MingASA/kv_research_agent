@@ -1,7 +1,7 @@
 """Pinned SSH RPC. Never replay a possibly executed mutation.
 
-Only an audited OpenSSH pre-authentication banner refusal can reconnect before
-any session/exec request. Every later or ambiguous failure remains UNKNOWN.
+Only audited OpenSSH name-resolution or banner refusals reconnect before any
+session/exec request. Every later or ambiguous failure remains UNKNOWN.
 """
 
 from __future__ import annotations
@@ -72,6 +72,20 @@ def preauthentication_banner_refused(error: Exception) -> bool:
             and re.fullmatch(r'Connection closed by [A-Za-z0-9.:%\[\]-]+ port [0-9]+',lines[1]) is not None)
 
 
+def preauthentication_dns_failed(error: Exception, host: str) -> bool:
+    """Recognize the pinned client's temporary resolver failure before connect."""
+    if (not host or not isinstance(error, subprocess.CalledProcessError)
+            or error.returncode != 255 or error.stdout not in (None, b'', '')):
+        return False
+    raw = error.stderr or b''
+    try:
+        message = raw.decode('ascii') if isinstance(raw, bytes) else raw
+    except UnicodeDecodeError:
+        return False
+    return message.splitlines() == [
+        'ssh: Could not resolve hostname '+host+': Temporary failure in name resolution']
+
+
 def fingerprint(key: str) -> str:
     return "SHA256:" + base64.b64encode(hashlib.sha256(base64.b64decode(key, validate=True)).digest()).decode().rstrip("=")
 
@@ -139,13 +153,15 @@ class PinnedSSH:
                     raise RuntimeError("Remote RPC refused: " + str(response.get("error")))
                 return response
             except (subprocess.SubprocessError, OSError, ValueError, RuntimeError) as error:
-                preauth=(getattr(self,'preauth_reconnect_allowed',False)
-                         and preauthentication_banner_refused(error))
+                banner = preauthentication_banner_refused(error)
+                dns = preauthentication_dns_failed(error, getattr(self, 'endpoint', {}).get('host', ''))
+                preauth=(getattr(self,'preauth_reconnect_allowed',False) and (banner or dns))
                 if preauth:
                     write_new_json(self.local_directory/('SSH_PREAUTH_REFUSAL_'+uuid.uuid4().hex+'.json'),{
                         'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'attempt':attempt+1,
                         'mutation_requested':mutation,'session_or_remote_exec_requested':False,
-                        'classification':'verified_OpenSSH89p1_identification_before_userauth_session_exec',
+                        'classification':('verified_OpenSSH89p1_temporary_DNS_before_connect'
+                                          if dns else 'verified_OpenSSH89p1_identification_before_userauth_session_exec'),
                         'error':_error_text(error),'next':'bounded_reconnect' if attempt<2 else 'stop_readonly_reconciliation_only'})
                     if attempt<2:
                         time.sleep(15*2**attempt+random.uniform(0,1));continue

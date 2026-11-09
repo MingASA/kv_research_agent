@@ -68,6 +68,14 @@ def validate_request(request: dict, approval: dict) -> None:
     _require(request.get("schema") == SCHEMA, "Unknown next-generation contract")
     from .idle_admission import idle_parameters
     idle_parameters(request)
+    if request.get('workload', {}).get('kind') == 'upstream_KV_P0_P1_operator':
+        from .kv_p1_operator import validate_request as validate_p1_operator
+        validate_p1_operator(request, approval)
+        return
+    if request.get('workload', {}).get('kind') == 'upstream_readonly_Q4_component_profile':
+        from .q4_component_profile import validate_request as validate_component_profile
+        validate_component_profile(request, approval)
+        return
     if request.get('workload') == {'kind':'upstream_next_stage_model_qualification',
                                   'scope':'source_matched_native_model_prefix_Graph_qualification'}:
         from .next_stage_deployment import validate_deployment
@@ -428,6 +436,12 @@ def _operator_gate(output: Path, native_config: object | None = None) -> dict:
 
 
 def run_validation(ticket: dict, root: Path, output: Path, arm: str, env: dict) -> dict:
+    if ticket['request']['workload']['kind'] == 'upstream_KV_P0_P1_operator':
+        from .kv_p1_operator import run as run_p1_operator
+        return run_p1_operator(ticket, root, output, arm, env)
+    if ticket['request']['workload']['kind'] == 'upstream_readonly_Q4_component_profile':
+        from .q4_component_profile import run as run_component_profile
+        return run_component_profile(ticket, root, output, arm, env)
     if ticket['request']['workload']['kind'] == 'upstream_next_stage_model_qualification':
         from .next_stage_deployment import run as run_next_stage_model
         return run_next_stage_model(ticket,root,output,arm,env)

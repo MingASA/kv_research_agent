@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import hashlib
+import json
 import os
 from pathlib import Path
 import re
@@ -16,60 +17,118 @@ CACHE_RELATIVE=('flashinfer/.cache/flashinfer/0.6.18.post1/90a/'
                 'cached_ops/'+MODULE+'/'+MODULE+'.so')
 CACHE_BASE=Path(CACHE_RELATIVE).parents[2]
 CACHE_PREFIXES=tuple(str(CACHE_BASE/k/MODULE)+'/' for k in ('generated','cached_ops'))
+P1_FINGERPRINT='10c08491f737046dfe440fd4d255656b4880f45a0a1496a427845bbf306b47b3'
+P1_MODULE='xllm_mxfp4_bf16_d256_graph_'+P1_FINGERPRINT
+P1_CACHE_RELATIVE=CACHE_RELATIVE.replace(MODULE,P1_MODULE)
+JIT_PYTHON_SOURCES=('xllm/python/attention/mxfp4_flashinfer.py',
+                    'xllm/python/attention/mxfp4_graph_sources.py')
+
+
+def source_manifest_identity(manifest: dict) -> tuple[str,str,str]:
+    """Only this reviewed complete Graph generator contract can create a v2 cache."""
+    if (not isinstance(manifest,dict) or set(manifest)!={'schema','pinned_flashinfer_commit',
+            'upstream_graph_fix_commit','inputs','parameters','patched_sources','fingerprint','module_name'}
+            or manifest.get('schema')!='xllm_mxfp4_graph_sources_v1'):
+        raise ApprovalError('Unknown P1 JIT source manifest')
+    canonical={k:v for k,v in manifest.items() if k not in ('fingerprint','module_name')}
+    fingerprint=hashlib.sha256(json.dumps(canonical,sort_keys=True,separators=(',',':')).encode()).hexdigest()
+    if (fingerprint!=P1_FINGERPRINT or manifest['fingerprint']!=fingerprint
+            or manifest['module_name']!=P1_MODULE):
+        raise ApprovalError('P1 JIT needs the exact reviewed full-source fingerprint and new namespace')
+    return P1_MODULE,P1_CACHE_RELATIVE,hashlib.sha256(
+        json.dumps(manifest,sort_keys=True,separators=(',',':')).encode()).hexdigest()
+
+
+def artifact_identity(request: dict) -> tuple[str,str,str | None]:
+    manifest=request.get('native_jit_source_manifest')
+    p1=request.get('p1_extension')=={'schema':'kv_p0_p1_deployment_v1','profile':'kv_p0_p1_20261109'}
+    if manifest is None:
+        if p1 and request.get('arms')==['mxfp4']:
+            raise ApprovalError('P1 MXFP4 cannot fall back to a legacy JIT namespace')
+        return MODULE,CACHE_RELATIVE,None
+    if not p1 or request.get('arms')!=['mxfp4']:
+        raise ApprovalError('P1 JIT source manifest is limited to the explicit P1 MXFP4 deployment')
+    return source_manifest_identity(manifest)
+
+
+def _validate_cache_tree(tree: list, cache_relative: str, module: str) -> None:
+    seen=set();total=0
+    prefixes=tuple(str(Path(cache_relative).parents[2]/k/module)+'/' for k in ('generated','cached_ops'))
+    if not isinstance(tree,list) or not 1<=len(tree)<=128:raise ApprovalError('Unbounded native JIT cache tree')
+    for item in tree:
+        if not isinstance(item,dict) or not isinstance(item.get('relative'),str):
+            raise ApprovalError('Malformed native JIT cache member')
+        relative=item['relative'];path=Path(relative)
+        if (set(item)!={'relative','sha256','size','mtime_ns'} or path.is_absolute() or '..' in path.parts
+                or str(path)!=relative or relative in seen or not any(relative.startswith(prefix) for prefix in prefixes)
+                or re.fullmatch('[0-9a-f]{64}',item.get('sha256','')) is None
+                or type(item.get('size')) is not int or not 0<=item['size']<=64*2**20
+                or type(item.get('mtime_ns')) is not int or item['mtime_ns']<0):
+            raise ApprovalError('Unsafe native JIT cache member')
+        seen.add(relative);total+=item['size']
+    if total>128*2**20 or cache_relative not in seen:
+        raise ApprovalError('Incomplete/oversized native JIT cache tree')
 
 
 def validate(request: dict) -> None:
+    module,cache_relative,manifest_sha=artifact_identity(request)
+    v2=manifest_sha is not None
+    if v2 and re.fullmatch('[0-9a-f]{40}',request.get('python_source_commit','')) is None:
+        raise ApprovalError('P1 JIT requires an exact outer Python commit')
     artifact=request.get('native_jit_artifact')
     cpu=request.get('cpu_native_jit_artifact')
     if cpu is not None:
         if (artifact is not None or not isinstance(cpu,dict)
-                or set(cpu)!={'schema','build_id','build_result_sha256','CPU_admission_sha256','sha256','bytes','source_commit','image_id'}
-                or cpu.get('schema')!='MXFP4_SM90a_CPU_JIT_seed_v1'
+                or set(cpu)!={'schema','build_id','build_result_sha256','CPU_admission_sha256','sha256','bytes','source_commit','image_id'}|(
+                    {'module','cache_relative','source_manifest_sha256','build_manifest_sha256','cache_tree'} if v2 else set())
+                or cpu.get('schema')!=('MXFP4_SM90a_CPU_JIT_seed_v2' if v2 else 'MXFP4_SM90a_CPU_JIT_seed_v1')
                 or request.get('arms')!=['mxfp4']
-                or request.get('workload',{}).get('kind')!='upstream_next_stage_native_operator'
-                or re.fullmatch(r'upstream-ac-[0-9a-f]{8}-20261105[a-z]',cpu.get('build_id','')) is None
+                or request.get('workload',{}).get('kind')!=('upstream_KV_P0_P1_operator' if v2 else 'upstream_next_stage_native_operator')
+                or re.fullmatch(r'upstream-ac-'+(request.get('python_source_commit','')[:8] if v2 else '[0-9a-f]{8}')+
+                                ('-20261109[a-z]' if v2 else '-20261105[a-z]'),cpu.get('build_id','')) is None
                 or cpu.get('source_commit')!=request.get('python_source_commit')
                 or cpu.get('image_id')!=request.get('image_id')
                 or any(re.fullmatch('[0-9a-f]{64}',cpu.get(k,'')) is None for k in
                        ('sha256','build_result_sha256','CPU_admission_sha256'))
                 or type(cpu.get('bytes')) is not int or not 0<cpu['bytes']<=128*2**20):
             raise ApprovalError('CPU JIT seed is only a source/image-bound MXFP4 operator prerequisite')
+        if v2 and (cpu.get('module')!=module or cpu.get('cache_relative')!=cache_relative
+                or cpu.get('source_manifest_sha256')!=manifest_sha
+                or re.fullmatch('[0-9a-f]{64}',cpu.get('build_manifest_sha256','')) is None):
+            raise ApprovalError('P1 CPU JIT seed differs from its exact source manifest/module')
+        if v2:_validate_cache_tree(cpu['cache_tree'],cache_relative,module)
     if artifact is None:return
     reference=request.get('operator_qualification_reference')
+    fields={'schema','module','cache_relative','sha256','bytes','source_commit','image_id','qualification_reference'}
+    if v2:fields.add('source_manifest_sha256')
     if (not isinstance(artifact,dict)
-            or set(artifact) not in ({'schema','module','cache_relative','sha256','bytes','source_commit','image_id','qualification_reference'},
-                                    {'schema','module','cache_relative','sha256','bytes','source_commit','image_id','qualification_reference','cache_tree'})
-            or artifact.get('schema')!='qualified_MXFP4_JIT_reuse_v1'
-            or request.get('next_stage_profile')!='ocp_mxfp4_20261105' or request.get('arms')!=['mxfp4']
-            or artifact.get('module')!=MODULE or artifact.get('cache_relative')!=CACHE_RELATIVE
-            or artifact.get('source_commit')!=request.get('python_source_commit')
+            or set(artifact) not in (fields,fields|{'cache_tree'})
+            or artifact.get('schema')!=('qualified_MXFP4_JIT_reuse_v2' if v2 else 'qualified_MXFP4_JIT_reuse_v1')
+            or request.get('next_stage_profile') not in (('ocp_mxfp4_20261105','kv_p0_p1_20261109') if v2 else ('ocp_mxfp4_20261105',))
+            or request.get('arms')!=['mxfp4']
+            or artifact.get('module')!=module or artifact.get('cache_relative')!=cache_relative
+            or v2 and artifact.get('source_manifest_sha256')!=manifest_sha
+            or re.fullmatch('[0-9a-f]{40}',artifact.get('source_commit','')) is None
+            or not v2 and artifact.get('source_commit')!=request.get('python_source_commit')
             or artifact.get('image_id')!=request.get('image_id')
-            or reference is None or artifact.get('qualification_reference')!=reference
+            or not v2 and (reference is None or artifact.get('qualification_reference')!=reference)
+            or not isinstance(artifact.get('qualification_reference'),dict)
+            or re.fullmatch('[A-Za-z0-9_-]{1,128}',artifact.get('qualification_reference',{}).get('run_id','')) is None
+            or re.fullmatch('[0-9a-f]{64}',artifact.get('qualification_reference',{}).get('result_sha256','')) is None
             or re.fullmatch('[0-9a-f]{64}',artifact.get('sha256','')) is None
             or type(artifact.get('bytes')) is not int or not 0<artifact['bytes']<=128*2**20):
         raise ApprovalError('JIT reuse requires the exact source/image-qualified MXFP4 artifact')
     if 'cache_tree' in artifact:
-        tree=artifact['cache_tree'];seen=set();total=0
-        if not isinstance(tree,list) or not 1<=len(tree)<=128:raise ApprovalError('Unbounded native JIT cache tree')
-        for item in tree:
-            if not isinstance(item,dict) or not isinstance(item.get('relative'),str):
-                raise ApprovalError('Malformed native JIT cache member')
-            relative=item.get('relative','');path=Path(relative)
-            if (set(item)!={'relative','sha256','size','mtime_ns'} or not isinstance(relative,str)
-                    or path.is_absolute() or '..' in path.parts or str(path)!=relative or relative in seen
-                    or not any(relative.startswith(prefix) for prefix in CACHE_PREFIXES)
-                    or re.fullmatch('[0-9a-f]{64}',item.get('sha256','')) is None
-                    or type(item.get('size')) is not int or not 0<=item['size']<=64*2**20
-                    or type(item.get('mtime_ns')) is not int or item['mtime_ns']<0):
-                raise ApprovalError('Unsafe native JIT cache member')
-            seen.add(relative);total+=item['size']
-        if total>128*2**20 or CACHE_RELATIVE not in seen:
-            raise ApprovalError('Incomplete/oversized native JIT cache tree')
+        _validate_cache_tree(artifact['cache_tree'],cache_relative,module)
+    elif v2:
+        raise ApprovalError('P1 qualified JIT requires its complete generated/cache tree')
 
 
 def install(request: dict, output: Path, cache: Path=Path('/run_cache')) -> None:
     """Read the immutable predecessor; write only this run's fresh cache."""
     validate(request)
+    module,cache_relative,manifest_sha=artifact_identity(request)
+    v2=manifest_sha is not None
     artifact=request.get('native_jit_artifact')
     cpu=request.get('cpu_native_jit_artifact')
     if artifact is None and cpu is None:return
@@ -87,26 +146,56 @@ def install(request: dict, output: Path, cache: Path=Path('/run_cache')) -> None
             if hashlib.sha256(raw).hexdigest()!=cpu[key]:raise ValueError('CPU JIT proof SHA changed')
             values[name]=json.loads(raw)
         build=values['build_result.json'];admission=values['CPU_ONLY_ADMISSION.json']
-        manifest=json.loads((prior/'manifest.json').read_bytes())
-        if (build.get('schema')!='MXFP4_SM90a_CPU_JIT_build_v1' or build.get('success') is not True
+        manifest_path=prior/'manifest.json'
+        if v2 and (manifest_path.resolve(strict=True)!=manifest_path or manifest_path.stat().st_uid!=os.getuid()):
+            raise ValueError('P1 CPU build manifest is not owned/canonical')
+        manifest_raw=manifest_path.read_bytes();manifest=json.loads(manifest_raw)
+        if (build.get('schema')!=('MXFP4_SM90a_CPU_JIT_build_v2' if v2 else 'MXFP4_SM90a_CPU_JIT_build_v1') or build.get('success') is not True
                 or build.get('CPU_compile_and_load') is not True or build.get('GPU_job') is not False
                 or build.get('CUDA_initialized') is not False or build.get('FLASHINFER_CUDA_ARCH_LIST')!='9.0a'
                 or admission.get('GPU_device_nodes')!=[] or admission.get('source_commit')!=cpu['source_commit']
                 or build.get('source_commit')!=cpu['source_commit'] or manifest.get('image_id')!=cpu['image_id']
                 or build.get('library_sha256')!=cpu['sha256'] or build.get('library_bytes')!=cpu['bytes']):
             raise ValueError('CPU build is not the exact offline MXFP4 prerequisite')
-        source=prior/'cache'/CACHE_RELATIVE;artifact=cpu
+        if v2 and (hashlib.sha256(manifest_raw).hexdigest()!=cpu['build_manifest_sha256']
+                or manifest.get('source_commit')!=cpu['source_commit']
+                or manifest.get('native_jit_source_manifest')!=request['native_jit_source_manifest']
+                or build.get('module')!=module or build.get('source_manifest_sha256')!=manifest_sha):
+            raise ValueError('P1 CPU build manifest/module/source inputs changed')
+        source=prior/'cache'/cache_relative;artifact=cpu
         origin={'source_build_id':cpu['build_id'],'CPU_compile_only_before_GPU_qualification':True}
     else:
         prior,old=_completed_reference(request,artifact['qualification_reference'])
         acceptance=prior/'output/mxfp4/operators/acceptance.json'
+        value = json.loads(acceptance.read_bytes())
+        # V2 names the entire generated native program. An outer Python change
+        # may reuse it only with the same image, source manifest and adapter.
+        # This does not reuse model or quality acceptance across source commits.
+        if v2:
+            from .kv_p1_operator import operator_acceptance_passed as cache_passed
+        else:
+            cache_passed = operator_acceptance_passed
         if (old.get('python_source_commit')!=artifact['source_commit']
                 or old.get('image_id')!=artifact['image_id']
-                or not operator_acceptance_passed(json.loads(acceptance.read_bytes()),'mxfp4')):
+                or not cache_passed(value,'mxfp4')):
             raise ValueError('JIT predecessor did not pass this exact source/image operator gate')
-        source=prior/'cache/mxfp4'/CACHE_RELATIVE
+        if v2 and (value.get('runtime_source_commit')!=old.get('python_source_commit')
+                or value.get('tool_sha256')!=old.get('probe_driver_sha256')):
+            raise ValueError('P1 JIT predecessor acceptance does not match its source/tool')
+        if v2 and old.get('native_jit_source_manifest')!=request['native_jit_source_manifest']:
+            raise ValueError('P1 JIT predecessor source manifest differs')
+        if v2 and old.get('python_source_commit')!=request['python_source_commit']:
+            old_sources=old.get('backend_source_sha256',{})
+            new_sources=request.get('backend_source_sha256',{})
+            if any(not old_sources.get(name) or old_sources[name]!=new_sources.get(name)
+                   for name in JIT_PYTHON_SOURCES):
+                raise ValueError('Cross-commit JIT reuse changed its Python generator or adapter')
+        source=prior/'cache/mxfp4'/cache_relative
         origin={'source_run_id':artifact['qualification_reference']['run_id'],
-                'CPU_compile_only_before_GPU_qualification':False}
+                'CPU_compile_only_before_GPU_qualification':False,
+                'cache_source_commit':artifact['source_commit'],
+                'target_python_source_commit':request['python_source_commit'],
+                'cross_commit_cache_only':artifact['source_commit']!=request['python_source_commit']}
     if (source.resolve(strict=True)!=source or not source.is_file() or source.stat().st_uid!=os.getuid()
             or source.stat().st_size!=artifact['bytes']):
         raise ValueError('Qualified JIT source ownership, path or size changed')
@@ -117,7 +206,7 @@ def install(request: dict, output: Path, cache: Path=Path('/run_cache')) -> None
         raise ValueError('JIT destination must be this run\'s owned canonical cache')
     tree=artifact.get('cache_tree',[])
     for item in tree:
-        src=prior/'cache/mxfp4'/item['relative'];info=src.stat()
+        src=prior/('cache' if cpu is not None else 'cache/mxfp4')/item['relative'];info=src.stat()
         if (src.resolve(strict=True)!=src or not src.is_file() or info.st_uid!=os.getuid()
                 or info.st_size!=item['size'] or info.st_mtime_ns!=item['mtime_ns']):
             raise ValueError('Original JIT cache member ownership/path/size/mtime changed')
@@ -133,7 +222,7 @@ def install(request: dict, output: Path, cache: Path=Path('/run_cache')) -> None
         os.utime(destination,ns=(info.st_atime_ns,item['mtime_ns']))
         if destination.stat().st_mtime_ns!=item['mtime_ns']:
             raise ValueError('New cache cannot preserve original dependency timestamps')
-    target=cache/CACHE_RELATIVE
+    target=cache/cache_relative
     target.parent.mkdir(parents=True,exist_ok=True)
     if target.parent.resolve(strict=True)!=target.parent or target.is_symlink():
         raise ValueError('JIT destination escaped the isolated cache')
@@ -142,8 +231,9 @@ def install(request: dict, output: Path, cache: Path=Path('/run_cache')) -> None
             raise ValueError('Never overwrite a different cached JIT library')
     else:
         write_new_bytes(target,raw)
-    write_new_json(output/'native_JIT_reuse.json',{'schema':'MXFP4_JIT_reuse_v1',**origin,'module':MODULE,
+    write_new_json(output/'native_JIT_reuse.json',{'schema':'MXFP4_JIT_reuse_v2' if v2 else 'MXFP4_JIT_reuse_v1',**origin,'module':module,
         'sha256':artifact['sha256'],'bytes':len(raw),'source_and_destination_SHA_verified':True,
+        **({'source_manifest_sha256':manifest_sha} if v2 else {}),
         'copied_cache_tree_files':len(tree),'original_dependency_mtime_preserved':bool(tree),
         'ninja_noop_not_yet_proven':True,
         'predecessor_modified':False,'inference_performance_claim':False})
@@ -156,7 +246,13 @@ def verify_noop(receipt: Path,output: Path) -> None:
     from xllm.python.attention.mxfp4_flashinfer import mxfp4_jit_spec
     import json
 
-    proof=json.loads(receipt.read_bytes());spec,_,_=mxfp4_jit_spec();spec.write_ninja()
+    proof=json.loads(receipt.read_bytes());spec,_,_=mxfp4_jit_spec()
+    if spec.name!=proof['module']:raise ValueError('Actual JIT generator chose a different module')
+    if proof.get('schema')=='MXFP4_JIT_reuse_v2':
+        from xllm.python.attention.mxfp4_flashinfer import mxfp4_jit_source_manifest
+        if source_manifest_identity(mxfp4_jit_source_manifest())[2]!=proof['source_manifest_sha256']:
+            raise ValueError('Actual JIT generator source manifest differs')
+    spec.write_ninja()
     command=['ninja','-n','-d','explain','-C',str(spec.build_dir),'-f',str(spec.ninja_path)]
     result=subprocess.run(command,capture_output=True,text=True,check=True,timeout=60)
     text=result.stdout+'\n'+result.stderr

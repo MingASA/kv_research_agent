@@ -158,7 +158,15 @@ def run(payload: dict) -> dict:
              'Remote identity differs')
     base=Path(approval['approved_workspace']);_owned(base)
     build_id=manifest['build_id']
-    _require(re.fullmatch(r'upstream-ac-[0-9a-f]{8}-202611(?:02|05)[a-z]',build_id) is not None,'Invalid build ID')
+    legacy_id = re.fullmatch(r'upstream-ac-[0-9a-f]{8}-202611(?:02|05)[a-z]',build_id) is not None
+    p1_id = (re.fullmatch(r'upstream-ac-[0-9a-f]{8}-20261109[a-z]',build_id) is not None
+             and manifest.get('build_purpose') == 'MXFP4_SM90a_CPU_JIT_P0_P1'
+             and isinstance(manifest.get('native_jit_source_manifest'),dict)
+             and build_id[12:20] == manifest.get('source_commit','')[:8])
+    _require(legacy_id or p1_id,'Invalid build ID or unbound P1 JIT build purpose')
+    stable_cache=manifest.get('stable_JIT_cache_mount')
+    _require(stable_cache is None or p1_id and stable_cache=='/run_cache',
+             'Stable cache alias is only allowed for the isolated P1 JIT build')
     root=base/'agent_work/builds'/build_id
     _require(manifest['host_root']==str(root) and manifest['uid']==os.getuid(),'Build root/UID mismatch')
     _require(manifest['image_id']==approval['approved_image_id'],'Unpinned build image')
@@ -303,10 +311,14 @@ def run(payload: dict) -> dict:
                 subprocess.run(common+['-C',str(target/relative),'checkout','--detach',commit],env=env,capture_output=True,check=True,timeout=90)
         inner='/workspace/agent_work/builds/'+build_id
         extra_mounts=[]
+        if stable_cache is not None:
+            (root/'cache').mkdir()
+            _owned(root/'cache')
+            extra_mounts+=['--mount','type=bind,src='+str(root/'cache')+',dst=/run_cache']
         if previous or snapshot:
             virtual='/workspace/agent_work/builds/'+(previous.name if previous else snapshot['virtual_build_id'])
             writable_build = previous/'build' if previous else root/'build'
-            extra_mounts=['--mount','type=bind,src='+str(target)+',dst='+virtual+'/source_repo,readonly',
+            extra_mounts+=['--mount','type=bind,src='+str(target)+',dst='+virtual+'/source_repo,readonly',
                           '--mount','type=bind,src='+str(writable_build)+',dst='+virtual+'/build',
                           '--mount','type=bind,src='+str(target)+',dst='+inner+'/source_repo,readonly']
             for relative in generated:

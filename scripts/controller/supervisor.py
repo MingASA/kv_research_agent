@@ -256,6 +256,9 @@ class DockerBackend:
                                             "rev-parse", "HEAD"], text=True, timeout=10).strip()
             if head != request["python_source_commit"]:
                 raise UnsafeState("Pinned production Python checkout HEAD drift")
+        if request.get('python_overlay_binary_compatibility') is not None:
+            from .python_overlay_compatibility import validate_overlay_request
+            validate_overlay_request(request, Path(request['python_source_repo']))
         image = json.loads(subprocess.check_output(["docker", "image", "inspect", request["image_id"]],
                                                    text=True, timeout=10))[0]
         if image["Id"] != request["image_id"]:

@@ -85,9 +85,12 @@ def decode_evidence(value: dict, expected_size: int) -> bytes:
 
 
 def mirror(run: str, destination: Path, *, omit_large_core_dumps: bool = False,
-           reuse_local_frozen_assets: bool = False, chunk_mib: int = 16):
+           reuse_local_frozen_assets: bool = False, chunk_mib: int = 16,
+           small_file_mib: int = 1):
     if type(chunk_mib) is not int or chunk_mib not in (1, 2, 4, 8, 16):
         raise ValueError('Evidence chunks must use one of the bounded MiB sizes')
+    if type(small_file_mib) is not int or small_file_mib not in (1, 2, 4, 8, 16):
+        raise ValueError('Whole-file batches must fit the existing 16MiB RPC envelope')
     secure_directory(destination)
     ticket = json.loads((Path('state/controller/tickets')/(run+'.json')).read_bytes())
     transport = PinnedSSH(ticket['approval'], destination/'pin')
@@ -174,7 +177,7 @@ def mirror(run: str, destination: Path, *, omit_large_core_dumps: bool = False,
             if target.is_symlink() or sha(target) != item['sha256'] or target.stat().st_size != item['size']:
                 raise ValueError('Never overwrite a different local evidence file')
             continue
-        if item['size'] <= 2**20:
+        if item['size'] <= small_file_mib * 2**20:
             if len(pending) == 64 or sum(x['size'] for x in pending)+item['size'] > 16*2**20:
                 save_small(pending);pending=[]
             pending.append(item)
@@ -217,7 +220,8 @@ def mirror(run: str, destination: Path, *, omit_large_core_dumps: bool = False,
     else:
         write_new_json(output, manifest)
     print(json.dumps({'run_id': run, 'manifest': str(output), 'files': len(inventory['files']),
-                      'bytes': inventory['bytes'], 'remote_writes': 0, 'chunk_mib': chunk_mib}))
+                      'bytes': inventory['bytes'], 'remote_writes': 0, 'chunk_mib': chunk_mib,
+                      'small_file_mib': small_file_mib}))
 
 
 if __name__ == '__main__':
@@ -227,6 +231,8 @@ if __name__ == '__main__':
     parser.add_argument('--omit-large-core-dumps', action='store_true')
     parser.add_argument('--reuse-local-frozen-assets', action='store_true')
     parser.add_argument('--chunk-mib', type=int, choices=(1, 2, 4, 8, 16), default=16)
+    parser.add_argument('--small-file-mib', type=int, choices=(1, 2, 4, 8, 16), default=1)
     args = parser.parse_args()
     mirror(args.run_id, args.out, omit_large_core_dumps=args.omit_large_core_dumps,
-           reuse_local_frozen_assets=args.reuse_local_frozen_assets, chunk_mib=args.chunk_mib)
+           reuse_local_frozen_assets=args.reuse_local_frozen_assets, chunk_mib=args.chunk_mib,
+           small_file_mib=args.small_file_mib)
