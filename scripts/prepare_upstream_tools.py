@@ -8,13 +8,14 @@ import shutil
 
 from scripts.controller.durable import digest
 from scripts.controller.policy import validate_request
-from scripts.controller.upstream_tools import KIND, TOOL_GPU
+from scripts.controller.upstream_tools import KIND, TOOL_GPU, QUALITY_GPU, QUALITY_GPU_AFFINITY
 from scripts.upstream_package_runtime import freeze_runtime, attach_remote_asset_reuse
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def prepare(quality_package: Path, quality_scores: Path, run: str, reuse_assets_from_run: str | None):
+def prepare(quality_package: Path, quality_scores: Path, run: str, reuse_assets_from_run: str | None,
+            *, use_qualified_quality_gpu: bool = False):
     parent = json.loads(quality_package.read_bytes())
     request = dict(parent['request'])
     quality = json.loads(quality_scores.read_bytes())
@@ -25,6 +26,12 @@ def prepare(quality_package: Path, quality_scores: Path, run: str, reuse_assets_
                 ('model_id', 'binary_sha256', 'server_source_commit', 'python_source_commit',
                  'service', 'operators', 'native_configuration'))):
         raise ValueError('Require actual independently scored same-version full1720, not historical quality')
+    target_gpu = TOOL_GPU
+    if use_qualified_quality_gpu:
+        if request.get('gpu_uuids') != [QUALITY_GPU]:
+            raise ValueError('Relocated tools must use the actual completed core-quality GPU')
+        target_gpu = QUALITY_GPU
+        request['tool_gpu_affinity'] = QUALITY_GPU_AFFINITY
     previous = json.loads((ROOT/'plans/experiments/nextgen-bf16-qwen38-mixed8192-tools32-r0-20261030zc/package.json').read_bytes())
     plan = ROOT/'plans/experiments'/run
     plan.mkdir()
@@ -47,12 +54,12 @@ def prepare(quality_package: Path, quality_scores: Path, run: str, reuse_assets_
     run_root = request['approved_workspace']+'/agent_work/runs/'+run
     for field in ('quality_evaluation', 'range_observation', 'model_proof_reuse', 'graph_observer', 'packaging_recovery'):
         request.pop(field, None)
-    request.update(run_id=run, remote_output=run_root, python_source_repo=run_root+'/source_repo', gpu_uuids=[TOOL_GPU],
+    request.update(run_id=run, remote_output=run_root, python_source_repo=run_root+'/source_repo', gpu_uuids=[target_gpu],
         dataset_path=run_root+'/input/validation.json', replicate=0, max_wall_seconds=5400, max_output_gib=4,
         research_reason='Original32 native-tool conversations/112user turns, same-version quality and normal upstream serving',
         workload={'kind': KIND, 'scope': 'same_version_original32_112turns_native_tools'}, tool_evaluation=config,
         experiment_key=digest({'kind': KIND, 'source': request['server_source_commit'],
-            'configuration': request.get('native_configuration'), 'GPU': request['gpu_uuids'], 'tool_evaluation': config}))
+            'configuration': request.get('native_configuration'), 'GPU': [target_gpu], 'tool_evaluation': config}))
     files.update(freeze_runtime(plan))
     approval = json.loads((Path.home()/'.config/kv-research/approval.json').read_bytes())
     validate_request(request, approval)
@@ -72,5 +79,8 @@ if __name__ == '__main__':
     parser.add_argument('--quality-scores', type=Path, required=True)
     parser.add_argument('--run-id', required=True)
     parser.add_argument('--reuse-assets-from-run')
+    parser.add_argument('--use-qualified-quality-gpu', action='store_true',
+                        help='Explicit repaired MXFP4 semantic-quality relocation; no tool performance comparison')
     args = parser.parse_args()
-    prepare(args.quality_package, args.quality_scores, args.run_id, args.reuse_assets_from_run)
+    prepare(args.quality_package, args.quality_scores, args.run_id, args.reuse_assets_from_run,
+            use_qualified_quality_gpu=args.use_qualified_quality_gpu)

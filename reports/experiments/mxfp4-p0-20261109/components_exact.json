@@ -1,0 +1,86 @@
+{
+  "actual_run": "upstream-fast-kvp1-20261109f-mx-mainmodel-0001",
+  "source_commit": "3bc2b2e1e10fa5409a6a4c4461bdb1ca760df8d4",
+  "original_tool_receipt_sha256": "a35f1f288cf993d03dc216fda57e68ff3e104191f16161dfbdbf0e9edc7c5630",
+  "correctness_pass": true,
+  "service_admitted": false,
+  "component_rows": [
+    {
+      "performance_gate": null,
+      "routes": [
+        {
+          "graph_event_us": 51795.24841308594,
+          "kernel_active_us": 51746.412,
+          "mode": "full",
+          "planning_api_us": 130.88549999999998
+        }
+      ],
+      "shape": [
+        1,
+        8192,
+        8192
+      ]
+    },
+    {
+      "performance_gate": {
+        "gpu_regression_at_most_5pct": true,
+        "graph_event_ratio": 0.968106322449993,
+        "host_ratio": 0.2481128508868656,
+        "host_reduction_at_least_10pct": true,
+        "kernel_active_ratio": 0.9759242325194117,
+        "pass": true
+      },
+      "routes": [
+        {
+          "graph_event_us": 318.1567907333374,
+          "kernel_active_us": 312.97860000000003,
+          "mode": "full",
+          "planning_api_us": 317.40999999999997
+        },
+        {
+          "graph_event_us": 308.00960063934326,
+          "kernel_active_us": 305.4434,
+          "mode": "fast",
+          "planning_api_us": 78.7535
+        }
+      ],
+      "shape": [
+        32,
+        2048,
+        1
+      ]
+    },
+    {
+      "performance_gate": {
+        "gpu_regression_at_most_5pct": false,
+        "graph_event_ratio": 1.0915139517972632,
+        "host_ratio": 0.24378203614169494,
+        "host_reduction_at_least_10pct": true,
+        "kernel_active_ratio": 1.0904181648605102,
+        "pass": false
+      },
+      "routes": [
+        {
+          "graph_event_us": 2238.8192176818848,
+          "kernel_active_us": 2242.5892,
+          "mode": "full",
+          "planning_api_us": 319.6585
+        },
+        {
+          "graph_event_us": 2443.7024116516113,
+          "kernel_active_us": 2445.3599999999997,
+          "mode": "fast",
+          "planning_api_us": 77.92699999999999
+        }
+      ],
+      "shape": [
+        32,
+        16384,
+        1
+      ]
+    }
+  ],
+  "decision": "Reject the fast-planning candidate under the frozen GPU regression threshold; no additional timing replication or parameter candidates",
+  "retained_source": "e10830c907bbae57e8e5dbb9e316303996059ef0",
+  "retained_path": "Graph repair + full planning, no common Scheduler/Graph/Prefix changes"
+}

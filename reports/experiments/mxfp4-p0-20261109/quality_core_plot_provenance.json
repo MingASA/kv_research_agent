@@ -1,0 +1,16 @@
+{
+  "source_sha256": {
+    "upstream-production-kv-20261102/quality-pair-A-FP8-a1.json": "c9aafeceeb1954a65b83d43a52fc96879457be5b500f8ce4394f78906496af26",
+    "upstream-production-kv-20261102/quality-pair-A-NVFP4-a1.json": "860dea96af8cff085d960fc4d70a6b0edabf3b4254273cbd664bc2dd93055e64",
+    "mxfp4-fp8-20261105/quality-pair-A-FP8-retained-a1.json": "b7a03e762c35d9ba9485bd10bb9dea3242d1afb110a25ac0caaeff7a87b17326",
+    "mxfp4-p0-20261109/quality-pair-A-MXFP4-a1.json": "a0e28ed98d984f4e990dc11bd34766c40435900dad12ecdce0669f0ce80b8949"
+  },
+  "frozen_point_margins_pp": [
+    0.5,
+    1.0,
+    2.0
+  ],
+  "core_generation_count": 1720,
+  "tool_results_not_inferred": true,
+  "statistical_noninferiority_or_production_acceptance": false
+}

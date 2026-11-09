@@ -14,15 +14,29 @@ from .upstream_native import MODEL_KIND as C_KIND
 
 KIND = 'upstream_AC_real_native_tools32'
 TOOL_GPU = 'GPU-47374a5f-689b-fa8c-49c4-4aa6840ebfb7'
+QUALITY_GPU = 'GPU-0c628a64-5f31-3501-fa3c-723f5b69254a'
+QUALITY_GPU_AFFINITY = 'repaired_mxfp4_core_quality_gpu0'
+
+
+def validate_tool_gpu(request: dict) -> None:
+    """Keep the original card default; explicitly label the finite quality relocation."""
+    affinity = request.get('tool_gpu_affinity')
+    if affinity is None and request.get('gpu_uuids') == [TOOL_GPU]:
+        return
+    from .next_stage_deployment import repair_only
+    if (affinity != QUALITY_GPU_AFFINITY or request.get('gpu_uuids') != [QUALITY_GPU]
+            or request.get('next_stage_profile') != 'ocp_mxfp4_20261105'
+            or not repair_only(request)):
+        raise ApprovalError('Tool GPU relocation requires the explicit repaired MXFP4 quality-only scope')
 
 
 def validate_request(request: dict, approval: dict):
     from .upstream_qualification import validate_request as validate_A
     from .upstream_native import validate_request as validate_C
     if (request.get('workload') != {'kind': KIND, 'scope': 'same_version_original32_112turns_native_tools'}
-            or request.get('max_wall_seconds') != 5400 or request.get('graph_observer') is not None
-            or request.get('gpu_uuids') != [TOOL_GPU]):
+            or request.get('max_wall_seconds') != 5400 or request.get('graph_observer') is not None):
         raise ApprovalError('Tool evaluation requires the observer-free finite original conversation cohort')
+    validate_tool_gpu(request)
     q = dict(request)
     official = request['arms'] == ['bf16']
     q['workload'] = {'kind': A_KIND if official else C_KIND,

@@ -1,0 +1,74 @@
+{
+  "schema": "repaired-mxfp4-complete-exact-export-v1",
+  "source_sha256": {
+    "upstream-production-kv-20261102/A-quality-a1/summary.json": "f41e29b2338911951d4bcaf67837f2ba0bd8d1af5fd519072ccc3b1e123a23eb",
+    "upstream-production-kv-20261102/A-tools-b1/actual_model_audit.json": "ec193dcb9bfa7364f3d78ab52d150c2c18673ad0e52a7215e7d10c418e749ac9",
+    "upstream-production-kv-20261102/A-service-c1.json": "ff61bb7747a7ae4e1fe57bd4ad4b1fc45daf2e0eca4c6102a72f8507f81a128f",
+    "upstream-production-kv-20261102/C-fp8-quality-a1/summary.json": "daae6511cd2f1bdfae0b1cd733cda1c46cbcc041685e9abf51cdbf2f7e03b436",
+    "upstream-production-kv-20261102/C-fp8-tools-c1/actual_model_audit.json": "ea0641ce7d4ebc465b72b529a668b18351de36f2daf7e0c7acaedf2e24f530ce",
+    "upstream-production-kv-20261102/C-fp8-service-a1.json": "339f066369ab99bedfc9e2282c64f8ba47141477c88a8ac4dad0f91318c759ed",
+    "upstream-production-kv-20261102/C-nvfp4-quality-a1/summary.json": "59ce81ec7b89113347aadea220e385f0355dd96300a763a97ef628cca5955c3b",
+    "upstream-production-kv-20261102/C-nvfp4-tools-b1/actual_model_audit.json": "e32a9ceefa48de9e438fcd2c67ccc59bd137dabb4e8ea3a266e9b4ab9e5af074",
+    "upstream-production-kv-20261102/C-nvfp4-service-a1.json": "c5aea2028da225f3ba69caf9ff9886b110b2b23ac622f9463dc28d0365350aff",
+    "mxfp4-fp8-20261105/FP8-retained-quality-a1/summary.json": "f72531eee4304e4a83468664506d68165dc0ce83a9b6d9c50704e03edf001f5f",
+    "mxfp4-fp8-20261105/FP8-retained-tools-a1/summary.json": "e0751764f523c6011ca76b0e438ae9a14c5de68c95d3d3cdeb5561e996141d63",
+    "mxfp4-fp8-20261105/FP8-retained-service-a1.json": "c19c570cff63fdec67c88ee1f3e65631a0bc0f549e1b354e89d77eb7f7876e99",
+    "mxfp4-fp8-20261105/MXFP4-quality-a1/summary.json": "297d2ed3d1df82fe61c4db478d49bdcf1f62d5bd5a47af4f3fcf46717ed25ffc",
+    "mxfp4-fp8-20261105/MXFP4-tools-a1/summary.json": "08a0486fafba664eee605c2f36c6c83a6988982120dc4d63a8a2a5b182953e44",
+    "mxfp4-fp8-20261105/MXFP4-service-a1.json": "f1798a7177c70674bd724d56713618f30cfea332c703452f162af391be93807c",
+    "mxfp4-p0-20261109/MXFP4-quality-a1/summary.json": "a59395b9b95a53846faaf33b30e85b044229f8b31719c9c2e342f54888e5af3a",
+    "mxfp4-p0-20261109/MXFP4-tools-a1/actual_model_audit.json": "36711b47d5b910c19835b9f3bc8d73c3af8413b3425b6de75c62d969bd89ae85",
+    "mxfp4-p0-20261109/MXFP4-service-a1.json": "4852d9614c6589b1dcc5dfdd6a586ec43dcd1d036f0c854555fd0f76702ba1ae"
+  },
+  "formats": 6,
+  "service_cases": 18,
+  "goodput_rows": 288,
+  "frozen_engineering_point_gates": {
+    "BF16 A": {
+      "GSM8K": {
+        "delta": -0.9097801364670204,
+        "minimum_delta": -0.5,
+        "point_pass": false
+      },
+      "LongBench_macro": {
+        "delta": -0.6525044080641607,
+        "minimum_delta": -1.0,
+        "point_pass": true
+      },
+      "RepoBench_P": {
+        "delta": -7.440000000000005,
+        "minimum_delta": -2.0,
+        "point_pass": false
+      },
+      "tool_correct": {
+        "delta": -3,
+        "minimum_delta": -1,
+        "point_pass": false
+      }
+    },
+    "FP8 original": {
+      "GSM8K": {
+        "delta": -0.7581501137225217,
+        "minimum_delta": -0.5,
+        "point_pass": false
+      },
+      "LongBench_macro": {
+        "delta": -0.018274836319491783,
+        "minimum_delta": -1.0,
+        "point_pass": true
+      },
+      "RepoBench_P": {
+        "delta": -3.260000000000005,
+        "minimum_delta": -2.0,
+        "point_pass": false
+      },
+      "tool_correct": {
+        "delta": -3,
+        "minimum_delta": -1,
+        "point_pass": false
+      }
+    }
+  },
+  "statistical_noninferiority_automatically_claimed": false,
+  "historical_MXFP4_has_Graph_correctness_confounder": true
+}

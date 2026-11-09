@@ -1,0 +1,67 @@
+format,task,actual_completion_tokens,capped_responses,count,independent_context_clusters,official_rounded_percent,score_percent_unrounded
+BF16 A,core::2wikimqa,282,0,50,50,62.12,62.12380952380952
+BF16 A,core::gsm8k,186528,3,1319,1319,96.74,96.73995451099317
+BF16 A,core::gsm8k_strict,186528,3,1319,1319,96.82,96.81576952236543
+BF16 A,core::hotpotqa,245,0,50,50,69.27,69.26593406593406
+BF16 A,core::lcc,2943,45,50,50,56.64,56.64
+BF16 A,core::multifieldqa_en,819,1,50,44,61.44,61.438392020253886
+BF16 A,core::musique,281,1,50,50,56.68,56.67777777777778
+BF16 A,core::narrativeqa,392,0,50,19,31.93,31.93054664633612
+BF16 A,core::qasper,595,0,50,49,49.19,49.191092073721975
+BF16 A,core::repobench-p,2555,39,50,50,43.92,43.92
+BF16 A,long_unique_document::narrativeqa,3,0,1,1,50.0,50.0
+FP8 original,core::2wikimqa,282,0,50,50,61.93,61.93333333333334
+FP8 original,core::gsm8k,187715,7,1319,1319,96.59,96.58832448824867
+FP8 original,core::gsm8k_strict,187715,7,1319,1319,96.66,96.66413949962093
+FP8 original,core::hotpotqa,247,0,50,50,69.27,69.26593406593406
+FP8 original,core::lcc,2775,42,50,50,58.02,58.02
+FP8 original,core::multifieldqa_en,812,1,50,44,62.09,62.09373492296521
+FP8 original,core::musique,283,1,50,50,55.68,55.67777777777778
+FP8 original,core::narrativeqa,375,0,50,19,30.81,30.8083244241139
+FP8 original,core::qasper,593,0,50,49,48.57,48.57461100975168
+FP8 original,core::repobench-p,2427,36,50,50,39.74,39.74
+FP8 original,long_unique_document::narrativeqa,3,0,1,1,50.0,50.0
+NVFP4,core::2wikimqa,282,0,50,50,61.93,61.93333333333334
+NVFP4,core::gsm8k,187506,5,1319,1319,96.59,96.58832448824867
+NVFP4,core::gsm8k_strict,187506,5,1319,1319,96.66,96.66413949962093
+NVFP4,core::hotpotqa,266,0,50,50,69.96,69.96158623984711
+NVFP4,core::lcc,2800,42,50,50,57.14,57.14
+NVFP4,core::multifieldqa_en,815,1,50,44,62.37,62.367752133824524
+NVFP4,core::musique,282,0,50,50,57.57,57.56565656565656
+NVFP4,core::narrativeqa,382,0,50,19,31.56,31.564962230751703
+NVFP4,core::qasper,635,0,50,49,50.42,50.423960602533704
+NVFP4,core::repobench-p,2477,37,50,50,39.68,39.68
+NVFP4,long_unique_document::narrativeqa,3,0,1,1,50.0,50.0
+FP8 retained,core::2wikimqa,282,0,50,50,61.93,61.93333333333334
+FP8 retained,core::gsm8k,187068,4,1319,1319,96.97,96.96739954510993
+FP8 retained,core::gsm8k_strict,187068,4,1319,1319,96.97,96.96739954510993
+FP8 retained,core::hotpotqa,247,0,50,50,69.27,69.26593406593406
+FP8 retained,core::lcc,2759,41,50,50,58.44,58.44
+FP8 retained,core::multifieldqa_en,808,1,50,44,62.13,62.12882264226345
+FP8 retained,core::musique,280,1,50,50,56.68,56.67777777777778
+FP8 retained,core::narrativeqa,384,0,50,19,30.81,30.8083244241139
+FP8 retained,core::qasper,623,0,50,49,49.13,49.13254751768818
+FP8 retained,core::repobench-p,2486,38,50,50,42.84,42.84
+FP8 retained,long_unique_document::narrativeqa,3,0,1,1,50.0,50.0
+MXFP4 historical Graph-confounded,core::2wikimqa,285,0,50,50,63.93,63.93333333333334
+MXFP4 historical Graph-confounded,core::gsm8k,190187,11,1319,1319,95.98,95.98180439727066
+MXFP4 historical Graph-confounded,core::gsm8k_strict,190187,11,1319,1319,95.91,95.90598938589841
+MXFP4 historical Graph-confounded,core::hotpotqa,259,0,50,50,67.9,67.90225563909775
+MXFP4 historical Graph-confounded,core::lcc,2537,37,50,50,54.8,54.8
+MXFP4 historical Graph-confounded,core::multifieldqa_en,827,2,50,44,62.12,62.119583761635724
+MXFP4 historical Graph-confounded,core::musique,302,1,50,50,56.65,56.648989898989896
+MXFP4 historical Graph-confounded,core::narrativeqa,434,0,50,19,32.99,32.98926512084407
+MXFP4 historical Graph-confounded,core::qasper,633,0,50,49,48.44,48.44419047629407
+MXFP4 historical Graph-confounded,core::repobench-p,2120,30,50,50,36.48,36.48
+MXFP4 historical Graph-confounded,long_unique_document::narrativeqa,3,0,1,1,50.0,50.0
+MXFP4 repaired,core::2wikimqa,287,0,50,50,65.93,65.93333333333334
+MXFP4 repaired,core::gsm8k,188549,11,1319,1319,95.83,95.83017437452615
+MXFP4 repaired,core::gsm8k_strict,188549,11,1319,1319,95.75,95.75435936315391
+MXFP4 repaired,core::hotpotqa,254,0,50,50,68.9,68.90225563909775
+MXFP4 repaired,core::lcc,2537,37,50,50,55.08,55.08
+MXFP4 repaired,core::multifieldqa_en,851,2,50,44,61.76,61.757872795256574
+MXFP4 repaired,core::musique,302,1,50,50,56.65,56.648989898989896
+MXFP4 repaired,core::narrativeqa,423,0,50,19,32.09,32.09436119436119
+MXFP4 repaired,core::qasper,653,0,50,49,49.07,49.07070398228126
+MXFP4 repaired,core::repobench-p,2135,31,50,50,36.48,36.48
+MXFP4 repaired,long_unique_document::narrativeqa,3,0,1,1,50.0,50.0

@@ -1,8 +1,10 @@
 # xLLM / KV Cache 量化科研：5060 常驻 Codex 接手包
 
+**最新研究（2026-11-09）**：[MXFP4 Graph修复后的完整对照与合入决定](reports/experiments/mxfp4-p0-20261109/REPORT.md)。固定原官方基线与依赖，实测Python源码`e10830c9`。GSM8K/Repo质量门槛未通过，三组真实服务输出吞吐相对A下降13.23%/15.37%/27.98%；标准格式与Graph修复可独立评审，MXFP4仍限实验性支持。精确表、配对区间、PNG/SVG与原始证据目录见报告。
+
 **2026-11-06 后端审计**：[生产Graph BLOCKED；受限Q4组件测量](reports/experiments/q4-backend-readonly-20261106/REPORT.md)。固定H800/部署FI8bc，三case原始CUPTI独立核验；[Graph因果边界更正](reports/experiments/q4-backend-readonly-20261106/GRAPH_AUDIT_FOLLOWUP.md)单列。此前质量/服务分数与3ef immutable报告保持原貌。
 
-**最新研究（2026-11-02）**：[最新版官方 xLLM 原生 KV 量化 A/C 生产对照](reports/experiments/upstream-production-kv-20261102/REPORT.md)。固定官方`261274e5`、BF16 A=`721afdab`、实测C=`da7c6446`；交付`a5ce9684`只补三个Markdown文档。三格式九场真实服务、1720条核心质量及32原生工具任务均已完成独立核验，所有负结果与限制保留，GPU作业与监控已结清。下方2026-10-30等内容是历史D研究。
+**基线研究（2026-11-02）**：[最新版官方 xLLM 原生 KV 量化 A/C 生产对照](reports/experiments/upstream-production-kv-20261102/REPORT.md)。固定官方`261274e5`、BF16 A=`721afdab`、实测C=`da7c6446`；交付`a5ce9684`只补三个Markdown文档。三格式九场真实服务、1720条核心质量及32原生工具任务均已完成独立核验，所有负结果与限制保留，GPU作业与监控已结清。下方2026-10-30等内容是历史D研究。
 
 **新一代模型集中报告**：[Qwen3.8-27B BF16/原生 FP8/NVFP4 工程与生产结果](reports/synthesis/NEXTGEN_NATIVE_KV_20261030.md)。本轮实现/实机研究、独立审计、归档与资源收尾已完成；[九分区证据目录](results/archive/nextgen-native-kv-20261030/CATALOG-a1.md)和[最终26项范围审计](reports/operations/session-recovery-20261030-01a1765d/COMPLETION_REQUIREMENTS-c1.json)集中列证，默认生产接受与未知边界单列。
 

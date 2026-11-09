@@ -1,0 +1,23 @@
+{
+  "source_SHA256": {
+    "reports/experiments/upstream-production-kv-20261102/A-service-c1.json": "ff61bb7747a7ae4e1fe57bd4ad4b1fc45daf2e0eca4c6102a72f8507f81a128f",
+    "reports/experiments/upstream-production-kv-20261102/C-fp8-service-a1.json": "339f066369ab99bedfc9e2282c64f8ba47141477c88a8ac4dad0f91318c759ed",
+    "reports/experiments/upstream-production-kv-20261102/C-nvfp4-service-a1.json": "c5aea2028da225f3ba69caf9ff9886b110b2b23ac622f9463dc28d0365350aff",
+    "reports/experiments/mxfp4-fp8-20261105/FP8-retained-service-a1.json": "c19c570cff63fdec67c88ee1f3e65631a0bc0f549e1b354e89d77eb7f7876e99",
+    "reports/experiments/mxfp4-p0-20261109/MXFP4-service-a1.json": "4852d9614c6589b1dcc5dfdd6a586ec43dcd1d036f0c854555fd0f76702ba1ae"
+  },
+  "all_original_three_cases_and_formats_shown": true,
+  "complete_measured_windows": true,
+  "displayed_formats": [
+    "BF16",
+    "FP8",
+    "NVFP4",
+    "FP8 retained",
+    "MXFP4"
+  ],
+  "independent_repeated_service_samples_per_case": 1,
+  "ITL_tail_is_request_mean": true,
+  "business_SLO_or_quality_accepted": false,
+  "Goodput_all_predeclared_threshold_points_exported": 16,
+  "Goodput_heatmap_color_scales": "shared across formats within each case; separate labeled scales per case"
+}

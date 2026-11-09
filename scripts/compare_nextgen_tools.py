@@ -56,12 +56,24 @@ def bound(audit_path: Path,manifest_path: Path) -> tuple[dict,dict]:
     return audit,request
 
 
+def validate_gpu_pair(reference: dict, candidate: dict, *, upstream: bool) -> bool:
+    same = reference['gpu_uuids'] == candidate['gpu_uuids']
+    if not same:
+        from scripts.controller.upstream_tools import TOOL_GPU, QUALITY_GPU_AFFINITY, validate_tool_gpu
+        _check(upstream and reference['gpu_uuids'] == [TOOL_GPU]
+               and candidate.get('tool_gpu_affinity') == QUALITY_GPU_AFFINITY,
+               'Different tool GPUs need an explicit semantic-quality relocation')
+        validate_tool_gpu(candidate)
+    return same
+
+
 def compare(reference_path: Path,reference_manifest: Path,candidate_path: Path,candidate_manifest: Path,
             *,upstream: bool=False,native_reference: str | None=None) -> dict:
     if native_reference is not None and not upstream:
         raise ValueError('Previous-format tool comparison needs original upstream evidence')
     left,lreq=bound(reference_path,reference_manifest);right,rreq=bound(candidate_path,candidate_manifest)
-    common=('model_id','model_config_sha256','image_id','service','gpu_uuids','prefix_cache','graph_mode')
+    same_gpu = validate_gpu_pair(lreq,rreq,upstream=upstream)
+    common=('model_id','model_config_sha256','image_id','service','prefix_cache','graph_mode')
     if upstream:
         from scripts.controller.next_stage_deployment import validate_pair_sources
         _check(lreq['workload']['kind']==rreq['workload']['kind']=='upstream_AC_real_native_tools32',
@@ -81,7 +93,10 @@ def compare(reference_path: Path,reference_manifest: Path,candidate_path: Path,c
         source_commits={('reference' if native_reference else 'A'):lreq['server_source_commit'],
                         ('candidate' if native_reference else 'C'):rreq['server_source_commit']},
         python_sources={'reference':lreq['python_source_commit'],'candidate':rreq['python_source_commit']},
-        reference_arm=left['arm'],candidate_arm=right['arm'],service=lreq['service'],gpu_uuids=lreq['gpu_uuids'],
+        reference_arm=left['arm'],candidate_arm=right['arm'],service=lreq['service'],
+        gpu_uuids=lreq['gpu_uuids'] if same_gpu else None, same_physical_GPU=same_gpu,
+        reference_gpu_uuids=lreq['gpu_uuids'],candidate_gpu_uuids=rreq['gpu_uuids'],
+        tool_gpu_affinity=rreq.get('tool_gpu_affinity'),
         operators={('reference' if native_reference else 'BF16'):lreq['operators'],
                    ('candidate' if native_reference else right['arm']):rreq['operators']},
         reference_audit_sha256=hashlib.sha256(reference_path.read_bytes()).hexdigest(),
