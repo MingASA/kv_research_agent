@@ -1,0 +1,25 @@
+{
+  "FP8": {
+    "passed": 13,
+    "subtests_passed": 18,
+    "skipped": 3
+  },
+  "NVFP4": {
+    "passed": 44,
+    "subtests_passed": 18,
+    "skipped": 3
+  },
+  "MXFP4": {
+    "passed": 24,
+    "subtests_passed": 18,
+    "skipped": 14
+  },
+  "GPU_jobs_started": 0,
+  "full_CXX_CUDA_build_performed": false,
+  "preserved_failures": [
+    "Standard conftest requires absent native export; independent host suites use --noconftest",
+    "Initial new-test import fixed to package-relative",
+    "Initial MX FP8 fake metadata fixture lacked cache_format; fixed fixture without changing serving code"
+  ],
+  "archival_tool_lint": "Original MX qualification harness retained unchanged; legacy B023 capture-loop warnings and import ordering are not included in the runtime/test Ruff pass."
+}

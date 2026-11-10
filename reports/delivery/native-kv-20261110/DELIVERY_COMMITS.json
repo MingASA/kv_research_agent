@@ -1,0 +1,19 @@
+[
+  {
+    "branch": "pr/native-fp8-kv-cache",
+    "sha": "a00beb76a8a4b7aabc36ae34ea212371e8518418",
+    "author": "MingASA <203962259+MingASA@users.noreply.github.com>"
+  },
+  {
+    "branch": "research/native-nvfp4",
+    "sha": "3539bcad0c2df91dd70736a0e6d6e61f5195a425",
+    "parent": "a00beb76a8a4b7aabc36ae34ea212371e8518418",
+    "author": "MingASA <203962259+MingASA@users.noreply.github.com>"
+  },
+  {
+    "branch": "research/native-mxfp4",
+    "sha": "3ee9b8e9989f065a54abbe850d526977b42d073f",
+    "parent": "a00beb76a8a4b7aabc36ae34ea212371e8518418",
+    "author": "MingASA <203962259+MingASA@users.noreply.github.com>"
+  }
+]

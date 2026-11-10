@@ -1,0 +1,66 @@
+[
+  {
+    "format": "nvfp4",
+    "module": "xllm/python/attention/native_kv_layout.py",
+    "source_ref": "3b49556a",
+    "AST_identical_excluding_import_order": true,
+    "byte_identical": true,
+    "current_sha256": "ebcaa32cdbc56692cd309fec6cb6d10f23ab37dc97fc3998ff16e35a06be060d"
+  },
+  {
+    "format": "nvfp4",
+    "module": "xllm/python/attention/nvfp4_writer.py",
+    "source_ref": "e710e6f2",
+    "AST_identical_excluding_import_order": true,
+    "byte_identical": true,
+    "current_sha256": "9f563864c9be19a6ebce73fced5dde02b8fcab4507a764a2b6258483da7351e9"
+  },
+  {
+    "format": "nvfp4",
+    "module": "xllm/python/attention/flashinfer_metadata.py",
+    "source_ref": "e710e6f2",
+    "AST_identical_excluding_import_order": true,
+    "byte_identical": true,
+    "current_sha256": "b5ea55223f62a9d8c82e09676a84b17a3bf889d5cee27325a9dd8a523643caf4"
+  },
+  {
+    "format": "mxfp4",
+    "module": "xllm/python/attention/mxfp4_decode_plan.py",
+    "source_ref": "6e99ad95",
+    "AST_identical_excluding_import_order": true,
+    "byte_identical": false,
+    "current_sha256": "56a567b629d9ecb5e16aaa614247d352d34708e29d9a5730aefca8f009e9a08d"
+  },
+  {
+    "format": "mxfp4",
+    "module": "xllm/python/attention/mxfp4_flashinfer.py",
+    "source_ref": "6e99ad95",
+    "AST_identical_excluding_import_order": true,
+    "byte_identical": false,
+    "current_sha256": "a37694e9540fc9bedda6b9559662732712663b999418f9b368fed64fa35d6cef"
+  },
+  {
+    "format": "mxfp4",
+    "module": "xllm/python/attention/mxfp4_graph_sources.py",
+    "source_ref": "6e99ad95",
+    "AST_identical_excluding_import_order": true,
+    "byte_identical": false,
+    "current_sha256": "d52d349b54f13bbfa9400a914f8a92fc5081b9d0b9f0250389bc6c681dbca658"
+  },
+  {
+    "format": "mxfp4",
+    "module": "xllm/python/attention/mxfp4_reference.py",
+    "source_ref": "6e99ad95",
+    "AST_identical_excluding_import_order": true,
+    "byte_identical": false,
+    "current_sha256": "872903314cf80c1fa4fdcc199f7efccbb23b86844792dca2472465f06b67509f"
+  },
+  {
+    "format": "mxfp4",
+    "module": "xllm/python/attention/mxfp4_writer.py",
+    "source_ref": "6e99ad95",
+    "AST_identical_excluding_import_order": true,
+    "byte_identical": true,
+    "current_sha256": "c2ac430b94e9b75cb276bd7750fcc119451f15f652d4ad2ea292d05b284b5dca"
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "FP8_kernels_and_XQA_files": [
+    {
+      "file": "xllm/python/attention/native_kv_writer.py",
+      "byte_identical_to": "3b49556a",
+      "sha256": "7e52022a1cf5d89c35b858a1fba3b20a98113540f1e370b38ff48f4a9a16af62"
+    },
+    {
+      "file": "xllm/python/attention/query_quantization.py",
+      "byte_identical_to": "3b49556a",
+      "sha256": "6919a50890723c2551f81004d8fc24781d1dbcec3caff6e6933bc9b3e0254b3e"
+    },
+    {
+      "file": "xllm/python/attention/xqa_decode.py",
+      "byte_identical_to": "3b49556a",
+      "sha256": "42e140859f6cda35efd5fd72f44ddd786d557d2df780f1c630703d576034a682"
+    }
+  ],
+  "prepare_AST_identical": true,
+  "execute_AST_identical_after_selecting_existing_FP8_branch": true,
+  "new_native_CXX_build_performed": false,
+  "reason_no_CXX_build": "Local source checkout lacks native build dependencies/export library; reuse explicitly identified historical H800 compiled evidence, require normal upstream build/CI before merge",
+  "preserved_collection_failures": [
+    "Standard pytest conftest requires absent xllm_export; independent host contract suite must use --noconftest",
+    "Initial sibling test helper import corrected to package-relative import"
+  ],
+  "GPU_used": false
+}
