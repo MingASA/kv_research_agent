@@ -1,0 +1,30 @@
+{
+  "reference": "a00beb76a8a4b7aabc36ae34ea212371e8518418",
+  "checks": [
+    {
+      "file": "xllm/python/attention/native_kv_writer.py",
+      "entire_module_AST_identical": true,
+      "sha256": "6275603a082eccf195bef41dca52db400eb86f97b596625ea70b14e38d883508"
+    },
+    {
+      "file": "xllm/python/attention/query_quantization.py",
+      "entire_module_AST_identical": true,
+      "sha256": "2920a94a3fe3bb9608e146ba4092d7e3fcf93efeaaca8ad29e58e88724b4a614"
+    },
+    {
+      "file": "xllm/python/attention/xqa_decode.py",
+      "function": "_convert_pages",
+      "AST_identical": true
+    },
+    {
+      "file": "xllm/python/attention/xqa_decode.py",
+      "function": "run",
+      "AST_identical": true
+    },
+    {
+      "file": "xllm/python/model_executor/executor.py",
+      "entire_module_AST_identical": true
+    }
+  ],
+  "not_a_new_GPU_numerical_or_performance_result": true
+}

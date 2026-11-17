@@ -1,0 +1,24 @@
+{
+  "reference": "a00beb76",
+  "failed_regression_cases": [
+    "FAILED tests/python/test_native_fp8_cache.py::test_fp8_layers_must_share_page_geometry[shape0]",
+    "FAILED tests/python/test_native_fp8_cache.py::test_fp8_layers_must_share_page_geometry[shape1]",
+    "FAILED tests/python/test_native_fp8_cache.py::test_fp8_requires_nonempty_resident_pages[shape0]",
+    "FAILED tests/python/test_native_fp8_cache.py::test_fp8_requires_nonempty_resident_pages[shape1]",
+    "FAILED tests/python/test_native_fp8_cache.py::test_fp8_xqa_rejects_unsupported_page_size_when_binding",
+    "FAILED tests/python/test_native_xqa_decode.py::test_csr_requires_flat_contiguous_buffers[strided-paged_kv_indptr]",
+    "FAILED tests/python/test_native_xqa_decode.py::test_csr_requires_flat_contiguous_buffers[strided-paged_kv_indices]",
+    "FAILED tests/python/test_native_xqa_decode.py::test_csr_requires_flat_contiguous_buffers[strided-paged_kv_last_page_len]",
+    "FAILED tests/python/test_native_xqa_decode.py::test_csr_requires_flat_contiguous_buffers[matrix-paged_kv_indptr]",
+    "FAILED tests/python/test_native_xqa_decode.py::test_csr_requires_flat_contiguous_buffers[matrix-paged_kv_indices]",
+    "FAILED tests/python/test_native_xqa_decode.py::test_csr_requires_flat_contiguous_buffers[matrix-paged_kv_last_page_len]",
+    "FAILED tests/python/test_native_xqa_decode.py::test_invalid_geometry_fails_before_device_query_or_allocation[0-128-256]",
+    "FAILED tests/python/test_native_xqa_decode.py::test_invalid_geometry_fails_before_device_query_or_allocation[-1-128-256]",
+    "FAILED tests/python/test_native_xqa_decode.py::test_invalid_geometry_fails_before_device_query_or_allocation[2-0-256]",
+    "FAILED tests/python/test_native_xqa_decode.py::test_invalid_geometry_fails_before_device_query_or_allocation[2-8-256]",
+    "FAILED tests/python/test_native_xqa_decode.py::test_invalid_geometry_fails_before_device_query_or_allocation[2-256-512]",
+    "FAILED tests/python/test_native_xqa_decode.py::test_invalid_geometry_fails_before_device_query_or_allocation[2-128-0]",
+    "FAILED tests/python/test_native_xqa_decode.py::test_invalid_geometry_fails_before_device_query_or_allocation[2-128-129]"
+  ],
+  "full_unmodified_logs_preserved_locally_and_on_E": true
+}

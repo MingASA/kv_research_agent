@@ -1,0 +1,58 @@
+{
+  "review_base": "a00beb76a8a4b7aabc36ae34ea212371e8518418",
+  "reviewed_HEAD": "ba87794dad1a8c6f7244b6168dbc8b43d8450645",
+  "official_base": "261274e5f45449e98d7740144c3a958a29f1fd3e",
+  "UTC": "2026-11-17T12:38:44.006013+00:00",
+  "skill": ".agents/skills/code-review/SKILL.md",
+  "pre_fix_CPU_regressions_failed": 18,
+  "final_CPU_tests_passed": 39,
+  "final_subtests_passed": 18,
+  "SM90_device_tests_skipped": 3,
+  "CXX_config_tests_added": 3,
+  "CXX_tests_executed": false,
+  "full_CXX_CUDA_build_executed": false,
+  "new_GPU_jobs": 0,
+  "CPU_test_environment": {
+    "Python": "3.12.13",
+    "torch": "2.13.0+cu132",
+    "triton": "3.7.1",
+    "pytest": "9.1.1"
+  },
+  "CXX_format": "clang-format20.1.6 passed",
+  "Python": "Ruff check/format, syntax and whitespace passed",
+  "private_machine_paths_scan": {
+    "files": 3263,
+    "hits": 0,
+    "scope": "all tracked/new non-third-party text files"
+  },
+  "official_BF16_backend_scheduler_Graph_runner_GDN_files_unchanged": true,
+  "remaining_merge_gates": [
+    "Full native build plus new native_fp8_config_test",
+    "SM90 model/Graph integration regression in supported dependencies",
+    "Default Docker dependency compatibility: Torch2.7.1 / FI Python0.6.14 is not the historical Torch2.10 / FI0.6.18.post1 benchmark environment"
+  ],
+  "raw_logs": {
+    "RED.log": {
+      "sha256": "e764a30508104cb67519eddc394d16d3e4232ad0e089b9fb991479803e64ed15",
+      "bytes": 28883
+    },
+    "GREEN-a1.log": {
+      "sha256": "115a453fc1d0a2d5fae45b7d89d62235438ecd3f13dd61c5f5d1b839718fe421",
+      "bytes": 112
+    },
+    "GREEN-final.log": {
+      "sha256": "93785a1f64f7e4db3935bc19956e95b875d0bd82b92fa36f85bdb497428ce810",
+      "bytes": 112
+    },
+    "GREEN-published.log": {
+      "sha256": "fd2c52393cdc6457ed712cb1a8771d6e29113c7f5594b04557cc9664519382cb",
+      "bytes": 112
+    },
+    "OPTIONAL_DEPENDENCY.log": {
+      "sha256": "c781d4dbb9922f7e5383eda7e22aa67e41386bc845141123c94545c5bd2f7acc",
+      "bytes": 145
+    }
+  },
+  "no_new_quality_or_performance_claim": true,
+  "optional_Triton_absence_probe": "Both CUDA feature test modules explicitly skip; no collection error"
+}

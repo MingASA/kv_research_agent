@@ -1,0 +1,20 @@
+[
+  {
+    "sha": "1458605ab2d6ac61bbf3a0cdac3201bb2dd0550b",
+    "kind": "correctness_and_backend_readability",
+    "message": "fix(cuda): validate native FP8 cache and XQA paging contracts",
+    "author_and_committer": "MingASA|203962259+MingASA@users.noreply.github.com|MingASA|203962259+MingASA@users.noreply.github.com"
+  },
+  {
+    "sha": "a945df9f402232e72748155383e209786b7bef88",
+    "kind": "AST_identical_formatting",
+    "message": "style(cuda): clarify native FP8 kernel and executor signatures",
+    "author_and_committer": "MingASA|203962259+MingASA@users.noreply.github.com|MingASA|203962259+MingASA@users.noreply.github.com"
+  },
+  {
+    "sha": "ba87794dad1a8c6f7244b6168dbc8b43d8450645",
+    "kind": "optional_dependency_test_portability",
+    "message": "test(cuda): skip FP8 device contracts when Triton is unavailable",
+    "author_and_committer": "MingASA|203962259+MingASA@users.noreply.github.com|MingASA|203962259+MingASA@users.noreply.github.com"
+  }
+]
